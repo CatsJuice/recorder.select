@@ -1,0 +1,10 @@
+.nav {
+  border-bottom: 0 !important;
+}
+
+.workspace {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

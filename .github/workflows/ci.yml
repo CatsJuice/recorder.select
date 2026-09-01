@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+
+  recorderbench:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test RecorderBench
+        run: swift test --package-path apps/benchmark-macos
+      - name: Build universal app
+        run: scripts/build-macos-app.sh
+      - name: Verify app signature
+        run: codesign --verify --deep --strict --verbose=2 artifacts/RecorderBench.app

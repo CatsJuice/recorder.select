@@ -37,3 +37,8 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/artifacts/
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate

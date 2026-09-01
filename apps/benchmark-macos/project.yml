@@ -1,0 +1,98 @@
+name: RecorderBench
+
+options:
+  bundleIdPrefix: select.recorder
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    CLANG_ENABLE_MODULES: YES
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    DEAD_CODE_STRIPPING: YES
+    ARCHS: "arm64 x86_64"
+    ONLY_ACTIVE_ARCH: NO
+  configs:
+    Debug:
+      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+      CODE_SIGN_IDENTITY: "-"
+      AD_HOC_CODE_SIGNING_ALLOWED: YES
+    Release:
+      SWIFT_COMPILATION_MODE: wholemodule
+      SWIFT_OPTIMIZATION_LEVEL: "-O"
+
+targets:
+  BenchmarkCore:
+    type: library.static
+    platform: macOS
+    sources:
+      - path: Sources/BenchmarkCore
+    settings:
+      base:
+        PRODUCT_NAME: BenchmarkCore
+        PRODUCT_MODULE_NAME: BenchmarkCore
+        DEFINES_MODULE: YES
+        SKIP_INSTALL: YES
+
+  RecorderBench:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/RecorderBench
+      - path: Resources/Assets.xcassets
+    dependencies:
+      - target: BenchmarkCore
+    entitlements:
+      path: Resources/RecorderBench.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: select.recorder.benchmark
+        PRODUCT_NAME: RecorderBench
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Resources/Info.plist
+        # Keep the repository team-neutral. Debug uses ad-hoc signing; the
+        # release script injects DEVELOPMENT_TEAM and Developer ID at runtime.
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+
+  BenchmarkCoreTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/BenchmarkCoreTests
+    dependencies:
+      - target: BenchmarkCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: select.recorder.benchmark.tests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+
+schemes:
+  RecorderBench:
+    build:
+      targets:
+        BenchmarkCore: all
+        RecorderBench: all
+        BenchmarkCoreTests: [test]
+    run:
+      config: Debug
+      executable: RecorderBench
+    test:
+      config: Debug
+      gatherCoverageData: true
+      commandLineArguments: {}
+      targets:
+        - BenchmarkCoreTests
+    profile:
+      config: Release
+      executable: RecorderBench
+    archive:
+      config: Release

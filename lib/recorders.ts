@@ -39,7 +39,10 @@ export type Recorder = {
 } & Record<string, string | number | boolean | string[] | null | undefined>;
 
 export type FieldGroupKey =
-  | 'general' | 'pricing' | 'screenshots'
+  | 'general' | 'performance' | 'performanceRecording' | 'performanceRecordingCPU' | 'performanceRecordingMemory'
+  | 'performancePreview' | 'performancePreviewCPU' | 'performancePreviewMemory'
+  | 'performanceExport' | 'performanceExportCPU' | 'performanceExportMemory'
+  | 'pricing' | 'screenshots'
   | 'zoomEffects' | 'dynamicBlur' | 'animationAdjustments' | 'camera3d'
   | 'recording' | 'microphoneRecording' | 'systemAudioRecording' | 'cameraRecording'
   | 'customBackgrounds' | 'pictureAdjustments' | 'deviceFrames' | 'annotations'
@@ -72,6 +75,7 @@ export type FieldDefinition = {
   higherIsBetter?: boolean;
   booleanBest?: boolean;
   unit?: string;
+  scoreable?: boolean;
 };
 
 const capabilityPreview = (keys: string[]) => (recorder: Recorder): FieldGroupPreview => {
@@ -83,6 +87,16 @@ const capabilityPreview = (keys: string[]) => (recorder: Recorder): FieldGroupPr
 
 export const fieldGroups: FieldGroup[] = [
   { key: 'general', label: 'General' },
+  { key: 'performance', label: 'Performance', defaultExpanded: false },
+  { key: 'performanceRecording', label: 'Recording', parentKey: 'performance', defaultExpanded: true },
+  { key: 'performanceRecordingCPU', label: 'CPU', parentKey: 'performanceRecording', defaultExpanded: true },
+  { key: 'performanceRecordingMemory', label: 'Memory', parentKey: 'performanceRecording', defaultExpanded: true },
+  { key: 'performancePreview', label: 'Playback', parentKey: 'performance', defaultExpanded: true },
+  { key: 'performancePreviewCPU', label: 'CPU', parentKey: 'performancePreview', defaultExpanded: true },
+  { key: 'performancePreviewMemory', label: 'Memory', parentKey: 'performancePreview', defaultExpanded: true },
+  { key: 'performanceExport', label: 'Export', parentKey: 'performance', defaultExpanded: true },
+  { key: 'performanceExportCPU', label: 'CPU', parentKey: 'performanceExport', defaultExpanded: true },
+  { key: 'performanceExportMemory', label: 'Memory', parentKey: 'performanceExport', defaultExpanded: true },
   {
     key: 'pricing', label: 'Pricing', defaultExpanded: false,
     getCollapsedPreview: (recorder) => {
@@ -141,6 +155,19 @@ export const fieldDefinitions: FieldDefinition[] = [
   { key: 'requiresRegistration', label: 'Registration required', type: 'boolean', group: 'general', booleanBest: false },
   { key: 'availableOnMacAppStore', label: 'Available on Mac App Store', type: 'boolean', group: 'general', booleanBest: true },
   { key: 'isOpenSource', label: 'Open source', type: 'boolean', group: 'general', booleanBest: true },
+  { key: 'recordingCpuAverage', label: 'Average', type: 'computed', group: 'performanceRecordingCPU', higherIsBetter: false, scoreable: false },
+  { key: 'recordingCpuPeak', label: 'Peak', type: 'computed', group: 'performanceRecordingCPU', higherIsBetter: false, scoreable: false },
+  { key: 'recordingMemoryAverage', label: 'Average', type: 'computed', group: 'performanceRecordingMemory', higherIsBetter: false, scoreable: false },
+  { key: 'recordingMemoryPeak', label: 'Peak', type: 'computed', group: 'performanceRecordingMemory', higherIsBetter: false, scoreable: false },
+  { key: 'previewCpuAverage', label: 'Average', type: 'computed', group: 'performancePreviewCPU', higherIsBetter: false, scoreable: false },
+  { key: 'previewCpuPeak', label: 'Peak', type: 'computed', group: 'performancePreviewCPU', higherIsBetter: false, scoreable: false },
+  { key: 'previewMemoryAverage', label: 'Average', type: 'computed', group: 'performancePreviewMemory', higherIsBetter: false, scoreable: false },
+  { key: 'previewMemoryPeak', label: 'Peak', type: 'computed', group: 'performancePreviewMemory', higherIsBetter: false, scoreable: false },
+  { key: 'exportCpuAverage', label: 'Average', type: 'computed', group: 'performanceExportCPU', higherIsBetter: false, scoreable: false },
+  { key: 'exportCpuPeak', label: 'Peak', type: 'computed', group: 'performanceExportCPU', higherIsBetter: false, scoreable: false },
+  { key: 'exportMemoryAverage', label: 'Average', type: 'computed', group: 'performanceExportMemory', higherIsBetter: false, scoreable: false },
+  { key: 'exportMemoryPeak', label: 'Peak', type: 'computed', group: 'performanceExportMemory', higherIsBetter: false, scoreable: false },
+  { key: 'exportDuration', label: 'Time', type: 'computed', group: 'performanceExport', higherIsBetter: false, scoreable: false },
   { key: 'monthlyPrice', label: 'Monthly price', type: 'price', group: 'pricing', placeholder: '0', description: 'USD. Leave empty if unavailable.', unit: '/ mo' },
   { key: 'quarterlyPrice', label: 'Quarterly price', type: 'price', group: 'pricing', placeholder: '0', description: 'USD billed every three months.', unit: '/ qtr' },
   { key: 'yearlyPrice', label: 'Annual price', type: 'price', group: 'pricing', placeholder: '0', description: 'USD billed per year.', unit: '/ yr' },
@@ -246,12 +273,106 @@ export const fieldDefinitions: FieldDefinition[] = [
 ];
 
 export const recorders: Recorder[] = [
-  { id:'screen-studio', name:'Screen Studio', website:'https://screen.studio', platforms:['mac'], appSizeMB:38, requiresRegistration:true, availableOnMacAppStore:true, isOpenSource:false, monthlyPrice:29, quarterlyPrice:null, yearlyPrice:229, lifetimePrice:null, supportsScreenshots:true, supportsBasicAnnotations:true, supportsCustomBackgrounds:true, supportsCustomCorners:true, supportsCustomShadows:true, supports3DEffects:true, supportsDeviceFrames:true, supportsResolutionControls:true, supportsDynamicBlurControls:true, supportsCurveControls:true, supportsSpeedControls:true, supportsDepthOfField:true, supportsDepthStrengthControls:true, supportsScreenReflection:true, camera3DControlMethod:'interactive', zoomLimit:3, accent:'#7065f0', icon:'/screen-studio.webp' },
-  { id:'cleanshot', name:'CleanShot X', website:'https://cleanshot.com', platforms:['mac'], appSizeMB:72, requiresRegistration:false, availableOnMacAppStore:false, isOpenSource:false, monthlyPrice:null, quarterlyPrice:null, yearlyPrice:29, lifetimePrice:29, supportsScreenshots:true, supportsBasicAnnotations:true, supportsCustomBackgrounds:true, supportsCustomCorners:true, supportsCustomShadows:true, supports3DEffects:false, supportsDeviceFrames:false, supportsResolutionControls:true, supportsDynamicBlurControls:false, supportsCurveControls:false, supportsSpeedControls:false, supportsDepthOfField:false, supportsDepthStrengthControls:false, supportsScreenReflection:false, camera3DControlMethod:null, zoomLimit:1, accent:'#2d8cff' },
-  { id:'screenflow', name:'ScreenFlow', website:'https://telestream.net/screenflow', platforms:['mac'], appSizeMB:980, requiresRegistration:true, availableOnMacAppStore:true, isOpenSource:false, monthlyPrice:null, quarterlyPrice:null, yearlyPrice:null, lifetimePrice:169, supportsScreenshots:false, supportsBasicAnnotations:false, supportsCustomBackgrounds:false, supportsCustomCorners:false, supportsCustomShadows:false, supports3DEffects:false, supportsDeviceFrames:false, supportsResolutionControls:false, supportsDynamicBlurControls:true, supportsCurveControls:true, supportsSpeedControls:true, supportsDepthOfField:false, supportsDepthStrengthControls:false, supportsScreenReflection:false, camera3DControlMethod:'xyz', zoomLimit:2, accent:'#f08a4b' },
-  { id:'loom', name:'Loom', website:'https://loom.com', platforms:['win','mac'], appSizeMB:126, requiresRegistration:true, availableOnMacAppStore:false, isOpenSource:false, monthlyPrice:18, quarterlyPrice:null, yearlyPrice:150, lifetimePrice:null, supportsScreenshots:true, supportsBasicAnnotations:true, supportsCustomBackgrounds:false, supportsCustomCorners:false, supportsCustomShadows:false, supports3DEffects:false, supportsDeviceFrames:false, supportsResolutionControls:false, supportsDynamicBlurControls:true, supportsCurveControls:false, supportsSpeedControls:true, supportsDepthOfField:false, supportsDepthStrengthControls:false, supportsScreenReflection:false, camera3DControlMethod:null, zoomLimit:1, accent:'#625df5' },
-  { id:'obs', name:'OBS Studio', website:'https://obsproject.com', platforms:['win','mac','linux'], appSizeMB:150, requiresRegistration:false, availableOnMacAppStore:false, isOpenSource:true, monthlyPrice:0, quarterlyPrice:0, yearlyPrice:0, lifetimePrice:0, supportsScreenshots:false, supportsBasicAnnotations:false, supportsCustomBackgrounds:false, supportsCustomCorners:false, supportsCustomShadows:false, supports3DEffects:false, supportsDeviceFrames:false, supportsResolutionControls:false, supportsDynamicBlurControls:false, supportsCurveControls:false, supportsSpeedControls:false, supportsDepthOfField:false, supportsDepthStrengthControls:false, supportsScreenReflection:false, camera3DControlMethod:null, zoomLimit:null, accent:'#333333' },
-  { id:'tella', name:'Tella', website:'https://tella.tv', platforms:['win','mac'], appSizeMB:118, requiresRegistration:true, availableOnMacAppStore:false, isOpenSource:false, monthlyPrice:19, quarterlyPrice:null, yearlyPrice:144, lifetimePrice:null, supportsScreenshots:false, supportsBasicAnnotations:false, supportsCustomBackgrounds:true, supportsCustomCorners:true, supportsCustomShadows:true, supports3DEffects:false, supportsDeviceFrames:false, supportsResolutionControls:true, supportsDynamicBlurControls:true, supportsCurveControls:true, supportsSpeedControls:true, supportsDepthOfField:true, supportsDepthStrengthControls:false, supportsScreenReflection:false, camera3DControlMethod:'xyz', zoomLimit:2, accent:'#ff5b45' },
+  {
+    id: 'screen-studio',
+    name: 'Screen Studio',
+    website: 'https://screen.studio',
+    lastUpdatedAt: '2026-08-27',
+    lastUpdatedVersion: '3.7.5-4595',
+    technologyApproach: 'Electron',
+    platforms: ['mac'],
+    appSizeMB: 653,
+    requiresRegistration: true,
+    availableOnMacAppStore: false,
+    isOpenSource: false,
+    monthlyPrice: 29,
+    quarterlyPrice: null,
+    yearlyPrice: 108,
+    lifetimePrice: 0,
+    supportsScreenshots: false,
+    supportsScrollingScreenshots: false,
+    supportsCopyText: false,
+    supportsBasicAnnotations: false,
+    supportsCustomBackgrounds: false,
+    supportsCustomCorners: false,
+    supportsCustomShadows: false,
+    supports3DEffects: false,
+    supportsDeviceFrames: false,
+    supportsResolutionControls: false,
+    supportsDynamicBlurControls: true,
+    supportsCurveControls: false,
+    supportsSpeedControls: true,
+    supportsDepthOfField: false,
+    supportsDepthStrengthControls: false,
+    supportsScreenReflection: false,
+    camera3DControlMethod: null,
+    zoomLimit: 4,
+    supportsWindowRecordingMode: true,
+    supportsKeystrokeRecording: true,
+    supportsIPhoneRecording: true,
+    supportsAndroidRecording: false,
+    supportsMicrophoneRecording: true,
+    supportsMicrophoneNoiseReduction: null,
+    supportsSystemAudioRecording: true,
+    supportsSystemAudioMultitrack: false,
+    supportsCameraBeauty: false,
+    supportsCameraBackgroundRemoval: false,
+    supportsCameraBackgroundReplacement: false,
+    supportsWallpaperBackground: true,
+    supportsColorBackground: true,
+    supportsGradientBackground: true,
+    supportsVideoBackground: false,
+    supportsCustomImageBackground: true,
+    supportsCustomVideoBackground: false,
+    supportsAspectRatioAdjustment: true,
+    supportsCropping: true,
+    supportsSmoothCorners: true,
+    supportsIPhoneFrame: true,
+    supportsIPadFrame: false,
+    supportsAppleWatchFrame: false,
+    supportsMacBookFrame: false,
+    supportsMonitorFrame: false,
+    supportsMosaic: true,
+    supportsTextAnnotations: false,
+    supportsFocusEffect: true,
+    supportsCustomImageAnnotations: false,
+    supportsAnnotationOverlay: false,
+    supportsCursorToggle: true,
+    supportsCursorAutoHide: true,
+    supportsCursorStyleReplacement: true,
+    supportsCustomCursorStyle: false,
+    supportsClickSounds: true,
+    supportsSeparatePressReleaseSounds: true,
+    supportsClickEffects: true,
+    supportsTranscription: true,
+    transcriptionProviders: ['apple', 'local-whisper-kit'],
+    supportsSubtitleEditing: true,
+    supportsWordLevelEditing: true,
+    subtitleOutputType: 'burned-in',
+    supportsBackgroundMusic: true,
+    supportsOfficialMusic: true,
+    supportsLocalMusic: true,
+    supportsMusicEditing: false,
+    supportsMusicFade: false,
+    supportsAllKeyRecording: false,
+    supportsShortcutRecording: true,
+    supportsKeyStyleAdjustment: false,
+    supportsKeyPositionAdjustment: false,
+    supportsVideoExport: true,
+    supportsTransparentMovExport: false,
+    supportsGifExport: true,
+    supportsLivePhotoExport: false,
+    supportsExportResolutionSelection: true,
+    supportsExportQualitySelection: true,
+    supportsExportFrameRateSelection: true,
+    supportsExportSizeEstimate: true,
+    supportsExportDurationEstimate: true,
+    supportsShareLinks: true,
+    supportsPresets: true,
+    supportsPresetImportExportSharing: true,
+    accent: '#7065f0',
+    icon: '/screen-studio.webp',
+  },
 ];
 
 export const displayDomain = (website: string) => website.replace(/^https?:\/\//, '').split('/')[0];

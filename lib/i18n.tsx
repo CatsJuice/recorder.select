@@ -55,6 +55,16 @@ const fieldNames: Partial<Record<Locale, Record<string,string>>> = {
   'pt-BR':{name:'Nome do produto',website:'Site oficial',score:'Pontuação',lastUpdatedAt:'Última atualização',lastUpdatedVersion:'Versão',technologyApproach:'Tecnologia',platforms:'Plataformas',appSizeMB:'Tamanho',requiresRegistration:'Requer cadastro',availableOnMacAppStore:'Disponível na Mac App Store',isOpenSource:'Código aberto',monthlyPrice:'Preço mensal',quarterlyPrice:'Preço trimestral',yearlyPrice:'Preço anual',lifetimePrice:'Preço vitalício'},
 };
 
+const performanceGroupNames: Partial<Record<Locale, Record<string,string>>> = {
+  'zh-CN': {performance:'性能',performanceRecording:'录制',performanceRecordingCPU:'CPU',performanceRecordingMemory:'内存',performancePreview:'回放',performancePreviewCPU:'CPU',performancePreviewMemory:'内存',performanceExport:'导出',performanceExportCPU:'CPU',performanceExportMemory:'内存'},
+  'zh-TW': {performance:'效能',performanceRecording:'錄製',performanceRecordingCPU:'CPU',performanceRecordingMemory:'記憶體',performancePreview:'回放',performancePreviewCPU:'CPU',performancePreviewMemory:'記憶體',performanceExport:'匯出',performanceExportCPU:'CPU',performanceExportMemory:'記憶體'},
+};
+
+const performanceFieldNames: Partial<Record<Locale, Record<string,string>>> = {
+  'zh-CN': {Average:'平均',Peak:'最高',Time:'时间'},
+  'zh-TW': {Average:'平均',Peak:'最高',Time:'時間'},
+};
+
 const normalizeLocale = (value: string | null | undefined): Locale => {
   if (!value) return 'en';
   const exact = locales.find((locale) => locale.toLowerCase() === value.toLowerCase());
@@ -76,8 +86,8 @@ export function I18nProvider({children}:{children:ReactNode}) {
   const value = useMemo<I18nContextValue>(() => ({
     locale, setLocale,
     t:(key,vars)=>interpolate(messages[locale][key] ?? en[key] ?? key,vars),
-    fieldLabel:(field)=>fieldNames[locale]?.[field.key] ?? field.label,
-    groupLabel:(group)=>groupNames[locale]?.[group.key] ?? group.label,
+    fieldLabel:(field)=>fieldNames[locale]?.[field.key] ?? performanceFieldNames[locale]?.[field.label] ?? field.label,
+    groupLabel:(group)=>performanceGroupNames[locale]?.[group.key] ?? groupNames[locale]?.[group.key] ?? group.label,
     optionLabel:(option)=>option.label,
   }),[locale]);
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;

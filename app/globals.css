@@ -46,3 +46,37 @@ tbody th,
 .local-model-dialog-actions button{
   font-size:var(--font-size-regular);
 }
+
+/* Submission form hierarchy and compact option controls. */
+[data-theme='dark']{--ink:#f2f2f2;--muted:#a0a0a0;--line:#2a2a2a;--soft:#171717}
+.form-section + .form-section{margin-top:24px;padding-top:8px;border-top:1px solid var(--line)}
+.section-label strong{font-size:14px;letter-spacing:-.01em}
+.subgroup-label{display:flex;align-items:center;gap:10px;min-height:46px;padding-top:9px;border-bottom:1px solid var(--line);color:#777}
+.subgroup-label>span{width:14px;height:2px;border-radius:2px;background:#c8c8c8}
+.subgroup-label strong{font:650 11px/1.2 var(--font-geist-mono);letter-spacing:.06em;text-transform:uppercase}
+.form-subgroup{margin-left:15px;padding-left:19px;border-left:2px solid #ededed}
+.field-row>.field-label{font-size:var(--font-size-regular);font-weight:580}
+.field-label em{margin-left:8px;padding:3px 5px;border-radius:4px;background:#f1f1f1;color:#999;font-size:8px;font-style:normal;text-transform:uppercase}
+.field-label small{display:block;margin-top:5px;color:#aaa;font-size:10px;font-weight:400;line-height:1.4}
+.choice-tabs{width:min(100%,420px);display:grid;grid-auto-flow:column;grid-auto-columns:minmax(68px,1fr);gap:3px;padding:3px;border:1px solid #ddd;border-radius:8px;background:#f3f3f3}
+.choice-tabs button{min-height:34px;padding:0 12px;border:0;border-radius:5px;background:transparent;color:#777;font-size:12px;cursor:pointer}
+.choice-tabs button:hover{color:#111}
+.choice-tabs button:focus-visible,.multi-select button:focus-visible{outline:2px solid currentColor;outline-offset:1px}
+.choice-tabs button.selected{background:#fff;color:#111;font-weight:650;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.select-text-control{display:grid;grid-template-columns:auto minmax(150px,1fr);gap:8px}
+.select-text-control .choice-tabs{width:max-content}
+.select-text-control .choice-tabs button{min-width:76px}
+.recorder-form .multi-select{width:max-content;max-width:100%;gap:3px;padding:3px;border:1px solid #ddd;border-radius:8px;background:#f3f3f3}
+.recorder-form .multi-select button{min-height:34px;border:0;border-radius:5px;background:transparent;color:#777}
+.recorder-form .multi-select button.selected{border:0;background:#fff;color:#111;font-weight:650;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.input-wrap select option{background:#fff;color:#111}
+[data-theme='dark'] .form-subgroup{border-left-color:#303030}
+[data-theme='dark'] .subgroup-label{color:#aaa}
+[data-theme='dark'] .subgroup-label>span{background:#555}
+[data-theme='dark'] .field-label em{background:#222;color:#888}
+[data-theme='dark'] .choice-tabs,[data-theme='dark'] .recorder-form .multi-select{border-color:#333;background:#171717}
+[data-theme='dark'] .choice-tabs button,[data-theme='dark'] .recorder-form .multi-select button{background:transparent;color:#999}
+[data-theme='dark'] .choice-tabs button:hover,[data-theme='dark'] .recorder-form .multi-select button:hover{color:#eee}
+[data-theme='dark'] .choice-tabs button.selected,[data-theme='dark'] .recorder-form .multi-select button.selected{background:#eee;color:#111;box-shadow:none}
+[data-theme='dark'] .input-wrap select option{background:#171717;color:#eee}
+@media(max-width:760px){.form-subgroup{margin-left:6px;padding-left:13px}.choice-tabs{width:100%}.select-text-control{grid-template-columns:1fr}.select-text-control .choice-tabs{width:100%}}

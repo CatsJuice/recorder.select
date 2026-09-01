@@ -1,0 +1,4462 @@
+{
+  "endedAt" : "2026-08-27T12:07:55Z",
+  "id" : "C3F9987D-BA73-45F6-9F74-63BB9B92E704",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.792e-06,
+      "physicalFootprintBytes" : 5112507264,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.182118651,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 8769536,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 139266064
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.061782653,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10322904
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001443793,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7160624
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.388653743,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 4273391224
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03942377,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13288456
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001325229,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 24708248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.315960443,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627607568
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 5.98e-07,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/audio-composer",
+            "identity" : {
+              "pid" : 12653,
+              "startTimeNanoseconds" : 12982370582564
+            },
+            "name" : "audio-composer",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 81992
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025607056,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13468368
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.361832014176562,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 3887104,
+      "elapsedSeconds" : 1.025619958,
+      "physicalFootprintBytes" : 9530764976,
+      "processes" : [
+        {
+          "cpuPercent" : 3.2753603662584516,
+          "process" : {
+            "cpuTimeSeconds" : 0.034920921,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 220792656
+          }
+        },
+        {
+          "cpuPercent" : 1.3214926976147976,
+          "process" : {
+            "cpuTimeSeconds" : 1.402208423,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8489420600
+          }
+        },
+        {
+          "cpuPercent" : 0.593077013346872,
+          "process" : {
+            "cpuTimeSeconds" : 0.1882019,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 12656640,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 144787472
+          }
+        },
+        {
+          "cpuPercent" : 0.14096774850716046,
+          "process" : {
+            "cpuTimeSeconds" : 1.317406363,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627689488
+          }
+        },
+        {
+          "cpuPercent" : 0.020215367116238024,
+          "process" : {
+            "cpuTimeSeconds" : 0.061990004,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10814424
+          }
+        },
+        {
+          "cpuPercent" : 0.00878874323937416,
+          "process" : {
+            "cpuTimeSeconds" : 0.025697203,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13501136
+          }
+        },
+        {
+          "cpuPercent" : 0.001422527123539569,
+          "process" : {
+            "cpuTimeSeconds" : 0.039438361,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13370376
+          }
+        },
+        {
+          "cpuPercent" : 0.0005075509701285959,
+          "process" : {
+            "cpuTimeSeconds" : 0.001448999,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 7.627302997574842,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 3915776,
+      "elapsedSeconds" : 2.025442333,
+      "physicalFootprintBytes" : 9983831872,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6112632181710764,
+          "process" : {
+            "cpuTimeSeconds" : 0.071028052,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 285001672
+          }
+        },
+        {
+          "cpuPercent" : 2.91626354609103,
+          "process" : {
+            "cpuTimeSeconds" : 1.431366616,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8881309520
+          }
+        },
+        {
+          "cpuPercent" : 0.7661182058507693,
+          "process" : {
+            "cpuTimeSeconds" : 0.195861915,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 12685312,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 141641744
+          }
+        },
+        {
+          "cpuPercent" : 0.31319991099525246,
+          "process" : {
+            "cpuTimeSeconds" : 1.320537885,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627804176
+          }
+        },
+        {
+          "cpuPercent" : 0.011341827745987767,
+          "process" : {
+            "cpuTimeSeconds" : 0.062103405,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10814424
+          }
+        },
+        {
+          "cpuPercent" : 0.009050678726093114,
+          "process" : {
+            "cpuTimeSeconds" : 0.025787696,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13501136
+          }
+        },
+        {
+          "cpuPercent" : 6.560999463291447e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001449655,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039438361,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13370376
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 7.299557343843255,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 5554176,
+      "elapsedSeconds" : 3.026226292,
+      "physicalFootprintBytes" : 9651072952,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6673316958644224,
+          "process" : {
+            "cpuTimeSeconds" : 0.107731927,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 376915984
+          }
+        },
+        {
+          "cpuPercent" : 2.158004842465021,
+          "process" : {
+            "cpuTimeSeconds" : 1.452964646,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8376665912
+          }
+        },
+        {
+          "cpuPercent" : 1.0425645830611634,
+          "process" : {
+            "cpuTimeSeconds" : 0.206296248,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 14323712,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223332440
+          }
+        },
+        {
+          "cpuPercent" : 0.4125522408453227,
+          "process" : {
+            "cpuTimeSeconds" : 1.324666845,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626083856
+          }
+        },
+        {
+          "cpuPercent" : 0.010506445504283281,
+          "process" : {
+            "cpuTimeSeconds" : 0.062208557,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10814424
+          }
+        },
+        {
+          "cpuPercent" : 0.008424780052021644,
+          "process" : {
+            "cpuTimeSeconds" : 0.025872014,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13501136
+          }
+        },
+        {
+          "cpuPercent" : 0.00017275605102037988,
+          "process" : {
+            "cpuTimeSeconds" : 0.03944009,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13370376
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001449655,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.128404452131536,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 7995392,
+      "elapsedSeconds" : 4.026258583,
+      "physicalFootprintBytes" : 9752768488,
+      "processes" : [
+        {
+          "cpuPercent" : 2.365494265681276,
+          "process" : {
+            "cpuTimeSeconds" : 1.476623748,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8497710928
+          }
+        },
+        {
+          "cpuPercent" : 1.540208978894405,
+          "process" : {
+            "cpuTimeSeconds" : 0.123136725,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 390711336
+          }
+        },
+        {
+          "cpuPercent" : 0.9465334672343226,
+          "process" : {
+            "cpuTimeSeconds" : 0.215763247,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 16764928,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 190187608
+          }
+        },
+        {
+          "cpuPercent" : 0.2574674284721664,
+          "process" : {
+            "cpuTimeSeconds" : 1.327241972,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626083856
+          }
+        },
+        {
+          "cpuPercent" : 0.010594637102579659,
+          "process" : {
+            "cpuTimeSeconds" : 0.062314522,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10814424
+          }
+        },
+        {
+          "cpuPercent" : 0.008105674746786775,
+          "process" : {
+            "cpuTimeSeconds" : 0.025953085,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13501136
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001449655,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03944009,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13370376
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.74236143228436,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 9568256,
+      "elapsedSeconds" : 5.026232375,
+      "physicalFootprintBytes" : 9750884328,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1833722660733943,
+          "process" : {
+            "cpuTimeSeconds" : 0.154966422,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 430671912
+          }
+        },
+        {
+          "cpuPercent" : 2.3049334795828957,
+          "process" : {
+            "cpuTimeSeconds" : 1.499670168,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8434075472
+          }
+        },
+        {
+          "cpuPercent" : 0.9713806398243315,
+          "process" : {
+            "cpuTimeSeconds" : 0.225475825,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 18337792,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 211765336
+          }
+        },
+        {
+          "cpuPercent" : 0.2633204992470095,
+          "process" : {
+            "cpuTimeSeconds" : 1.329874844,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626280464
+          }
+        },
+        {
+          "cpuPercent" : 0.010438019981568953,
+          "process" : {
+            "cpuTimeSeconds" : 0.062418889,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10814424
+          }
+        },
+        {
+          "cpuPercent" : 0.008870821795253276,
+          "process" : {
+            "cpuTimeSeconds" : 0.026041782,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13517520
+          }
+        },
+        {
+          "cpuPercent" : 4.570577990721443e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001450112,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03944009,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13370376
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 7.166689193239407,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 10403840,
+      "elapsedSeconds" : 6.026062167,
+      "physicalFootprintBytes" : 9888608232,
+      "processes" : [
+        {
+          "cpuPercent" : 3.824740515964848,
+          "process" : {
+            "cpuTimeSeconds" : 0.193209459,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 439683112
+          }
+        },
+        {
+          "cpuPercent" : 2.41967044572227,
+          "process" : {
+            "cpuTimeSeconds" : 1.523864109,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8569718608
+          }
+        },
+        {
+          "cpuPercent" : 0.65340262380686,
+          "process" : {
+            "cpuTimeSeconds" : 0.232009105,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 19173376,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 205064280
+          }
+        },
+        {
+          "cpuPercent" : 0.2500041524742644,
+          "process" : {
+            "cpuTimeSeconds" : 1.3323746,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626280464
+          }
+        },
+        {
+          "cpuPercent" : 0.010379185386005034,
+          "process" : {
+            "cpuTimeSeconds" : 0.062522669,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10683352
+          }
+        },
+        {
+          "cpuPercent" : 0.008257343054635607,
+          "process" : {
+            "cpuTimeSeconds" : 0.026124346,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13517520
+          }
+        },
+        {
+          "cpuPercent" : 0.00023492683052402568,
+          "process" : {
+            "cpuTimeSeconds" : 0.039442439,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001450112,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.190867495229416,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 13615104,
+      "elapsedSeconds" : 7.026216292,
+      "physicalFootprintBytes" : 9873092704,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0329185250541704,
+          "process" : {
+            "cpuTimeSeconds" : 1.544194215,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8490551120
+          }
+        },
+        {
+          "cpuPercent" : 1.3949275209427225,
+          "process" : {
+            "cpuTimeSeconds" : 0.207159366,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 495012000
+          }
+        },
+        {
+          "cpuPercent" : 1.3063114345425075,
+          "process" : {
+            "cpuTimeSeconds" : 0.245072811,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 22384640,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 212666456
+          }
+        },
+        {
+          "cpuPercent" : 0.4380431601491901,
+          "process" : {
+            "cpuTimeSeconds" : 1.33675523,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627034128
+          }
+        },
+        {
+          "cpuPercent" : 0.010983502535203169,
+          "process" : {
+            "cpuTimeSeconds" : 0.062632509,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10650584
+          }
+        },
+        {
+          "cpuPercent" : 0.0074334633235791665,
+          "process" : {
+            "cpuTimeSeconds" : 0.026198684,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13517520
+          }
+        },
+        {
+          "cpuPercent" : 0.0002022908378430557,
+          "process" : {
+            "cpuTimeSeconds" : 0.039444462,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 4.759784419845278e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001450588,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.018861413606326,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 15089664,
+      "elapsedSeconds" : 8.026240417,
+      "physicalFootprintBytes" : 9980227632,
+      "processes" : [
+        {
+          "cpuPercent" : 2.718172673974025,
+          "process" : {
+            "cpuTimeSeconds" : 0.234345042,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 432867464
+          }
+        },
+        {
+          "cpuPercent" : 2.3346968895542073,
+          "process" : {
+            "cpuTimeSeconds" : 1.567544576,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8682555192
+          }
+        },
+        {
+          "cpuPercent" : 0.7092821476874815,
+          "process" : {
+            "cpuTimeSeconds" : 0.252166663,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 23859200,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 189941848
+          }
+        },
+        {
+          "cpuPercent" : 0.2380639114562242,
+          "process" : {
+            "cpuTimeSeconds" : 1.339136215,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627034128
+          }
+        },
+        {
+          "cpuPercent" : 0.010234413031895815,
+          "process" : {
+            "cpuTimeSeconds" : 0.062734868,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10650584
+          }
+        },
+        {
+          "cpuPercent" : 0.008411377902493203,
+          "process" : {
+            "cpuTimeSeconds" : 0.02628281,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13517520
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001450588,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039444462,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.1265975865074305,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 16531456,
+      "elapsedSeconds" : 9.026225333,
+      "physicalFootprintBytes" : 9402232880,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5685131838992645,
+          "process" : {
+            "cpuTimeSeconds" : 0.260027326,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 356583536
+          }
+        },
+        {
+          "cpuPercent" : 2.0993455649395263,
+          "process" : {
+            "cpuTimeSeconds" : 1.588535704,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8138032976
+          }
+        },
+        {
+          "cpuPercent" : 1.1616735005493735,
+          "process" : {
+            "cpuTimeSeconds" : 0.26378211,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 25300992,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 232753240
+          }
+        },
+        {
+          "cpuPercent" : 0.278529381945236,
+          "process" : {
+            "cpuTimeSeconds" : 1.3419212,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627034128
+          }
+        },
+        {
+          "cpuPercent" : 0.010531067632124025,
+          "process" : {
+            "cpuTimeSeconds" : 0.062840167,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10650584
+          }
+        },
+        {
+          "cpuPercent" : 0.007949281376572748,
+          "process" : {
+            "cpuTimeSeconds" : 0.026362294,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13517520
+          }
+        },
+        {
+          "cpuPercent" : 5.560616533356774e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451144,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039444462,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.083294876647417,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 18890752,
+      "elapsedSeconds" : 10.026221125,
+      "physicalFootprintBytes" : 9863671856,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5549835041932476,
+          "process" : {
+            "cpuTimeSeconds" : 0.285577259,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 356419696
+          }
+        },
+        {
+          "cpuPercent" : 2.3350265475081993,
+          "process" : {
+            "cpuTimeSeconds" : 1.611886059,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8574469944
+          }
+        },
+        {
+          "cpuPercent" : 0.7598926865714387,
+          "process" : {
+            "cpuTimeSeconds" : 0.271381066,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 27660288,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 257624176
+          }
+        },
+        {
+          "cpuPercent" : 0.4154517071581453,
+          "process" : {
+            "cpuTimeSeconds" : 1.346075733,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627296272
+          }
+        },
+        {
+          "cpuPercent" : 0.009726062710275696,
+          "process" : {
+            "cpuTimeSeconds" : 0.062937428,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10650584
+          }
+        },
+        {
+          "cpuPercent" : 0.008214368506111076,
+          "process" : {
+            "cpuTimeSeconds" : 0.026444438,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451144,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039444462,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 4.5690472716627255,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 19726336,
+      "elapsedSeconds" : 11.025348958,
+      "physicalFootprintBytes" : 10040062048,
+      "processes" : [
+        {
+          "cpuPercent" : 2.1563597304117823,
+          "process" : {
+            "cpuTimeSeconds" : 1.633431232,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8709687144
+          }
+        },
+        {
+          "cpuPercent" : 1.7626230150686613,
+          "process" : {
+            "cpuTimeSeconds" : 0.303188429,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 392775792
+          }
+        },
+        {
+          "cpuPercent" : 0.42663782661190214,
+          "process" : {
+            "cpuTimeSeconds" : 0.275643799,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 28495872,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 264079472
+          }
+        },
+        {
+          "cpuPercent" : 0.20736437564776192,
+          "process" : {
+            "cpuTimeSeconds" : 1.348147605,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 625657872
+          }
+        },
+        {
+          "cpuPercent" : 0.009518933138295223,
+          "process" : {
+            "cpuTimeSeconds" : 0.026539546,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0.005440348326094836,
+          "process" : {
+            "cpuTimeSeconds" : 0.062991785,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10585048
+          }
+        },
+        {
+          "cpuPercent" : 0.0011030424582280265,
+          "process" : {
+            "cpuTimeSeconds" : 0.039455483,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13337608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451144,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.652801301963456,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 22069248,
+      "elapsedSeconds" : 12.026250542,
+      "physicalFootprintBytes" : 10074026032,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1073807651183336,
+          "process" : {
+            "cpuTimeSeconds" : 0.334291749,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 386435184
+          }
+        },
+        {
+          "cpuPercent" : 2.238158109335668,
+          "process" : {
+            "cpuTimeSeconds" : 1.65583407,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8777762640
+          }
+        },
+        {
+          "cpuPercent" : 1.026675514929692,
+          "process" : {
+            "cpuTimeSeconds" : 0.285920305,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 30838784,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 234686552
+          }
+        },
+        {
+          "cpuPercent" : 0.27247521666295993,
+          "process" : {
+            "cpuTimeSeconds" : 1.350874945,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627279888
+          }
+        },
+        {
+          "cpuPercent" : 0.008111695916802988,
+          "process" : {
+            "cpuTimeSeconds" : 0.02662074,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.062991785,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10585048
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451144,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039455483,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13337608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.542621196159272,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 26034176,
+      "elapsedSeconds" : 13.026255208,
+      "physicalFootprintBytes" : 9188864072,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9183025735367496,
+          "process" : {
+            "cpuTimeSeconds" : 1.675017708,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7775864656
+          }
+        },
+        {
+          "cpuPercent" : 1.8721816455784146,
+          "process" : {
+            "cpuTimeSeconds" : 0.353014163,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 462293104
+          }
+        },
+        {
+          "cpuPercent" : 1.3126000057456166,
+          "process" : {
+            "cpuTimeSeconds" : 0.299046724,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 34803712,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 275499120
+          }
+        },
+        {
+          "cpuPercent" : 0.4314035308935077,
+          "process" : {
+            "cpuTimeSeconds" : 1.355189118,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627345424
+          }
+        },
+        {
+          "cpuPercent" : 0.008009244368947354,
+          "process" : {
+            "cpuTimeSeconds" : 0.026700835,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 7.98974499140564e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.062992584,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10585048
+          }
+        },
+        {
+          "cpuPercent" : 4.429858612204121e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451587,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039455483,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13337608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.166133183594841,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 26836992,
+      "elapsedSeconds" : 14.025224792,
+      "physicalFootprintBytes" : 9973575776,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5266248178065505,
+          "process" : {
+            "cpuTimeSeconds" : 1.70025496,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8548943696
+          }
+        },
+        {
+          "cpuPercent" : 1.894942483367475,
+          "process" : {
+            "cpuTimeSeconds" : 0.371941841,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 439617648
+          }
+        },
+        {
+          "cpuPercent" : 0.4842012814956754,
+          "process" : {
+            "cpuTimeSeconds" : 0.30388318,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 35606528,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 309807240
+          }
+        },
+        {
+          "cpuPercent" : 0.2520664777915785,
+          "process" : {
+            "cpuTimeSeconds" : 1.35770689,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627345424
+          }
+        },
+        {
+          "cpuPercent" : 0.008298123133561229,
+          "process" : {
+            "cpuTimeSeconds" : 0.026783721,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.062992584,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10585048
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451587,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039455483,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13337608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.306283973919501,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 28524544,
+      "elapsedSeconds" : 15.026091208,
+      "physicalFootprintBytes" : 9758011488,
+      "processes" : [
+        {
+          "cpuPercent" : 2.176441256249667,
+          "process" : {
+            "cpuTimeSeconds" : 1.722037846,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8359397200
+          }
+        },
+        {
+          "cpuPercent" : 1.8670806387575511,
+          "process" : {
+            "cpuTimeSeconds" : 0.390628495,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 461064304
+          }
+        },
+        {
+          "cpuPercent" : 1.0360802843793422,
+          "process" : {
+            "cpuTimeSeconds" : 0.314252777,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 37294080,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 264194184
+          }
+        },
+        {
+          "cpuPercent" : 0.2181011776832965,
+          "process" : {
+            "cpuTimeSeconds" : 1.359889753,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 625494032
+          }
+        },
+        {
+          "cpuPercent" : 0.008239706211524941,
+          "process" : {
+            "cpuTimeSeconds" : 0.026866188,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0.00023719866790541312,
+          "process" : {
+            "cpuTimeSeconds" : 0.062994958,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10585048
+          }
+        },
+        {
+          "cpuPercent" : 0.00010371197021327223,
+          "process" : {
+            "cpuTimeSeconds" : 0.039456521,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13337608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451587,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 4.980567855662139,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 32440320,
+      "elapsedSeconds" : 16.02623425,
+      "physicalFootprintBytes" : 9231495264,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9732527742455608,
+          "process" : {
+            "cpuTimeSeconds" : 1.741775274,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7781812048
+          }
+        },
+        {
+          "cpuPercent" : 1.3493961990443022,
+          "process" : {
+            "cpuTimeSeconds" : 0.404125808,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 492537968
+          }
+        },
+        {
+          "cpuPercent" : 1.156166584527402,
+          "process" : {
+            "cpuTimeSeconds" : 0.325817314,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 41209856,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 283183240
+          }
+        },
+        {
+          "cpuPercent" : 0.4908902952494268,
+          "process" : {
+            "cpuTimeSeconds" : 1.364799875,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626280464
+          }
+        },
+        {
+          "cpuPercent" : 0.008387916995021092,
+          "process" : {
+            "cpuTimeSeconds" : 0.026950088,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0.002365612537975369,
+          "process" : {
+            "cpuTimeSeconds" : 0.06301862,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10470360
+          }
+        },
+        {
+          "cpuPercent" : 0.0001084730624502988,
+          "process" : {
+            "cpuTimeSeconds" : 0.039457606,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001451587,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.966594086422716,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 32440320,
+      "elapsedSeconds" : 17.026208958,
+      "physicalFootprintBytes" : 10179948688,
+      "processes" : [
+        {
+          "cpuPercent" : 3.024712635487916,
+          "process" : {
+            "cpuTimeSeconds" : 0.434370749,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 496044168
+          }
+        },
+        {
+          "cpuPercent" : 2.387098167842613,
+          "process" : {
+            "cpuTimeSeconds" : 1.765644531,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8692074344
+          }
+        },
+        {
+          "cpuPercent" : 0.3080629575486781,
+          "process" : {
+            "cpuTimeSeconds" : 0.328897721,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 41209856,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 317786248
+          }
+        },
+        {
+          "cpuPercent" : 0.23843002656940707,
+          "process" : {
+            "cpuTimeSeconds" : 1.367184003,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626362384
+          }
+        },
+        {
+          "cpuPercent" : 0.008238595238505978,
+          "process" : {
+            "cpuTimeSeconds" : 0.027032468,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 5.1703735594897605e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452104,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.06301862,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10470360
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039457606,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.852380123785055,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 33243136,
+      "elapsedSeconds" : 18.025454292,
+      "physicalFootprintBytes" : 10186813584,
+      "processes" : [
+        {
+          "cpuPercent" : 2.590796550474781,
+          "process" : {
+            "cpuTimeSeconds" : 0.460261422,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 538364064
+          }
+        },
+        {
+          "cpuPercent" : 2.2488731306108956,
+          "process" : {
+            "cpuTimeSeconds" : 1.788118252,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8715781968
+          }
+        },
+        {
+          "cpuPercent" : 0.7768357059834841,
+          "process" : {
+            "cpuTimeSeconds" : 0.336660893,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 42012672,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 258623624
+          }
+        },
+        {
+          "cpuPercent" : 0.22774000711741135,
+          "process" : {
+            "cpuTimeSeconds" : 1.369459883,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 626362384
+          }
+        },
+        {
+          "cpuPercent" : 0.00813472959848304,
+          "process" : {
+            "cpuTimeSeconds" : 0.027113761,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.06301862,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10470360
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452104,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039457606,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 7.060569128137898,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 35291136,
+      "elapsedSeconds" : 19.02621,
+      "physicalFootprintBytes" : 10336596112,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5847786744729873,
+          "process" : {
+            "cpuTimeSeconds" : 0.496129167,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 533006520
+          }
+        },
+        {
+          "cpuPercent" : 2.400463242089951,
+          "process" : {
+            "cpuTimeSeconds" : 1.812136249,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8849344336
+          }
+        },
+        {
+          "cpuPercent" : 0.7841380311511551,
+          "process" : {
+            "cpuTimeSeconds" : 0.344506639,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 44060672,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 280676464
+          }
+        },
+        {
+          "cpuPercent" : 0.2826131551258906,
+          "process" : {
+            "cpuTimeSeconds" : 1.372287588,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 625903632
+          }
+        },
+        {
+          "cpuPercent" : 0.008023432953702933,
+          "process" : {
+            "cpuTimeSeconds" : 0.02719404,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0.00037209283731254073,
+          "process" : {
+            "cpuTimeSeconds" : 0.063022343,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10453976
+          }
+        },
+        {
+          "cpuPercent" : 0.00018049950689953665,
+          "process" : {
+            "cpuTimeSeconds" : 0.039459412,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452104,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.918026407732194,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 38748160,
+      "elapsedSeconds" : 20.025680458,
+      "physicalFootprintBytes" : 9668980904,
+      "processes" : [
+        {
+          "cpuPercent" : 2.2107998240711977,
+          "process" : {
+            "cpuTimeSeconds" : 0.518227715,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 557254840
+          }
+        },
+        {
+          "cpuPercent" : 2.0780870949534473,
+          "process" : {
+            "cpuTimeSeconds" : 1.832908237,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8144734032
+          }
+        },
+        {
+          "cpuPercent" : 1.1563218790377674,
+          "process" : {
+            "cpuTimeSeconds" : 0.356064915,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 47517696,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 292096136
+          }
+        },
+        {
+          "cpuPercent" : 0.46474896066121474,
+          "process" : {
+            "cpuTimeSeconds" : 1.376933091,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627230736
+          }
+        },
+        {
+          "cpuPercent" : 0.008068649008567954,
+          "process" : {
+            "cpuTimeSeconds" : 0.027274692,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063022343,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10453976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452104,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039459412,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.923818091904054,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 39501824,
+      "elapsedSeconds" : 21.025828,
+      "physicalFootprintBytes" : 10055905472,
+      "processes" : [
+        {
+          "cpuPercent" : 2.7617168026612293,
+          "process" : {
+            "cpuTimeSeconds" : 0.545851823,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 493275320
+          }
+        },
+        {
+          "cpuPercent" : 2.3959912065777105,
+          "process" : {
+            "cpuTimeSeconds" : 1.85687417,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8574371688
+          }
+        },
+        {
+          "cpuPercent" : 0.5406014511801294,
+          "process" : {
+            "cpuTimeSeconds" : 0.361472288,
+            "diskReadBytes" : 987136,
+            "diskWrittenBytes" : 48271360,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 313411720
+          }
+        },
+        {
+          "cpuPercent" : 0.21710734266165477,
+          "process" : {
+            "cpuTimeSeconds" : 1.37910471,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627230736
+          }
+        },
+        {
+          "cpuPercent" : 0.008143053715745637,
+          "process" : {
+            "cpuTimeSeconds" : 0.027356143,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13550288
+          }
+        },
+        {
+          "cpuPercent" : 0.0002064481212396595,
+          "process" : {
+            "cpuTimeSeconds" : 0.063024408,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10404824
+          }
+        },
+        {
+          "cpuPercent" : 5.17869863446191e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452622,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039459412,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.333889429146186,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 42090496,
+      "elapsedSeconds" : 22.026223167,
+      "physicalFootprintBytes" : 9325981912,
+      "processes" : [
+        {
+          "cpuPercent" : 2.8860079123962117,
+          "process" : {
+            "cpuTimeSeconds" : 0.574719437,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 370116816
+          }
+        },
+        {
+          "cpuPercent" : 2.2417549159012955,
+          "process" : {
+            "cpuTimeSeconds" : 1.879297572,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7939393360
+          }
+        },
+        {
+          "cpuPercent" : 0.9245033278976444,
+          "process" : {
+            "cpuTimeSeconds" : 0.370719735,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 50860032,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 341723296
+          }
+        },
+        {
+          "cpuPercent" : 0.2733571311001468,
+          "process" : {
+            "cpuTimeSeconds" : 1.381838995,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 627230736
+          }
+        },
+        {
+          "cpuPercent" : 0.00826614185088715,
+          "process" : {
+            "cpuTimeSeconds" : 0.027438826,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063024408,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10404824
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452622,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039459412,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 5.038349657391009,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 44597248,
+      "elapsedSeconds" : 23.026248,
+      "physicalFootprintBytes" : 9153032336,
+      "processes" : [
+        {
+          "cpuPercent" : 2.1316095435055105,
+          "process" : {
+            "cpuTimeSeconds" : 1.900615442,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7812990800
+          }
+        },
+        {
+          "cpuPercent" : 1.6792628013717763,
+          "process" : {
+            "cpuTimeSeconds" : 0.591513463,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 394234016
+          }
+        },
+        {
+          "cpuPercent" : 0.9887600857228642,
+          "process" : {
+            "cpuTimeSeconds" : 0.380608159,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 53366784,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 275646600
+          }
+        },
+        {
+          "cpuPercent" : 0.22974327387243879,
+          "process" : {
+            "cpuTimeSeconds" : 1.384136619,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 622659600
+          }
+        },
+        {
+          "cpuPercent" : 0.008627281778792023,
+          "process" : {
+            "cpuTimeSeconds" : 0.027525106,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0.0002448796137723123,
+          "process" : {
+            "cpuTimeSeconds" : 0.063026857,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10388440
+          }
+        },
+        {
+          "cpuPercent" : 0.000101791525855319,
+          "process" : {
+            "cpuTimeSeconds" : 0.03946043,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452622,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 6.006424713737845,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 46153728,
+      "elapsedSeconds" : 24.026211625,
+      "physicalFootprintBytes" : 10014257320,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6164356287853745,
+          "process" : {
+            "cpuTimeSeconds" : 0.617674709,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 377440440
+          }
+        },
+        {
+          "cpuPercent" : 2.36641890804769,
+          "process" : {
+            "cpuTimeSeconds" : 1.924276818,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8698038096
+          }
+        },
+        {
+          "cpuPercent" : 0.5927545636987613,
+          "process" : {
+            "cpuTimeSeconds" : 0.386535,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 54923264,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268028040
+          }
+        },
+        {
+          "cpuPercent" : 0.4226595436532504,
+          "process" : {
+            "cpuTimeSeconds" : 1.388362712,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 623249424
+          }
+        },
+        {
+          "cpuPercent" : 0.008156069552768,
+          "process" : {
+            "cpuTimeSeconds" : 0.027606657,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063026857,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10388440
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001452622,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03946043,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 7.95170127874578,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 46153728,
+      "elapsedSeconds" : 25.026259542,
+      "physicalFootprintBytes" : 9575542976,
+      "processes" : [
+        {
+          "cpuPercent" : 4.641203086744974,
+          "process" : {
+            "cpuTimeSeconds" : 0.664099596,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 412207312
+          }
+        },
+        {
+          "cpuPercent" : 2.5280320351262615,
+          "process" : {
+            "cpuTimeSeconds" : 1.949564141,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 8213645136
+          }
+        },
+        {
+          "cpuPercent" : 0.47846996382001894,
+          "process" : {
+            "cpuTimeSeconds" : 0.391321025,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 54923264,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 278595720
+          }
+        },
+        {
+          "cpuPercent" : 0.2955764253301848,
+          "process" : {
+            "cpuTimeSeconds" : 1.391319295,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 623593488
+          }
+        },
+        {
+          "cpuPercent" : 0.008362183675122016,
+          "process" : {
+            "cpuTimeSeconds" : 0.027690302,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 5.758404921836271e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.001453198,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063026857,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10388440
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03946043,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 3.9635041901218417,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 49676288,
+      "elapsedSeconds" : 26.025542958,
+      "physicalFootprintBytes" : 9173184656,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5021232341632957,
+          "process" : {
+            "cpuTimeSeconds" : 1.964572047,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7738869560
+          }
+        },
+        {
+          "cpuPercent" : 1.3293387454667949,
+          "process" : {
+            "cpuTimeSeconds" : 0.67738119,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 12652,
+              "startTimeNanoseconds" : 12982370061729
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 453314720
+          }
+        },
+        {
+          "cpuPercent" : 0.8924583596055179,
+          "process" : {
+            "cpuTimeSeconds" : 0.400237691,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 58445824,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 309905568
+          }
+        },
+        {
+          "cpuPercent" : 0.23157084200918707,
+          "process" : {
+            "cpuTimeSeconds" : 1.393632949,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 623593488
+          }
+        },
+        {
+          "cpuPercent" : 0.00801300887704646,
+          "process" : {
+            "cpuTimeSeconds" : 0.027770361,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063026857,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10388440
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.001453198,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7177008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.03946043,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 1.321583297724923,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 51490816,
+      "elapsedSeconds" : 27.026220167,
+      "physicalFootprintBytes" : 5437400904,
+      "processes" : [
+        {
+          "cpuPercent" : 0.49666319305944373,
+          "process" : {
+            "cpuTimeSeconds" : 0.405207544,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 60260352,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 319817912
+          }
+        },
+        {
+          "cpuPercent" : 0.48183830762028007,
+          "process" : {
+            "cpuTimeSeconds" : 1.969393555,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 4446602872
+          }
+        },
+        {
+          "cpuPercent" : 0.3348346456692475,
+          "process" : {
+            "cpuTimeSeconds" : 1.396983467,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 623478800
+          }
+        },
+        {
+          "cpuPercent" : 0.006000108677518144,
+          "process" : {
+            "cpuTimeSeconds" : 0.027830401,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0.0019201546990311844,
+          "process" : {
+            "cpuTimeSeconds" : 0.001472412,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7242544
+          }
+        },
+        {
+          "cpuPercent" : 0.0002148606538410802,
+          "process" : {
+            "cpuTimeSeconds" : 0.063029007,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10322904
+          }
+        },
+        {
+          "cpuPercent" : 0.00011202734556123115,
+          "process" : {
+            "cpuTimeSeconds" : 0.039461551,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    },
+    {
+      "cpuPercent" : 0.48651247219246746,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 51519488,
+      "elapsedSeconds" : 27.731201,
+      "physicalFootprintBytes" : 5245298504,
+      "processes" : [
+        {
+          "cpuPercent" : 0.28484339038250656,
+          "process" : {
+            "cpuTimeSeconds" : 1.971401739,
+            "diskReadBytes" : 253952,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (GPU).app/Contents/MacOS/Screen Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 7496,
+              "startTimeNanoseconds" : 12976045859465
+            },
+            "name" : "Screen Studio Helper (GPU)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 4254434936
+          }
+        },
+        {
+          "cpuPercent" : 0.17081292961284664,
+          "process" : {
+            "cpuTimeSeconds" : 1.398187721,
+            "diskReadBytes" : 32768,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Renderer).app/Contents/MacOS/Screen Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 7502,
+              "startTimeNanoseconds" : 12976058421710
+            },
+            "name" : "Screen Studio Helper (Renderer)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 623413264
+          }
+        },
+        {
+          "cpuPercent" : 0.019427716530911923,
+          "process" : {
+            "cpuTimeSeconds" : 0.405344512,
+            "diskReadBytes" : 991232,
+            "diskWrittenBytes" : 60289024,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/MacOS/Screen Studio",
+            "identity" : {
+              "pid" : 7461,
+              "startTimeNanoseconds" : 12975979477476
+            },
+            "name" : "Screen Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 319817912
+          }
+        },
+        {
+          "cpuPercent" : 0.009467905484771458,
+          "process" : {
+            "cpuTimeSeconds" : 0.027897151,
+            "diskReadBytes" : 5066752,
+            "diskWrittenBytes" : 90112,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Resources/app.asar.unpacked/bin/discovery/polyrecorder",
+            "identity" : {
+              "pid" : 7531,
+              "startTimeNanoseconds" : 12976066779333
+            },
+            "name" : "polyrecorder",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13451984
+          }
+        },
+        {
+          "cpuPercent" : 0.0019605301814309443,
+          "process" : {
+            "cpuTimeSeconds" : 0.001486234,
+            "diskReadBytes" : 28672,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7497,
+              "startTimeNanoseconds" : 12976045975023
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 7373616
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.063029007,
+            "diskReadBytes" : 446464,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper.app/Contents/MacOS/Screen Studio Helper",
+            "identity" : {
+              "pid" : 7543,
+              "startTimeNanoseconds" : 12976083436264
+            },
+            "name" : "Screen Studio Helper",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 10322904
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.039461551,
+            "diskReadBytes" : 135168,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Screen Studio Helper (Plugin).app/Contents/MacOS/Screen Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 7544,
+              "startTimeNanoseconds" : 12976083443985
+            },
+            "name" : "Screen Studio Helper (Plugin)",
+            "parentPID" : 7461,
+            "physicalFootprintBytes" : 13272072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000302556,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Screen Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 7493,
+              "startTimeNanoseconds" : 12976037970285
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3211816
+          }
+        }
+      ]
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 1,
+  "startedAt" : "2026-08-27T12:07:27Z",
+  "summary" : {
+    "averageCPUPercent" : 5.599520588044446,
+    "averagePhysicalFootprintBytes" : 9289953146,
+    "cpuTimeSeconds" : 1.5678737669999996,
+    "diskReadBytes" : 4096,
+    "diskWrittenBytes" : 51519488,
+    "durationSeconds" : 27.731201,
+    "p95CPUPercent" : 7.627302997574842,
+    "peakCPUPercent" : 7.95170127874578,
+    "peakPhysicalFootprintBytes" : 10336596112,
+    "peakProcessCount" : 10,
+    "physicalFootprintDeltaBytes" : 132791240,
+    "realtimeFactor" : 0.4621866833333333
+  },
+  "target" : {
+    "build" : "3.7.5-4595",
+    "bundleIdentifier" : "com.timpler.screenstudio",
+    "bundlePath" : "/Applications/Screen Studio.app",
+    "name" : "Screen Studio",
+    "recorderID" : "screen-studio",
+    "version" : "3.7.5-4595"
+  }
+}

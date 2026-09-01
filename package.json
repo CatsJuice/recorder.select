@@ -1,15 +1,20 @@
 {
-  "name": "sites-project",
+  "name": "recorder-select",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
+    "generate:performance": "node scripts/generate-performance-profiles.mjs",
+    "predev": "npm run generate:performance",
     "dev": "vinext dev",
+    "prebuild": "npm run generate:performance",
     "build": "vinext build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "test:mac": "swift test --package-path apps/benchmark-macos",
+    "build:mac": "scripts/build-macos-app.sh"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

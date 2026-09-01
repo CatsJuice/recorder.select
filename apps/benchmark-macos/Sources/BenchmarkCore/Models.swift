@@ -74,6 +74,8 @@ public struct BenchmarkSample: Codable, Sendable {
     public let cpuPercent: Double
     public let systemCPUPercent: Double
     public let physicalFootprintBytes: UInt64
+    public let systemMemoryUsedBytes: UInt64
+    public let systemMemoryDeltaBytes: UInt64
     public let diskReadBytes: UInt64
     public let diskWrittenBytes: UInt64
     public let processes: [ProcessSample]
@@ -83,6 +85,8 @@ public struct BenchmarkSample: Codable, Sendable {
         cpuPercent: Double,
         systemCPUPercent: Double = 0,
         physicalFootprintBytes: UInt64,
+        systemMemoryUsedBytes: UInt64 = 0,
+        systemMemoryDeltaBytes: UInt64 = 0,
         diskReadBytes: UInt64,
         diskWrittenBytes: UInt64,
         processes: [ProcessSample]
@@ -91,6 +95,8 @@ public struct BenchmarkSample: Codable, Sendable {
         self.cpuPercent = cpuPercent
         self.systemCPUPercent = systemCPUPercent
         self.physicalFootprintBytes = physicalFootprintBytes
+        self.systemMemoryUsedBytes = systemMemoryUsedBytes
+        self.systemMemoryDeltaBytes = systemMemoryDeltaBytes
         self.diskReadBytes = diskReadBytes
         self.diskWrittenBytes = diskWrittenBytes
         self.processes = processes
@@ -109,6 +115,8 @@ public struct BenchmarkSummary: Codable, Equatable, Sendable {
     public let averagePhysicalFootprintBytes: UInt64
     public let peakPhysicalFootprintBytes: UInt64
     public let physicalFootprintDeltaBytes: Int64
+    public let averageSystemMemoryDeltaBytes: UInt64
+    public let peakSystemMemoryDeltaBytes: UInt64
     public let peakProcessCount: Int
     public let diskReadBytes: UInt64
     public let diskWrittenBytes: UInt64
@@ -192,7 +200,7 @@ public struct BenchmarkResult: Codable, Sendable {
         summary: BenchmarkSummary,
         samples: [BenchmarkSample]
     ) {
-        self.schemaVersion = 2
+        self.schemaVersion = 3
         self.id = id
         self.scenario = scenario
         self.startedAt = startedAt

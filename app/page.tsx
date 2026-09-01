@@ -14,7 +14,7 @@ import { useI18n } from '../lib/i18n';
 import { displayDomain, fieldDefinitions, fieldGroups, recorders, type FieldDefinition, type FieldGroup, type Recorder } from '../lib/recorders';
 import { formatPerformanceValue, loadPerformanceProfiles, performanceFieldMaximum, performanceFields, performanceMetricGroups, performanceTimelineMaximum, performanceValue, type BenchmarkRun, type PerformanceMetric, type PerformanceProfiles } from '../lib/performance';
 
-const price = (value:number|null|undefined) => value == null ? 'Unknown' : value === 0 ? 'Free' : `$${value}`;
+const price = (value:number|null|undefined) => value == null ? '/' : value === 0 ? 'Free' : `$${value}`;
 const platformIcons = { win: faWindows, mac: faApple, linux: faLinux } as const;
 const filterableFields = fieldDefinitions.filter((field) => field.type === 'boolean' || field.type === 'select' || field.type === 'multiselect');
 const defaultFilters = Object.fromEntries(filterableFields.map((field) => [field.key, 'any']));
@@ -80,24 +80,37 @@ function PerformanceSparkline({ run, metric, maximum }: { run: BenchmarkRun; met
   const inset = 2;
   const duration = Math.max(run.summary.durationSeconds, 1);
   const ceiling = Math.max(maximum, 1);
-  const timelineSamples = metric === 'cpu'
-    ? run.samples.filter((sample) => typeof sample.systemCPUPercent === 'number')
+  const hasSystemMetric = metric === 'cpu'
+    ? run.samples.some((sample) => typeof sample.systemCPUPercent === 'number')
+    : run.samples.some((sample) => typeof sample.systemMemoryDeltaBytes === 'number');
+  const timelineSamples = hasSystemMetric
+    ? run.samples.filter((sample) => metric === 'cpu'
+      ? typeof sample.systemCPUPercent === 'number'
+      : typeof sample.systemMemoryDeltaBytes === 'number')
     : run.samples;
   if (timelineSamples.length === 0) return <span className="unknown-value">—</span>;
   const points = timelineSamples.map((sample) => {
-    const value = metric === 'cpu' ? sample.systemCPUPercent! : sample.physicalFootprintBytes;
+    const value = metric === 'cpu'
+      ? hasSystemMetric ? sample.systemCPUPercent! : sample.cpuPercent
+      : hasSystemMetric ? sample.systemMemoryDeltaBytes! : sample.physicalFootprintBytes;
     const x = inset + (sample.elapsedSeconds / duration) * (width - inset * 2);
     const y = height - inset - Math.min(value / ceiling, 1) * (height - inset * 2);
     return [x, y] as const;
   });
   const line = points.map(([x, y]) => `${x.toFixed(2)},${y.toFixed(2)}`).join(' ');
   const area = points.length > 0 ? `M ${points[0][0]} ${height} L ${points.map(([x, y]) => `${x} ${y}`).join(' L ')} L ${points.at(-1)?.[0] ?? width} ${height} Z` : '';
-  const peak = metric === 'cpu' ? run.summary.peakSystemCPUPercent! : run.summary.peakPhysicalFootprintBytes;
-  const label = metric === 'cpu' ? `CPU timeline, peak ${peak.toFixed(2)}%` : `Memory timeline, peak ${(peak / 1024 ** 3).toFixed(2)} GiB`;
-  return <svg className={`performance-sparkline ${metric}`} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" role="img" aria-label={label}>
-    <path className="performance-sparkline-area" d={area} />
-    <polyline className="performance-sparkline-line" points={line} />
-  </svg>;
+  const peak = metric === 'cpu'
+    ? run.summary.peakSystemCPUPercent ?? run.summary.peakCPUPercent
+    : run.summary.peakSystemMemoryDeltaBytes ?? run.summary.peakPhysicalFootprintBytes;
+  const workloadPrefix = run.workloadLabel ? `${run.workloadLabel} workload, ` : '';
+  const label = metric === 'cpu' ? `${workloadPrefix}CPU timeline, peak ${peak.toFixed(2)}%` : `${workloadPrefix}memory timeline, peak ${(peak / 1024 ** 3).toFixed(2)} GiB`;
+  return <span className="performance-sparkline-wrap">
+    {run.workloadLabel && <small className="performance-workload-label">{run.workloadLabel}</small>}
+    <svg className={`performance-sparkline ${metric}`} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" role="img" aria-label={label}>
+      <path className="performance-sparkline-area" d={area} />
+      <polyline className="performance-sparkline-line" points={line} />
+    </svg>
+  </span>;
 }
 
 const updateWithTransition = (kind: 'selection' | 'compare', update: () => void) => {
@@ -248,7 +261,8 @@ export default function Home() {
   };
   const displayedSelection = selected.length > 4 ? selected.slice(0, 3) : selected;
   const overflowSelectionCount = selected.length > 4 ? selected.length - 3 : 0;
-  const productCellClass = (id: string, best = false) => ['product-column', !visibleIds.has(id) && 'column-hidden', best && visibleIds.has(id) && 'best-value'].filter(Boolean).join(' ');
+  const tableBottomSafeArea = Math.max(64, chatHeight + (selected.length > 0 ? 72 : 16));
+  const productCellClass = (id: string, best = false, performanceExtreme?: 'low' | 'high' | null) => ['product-column', !visibleIds.has(id) && 'column-hidden', best && visibleIds.has(id) && 'best-value', performanceExtreme && visibleIds.has(id) && `performance-${performanceExtreme}`].filter(Boolean).join(' ');
   const isFieldHidden = (key: FieldDefinition['key']) => compareMode && hideIdentical && identicalFieldKeys.has(key);
   const isUpdateMetadataHidden = compareMode && hideIdentical && updateMetadataKeys.every((key) => identicalFieldKeys.has(key));
   const isGroupHidden = (fields: FieldDefinition[]) => compareMode && hideIdentical && visible.length > 1 && fields.every((field) => identicalFieldKeys.has(field.key));
@@ -256,7 +270,7 @@ export default function Home() {
     if (group.key === 'performance' && !expandedGroups.performance && performanceStatus === 'error') setPerformanceStatus('idle');
     setExpandedGroups((current) => ({ ...current, [group.key]: !current[group.key] }));
   };
-  const performanceFieldMaxima = useMemo(() => Object.fromEntries(Object.keys(performanceFields).map((key) => [key, performanceFieldMaximum(performanceProfiles, key)])), [performanceProfiles]);
+  const performanceFieldMaxima = useMemo(() => Object.fromEntries(Object.keys(performanceFields).map((key) => [key, performanceFieldMaximum(performanceProfiles, key, visible.map((item) => item.id))])), [performanceProfiles, visible]);
   const performanceTimelineMaxima = useMemo(() => Object.fromEntries(Object.values(performanceMetricGroups).map(({scenario, metric}) => [`${scenario}:${metric}`, performanceTimelineMaximum(performanceProfiles, scenario, metric)])), [performanceProfiles]);
   const renderWeightedFieldLabel = (field: FieldDefinition) => {
     if (field.scoreable === false) return <th className="field-label-cell performance-field-label"><span>{fieldLabel(field)}</span></th>;
@@ -274,12 +288,13 @@ export default function Home() {
   const renderFieldValue = (field: FieldDefinition, app: Recorder) => {
     const performanceField = performanceFields[field.key];
     if (performanceField) {
+      const run = performanceProfiles[app.id]?.[performanceField.scenario];
       const value = performanceValue(performanceProfiles, app.id, field.key);
       if (performanceStatus === 'loading' || performanceStatus === 'idle') return <span className="performance-loading" aria-label="Loading performance data" />;
       if (value === undefined) return <span className="unknown-value">{performanceStatus === 'error' ? 'Load failed' : t('unknown')}</span>;
       const maximum = performanceFieldMaxima[field.key] ?? 0;
-      const width = maximum > 0 ? Math.min(100, value / maximum * 100) : 0;
-      return <div className="performance-bar-cell" style={{'--performance-bar-width':`${width}%`} as CSSProperties}><span>{formatPerformanceValue(value, performanceField.format)}</span></div>;
+      const height = maximum > 0 ? Math.min(100, value / maximum * 100) : 0;
+      return <div className="performance-bar-cell" style={{'--performance-bar-height':`${height}%`} as CSSProperties}><span>{formatPerformanceValue(value, performanceField.format)}</span>{run?.workloadLabel && <small className="performance-workload-label">{run.workloadLabel}</small>}</div>;
     }
     const value = app[field.key];
     if (field.type === 'boolean') {
@@ -311,17 +326,19 @@ export default function Home() {
     if (!compareMode || visible.length < 2) return false;
     const value = performanceValue(performanceProfiles, app.id, field.key) ?? app[field.key];
     if (value === null || value === undefined) return false;
+    const performanceField = performanceFields[field.key];
+    if (performanceField) return false;
     if (field.type === 'boolean') return Boolean(value) === (field.booleanBest ?? true);
     if (field.type === 'multiselect') {
-      const counts = visible.map((item) => (item[field.key] as unknown[]).length);
-      return (value as unknown[]).length === Math.max(...counts);
+      const counts = visible.map((item) => Array.isArray(item[field.key]) ? item[field.key].length : 0);
+      return Array.isArray(value) && value.length === Math.max(...counts);
     }
     if (field.type === 'select') {
       const rank = field.options?.find((option) => option.value === value)?.rank;
       const ranks = visible.map((item) => field.options?.find((option) => option.value === item[field.key])?.rank).filter((item): item is number => item !== undefined);
       return rank !== undefined && ranks.length > 0 && rank === Math.max(...ranks);
     }
-    if (field.type === 'price' || field.type === 'number' || performanceFields[field.key]) {
+    if (field.type === 'price' || field.type === 'number') {
       const values = visible.map((item) => performanceValue(performanceProfiles, item.id, field.key) ?? item[field.key]).filter((item): item is number => typeof item === 'number');
       if (values.length === 0) return false;
       const best = field.type === 'price' || !field.higherIsBetter ? Math.min(...values) : Math.max(...values);
@@ -329,10 +346,29 @@ export default function Home() {
     }
     return false;
   };
+  const performanceExtremeFor = (field: FieldDefinition, app: Recorder): 'low' | 'high' | null => {
+    const performanceField = performanceFields[field.key];
+    if (!performanceField) return null;
+    const currentRun = performanceProfiles[app.id]?.[performanceField.scenario];
+    const currentValue = performanceValue(performanceProfiles, app.id, field.key);
+    if (!currentRun || typeof currentValue !== 'number') return null;
+    const comparableValues = visible.flatMap((item) => {
+      const run = performanceProfiles[item.id]?.[performanceField.scenario];
+      const value = performanceValue(performanceProfiles, item.id, field.key);
+      return run?.workloadLabel === currentRun.workloadLabel && typeof value === 'number' ? [value] : [];
+    });
+    if (comparableValues.length < 2) return null;
+    const lowest = Math.min(...comparableValues);
+    const highest = Math.max(...comparableValues);
+    if (lowest === highest) return null;
+    if (currentValue === lowest) return 'low';
+    if (currentValue === highest) return 'high';
+    return null;
+  };
   const renderFieldRow = (field: FieldDefinition, level = 0, treeVisible = true) => {
     const fieldHidden = isFieldHidden(field.key);
     const rowVisible = treeVisible && !fieldHidden;
-    return <tr key={field.key} aria-hidden={!rowVisible} className={`${level > 0 ? 'field-child-row' : ''} comparison-field-row field-level-${level} ${performanceFields[field.key]?'performance-value-row':''} ${treeVisible?'is-expanded':'is-collapsed is-tree-collapsed'} ${fieldHidden?'is-field-hidden':''}`}>{renderWeightedFieldLabel(field)}{orderedRecorders.map((app)=><td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id,isBestValue(field,app))}>{renderFieldValue(field,app)}</td>)}</tr>;
+    return <tr key={field.key} aria-hidden={!rowVisible} className={`${level > 0 ? 'field-child-row' : ''} comparison-field-row field-level-${level} ${performanceFields[field.key]?'performance-value-row':''} ${treeVisible?'is-expanded':'is-collapsed is-tree-collapsed'} ${fieldHidden?'is-field-hidden':''}`}>{renderWeightedFieldLabel(field)}{orderedRecorders.map((app)=><td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id,isBestValue(field,app),performanceExtremeFor(field,app))}>{renderFieldValue(field,app)}</td>)}</tr>;
   };
   const renderGroupRows = (group: FieldGroup, level = 0, ancestorExpanded = true) => {
     const expanded = expandedGroups[group.key];
@@ -356,13 +392,13 @@ export default function Home() {
     <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
     <section className="workspace shell" id="compare">
       <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} />
-      <div className="table-wrap comparison-surface"><table className="comparison-table"><thead><tr><th className="feature-head"><span>{t('recorders',{count:visible.length})}</span><small>{compareMode ? t('selectedRecorders') : t('selectToCompare')}</small><button type="button" className="reset-weights" onClick={()=>setFieldWeights({...defaultFieldWeights})}><FontAwesomeIcon icon={faArrowRotateLeft} aria-hidden="true" />{t('resetWeights')}</button></th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const isSelected=selected.includes(app.id);return <th key={app.id} data-recorder-id={app.id} className={productCellClass(app.id)} aria-hidden={!shown}><div className={`select-app ${isSelected?'selected':''}`}><button type="button" tabIndex={shown?0:-1} className="select-app-hit" onClick={()=>toggleCompare(app.id)} aria-label={t('compareProduct',{name:app.name})} /><span className="check">{isSelected&&<FontAwesomeIcon icon={faCheck} />}</span><span className="app-icon" style={{background:app.icon ? 'transparent' : app.accent}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span><strong className="app-name">{app.name}</strong><a className="app-domain-link" href={app.website} target="_blank" rel="noreferrer" aria-label={t('visitWebsite',{name:app.name})}>{displayDomain(app.website)}</a><span className="app-score"><strong>{recorderScores[app.id].toFixed(1)}</strong> {t('score')}</span></div></th>})}</tr></thead><tbody>
+      <div className="table-wrap comparison-surface" style={{paddingBottom:tableBottomSafeArea,scrollPaddingBottom:tableBottomSafeArea}}><table className="comparison-table"><thead><tr><th className="feature-head"><span>{t('recorders',{count:visible.length})}</span><small>{compareMode ? t('selectedRecorders') : t('selectToCompare')}</small><button type="button" className="reset-weights" onClick={()=>setFieldWeights({...defaultFieldWeights})}><FontAwesomeIcon icon={faArrowRotateLeft} aria-hidden="true" />{t('resetWeights')}</button></th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const isSelected=selected.includes(app.id);return <th key={app.id} data-recorder-id={app.id} className={productCellClass(app.id)} aria-hidden={!shown}><div className={`select-app ${isSelected?'selected':''}`}><button type="button" tabIndex={shown?0:-1} className="select-app-hit" onClick={()=>toggleCompare(app.id)} aria-label={t('compareProduct',{name:app.name})} /><span className="check">{isSelected&&<FontAwesomeIcon icon={faCheck} />}</span><span className="app-icon" style={{background:app.icon ? 'transparent' : app.accent}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span><strong className="app-name">{app.name}</strong><a className="app-domain-link" href={app.website} target="_blank" rel="noreferrer" aria-label={t('visitWebsite',{name:app.name})}>{displayDomain(app.website)}</a><span className="app-score"><strong>{recorderScores[app.id].toFixed(1)}</strong> {t('score')}</span></div></th>})}</tr></thead><tbody>
         {generalComparisonFields.map((field) => renderFieldRow(field))}
         {topLevelGroups.map((group) => renderGroupRows(group))}
         <tr aria-hidden={isUpdateMetadataHidden} className={`comparison-field-row ${isUpdateMetadataHidden?'is-field-hidden':'is-expanded'}`}><th>{t('lastUpdated')}</th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const updatedAt=app.lastUpdatedAt;const version=app.lastUpdatedVersion;return <td key={app.id} data-recorder-id={app.id} aria-hidden={!shown} className={productCellClass(app.id)}><div className="last-updated-cell">{updatedAt?<time dateTime={updatedAt}>{updatedAt}</time>:<span className="unknown-value">{t('unknown')}</span>}<small>{version?t('version',{version}):t('versionUnknown')}</small></div></td>})}</tr>
       </tbody></table>{visible.length===0&&<div className="empty">{t('noMatches')}</div>}</div>
     </section>
     <div className={`compare-dock-shell t-resize ${chatExpanded?'chat-expanded':''} ${selected.length===0?'is-empty':''}`}>{selected.length>0&&<div className="compare-dock" style={{bottom:chatHeight+8}}><div className="compare-dock-summary"><div className="compare-avatars">{displayedSelection.map((id)=>{const app=recorders.find((item)=>item.id===id)!;return <span key={id} style={{background:app.icon ? 'transparent' : app.accent,viewTransitionName:`compare-avatar-${id}`}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span>})}{overflowSelectionCount>0&&<span className="avatar-overflow" style={{viewTransitionName:'compare-avatar-overflow'}}>+{overflowSelectionCount}</span>}</div>{compareMode?<label className="hide-identical-control"><input type="checkbox" checked={hideIdentical} onChange={(event)=>setHideIdentical(event.target.checked)} /><span>{t('hideIdentical')}</span></label>:<p><strong>{t('selected',{count:selected.length})}</strong><small>{t('ready')}</small></p>}</div><div className="compare-dock-actions"><button className="clear-selection" onClick={clearSelection}>{t('clear')}</button><button className={`compare-action ${compareMode?'exit':''}`} aria-pressed={compareMode} onClick={()=>setCompareMode((current)=>!current)}>{compareMode?t('exitComparison'):t('compareSelected')}</button></div></div>}</div>
-    <LocalChatWidget onHeightChange={setChatHeight} onExpandedChange={setChatExpanded} onUpdateComparison={updateComparisonFromChat} onUpdateSort={updateSortFromChat} onUpdateFilters={updateFiltersFromChat} />
+    <LocalChatWidget recorderScores={recorderScores} onHeightChange={setChatHeight} onExpandedChange={setChatExpanded} onUpdateComparison={updateComparisonFromChat} onUpdateSort={updateSortFromChat} onUpdateFilters={updateFiltersFromChat} />
   </main>;
 }

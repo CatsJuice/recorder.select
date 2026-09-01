@@ -17,6 +17,8 @@ Use one deterministic project and keep resolution, frame rate, codecs, bitrate o
 
 RecorderBench reports two CPU measurements. **System CPU** is the primary comparison metric and includes the full machine workload caused by the scenario, including shared capture and codec services. **App-family CPU** is diagnostic attribution for the selected app and its discoverable helpers. Both use Activity Monitor-style units where 100% equals one fully occupied logical core.
 
+RecorderBench also reports two memory measurements. **System memory delta** is the primary comparison metric: it measures pressure-relevant system memory relative to the instant capture starts, including internal, wired, and compressed pages while excluding purgeable and file-backed cache. **App-family physical footprint** remains a diagnostic value for processes that macOS allows RecorderBench to inspect. Because the primary value is a baseline delta, keep background activity quiet and start every run from the same prepared application state.
+
 ### Recording
 
 Capture the same 60-second scripted screen workload. Report average and P95 CPU, CPU seconds, peak physical footprint, output duration, and dropped frames when the product exposes them.
@@ -46,7 +48,7 @@ RecorderBench includes the selected app's root process, recursively spawned chil
 
 Select the already-running root application from RecorderBench's process menu. Begin capture only when the scenario is ready, and stop it manually when the scenario completes. RecorderBench never stops a capture automatically.
 
-Shared system services such as WindowServer, ScreenCaptureKit services, VideoToolbox services, and coreaudiod cannot be reliably assigned to one app process family. RecorderBench therefore captures total system CPU separately and uses it as the primary CPU comparison. Keep the machine idle except for the workload so unrelated activity does not contaminate this measurement. The app-family value remains useful for diagnosis, but must not be presented as total recording cost.
+Shared system services such as WindowServer, ScreenCaptureKit services, VideoToolbox services, and coreaudiod cannot be reliably assigned to one app process family. RecorderBench therefore captures total system CPU and baseline-relative system memory separately and uses them as the primary comparison metrics. Keep the machine idle except for the workload so unrelated activity does not contaminate these measurements. App-family values remain useful for diagnosis, but must not be presented as total recording cost.
 
 ## Review before publishing
 

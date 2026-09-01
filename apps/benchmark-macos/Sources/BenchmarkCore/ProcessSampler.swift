@@ -28,6 +28,7 @@ public final class ProcessSampler {
     private var cumulativeDiskReadBytes: UInt64 = 0
     private var cumulativeDiskWrittenBytes: UInt64 = 0
     private var previousHostCPUCounters: HostCPUCounters?
+    private var baselineSystemMemoryUsedBytes: UInt64?
     private let clock = ContinuousClock()
 
     public init() {}
@@ -39,6 +40,7 @@ public final class ProcessSampler {
         cumulativeDiskReadBytes = 0
         cumulativeDiskWrittenBytes = 0
         previousHostCPUCounters = nil
+        baselineSystemMemoryUsedBytes = nil
     }
 
     public func sample(
@@ -59,6 +61,14 @@ public final class ProcessSampler {
             systemCPUPercent = 0
         }
         previousHostCPUCounters = hostCPUCounters
+        let systemMemoryUsedBytes = Self.readSystemMemoryUsedBytes() ?? 0
+        if baselineSystemMemoryUsedBytes == nil, systemMemoryUsedBytes > 0 {
+            baselineSystemMemoryUsedBytes = systemMemoryUsedBytes
+        }
+        let systemMemoryDeltaBytes = nonnegativeDelta(
+            systemMemoryUsedBytes,
+            baselineSystemMemoryUsedBytes ?? systemMemoryUsedBytes
+        )
 
         let inventory = Self.readAllProcesses()
         let identities = ProcessFamilyResolver.includedIdentities(
@@ -110,6 +120,8 @@ public final class ProcessSampler {
                 cpuPercent: processSamples.reduce(0) { $0 + $1.cpuPercent },
                 systemCPUPercent: systemCPUPercent,
                 physicalFootprintBytes: footprint,
+                systemMemoryUsedBytes: systemMemoryUsedBytes,
+                systemMemoryDeltaBytes: systemMemoryDeltaBytes,
                 diskReadBytes: cumulativeDiskReadBytes,
                 diskWrittenBytes: cumulativeDiskWrittenBytes,
                 processes: processSamples
@@ -156,6 +168,34 @@ public final class ProcessSampler {
     private static func tickDelta(_ current: UInt64, _ previous: UInt64) -> UInt64 {
         guard current < previous else { return current - previous }
         return UInt64(UInt32.max) - previous + current + 1
+    }
+
+    private static func readSystemMemoryUsedBytes() -> UInt64? {
+        var statistics = vm_statistics64()
+        var count = mach_msg_type_number_t(
+            MemoryLayout<vm_statistics64_data_t>.size / MemoryLayout<integer_t>.size
+        )
+        let result = withUnsafeMutablePointer(to: &statistics) { pointer in
+            pointer.withMemoryRebound(to: integer_t.self, capacity: Int(count)) { rebound in
+                host_statistics64(mach_host_self(), HOST_VM_INFO64, rebound, &count)
+            }
+        }
+        guard result == KERN_SUCCESS else { return nil }
+
+        var pageSize: vm_size_t = 0
+        guard host_page_size(mach_host_self(), &pageSize) == KERN_SUCCESS else { return nil }
+
+        // Approximate Activity Monitor's pressure-relevant memory: anonymous
+        // internal pages plus wired and compressed pages, excluding purgeable
+        // memory. File-backed cache is deliberately excluded.
+        let internalPages = UInt64(statistics.internal_page_count)
+        let purgeablePages = UInt64(statistics.purgeable_count)
+        let nonPurgeableInternalPages = internalPages >= purgeablePages ? internalPages - purgeablePages : 0
+        let usedPages = nonPurgeableInternalPages
+            + UInt64(statistics.wire_count)
+            + UInt64(statistics.compressor_page_count)
+        let bytes = usedPages.multipliedReportingOverflow(by: UInt64(pageSize))
+        return bytes.overflow ? UInt64.max : bytes.partialValue
     }
 
     private static func readAllProcesses() -> (processes: [ProcessMeasurement], inaccessibleCount: Int) {

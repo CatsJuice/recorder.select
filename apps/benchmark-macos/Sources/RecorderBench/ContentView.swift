@@ -151,7 +151,12 @@ struct ContentView: View {
                     detail: "App family \(percent(model.currentApplicationCPUPercent)) · \(String(format: "%.2f CPU sec", model.totalCPUTimeSeconds))",
                     color: .orange
                 )
-                metricCard("Memory", value: bytes(model.currentFootprintBytes), detail: "Peak \(bytes(model.peakFootprintBytes))", color: .blue)
+                metricCard(
+                    "SYSTEM MEMORY Δ",
+                    value: bytes(model.currentSystemMemoryDeltaBytes),
+                    detail: "Peak Δ \(bytes(model.peakSystemMemoryDeltaBytes)) · App family \(bytes(model.currentFootprintBytes))",
+                    color: .blue
+                )
                 metricCard("Processes", value: "\(model.latestProcesses.count)", detail: "\(model.inaccessibleProcessCount) system processes unavailable", color: .purple)
             }
 
@@ -174,7 +179,7 @@ struct ContentView: View {
 
             HStack {
                 if let summary = model.result?.summary {
-                    Text("Avg system CPU \(percent(summary.averageSystemCPUPercent)) · Peak memory \(bytes(summary.peakPhysicalFootprintBytes))")
+                    Text("Avg system CPU \(percent(summary.averageSystemCPUPercent)) · Peak system memory Δ \(bytes(summary.peakSystemMemoryDeltaBytes))")
                         .font(.caption).foregroundStyle(.secondary)
                 }
                 Spacer()

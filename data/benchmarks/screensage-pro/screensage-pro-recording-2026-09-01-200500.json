@@ -1,0 +1,2062 @@
+{
+  "endedAt" : "2026-09-01T12:06:10Z",
+  "id" : "82B15758-5D7A-4E03-88B6-3AA04C16D88E",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "notes" : "Workload resolution: 2K (application limit). Not directly comparable with 5K runs.",
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6e-06,
+      "physicalFootprintBytes" : 174982488,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 2.553165087,
+            "diskReadBytes" : 7643136,
+            "diskWrittenBytes" : 94179328,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 174982488
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 80319922176
+    },
+    {
+      "cpuPercent" : 0.7948293066659244,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 405504,
+      "elapsedSeconds" : 1.034983125,
+      "physicalFootprintBytes" : 175261016,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7948293066659244,
+          "process" : {
+            "cpuTimeSeconds" : 2.561392235,
+            "diskReadBytes" : 7643136,
+            "diskWrittenBytes" : 94584832,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 175261016
+          }
+        }
+      ],
+      "systemCPUPercent" : 276.02591792656585,
+      "systemMemoryDeltaBytes" : 399671296,
+      "systemMemoryUsedBytes" : 80719593472
+    },
+    {
+      "cpuPercent" : 0.9147560261304712,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 737280,
+      "elapsedSeconds" : 2.0350005,
+      "physicalFootprintBytes" : 175228248,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9147560261304712,
+          "process" : {
+            "cpuTimeSeconds" : 2.570540763,
+            "diskReadBytes" : 7643136,
+            "diskWrittenBytes" : 94916608,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 175228248
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.28161888701516,
+      "systemMemoryDeltaBytes" : 424886272,
+      "systemMemoryUsedBytes" : 80744808448
+    },
+    {
+      "cpuPercent" : 0.7002084624077839,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1204224,
+      "elapsedSeconds" : 3.03446625,
+      "physicalFootprintBytes" : 174802264,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7002084624077839,
+          "process" : {
+            "cpuTimeSeconds" : 2.57753838,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95383552,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 174802264
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.731843575419,
+      "systemMemoryDeltaBytes" : 415055872,
+      "systemMemoryUsedBytes" : 80734978048
+    },
+    {
+      "cpuPercent" : 0.7500672696770438,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1449984,
+      "elapsedSeconds" : 4.034992667,
+      "physicalFootprintBytes" : 259917216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7500672696770438,
+          "process" : {
+            "cpuTimeSeconds" : 2.585042378,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95629312,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 259917216
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.4244806288602,
+      "systemMemoryDeltaBytes" : 1372061696,
+      "systemMemoryUsedBytes" : 81691983872
+    },
+    {
+      "cpuPercent" : 1.3145282259964106,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1581056,
+      "elapsedSeconds" : 5.035400125,
+      "physicalFootprintBytes" : 268060064,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3145282259964106,
+          "process" : {
+            "cpuTimeSeconds" : 2.598193115,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95760384,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268060064
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.29155008393957,
+      "systemMemoryDeltaBytes" : 1320861696,
+      "systemMemoryUsedBytes" : 81640783872
+    },
+    {
+      "cpuPercent" : 1.3929810748826674,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1630208,
+      "elapsedSeconds" : 6.035004709,
+      "physicalFootprintBytes" : 268043680,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3929810748826674,
+          "process" : {
+            "cpuTimeSeconds" : 2.612117319,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95809536,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268043680
+          }
+        }
+      ],
+      "systemCPUPercent" : 399.327731092437,
+      "systemMemoryDeltaBytes" : 1328971776,
+      "systemMemoryUsedBytes" : 81648893952
+    },
+    {
+      "cpuPercent" : 1.2525786579790634,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1630208,
+      "elapsedSeconds" : 7.035005292,
+      "physicalFootprintBytes" : 268748192,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2525786579790634,
+          "process" : {
+            "cpuTimeSeconds" : 2.624645617,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95809536,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268748192
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.90609278926775,
+      "systemMemoryDeltaBytes" : 1611038720,
+      "systemMemoryUsedBytes" : 81930960896
+    },
+    {
+      "cpuPercent" : 1.1306092410821744,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1679360,
+      "elapsedSeconds" : 8.035062959,
+      "physicalFootprintBytes" : 267961760,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1306092410821744,
+          "process" : {
+            "cpuTimeSeconds" : 2.63595271,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95858688,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 267961760
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.1024062674874,
+      "systemMemoryDeltaBytes" : 1386627072,
+      "systemMemoryUsedBytes" : 81706549248
+    },
+    {
+      "cpuPercent" : 1.0605668788542815,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 1687552,
+      "elapsedSeconds" : 9.035020167,
+      "physicalFootprintBytes" : 268371360,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0605668788542815,
+          "process" : {
+            "cpuTimeSeconds" : 2.646555772,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 95866880,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268371360
+          }
+        }
+      ],
+      "systemCPUPercent" : 293.93939393939394,
+      "systemMemoryDeltaBytes" : 1361117184,
+      "systemMemoryUsedBytes" : 81681039360
+    },
+    {
+      "cpuPercent" : 1.1909872907806436,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10125312,
+      "elapsedSeconds" : 10.0350195,
+      "physicalFootprintBytes" : 268027296,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1909872907806436,
+          "process" : {
+            "cpuTimeSeconds" : 2.658465832,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104304640,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268027296
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.1165644171779,
+      "systemMemoryDeltaBytes" : 1359200256,
+      "systemMemoryUsedBytes" : 81679122432
+    },
+    {
+      "cpuPercent" : 1.0109178942605739,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10125312,
+      "elapsedSeconds" : 11.035057584,
+      "physicalFootprintBytes" : 268273056,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0109178942605739,
+          "process" : {
+            "cpuTimeSeconds" : 2.668576382,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104304640,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 268273056
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.4621848739496,
+      "systemMemoryDeltaBytes" : 1357463552,
+      "systemMemoryUsedBytes" : 81677385728
+    },
+    {
+      "cpuPercent" : 1.5281024357881705,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10174464,
+      "elapsedSeconds" : 12.035066334,
+      "physicalFootprintBytes" : 282248632,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5281024357881705,
+          "process" : {
+            "cpuTimeSeconds" : 2.683857938,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104353792,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282248632
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.47704367301236,
+      "systemMemoryDeltaBytes" : 1404715008,
+      "systemMemoryUsedBytes" : 81724637184
+    },
+    {
+      "cpuPercent" : 1.2326210423044186,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10174464,
+      "elapsedSeconds" : 13.035048084,
+      "physicalFootprintBytes" : 283428280,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2326210423044186,
+          "process" : {
+            "cpuTimeSeconds" : 2.69618315,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104353792,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 283428280
+          }
+        }
+      ],
+      "systemCPUPercent" : 526.3865546218487,
+      "systemMemoryDeltaBytes" : 2627436544,
+      "systemMemoryUsedBytes" : 82947358720
+    },
+    {
+      "cpuPercent" : 1.7100247149412964,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10674176,
+      "elapsedSeconds" : 14.035073792,
+      "physicalFootprintBytes" : 281822648,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7100247149412964,
+          "process" : {
+            "cpuTimeSeconds" : 2.713285638,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104853504,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281822648
+          }
+        }
+      ],
+      "systemCPUPercent" : 373.69893676552886,
+      "systemMemoryDeltaBytes" : 2214428672,
+      "systemMemoryUsedBytes" : 82534350848
+    },
+    {
+      "cpuPercent" : 1.696573351319284,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10674176,
+      "elapsedSeconds" : 15.035103375,
+      "physicalFootprintBytes" : 296404432,
+      "processes" : [
+        {
+          "cpuPercent" : 1.696573351319284,
+          "process" : {
+            "cpuTimeSeconds" : 2.730252598,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104853504,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296404432
+          }
+        }
+      ],
+      "systemCPUPercent" : 352.13004484304935,
+      "systemMemoryDeltaBytes" : 2084143104,
+      "systemMemoryUsedBytes" : 82404065280
+    },
+    {
+      "cpuPercent" : 1.2707904431899735,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10723328,
+      "elapsedSeconds" : 16.035052417,
+      "physicalFootprintBytes" : 296502736,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2707904431899735,
+          "process" : {
+            "cpuTimeSeconds" : 2.742957102,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104902656,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296502736
+          }
+        }
+      ],
+      "systemCPUPercent" : 358.58981533296026,
+      "systemMemoryDeltaBytes" : 2111504384,
+      "systemMemoryUsedBytes" : 82431426560
+    },
+    {
+      "cpuPercent" : 1.3889642833885976,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10723328,
+      "elapsedSeconds" : 17.035069334,
+      "physicalFootprintBytes" : 283231672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3889642833885976,
+          "process" : {
+            "cpuTimeSeconds" : 2.756848014,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104902656,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 283231672
+          }
+        }
+      ],
+      "systemCPUPercent" : 377.30575740637227,
+      "systemMemoryDeltaBytes" : 3010658304,
+      "systemMemoryUsedBytes" : 83330580480
+    },
+    {
+      "cpuPercent" : 1.5130389293457227,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 10772480,
+      "elapsedSeconds" : 18.035059209,
+      "physicalFootprintBytes" : 282314168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5130389293457227,
+          "process" : {
+            "cpuTimeSeconds" : 2.771978136,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 104951808,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282314168
+          }
+        }
+      ],
+      "systemCPUPercent" : 345.06726457399105,
+      "systemMemoryDeltaBytes" : 2144387072,
+      "systemMemoryUsedBytes" : 82464309248
+    },
+    {
+      "cpuPercent" : 1.1710822484792687,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 19169280,
+      "elapsedSeconds" : 19.03506425,
+      "physicalFootprintBytes" : 282265016,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1710822484792687,
+          "process" : {
+            "cpuTimeSeconds" : 2.783689565,
+            "diskReadBytes" : 7647232,
+            "diskWrittenBytes" : 113348608,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282265016
+          }
+        }
+      ],
+      "systemCPUPercent" : 348.1274455002795,
+      "systemMemoryDeltaBytes" : 2070331392,
+      "systemMemoryUsedBytes" : 82390253568
+    },
+    {
+      "cpuPercent" : 1.61140582983469,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 19218432,
+      "elapsedSeconds" : 20.035099875,
+      "physicalFootprintBytes" : 282068408,
+      "processes" : [
+        {
+          "cpuPercent" : 1.61140582983469,
+          "process" : {
+            "cpuTimeSeconds" : 2.799804899,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 113397760,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282068408
+          }
+        }
+      ],
+      "systemCPUPercent" : 363.42281879194627,
+      "systemMemoryDeltaBytes" : 2072592384,
+      "systemMemoryUsedBytes" : 82392514560
+    },
+    {
+      "cpuPercent" : 1.4763124776676604,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 19218432,
+      "elapsedSeconds" : 21.035069917,
+      "physicalFootprintBytes" : 282297784,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4763124776676604,
+          "process" : {
+            "cpuTimeSeconds" : 2.814565252,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 113397760,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282297784
+          }
+        }
+      ],
+      "systemCPUPercent" : 503.47533632286996,
+      "systemMemoryDeltaBytes" : 1948090368,
+      "systemMemoryUsedBytes" : 82268012544
+    },
+    {
+      "cpuPercent" : 1.7209725874590736,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 19267584,
+      "elapsedSeconds" : 22.03512125,
+      "physicalFootprintBytes" : 282215864,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7209725874590736,
+          "process" : {
+            "cpuTimeSeconds" : 2.831779053,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 113446912,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282215864
+          }
+        }
+      ],
+      "systemCPUPercent" : 414.533258803801,
+      "systemMemoryDeltaBytes" : 1877590016,
+      "systemMemoryUsedBytes" : 82197512192
+    },
+    {
+      "cpuPercent" : 1.540212403196853,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 19267584,
+      "elapsedSeconds" : 23.035141042,
+      "physicalFootprintBytes" : 282428856,
+      "processes" : [
+        {
+          "cpuPercent" : 1.540212403196853,
+          "process" : {
+            "cpuTimeSeconds" : 2.847182191,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 113446912,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282428856
+          }
+        }
+      ],
+      "systemCPUPercent" : 409.9608282036933,
+      "systemMemoryDeltaBytes" : 2038824960,
+      "systemMemoryUsedBytes" : 82358747136
+    },
+    {
+      "cpuPercent" : 1.653718875309255,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30662656,
+      "elapsedSeconds" : 24.035136167,
+      "physicalFootprintBytes" : 282150328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.653718875309255,
+          "process" : {
+            "cpuTimeSeconds" : 2.863719295,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124841984,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282150328
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.0229178311906,
+      "systemMemoryDeltaBytes" : 1917566976,
+      "systemMemoryUsedBytes" : 82237489152
+    },
+    {
+      "cpuPercent" : 1.7759695999999714,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30662656,
+      "elapsedSeconds" : 25.035139334,
+      "physicalFootprintBytes" : 282379704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7759695999999714,
+          "process" : {
+            "cpuTimeSeconds" : 2.881478991,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124841984,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282379704
+          }
+        }
+      ],
+      "systemCPUPercent" : 325.81005586592175,
+      "systemMemoryDeltaBytes" : 1917550592,
+      "systemMemoryUsedBytes" : 82237472768
+    },
+    {
+      "cpuPercent" : 1.3904691551209385,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30711808,
+      "elapsedSeconds" : 26.035180292,
+      "physicalFootprintBytes" : 282166712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3904691551209385,
+          "process" : {
+            "cpuTimeSeconds" : 2.895382171,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124891136,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282166712
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.20805369127515,
+      "systemMemoryDeltaBytes" : 1911750656,
+      "systemMemoryUsedBytes" : 82231672832
+    },
+    {
+      "cpuPercent" : 1.1503535531172917,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30711808,
+      "elapsedSeconds" : 27.035509792,
+      "physicalFootprintBytes" : 282166712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1503535531172917,
+          "process" : {
+            "cpuTimeSeconds" : 2.906890689,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124891136,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282166712
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.29155008393957,
+      "systemMemoryDeltaBytes" : 1919631360,
+      "systemMemoryUsedBytes" : 82239553536
+    },
+    {
+      "cpuPercent" : 1.5559102021593483,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30760960,
+      "elapsedSeconds" : 28.035110542,
+      "physicalFootprintBytes" : 282166712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5559102021593483,
+          "process" : {
+            "cpuTimeSeconds" : 2.922442628,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124940288,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282166712
+          }
+        }
+      ],
+      "systemCPUPercent" : 347.89915966386553,
+      "systemMemoryDeltaBytes" : 1865498624,
+      "systemMemoryUsedBytes" : 82185420800
+    },
+    {
+      "cpuPercent" : 1.4610428522737908,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 30769152,
+      "elapsedSeconds" : 29.035151875,
+      "physicalFootprintBytes" : 282133944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4610428522737908,
+          "process" : {
+            "cpuTimeSeconds" : 2.937054881,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 124948480,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282133944
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.57894736842104,
+      "systemMemoryDeltaBytes" : 1866203136,
+      "systemMemoryUsedBytes" : 82186125312
+    },
+    {
+      "cpuPercent" : 1.3231362942670044,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 39206912,
+      "elapsedSeconds" : 30.035134875,
+      "physicalFootprintBytes" : 282166712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3231362942670044,
+          "process" : {
+            "cpuTimeSeconds" : 2.950284477,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 133386240,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282166712
+          }
+        }
+      ],
+      "systemCPUPercent" : 326.35702294348073,
+      "systemMemoryDeltaBytes" : 1875427328,
+      "systemMemoryUsedBytes" : 82195349504
+    },
+    {
+      "cpuPercent" : 1.436048116195306,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 39206912,
+      "elapsedSeconds" : 31.035505667,
+      "physicalFootprintBytes" : 282707384,
+      "processes" : [
+        {
+          "cpuPercent" : 1.436048116195306,
+          "process" : {
+            "cpuTimeSeconds" : 2.964652212,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 133386240,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282707384
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.34247341913823,
+      "systemMemoryDeltaBytes" : 1896120320,
+      "systemMemoryUsedBytes" : 82216042496
+    },
+    {
+      "cpuPercent" : 1.64319902285124,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 39256064,
+      "elapsedSeconds" : 32.035176709,
+      "physicalFootprintBytes" : 282314168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.64319902285124,
+          "process" : {
+            "cpuTimeSeconds" : 2.981078095,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 133435392,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282314168
+          }
+        }
+      ],
+      "systemCPUPercent" : 382.7008928571429,
+      "systemMemoryDeltaBytes" : 2828976128,
+      "systemMemoryUsedBytes" : 83148898304
+    },
+    {
+      "cpuPercent" : 1.1913607430952278,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 39256064,
+      "elapsedSeconds" : 33.03512875,
+      "physicalFootprintBytes" : 281986488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1913607430952278,
+          "process" : {
+            "cpuTimeSeconds" : 2.992990176,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 133435392,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281986488
+          }
+        }
+      ],
+      "systemCPUPercent" : 413.0483689538808,
+      "systemMemoryDeltaBytes" : 2109538304,
+      "systemMemoryUsedBytes" : 82429460480
+    },
+    {
+      "cpuPercent" : 1.716006991678865,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52043776,
+      "elapsedSeconds" : 34.034520917,
+      "physicalFootprintBytes" : 296125904,
+      "processes" : [
+        {
+          "cpuPercent" : 1.716006991678865,
+          "process" : {
+            "cpuTimeSeconds" : 3.010139636,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146223104,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296125904
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.46920492721165,
+      "systemMemoryDeltaBytes" : 1983610880,
+      "systemMemoryUsedBytes" : 82303533056
+    },
+    {
+      "cpuPercent" : 1.6113881981219835,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52043776,
+      "elapsedSeconds" : 35.035141709,
+      "physicalFootprintBytes" : 281707960,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6113881981219835,
+          "process" : {
+            "cpuTimeSeconds" : 3.026262247,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146223104,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281707960
+          }
+        }
+      ],
+      "systemCPUPercent" : 350.92436974789916,
+      "systemMemoryDeltaBytes" : 1946402816,
+      "systemMemoryUsedBytes" : 82266324992
+    },
+    {
+      "cpuPercent" : 1.6015836368242682,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52092928,
+      "elapsedSeconds" : 36.0351755,
+      "physicalFootprintBytes" : 281871800,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6015836368242682,
+          "process" : {
+            "cpuTimeSeconds" : 3.042282088,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146272256,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281871800
+          }
+        }
+      ],
+      "systemCPUPercent" : 330.7563025210084,
+      "systemMemoryDeltaBytes" : 1935687680,
+      "systemMemoryUsedBytes" : 82255609856
+    },
+    {
+      "cpuPercent" : 1.5939056058511911,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52092928,
+      "elapsedSeconds" : 37.03516825,
+      "physicalFootprintBytes" : 281724344,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5939056058511911,
+          "process" : {
+            "cpuTimeSeconds" : 3.058220199,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146272256,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281724344
+          }
+        }
+      ],
+      "systemCPUPercent" : 395.5382041271612,
+      "systemMemoryDeltaBytes" : 2032467968,
+      "systemMemoryUsedBytes" : 82352390144
+    },
+    {
+      "cpuPercent" : 1.6093785921462,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52142080,
+      "elapsedSeconds" : 38.035183209,
+      "physicalFootprintBytes" : 282559928,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6093785921462,
+          "process" : {
+            "cpuTimeSeconds" : 3.07431417,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146321408,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282559928
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.4564851207187,
+      "systemMemoryDeltaBytes" : 2610872320,
+      "systemMemoryUsedBytes" : 82930794496
+    },
+    {
+      "cpuPercent" : 1.737380631940209,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 52150272,
+      "elapsedSeconds" : 39.035169459,
+      "physicalFootprintBytes" : 310494672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.737380631940209,
+          "process" : {
+            "cpuTimeSeconds" : 3.091687007,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 146329600,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 310494672
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.31337437045323,
+      "systemMemoryDeltaBytes" : 1608089600,
+      "systemMemoryUsedBytes" : 81928011776
+    },
+    {
+      "cpuPercent" : 1.4368701765812424,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 60588032,
+      "elapsedSeconds" : 40.035189125,
+      "physicalFootprintBytes" : 296453584,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4368701765812424,
+          "process" : {
+            "cpuTimeSeconds" : 3.106056338,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 154767360,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296453584
+          }
+        }
+      ],
+      "systemCPUPercent" : 345.49524342473416,
+      "systemMemoryDeltaBytes" : 2055897088,
+      "systemMemoryUsedBytes" : 82375819264
+    },
+    {
+      "cpuPercent" : 1.2153522853335845,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 60588032,
+      "elapsedSeconds" : 41.035184084,
+      "physicalFootprintBytes" : 282199480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2153522853335845,
+          "process" : {
+            "cpuTimeSeconds" : 3.118208685,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 154767360,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282199480
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.3933967543369,
+      "systemMemoryDeltaBytes" : 2055225344,
+      "systemMemoryUsedBytes" : 82375147520
+    },
+    {
+      "cpuPercent" : 1.6286405854758106,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 60637184,
+      "elapsedSeconds" : 42.035192792,
+      "physicalFootprintBytes" : 282314168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6286405854758106,
+          "process" : {
+            "cpuTimeSeconds" : 3.134496957,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 154816512,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282314168
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.0229178311906,
+      "systemMemoryDeltaBytes" : 2090303488,
+      "systemMemoryUsedBytes" : 82410225664
+    },
+    {
+      "cpuPercent" : 1.805337817406922,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 60637184,
+      "elapsedSeconds" : 43.035225167,
+      "physicalFootprintBytes" : 282379704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.805337817406922,
+          "process" : {
+            "cpuTimeSeconds" : 3.152551456,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 154816512,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282379704
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.16107382550337,
+      "systemMemoryDeltaBytes" : 2088648704,
+      "systemMemoryUsedBytes" : 82408570880
+    },
+    {
+      "cpuPercent" : 1.7476711615917004,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61497344,
+      "elapsedSeconds" : 44.035189209,
+      "physicalFootprintBytes" : 282133944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7476711615917004,
+          "process" : {
+            "cpuTimeSeconds" : 3.170026401,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155676672,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282133944
+          }
+        }
+      ],
+      "systemCPUPercent" : 347.1212968138625,
+      "systemMemoryDeltaBytes" : 2072068096,
+      "systemMemoryUsedBytes" : 82391990272
+    },
+    {
+      "cpuPercent" : 1.4106875216978019,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61497344,
+      "elapsedSeconds" : 45.03519375,
+      "physicalFootprintBytes" : 283821496,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4106875216978019,
+          "process" : {
+            "cpuTimeSeconds" : 3.184132411,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155676672,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 283821496
+          }
+        }
+      ],
+      "systemCPUPercent" : 379.1596638655462,
+      "systemMemoryDeltaBytes" : 2809479168,
+      "systemMemoryUsedBytes" : 83129401344
+    },
+    {
+      "cpuPercent" : 1.6213220893089728,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61562880,
+      "elapsedSeconds" : 46.035247625,
+      "physicalFootprintBytes" : 278873528,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6213220893089728,
+          "process" : {
+            "cpuTimeSeconds" : 3.200349442,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155742208,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 278873528
+          }
+        }
+      ],
+      "systemCPUPercent" : 323.7988826815643,
+      "systemMemoryDeltaBytes" : 2121777152,
+      "systemMemoryUsedBytes" : 82441699328
+    },
+    {
+      "cpuPercent" : 1.4154841501557607,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61562880,
+      "elapsedSeconds" : 47.035194792,
+      "physicalFootprintBytes" : 281888184,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4154841501557607,
+          "process" : {
+            "cpuTimeSeconds" : 3.214501229,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155742208,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281888184
+          }
+        }
+      ],
+      "systemCPUPercent" : 390.33707865168543,
+      "systemMemoryDeltaBytes" : 2072461312,
+      "systemMemoryUsedBytes" : 82392383488
+    },
+    {
+      "cpuPercent" : 1.6113252620015486,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61612032,
+      "elapsedSeconds" : 48.035230959,
+      "physicalFootprintBytes" : 281855416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6113252620015486,
+          "process" : {
+            "cpuTimeSeconds" : 3.230617997,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155791360,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281855416
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.36429770565195,
+      "systemMemoryDeltaBytes" : 1892401152,
+      "systemMemoryUsedBytes" : 82212323328
+    },
+    {
+      "cpuPercent" : 1.5722524032090746,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61620224,
+      "elapsedSeconds" : 49.035227459,
+      "physicalFootprintBytes" : 281871800,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5722524032090746,
+          "process" : {
+            "cpuTimeSeconds" : 3.246339541,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155799552,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281871800
+          }
+        }
+      ],
+      "systemCPUPercent" : 357.7827547592385,
+      "systemMemoryDeltaBytes" : 1874821120,
+      "systemMemoryUsedBytes" : 82194743296
+    },
+    {
+      "cpuPercent" : 1.6808677870663968,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61669376,
+      "elapsedSeconds" : 50.035495667,
+      "physicalFootprintBytes" : 281986488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6808677870663968,
+          "process" : {
+            "cpuTimeSeconds" : 3.263152365,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155848704,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281986488
+          }
+        }
+      ],
+      "systemCPUPercent" : 368.86898096304594,
+      "systemMemoryDeltaBytes" : 1462304768,
+      "systemMemoryUsedBytes" : 81782226944
+    },
+    {
+      "cpuPercent" : 1.6129012944484558,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 61669376,
+      "elapsedSeconds" : 51.035218417,
+      "physicalFootprintBytes" : 281871800,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6129012944484558,
+          "process" : {
+            "cpuTimeSeconds" : 3.279275425,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 155848704,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 281871800
+          }
+        }
+      ],
+      "systemCPUPercent" : 335.9865470852018,
+      "systemMemoryDeltaBytes" : 1451130880,
+      "systemMemoryUsedBytes" : 81771053056
+    },
+    {
+      "cpuPercent" : 1.62031819914885,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 70107136,
+      "elapsedSeconds" : 52.035241042,
+      "physicalFootprintBytes" : 296158672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.62031819914885,
+          "process" : {
+            "cpuTimeSeconds" : 3.295480787,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 164286464,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296158672
+          }
+        }
+      ],
+      "systemCPUPercent" : 314.6218487394958,
+      "systemMemoryDeltaBytes" : 1429962752,
+      "systemMemoryUsedBytes" : 81749884928
+    },
+    {
+      "cpuPercent" : 1.7637164035681794,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 70107136,
+      "elapsedSeconds" : 53.035275917,
+      "physicalFootprintBytes" : 296076752,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7637164035681794,
+          "process" : {
+            "cpuTimeSeconds" : 3.313119168,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 164286464,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296076752
+          }
+        }
+      ],
+      "systemCPUPercent" : 332.9596412556054,
+      "systemMemoryDeltaBytes" : 1293123584,
+      "systemMemoryUsedBytes" : 81613045760
+    },
+    {
+      "cpuPercent" : 1.775786602303608,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 76357632,
+      "elapsedSeconds" : 54.035324042,
+      "physicalFootprintBytes" : 296109520,
+      "processes" : [
+        {
+          "cpuPercent" : 1.775786602303608,
+          "process" : {
+            "cpuTimeSeconds" : 3.330873515,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 170536960,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296109520
+          }
+        }
+      ],
+      "systemCPUPercent" : 330.46875,
+      "systemMemoryDeltaBytes" : 1684471808,
+      "systemMemoryUsedBytes" : 82004393984
+    },
+    {
+      "cpuPercent" : 1.399867283276782,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 76357632,
+      "elapsedSeconds" : 55.035365042,
+      "physicalFootprintBytes" : 296650192,
+      "processes" : [
+        {
+          "cpuPercent" : 1.399867283276782,
+          "process" : {
+            "cpuTimeSeconds" : 3.344876626,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 170536960,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 296650192
+          }
+        }
+      ],
+      "systemCPUPercent" : 386.0022396416573,
+      "systemMemoryDeltaBytes" : 2602876928,
+      "systemMemoryUsedBytes" : 82922799104
+    },
+    {
+      "cpuPercent" : 1.347798022115156,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 76406784,
+      "elapsedSeconds" : 56.035218,
+      "physicalFootprintBytes" : 279086520,
+      "processes" : [
+        {
+          "cpuPercent" : 1.347798022115156,
+          "process" : {
+            "cpuTimeSeconds" : 3.358350569,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 170586112,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 279086520
+          }
+        }
+      ],
+      "systemCPUPercent" : 399.1041433370661,
+      "systemMemoryDeltaBytes" : 1802354688,
+      "systemMemoryUsedBytes" : 82122276864
+    },
+    {
+      "cpuPercent" : 1.516909924266781,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 76406784,
+      "elapsedSeconds" : 57.03525975,
+      "physicalFootprintBytes" : 282396088,
+      "processes" : [
+        {
+          "cpuPercent" : 1.516909924266781,
+          "process" : {
+            "cpuTimeSeconds" : 3.373521328,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 170586112,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282396088
+          }
+        }
+      ],
+      "systemCPUPercent" : 353.9325842696629,
+      "systemMemoryDeltaBytes" : 1974140928,
+      "systemMemoryUsedBytes" : 82294063104
+    },
+    {
+      "cpuPercent" : 1.4979280074038113,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84844544,
+      "elapsedSeconds" : 58.035243667,
+      "physicalFootprintBytes" : 282166712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4979280074038113,
+          "process" : {
+            "cpuTimeSeconds" : 3.388498941,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179023872,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282166712
+          }
+        }
+      ],
+      "systemCPUPercent" : 342.3312883435583,
+      "systemMemoryDeltaBytes" : 1977417728,
+      "systemMemoryUsedBytes" : 82297339904
+    },
+    {
+      "cpuPercent" : 1.4824598989214783,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84852736,
+      "elapsedSeconds" : 59.035246417,
+      "physicalFootprintBytes" : 282428856,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4824598989214783,
+          "process" : {
+            "cpuTimeSeconds" : 3.403322535,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179032064,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282428856
+          }
+        }
+      ],
+      "systemCPUPercent" : 336.9955156950673,
+      "systemMemoryDeltaBytes" : 1959477248,
+      "systemMemoryUsedBytes" : 82279399424
+    },
+    {
+      "cpuPercent" : 1.5813749515494822,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84901888,
+      "elapsedSeconds" : 60.035232417,
+      "physicalFootprintBytes" : 282199480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5813749515494822,
+          "process" : {
+            "cpuTimeSeconds" : 3.419135791,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179081216,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282199480
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.1940549635446,
+      "systemMemoryDeltaBytes" : 1502396416,
+      "systemMemoryUsedBytes" : 81822318592
+    },
+    {
+      "cpuPercent" : 1.4540806466945693,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84901888,
+      "elapsedSeconds" : 61.0352565,
+      "physicalFootprintBytes" : 282379704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4540806466945693,
+          "process" : {
+            "cpuTimeSeconds" : 3.433678263,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179081216,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282379704
+          }
+        }
+      ],
+      "systemCPUPercent" : 346.5025181869054,
+      "systemMemoryDeltaBytes" : 1514684416,
+      "systemMemoryUsedBytes" : 81834606592
+    },
+    {
+      "cpuPercent" : 1.775686456864557,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84951040,
+      "elapsedSeconds" : 62.035273542,
+      "physicalFootprintBytes" : 282199480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.775686456864557,
+          "process" : {
+            "cpuTimeSeconds" : 3.45143495,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179130368,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282199480
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.27232142857144,
+      "systemMemoryDeltaBytes" : 1528414208,
+      "systemMemoryUsedBytes" : 81848336384
+    },
+    {
+      "cpuPercent" : 1.8315077710412957,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 84951040,
+      "elapsedSeconds" : 63.035273,
+      "physicalFootprintBytes" : 282379704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8315077710412957,
+          "process" : {
+            "cpuTimeSeconds" : 3.469751222,
+            "diskReadBytes" : 7897088,
+            "diskWrittenBytes" : 179130368,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282379704
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.0234113712375,
+      "systemMemoryDeltaBytes" : 1488044032,
+      "systemMemoryUsedBytes" : 81807966208
+    },
+    {
+      "cpuPercent" : 1.7332414193148966,
+      "diskReadBytes" : 266240,
+      "diskWrittenBytes" : 97677312,
+      "elapsedSeconds" : 64.035273334,
+      "physicalFootprintBytes" : 282183096,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7332414193148966,
+          "process" : {
+            "cpuTimeSeconds" : 3.487082979,
+            "diskReadBytes" : 7909376,
+            "diskWrittenBytes" : 191856640,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282183096
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.9429849077697,
+      "systemMemoryDeltaBytes" : 1474658304,
+      "systemMemoryUsedBytes" : 81794580480
+    },
+    {
+      "cpuPercent" : 1.8154869942774048,
+      "diskReadBytes" : 266240,
+      "diskWrittenBytes" : 98222080,
+      "elapsedSeconds" : 65.035297792,
+      "physicalFootprintBytes" : 282576312,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8154869942774048,
+          "process" : {
+            "cpuTimeSeconds" : 3.505242514,
+            "diskReadBytes" : 7909376,
+            "diskWrittenBytes" : 192401408,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 282576312
+          }
+        }
+      ],
+      "systemCPUPercent" : 304.69273743016754,
+      "systemMemoryDeltaBytes" : 1434337280,
+      "systemMemoryUsedBytes" : 81754259456
+    },
+    {
+      "cpuPercent" : 1.243626478427367,
+      "diskReadBytes" : 659456,
+      "diskWrittenBytes" : 103890944,
+      "elapsedSeconds" : 66.035320334,
+      "physicalFootprintBytes" : 248858088,
+      "processes" : [
+        {
+          "cpuPercent" : 1.243626478427367,
+          "process" : {
+            "cpuTimeSeconds" : 3.517677944,
+            "diskReadBytes" : 8302592,
+            "diskWrittenBytes" : 198070272,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 248858088
+          }
+        }
+      ],
+      "systemCPUPercent" : 356.57526580861776,
+      "systemMemoryDeltaBytes" : 1013383168,
+      "systemMemoryUsedBytes" : 81333305344
+    },
+    {
+      "cpuPercent" : 0.9519394266910486,
+      "diskReadBytes" : 1605632,
+      "diskWrittenBytes" : 106688512,
+      "elapsedSeconds" : 67.03534675,
+      "physicalFootprintBytes" : 2492024416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9519394266910486,
+          "process" : {
+            "cpuTimeSeconds" : 3.527198078,
+            "diskReadBytes" : 9248768,
+            "diskWrittenBytes" : 200867840,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2492024416
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.39081746920493,
+      "systemMemoryDeltaBytes" : 3864264704,
+      "systemMemoryUsedBytes" : 84184186880
+    },
+    {
+      "cpuPercent" : 1.032651535560954,
+      "diskReadBytes" : 1605632,
+      "diskWrittenBytes" : 106688512,
+      "elapsedSeconds" : 68.035304459,
+      "physicalFootprintBytes" : 2516534880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.032651535560954,
+          "process" : {
+            "cpuTimeSeconds" : 3.537523528,
+            "diskReadBytes" : 9248768,
+            "diskWrittenBytes" : 200867840,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2516534880
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.3818079730488,
+      "systemMemoryDeltaBytes" : 3966451712,
+      "systemMemoryUsedBytes" : 84286373888
+    },
+    {
+      "cpuPercent" : 0.8442261949934943,
+      "diskReadBytes" : 1605632,
+      "diskWrittenBytes" : 106688512,
+      "elapsedSeconds" : 69.03527525,
+      "physicalFootprintBytes" : 2516239968,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8442261949934943,
+          "process" : {
+            "cpuTimeSeconds" : 3.545964092,
+            "diskReadBytes" : 9248768,
+            "diskWrittenBytes" : 200867840,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2516239968
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.63151991026365,
+      "systemMemoryDeltaBytes" : 3948969984,
+      "systemMemoryUsedBytes" : 84268892160
+    },
+    {
+      "cpuPercent" : 5.450392839492229,
+      "diskReadBytes" : 1617920,
+      "diskWrittenBytes" : 108879872,
+      "elapsedSeconds" : 70.035270584,
+      "physicalFootprintBytes" : 3138750384,
+      "processes" : [
+        {
+          "cpuPercent" : 5.450392839492229,
+          "process" : {
+            "cpuTimeSeconds" : 3.600462,
+            "diskReadBytes" : 9261056,
+            "diskWrittenBytes" : 203059200,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3138750384
+          }
+        }
+      ],
+      "systemCPUPercent" : 508.5427135678392,
+      "systemMemoryDeltaBytes" : 4267573248,
+      "systemMemoryUsedBytes" : 84587495424
+    },
+    {
+      "cpuPercent" : 0.8630871983152913,
+      "diskReadBytes" : 1863680,
+      "diskWrittenBytes" : 109092864,
+      "elapsedSeconds" : 70.206059959,
+      "physicalFootprintBytes" : 2921809576,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8630871983152913,
+          "process" : {
+            "cpuTimeSeconds" : 3.60193889,
+            "diskReadBytes" : 9506816,
+            "diskWrittenBytes" : 203272192,
+            "executablePath" : "/Applications/ScreenSage Pro.app/Contents/MacOS/ScreenSage Pro",
+            "identity" : {
+              "pid" : 95373,
+              "startTimeNanoseconds" : 6982599915191
+            },
+            "name" : "ScreenSage Pro",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2921809576
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.8235294117647,
+      "systemMemoryDeltaBytes" : 4044783616,
+      "systemMemoryUsedBytes" : 84364705792
+    }
+  ],
+  "scenario" : "recording",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-01T12:05:00Z",
+  "summary" : {
+    "averageCPUPercent" : 1.4868279145787135,
+    "averagePhysicalFootprintBytes" : 445119258,
+    "averageSystemCPUPercent" : 344.28710001248146,
+    "averageSystemMemoryDeltaBytes" : 1930352185,
+    "cpuTimeSeconds" : 1.048773803,
+    "diskReadBytes" : 1863680,
+    "diskWrittenBytes" : 109092864,
+    "durationSeconds" : 70.206059959,
+    "p95CPUPercent" : 1.805337817406922,
+    "p95SystemCPUPercent" : 414.533258803801,
+    "peakCPUPercent" : 5.450392839492229,
+    "peakPhysicalFootprintBytes" : 3138750384,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 526.3865546218487,
+    "peakSystemMemoryDeltaBytes" : 4267573248,
+    "physicalFootprintDeltaBytes" : 2746827088
+  },
+  "target" : {
+    "build" : "00040300",
+    "bundleIdentifier" : "com.gokoding.ScreenSage-Pro",
+    "bundlePath" : "/Applications/ScreenSage Pro.app",
+    "name" : "ScreenSage Pro",
+    "recorderID" : "screensage-pro",
+    "version" : "0.4.3"
+  }
+}

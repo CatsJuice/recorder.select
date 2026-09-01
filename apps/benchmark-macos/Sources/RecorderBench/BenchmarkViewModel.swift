@@ -68,6 +68,8 @@ final class BenchmarkViewModel: ObservableObject {
     }
     var currentFootprintBytes: UInt64 { samples.last?.physicalFootprintBytes ?? 0 }
     var peakFootprintBytes: UInt64 { samples.map(\.physicalFootprintBytes).max() ?? 0 }
+    var currentSystemMemoryDeltaBytes: UInt64 { samples.last?.systemMemoryDeltaBytes ?? 0 }
+    var peakSystemMemoryDeltaBytes: UInt64 { samples.map(\.systemMemoryDeltaBytes).max() ?? 0 }
 
     func refreshRunningApplications() {
         let ownPID = ProcessInfo.processInfo.processIdentifier

@@ -1,0 +1,1894 @@
+{
+  "endedAt" : "2026-09-01T10:54:24Z",
+  "id" : "9AF66AC1-D69E-451B-A0B1-7C4C61256602",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "notes" : "Workload resolution: 5K. Xcode Debug build.",
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.333e-06,
+      "physicalFootprintBytes" : 407815824,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 38.185073672,
+            "diskReadBytes" : 1936236544,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 407815824
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 79212609536
+    },
+    {
+      "cpuPercent" : 1.2134985890272243,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.043329,
+      "physicalFootprintBytes" : 408127120,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2134985890272243,
+          "process" : {
+            "cpuTimeSeconds" : 38.197736999,
+            "diskReadBytes" : 1936236544,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 408127120
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.76675603217154,
+      "systemMemoryDeltaBytes" : 234422272,
+      "systemMemoryUsedBytes" : 79447031808
+    },
+    {
+      "cpuPercent" : 0.671113272201896,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.043765458,
+      "physicalFootprintBytes" : 579012216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.671113272201896,
+          "process" : {
+            "cpuTimeSeconds" : 38.204451645,
+            "diskReadBytes" : 1936240640,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 579012216
+          }
+        }
+      ],
+      "systemCPUPercent" : 479.26008968609864,
+      "systemMemoryDeltaBytes" : 650985472,
+      "systemMemoryUsedBytes" : 79863595008
+    },
+    {
+      "cpuPercent" : 1.6553105436880668,
+      "diskReadBytes" : 11415552,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.043753708,
+      "physicalFootprintBytes" : 856065992,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6553105436880668,
+          "process" : {
+            "cpuTimeSeconds" : 38.221004887,
+            "diskReadBytes" : 1947652096,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 856065992
+          }
+        }
+      ],
+      "systemCPUPercent" : 366.0504201680672,
+      "systemMemoryDeltaBytes" : 1037205504,
+      "systemMemoryUsedBytes" : 80249815040
+    },
+    {
+      "cpuPercent" : 2.140623234421183,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.043355583,
+      "physicalFootprintBytes" : 1002784832,
+      "processes" : [
+        {
+          "cpuPercent" : 2.140623234421183,
+          "process" : {
+            "cpuTimeSeconds" : 38.242402209,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1002784832
+          }
+        }
+      ],
+      "systemCPUPercent" : 468.1614349775784,
+      "systemMemoryDeltaBytes" : 2272460800,
+      "systemMemoryUsedBytes" : 81485070336
+    },
+    {
+      "cpuPercent" : 1.5575726489950377,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.04330425,
+      "physicalFootprintBytes" : 798001216,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5575726489950377,
+          "process" : {
+            "cpuTimeSeconds" : 38.257975359,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 798001216
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.24790151091213,
+      "systemMemoryDeltaBytes" : 1491828736,
+      "systemMemoryUsedBytes" : 80704438272
+    },
+    {
+      "cpuPercent" : 1.8167612435878704,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6.0433845,
+      "physicalFootprintBytes" : 798541888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8167612435878704,
+          "process" : {
+            "cpuTimeSeconds" : 38.276146854,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 798541888
+          }
+        }
+      ],
+      "systemCPUPercent" : 337.6259798432251,
+      "systemMemoryDeltaBytes" : 1426309120,
+      "systemMemoryUsedBytes" : 80638918656
+    },
+    {
+      "cpuPercent" : 1.7520584305772116,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.043294208,
+      "physicalFootprintBytes" : 798378048,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7520584305772116,
+          "process" : {
+            "cpuTimeSeconds" : 38.293663667,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 386289664,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 798378048
+          }
+        }
+      ],
+      "systemCPUPercent" : 347.4747474747475,
+      "systemMemoryDeltaBytes" : 1426112512,
+      "systemMemoryUsedBytes" : 80638722048
+    },
+    {
+      "cpuPercent" : 1.7266179968024924,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 8388608,
+      "elapsedSeconds" : 8.043461833,
+      "physicalFootprintBytes" : 813467712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7266179968024924,
+          "process" : {
+            "cpuTimeSeconds" : 38.31093257,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 394678272,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 813467712
+          }
+        }
+      ],
+      "systemCPUPercent" : 474.4812114413909,
+      "systemMemoryDeltaBytes" : 2315780096,
+      "systemMemoryUsedBytes" : 81528389632
+    },
+    {
+      "cpuPercent" : 1.7584268766068032,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 16777216,
+      "elapsedSeconds" : 9.042960333,
+      "physicalFootprintBytes" : 798509120,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7584268766068032,
+          "process" : {
+            "cpuTimeSeconds" : 38.32851023,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 403066880,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 798509120
+          }
+        }
+      ],
+      "systemCPUPercent" : 465.1345291479821,
+      "systemMemoryDeltaBytes" : 2020032512,
+      "systemMemoryUsedBytes" : 81232642048
+    },
+    {
+      "cpuPercent" : 1.8056332500247418,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 16777216,
+      "elapsedSeconds" : 10.043371167,
+      "physicalFootprintBytes" : 799508544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8056332500247418,
+          "process" : {
+            "cpuTimeSeconds" : 38.346571689,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 403066880,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 799508544
+          }
+        }
+      ],
+      "systemCPUPercent" : 458.58585858585855,
+      "systemMemoryDeltaBytes" : 2112667648,
+      "systemMemoryUsedBytes" : 81325277184
+    },
+    {
+      "cpuPercent" : 1.9524379234453801,
+      "diskReadBytes" : 21073920,
+      "diskWrittenBytes" : 16777216,
+      "elapsedSeconds" : 11.043412208,
+      "physicalFootprintBytes" : 795347008,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9524379234453801,
+          "process" : {
+            "cpuTimeSeconds" : 38.366098233,
+            "diskReadBytes" : 1957310464,
+            "diskWrittenBytes" : 403066880,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 795347008
+          }
+        }
+      ],
+      "systemCPUPercent" : 359.7984322508398,
+      "systemMemoryDeltaBytes" : 2070102016,
+      "systemMemoryUsedBytes" : 81282711552
+    },
+    {
+      "cpuPercent" : 1.9388676515468126,
+      "diskReadBytes" : 21082112,
+      "diskWrittenBytes" : 25165824,
+      "elapsedSeconds" : 12.0436225,
+      "physicalFootprintBytes" : 794134592,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9388676515468126,
+          "process" : {
+            "cpuTimeSeconds" : 38.38548959,
+            "diskReadBytes" : 1957318656,
+            "diskWrittenBytes" : 411455488,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 794134592
+          }
+        }
+      ],
+      "systemCPUPercent" : 347.1571906354515,
+      "systemMemoryDeltaBytes" : 2090401792,
+      "systemMemoryUsedBytes" : 81303011328
+    },
+    {
+      "cpuPercent" : 1.8144801549683538,
+      "diskReadBytes" : 21086208,
+      "diskWrittenBytes" : 33554432,
+      "elapsedSeconds" : 13.042808542,
+      "physicalFootprintBytes" : 796985408,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8144801549683538,
+          "process" : {
+            "cpuTimeSeconds" : 38.403621542,
+            "diskReadBytes" : 1957322752,
+            "diskWrittenBytes" : 419844096,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 796985408
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.08917554683114,
+      "systemMemoryDeltaBytes" : 1894236160,
+      "systemMemoryUsedBytes" : 81106845696
+    },
+    {
+      "cpuPercent" : 1.834462812412579,
+      "diskReadBytes" : 21090304,
+      "diskWrittenBytes" : 50331648,
+      "elapsedSeconds" : 14.043829,
+      "physicalFootprintBytes" : 792987712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.834462812412579,
+          "process" : {
+            "cpuTimeSeconds" : 38.42198502,
+            "diskReadBytes" : 1957326848,
+            "diskWrittenBytes" : 436621312,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 792987712
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.49272116461367,
+      "systemMemoryDeltaBytes" : 1818755072,
+      "systemMemoryUsedBytes" : 81031364608
+    },
+    {
+      "cpuPercent" : 1.870117359612736,
+      "diskReadBytes" : 21090304,
+      "diskWrittenBytes" : 50331648,
+      "elapsedSeconds" : 15.043217625,
+      "physicalFootprintBytes" : 789841984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.870117359612736,
+          "process" : {
+            "cpuTimeSeconds" : 38.440671482,
+            "diskReadBytes" : 1957326848,
+            "diskWrittenBytes" : 436621312,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789841984
+          }
+        }
+      ],
+      "systemCPUPercent" : 337.248322147651,
+      "systemMemoryDeltaBytes" : 1704886272,
+      "systemMemoryUsedBytes" : 80917495808
+    },
+    {
+      "cpuPercent" : 1.8307561385380275,
+      "diskReadBytes" : 21090304,
+      "diskWrittenBytes" : 50331648,
+      "elapsedSeconds" : 16.043425333,
+      "physicalFootprintBytes" : 789825600,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8307561385380275,
+          "process" : {
+            "cpuTimeSeconds" : 38.458987175,
+            "diskReadBytes" : 1957326848,
+            "diskWrittenBytes" : 436621312,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789825600
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.3258928571429,
+      "systemMemoryDeltaBytes" : 1662926848,
+      "systemMemoryUsedBytes" : 80875536384
+    },
+    {
+      "cpuPercent" : 1.8417380655874247,
+      "diskReadBytes" : 21098496,
+      "diskWrittenBytes" : 58720256,
+      "elapsedSeconds" : 17.043387375,
+      "physicalFootprintBytes" : 789710912,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8417380655874247,
+          "process" : {
+            "cpuTimeSeconds" : 38.477400335,
+            "diskReadBytes" : 1957335040,
+            "diskWrittenBytes" : 445009920,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789710912
+          }
+        }
+      ],
+      "systemCPUPercent" : 374.496644295302,
+      "systemMemoryDeltaBytes" : 1844461568,
+      "systemMemoryUsedBytes" : 81057071104
+    },
+    {
+      "cpuPercent" : 1.736290318669222,
+      "diskReadBytes" : 21098496,
+      "diskWrittenBytes" : 58720256,
+      "elapsedSeconds" : 18.04373975,
+      "physicalFootprintBytes" : 793872448,
+      "processes" : [
+        {
+          "cpuPercent" : 1.736290318669222,
+          "process" : {
+            "cpuTimeSeconds" : 38.494769907,
+            "diskReadBytes" : 1957335040,
+            "diskWrittenBytes" : 445009920,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 793872448
+          }
+        }
+      ],
+      "systemCPUPercent" : 480.06737787759687,
+      "systemMemoryDeltaBytes" : 2743156736,
+      "systemMemoryUsedBytes" : 81955766272
+    },
+    {
+      "cpuPercent" : 1.7628642672302828,
+      "diskReadBytes" : 21106688,
+      "diskWrittenBytes" : 67108864,
+      "elapsedSeconds" : 19.043306583,
+      "physicalFootprintBytes" : 793036864,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7628642672302828,
+          "process" : {
+            "cpuTimeSeconds" : 38.512390381,
+            "diskReadBytes" : 1957343232,
+            "diskWrittenBytes" : 453398528,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 793036864
+          }
+        }
+      ],
+      "systemCPUPercent" : 334.2281879194631,
+      "systemMemoryDeltaBytes" : 2768060416,
+      "systemMemoryUsedBytes" : 81980669952
+    },
+    {
+      "cpuPercent" : 1.6788894086228148,
+      "diskReadBytes" : 21106688,
+      "diskWrittenBytes" : 67108864,
+      "elapsedSeconds" : 20.043562042,
+      "physicalFootprintBytes" : 789448768,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6788894086228148,
+          "process" : {
+            "cpuTimeSeconds" : 38.529186502,
+            "diskReadBytes" : 1957343232,
+            "diskWrittenBytes" : 453398528,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789448768
+          }
+        }
+      ],
+      "systemCPUPercent" : 458.2914572864322,
+      "systemMemoryDeltaBytes" : 2818326528,
+      "systemMemoryUsedBytes" : 82030936064
+    },
+    {
+      "cpuPercent" : 1.8042621626852804,
+      "diskReadBytes" : 21114880,
+      "diskWrittenBytes" : 75497472,
+      "elapsedSeconds" : 21.043278167,
+      "physicalFootprintBytes" : 792119360,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8042621626852804,
+          "process" : {
+            "cpuTimeSeconds" : 38.547220921,
+            "diskReadBytes" : 1957351424,
+            "diskWrittenBytes" : 461787136,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 792119360
+          }
+        }
+      ],
+      "systemCPUPercent" : 321.1409395973154,
+      "systemMemoryDeltaBytes" : 2335113216,
+      "systemMemoryUsedBytes" : 81547722752
+    },
+    {
+      "cpuPercent" : 1.7599864639456835,
+      "diskReadBytes" : 21114880,
+      "diskWrittenBytes" : 75497472,
+      "elapsedSeconds" : 22.043345958,
+      "physicalFootprintBytes" : 786597952,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7599864639456835,
+          "process" : {
+            "cpuTimeSeconds" : 38.564825916,
+            "diskReadBytes" : 1957351424,
+            "diskWrittenBytes" : 461787136,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786597952
+          }
+        }
+      ],
+      "systemCPUPercent" : 353.96648044692733,
+      "systemMemoryDeltaBytes" : 2188935168,
+      "systemMemoryUsedBytes" : 81401544704
+    },
+    {
+      "cpuPercent" : 1.8277962187731829,
+      "diskReadBytes" : 21114880,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 23.043334208,
+      "physicalFootprintBytes" : 789940288,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8277962187731829,
+          "process" : {
+            "cpuTimeSeconds" : 38.583101416,
+            "diskReadBytes" : 1957351424,
+            "diskWrittenBytes" : 470175744,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789940288
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.72778088317494,
+      "systemMemoryDeltaBytes" : 1472446464,
+      "systemMemoryUsedBytes" : 80685056000
+    },
+    {
+      "cpuPercent" : 1.866021920044137,
+      "diskReadBytes" : 21114880,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 24.043734458,
+      "physicalFootprintBytes" : 790628416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.866021920044137,
+          "process" : {
+            "cpuTimeSeconds" : 38.601769254,
+            "diskReadBytes" : 1957351424,
+            "diskWrittenBytes" : 470175744,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790628416
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.7660167130919,
+      "systemMemoryDeltaBytes" : 1473953792,
+      "systemMemoryUsedBytes" : 80686563328
+    },
+    {
+      "cpuPercent" : 1.8785886892721637,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 25.043335542,
+      "physicalFootprintBytes" : 783419456,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8785886892721637,
+          "process" : {
+            "cpuTimeSeconds" : 38.620547996,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 470175744,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783419456
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.6871508379888,
+      "systemMemoryDeltaBytes" : 1478934528,
+      "systemMemoryUsedBytes" : 80691544064
+    },
+    {
+      "cpuPercent" : 1.7971896320500373,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 26.043751875,
+      "physicalFootprintBytes" : 784779328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7971896320500373,
+          "process" : {
+            "cpuTimeSeconds" : 38.638526652,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 470175744,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 784779328
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.59192825112103,
+      "systemMemoryDeltaBytes" : 1476231168,
+      "systemMemoryUsedBytes" : 80688840704
+    },
+    {
+      "cpuPercent" : 1.8985826495493383,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 27.043737292,
+      "physicalFootprintBytes" : 786958400,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8985826495493383,
+          "process" : {
+            "cpuTimeSeconds" : 38.657511867,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 470175744,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786958400
+          }
+        }
+      ],
+      "systemCPUPercent" : 337.75055679287306,
+      "systemMemoryDeltaBytes" : 1463533568,
+      "systemMemoryUsedBytes" : 80676143104
+    },
+    {
+      "cpuPercent" : 1.8335871672916029,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 92274688,
+      "elapsedSeconds" : 28.043273417,
+      "physicalFootprintBytes" : 786499648,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8335871672916029,
+          "process" : {
+            "cpuTimeSeconds" : 38.675839868,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 478564352,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786499648
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.74622694242595,
+      "systemMemoryDeltaBytes" : 1460518912,
+      "systemMemoryUsedBytes" : 80673128448
+    },
+    {
+      "cpuPercent" : 1.9013291383531024,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 92274688,
+      "elapsedSeconds" : 29.043397583,
+      "physicalFootprintBytes" : 789989440,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9013291383531024,
+          "process" : {
+            "cpuTimeSeconds" : 38.694857576,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 478564352,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789989440
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.51955307262574,
+      "systemMemoryDeltaBytes" : 1445462016,
+      "systemMemoryUsedBytes" : 80658071552
+    },
+    {
+      "cpuPercent" : 1.7948671329219554,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 92274688,
+      "elapsedSeconds" : 30.043750958,
+      "physicalFootprintBytes" : 790972480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7948671329219554,
+          "process" : {
+            "cpuTimeSeconds" : 38.712809597,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 478564352,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790972480
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.41071428571433,
+      "systemMemoryDeltaBytes" : 1449132032,
+      "systemMemoryUsedBytes" : 80661741568
+    },
+    {
+      "cpuPercent" : 1.9022290332752858,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 92274688,
+      "elapsedSeconds" : 31.043295292,
+      "physicalFootprintBytes" : 790087744,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9022290332752858,
+          "process" : {
+            "cpuTimeSeconds" : 38.731825843,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 478564352,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790087744
+          }
+        }
+      ],
+      "systemCPUPercent" : 314.26972579742585,
+      "systemMemoryDeltaBytes" : 1433583616,
+      "systemMemoryUsedBytes" : 80646193152
+    },
+    {
+      "cpuPercent" : 1.8458635748310919,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 100663296,
+      "elapsedSeconds" : 32.043520708,
+      "physicalFootprintBytes" : 786532416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8458635748310919,
+          "process" : {
+            "cpuTimeSeconds" : 38.750287809,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 486952960,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786532416
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.8551532033426,
+      "systemMemoryDeltaBytes" : 1385332736,
+      "systemMemoryUsedBytes" : 80597942272
+    },
+    {
+      "cpuPercent" : 1.8899213509573045,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 100663296,
+      "elapsedSeconds" : 33.043202167,
+      "physicalFootprintBytes" : 786663488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8899213509573045,
+          "process" : {
+            "cpuTimeSeconds" : 38.769180344,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 486952960,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786663488
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.60335195530723,
+      "systemMemoryDeltaBytes" : 1390247936,
+      "systemMemoryUsedBytes" : 80602857472
+    },
+    {
+      "cpuPercent" : 1.899529592944017,
+      "diskReadBytes" : 21131264,
+      "diskWrittenBytes" : 100663296,
+      "elapsedSeconds" : 34.043230375,
+      "physicalFootprintBytes" : 787318848,
+      "processes" : [
+        {
+          "cpuPercent" : 1.899529592944017,
+          "process" : {
+            "cpuTimeSeconds" : 38.788175355,
+            "diskReadBytes" : 1957367808,
+            "diskWrittenBytes" : 486952960,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 787318848
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.36683417085425,
+      "systemMemoryDeltaBytes" : 1383202816,
+      "systemMemoryUsedBytes" : 80595812352
+    },
+    {
+      "cpuPercent" : 1.8292860389038532,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 109051904,
+      "elapsedSeconds" : 35.043776208,
+      "physicalFootprintBytes" : 783321152,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8292860389038532,
+          "process" : {
+            "cpuTimeSeconds" : 38.806479653,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 495341568,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783321152
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.71548351034096,
+      "systemMemoryDeltaBytes" : 1341243392,
+      "systemMemoryUsedBytes" : 80553852928
+    },
+    {
+      "cpuPercent" : 1.8903497754393637,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 36.043008625,
+      "physicalFootprintBytes" : 790104128,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8903497754393637,
+          "process" : {
+            "cpuTimeSeconds" : 38.825367961,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 503730176,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790104128
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.6169265033408,
+      "systemMemoryDeltaBytes" : 1313013760,
+      "systemMemoryUsedBytes" : 80525623296
+    },
+    {
+      "cpuPercent" : 1.8571208048276302,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 37.043242,
+      "physicalFootprintBytes" : 790399040,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8571208048276302,
+          "process" : {
+            "cpuTimeSeconds" : 38.843942272,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 503730176,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790399040
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.93959731543623,
+      "systemMemoryDeltaBytes" : 1305395200,
+      "systemMemoryUsedBytes" : 80518004736
+    },
+    {
+      "cpuPercent" : 1.760795657785802,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 38.043741667,
+      "physicalFootprintBytes" : 789792832,
+      "processes" : [
+        {
+          "cpuPercent" : 1.760795657785802,
+          "process" : {
+            "cpuTimeSeconds" : 38.861558687,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 503730176,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789792832
+          }
+        }
+      ],
+      "systemCPUPercent" : 283.5754189944134,
+      "systemMemoryDeltaBytes" : 1305198592,
+      "systemMemoryUsedBytes" : 80517808128
+    },
+    {
+      "cpuPercent" : 1.7612092742875778,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 125829120,
+      "elapsedSeconds" : 39.043353583,
+      "physicalFootprintBytes" : 789841984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7612092742875778,
+          "process" : {
+            "cpuTimeSeconds" : 38.87916524,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 512118784,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789841984
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.60893854748605,
+      "systemMemoryDeltaBytes" : 1305001984,
+      "systemMemoryUsedBytes" : 80517611520
+    },
+    {
+      "cpuPercent" : 1.8360411393131493,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 125829120,
+      "elapsedSeconds" : 40.043254042,
+      "physicalFootprintBytes" : 789841984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8360411393131493,
+          "process" : {
+            "cpuTimeSeconds" : 38.897524396,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 512118784,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789841984
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.36180904522615,
+      "systemMemoryDeltaBytes" : 1305460736,
+      "systemMemoryUsedBytes" : 80518070272
+    },
+    {
+      "cpuPercent" : 1.9140044750185876,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 125829120,
+      "elapsedSeconds" : 41.04335975,
+      "physicalFootprintBytes" : 789956672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9140044750185876,
+          "process" : {
+            "cpuTimeSeconds" : 38.916666019,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 512118784,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789956672
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.9127516778523,
+      "systemMemoryDeltaBytes" : 1311309824,
+      "systemMemoryUsedBytes" : 80523919360
+    },
+    {
+      "cpuPercent" : 1.831021605393857,
+      "diskReadBytes" : 21139456,
+      "diskWrittenBytes" : 125829120,
+      "elapsedSeconds" : 42.043603083,
+      "physicalFootprintBytes" : 789858368,
+      "processes" : [
+        {
+          "cpuPercent" : 1.831021605393857,
+          "process" : {
+            "cpuTimeSeconds" : 38.934983801,
+            "diskReadBytes" : 1957376000,
+            "diskWrittenBytes" : 512118784,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789858368
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.5139664804469,
+      "systemMemoryDeltaBytes" : 1310736384,
+      "systemMemoryUsedBytes" : 80523345920
+    },
+    {
+      "cpuPercent" : 1.818742193172497,
+      "diskReadBytes" : 21151744,
+      "diskWrittenBytes" : 134217728,
+      "elapsedSeconds" : 43.0433195,
+      "physicalFootprintBytes" : 789743680,
+      "processes" : [
+        {
+          "cpuPercent" : 1.818742193172497,
+          "process" : {
+            "cpuTimeSeconds" : 38.953163006,
+            "diskReadBytes" : 1957388288,
+            "diskWrittenBytes" : 520507392,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789743680
+          }
+        }
+      ],
+      "systemCPUPercent" : 315.5258764607679,
+      "systemMemoryDeltaBytes" : 1354022912,
+      "systemMemoryUsedBytes" : 80566632448
+    },
+    {
+      "cpuPercent" : 1.820424498329761,
+      "diskReadBytes" : 21151744,
+      "diskWrittenBytes" : 134217728,
+      "elapsedSeconds" : 44.04379125,
+      "physicalFootprintBytes" : 789956672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.820424498329761,
+          "process" : {
+            "cpuTimeSeconds" : 38.971375854,
+            "diskReadBytes" : 1957388288,
+            "diskWrittenBytes" : 520507392,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 789956672
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.30150753768845,
+      "systemMemoryDeltaBytes" : 1364525056,
+      "systemMemoryUsedBytes" : 80577134592
+    },
+    {
+      "cpuPercent" : 1.8910864494211046,
+      "diskReadBytes" : 21151744,
+      "diskWrittenBytes" : 134217728,
+      "elapsedSeconds" : 45.042930125,
+      "physicalFootprintBytes" : 790071360,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8910864494211046,
+          "process" : {
+            "cpuTimeSeconds" : 38.990270073,
+            "diskReadBytes" : 1957388288,
+            "diskWrittenBytes" : 520507392,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790071360
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.0078343592613,
+      "systemMemoryDeltaBytes" : 1337212928,
+      "systemMemoryUsedBytes" : 80549822464
+    },
+    {
+      "cpuPercent" : 1.8122153649620387,
+      "diskReadBytes" : 21192704,
+      "diskWrittenBytes" : 142655488,
+      "elapsedSeconds" : 46.043351625,
+      "physicalFootprintBytes" : 790349888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8122153649620387,
+          "process" : {
+            "cpuTimeSeconds" : 39.008401663,
+            "diskReadBytes" : 1957429248,
+            "diskWrittenBytes" : 528945152,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790349888
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.8829431438127,
+      "systemMemoryDeltaBytes" : 1338753024,
+      "systemMemoryUsedBytes" : 80551362560
+    },
+    {
+      "cpuPercent" : 1.8412063783710524,
+      "diskReadBytes" : 21192704,
+      "diskWrittenBytes" : 151044096,
+      "elapsedSeconds" : 47.043345167,
+      "physicalFootprintBytes" : 791185472,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8412063783710524,
+          "process" : {
+            "cpuTimeSeconds" : 39.02681482,
+            "diskReadBytes" : 1957429248,
+            "diskWrittenBytes" : 537333760,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 791185472
+          }
+        }
+      ],
+      "systemCPUPercent" : 279.17133258678615,
+      "systemMemoryDeltaBytes" : 1339555840,
+      "systemMemoryUsedBytes" : 80552165376
+    },
+    {
+      "cpuPercent" : 1.7912092412157476,
+      "diskReadBytes" : 21192704,
+      "diskWrittenBytes" : 151044096,
+      "elapsedSeconds" : 48.042975167,
+      "physicalFootprintBytes" : 790218816,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7912092412157476,
+          "process" : {
+            "cpuTimeSeconds" : 39.044719205,
+            "diskReadBytes" : 1957429248,
+            "diskWrittenBytes" : 537333760,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790218816
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.9096989966555,
+      "systemMemoryDeltaBytes" : 1331511296,
+      "systemMemoryUsedBytes" : 80544120832
+    },
+    {
+      "cpuPercent" : 1.8499345697417777,
+      "diskReadBytes" : 21192704,
+      "diskWrittenBytes" : 151044096,
+      "elapsedSeconds" : 49.043325333,
+      "physicalFootprintBytes" : 783910976,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8499345697417777,
+          "process" : {
+            "cpuTimeSeconds" : 39.063223369,
+            "diskReadBytes" : 1957429248,
+            "diskWrittenBytes" : 537333760,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783910976
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.8255033557047,
+      "systemMemoryDeltaBytes" : 1322532864,
+      "systemMemoryUsedBytes" : 80535142400
+    },
+    {
+      "cpuPercent" : 1.9039911548705788,
+      "diskReadBytes" : 21204992,
+      "diskWrittenBytes" : 159432704,
+      "elapsedSeconds" : 50.043756417,
+      "physicalFootprintBytes" : 783566912,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9039911548705788,
+          "process" : {
+            "cpuTimeSeconds" : 39.082269459,
+            "diskReadBytes" : 1957441536,
+            "diskWrittenBytes" : 545722368,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783566912
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.2321428571429,
+      "systemMemoryDeltaBytes" : 1322745856,
+      "systemMemoryUsedBytes" : 80535355392
+    },
+    {
+      "cpuPercent" : 1.8906576352874478,
+      "diskReadBytes" : 21204992,
+      "diskWrittenBytes" : 159432704,
+      "elapsedSeconds" : 51.043694792,
+      "physicalFootprintBytes" : 783370304,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8906576352874478,
+          "process" : {
+            "cpuTimeSeconds" : 39.101176638,
+            "diskReadBytes" : 1957441536,
+            "diskWrittenBytes" : 545722368,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783370304
+          }
+        }
+      ],
+      "systemCPUPercent" : 314.9245388485187,
+      "systemMemoryDeltaBytes" : 1324974080,
+      "systemMemoryUsedBytes" : 80537583616
+    },
+    {
+      "cpuPercent" : 1.6796446718863618,
+      "diskReadBytes" : 21204992,
+      "diskWrittenBytes" : 167821312,
+      "elapsedSeconds" : 52.043229292,
+      "physicalFootprintBytes" : 791824448,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6796446718863618,
+          "process" : {
+            "cpuTimeSeconds" : 39.117964219,
+            "diskReadBytes" : 1957441536,
+            "diskWrittenBytes" : 554110976,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 791824448
+          }
+        }
+      ],
+      "systemCPUPercent" : 391.0414333706607,
+      "systemMemoryDeltaBytes" : 2598518784,
+      "systemMemoryUsedBytes" : 81811128320
+    },
+    {
+      "cpuPercent" : 1.7572600218265284,
+      "diskReadBytes" : 21204992,
+      "diskWrittenBytes" : 167821312,
+      "elapsedSeconds" : 53.04324825,
+      "physicalFootprintBytes" : 799033408,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7572600218265284,
+          "process" : {
+            "cpuTimeSeconds" : 39.135537383,
+            "diskReadBytes" : 1957441536,
+            "diskWrittenBytes" : 554110976,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 799033408
+          }
+        }
+      ],
+      "systemCPUPercent" : 372.72727272727275,
+      "systemMemoryDeltaBytes" : 2564784128,
+      "systemMemoryUsedBytes" : 81777393664
+    },
+    {
+      "cpuPercent" : 1.8419224220983605,
+      "diskReadBytes" : 21204992,
+      "diskWrittenBytes" : 167821312,
+      "elapsedSeconds" : 54.043772792,
+      "physicalFootprintBytes" : 787089472,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8419224220983605,
+          "process" : {
+            "cpuTimeSeconds" : 39.153966813,
+            "diskReadBytes" : 1957441536,
+            "diskWrittenBytes" : 554110976,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 787089472
+          }
+        }
+      ],
+      "systemCPUPercent" : 349.1031390134529,
+      "systemMemoryDeltaBytes" : 1814020096,
+      "systemMemoryUsedBytes" : 81026629632
+    },
+    {
+      "cpuPercent" : 1.8741581330214265,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 167821312,
+      "elapsedSeconds" : 55.04323225,
+      "physicalFootprintBytes" : 783386688,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8741581330214265,
+          "process" : {
+            "cpuTimeSeconds" : 39.172697108,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 554110976,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 783386688
+          }
+        }
+      ],
+      "systemCPUPercent" : 344.2953020134228,
+      "systemMemoryDeltaBytes" : 1850638336,
+      "systemMemoryUsedBytes" : 81063247872
+    },
+    {
+      "cpuPercent" : 1.776249467878321,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 176209920,
+      "elapsedSeconds" : 56.043750833,
+      "physicalFootprintBytes" : 793675840,
+      "processes" : [
+        {
+          "cpuPercent" : 1.776249467878321,
+          "process" : {
+            "cpuTimeSeconds" : 39.190469395,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 562499584,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 793675840
+          }
+        }
+      ],
+      "systemCPUPercent" : 396.4225824482951,
+      "systemMemoryDeltaBytes" : 1908326400,
+      "systemMemoryUsedBytes" : 81120935936
+    },
+    {
+      "cpuPercent" : 1.907123325285965,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 176209920,
+      "elapsedSeconds" : 57.043175917,
+      "physicalFootprintBytes" : 790759488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.907123325285965,
+          "process" : {
+            "cpuTimeSeconds" : 39.209530948,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 562499584,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790759488
+          }
+        }
+      ],
+      "systemCPUPercent" : 430.5882352941176,
+      "systemMemoryDeltaBytes" : 1359167488,
+      "systemMemoryUsedBytes" : 80571777024
+    },
+    {
+      "cpuPercent" : 1.8236646226408872,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 176209920,
+      "elapsedSeconds" : 58.043296958,
+      "physicalFootprintBytes" : 786925632,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8236646226408872,
+          "process" : {
+            "cpuTimeSeconds" : 39.227768674,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 562499584,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786925632
+          }
+        }
+      ],
+      "systemCPUPercent" : 322.6890756302521,
+      "systemMemoryDeltaBytes" : 1302151168,
+      "systemMemoryUsedBytes" : 80514760704
+    },
+    {
+      "cpuPercent" : 1.7705959656951245,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 176209920,
+      "elapsedSeconds" : 59.043369375,
+      "physicalFootprintBytes" : 786958400,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7705959656951245,
+          "process" : {
+            "cpuTimeSeconds" : 39.245477879,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 562499584,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 786958400
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.8340807174888,
+      "systemMemoryDeltaBytes" : 1299283968,
+      "systemMemoryUsedBytes" : 80511893504
+    },
+    {
+      "cpuPercent" : 1.8536267488541827,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 184598528,
+      "elapsedSeconds" : 60.04373825,
+      "physicalFootprintBytes" : 790104128,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8536267488541827,
+          "process" : {
+            "cpuTimeSeconds" : 39.264019651,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 570888192,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790104128
+          }
+        }
+      ],
+      "systemCPUPercent" : 367.8611422172453,
+      "systemMemoryDeltaBytes" : 1309622272,
+      "systemMemoryUsedBytes" : 80522231808
+    },
+    {
+      "cpuPercent" : 1.9161924180787469,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 184598528,
+      "elapsedSeconds" : 61.042904042,
+      "physicalFootprintBytes" : 790300736,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9161924180787469,
+          "process" : {
+            "cpuTimeSeconds" : 39.283162945,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 570888192,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790300736
+          }
+        }
+      ],
+      "systemCPUPercent" : 387.22689075630257,
+      "systemMemoryDeltaBytes" : 1322401792,
+      "systemMemoryUsedBytes" : 80535011328
+    },
+    {
+      "cpuPercent" : 1.8325940347810437,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 184598528,
+      "elapsedSeconds" : 62.043762958,
+      "physicalFootprintBytes" : 790038592,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8325940347810437,
+          "process" : {
+            "cpuTimeSeconds" : 39.301508756,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 570888192,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790038592
+          }
+        }
+      ],
+      "systemCPUPercent" : 492.0067076579095,
+      "systemMemoryDeltaBytes" : 1641758720,
+      "systemMemoryUsedBytes" : 80854368256
+    },
+    {
+      "cpuPercent" : 1.8214273239445684,
+      "diskReadBytes" : 21221376,
+      "diskWrittenBytes" : 192987136,
+      "elapsedSeconds" : 63.043756125,
+      "physicalFootprintBytes" : 790513728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8214273239445684,
+          "process" : {
+            "cpuTimeSeconds" : 39.31972065,
+            "diskReadBytes" : 1957457920,
+            "diskWrittenBytes" : 579276800,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 790513728
+          }
+        }
+      ],
+      "systemCPUPercent" : 337.5,
+      "systemMemoryDeltaBytes" : 1283932160,
+      "systemMemoryUsedBytes" : 80496541696
+    },
+    {
+      "cpuPercent" : 1.289355250583229,
+      "diskReadBytes" : 61427712,
+      "diskWrittenBytes" : 248791040,
+      "elapsedSeconds" : 64.043330542,
+      "physicalFootprintBytes" : 488900336,
+      "processes" : [
+        {
+          "cpuPercent" : 1.289355250583229,
+          "process" : {
+            "cpuTimeSeconds" : 39.332608582,
+            "diskReadBytes" : 1997664256,
+            "diskWrittenBytes" : 635080704,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 488900336
+          }
+        }
+      ],
+      "systemCPUPercent" : 352.72318921953956,
+      "systemMemoryDeltaBytes" : 650625024,
+      "systemMemoryUsedBytes" : 79863234560
+    },
+    {
+      "cpuPercent" : 1.1364674137235842,
+      "diskReadBytes" : 62869504,
+      "diskWrittenBytes" : 248791040,
+      "elapsedSeconds" : 65.009558708,
+      "physicalFootprintBytes" : 505480968,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1364674137235842,
+          "process" : {
+            "cpuTimeSeconds" : 39.34358797,
+            "diskReadBytes" : 1999106048,
+            "diskWrittenBytes" : 635080704,
+            "executablePath" : "/Users/catsjuice/Library/Developer/Xcode/DerivedData/ScreenCam-ffeledapmrzudectzielwxpjtadk/Build/Products/Debug/ScreenCam.app/Contents/MacOS/ScreenCam",
+            "identity" : {
+              "pid" : 60063,
+              "startTimeNanoseconds" : 1150457848241
+            },
+            "name" : "ScreenCam",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 505480968
+          }
+        }
+      ],
+      "systemCPUPercent" : 325.3765932792584,
+      "systemMemoryDeltaBytes" : 520388608,
+      "systemMemoryUsedBytes" : 79732998144
+    }
+  ],
+  "scenario" : "recording",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-01T10:53:19Z",
+  "summary" : {
+    "averageCPUPercent" : 1.7821208152323156,
+    "averagePhysicalFootprintBytes" : 771187775,
+    "averageSystemCPUPercent" : 336.78167166716383,
+    "averageSystemMemoryDeltaBytes" : 1548463011,
+    "cpuTimeSeconds" : 1.158514298,
+    "diskReadBytes" : 62869504,
+    "diskWrittenBytes" : 248791040,
+    "durationSeconds" : 65.009558708,
+    "p95CPUPercent" : 1.9161924180787469,
+    "p95SystemCPUPercent" : 474.4812114413909,
+    "peakCPUPercent" : 2.140623234421183,
+    "peakPhysicalFootprintBytes" : 1002784832,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 492.0067076579095,
+    "peakSystemMemoryDeltaBytes" : 2818326528,
+    "physicalFootprintDeltaBytes" : 97665144
+  },
+  "target" : {
+    "build" : "1",
+    "bundleIdentifier" : "cam.thescreen",
+    "bundlePath" : "<Xcode DerivedData>/Build/Products/Debug/ScreenCam.app",
+    "name" : "ScreenCam",
+    "recorderID" : "screencam",
+    "version" : "1.0"
+  }
+}

@@ -10,7 +10,7 @@
 .local-chat-surface{
   position:fixed;
   left:50%;
-  bottom:18px;
+  bottom:26px;
   z-index:30;
   width:min(var(--chat-collapsed-width),calc(100vw - 32px));
   height:calc(max(var(--composer-height),40px) + 14px);
@@ -215,7 +215,7 @@
 [data-theme='dark'] .local-model-dialog>p{color:#999}
 [data-theme='dark'] .local-model-dialog-actions button{border-color:#383838;background:#202020;color:#aaa}
 [data-theme='dark'] .local-model-dialog-actions button:last-child{border-color:#eee;background:#eee;color:#111}
-@media(max-width:620px){.local-chat-surface{bottom:12px;width:calc(100vw - 24px)}.local-chat-surface.is-expanded{width:calc(100vw - 24px);height:min(520px,calc(100dvh - 92px))}.local-model-dialog{padding:24px}}
+@media(max-width:620px){.local-chat-surface{bottom:20px;width:calc(100vw - 24px)}.local-chat-surface.is-expanded{width:calc(100vw - 24px);height:min(520px,calc(100dvh - 92px))}.local-model-dialog{padding:24px}}
 @media(prefers-reduced-motion:reduce){.local-chat-surface,.local-chat-conversation,.local-chat-composer,.local-chat-composer textarea,.local-chat-send-ring button,.local-model-dialog,.local-model-dialog::backdrop,.compare-dock,.local-chat-thinking-toggle svg{transition:none!important}.local-chat-message-bubble{animation:chat-message-fade-in 150ms ease both}.local-chat-thinking.is-active .local-chat-thinking-toggle span{color:inherit;background:none;animation:none}}
 @keyframes chat-message-fade-in{from{opacity:0}to{opacity:1}}
 @keyframes thinking-shimmer{from{background-position:120% 0}to{background-position:-120% 0}}

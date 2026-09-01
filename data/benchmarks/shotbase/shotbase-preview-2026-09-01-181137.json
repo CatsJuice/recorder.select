@@ -1,0 +1,1894 @@
+{
+  "endedAt" : "2026-09-01T10:12:41Z",
+  "id" : "BA0724F3-356F-405A-BDDF-7C4EABACCEBC",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "notes" : "Workload resolution: 5K.",
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.584e-06,
+      "physicalFootprintBytes" : 253871616,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.926770711,
+            "diskReadBytes" : 77357056,
+            "diskWrittenBytes" : 175955968,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 253871616
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 79953543168
+    },
+    {
+      "cpuPercent" : 0.5496962092138354,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.034521584,
+      "physicalFootprintBytes" : 253625856,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5496962092138354,
+          "process" : {
+            "cpuTimeSeconds" : 1.932457346,
+            "diskReadBytes" : 77357056,
+            "diskWrittenBytes" : 175955968,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 253625856
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.8292682926829,
+      "systemMemoryDeltaBytes" : 190513152,
+      "systemMemoryUsedBytes" : 80144056320
+    },
+    {
+      "cpuPercent" : 1.9324616345920558,
+      "diskReadBytes" : 1486848,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 2.033555209,
+      "physicalFootprintBytes" : 1268582032,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9324616345920558,
+          "process" : {
+            "cpuTimeSeconds" : 1.951763426,
+            "diskReadBytes" : 78843904,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1268582032
+          }
+        }
+      ],
+      "systemCPUPercent" : 329.5632698768197,
+      "systemMemoryDeltaBytes" : 1596080128,
+      "systemMemoryUsedBytes" : 81549623296
+    },
+    {
+      "cpuPercent" : 1.1797711717909618,
+      "diskReadBytes" : 1486848,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 3.03455425,
+      "physicalFootprintBytes" : 1296352984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1797711717909618,
+          "process" : {
+            "cpuTimeSeconds" : 1.963574506,
+            "diskReadBytes" : 78843904,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1296352984
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.82828282828285,
+      "systemMemoryDeltaBytes" : 2958049280,
+      "systemMemoryUsedBytes" : 82911592448
+    },
+    {
+      "cpuPercent" : 1.8586532745285549,
+      "diskReadBytes" : 1617920,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 4.034548209,
+      "physicalFootprintBytes" : 1144047344,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8586532745285549,
+          "process" : {
+            "cpuTimeSeconds" : 1.982163249,
+            "diskReadBytes" : 78974976,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1144047344
+          }
+        }
+      ],
+      "systemCPUPercent" : 309.26445816956766,
+      "systemMemoryDeltaBytes" : 2823159808,
+      "systemMemoryUsedBytes" : 82776702976
+    },
+    {
+      "cpuPercent" : 1.7779961850408916,
+      "diskReadBytes" : 1617920,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 5.034557167,
+      "physicalFootprintBytes" : 1169688280,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7779961850408916,
+          "process" : {
+            "cpuTimeSeconds" : 1.999939906,
+            "diskReadBytes" : 78974976,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1169688280
+          }
+        }
+      ],
+      "systemCPUPercent" : 268.8377316114543,
+      "systemMemoryDeltaBytes" : 2847752192,
+      "systemMemoryUsedBytes" : 82801295360
+    },
+    {
+      "cpuPercent" : 1.910901564211066,
+      "diskReadBytes" : 1814528,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 6.0337385,
+      "physicalFootprintBytes" : 2427701000,
+      "processes" : [
+        {
+          "cpuPercent" : 1.910901564211066,
+          "process" : {
+            "cpuTimeSeconds" : 2.019033726,
+            "diskReadBytes" : 79171584,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2427701000
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.7986577181208,
+      "systemMemoryDeltaBytes" : 3881811968,
+      "systemMemoryUsedBytes" : 83835355136
+    },
+    {
+      "cpuPercent" : 2.438314929978554,
+      "diskReadBytes" : 2011136,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 7.034544417,
+      "physicalFootprintBytes" : 3997141008,
+      "processes" : [
+        {
+          "cpuPercent" : 2.438314929978554,
+          "process" : {
+            "cpuTimeSeconds" : 2.043436012,
+            "diskReadBytes" : 79368192,
+            "diskWrittenBytes" : 175964160,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3997141008
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.546218487395,
+      "systemMemoryDeltaBytes" : 9749413888,
+      "systemMemoryUsedBytes" : 89702957056
+    },
+    {
+      "cpuPercent" : 1.8578705977086138,
+      "diskReadBytes" : 2330624,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 8.034560959,
+      "physicalFootprintBytes" : 3996452832,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8578705977086138,
+          "process" : {
+            "cpuTimeSeconds" : 2.062015794,
+            "diskReadBytes" : 79687680,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3996452832
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.4972067039106,
+      "systemMemoryDeltaBytes" : 11390189568,
+      "systemMemoryUsedBytes" : 91343732736
+    },
+    {
+      "cpuPercent" : 1.820649816833398,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 9.034551084,
+      "physicalFootprintBytes" : 1535657976,
+      "processes" : [
+        {
+          "cpuPercent" : 1.820649816833398,
+          "process" : {
+            "cpuTimeSeconds" : 2.080221551,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1535657976
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.78439079169004,
+      "systemMemoryDeltaBytes" : 10719477760,
+      "systemMemoryUsedBytes" : 90673020928
+    },
+    {
+      "cpuPercent" : 1.7346287238609877,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 10.034556792,
+      "physicalFootprintBytes" : 1461045288,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7346287238609877,
+          "process" : {
+            "cpuTimeSeconds" : 2.097568024,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1461045288
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.4860335195531,
+      "systemMemoryDeltaBytes" : 10697261056,
+      "systemMemoryUsedBytes" : 90650804224
+    },
+    {
+      "cpuPercent" : 1.6880100717047202,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 11.034557375,
+      "physicalFootprintBytes" : 1328859128,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6880100717047202,
+          "process" : {
+            "cpuTimeSeconds" : 2.114448271,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1328859128
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.7315436241611,
+      "systemMemoryDeltaBytes" : 10689495040,
+      "systemMemoryUsedBytes" : 90643038208
+    },
+    {
+      "cpuPercent" : 1.704154417676013,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 12.033987875,
+      "physicalFootprintBytes" : 1409697784,
+      "processes" : [
+        {
+          "cpuPercent" : 1.704154417676013,
+          "process" : {
+            "cpuTimeSeconds" : 2.131477759,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1409697784
+          }
+        }
+      ],
+      "systemCPUPercent" : 265.9205372132065,
+      "systemMemoryDeltaBytes" : 10710401024,
+      "systemMemoryUsedBytes" : 90663944192
+    },
+    {
+      "cpuPercent" : 1.6916178084819056,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 13.034238125,
+      "physicalFootprintBytes" : 1402636304,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6916178084819056,
+          "process" : {
+            "cpuTimeSeconds" : 2.148400841,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1402636304
+          }
+        }
+      ],
+      "systemCPUPercent" : 354.9579831932773,
+      "systemMemoryDeltaBytes" : 10722000896,
+      "systemMemoryUsedBytes" : 90675544064
+    },
+    {
+      "cpuPercent" : 1.745394799835702,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 14.034260959,
+      "physicalFootprintBytes" : 1396672528,
+      "processes" : [
+        {
+          "cpuPercent" : 1.745394799835702,
+          "process" : {
+            "cpuTimeSeconds" : 2.165854741,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1396672528
+          }
+        }
+      ],
+      "systemCPUPercent" : 262.8987129266927,
+      "systemMemoryDeltaBytes" : 10702405632,
+      "systemMemoryUsedBytes" : 90655948800
+    },
+    {
+      "cpuPercent" : 1.7632205354887958,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 15.033564042,
+      "physicalFootprintBytes" : 1516357672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7632205354887958,
+          "process" : {
+            "cpuTimeSeconds" : 2.183474631,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1516357672
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.96418578623394,
+      "systemMemoryDeltaBytes" : 10579345408,
+      "systemMemoryUsedBytes" : 90532888576
+    },
+    {
+      "cpuPercent" : 1.7648999068451978,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 16.034576209,
+      "physicalFootprintBytes" : 1542866984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7648999068451978,
+          "process" : {
+            "cpuTimeSeconds" : 2.201141521,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1542866984
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.99888017917135,
+      "systemMemoryDeltaBytes" : 10445373440,
+      "systemMemoryUsedBytes" : 90398916608
+    },
+    {
+      "cpuPercent" : 1.8016446298533217,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 17.034566,
+      "physicalFootprintBytes" : 1494976576,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8016446298533217,
+          "process" : {
+            "cpuTimeSeconds" : 2.219158188,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1494976576
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.9787353105764,
+      "systemMemoryDeltaBytes" : 10269933568,
+      "systemMemoryUsedBytes" : 90223476736
+    },
+    {
+      "cpuPercent" : 1.7454403049495855,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 18.034263917,
+      "physicalFootprintBytes" : 1477314624,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7454403049495855,
+          "process" : {
+            "cpuTimeSeconds" : 2.236606802,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1477314624
+          }
+        }
+      ],
+      "systemCPUPercent" : 274.678591391839,
+      "systemMemoryDeltaBytes" : 10262691840,
+      "systemMemoryUsedBytes" : 90216235008
+    },
+    {
+      "cpuPercent" : 1.8176529428348946,
+      "diskReadBytes" : 2445312,
+      "diskWrittenBytes" : 73728,
+      "elapsedSeconds" : 19.034556917,
+      "physicalFootprintBytes" : 1611581504,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8176529428348946,
+          "process" : {
+            "cpuTimeSeconds" : 2.254790365,
+            "diskReadBytes" : 79802368,
+            "diskWrittenBytes" : 176029696,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1611581504
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.0733072188025,
+      "systemMemoryDeltaBytes" : 10165223424,
+      "systemMemoryUsedBytes" : 90118766592
+    },
+    {
+      "cpuPercent" : 1.8426086363974696,
+      "diskReadBytes" : 2453504,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 20.034420042,
+      "physicalFootprintBytes" : 1752467544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8426086363974696,
+          "process" : {
+            "cpuTimeSeconds" : 2.273211603,
+            "diskReadBytes" : 79810560,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1752467544
+          }
+        }
+      ],
+      "systemCPUPercent" : 265.21008403361344,
+      "systemMemoryDeltaBytes" : 10156785664,
+      "systemMemoryUsedBytes" : 90110328832
+    },
+    {
+      "cpuPercent" : 1.838636918241982,
+      "diskReadBytes" : 2453504,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 21.033709292,
+      "physicalFootprintBytes" : 1661552728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.838636918241982,
+          "process" : {
+            "cpuTimeSeconds" : 2.291584901,
+            "diskReadBytes" : 79810560,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1661552728
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.8120805369128,
+      "systemMemoryDeltaBytes" : 10184310784,
+      "systemMemoryUsedBytes" : 90137853952
+    },
+    {
+      "cpuPercent" : 1.8175218552407804,
+      "diskReadBytes" : 2453504,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 22.034636334,
+      "physicalFootprintBytes" : 1564772464,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8175218552407804,
+          "process" : {
+            "cpuTimeSeconds" : 2.30978182,
+            "diskReadBytes" : 79810560,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1564772464
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.18701007838746,
+      "systemMemoryDeltaBytes" : 10194075648,
+      "systemMemoryUsedBytes" : 90147618816
+    },
+    {
+      "cpuPercent" : 1.8008651608275066,
+      "diskReadBytes" : 2453504,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 23.034544209,
+      "physicalFootprintBytes" : 1497172056,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8008651608275066,
+          "process" : {
+            "cpuTimeSeconds" : 2.327784522,
+            "diskReadBytes" : 79810560,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1497172056
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.1696428571429,
+      "systemMemoryDeltaBytes" : 10195484672,
+      "systemMemoryUsedBytes" : 90149027840
+    },
+    {
+      "cpuPercent" : 1.8822914761290415,
+      "diskReadBytes" : 2453504,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 24.034539709,
+      "physicalFootprintBytes" : 1549125720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8822914761290415,
+          "process" : {
+            "cpuTimeSeconds" : 2.346607116,
+            "diskReadBytes" : 79810560,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1549125720
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.6601233875491,
+      "systemMemoryDeltaBytes" : 10178527232,
+      "systemMemoryUsedBytes" : 90132070400
+    },
+    {
+      "cpuPercent" : 1.7689073145099155,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 25.034562875,
+      "physicalFootprintBytes" : 1575471240,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7689073145099155,
+          "process" : {
+            "cpuTimeSeconds" : 2.364297193,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1575471240
+          }
+        }
+      ],
+      "systemCPUPercent" : 340.458869613878,
+      "systemMemoryDeltaBytes" : 10193108992,
+      "systemMemoryUsedBytes" : 90146652160
+    },
+    {
+      "cpuPercent" : 1.7622259239437548,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 26.034650834,
+      "physicalFootprintBytes" : 1615939720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7622259239437548,
+          "process" : {
+            "cpuTimeSeconds" : 2.381925073,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1615939720
+          }
+        }
+      ],
+      "systemCPUPercent" : 266.06942889137736,
+      "systemMemoryDeltaBytes" : 10264100864,
+      "systemMemoryUsedBytes" : 90217644032
+    },
+    {
+      "cpuPercent" : 1.7632236904784393,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 27.03455025,
+      "physicalFootprintBytes" : 1614514336,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7632236904784393,
+          "process" : {
+            "cpuTimeSeconds" : 2.399550066,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1614514336
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.6171045276691,
+      "systemMemoryDeltaBytes" : 10277666816,
+      "systemMemoryUsedBytes" : 90231209984
+    },
+    {
+      "cpuPercent" : 1.8124344176940737,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 28.034650417,
+      "physicalFootprintBytes" : 1590003848,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8124344176940737,
+          "process" : {
+            "cpuTimeSeconds" : 2.417681891,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1590003848
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.006718924972,
+      "systemMemoryDeltaBytes" : 10230300672,
+      "systemMemoryUsedBytes" : 90183843840
+    },
+    {
+      "cpuPercent" : 1.7791737721619905,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 29.034556542,
+      "physicalFootprintBytes" : 1636976824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7791737721619905,
+          "process" : {
+            "cpuTimeSeconds" : 2.435467005,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1636976824
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.7315436241611,
+      "systemMemoryDeltaBytes" : 10240524288,
+      "systemMemoryUsedBytes" : 90194067456
+    },
+    {
+      "cpuPercent" : 1.8148156170114158,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 30.03413625,
+      "physicalFootprintBytes" : 1653491896,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8148156170114158,
+          "process" : {
+            "cpuTimeSeconds" : 2.453607362,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1653491896
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.7840717891195,
+      "systemMemoryDeltaBytes" : 10263904256,
+      "systemMemoryUsedBytes" : 90217447424
+    },
+    {
+      "cpuPercent" : 1.7659669202691888,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 31.034568834,
+      "physicalFootprintBytes" : 1603373264,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7659669202691888,
+          "process" : {
+            "cpuTimeSeconds" : 2.47127585,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1603373264
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.03848298940324,
+      "systemMemoryDeltaBytes" : 10299146240,
+      "systemMemoryUsedBytes" : 90252689408
+    },
+    {
+      "cpuPercent" : 1.809392841336057,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 32.034558834,
+      "physicalFootprintBytes" : 1652590824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.809392841336057,
+          "process" : {
+            "cpuTimeSeconds" : 2.489367292,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1652590824
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.96418578623394,
+      "systemMemoryDeltaBytes" : 10301947904,
+      "systemMemoryUsedBytes" : 90255491072
+    },
+    {
+      "cpuPercent" : 2.0397976553163435,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 33.034191292,
+      "physicalFootprintBytes" : 2445084904,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0397976553163435,
+          "process" : {
+            "cpuTimeSeconds" : 2.509759756,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2445084904
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.58384744812116,
+      "systemMemoryDeltaBytes" : 10286268416,
+      "systemMemoryUsedBytes" : 90239811584
+    },
+    {
+      "cpuPercent" : 1.8548964275469673,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 34.033700292,
+      "physicalFootprintBytes" : 1442171112,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8548964275469673,
+          "process" : {
+            "cpuTimeSeconds" : 2.528299064,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1442171112
+          }
+        }
+      ],
+      "systemCPUPercent" : 279.8657718120805,
+      "systemMemoryDeltaBytes" : 10291806208,
+      "systemMemoryUsedBytes" : 90245349376
+    },
+    {
+      "cpuPercent" : 1.837608153688254,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 35.034565334,
+      "physicalFootprintBytes" : 1382729984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.837608153688254,
+          "process" : {
+            "cpuTimeSeconds" : 2.546691671,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1382729984
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.78311906092785,
+      "systemMemoryDeltaBytes" : 10393272320,
+      "systemMemoryUsedBytes" : 90346815488
+    },
+    {
+      "cpuPercent" : 1.911132403250984,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 36.034561875,
+      "physicalFootprintBytes" : 1234831616,
+      "processes" : [
+        {
+          "cpuPercent" : 1.911132403250984,
+          "process" : {
+            "cpuTimeSeconds" : 2.565802311,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1234831616
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.81879194630875,
+      "systemMemoryDeltaBytes" : 10298359808,
+      "systemMemoryUsedBytes" : 90251902976
+    },
+    {
+      "cpuPercent" : 1.8084436311366712,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 37.034529709,
+      "physicalFootprintBytes" : 1535346920,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8084436311366712,
+          "process" : {
+            "cpuTimeSeconds" : 2.583885073,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1535346920
+          }
+        }
+      ],
+      "systemCPUPercent" : 302.1897810218978,
+      "systemMemoryDeltaBytes" : 10270638080,
+      "systemMemoryUsedBytes" : 90224181248
+    },
+    {
+      "cpuPercent" : 1.8090218431504106,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 38.034573292,
+      "physicalFootprintBytes" : 1546586344,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8090218431504106,
+          "process" : {
+            "cpuTimeSeconds" : 2.601977962,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1546586344
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.34453781512605,
+      "systemMemoryDeltaBytes" : 10291560448,
+      "systemMemoryUsedBytes" : 90245103616
+    },
+    {
+      "cpuPercent" : 1.7757150693962511,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 39.034580417,
+      "physicalFootprintBytes" : 1523583208,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7757150693962511,
+          "process" : {
+            "cpuTimeSeconds" : 2.619739276,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1523583208
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.44723618090455,
+      "systemMemoryDeltaBytes" : 10205757440,
+      "systemMemoryUsedBytes" : 90159300608
+    },
+    {
+      "cpuPercent" : 1.7505553425341727,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 40.034531709,
+      "physicalFootprintBytes" : 1508837632,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7505553425341727,
+          "process" : {
+            "cpuTimeSeconds" : 2.637237728,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1508837632
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.2016806722689,
+      "systemMemoryDeltaBytes" : 10182475776,
+      "systemMemoryUsedBytes" : 90136018944
+    },
+    {
+      "cpuPercent" : 1.7572082357187102,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 41.034573042,
+      "physicalFootprintBytes" : 1467795688,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7572082357187102,
+          "process" : {
+            "cpuTimeSeconds" : 2.654812854,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1467795688
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.8841634023503,
+      "systemMemoryDeltaBytes" : 10157441024,
+      "systemMemoryUsedBytes" : 90110984192
+    },
+    {
+      "cpuPercent" : 1.774944161369704,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 42.034528625,
+      "physicalFootprintBytes" : 1550764264,
+      "processes" : [
+        {
+          "cpuPercent" : 1.774944161369704,
+          "process" : {
+            "cpuTimeSeconds" : 2.672558106,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1550764264
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.9932848349188,
+      "systemMemoryDeltaBytes" : 10207739904,
+      "systemMemoryUsedBytes" : 90161283072
+    },
+    {
+      "cpuPercent" : 1.7622586649787602,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 43.034564042,
+      "physicalFootprintBytes" : 1505659136,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7622586649787602,
+          "process" : {
+            "cpuTimeSeconds" : 2.690184867,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1505659136
+          }
+        }
+      ],
+      "systemCPUPercent" : 352.17391304347825,
+      "systemMemoryDeltaBytes" : 10105454592,
+      "systemMemoryUsedBytes" : 90058997760
+    },
+    {
+      "cpuPercent" : 1.8995281016122814,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 44.034535042,
+      "physicalFootprintBytes" : 1507182848,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8995281016122814,
+          "process" : {
+            "cpuTimeSeconds" : 2.709176884,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1507182848
+          }
+        }
+      ],
+      "systemCPUPercent" : 458.8632526730445,
+      "systemMemoryDeltaBytes" : 10276208640,
+      "systemMemoryUsedBytes" : 90229751808
+    },
+    {
+      "cpuPercent" : 1.7724305514676957,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 45.034560709,
+      "physicalFootprintBytes" : 1453836544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7724305514676957,
+          "process" : {
+            "cpuTimeSeconds" : 2.726904196,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1453836544
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.80446927374305,
+      "systemMemoryDeltaBytes" : 10202464256,
+      "systemMemoryUsedBytes" : 90156007424
+    },
+    {
+      "cpuPercent" : 1.7688262411923177,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 46.034561084,
+      "physicalFootprintBytes" : 1397639424,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7688262411923177,
+          "process" : {
+            "cpuTimeSeconds" : 2.744592524,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1397639424
+          }
+        }
+      ],
+      "systemCPUPercent" : 266.77852348993287,
+      "systemMemoryDeltaBytes" : 10347823104,
+      "systemMemoryUsedBytes" : 90301366272
+    },
+    {
+      "cpuPercent" : 1.8429738832559952,
+      "diskReadBytes" : 2584576,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 47.034526375,
+      "physicalFootprintBytes" : 1470908624,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8429738832559952,
+          "process" : {
+            "cpuTimeSeconds" : 2.763019268,
+            "diskReadBytes" : 79941632,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1470908624
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.1164613661814,
+      "systemMemoryDeltaBytes" : 10350608384,
+      "systemMemoryUsedBytes" : 90304151552
+    },
+    {
+      "cpuPercent" : 1.894726054597744,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 48.034066125,
+      "physicalFootprintBytes" : 2403109096,
+      "processes" : [
+        {
+          "cpuPercent" : 1.894726054597744,
+          "process" : {
+            "cpuTimeSeconds" : 2.781961847,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2403109096
+          }
+        }
+      ],
+      "systemCPUPercent" : 262.1848739495798,
+      "systemMemoryDeltaBytes" : 10014277632,
+      "systemMemoryUsedBytes" : 89967820800
+    },
+    {
+      "cpuPercent" : 2.147754940578469,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 49.034553084,
+      "physicalFootprintBytes" : 3720399128,
+      "processes" : [
+        {
+          "cpuPercent" : 2.147754940578469,
+          "process" : {
+            "cpuTimeSeconds" : 2.803448042,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3720399128
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.0369334079463,
+      "systemMemoryDeltaBytes" : 9633939456,
+      "systemMemoryUsedBytes" : 89587482624
+    },
+    {
+      "cpuPercent" : 2.147831273949443,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 50.034565042,
+      "physicalFootprintBytes" : 3019278592,
+      "processes" : [
+        {
+          "cpuPercent" : 2.147831273949443,
+          "process" : {
+            "cpuTimeSeconds" : 2.824926276,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 3019278592
+          }
+        }
+      ],
+      "systemCPUPercent" : 274.8322147651007,
+      "systemMemoryDeltaBytes" : 10071670784,
+      "systemMemoryUsedBytes" : 90025213952
+    },
+    {
+      "cpuPercent" : 1.798495750716729,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 51.034553959,
+      "physicalFootprintBytes" : 2747140328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.798495750716729,
+          "process" : {
+            "cpuTimeSeconds" : 2.842910936,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2747140328
+          }
+        }
+      ],
+      "systemCPUPercent" : 268.4916201117319,
+      "systemMemoryDeltaBytes" : 10393419776,
+      "systemMemoryUsedBytes" : 90346962944
+    },
+    {
+      "cpuPercent" : 1.7524797965972252,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 52.034571417,
+      "physicalFootprintBytes" : 1235912936,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7524797965972252,
+          "process" : {
+            "cpuTimeSeconds" : 2.860435493,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1235912936
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.82828282828285,
+      "systemMemoryDeltaBytes" : 10390011904,
+      "systemMemoryUsedBytes" : 90343555072
+    },
+    {
+      "cpuPercent" : 1.7883830675209753,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 53.033819084,
+      "physicalFootprintBytes" : 1183598824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7883830675209753,
+          "process" : {
+            "cpuTimeSeconds" : 2.878305457,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1183598824
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.03023516237397,
+      "systemMemoryDeltaBytes" : 10393124864,
+      "systemMemoryUsedBytes" : 90346668032
+    },
+    {
+      "cpuPercent" : 1.7970613673050868,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 54.034559542,
+      "physicalFootprintBytes" : 1213548776,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7970613673050868,
+          "process" : {
+            "cpuTimeSeconds" : 2.896290704,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1213548776
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.7181208053691,
+      "systemMemoryDeltaBytes" : 10394075136,
+      "systemMemoryUsedBytes" : 90347618304
+    },
+    {
+      "cpuPercent" : 1.7987229172500345,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 55.034565,
+      "physicalFootprintBytes" : 1180666088,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7987229172500345,
+          "process" : {
+            "cpuTimeSeconds" : 2.914277455,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1180666088
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.1344537815126,
+      "systemMemoryDeltaBytes" : 10336190464,
+      "systemMemoryUsedBytes" : 90289733632
+    },
+    {
+      "cpuPercent" : 1.8663544670111756,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 56.034547667,
+      "physicalFootprintBytes" : 1268762880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8663544670111756,
+          "process" : {
+            "cpuTimeSeconds" : 2.932939729,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1268762880
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.5556176634992,
+      "systemMemoryDeltaBytes" : 10429939712,
+      "systemMemoryUsedBytes" : 90383482880
+    },
+    {
+      "cpuPercent" : 2.165090236079554,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 57.034562542,
+      "physicalFootprintBytes" : 1764575464,
+      "processes" : [
+        {
+          "cpuPercent" : 2.165090236079554,
+          "process" : {
+            "cpuTimeSeconds" : 2.954592395,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1764575464
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.71548351034096,
+      "systemMemoryDeltaBytes" : 10371530752,
+      "systemMemoryUsedBytes" : 90325073920
+    },
+    {
+      "cpuPercent" : 1.859926684916246,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 58.034532375,
+      "physicalFootprintBytes" : 1431374056,
+      "processes" : [
+        {
+          "cpuPercent" : 1.859926684916246,
+          "process" : {
+            "cpuTimeSeconds" : 2.973189261,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1431374056
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.99888017917135,
+      "systemMemoryDeltaBytes" : 10391764992,
+      "systemMemoryUsedBytes" : 90345308160
+    },
+    {
+      "cpuPercent" : 2.0980417197371697,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 59.034561625,
+      "physicalFootprintBytes" : 1436207360,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0980417197371697,
+          "process" : {
+            "cpuTimeSeconds" : 2.994172702,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1436207360
+          }
+        }
+      ],
+      "systemCPUPercent" : 344.05829596412553,
+      "systemMemoryDeltaBytes" : 10293542912,
+      "systemMemoryUsedBytes" : 90247086080
+    },
+    {
+      "cpuPercent" : 1.8805553844848795,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 60.034271625,
+      "physicalFootprintBytes" : 1343555792,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8805553844848795,
+          "process" : {
+            "cpuTimeSeconds" : 3.012970182,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1343555792
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.5393258426966,
+      "systemMemoryDeltaBytes" : 10328195072,
+      "systemMemoryUsedBytes" : 90281738240
+    },
+    {
+      "cpuPercent" : 1.8744950648872785,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 61.033559042,
+      "physicalFootprintBytes" : 1215072536,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8744950648872785,
+          "process" : {
+            "cpuTimeSeconds" : 3.031701648,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1215072536
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.57672849915684,
+      "systemMemoryDeltaBytes" : 10397433856,
+      "systemMemoryUsedBytes" : 90350977024
+    },
+    {
+      "cpuPercent" : 1.8834644229786985,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 62.034540375,
+      "physicalFootprintBytes" : 1246251288,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8834644229786985,
+          "process" : {
+            "cpuTimeSeconds" : 3.050555141,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1246251288
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.8724832214765,
+      "systemMemoryDeltaBytes" : 10400464896,
+      "systemMemoryUsedBytes" : 90354008064
+    },
+    {
+      "cpuPercent" : 1.8858153691212003,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 63.03456175,
+      "physicalFootprintBytes" : 1281919256,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8858153691212003,
+          "process" : {
+            "cpuTimeSeconds" : 3.069415175,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1281919256
+          }
+        }
+      ],
+      "systemCPUPercent" : 283.25892857142856,
+      "systemMemoryDeltaBytes" : 10396172288,
+      "systemMemoryUsedBytes" : 90349715456
+    },
+    {
+      "cpuPercent" : 1.2689446414070926,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 64.034514709,
+      "physicalFootprintBytes" : 1345833168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2689446414070926,
+          "process" : {
+            "cpuTimeSeconds" : 3.082101402,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1345833168
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.3359506449804,
+      "systemMemoryDeltaBytes" : 10633084928,
+      "systemMemoryUsedBytes" : 90586628096
+    },
+    {
+      "cpuPercent" : 0.3487015218082947,
+      "diskReadBytes" : 2650112,
+      "diskWrittenBytes" : 122880,
+      "elapsedSeconds" : 64.512073625,
+      "physicalFootprintBytes" : 1181141200,
+      "processes" : [
+        {
+          "cpuPercent" : 0.3487015218082947,
+          "process" : {
+            "cpuTimeSeconds" : 3.083767642,
+            "diskReadBytes" : 80007168,
+            "diskWrittenBytes" : 176078848,
+            "executablePath" : "/Applications/Shotbase.app/Contents/MacOS/Shotbase",
+            "identity" : {
+              "pid" : 14021,
+              "startTimeNanoseconds" : 6824002283111
+            },
+            "name" : "Shotbase",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1181141200
+          }
+        }
+      ],
+      "systemCPUPercent" : 216.08391608391608,
+      "systemMemoryDeltaBytes" : 10626613248,
+      "systemMemoryUsedBytes" : 90580156416
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-01T10:11:37Z",
+  "summary" : {
+    "averageCPUPercent" : 1.7825112171728226,
+    "averagePhysicalFootprintBytes" : 1608240709,
+    "averageSystemCPUPercent" : 281.6684387833513,
+    "averageSystemMemoryDeltaBytes" : 9456724154,
+    "cpuTimeSeconds" : 1.1569969310000001,
+    "diskReadBytes" : 2650112,
+    "diskWrittenBytes" : 122880,
+    "durationSeconds" : 64.512073625,
+    "p95CPUPercent" : 2.147754940578469,
+    "p95SystemCPUPercent" : 344.05829596412553,
+    "peakCPUPercent" : 2.438314929978554,
+    "peakPhysicalFootprintBytes" : 3997141008,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 458.8632526730445,
+    "peakSystemMemoryDeltaBytes" : 11390189568,
+    "physicalFootprintDeltaBytes" : 927269584
+  },
+  "target" : {
+    "build" : "10",
+    "bundleIdentifier" : "com.shotbase.app",
+    "bundlePath" : "/Applications/Shotbase.app",
+    "name" : "Shotbase",
+    "recorderID" : "shotbase",
+    "version" : "1.3.2"
+  }
+}

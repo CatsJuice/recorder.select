@@ -5,9 +5,9 @@ import Foundation
 
 @Test func summaryUsesCoreEquivalentCPUAndRealtimeFactor() {
     let samples = [
-        sample(elapsed: 0, cpu: 0, systemCPU: 0, footprint: 100),
-        sample(elapsed: 1, cpu: 200, systemCPU: 900, footprint: 140),
-        sample(elapsed: 2, cpu: 100, systemCPU: 450, footprint: 120),
+        sample(elapsed: 0, cpu: 0, systemCPU: 0, footprint: 100, systemMemoryDelta: 0),
+        sample(elapsed: 1, cpu: 200, systemCPU: 900, footprint: 140, systemMemoryDelta: 300),
+        sample(elapsed: 2, cpu: 100, systemCPU: 450, footprint: 120, systemMemoryDelta: 600),
     ]
 
     let summary = BenchmarkSummarizer.summarize(
@@ -25,6 +25,8 @@ import Foundation
     #expect(summary.averagePhysicalFootprintBytes == 120)
     #expect(summary.peakPhysicalFootprintBytes == 140)
     #expect(summary.physicalFootprintDeltaBytes == 20)
+    #expect(summary.averageSystemMemoryDeltaBytes == 300)
+    #expect(summary.peakSystemMemoryDeltaBytes == 600)
     #expect(summary.realtimeFactor == 0.25)
 }
 
@@ -87,12 +89,20 @@ import Foundation
     #expect(percent == 900)
 }
 
-private func sample(elapsed: Double, cpu: Double, systemCPU: Double = 0, footprint: UInt64) -> BenchmarkSample {
+private func sample(
+    elapsed: Double,
+    cpu: Double,
+    systemCPU: Double = 0,
+    footprint: UInt64,
+    systemMemoryDelta: UInt64 = 0
+) -> BenchmarkSample {
     BenchmarkSample(
         elapsedSeconds: elapsed,
         cpuPercent: cpu,
         systemCPUPercent: systemCPU,
         physicalFootprintBytes: footprint,
+        systemMemoryUsedBytes: 0,
+        systemMemoryDeltaBytes: systemMemoryDelta,
         diskReadBytes: 0,
         diskWrittenBytes: 0,
         processes: []

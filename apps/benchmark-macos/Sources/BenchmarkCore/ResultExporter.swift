@@ -10,7 +10,7 @@ public enum ResultExporter {
 
     public static func writeCSV(_ result: BenchmarkResult, to url: URL) throws {
         var rows = [
-            "elapsed_seconds,application_cpu_percent,system_cpu_percent,physical_footprint_bytes,disk_read_bytes,disk_written_bytes,process_count"
+            "elapsed_seconds,application_cpu_percent,system_cpu_percent,application_physical_footprint_bytes,system_memory_used_bytes,system_memory_delta_bytes,disk_read_bytes,disk_written_bytes,process_count"
         ]
         rows.append(contentsOf: result.samples.map { sample in
             [
@@ -18,6 +18,8 @@ public enum ResultExporter {
                 decimal(sample.cpuPercent),
                 decimal(sample.systemCPUPercent),
                 String(sample.physicalFootprintBytes),
+                String(sample.systemMemoryUsedBytes),
+                String(sample.systemMemoryDeltaBytes),
                 String(sample.diskReadBytes),
                 String(sample.diskWrittenBytes),
                 String(sample.processes.count),

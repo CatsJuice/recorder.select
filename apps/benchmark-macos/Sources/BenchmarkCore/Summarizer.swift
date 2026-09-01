@@ -10,6 +10,7 @@ public enum BenchmarkSummarizer {
         let cpuValues = samples.dropFirst().map(\.cpuPercent)
         let systemCPUValues = samples.dropFirst().map(\.systemCPUPercent)
         let footprints = samples.map(\.physicalFootprintBytes)
+        let systemMemoryDeltas = samples.map(\.systemMemoryDeltaBytes)
         let firstRead = samples.first?.diskReadBytes ?? 0
         let lastRead = samples.last?.diskReadBytes ?? firstRead
         let firstWritten = samples.first?.diskWrittenBytes ?? 0
@@ -29,6 +30,8 @@ public enum BenchmarkSummarizer {
             averagePhysicalFootprintBytes: averageBytes(footprints),
             peakPhysicalFootprintBytes: footprints.max() ?? 0,
             physicalFootprintDeltaBytes: signedDifference(lastFootprint, firstFootprint),
+            averageSystemMemoryDeltaBytes: averageBytes(systemMemoryDeltas),
+            peakSystemMemoryDeltaBytes: systemMemoryDeltas.max() ?? 0,
             peakProcessCount: samples.map(\.processes.count).max() ?? 0,
             diskReadBytes: lastRead >= firstRead ? lastRead - firstRead : 0,
             diskWrittenBytes: lastWritten >= firstWritten ? lastWritten - firstWritten : 0,

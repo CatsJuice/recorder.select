@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["schemaVersion", "id", "scenario", "startedAt", "endedAt", "target", "machine", "sampleIntervalSeconds", "summary", "samples"],
   "properties": {
-    "schemaVersion": { "const": 2 },
+    "schemaVersion": { "const": 3 },
     "id": { "type": "string", "format": "uuid" },
     "scenario": { "enum": ["recording", "preview", "export"] },
     "startedAt": { "type": "string", "format": "date-time" },
@@ -41,7 +41,7 @@
     },
     "summary": {
       "type": "object",
-      "required": ["durationSeconds", "averageCPUPercent", "p95CPUPercent", "peakCPUPercent", "averageSystemCPUPercent", "p95SystemCPUPercent", "peakSystemCPUPercent", "cpuTimeSeconds", "averagePhysicalFootprintBytes", "peakPhysicalFootprintBytes", "physicalFootprintDeltaBytes", "peakProcessCount", "diskReadBytes", "diskWrittenBytes"],
+      "required": ["durationSeconds", "averageCPUPercent", "p95CPUPercent", "peakCPUPercent", "averageSystemCPUPercent", "p95SystemCPUPercent", "peakSystemCPUPercent", "cpuTimeSeconds", "averagePhysicalFootprintBytes", "peakPhysicalFootprintBytes", "physicalFootprintDeltaBytes", "averageSystemMemoryDeltaBytes", "peakSystemMemoryDeltaBytes", "peakProcessCount", "diskReadBytes", "diskWrittenBytes"],
       "properties": {
         "durationSeconds": { "type": "number", "minimum": 0 },
         "averageCPUPercent": { "type": "number", "minimum": 0 },
@@ -54,6 +54,8 @@
         "averagePhysicalFootprintBytes": { "type": "integer", "minimum": 0 },
         "peakPhysicalFootprintBytes": { "type": "integer", "minimum": 0 },
         "physicalFootprintDeltaBytes": { "type": "integer" },
+        "averageSystemMemoryDeltaBytes": { "type": "integer", "minimum": 0 },
+        "peakSystemMemoryDeltaBytes": { "type": "integer", "minimum": 0 },
         "peakProcessCount": { "type": "integer", "minimum": 0 },
         "diskReadBytes": { "type": "integer", "minimum": 0 },
         "diskWrittenBytes": { "type": "integer", "minimum": 0 },
@@ -65,12 +67,14 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["elapsedSeconds", "cpuPercent", "systemCPUPercent", "physicalFootprintBytes", "diskReadBytes", "diskWrittenBytes", "processes"],
+        "required": ["elapsedSeconds", "cpuPercent", "systemCPUPercent", "physicalFootprintBytes", "systemMemoryUsedBytes", "systemMemoryDeltaBytes", "diskReadBytes", "diskWrittenBytes", "processes"],
         "properties": {
           "elapsedSeconds": { "type": "number", "minimum": 0 },
           "cpuPercent": { "type": "number", "minimum": 0 },
           "systemCPUPercent": { "type": "number", "minimum": 0 },
           "physicalFootprintBytes": { "type": "integer", "minimum": 0 },
+          "systemMemoryUsedBytes": { "type": "integer", "minimum": 0 },
+          "systemMemoryDeltaBytes": { "type": "integer", "minimum": 0 },
           "diskReadBytes": { "type": "integer", "minimum": 0 },
           "diskWrittenBytes": { "type": "integer", "minimum": 0 },
           "processes": { "type": "array" }

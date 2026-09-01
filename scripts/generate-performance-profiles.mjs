@@ -5,10 +5,31 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const sources = {
   'screen-studio': {
-    recording: 'data/benchmarks/screen-studio/screen-studio-recording-2026-08-27T120353Z.json',
-    preview: 'data/benchmarks/screen-studio/screen-studio-preview-2026-08-27T120530Z.json',
-    export: 'data/benchmarks/screen-studio/screen-studio-export-2026-08-27T120727Z.json',
+    recording: 'data/benchmarks/screen-studio/screen-studio-recording-2026-09-01-181600.json',
+    preview: 'data/benchmarks/screen-studio/screen-studio-preview-2026-09-01-181715.json',
+    export: 'data/benchmarks/screen-studio/screen-studio-export-2026-09-01-181836.json',
   },
+  shotbase: {
+    recording: 'data/benchmarks/shotbase/shotbase-recording-2026-09-01-181014.json',
+    preview: 'data/benchmarks/shotbase/shotbase-preview-2026-09-01-181137.json',
+    export: 'data/benchmarks/shotbase/shotbase-export-2026-09-01-181349.json',
+  },
+  screencam: {
+    recording: 'data/benchmarks/screencam/screencam-recording-2026-09-01-185319.json',
+    preview: 'data/benchmarks/screencam/screencam-preview-2026-09-01-185432.json',
+    export: 'data/benchmarks/screencam/screencam-export-2026-09-01-185614.json',
+  },
+  'screen-sage-pro': {
+    recording: 'data/benchmarks/screensage-pro/screensage-pro-recording-2026-09-01-200500.json',
+    preview: 'data/benchmarks/screensage-pro/screensage-pro-preview-2026-09-01-200622.json',
+  },
+};
+
+const workloadLabels = {
+  'screen-studio': '5K',
+  shotbase: '5K',
+  screencam: '5K',
+  'screen-sage-pro': '2K limit',
 };
 
 const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).map(async ([recorderId, scenarios]) => {
@@ -17,6 +38,7 @@ const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).ma
     if (raw.scenario !== scenario) throw new Error(`Expected ${scenario} in ${source}`);
     return [scenario, {
       scenario: raw.scenario,
+      workloadLabel: workloadLabels[recorderId],
       summary: {
         durationSeconds: raw.summary.durationSeconds,
         averageCPUPercent: raw.summary.averageCPUPercent,
@@ -25,12 +47,15 @@ const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).ma
         peakSystemCPUPercent: raw.summary.peakSystemCPUPercent,
         averagePhysicalFootprintBytes: raw.summary.averagePhysicalFootprintBytes,
         peakPhysicalFootprintBytes: raw.summary.peakPhysicalFootprintBytes,
+        averageSystemMemoryDeltaBytes: raw.summary.averageSystemMemoryDeltaBytes,
+        peakSystemMemoryDeltaBytes: raw.summary.peakSystemMemoryDeltaBytes,
       },
-      samples: raw.samples.map(({ elapsedSeconds, cpuPercent, systemCPUPercent, physicalFootprintBytes }) => ({
+      samples: raw.samples.map(({ elapsedSeconds, cpuPercent, systemCPUPercent, physicalFootprintBytes, systemMemoryDeltaBytes }) => ({
         elapsedSeconds,
         cpuPercent,
         systemCPUPercent,
         physicalFootprintBytes,
+        systemMemoryDeltaBytes,
       })),
     }];
   }));

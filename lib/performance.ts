@@ -9,6 +9,8 @@ export type BenchmarkSummary = {
   peakSystemCPUPercent?: number;
   averagePhysicalFootprintBytes: number;
   peakPhysicalFootprintBytes: number;
+  averageSystemMemoryDeltaBytes?: number;
+  peakSystemMemoryDeltaBytes?: number;
 };
 
 export type BenchmarkSample = {
@@ -16,10 +18,12 @@ export type BenchmarkSample = {
   cpuPercent: number;
   systemCPUPercent?: number;
   physicalFootprintBytes: number;
+  systemMemoryDeltaBytes?: number;
 };
 
 export type BenchmarkRun = {
   scenario: PerformanceScenario;
+  workloadLabel?: string;
   summary: BenchmarkSummary;
   samples: BenchmarkSample[];
 };
@@ -43,18 +47,18 @@ type PerformanceField = {
 };
 
 export const performanceFields: Record<string, PerformanceField> = {
-  recordingCpuAverage: { scenario: 'recording', value: (summary) => summary.averageSystemCPUPercent, format: 'cpu' },
-  recordingCpuPeak: { scenario: 'recording', value: (summary) => summary.peakSystemCPUPercent, format: 'cpu' },
-  recordingMemoryAverage: { scenario: 'recording', value: (summary) => summary.averagePhysicalFootprintBytes, format: 'memory' },
-  recordingMemoryPeak: { scenario: 'recording', value: (summary) => summary.peakPhysicalFootprintBytes, format: 'memory' },
-  previewCpuAverage: { scenario: 'preview', value: (summary) => summary.averageSystemCPUPercent, format: 'cpu' },
-  previewCpuPeak: { scenario: 'preview', value: (summary) => summary.peakSystemCPUPercent, format: 'cpu' },
-  previewMemoryAverage: { scenario: 'preview', value: (summary) => summary.averagePhysicalFootprintBytes, format: 'memory' },
-  previewMemoryPeak: { scenario: 'preview', value: (summary) => summary.peakPhysicalFootprintBytes, format: 'memory' },
-  exportCpuAverage: { scenario: 'export', value: (summary) => summary.averageSystemCPUPercent, format: 'cpu' },
-  exportCpuPeak: { scenario: 'export', value: (summary) => summary.peakSystemCPUPercent, format: 'cpu' },
-  exportMemoryAverage: { scenario: 'export', value: (summary) => summary.averagePhysicalFootprintBytes, format: 'memory' },
-  exportMemoryPeak: { scenario: 'export', value: (summary) => summary.peakPhysicalFootprintBytes, format: 'memory' },
+  recordingCpuAverage: { scenario: 'recording', value: (summary) => summary.averageSystemCPUPercent ?? summary.averageCPUPercent, format: 'cpu' },
+  recordingCpuPeak: { scenario: 'recording', value: (summary) => summary.peakSystemCPUPercent ?? summary.peakCPUPercent, format: 'cpu' },
+  recordingMemoryAverage: { scenario: 'recording', value: (summary) => summary.averageSystemMemoryDeltaBytes ?? summary.averagePhysicalFootprintBytes, format: 'memory' },
+  recordingMemoryPeak: { scenario: 'recording', value: (summary) => summary.peakSystemMemoryDeltaBytes ?? summary.peakPhysicalFootprintBytes, format: 'memory' },
+  previewCpuAverage: { scenario: 'preview', value: (summary) => summary.averageSystemCPUPercent ?? summary.averageCPUPercent, format: 'cpu' },
+  previewCpuPeak: { scenario: 'preview', value: (summary) => summary.peakSystemCPUPercent ?? summary.peakCPUPercent, format: 'cpu' },
+  previewMemoryAverage: { scenario: 'preview', value: (summary) => summary.averageSystemMemoryDeltaBytes ?? summary.averagePhysicalFootprintBytes, format: 'memory' },
+  previewMemoryPeak: { scenario: 'preview', value: (summary) => summary.peakSystemMemoryDeltaBytes ?? summary.peakPhysicalFootprintBytes, format: 'memory' },
+  exportCpuAverage: { scenario: 'export', value: (summary) => summary.averageSystemCPUPercent ?? summary.averageCPUPercent, format: 'cpu' },
+  exportCpuPeak: { scenario: 'export', value: (summary) => summary.peakSystemCPUPercent ?? summary.peakCPUPercent, format: 'cpu' },
+  exportMemoryAverage: { scenario: 'export', value: (summary) => summary.averageSystemMemoryDeltaBytes ?? summary.averagePhysicalFootprintBytes, format: 'memory' },
+  exportMemoryPeak: { scenario: 'export', value: (summary) => summary.peakSystemMemoryDeltaBytes ?? summary.peakPhysicalFootprintBytes, format: 'memory' },
   exportDuration: { scenario: 'export', value: (summary) => summary.durationSeconds, format: 'duration' },
 };
 
@@ -64,18 +68,28 @@ export const performanceValue = (profiles: PerformanceProfiles, recorderId: stri
   return field && run ? field.value(run.summary) : undefined;
 };
 
-export const performanceFieldMaximum = (profiles: PerformanceProfiles, fieldKey: string) => {
-  const values = Object.keys(profiles)
+export const performanceFieldMaximum = (profiles: PerformanceProfiles, fieldKey: string, recorderIds = Object.keys(profiles)) => {
+  const values = recorderIds
     .map((recorderId) => performanceValue(profiles, recorderId, fieldKey))
     .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));
   return values.length > 0 ? Math.max(...values) : 0;
 };
 
 export const performanceTimelineMaximum = (profiles: PerformanceProfiles, scenario: PerformanceScenario, metric: PerformanceMetric) => {
-  const values = Object.keys(profiles).flatMap((recorderId) => profiles[recorderId]?.[scenario]?.samples.flatMap((sample) => {
-    if (metric === 'memory') return [sample.physicalFootprintBytes];
-    return typeof sample.systemCPUPercent === 'number' ? [sample.systemCPUPercent] : [];
-  }) ?? []);
+  const values = Object.keys(profiles).flatMap((recorderId) => {
+    const samples = profiles[recorderId]?.[scenario]?.samples ?? [];
+    const hasSystemMetric = metric === 'memory'
+      ? samples.some((sample) => typeof sample.systemMemoryDeltaBytes === 'number')
+      : samples.some((sample) => typeof sample.systemCPUPercent === 'number');
+    return samples.flatMap((sample) => {
+      if (metric === 'memory') {
+        if (!hasSystemMetric) return [sample.physicalFootprintBytes];
+        return typeof sample.systemMemoryDeltaBytes === 'number' ? [sample.systemMemoryDeltaBytes] : [];
+      }
+      if (!hasSystemMetric) return [sample.cpuPercent];
+      return typeof sample.systemCPUPercent === 'number' ? [sample.systemCPUPercent] : [];
+    });
+  });
   return values.length > 0 ? Math.max(...values) : 0;
 };
 

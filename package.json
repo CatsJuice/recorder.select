@@ -7,9 +7,10 @@
   },
   "scripts": {
     "generate:performance": "node scripts/generate-performance-profiles.mjs",
-    "predev": "npm run generate:performance",
+    "stage:web-llm": "node scripts/stage-web-llm-assets.mjs",
+    "predev": "npm run generate:performance && npm run stage:web-llm",
     "dev": "vinext dev",
-    "prebuild": "npm run generate:performance",
+    "prebuild": "npm run generate:performance && npm run stage:web-llm",
     "build": "vinext build",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

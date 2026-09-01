@@ -5,7 +5,6 @@ import { createPortal } from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownWideShort, faArrowUp, faChevronRight, faFilter, faXmark } from '@fortawesome/free-solid-svg-icons';
 import type { WebWorkerMLCEngine } from '@mlc-ai/web-llm';
-import LocalLlmWorker from '../workers/local-llm.worker?worker';
 import { fieldDefinitions, fieldGroups, recorders } from '../lib/recorders';
 import { useI18n } from '../lib/i18n';
 
@@ -14,6 +13,16 @@ const MODEL_SIZE_LABEL = 'approximately 350 MB';
 const CONTEXT_WINDOW_SIZE = 8192;
 const MAX_CONTEXT_PRODUCTS = 8;
 const MAX_DETAILED_FIELDS = 32;
+const WEB_LLM_MODULE_URL = '/vendor/web-llm.js';
+const WEB_LLM_WORKER_URL = '/vendor/web-llm.worker.js';
+
+type WebLlmBrowserModule = typeof import('@mlc-ai/web-llm');
+
+const loadWebLlm = () => import(/* @vite-ignore */ WEB_LLM_MODULE_URL) as Promise<WebLlmBrowserModule>;
+const createLocalLlmWorker = () => new Worker(WEB_LLM_WORKER_URL, {
+  type: 'module',
+  name: 'recorder-select-local-llm',
+});
 
 type ChatMessage = {
   id: string;
@@ -765,8 +774,8 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
     setStatus('loading');
     setProgress(0);
     try {
-      const { CreateWebWorkerMLCEngine } = await import('@mlc-ai/web-llm');
-      const worker = new LocalLlmWorker();
+      const { CreateWebWorkerMLCEngine } = await loadWebLlm();
+      const worker = createLocalLlmWorker();
       workerRef.current = worker;
       const engine = await CreateWebWorkerMLCEngine(worker, MODEL_ID, {
         initProgressCallback: (report) => setProgress(report.progress),
@@ -932,7 +941,7 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
     pendingQuestionRef.current = question;
     setStatus('loading');
     try {
-      const { hasModelInCache } = await import('@mlc-ai/web-llm');
+      const { hasModelInCache } = await loadWebLlm();
       if (await hasModelInCache(MODEL_ID)) {
         const engine = await initialize();
         if (engine) await generateAnswer(question, engine);

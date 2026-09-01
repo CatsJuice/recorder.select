@@ -38,6 +38,8 @@ next-env.d.ts
 /outputs/
 /work/
 /artifacts/
+/public/vendor/web-llm.js
+/public/vendor/web-llm.worker.js
 .build/
 .swiftpm/
 xcuserdata/

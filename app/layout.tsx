@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { I18nProvider } from '../lib/i18n';
+import { siteUrl, socialImage, socialImageAlt } from '../lib/site-metadata';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -14,22 +15,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:5173'),
+  metadataBase: siteUrl,
   title: 'Recorder Select — Compare screen recorders',
   description: 'A clear, independent comparison of the best screen recording tools.',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
+    type: 'website',
+    url: '/',
+    siteName: 'Recorder Select',
     title: 'Recorder Select',
     description: 'Compare screen recorders clearly.',
-    images: ['/og.png'],
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Recorder Select',
     description: 'Compare screen recorders clearly.',
-    images: ['/og.png'],
+    images: [{ url: '/og.png', alt: socialImageAlt }],
   },
 };
 

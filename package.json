@@ -13,7 +13,7 @@
     "prebuild": "npm run generate:performance && npm run stage:web-llm",
     "build": "vinext build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern public/vendor",
     "test:mac": "swift test --package-path apps/benchmark-macos",
     "build:mac": "scripts/build-macos-app.sh"
   },

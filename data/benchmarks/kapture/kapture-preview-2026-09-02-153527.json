@@ -1,0 +1,1837 @@
+{
+  "endedAt" : "2026-09-02T07:36:29Z",
+  "id" : "487E7E5A-2E1A-4C7C-8B99-6DEC3717E6FE",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.25e-06,
+      "physicalFootprintBytes" : 301762288,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.675864958,
+            "diskReadBytes" : 277454848,
+            "diskWrittenBytes" : 242573312,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 301762288
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 88842174464
+    },
+    {
+      "cpuPercent" : 0.6442111382668932,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.028761125,
+      "physicalFootprintBytes" : 301762288,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6442111382668932,
+          "process" : {
+            "cpuTimeSeconds" : 1.682492552,
+            "diskReadBytes" : 277454848,
+            "diskWrittenBytes" : 242573312,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 301762288
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.56521739130434,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 88732729344
+    },
+    {
+      "cpuPercent" : 0.6282729243751991,
+      "diskReadBytes" : 3080192,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 2.028830208,
+      "physicalFootprintBytes" : 880838240,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6282729243751991,
+          "process" : {
+            "cpuTimeSeconds" : 1.688777448,
+            "diskReadBytes" : 280535040,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 880838240
+          }
+        }
+      ],
+      "systemCPUPercent" : 181.10676355505868,
+      "systemMemoryDeltaBytes" : 733921280,
+      "systemMemoryUsedBytes" : 89576095744
+    },
+    {
+      "cpuPercent" : 1.019325296323365,
+      "diskReadBytes" : 6078464,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 3.028913125,
+      "physicalFootprintBytes" : 879822600,
+      "processes" : [
+        {
+          "cpuPercent" : 1.019325296323365,
+          "process" : {
+            "cpuTimeSeconds" : 1.698973279,
+            "diskReadBytes" : 283533312,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 879822600
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.71548351034096,
+      "systemMemoryDeltaBytes" : 538624000,
+      "systemMemoryUsedBytes" : 89380798464
+    },
+    {
+      "cpuPercent" : 0.9205151187184544,
+      "diskReadBytes" : 9207808,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 4.028844,
+      "physicalFootprintBytes" : 877577992,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9205151187184544,
+          "process" : {
+            "cpuTimeSeconds" : 1.708174546,
+            "diskReadBytes" : 286662656,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 877577992
+          }
+        }
+      ],
+      "systemCPUPercent" : 312.73743016759784,
+      "systemMemoryDeltaBytes" : 568279040,
+      "systemMemoryUsedBytes" : 89410453504
+    },
+    {
+      "cpuPercent" : 0.9394719468211594,
+      "diskReadBytes" : 11845632,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 5.028858792,
+      "physicalFootprintBytes" : 876562184,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9394719468211594,
+          "process" : {
+            "cpuTimeSeconds" : 1.717571557,
+            "diskReadBytes" : 289300480,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 876562184
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.99999999999994,
+      "systemMemoryDeltaBytes" : 539262976,
+      "systemMemoryUsedBytes" : 89381437440
+    },
+    {
+      "cpuPercent" : 0.9373948978125132,
+      "diskReadBytes" : 14811136,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 6.028807417,
+      "physicalFootprintBytes" : 869844744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9373948978125132,
+          "process" : {
+            "cpuTimeSeconds" : 1.726943332,
+            "diskReadBytes" : 292265984,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 869844744
+          }
+        }
+      ],
+      "systemCPUPercent" : 326.81564245810057,
+      "systemMemoryDeltaBytes" : 533889024,
+      "systemMemoryUsedBytes" : 89376063488
+    },
+    {
+      "cpuPercent" : 0.9484634356776381,
+      "diskReadBytes" : 16334848,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 7.028873417,
+      "physicalFootprintBytes" : 868599584,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9484634356776381,
+          "process" : {
+            "cpuTimeSeconds" : 1.736430347,
+            "diskReadBytes" : 293789696,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 868599584
+          }
+        }
+      ],
+      "systemCPUPercent" : 319.4196428571429,
+      "systemMemoryDeltaBytes" : 569327616,
+      "systemMemoryUsedBytes" : 89411502080
+    },
+    {
+      "cpuPercent" : 0.9823996814657393,
+      "diskReadBytes" : 19726336,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 8.028494583,
+      "physicalFootprintBytes" : 867927840,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9823996814657393,
+          "process" : {
+            "cpuTimeSeconds" : 1.746250203,
+            "diskReadBytes" : 297181184,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867927840
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.84958217270196,
+      "systemMemoryDeltaBytes" : 598343680,
+      "systemMemoryUsedBytes" : 89440518144
+    },
+    {
+      "cpuPercent" : 0.9452140190225241,
+      "diskReadBytes" : 21921792,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 9.028855125,
+      "physicalFootprintBytes" : 868615968,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9452140190225241,
+          "process" : {
+            "cpuTimeSeconds" : 1.755706306,
+            "diskReadBytes" : 299376640,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 868615968
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.69832402234636,
+      "systemMemoryDeltaBytes" : 574685184,
+      "systemMemoryUsedBytes" : 89416859648
+    },
+    {
+      "cpuPercent" : 0.967175443957056,
+      "diskReadBytes" : 24133632,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 10.028846333,
+      "physicalFootprintBytes" : 867944224,
+      "processes" : [
+        {
+          "cpuPercent" : 0.967175443957056,
+          "process" : {
+            "cpuTimeSeconds" : 1.765377759,
+            "diskReadBytes" : 301588480,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867944224
+          }
+        }
+      ],
+      "systemCPUPercent" : 345.96100278551535,
+      "systemMemoryDeltaBytes" : 579371008,
+      "systemMemoryUsedBytes" : 89421545472
+    },
+    {
+      "cpuPercent" : 1.0198723711936153,
+      "diskReadBytes" : 27246592,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 11.028741042,
+      "physicalFootprintBytes" : 868337440,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0198723711936153,
+          "process" : {
+            "cpuTimeSeconds" : 1.775575779,
+            "diskReadBytes" : 304701440,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 868337440
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.55679287305122,
+      "systemMemoryDeltaBytes" : 581058560,
+      "systemMemoryUsedBytes" : 89423233024
+    },
+    {
+      "cpuPercent" : 1.030321120657021,
+      "diskReadBytes" : 29638656,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 12.028872083,
+      "physicalFootprintBytes" : 864798496,
+      "processes" : [
+        {
+          "cpuPercent" : 1.030321120657021,
+          "process" : {
+            "cpuTimeSeconds" : 1.785880549,
+            "diskReadBytes" : 307093504,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864798496
+          }
+        }
+      ],
+      "systemCPUPercent" : 200.22358859698156,
+      "systemMemoryDeltaBytes" : 576585728,
+      "systemMemoryUsedBytes" : 89418760192
+    },
+    {
+      "cpuPercent" : 1.0043921746163813,
+      "diskReadBytes" : 33062912,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 13.028900333,
+      "physicalFootprintBytes" : 866256672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0043921746163813,
+          "process" : {
+            "cpuTimeSeconds" : 1.795926205,
+            "diskReadBytes" : 310517760,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866256672
+          }
+        }
+      ],
+      "systemCPUPercent" : 230.76923076923075,
+      "systemMemoryDeltaBytes" : 964526080,
+      "systemMemoryUsedBytes" : 89806700544
+    },
+    {
+      "cpuPercent" : 0.9680131824587543,
+      "diskReadBytes" : 35422208,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 14.028842167,
+      "physicalFootprintBytes" : 865814304,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9680131824587543,
+          "process" : {
+            "cpuTimeSeconds" : 1.805603797,
+            "diskReadBytes" : 312877056,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865814304
+          }
+        }
+      ],
+      "systemCPUPercent" : 203.46950195858983,
+      "systemMemoryDeltaBytes" : 631308288,
+      "systemMemoryUsedBytes" : 89473482752
+    },
+    {
+      "cpuPercent" : 0.9770230675235729,
+      "diskReadBytes" : 39092224,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 15.028430167,
+      "physicalFootprintBytes" : 866486048,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9770230675235729,
+          "process" : {
+            "cpuTimeSeconds" : 1.815369811,
+            "diskReadBytes" : 316547072,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866486048
+          }
+        }
+      ],
+      "systemCPUPercent" : 229.1457286432161,
+      "systemMemoryDeltaBytes" : 613302272,
+      "systemMemoryUsedBytes" : 89455476736
+    },
+    {
+      "cpuPercent" : 0.9883533341486268,
+      "diskReadBytes" : 40550400,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 16.028893042,
+      "physicalFootprintBytes" : 864700192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9883533341486268,
+          "process" : {
+            "cpuTimeSeconds" : 1.825259788,
+            "diskReadBytes" : 318005248,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864700192
+          }
+        }
+      ],
+      "systemCPUPercent" : 226.62952646239555,
+      "systemMemoryDeltaBytes" : 586547200,
+      "systemMemoryUsedBytes" : 89428721664
+    },
+    {
+      "cpuPercent" : 0.9887410546076929,
+      "diskReadBytes" : 43958272,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 17.028852708,
+      "physicalFootprintBytes" : 865863456,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9887410546076929,
+          "process" : {
+            "cpuTimeSeconds" : 1.835145556,
+            "diskReadBytes" : 321413120,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865863456
+          }
+        }
+      ],
+      "systemCPUPercent" : 208.04020100502512,
+      "systemMemoryDeltaBytes" : 587759616,
+      "systemMemoryUsedBytes" : 89429934080
+    },
+    {
+      "cpuPercent" : 0.9997101920602781,
+      "diskReadBytes" : 46972928,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 18.028847667,
+      "physicalFootprintBytes" : 866502432,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9997101920602781,
+          "process" : {
+            "cpuTimeSeconds" : 1.84514266,
+            "diskReadBytes" : 324427776,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866502432
+          }
+        }
+      ],
+      "systemCPUPercent" : 198.77300613496934,
+      "systemMemoryDeltaBytes" : 581779456,
+      "systemMemoryUsedBytes" : 89423953920
+    },
+    {
+      "cpuPercent" : 0.9882181270061084,
+      "diskReadBytes" : 50118656,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 19.02889125,
+      "physicalFootprintBytes" : 865683232,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9882181270061084,
+          "process" : {
+            "cpuTimeSeconds" : 1.855026653,
+            "diskReadBytes" : 327573504,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865683232
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.85499163413274,
+      "systemMemoryDeltaBytes" : 581025792,
+      "systemMemoryUsedBytes" : 89423200256
+    },
+    {
+      "cpuPercent" : 1.0064112895310613,
+      "diskReadBytes" : 52953088,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 20.028837958,
+      "physicalFootprintBytes" : 866223880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0064112895310613,
+          "process" : {
+            "cpuTimeSeconds" : 1.865088153,
+            "diskReadBytes" : 330407936,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866223880
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.34228187919462,
+      "systemMemoryDeltaBytes" : 522469376,
+      "systemMemoryUsedBytes" : 89364643840
+    },
+    {
+      "cpuPercent" : 0.9034894240133181,
+      "diskReadBytes" : 58228736,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 21.028825,
+      "physicalFootprintBytes" : 868599584,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9034894240133181,
+          "process" : {
+            "cpuTimeSeconds" : 1.874122693,
+            "diskReadBytes" : 335683584,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 868599584
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.9197324414716,
+      "systemMemoryDeltaBytes" : 652099584,
+      "systemMemoryUsedBytes" : 89494274048
+    },
+    {
+      "cpuPercent" : 0.8257329658723889,
+      "diskReadBytes" : 61521920,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 22.028873042,
+      "physicalFootprintBytes" : 865224456,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8257329658723889,
+          "process" : {
+            "cpuTimeSeconds" : 1.8823809,
+            "diskReadBytes" : 338976768,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865224456
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.9598662207358,
+      "systemMemoryDeltaBytes" : 631177216,
+      "systemMemoryUsedBytes" : 89473351680
+    },
+    {
+      "cpuPercent" : 0.9598147477371186,
+      "diskReadBytes" : 65224704,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 23.028324042,
+      "physicalFootprintBytes" : 866764552,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9598147477371186,
+          "process" : {
+            "cpuTimeSeconds" : 1.891973231,
+            "diskReadBytes" : 342679552,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866764552
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.30967020681945,
+      "systemMemoryDeltaBytes" : 564707328,
+      "systemMemoryUsedBytes" : 89406881792
+    },
+    {
+      "cpuPercent" : 0.9899247357218881,
+      "diskReadBytes" : 68960256,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 24.028813958,
+      "physicalFootprintBytes" : 869009160,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9899247357218881,
+          "process" : {
+            "cpuTimeSeconds" : 1.901878613,
+            "diskReadBytes" : 346415104,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 869009160
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.67224080267556,
+      "systemMemoryDeltaBytes" : 563822592,
+      "systemMemoryUsedBytes" : 89405997056
+    },
+    {
+      "cpuPercent" : 1.0412070367557613,
+      "diskReadBytes" : 72417280,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 25.028841875,
+      "physicalFootprintBytes" : 866404104,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0412070367557613,
+          "process" : {
+            "cpuTimeSeconds" : 1.912289935,
+            "diskReadBytes" : 349872128,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866404104
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.91745677635245,
+      "systemMemoryDeltaBytes" : 562757632,
+      "systemMemoryUsedBytes" : 89404932096
+    },
+    {
+      "cpuPercent" : 0.973110599060226,
+      "diskReadBytes" : 73957376,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 26.028915542,
+      "physicalFootprintBytes" : 867141384,
+      "processes" : [
+        {
+          "cpuPercent" : 0.973110599060226,
+          "process" : {
+            "cpuTimeSeconds" : 1.922023951,
+            "diskReadBytes" : 351412224,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867141384
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.51315053161724,
+      "systemMemoryDeltaBytes" : 562675712,
+      "systemMemoryUsedBytes" : 89404850176
+    },
+    {
+      "cpuPercent" : 0.9862315795837631,
+      "diskReadBytes" : 77479936,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 27.028813583,
+      "physicalFootprintBytes" : 866256648,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9862315795837631,
+          "process" : {
+            "cpuTimeSeconds" : 1.931883041,
+            "diskReadBytes" : 354934784,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866256648
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.24471635150164,
+      "systemMemoryDeltaBytes" : 560791552,
+      "systemMemoryUsedBytes" : 89402966016
+    },
+    {
+      "cpuPercent" : 0.9910679531454605,
+      "diskReadBytes" : 80101376,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 28.027868583,
+      "physicalFootprintBytes" : 874497824,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9910679531454605,
+          "process" : {
+            "cpuTimeSeconds" : 1.941784893,
+            "diskReadBytes" : 357556224,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 874497824
+          }
+        }
+      ],
+      "systemCPUPercent" : 245.9126539753639,
+      "systemMemoryDeltaBytes" : 777240576,
+      "systemMemoryUsedBytes" : 89619415040
+    },
+    {
+      "cpuPercent" : 0.9529280855571769,
+      "diskReadBytes" : 83296256,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 29.02846725,
+      "physicalFootprintBytes" : 865978120,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9529280855571769,
+          "process" : {
+            "cpuTimeSeconds" : 1.951319949,
+            "diskReadBytes" : 360751104,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865978120
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.91071428571428,
+      "systemMemoryDeltaBytes" : 643006464,
+      "systemMemoryUsedBytes" : 89485180928
+    },
+    {
+      "cpuPercent" : 0.9983176430057814,
+      "diskReadBytes" : 85295104,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 30.028850042,
+      "physicalFootprintBytes" : 864716552,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9983176430057814,
+          "process" : {
+            "cpuTimeSeconds" : 1.961306496,
+            "diskReadBytes" : 362749952,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864716552
+          }
+        }
+      ],
+      "systemCPUPercent" : 192.964824120603,
+      "systemMemoryDeltaBytes" : 563789824,
+      "systemMemoryUsedBytes" : 89405964288
+    },
+    {
+      "cpuPercent" : 0.9812924476229319,
+      "diskReadBytes" : 88408064,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 31.028863917,
+      "physicalFootprintBytes" : 866043656,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9812924476229319,
+          "process" : {
+            "cpuTimeSeconds" : 1.97111997,
+            "diskReadBytes" : 365862912,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866043656
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.89966555183946,
+      "systemMemoryDeltaBytes" : 575864832,
+      "systemMemoryUsedBytes" : 89418039296
+    },
+    {
+      "cpuPercent" : 0.9633018596709751,
+      "diskReadBytes" : 90324992,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 32.028853333,
+      "physicalFootprintBytes" : 865273608,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9633018596709751,
+          "process" : {
+            "cpuTimeSeconds" : 1.980753398,
+            "diskReadBytes" : 367779840,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865273608
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.89732142857144,
+      "systemMemoryDeltaBytes" : 551272448,
+      "systemMemoryUsedBytes" : 89393446912
+    },
+    {
+      "cpuPercent" : 0.9963447508578641,
+      "diskReadBytes" : 92291072,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 33.028847625,
+      "physicalFootprintBytes" : 864831264,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9963447508578641,
+          "process" : {
+            "cpuTimeSeconds" : 1.990715395,
+            "diskReadBytes" : 369745920,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864831264
+          }
+        }
+      ],
+      "systemCPUPercent" : 228.76254180602004,
+      "systemMemoryDeltaBytes" : 609517568,
+      "systemMemoryUsedBytes" : 89451692032
+    },
+    {
+      "cpuPercent" : 0.9150281420851404,
+      "diskReadBytes" : 94617600,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 34.028849542,
+      "physicalFootprintBytes" : 865437472,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9150281420851404,
+          "process" : {
+            "cpuTimeSeconds" : 1.9998654,
+            "diskReadBytes" : 372072448,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865437472
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.3854748603352,
+      "systemMemoryDeltaBytes" : 628637696,
+      "systemMemoryUsedBytes" : 89470812160
+    },
+    {
+      "cpuPercent" : 0.9365256500271112,
+      "diskReadBytes" : 96681984,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 35.028845792,
+      "physicalFootprintBytes" : 864503584,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9365256500271112,
+          "process" : {
+            "cpuTimeSeconds" : 2.009231666,
+            "diskReadBytes" : 374136832,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864503584
+          }
+        }
+      ],
+      "systemCPUPercent" : 241.80602006688963,
+      "systemMemoryDeltaBytes" : 624951296,
+      "systemMemoryUsedBytes" : 89467125760
+    },
+    {
+      "cpuPercent" : 0.9518268316151457,
+      "diskReadBytes" : 99794944,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 36.028405292,
+      "physicalFootprintBytes" : 865371912,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9518268316151457,
+          "process" : {
+            "cpuTimeSeconds" : 2.018745406,
+            "diskReadBytes" : 377249792,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865371912
+          }
+        }
+      ],
+      "systemCPUPercent" : 243.35195530726256,
+      "systemMemoryDeltaBytes" : 769294336,
+      "systemMemoryUsedBytes" : 89611468800
+    },
+    {
+      "cpuPercent" : 0.9883982947054445,
+      "diskReadBytes" : 101875712,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 37.02885675,
+      "physicalFootprintBytes" : 864159496,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9883982947054445,
+          "process" : {
+            "cpuTimeSeconds" : 2.028634347,
+            "diskReadBytes" : 379330560,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864159496
+          }
+        }
+      ],
+      "systemCPUPercent" : 205.91517857142856,
+      "systemMemoryDeltaBytes" : 596541440,
+      "systemMemoryUsedBytes" : 89438715904
+    },
+    {
+      "cpuPercent" : 1.0073171228573314,
+      "diskReadBytes" : 105021440,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 38.028907458,
+      "physicalFootprintBytes" : 865355528,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0073171228573314,
+          "process" : {
+            "cpuTimeSeconds" : 2.038709242,
+            "diskReadBytes" : 382476288,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865355528
+          }
+        }
+      ],
+      "systemCPUPercent" : 205.685618729097,
+      "systemMemoryDeltaBytes" : 605503488,
+      "systemMemoryUsedBytes" : 89447677952
+    },
+    {
+      "cpuPercent" : 0.9772794343454423,
+      "diskReadBytes" : 109281280,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 39.028848667,
+      "physicalFootprintBytes" : 867501856,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9772794343454423,
+          "process" : {
+            "cpuTimeSeconds" : 2.048479811,
+            "diskReadBytes" : 386736128,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867501856
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.0753768844221,
+      "systemMemoryDeltaBytes" : 639287296,
+      "systemMemoryUsedBytes" : 89481461760
+    },
+    {
+      "cpuPercent" : 0.9477421242704476,
+      "diskReadBytes" : 112836608,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 40.028878125,
+      "physicalFootprintBytes" : 867485472,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9477421242704476,
+          "process" : {
+            "cpuTimeSeconds" : 2.057958101,
+            "diskReadBytes" : 390291456,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867485472
+          }
+        }
+      ],
+      "systemCPUPercent" : 202.67558528428094,
+      "systemMemoryDeltaBytes" : 638337024,
+      "systemMemoryUsedBytes" : 89480511488
+    },
+    {
+      "cpuPercent" : 0.9261455480783868,
+      "diskReadBytes" : 115769344,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 41.028720375,
+      "physicalFootprintBytes" : 865961760,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9261455480783868,
+          "process" : {
+            "cpuTimeSeconds" : 2.06721667,
+            "diskReadBytes" : 393224192,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865961760
+          }
+        }
+      ],
+      "systemCPUPercent" : 301.67597765363126,
+      "systemMemoryDeltaBytes" : 636813312,
+      "systemMemoryUsedBytes" : 89478987776
+    },
+    {
+      "cpuPercent" : 0.9835421523388711,
+      "diskReadBytes" : 118816768,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 42.028853833,
+      "physicalFootprintBytes" : 866256672,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9835421523388711,
+          "process" : {
+            "cpuTimeSeconds" : 2.077054827,
+            "diskReadBytes" : 396271616,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866256672
+          }
+        }
+      ],
+      "systemCPUPercent" : 212.8276631344116,
+      "systemMemoryDeltaBytes" : 637992960,
+      "systemMemoryUsedBytes" : 89480167424
+    },
+    {
+      "cpuPercent" : 0.9883479472456498,
+      "diskReadBytes" : 121176064,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 43.028841625,
+      "physicalFootprintBytes" : 865421088,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9883479472456498,
+          "process" : {
+            "cpuTimeSeconds" : 2.086937774,
+            "diskReadBytes" : 398630912,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865421088
+          }
+        }
+      ],
+      "systemCPUPercent" : 216.32196757965346,
+      "systemMemoryDeltaBytes" : 661291008,
+      "systemMemoryUsedBytes" : 89503465472
+    },
+    {
+      "cpuPercent" : 0.9979877162366331,
+      "diskReadBytes" : 123027456,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 44.028855208,
+      "physicalFootprintBytes" : 865289992,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9979877162366331,
+          "process" : {
+            "cpuTimeSeconds" : 2.096918183,
+            "diskReadBytes" : 400482304,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865289992
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.67224080267556,
+      "systemMemoryDeltaBytes" : 577650688,
+      "systemMemoryUsedBytes" : 89419825152
+    },
+    {
+      "cpuPercent" : 0.9847232571165253,
+      "diskReadBytes" : 124829696,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 45.028847167,
+      "physicalFootprintBytes" : 865601288,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9847232571165253,
+          "process" : {
+            "cpuTimeSeconds" : 2.106768364,
+            "diskReadBytes" : 402284544,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865601288
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.39597315436242,
+      "systemMemoryDeltaBytes" : 563265536,
+      "systemMemoryUsedBytes" : 89405440000
+    },
+    {
+      "cpuPercent" : 0.9774824562593494,
+      "diskReadBytes" : 129581056,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 46.028853792,
+      "physicalFootprintBytes" : 867059464,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9774824562593494,
+          "process" : {
+            "cpuTimeSeconds" : 2.116539646,
+            "diskReadBytes" : 407035904,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867059464
+          }
+        }
+      ],
+      "systemCPUPercent" : 251.25628140703515,
+      "systemMemoryDeltaBytes" : 618037248,
+      "systemMemoryUsedBytes" : 89460211712
+    },
+    {
+      "cpuPercent" : 0.9632970964391179,
+      "diskReadBytes" : 132857856,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 47.028840625,
+      "physicalFootprintBytes" : 867157768,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9632970964391179,
+          "process" : {
+            "cpuTimeSeconds" : 2.126172568,
+            "diskReadBytes" : 410312704,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867157768
+          }
+        }
+      ],
+      "systemCPUPercent" : 222.6183844011142,
+      "systemMemoryDeltaBytes" : 804552704,
+      "systemMemoryUsedBytes" : 89646727168
+    },
+    {
+      "cpuPercent" : 0.9769786995049555,
+      "diskReadBytes" : 135102464,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 48.028824917,
+      "physicalFootprintBytes" : 865879816,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9769786995049555,
+          "process" : {
+            "cpuTimeSeconds" : 2.135941711,
+            "diskReadBytes" : 412557312,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865879816
+          }
+        }
+      ],
+      "systemCPUPercent" : 349.1031390134529,
+      "systemMemoryDeltaBytes" : 1120124928,
+      "systemMemoryUsedBytes" : 89962299392
+    },
+    {
+      "cpuPercent" : 0.9523002395889971,
+      "diskReadBytes" : 138510336,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 49.028833042,
+      "physicalFootprintBytes" : 865666824,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9523002395889971,
+          "process" : {
+            "cpuTimeSeconds" : 2.145467137,
+            "diskReadBytes" : 415965184,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865666824
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.2714126807564,
+      "systemMemoryDeltaBytes" : 639549440,
+      "systemMemoryUsedBytes" : 89481723904
+    },
+    {
+      "cpuPercent" : 0.967378689745423,
+      "diskReadBytes" : 140558336,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 50.028993542,
+      "physicalFootprintBytes" : 865945376,
+      "processes" : [
+        {
+          "cpuPercent" : 0.967378689745423,
+          "process" : {
+            "cpuTimeSeconds" : 2.155143271,
+            "diskReadBytes" : 418013184,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865945376
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.4941307993292,
+      "systemMemoryDeltaBytes" : 749649920,
+      "systemMemoryUsedBytes" : 89591824384
+    },
+    {
+      "cpuPercent" : 0.9115276266315684,
+      "diskReadBytes" : 144310272,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 51.028842792,
+      "physicalFootprintBytes" : 866486048,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9115276266315684,
+          "process" : {
+            "cpuTimeSeconds" : 2.164254513,
+            "diskReadBytes" : 421765120,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866486048
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.321608040201,
+      "systemMemoryDeltaBytes" : 708362240,
+      "systemMemoryUsedBytes" : 89550536704
+    },
+    {
+      "cpuPercent" : 0.9636482471755284,
+      "diskReadBytes" : 147030016,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 52.028893583,
+      "physicalFootprintBytes" : 866600736,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9636482471755284,
+          "process" : {
+            "cpuTimeSeconds" : 2.173892932,
+            "diskReadBytes" : 424484864,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866600736
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.49246231155774,
+      "systemMemoryDeltaBytes" : 627638272,
+      "systemMemoryUsedBytes" : 89469812736
+    },
+    {
+      "cpuPercent" : 1.0219063606621779,
+      "diskReadBytes" : 149618688,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 53.028820875,
+      "physicalFootprintBytes" : 864929544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0219063606621779,
+          "process" : {
+            "cpuTimeSeconds" : 2.184109285,
+            "diskReadBytes" : 427073536,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864929544
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.5925097820011,
+      "systemMemoryDeltaBytes" : 558317568,
+      "systemMemoryUsedBytes" : 89400492032
+    },
+    {
+      "cpuPercent" : 0.8971965361582328,
+      "diskReadBytes" : 153157632,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 54.028816625,
+      "physicalFootprintBytes" : 866699016,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8971965361582328,
+          "process" : {
+            "cpuTimeSeconds" : 2.193080967,
+            "diskReadBytes" : 430612480,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 866699016
+          }
+        }
+      ],
+      "systemCPUPercent" : 348.51706771124793,
+      "systemMemoryDeltaBytes" : 554696704,
+      "systemMemoryUsedBytes" : 89396871168
+    },
+    {
+      "cpuPercent" : 0.9124787319789209,
+      "diskReadBytes" : 155418624,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 55.028634958,
+      "physicalFootprintBytes" : 865748744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9124787319789209,
+          "process" : {
+            "cpuTimeSeconds" : 2.202203702,
+            "diskReadBytes" : 432873472,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865748744
+          }
+        }
+      ],
+      "systemCPUPercent" : 396.6442953020134,
+      "systemMemoryDeltaBytes" : 790757376,
+      "systemMemoryUsedBytes" : 89632931840
+    },
+    {
+      "cpuPercent" : 0.9360689156400922,
+      "diskReadBytes" : 159711232,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 56.028837375,
+      "physicalFootprintBytes" : 867288840,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9360689156400922,
+          "process" : {
+            "cpuTimeSeconds" : 2.21156888,
+            "diskReadBytes" : 437166080,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 867288840
+          }
+        }
+      ],
+      "systemCPUPercent" : 321.96757965343767,
+      "systemMemoryDeltaBytes" : 852246528,
+      "systemMemoryUsedBytes" : 89694420992
+    },
+    {
+      "cpuPercent" : 0.9594623433167122,
+      "diskReadBytes" : 168181760,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 57.028842458,
+      "physicalFootprintBytes" : 870647560,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9594623433167122,
+          "process" : {
+            "cpuTimeSeconds" : 2.221162135,
+            "diskReadBytes" : 445636608,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 870647560
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.99553571428572,
+      "systemMemoryDeltaBytes" : 592166912,
+      "systemMemoryUsedBytes" : 89434341376
+    },
+    {
+      "cpuPercent" : 0.9243342158530274,
+      "diskReadBytes" : 170950656,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 58.028970167,
+      "physicalFootprintBytes" : 865928872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9243342158530274,
+          "process" : {
+            "cpuTimeSeconds" : 2.230409317,
+            "diskReadBytes" : 448405504,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865928872
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.4141978759083,
+      "systemMemoryDeltaBytes" : 317669376,
+      "systemMemoryUsedBytes" : 89159843840
+    },
+    {
+      "cpuPercent" : 0.9575866644709247,
+      "diskReadBytes" : 173735936,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 59.028812458,
+      "physicalFootprintBytes" : 865109744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9575866644709247,
+          "process" : {
+            "cpuTimeSeconds" : 2.239979247,
+            "diskReadBytes" : 451190784,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 865109744
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.7859531772575,
+      "systemMemoryDeltaBytes" : 494190592,
+      "systemMemoryUsedBytes" : 89336365056
+    },
+    {
+      "cpuPercent" : 0.9734448867240406,
+      "diskReadBytes" : 176193536,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 60.028974083,
+      "physicalFootprintBytes" : 864552688,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9734448867240406,
+          "process" : {
+            "cpuTimeSeconds" : 2.249720381,
+            "diskReadBytes" : 453648384,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864552688
+          }
+        }
+      ],
+      "systemCPUPercent" : 216.72240802675583,
+      "systemMemoryDeltaBytes" : 493518848,
+      "systemMemoryUsedBytes" : 89335693312
+    },
+    {
+      "cpuPercent" : 0.9710025819751219,
+      "diskReadBytes" : 178290688,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 61.028589333,
+      "physicalFootprintBytes" : 864093936,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9710025819751219,
+          "process" : {
+            "cpuTimeSeconds" : 2.259424739,
+            "diskReadBytes" : 455745536,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 864093936
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.62116991643455,
+      "systemMemoryDeltaBytes" : 552353792,
+      "systemMemoryUsedBytes" : 89394528256
+    },
+    {
+      "cpuPercent" : 0.7483721080184821,
+      "diskReadBytes" : 183664640,
+      "diskWrittenBytes" : 20480,
+      "elapsedSeconds" : 62.028898542,
+      "physicalFootprintBytes" : 868271856,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7483721080184821,
+          "process" : {
+            "cpuTimeSeconds" : 2.266910853,
+            "diskReadBytes" : 461119488,
+            "diskWrittenBytes" : 242593792,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 868271856
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.68227424749165,
+      "systemMemoryDeltaBytes" : 560627712,
+      "systemMemoryUsedBytes" : 89402802176
+    },
+    {
+      "cpuPercent" : 0.23602172970358118,
+      "diskReadBytes" : 183664640,
+      "diskWrittenBytes" : 28672,
+      "elapsedSeconds" : 62.421980625,
+      "physicalFootprintBytes" : 872220376,
+      "processes" : [
+        {
+          "cpuPercent" : 0.23602172970358118,
+          "process" : {
+            "cpuTimeSeconds" : 2.267837475,
+            "diskReadBytes" : 461119488,
+            "diskWrittenBytes" : 242601984,
+            "executablePath" : "/Applications/Kapture.app/Contents/MacOS/Kapture",
+            "identity" : {
+              "pid" : 5374,
+              "startTimeNanoseconds" : 8668477635320
+            },
+            "name" : "Kapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 872220376
+          }
+        }
+      ],
+      "systemCPUPercent" : 274.35897435897436,
+      "systemMemoryDeltaBytes" : 763265024,
+      "systemMemoryUsedBytes" : 89605439488
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-02T07:35:27Z",
+  "summary" : {
+    "averageCPUPercent" : 0.9416129523113762,
+    "averagePhysicalFootprintBytes" : 849707787,
+    "averageSystemCPUPercent" : 248.24137952101412,
+    "averageSystemMemoryDeltaBytes" : 604032512,
+    "cpuTimeSeconds" : 0.5919725169999999,
+    "diskReadBytes" : 183664640,
+    "diskWrittenBytes" : 28672,
+    "durationSeconds" : 62.421980625,
+    "p95CPUPercent" : 1.0198723711936153,
+    "p95SystemCPUPercent" : 345.96100278551535,
+    "peakCPUPercent" : 1.0412070367557613,
+    "peakPhysicalFootprintBytes" : 880838240,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 396.6442953020134,
+    "peakSystemMemoryDeltaBytes" : 1120124928,
+    "physicalFootprintDeltaBytes" : 570458088
+  },
+  "target" : {
+    "build" : "202609010309",
+    "bundleIdentifier" : "com.smallsquare.kapture",
+    "bundlePath" : "/Applications/Kapture.app",
+    "name" : "Kapture",
+    "recorderID" : "kapture",
+    "version" : "1.7.0"
+  }
+}

@@ -1,0 +1,1865 @@
+{
+  "endedAt" : "2026-09-02T12:04:50Z",
+  "id" : "5A10D7FA-09E4-4A99-A765-AD70CF1DF864",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.4333e-05,
+      "physicalFootprintBytes" : 418186536,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.728920798,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 418186536
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 68920410112
+    },
+    {
+      "cpuPercent" : 0.7164082187997918,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.03710175,
+      "physicalFootprintBytes" : 696829224,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7164082187997918,
+          "process" : {
+            "cpuTimeSeconds" : 0.736351253,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 696829224
+          }
+        }
+      ],
+      "systemCPUPercent" : 293.5205183585313,
+      "systemMemoryDeltaBytes" : 1977909248,
+      "systemMemoryUsedBytes" : 70898319360
+    },
+    {
+      "cpuPercent" : 0.5274437635168482,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.037834333,
+      "physicalFootprintBytes" : 696370472,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5274437635168482,
+          "process" : {
+            "cpuTimeSeconds" : 0.741629479,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 696370472
+          }
+        }
+      ],
+      "systemCPUPercent" : 296.329254727475,
+      "systemMemoryDeltaBytes" : 1883521024,
+      "systemMemoryUsedBytes" : 70803931136
+    },
+    {
+      "cpuPercent" : 0.6216038032205886,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.037203583,
+      "physicalFootprintBytes" : 693437736,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6216038032205886,
+          "process" : {
+            "cpuTimeSeconds" : 0.74784302,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693437736
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.12946428571433,
+      "systemMemoryDeltaBytes" : 1637302272,
+      "systemMemoryUsedBytes" : 70557712384
+    },
+    {
+      "cpuPercent" : 0.7025136460719524,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.037894583,
+      "physicalFootprintBytes" : 694273320,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7025136460719524,
+          "process" : {
+            "cpuTimeSeconds" : 0.754872337,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 694273320
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.543429844098,
+      "systemMemoryDeltaBytes" : 1505181696,
+      "systemMemoryUsedBytes" : 70425591808
+    },
+    {
+      "cpuPercent" : 0.7347729879891535,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.037864458,
+      "physicalFootprintBytes" : 693421352,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7347729879891535,
+          "process" : {
+            "cpuTimeSeconds" : 0.762219431,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693421352
+          }
+        }
+      ],
+      "systemCPUPercent" : 230.3839732888147,
+      "systemMemoryDeltaBytes" : 1504444416,
+      "systemMemoryUsedBytes" : 70424854528
+    },
+    {
+      "cpuPercent" : 0.7414823615598161,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6.037931042,
+      "physicalFootprintBytes" : 695010600,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7414823615598161,
+          "process" : {
+            "cpuTimeSeconds" : 0.769635935,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 695010600
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.70194986072423,
+      "systemMemoryDeltaBytes" : 1158856704,
+      "systemMemoryUsedBytes" : 70079266816
+    },
+    {
+      "cpuPercent" : 0.709989897728396,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.037888375,
+      "physicalFootprintBytes" : 694191400,
+      "processes" : [
+        {
+          "cpuPercent" : 0.709989897728396,
+          "process" : {
+            "cpuTimeSeconds" : 0.776734364,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 694191400
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.66965285554315,
+      "systemMemoryDeltaBytes" : 1504247808,
+      "systemMemoryUsedBytes" : 70424657920
+    },
+    {
+      "cpuPercent" : 0.7162376788508533,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 8.037809625,
+      "physicalFootprintBytes" : 693765416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7162376788508533,
+          "process" : {
+            "cpuTimeSeconds" : 0.783894892,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693765416
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.2480533926585,
+      "systemMemoryDeltaBytes" : 1081556992,
+      "systemMemoryUsedBytes" : 70001967104
+    },
+    {
+      "cpuPercent" : 0.7450542861795147,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 9.03788925,
+      "physicalFootprintBytes" : 693470504,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7450542861795147,
+          "process" : {
+            "cpuTimeSeconds" : 0.791347589,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693470504
+          }
+        }
+      ],
+      "systemCPUPercent" : 218.2424916573971,
+      "systemMemoryDeltaBytes" : 1443495936,
+      "systemMemoryUsedBytes" : 70363906048
+    },
+    {
+      "cpuPercent" : 0.7099359018330491,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 10.037892917,
+      "physicalFootprintBytes" : 693912872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7099359018330491,
+          "process" : {
+            "cpuTimeSeconds" : 0.798447408,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693912872
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.2211055276382,
+      "systemMemoryDeltaBytes" : 1561804800,
+      "systemMemoryUsedBytes" : 70482214912
+    },
+    {
+      "cpuPercent" : 0.7507764203365987,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 11.037855333,
+      "physicalFootprintBytes" : 693765416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7507764203365987,
+          "process" : {
+            "cpuTimeSeconds" : 0.805954011,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 693765416
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.6100278551532,
+      "systemMemoryDeltaBytes" : 1557839872,
+      "systemMemoryUsedBytes" : 70478249984
+    },
+    {
+      "cpuPercent" : 0.7409080060104832,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 12.036948958,
+      "physicalFootprintBytes" : 687850792,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7409080060104832,
+          "process" : {
+            "cpuTimeSeconds" : 0.813357575,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687850792
+          }
+        }
+      ],
+      "systemCPUPercent" : 212.70903010033445,
+      "systemMemoryDeltaBytes" : 1552547840,
+      "systemMemoryUsedBytes" : 70472957952
+    },
+    {
+      "cpuPercent" : 0.7161399245208464,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 13.037901,
+      "physicalFootprintBytes" : 688014632,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7161399245208464,
+          "process" : {
+            "cpuTimeSeconds" : 0.820525495,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688014632
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.59610027855152,
+      "systemMemoryDeltaBytes" : 1135362048,
+      "systemMemoryUsedBytes" : 70055772160
+    },
+    {
+      "cpuPercent" : 0.7429143493336416,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 14.037948708,
+      "physicalFootprintBytes" : 689702184,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7429143493336416,
+          "process" : {
+            "cpuTimeSeconds" : 0.827955994,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 689702184
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.41736227045072,
+      "systemMemoryDeltaBytes" : 1663270912,
+      "systemMemoryUsedBytes" : 70583681024
+    },
+    {
+      "cpuPercent" : 0.6946564108886298,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 15.03790975,
+      "physicalFootprintBytes" : 688932136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6946564108886298,
+          "process" : {
+            "cpuTimeSeconds" : 0.834901473,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688932136
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.41068447412354,
+      "systemMemoryDeltaBytes" : 1427390464,
+      "systemMemoryUsedBytes" : 70347800576
+    },
+    {
+      "cpuPercent" : 0.7216411487718624,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 16.037904583,
+      "physicalFootprintBytes" : 688506152,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7216411487718624,
+          "process" : {
+            "cpuTimeSeconds" : 0.842117803,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688506152
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.8294314381271,
+      "systemMemoryDeltaBytes" : 1548009472,
+      "systemMemoryUsedBytes" : 70468419584
+    },
+    {
+      "cpuPercent" : 0.7146239580432951,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 17.037860458,
+      "physicalFootprintBytes" : 687768872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7146239580432951,
+          "process" : {
+            "cpuTimeSeconds" : 0.849262937,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687768872
+          }
+        }
+      ],
+      "systemCPUPercent" : 237.6601671309192,
+      "systemMemoryDeltaBytes" : 1535508480,
+      "systemMemoryUsedBytes" : 70455918592
+    },
+    {
+      "cpuPercent" : 0.7443665968668778,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 18.037868125,
+      "physicalFootprintBytes" : 686753064,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7443665968668778,
+          "process" : {
+            "cpuTimeSeconds" : 0.856706433,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686753064
+          }
+        }
+      ],
+      "systemCPUPercent" : 221.61559888579387,
+      "systemMemoryDeltaBytes" : 1752612864,
+      "systemMemoryUsedBytes" : 70673022976
+    },
+    {
+      "cpuPercent" : 0.7098712565466512,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 19.037521458,
+      "physicalFootprintBytes" : 687277352,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7098712565466512,
+          "process" : {
+            "cpuTimeSeconds" : 0.863804197,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687277352
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.47884187082406,
+      "systemMemoryDeltaBytes" : 1485357056,
+      "systemMemoryUsedBytes" : 70405767168
+    },
+    {
+      "cpuPercent" : 0.7181349992791634,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 20.037066875,
+      "physicalFootprintBytes" : 688112936,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7181349992791634,
+          "process" : {
+            "cpuTimeSeconds" : 0.870981348,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688112936
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.28491620111734,
+      "systemMemoryDeltaBytes" : 1504067584,
+      "systemMemoryUsedBytes" : 70424477696
+    },
+    {
+      "cpuPercent" : 0.7199899785792633,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 21.037924667,
+      "physicalFootprintBytes" : 686818600,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7199899785792633,
+          "process" : {
+            "cpuTimeSeconds" : 0.878187584,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686818600
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.24471635150164,
+      "systemMemoryDeltaBytes" : 1127514112,
+      "systemMemoryUsedBytes" : 70047924224
+    },
+    {
+      "cpuPercent" : 0.7681012722415056,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 22.037937833,
+      "physicalFootprintBytes" : 687179048,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7681012722415056,
+          "process" : {
+            "cpuTimeSeconds" : 0.885869224,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687179048
+          }
+        }
+      ],
+      "systemCPUPercent" : 216.96428571428572,
+      "systemMemoryDeltaBytes" : 1489534976,
+      "systemMemoryUsedBytes" : 70409945088
+    },
+    {
+      "cpuPercent" : 0.7506495142722895,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 23.037839417,
+      "physicalFootprintBytes" : 687080744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7506495142722895,
+          "process" : {
+            "cpuTimeSeconds" : 0.893373237,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687080744
+          }
+        }
+      ],
+      "systemCPUPercent" : 230.6406685236769,
+      "systemMemoryDeltaBytes" : 1488289792,
+      "systemMemoryUsedBytes" : 70408699904
+    },
+    {
+      "cpuPercent" : 0.6904470472490324,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 24.03787875,
+      "physicalFootprintBytes" : 686916904,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6904470472490324,
+          "process" : {
+            "cpuTimeSeconds" : 0.900278889,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686916904
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.59610027855152,
+      "systemMemoryDeltaBytes" : 1488338944,
+      "systemMemoryUsedBytes" : 70408749056
+    },
+    {
+      "cpuPercent" : 0.7537738906898729,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 25.03786075,
+      "physicalFootprintBytes" : 686769448,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7537738906898729,
+          "process" : {
+            "cpuTimeSeconds" : 0.907816273,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686769448
+          }
+        }
+      ],
+      "systemCPUPercent" : 228.76254180602004,
+      "systemMemoryDeltaBytes" : 1488519168,
+      "systemMemoryUsedBytes" : 70408929280
+    },
+    {
+      "cpuPercent" : 0.7152540351867482,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 26.037892958,
+      "physicalFootprintBytes" : 688031016,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7152540351867482,
+          "process" : {
+            "cpuTimeSeconds" : 0.914969424,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688031016
+          }
+        }
+      ],
+      "systemCPUPercent" : 211.70568561872912,
+      "systemMemoryDeltaBytes" : 1132167168,
+      "systemMemoryUsedBytes" : 70052577280
+    },
+    {
+      "cpuPercent" : 0.7438072278922312,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 27.0377875,
+      "physicalFootprintBytes" : 687359272,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7438072278922312,
+          "process" : {
+            "cpuTimeSeconds" : 0.922404685,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687359272
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.71866295264624,
+      "systemMemoryDeltaBytes" : 1537277952,
+      "systemMemoryUsedBytes" : 70457688064
+    },
+    {
+      "cpuPercent" : 0.7202090127371872,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 28.037900625,
+      "physicalFootprintBytes" : 687621416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7202090127371872,
+          "process" : {
+            "cpuTimeSeconds" : 0.929609782,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687621416
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.61281337047353,
+      "systemMemoryDeltaBytes" : 1106296832,
+      "systemMemoryUsedBytes" : 70026706944
+    },
+    {
+      "cpuPercent" : 0.7155057116937009,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 29.037877458,
+      "physicalFootprintBytes" : 687588648,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7155057116937009,
+          "process" : {
+            "cpuTimeSeconds" : 0.936764205,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687588648
+          }
+        }
+      ],
+      "systemCPUPercent" : 245.08928571428567,
+      "systemMemoryDeltaBytes" : 1499561984,
+      "systemMemoryUsedBytes" : 70419972096
+    },
+    {
+      "cpuPercent" : 0.7254579226175174,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 30.037883125,
+      "physicalFootprintBytes" : 687260968,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7254579226175174,
+          "process" : {
+            "cpuTimeSeconds" : 0.94401902,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687260968
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.74373259052925,
+      "systemMemoryDeltaBytes" : 1471184896,
+      "systemMemoryUsedBytes" : 70391595008
+    },
+    {
+      "cpuPercent" : 0.6936367865535848,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 31.037906375,
+      "physicalFootprintBytes" : 687605032,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6936367865535848,
+          "process" : {
+            "cpuTimeSeconds" : 0.950956,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687605032
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.06696428571433,
+      "systemMemoryDeltaBytes" : 1494368256,
+      "systemMemoryUsedBytes" : 70414778368
+    },
+    {
+      "cpuPercent" : 0.6825872871306335,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 32.03782375,
+      "physicalFootprintBytes" : 687506728,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6825872871306335,
+          "process" : {
+            "cpuTimeSeconds" : 0.957779849,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687506728
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.5523385300668,
+      "systemMemoryDeltaBytes" : 1471283200,
+      "systemMemoryUsedBytes" : 70391693312
+    },
+    {
+      "cpuPercent" : 0.6403493830649175,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 33.037450208,
+      "physicalFootprintBytes" : 687555880,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6403493830649175,
+          "process" : {
+            "cpuTimeSeconds" : 0.964182794,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687555880
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.5812917594655,
+      "systemMemoryDeltaBytes" : 1076740096,
+      "systemMemoryUsedBytes" : 69997150208
+    },
+    {
+      "cpuPercent" : 0.7144344031918479,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 34.03790075,
+      "physicalFootprintBytes" : 687441192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7144344031918479,
+          "process" : {
+            "cpuTimeSeconds" : 0.971329696,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687441192
+          }
+        }
+      ],
+      "systemCPUPercent" : 233.909648633575,
+      "systemMemoryDeltaBytes" : 1425195008,
+      "systemMemoryUsedBytes" : 70345605120
+    },
+    {
+      "cpuPercent" : 0.761590784536762,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 35.037919625,
+      "physicalFootprintBytes" : 688293160,
+      "processes" : [
+        {
+          "cpuPercent" : 0.761590784536762,
+          "process" : {
+            "cpuTimeSeconds" : 0.978946698,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688293160
+          }
+        }
+      ],
+      "systemCPUPercent" : 234.2602892102336,
+      "systemMemoryDeltaBytes" : 1359642624,
+      "systemMemoryUsedBytes" : 70280052736
+    },
+    {
+      "cpuPercent" : 0.7327406058512099,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 36.037447333,
+      "physicalFootprintBytes" : 688407848,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7327406058512099,
+          "process" : {
+            "cpuTimeSeconds" : 0.98627019,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688407848
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.12827663134414,
+      "systemMemoryDeltaBytes" : 1449115648,
+      "systemMemoryUsedBytes" : 70369525760
+    },
+    {
+      "cpuPercent" : 0.6770877893376298,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 37.037900542,
+      "physicalFootprintBytes" : 685491496,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6770877893376298,
+          "process" : {
+            "cpuTimeSeconds" : 0.993044132,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 685491496
+          }
+        }
+      ],
+      "systemCPUPercent" : 350.1397428731135,
+      "systemMemoryDeltaBytes" : 1627815936,
+      "systemMemoryUsedBytes" : 70548226048
+    },
+    {
+      "cpuPercent" : 0.73956411767611,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 38.037905333,
+      "physicalFootprintBytes" : 687408424,
+      "processes" : [
+        {
+          "cpuPercent" : 0.73956411767611,
+          "process" : {
+            "cpuTimeSeconds" : 1.000439861,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687408424
+          }
+        }
+      ],
+      "systemCPUPercent" : 251.6991643454039,
+      "systemMemoryDeltaBytes" : 1348354048,
+      "systemMemoryUsedBytes" : 70268764160
+    },
+    {
+      "cpuPercent" : 0.736252847047177,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 39.037906042,
+      "physicalFootprintBytes" : 687375656,
+      "processes" : [
+        {
+          "cpuPercent" : 0.736252847047177,
+          "process" : {
+            "cpuTimeSeconds" : 1.007801983,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687375656
+          }
+        }
+      ],
+      "systemCPUPercent" : 224.49888641425392,
+      "systemMemoryDeltaBytes" : 1045528576,
+      "systemMemoryUsedBytes" : 69965938688
+    },
+    {
+      "cpuPercent" : 0.7113764132155792,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 40.037868667,
+      "physicalFootprintBytes" : 687834408,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7113764132155792,
+          "process" : {
+            "cpuTimeSeconds" : 1.014914611,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687834408
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.4390651085142,
+      "systemMemoryDeltaBytes" : 1404911616,
+      "systemMemoryUsedBytes" : 70325321728
+    },
+    {
+      "cpuPercent" : 0.7422520886578261,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 41.037909458,
+      "physicalFootprintBytes" : 688162088,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7422520886578261,
+          "process" : {
+            "cpuTimeSeconds" : 1.02233857,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688162088
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.7859531772575,
+      "systemMemoryDeltaBytes" : 1041776640,
+      "systemMemoryUsedBytes" : 69962186752
+    },
+    {
+      "cpuPercent" : 0.7223696400306567,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 42.037890667,
+      "physicalFootprintBytes" : 687670568,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7223696400306567,
+          "process" : {
+            "cpuTimeSeconds" : 1.02956196,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687670568
+          }
+        }
+      ],
+      "systemCPUPercent" : 222.86670384829895,
+      "systemMemoryDeltaBytes" : 1403420672,
+      "systemMemoryUsedBytes" : 70323830784
+    },
+    {
+      "cpuPercent" : 0.6930552082696071,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 43.037820375,
+      "physicalFootprintBytes" : 686753064,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6930552082696071,
+          "process" : {
+            "cpuTimeSeconds" : 1.036490104,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686753064
+          }
+        }
+      ],
+      "systemCPUPercent" : 211.35225375626044,
+      "systemMemoryDeltaBytes" : 1343422464,
+      "systemMemoryUsedBytes" : 70263832576
+    },
+    {
+      "cpuPercent" : 0.7225473401858753,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 44.037942125,
+      "physicalFootprintBytes" : 688358696,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7225473401858753,
+          "process" : {
+            "cpuTimeSeconds" : 1.043718697,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688358696
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.5144766146993,
+      "systemMemoryDeltaBytes" : 1404256256,
+      "systemMemoryUsedBytes" : 70324666368
+    },
+    {
+      "cpuPercent" : 0.7487063908250791,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 45.037903792,
+      "physicalFootprintBytes" : 688506152,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7487063908250791,
+          "process" : {
+            "cpuTimeSeconds" : 1.051205239,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688506152
+          }
+        }
+      ],
+      "systemCPUPercent" : 241.47568474007826,
+      "systemMemoryDeltaBytes" : 1403666432,
+      "systemMemoryUsedBytes" : 70324076544
+    },
+    {
+      "cpuPercent" : 0.711267930171257,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 46.037897917,
+      "physicalFootprintBytes" : 687736104,
+      "processes" : [
+        {
+          "cpuPercent" : 0.711267930171257,
+          "process" : {
+            "cpuTimeSeconds" : 1.058317715,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687736104
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.1561978877154,
+      "systemMemoryDeltaBytes" : 1102135296,
+      "systemMemoryUsedBytes" : 70022545408
+    },
+    {
+      "cpuPercent" : 0.7646877839963581,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 47.037872375,
+      "physicalFootprintBytes" : 686884136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7646877839963581,
+          "process" : {
+            "cpuTimeSeconds" : 1.065963622,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686884136
+          }
+        }
+      ],
+      "systemCPUPercent" : 242.0758928571429,
+      "systemMemoryDeltaBytes" : 1469595648,
+      "systemMemoryUsedBytes" : 70390005760
+    },
+    {
+      "cpuPercent" : 0.7401242750913715,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 48.037890417,
+      "physicalFootprintBytes" : 686867752,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7401242750913715,
+          "process" : {
+            "cpuTimeSeconds" : 1.073365624,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686867752
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.5723830734967,
+      "systemMemoryDeltaBytes" : 1392869376,
+      "systemMemoryUsedBytes" : 70313279488
+    },
+    {
+      "cpuPercent" : 0.7319961557555749,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 49.037879167,
+      "physicalFootprintBytes" : 687916328,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7319961557555749,
+          "process" : {
+            "cpuTimeSeconds" : 1.080685143,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687916328
+          }
+        }
+      ],
+      "systemCPUPercent" : 315.40178571428567,
+      "systemMemoryDeltaBytes" : 1448771584,
+      "systemMemoryUsedBytes" : 70369181696
+    },
+    {
+      "cpuPercent" : 0.6878686724447547,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 50.03792,
+      "physicalFootprintBytes" : 687080744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6878686724447547,
+          "process" : {
+            "cpuTimeSeconds" : 1.087564738,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687080744
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.77158774373254,
+      "systemMemoryDeltaBytes" : 1677410304,
+      "systemMemoryUsedBytes" : 70597820416
+    },
+    {
+      "cpuPercent" : 0.7558660965360225,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 51.037896917,
+      "physicalFootprintBytes" : 686949672,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7558660965360225,
+          "process" : {
+            "cpuTimeSeconds" : 1.095123387,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 686949672
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.6935933147632,
+      "systemMemoryDeltaBytes" : 1408106496,
+      "systemMemoryUsedBytes" : 70328516608
+    },
+    {
+      "cpuPercent" : 0.7253492773931178,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 52.037896083,
+      "physicalFootprintBytes" : 688145704,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7253492773931178,
+          "process" : {
+            "cpuTimeSeconds" : 1.102376246,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688145704
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.8160535117057,
+      "systemMemoryDeltaBytes" : 1058996224,
+      "systemMemoryUsedBytes" : 69979406336
+    },
+    {
+      "cpuPercent" : 0.7451594735319967,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 53.037909708,
+      "physicalFootprintBytes" : 687457576,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7451594735319967,
+          "process" : {
+            "cpuTimeSeconds" : 1.109828435,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687457576
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.0267707752371,
+      "systemMemoryDeltaBytes" : 1410318336,
+      "systemMemoryUsedBytes" : 70330728448
+    },
+    {
+      "cpuPercent" : 0.7503188098963919,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 54.037892542,
+      "physicalFootprintBytes" : 687441192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7503188098963919,
+          "process" : {
+            "cpuTimeSeconds" : 1.117331096,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687441192
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.7169811320755,
+      "systemMemoryDeltaBytes" : 1419476992,
+      "systemMemoryUsedBytes" : 70339887104
+    },
+    {
+      "cpuPercent" : 0.7146536254917818,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 55.037812208,
+      "physicalFootprintBytes" : 687621416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7146536254917818,
+          "process" : {
+            "cpuTimeSeconds" : 1.124475153,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687621416
+          }
+        }
+      ],
+      "systemCPUPercent" : 302.013422818792,
+      "systemMemoryDeltaBytes" : 1990508544,
+      "systemMemoryUsedBytes" : 70910918656
+    },
+    {
+      "cpuPercent" : 0.7364206480461325,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 56.037876292,
+      "physicalFootprintBytes" : 687801640,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7364206480461325,
+          "process" : {
+            "cpuTimeSeconds" : 1.131840199,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687801640
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.68523676880224,
+      "systemMemoryDeltaBytes" : 1424932864,
+      "systemMemoryUsedBytes" : 70345342976
+    },
+    {
+      "cpuPercent" : 0.7232079846644931,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 57.037862583,
+      "physicalFootprintBytes" : 687408424,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7232079846644931,
+          "process" : {
+            "cpuTimeSeconds" : 1.139073103,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687408424
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.9130434782609,
+      "systemMemoryDeltaBytes" : 1811791872,
+      "systemMemoryUsedBytes" : 70732201984
+    },
+    {
+      "cpuPercent" : 0.7092535681697391,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 58.037837583,
+      "physicalFootprintBytes" : 687457576,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7092535681697391,
+          "process" : {
+            "cpuTimeSeconds" : 1.146165024,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687457576
+          }
+        }
+      ],
+      "systemCPUPercent" : 236.52561247216033,
+      "systemMemoryDeltaBytes" : 1470857216,
+      "systemMemoryUsedBytes" : 70391267328
+    },
+    {
+      "cpuPercent" : 0.7508326845447828,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 59.037917167,
+      "physicalFootprintBytes" : 688424232,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7508326845447828,
+          "process" : {
+            "cpuTimeSeconds" : 1.153675634,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688424232
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.71587743732584,
+      "systemMemoryDeltaBytes" : 1104805888,
+      "systemMemoryUsedBytes" : 70025216000
+    },
+    {
+      "cpuPercent" : 0.6776671469309775,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 60.037849083,
+      "physicalFootprintBytes" : 688440616,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6776671469309775,
+          "process" : {
+            "cpuTimeSeconds" : 1.160450288,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688440616
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.17902955939763,
+      "systemMemoryDeltaBytes" : 1431601152,
+      "systemMemoryUsedBytes" : 70352011264
+    },
+    {
+      "cpuPercent" : 0.7534824878838099,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 61.037825083,
+      "physicalFootprintBytes" : 688358696,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7534824878838099,
+          "process" : {
+            "cpuTimeSeconds" : 1.167984166,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 688358696
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.96989966555185,
+      "systemMemoryDeltaBytes" : 1031766016,
+      "systemMemoryUsedBytes" : 69952176128
+    },
+    {
+      "cpuPercent" : 0.6810729872651291,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 62.037800167,
+      "physicalFootprintBytes" : 687129896,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6810729872651291,
+          "process" : {
+            "cpuTimeSeconds" : 1.174794605,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34922496,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687129896
+          }
+        }
+      ],
+      "systemCPUPercent" : 266.0345789180145,
+      "systemMemoryDeltaBytes" : 1424982016,
+      "systemMemoryUsedBytes" : 70345392128
+    },
+    {
+      "cpuPercent" : 0.4559304988106714,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 32768,
+      "elapsedSeconds" : 63.037820375,
+      "physicalFootprintBytes" : 699172136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4559304988106714,
+          "process" : {
+            "cpuTimeSeconds" : 1.179354478,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34955264,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 699172136
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.4540901502504,
+      "systemMemoryDeltaBytes" : 1665810432,
+      "systemMemoryUsedBytes" : 70586220544
+    },
+    {
+      "cpuPercent" : 0.675017713967322,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 32768,
+      "elapsedSeconds" : 63.778319375,
+      "physicalFootprintBytes" : 702924072,
+      "processes" : [
+        {
+          "cpuPercent" : 0.675017713967322,
+          "process" : {
+            "cpuTimeSeconds" : 1.184352301,
+            "diskReadBytes" : 5005312,
+            "diskWrittenBytes" : 34955264,
+            "executablePath" : "/Applications/SmoothCapture.app/Contents/MacOS/SmoothCapture",
+            "identity" : {
+              "pid" : 20958,
+              "startTimeNanoseconds" : 9059264984157
+            },
+            "name" : "SmoothCapture",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 702924072
+          }
+        }
+      ],
+      "systemCPUPercent" : 334.597875569044,
+      "systemMemoryDeltaBytes" : 939491328,
+      "systemMemoryUsedBytes" : 69859901440
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-02T12:03:46Z",
+  "summary" : {
+    "averageCPUPercent" : 0.7139281271198992,
+    "averagePhysicalFootprintBytes" : 685042574,
+    "averageSystemCPUPercent" : 249.97298750001127,
+    "averageSystemMemoryDeltaBytes" : 1403579975,
+    "cpuTimeSeconds" : 0.4554315030000001,
+    "diskReadBytes" : 0,
+    "diskWrittenBytes" : 32768,
+    "durationSeconds" : 63.778319375,
+    "p95CPUPercent" : 0.7558660965360225,
+    "p95SystemCPUPercent" : 303.17902955939763,
+    "peakCPUPercent" : 0.7681012722415056,
+    "peakPhysicalFootprintBytes" : 702924072,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 350.1397428731135,
+    "peakSystemMemoryDeltaBytes" : 1990508544,
+    "physicalFootprintDeltaBytes" : 284737536
+  },
+  "target" : {
+    "build" : "67",
+    "bundleIdentifier" : "com.vu.SmoothCapture",
+    "bundlePath" : "/Applications/SmoothCapture.app",
+    "name" : "SmoothCapture",
+    "recorderID" : "smoothcapture",
+    "version" : "1.2.59"
+  }
+}

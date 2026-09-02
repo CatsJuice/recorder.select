@@ -7,7 +7,7 @@ import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, us
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDownWideShort, faBars, faCheck, faChevronDown, faChevronRight, faFilter, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownWideShort, faBars, faCheck, faChevronDown, faChevronRight, faCompress, faExpand, faFilter, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { fieldGroups, type FieldDefinition } from '../lib/recorders';
 import { useI18n } from '../lib/i18n';
 
@@ -41,6 +41,8 @@ type TableToolbarProps = {
   sortableFields: FieldDefinition[];
   sortRules: SortRule[];
   onSortRulesChange: (rules: SortRule[]) => void;
+  fullWidth: boolean;
+  onFullWidthChange: (fullWidth: boolean) => void;
 };
 
 type SortableRuleItemProps = {
@@ -243,6 +245,8 @@ export function TableToolbar({
   sortableFields,
   sortRules,
   onSortRulesChange,
+  fullWidth,
+  onFullWidthChange,
 }: TableToolbarProps) {
   const { t, fieldLabel, groupLabel, optionLabel } = useI18n();
   const [openPanel, setOpenPanel] = useState<'filter' | 'sort' | null>(null);
@@ -316,6 +320,20 @@ export function TableToolbar({
       </label>
 
       <div className="data-tools" ref={toolsRef}>
+        <button
+          type="button"
+          className="icon-tool width-toggle"
+          aria-label={t(fullWidth ? 'exitFullWidth' : 'fullWidth')}
+          title={t(fullWidth ? 'exitFullWidth' : 'fullWidth')}
+          aria-pressed={fullWidth}
+          onClick={() => {
+            setOpenPanel(null);
+            onFullWidthChange(!fullWidth);
+          }}
+        >
+          <FontAwesomeIcon className="tool-icon" icon={fullWidth ? faCompress : faExpand} aria-hidden="true" />
+        </button>
+
         <div className="tool-anchor">
           <button type="button" className={`icon-tool ${activeFilterCount ? 'has-rules' : ''}`} aria-label={t('filters')} aria-expanded={openPanel === 'filter'} onClick={() => setOpenPanel((panel) => panel === 'filter' ? null : 'filter')}>
             <FontAwesomeIcon className="tool-icon filter-icon" icon={faFilter} aria-hidden="true" />

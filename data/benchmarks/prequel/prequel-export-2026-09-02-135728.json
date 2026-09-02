@@ -1,0 +1,2426 @@
+{
+  "endedAt" : "2026-09-02T05:57:44Z",
+  "id" : "C142B616-1DC6-41F0-ABE2-D15180D31809",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.958e-06,
+      "physicalFootprintBytes" : 2293118968,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.783242184,
+            "diskReadBytes" : 5435392,
+            "diskWrittenBytes" : 833388544,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 119425328
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186691575,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030119927,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002492139,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.419977094,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 772605080
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 3.826538887,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1270780776
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.053774025,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28706184
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.150622756,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41420168
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 82658557952
+    },
+    {
+      "cpuPercent" : 1.9120611637451348,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.02719725,
+      "physicalFootprintBytes" : 2292496376,
+      "processes" : [
+        {
+          "cpuPercent" : 1.377374325434794,
+          "process" : {
+            "cpuTimeSeconds" : 3.840688087,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1270780776
+          }
+        },
+        {
+          "cpuPercent" : 0.41659839638765417,
+          "process" : {
+            "cpuTimeSeconds" : 1.424256638,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 772080792
+          }
+        },
+        {
+          "cpuPercent" : 0.1120338824037925,
+          "process" : {
+            "cpuTimeSeconds" : 0.784393062,
+            "diskReadBytes" : 5435392,
+            "diskWrittenBytes" : 833388544,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 119327024
+          }
+        },
+        {
+          "cpuPercent" : 0.0041193121840873495,
+          "process" : {
+            "cpuTimeSeconds" : 0.053816341,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28706184
+          }
+        },
+        {
+          "cpuPercent" : 0.0014595152560732006,
+          "process" : {
+            "cpuTimeSeconds" : 0.186706568,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0.00024073775950578813,
+          "process" : {
+            "cpuTimeSeconds" : 0.0301224,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0.00019245392258247524,
+          "process" : {
+            "cpuTimeSeconds" : 0.150624733,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41420168
+          }
+        },
+        {
+          "cpuPercent" : 4.2540396645376594e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002492576,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 341.1764705882353,
+      "systemMemoryDeltaBytes" : 14532608,
+      "systemMemoryUsedBytes" : 82673090560
+    },
+    {
+      "cpuPercent" : 3.348329418069659,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 16384,
+      "elapsedSeconds" : 2.02723,
+      "physicalFootprintBytes" : 2867263624,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8293959228931929,
+          "process" : {
+            "cpuTimeSeconds" : 3.858984708,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1296913256
+          }
+        },
+        {
+          "cpuPercent" : 0.9842822869272491,
+          "process" : {
+            "cpuTimeSeconds" : 0.794237317,
+            "diskReadBytes" : 5435392,
+            "diskWrittenBytes" : 833404928,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 513034688
+          }
+        },
+        {
+          "cpuPercent" : 0.5226055608909094,
+          "process" : {
+            "cpuTimeSeconds" : 1.429483454,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 926991512
+          }
+        },
+        {
+          "cpuPercent" : 0.008430873307934222,
+          "process" : {
+            "cpuTimeSeconds" : 0.053900662,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28722568
+          }
+        },
+        {
+          "cpuPercent" : 0.0036147740503739935,
+          "process" : {
+            "cpuTimeSeconds" : 0.150660886,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41420168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186706568,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.0301224,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002492576,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 374.1573033707865,
+      "systemMemoryDeltaBytes" : 1947664384,
+      "systemMemoryUsedBytes" : 84606222336
+    },
+    {
+      "cpuPercent" : 3.5767865144947466,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 8404992,
+      "elapsedSeconds" : 3.0272265,
+      "physicalFootprintBytes" : 2886072456,
+      "processes" : [
+        {
+          "cpuPercent" : 2.1914719626025723,
+          "process" : {
+            "cpuTimeSeconds" : 3.880899865,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1300714344
+          }
+        },
+        {
+          "cpuPercent" : 0.7914491042587823,
+          "process" : {
+            "cpuTimeSeconds" : 0.802151966,
+            "diskReadBytes" : 5435392,
+            "diskWrittenBytes" : 841793536,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 524011968
+          }
+        },
+        {
+          "cpuPercent" : 0.5743045380300269,
+          "process" : {
+            "cpuTimeSeconds" : 1.435226614,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 930989208
+          }
+        },
+        {
+          "cpuPercent" : 0.012103958429197153,
+          "process" : {
+            "cpuTimeSeconds" : 0.054021704,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28755336
+          }
+        },
+        {
+          "cpuPercent" : 0.007435651599265041,
+          "process" : {
+            "cpuTimeSeconds" : 0.150735244,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41420168
+          }
+        },
+        {
+          "cpuPercent" : 2.1299574902974937e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.030122613,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186706568,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002492576,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 405.47792062604805,
+      "systemMemoryDeltaBytes" : 2004287488,
+      "systemMemoryUsedBytes" : 84662845440
+    },
+    {
+      "cpuPercent" : 3.1742002859550467,
+      "diskReadBytes" : 12288,
+      "diskWrittenBytes" : 16793600,
+      "elapsedSeconds" : 4.027230792,
+      "physicalFootprintBytes" : 2785310856,
+      "processes" : [
+        {
+          "cpuPercent" : 2.005541497191232,
+          "process" : {
+            "cpuTimeSeconds" : 3.900955529,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1342165864
+          }
+        },
+        {
+          "cpuPercent" : 0.6180044262390377,
+          "process" : {
+            "cpuTimeSeconds" : 0.808332087,
+            "diskReadBytes" : 5447680,
+            "diskWrittenBytes" : 850182144,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 519227840
+          }
+        },
+        {
+          "cpuPercent" : 0.5307229100136198,
+          "process" : {
+            "cpuTimeSeconds" : 1.440533909,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 793445528
+          }
+        },
+        {
+          "cpuPercent" : 0.011652755307737754,
+          "process" : {
+            "cpuTimeSeconds" : 0.054138233,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28771720
+          }
+        },
+        {
+          "cpuPercent" : 0.00792200163250755,
+          "process" : {
+            "cpuTimeSeconds" : 0.150814465,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41518472
+          }
+        },
+        {
+          "cpuPercent" : 0.0002568968101123965,
+          "process" : {
+            "cpuTimeSeconds" : 0.030125182,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 5.199935432440242e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.186707088,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 4.779940647480686e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493054,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 349.1335941866965,
+      "systemMemoryDeltaBytes" : 1965424640,
+      "systemMemoryUsedBytes" : 84623982592
+    },
+    {
+      "cpuPercent" : 3.1610828275108496,
+      "diskReadBytes" : 12288,
+      "diskWrittenBytes" : 25182208,
+      "elapsedSeconds" : 5.027248,
+      "physicalFootprintBytes" : 2857121976,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9812093776928046,
+          "process" : {
+            "cpuTimeSeconds" : 3.920769689,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1290539928
+          }
+        },
+        {
+          "cpuPercent" : 0.6232113046698222,
+          "process" : {
+            "cpuTimeSeconds" : 0.81456485,
+            "diskReadBytes" : 5447680,
+            "diskWrittenBytes" : 858570752,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 508250560
+          }
+        },
+        {
+          "cpuPercent" : 0.5370584896330599,
+          "process" : {
+            "cpuTimeSeconds" : 1.445905054,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 927827096
+          }
+        },
+        {
+          "cpuPercent" : 0.012385808271669303,
+          "process" : {
+            "cpuTimeSeconds" : 0.054262104,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28804488
+          }
+        },
+        {
+          "cpuPercent" : 0.006915078819513419,
+          "process" : {
+            "cpuTimeSeconds" : 0.150883623,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41518472
+          }
+        },
+        {
+          "cpuPercent" : 0.0003027684239798965,
+          "process" : {
+            "cpuTimeSeconds" : 0.186710116,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030125182,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493054,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 323.69747899159665,
+      "systemMemoryDeltaBytes" : 2117959680,
+      "systemMemoryUsedBytes" : 84776517632
+    },
+    {
+      "cpuPercent" : 3.24410705239922,
+      "diskReadBytes" : 12288,
+      "diskWrittenBytes" : 25182208,
+      "elapsedSeconds" : 6.02724075,
+      "physicalFootprintBytes" : 2864560312,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0456411553780396,
+          "process" : {
+            "cpuTimeSeconds" : 3.941224066,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1297355672
+          }
+        },
+        {
+          "cpuPercent" : 0.6353662922606911,
+          "process" : {
+            "cpuTimeSeconds" : 0.820917881,
+            "diskReadBytes" : 5447680,
+            "diskWrittenBytes" : 858570752,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 508807616
+          }
+        },
+        {
+          "cpuPercent" : 0.5445134562193285,
+          "process" : {
+            "cpuTimeSeconds" : 1.451349647,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 927827096
+          }
+        },
+        {
+          "cpuPercent" : 0.011787072318639154,
+          "process" : {
+            "cpuTimeSeconds" : 0.054379963,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28870024
+          }
+        },
+        {
+          "cpuPercent" : 0.006799076222522256,
+          "process" : {
+            "cpuTimeSeconds" : 0.150951607,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41518472
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186710116,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030125182,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493054,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 368.0446927374302,
+      "systemMemoryDeltaBytes" : 2093842432,
+      "systemMemoryUsedBytes" : 84752400384
+    },
+    {
+      "cpuPercent" : 3.234739227054868,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 33570816,
+      "elapsedSeconds" : 7.027256,
+      "physicalFootprintBytes" : 2813049040,
+      "processes" : [
+        {
+          "cpuPercent" : 2.032082252776365,
+          "process" : {
+            "cpuTimeSeconds" : 3.961545847,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1297634200
+          }
+        },
+        {
+          "cpuPercent" : 0.6505685146348719,
+          "process" : {
+            "cpuTimeSeconds" : 0.827423873,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 866959360,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 515443160
+          }
+        },
+        {
+          "cpuPercent" : 0.5333964412900595,
+          "process" : {
+            "cpuTimeSeconds" : 1.456683863,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 869385368
+          }
+        },
+        {
+          "cpuPercent" : 0.011534255963748389,
+          "process" : {
+            "cpuTimeSeconds" : 0.054495311,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28886408
+          }
+        },
+        {
+          "cpuPercent" : 0.007114864413192098,
+          "process" : {
+            "cpuTimeSeconds" : 0.151022759,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41518472
+          }
+        },
+        {
+          "cpuPercent" : 4.289797663076005e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.186710545,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030125182,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493054,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.7713004484305,
+      "systemMemoryDeltaBytes" : 2053898240,
+      "systemMemoryUsedBytes" : 84712456192
+    },
+    {
+      "cpuPercent" : 3.215618475275594,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 50348032,
+      "elapsedSeconds" : 8.027253625,
+      "physicalFootprintBytes" : 2813901032,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0228741531569288,
+          "process" : {
+            "cpuTimeSeconds" : 3.981774232,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1300026264
+          }
+        },
+        {
+          "cpuPercent" : 0.6503048616231877,
+          "process" : {
+            "cpuTimeSeconds" : 0.833926807,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 883736576,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 513968600
+          }
+        },
+        {
+          "cpuPercent" : 0.5232411221247649,
+          "process" : {
+            "cpuTimeSeconds" : 1.461916182,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 869303472
+          }
+        },
+        {
+          "cpuPercent" : 0.011695506133295897,
+          "process" : {
+            "cpuTimeSeconds" : 0.054612264,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28886408
+          }
+        },
+        {
+          "cpuPercent" : 0.007141325865867678,
+          "process" : {
+            "cpuTimeSeconds" : 0.151094171,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41534856
+          }
+        },
+        {
+          "cpuPercent" : 0.00031210550085928186,
+          "process" : {
+            "cpuTimeSeconds" : 0.030128303,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 4.940087069032142e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493548,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186710545,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.7150837988827,
+      "systemMemoryDeltaBytes" : 2043215872,
+      "systemMemoryUsedBytes" : 84701773824
+    },
+    {
+      "cpuPercent" : 3.2031025382948086,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 58736640,
+      "elapsedSeconds" : 9.027263833,
+      "physicalFootprintBytes" : 2809395432,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0232814124285285,
+          "process" : {
+            "cpuTimeSeconds" : 4.002008325,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1297716120
+          }
+        },
+        {
+          "cpuPercent" : 0.6371018300675239,
+          "process" : {
+            "cpuTimeSeconds" : 0.840298228,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 892125184,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 511691224
+          }
+        },
+        {
+          "cpuPercent" : 0.5241889670637745,
+          "process" : {
+            "cpuTimeSeconds" : 1.467158403,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 869352624
+          }
+        },
+        {
+          "cpuPercent" : 0.011344782918961101,
+          "process" : {
+            "cpuTimeSeconds" : 0.054725719,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28902792
+          }
+        },
+        {
+          "cpuPercent" : 0.006821868803317293,
+          "process" : {
+            "cpuTimeSeconds" : 0.151162394,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41551240
+          }
+        },
+        {
+          "cpuPercent" : 0.00036367701270345886,
+          "process" : {
+            "cpuTimeSeconds" : 0.186714182,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030128303,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493548,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.31337437045323,
+      "systemMemoryDeltaBytes" : 2040086528,
+      "systemMemoryUsedBytes" : 84698644480
+    },
+    {
+      "cpuPercent" : 3.198953618949166,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 67125248,
+      "elapsedSeconds" : 10.027258458,
+      "physicalFootprintBytes" : 2810165480,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0095630923513275,
+          "process" : {
+            "cpuTimeSeconds" : 4.02210306,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1298142104
+          }
+        },
+        {
+          "cpuPercent" : 0.6474101634873237,
+          "process" : {
+            "cpuTimeSeconds" : 0.846772041,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 900513792,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 512002520
+          }
+        },
+        {
+          "cpuPercent" : 0.5234989391531939,
+          "process" : {
+            "cpuTimeSeconds" : 1.472393159,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 869352624
+          }
+        },
+        {
+          "cpuPercent" : 0.011456910783453214,
+          "process" : {
+            "cpuTimeSeconds" : 0.054840283,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28919176
+          }
+        },
+        {
+          "cpuPercent" : 0.006985211421679107,
+          "process" : {
+            "cpuTimeSeconds" : 0.151232243,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41567624
+          }
+        },
+        {
+          "cpuPercent" : 3.930175218876095e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.186714575,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030128303,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493548,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.24790151091213,
+      "systemMemoryDeltaBytes" : 2046033920,
+      "systemMemoryUsedBytes" : 84704591872
+    },
+    {
+      "cpuPercent" : 3.180573981957704,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 75513856,
+      "elapsedSeconds" : 11.027263292,
+      "physicalFootprintBytes" : 2808609000,
+      "processes" : [
+        {
+          "cpuPercent" : 2.0025593003935187,
+          "process" : {
+            "cpuTimeSeconds" : 4.042129182,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1298305944
+          }
+        },
+        {
+          "cpuPercent" : 0.6403730839046173,
+          "process" : {
+            "cpuTimeSeconds" : 0.853175941,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 908902400,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 510265816
+          }
+        },
+        {
+          "cpuPercent" : 0.5193306813607313,
+          "process" : {
+            "cpuTimeSeconds" : 1.477586603,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 869352624
+          }
+        },
+        {
+          "cpuPercent" : 0.011205004008614192,
+          "process" : {
+            "cpuTimeSeconds" : 0.054952336,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28919176
+          }
+        },
+        {
+          "cpuPercent" : 0.007105912290222055,
+          "process" : {
+            "cpuTimeSeconds" : 0.151303304,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41584008
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186714575,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030128303,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002493548,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.55462184873954,
+      "systemMemoryDeltaBytes" : 2042347520,
+      "systemMemoryUsedBytes" : 84700905472
+    },
+    {
+      "cpuPercent" : 3.224371456194465,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 75513856,
+      "elapsedSeconds" : 12.027264917,
+      "physicalFootprintBytes" : 2676357352,
+      "processes" : [
+        {
+          "cpuPercent" : 2.018811724000479,
+          "process" : {
+            "cpuTimeSeconds" : 4.062316093,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1298404248
+          }
+        },
+        {
+          "cpuPercent" : 0.6595064055077204,
+          "process" : {
+            "cpuTimeSeconds" : 0.859770611,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 908902400,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 512248280
+          }
+        },
+        {
+          "cpuPercent" : 0.527130596053109,
+          "process" : {
+            "cpuTimeSeconds" : 1.482857594,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 734987440
+          }
+        },
+        {
+          "cpuPercent" : 0.01146978531967286,
+          "process" : {
+            "cpuTimeSeconds" : 0.055067027,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28935560
+          }
+        },
+        {
+          "cpuPercent" : 0.007164028050677409,
+          "process" : {
+            "cpuTimeSeconds" : 0.15137494,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41600392
+          }
+        },
+        {
+          "cpuPercent" : 0.00024291451414239077,
+          "process" : {
+            "cpuTimeSeconds" : 0.030130732,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 4.600274866421971e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002494008,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186714575,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.80446927374305,
+      "systemMemoryDeltaBytes" : 1909571584,
+      "systemMemoryUsedBytes" : 84568129536
+    },
+    {
+      "cpuPercent" : 3.632785804839355,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 83902464,
+      "elapsedSeconds" : 13.027282583,
+      "physicalFootprintBytes" : 2807101672,
+      "processes" : [
+        {
+          "cpuPercent" : 2.213106405304032,
+          "process" : {
+            "cpuTimeSeconds" : 4.084447963,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1298240408
+          }
+        },
+        {
+          "cpuPercent" : 0.8229842293833236,
+          "process" : {
+            "cpuTimeSeconds" : 0.868000753,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 917291008,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 509594072
+          }
+        },
+        {
+          "cpuPercent" : 0.5773767736700457,
+          "process" : {
+            "cpuTimeSeconds" : 1.488631572,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 868517040
+          }
+        },
+        {
+          "cpuPercent" : 0.011574078506783061,
+          "process" : {
+            "cpuTimeSeconds" : 0.055182772,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28951944
+          }
+        },
+        {
+          "cpuPercent" : 0.007295934303958651,
+          "process" : {
+            "cpuTimeSeconds" : 0.151447902,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41616776
+          }
+        },
+        {
+          "cpuPercent" : 0.0004483836712117499,
+          "process" : {
+            "cpuTimeSeconds" : 0.186719059,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030130732,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002494008,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 378.36322869955154,
+      "systemMemoryDeltaBytes" : 2063794176,
+      "systemMemoryUsedBytes" : 84722352128
+    },
+    {
+      "cpuPercent" : 3.239745531161871,
+      "diskReadBytes" : 16384,
+      "diskWrittenBytes" : 92291072,
+      "elapsedSeconds" : 14.027320792,
+      "physicalFootprintBytes" : 2808461544,
+      "processes" : [
+        {
+          "cpuPercent" : 2.035887315903439,
+          "process" : {
+            "cpuTimeSeconds" : 4.104811243,
+            "diskReadBytes" : 163840,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1298568088
+          }
+        },
+        {
+          "cpuPercent" : 0.6504653015817455,
+          "process" : {
+            "cpuTimeSeconds" : 0.874506814,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 925679616,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 510593496
+          }
+        },
+        {
+          "cpuPercent" : 0.5351240681144593,
+          "process" : {
+            "cpuTimeSeconds" : 1.493983971,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 868517040
+          }
+        },
+        {
+          "cpuPercent" : 0.011348843452044316,
+          "process" : {
+            "cpuTimeSeconds" : 0.055296285,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28968328
+          }
+        },
+        {
+          "cpuPercent" : 0.0068542163500369905,
+          "process" : {
+            "cpuTimeSeconds" : 0.151516459,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41633160
+          }
+        },
+        {
+          "cpuPercent" : 6.578576014594723e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002494666,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186719059,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.030130732,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        }
+      ],
+      "systemCPUPercent" : 322.04150308468877,
+      "systemMemoryDeltaBytes" : 2041626624,
+      "systemMemoryUsedBytes" : 84700184576
+    },
+    {
+      "cpuPercent" : 3.171630418608507,
+      "diskReadBytes" : 49152,
+      "diskWrittenBytes" : 94027776,
+      "elapsedSeconds" : 15.027302583,
+      "physicalFootprintBytes" : 2565159024,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9289283353564366,
+          "process" : {
+            "cpuTimeSeconds" : 4.124098546,
+            "diskReadBytes" : 196608,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1312871320
+          }
+        },
+        {
+          "cpuPercent" : 0.6824619656401656,
+          "process" : {
+            "cpuTimeSeconds" : 0.881330733,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 927416320,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 211044704
+          }
+        },
+        {
+          "cpuPercent" : 0.5441194625687328,
+          "process" : {
+            "cpuTimeSeconds" : 1.499424607,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 910427312
+          }
+        },
+        {
+          "cpuPercent" : 0.009957222268181133,
+          "process" : {
+            "cpuTimeSeconds" : 0.055395847,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28984712
+          }
+        },
+        {
+          "cpuPercent" : 0.005370751393564229,
+          "process" : {
+            "cpuTimeSeconds" : 0.151570161,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41649544
+          }
+        },
+        {
+          "cpuPercent" : 0.0007926813814265434,
+          "process" : {
+            "cpuTimeSeconds" : 0.030138658,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.186719059,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002494666,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.4241071428571,
+      "systemMemoryDeltaBytes" : 778649600,
+      "systemMemoryUsedBytes" : 83437207552
+    },
+    {
+      "cpuPercent" : 1.8743362654403815,
+      "diskReadBytes" : 49152,
+      "diskWrittenBytes" : 94027776,
+      "elapsedSeconds" : 15.625904125,
+      "physicalFootprintBytes" : 2494380168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.403405065237188,
+          "process" : {
+            "cpuTimeSeconds" : 4.132496971,
+            "diskReadBytes" : 196608,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 32399,
+              "startTimeNanoseconds" : 8533042866694
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 1315394480
+          }
+        },
+        {
+          "cpuPercent" : 0.44151165044649743,
+          "process" : {
+            "cpuTimeSeconds" : 1.502066754,
+            "diskReadBytes" : 2256896,
+            "diskWrittenBytes" : 3686400,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3380,
+              "startTimeNanoseconds" : 8484437912224
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 910263472
+          }
+        },
+        {
+          "cpuPercent" : 0.023047731404734907,
+          "process" : {
+            "cpuTimeSeconds" : 0.881468658,
+            "diskReadBytes" : 5451776,
+            "diskWrittenBytes" : 927416320,
+            "executablePath" : "/Applications/Prequel.app/Contents/MacOS/Prequel",
+            "identity" : {
+              "pid" : 3378,
+              "startTimeNanoseconds" : 8484434414512
+            },
+            "name" : "Prequel",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 137906528
+          }
+        },
+        {
+          "cpuPercent" : 0.00512104967648826,
+          "process" : {
+            "cpuTimeSeconds" : 0.055426493,
+            "diskReadBytes" : 2187264,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 27387,
+              "startTimeNanoseconds" : 8523119064558
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 28984712
+          }
+        },
+        {
+          "cpuPercent" : 0.0007743569862579805,
+          "process" : {
+            "cpuTimeSeconds" : 0.186723693,
+            "diskReadBytes" : 12681216,
+            "diskWrittenBytes" : 20709376,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4842,
+              "startTimeNanoseconds" : 8486281819692
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 43959592
+          }
+        },
+        {
+          "cpuPercent" : 0.0004764116892147529,
+          "process" : {
+            "cpuTimeSeconds" : 0.030141509,
+            "diskReadBytes" : 827392,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 4841,
+              "startTimeNanoseconds" : 8486281812149
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 9388896
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002494666,
+            "diskReadBytes" : 1789952,
+            "diskWrittenBytes" : 4096,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper.app/Contents/MacOS/Prequel Helper",
+            "identity" : {
+              "pid" : 3381,
+              "startTimeNanoseconds" : 8484437936052
+            },
+            "name" : "Prequel Helper",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 6832944
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.151570161,
+            "diskReadBytes" : 1146880,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Prequel.app/Contents/Frameworks/Prequel Helper (Renderer).app/Contents/MacOS/Prequel Helper (Renderer)",
+            "identity" : {
+              "pid" : 4840,
+              "startTimeNanoseconds" : 8486278955464
+            },
+            "name" : "Prequel Helper (Renderer)",
+            "parentPID" : 3378,
+            "physicalFootprintBytes" : 41649544
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.9156513589503,
+      "systemMemoryDeltaBytes" : 327352320,
+      "systemMemoryUsedBytes" : 82985910272
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-02T05:57:28Z",
+  "summary" : {
+    "averageCPUPercent" : 3.0995265362469615,
+    "averagePhysicalFootprintBytes" : 2720736724,
+    "averageSystemCPUPercent" : 333.4899188773751,
+    "averageSystemMemoryDeltaBytes" : 1617075742,
+    "cpuTimeSeconds" : 0.488930318,
+    "diskReadBytes" : 49152,
+    "diskWrittenBytes" : 94027776,
+    "durationSeconds" : 15.625904125,
+    "p95CPUPercent" : 3.632785804839355,
+    "p95SystemCPUPercent" : 405.47792062604805,
+    "peakCPUPercent" : 3.632785804839355,
+    "peakPhysicalFootprintBytes" : 2886072456,
+    "peakProcessCount" : 8,
+    "peakSystemCPUPercent" : 405.47792062604805,
+    "peakSystemMemoryDeltaBytes" : 2117959680,
+    "physicalFootprintDeltaBytes" : 201261200,
+    "realtimeFactor" : 0.26043173541666664
+  },
+  "target" : {
+    "build" : "0.0.10",
+    "bundleIdentifier" : "com.prequel.desktop",
+    "bundlePath" : "/Applications/Prequel.app",
+    "name" : "Prequel",
+    "recorderID" : "prequel",
+    "version" : "0.0.10"
+  }
+}

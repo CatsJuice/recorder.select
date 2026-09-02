@@ -23,6 +23,32 @@ const sources = {
     recording: 'data/benchmarks/screensage-pro/screensage-pro-recording-2026-09-01-200500.json',
     preview: 'data/benchmarks/screensage-pro/screensage-pro-preview-2026-09-01-200622.json',
   },
+  screencharm: {
+    recording: 'data/benchmarks/screencharm/screen-charm-recording-2026-09-02-120229.json',
+    preview: 'data/benchmarks/screencharm/screen-charm-preview-2026-09-02-120410.json',
+  },
+  prequel: {
+    recording: 'data/benchmarks/prequel/prequel-recording-2026-09-02-135349.json',
+    preview: 'data/benchmarks/prequel/prequel-preview-2026-09-02-135505.json',
+    export: 'data/benchmarks/prequel/prequel-export-2026-09-02-135728.json',
+  },
+  kapture: {
+    recording: 'data/benchmarks/kapture/kapture-recording-2026-09-02-153128.json',
+    preview: 'data/benchmarks/kapture/kapture-preview-2026-09-02-153527.json',
+  },
+  'screen-glide': {
+    recording: 'data/benchmarks/screen-glide/screen-glide-recording-2026-09-02-184726.json',
+    preview: 'data/benchmarks/screen-glide/screen-glide-preview-2026-09-02-184854.json',
+  },
+  smoothcapture: {
+    recording: 'data/benchmarks/smoothcapture/smoothcapture-recording-2026-09-02-200228.json',
+    preview: 'data/benchmarks/smoothcapture/smoothcapture-preview-2026-09-02-200346.json',
+  },
+  screenkite: {
+    recording: 'data/benchmarks/screenkite/screenkite-recording-2026-09-02-213853.json',
+    preview: 'data/benchmarks/screenkite/screenkite-preview-2026-09-02-214009.json',
+    export: 'data/benchmarks/screenkite/screenkite-export-2026-09-02-214246.json',
+  },
 };
 
 const recorderWorkloadLabels = {
@@ -30,10 +56,16 @@ const recorderWorkloadLabels = {
   shotbase: '5K',
   screencam: '5K',
   'screen-sage-pro': '2K limit',
+  screencharm: '5K',
+  prequel: '5K',
+  kapture: '5K',
+  'screen-glide': '5K',
+  smoothcapture: '5K',
+  screenkite: '5K',
 };
 
 const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
-  ? '1080p · 60 fps · Balanced compression'
+  ? '1080p 60fps balanced'
   : recorderWorkloadLabels[recorderId];
 
 const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).map(async ([recorderId, scenarios]) => {

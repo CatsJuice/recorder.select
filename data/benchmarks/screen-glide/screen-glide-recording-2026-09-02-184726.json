@@ -1,0 +1,1837 @@
+{
+  "endedAt" : "2026-09-02T10:48:28Z",
+  "id" : "8E97513E-9AEF-4546-9C52-66F44A64677D",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 9.542e-06,
+      "physicalFootprintBytes" : 498403176,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.393878769,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 498403176
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 77981712384
+    },
+    {
+      "cpuPercent" : 0.4956614032357921,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.037295209,
+      "physicalFootprintBytes" : 677447528,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4956614032357921,
+          "process" : {
+            "cpuTimeSeconds" : 1.399019773,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 677447528
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.29126213592235,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 77981106176
+    },
+    {
+      "cpuPercent" : 0.3686152172891993,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.03732075,
+      "physicalFootprintBytes" : 677644136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.3686152172891993,
+          "process" : {
+            "cpuTimeSeconds" : 1.402706765,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 677644136
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.5418994413408,
+      "systemMemoryDeltaBytes" : 835026944,
+      "systemMemoryUsedBytes" : 78816739328
+    },
+    {
+      "cpuPercent" : 2.537847697720166,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.037289917,
+      "physicalFootprintBytes" : 655427480,
+      "processes" : [
+        {
+          "cpuPercent" : 2.537847697720166,
+          "process" : {
+            "cpuTimeSeconds" : 1.428077197,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 655427480
+          }
+        }
+      ],
+      "systemCPUPercent" : 362.82987085906797,
+      "systemMemoryDeltaBytes" : 1761525760,
+      "systemMemoryUsedBytes" : 79743238144
+    },
+    {
+      "cpuPercent" : 3.0438705379632474,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.037294792,
+      "physicalFootprintBytes" : 656312216,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0438705379632474,
+          "process" : {
+            "cpuTimeSeconds" : 1.458515858,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 656312216
+          }
+        }
+      ],
+      "systemCPUPercent" : 400.7891770011274,
+      "systemMemoryDeltaBytes" : 1611284480,
+      "systemMemoryUsedBytes" : 79592996864
+    },
+    {
+      "cpuPercent" : 2.983478862390849,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.037282167,
+      "physicalFootprintBytes" : 651085720,
+      "processes" : [
+        {
+          "cpuPercent" : 2.983478862390849,
+          "process" : {
+            "cpuTimeSeconds" : 1.488350669,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 125132800,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 651085720
+          }
+        }
+      ],
+      "systemCPUPercent" : 453.54330708661416,
+      "systemMemoryDeltaBytes" : 1827094528,
+      "systemMemoryUsedBytes" : 79808806912
+    },
+    {
+      "cpuPercent" : 3.0482158148890237,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 8388608,
+      "elapsedSeconds" : 6.037330584,
+      "physicalFootprintBytes" : 652527512,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0482158148890237,
+          "process" : {
+            "cpuTimeSeconds" : 1.518839062,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 133521408,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 652527512
+          }
+        }
+      ],
+      "systemCPUPercent" : 407.85193494111047,
+      "systemMemoryDeltaBytes" : 1245937664,
+      "systemMemoryUsedBytes" : 79227650048
+    },
+    {
+      "cpuPercent" : 3.0405925424490183,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 8388608,
+      "elapsedSeconds" : 7.037355084,
+      "physicalFootprintBytes" : 651560856,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0405925424490183,
+          "process" : {
+            "cpuTimeSeconds" : 1.549249205,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 133521408,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 651560856
+          }
+        }
+      ],
+      "systemCPUPercent" : 422.39729881823297,
+      "systemMemoryDeltaBytes" : 1571684352,
+      "systemMemoryUsedBytes" : 79553396736
+    },
+    {
+      "cpuPercent" : 3.043978327235523,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 25165824,
+      "elapsedSeconds" : 8.037329209,
+      "physicalFootprintBytes" : 651429784,
+      "processes" : [
+        {
+          "cpuPercent" : 3.043978327235523,
+          "process" : {
+            "cpuTimeSeconds" : 1.579685319,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 150298624,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 651429784
+          }
+        }
+      ],
+      "systemCPUPercent" : 423.11161217587374,
+      "systemMemoryDeltaBytes" : 1570914304,
+      "systemMemoryUsedBytes" : 79552626688
+    },
+    {
+      "cpuPercent" : 3.064000902046001,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 33554432,
+      "elapsedSeconds" : 9.036469667,
+      "physicalFootprintBytes" : 656410520,
+      "processes" : [
+        {
+          "cpuPercent" : 3.064000902046001,
+          "process" : {
+            "cpuTimeSeconds" : 1.610300396,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 158687232,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 656410520
+          }
+        }
+      ],
+      "systemCPUPercent" : 499.492385786802,
+      "systemMemoryDeltaBytes" : 2885877760,
+      "systemMemoryUsedBytes" : 80867590144
+    },
+    {
+      "cpuPercent" : 2.968405887577747,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 41943040,
+      "elapsedSeconds" : 10.037318209,
+      "physicalFootprintBytes" : 653690776,
+      "processes" : [
+        {
+          "cpuPercent" : 2.968405887577747,
+          "process" : {
+            "cpuTimeSeconds" : 1.640006499,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 167075840,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 653690776
+          }
+        }
+      ],
+      "systemCPUPercent" : 424.24242424242425,
+      "systemMemoryDeltaBytes" : 2594127872,
+      "systemMemoryUsedBytes" : 80575840256
+    },
+    {
+      "cpuPercent" : 3.069163794011853,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 41943040,
+      "elapsedSeconds" : 11.037244667,
+      "physicalFootprintBytes" : 652199832,
+      "processes" : [
+        {
+          "cpuPercent" : 3.069163794011853,
+          "process" : {
+            "cpuTimeSeconds" : 1.670697596,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 167075840,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 652199832
+          }
+        }
+      ],
+      "systemCPUPercent" : 451.7726505346089,
+      "systemMemoryDeltaBytes" : 2535981056,
+      "systemMemoryUsedBytes" : 80517693440
+    },
+    {
+      "cpuPercent" : 3.0172470319017117,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 50331648,
+      "elapsedSeconds" : 12.037166042,
+      "physicalFootprintBytes" : 647530392,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0172470319017117,
+          "process" : {
+            "cpuTimeSeconds" : 1.700867738,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 175464448,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647530392
+          }
+        }
+      ],
+      "systemCPUPercent" : 418.2741116751269,
+      "systemMemoryDeltaBytes" : 2388836352,
+      "systemMemoryUsedBytes" : 80370548736
+    },
+    {
+      "cpuPercent" : 3.1027986988307013,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 58720256,
+      "elapsedSeconds" : 13.037345959,
+      "physicalFootprintBytes" : 648415128,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1027986988307013,
+          "process" : {
+            "cpuTimeSeconds" : 1.731900034,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 183853056,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648415128
+          }
+        }
+      ],
+      "systemCPUPercent" : 443.1703204047218,
+      "systemMemoryDeltaBytes" : 2538618880,
+      "systemMemoryUsedBytes" : 80520331264
+    },
+    {
+      "cpuPercent" : 2.859319284597173,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 67108864,
+      "elapsedSeconds" : 14.037336542,
+      "physicalFootprintBytes" : 649594776,
+      "processes" : [
+        {
+          "cpuPercent" : 2.859319284597173,
+          "process" : {
+            "cpuTimeSeconds" : 1.760494255,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 192241664,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649594776
+          }
+        }
+      ],
+      "systemCPUPercent" : 374.7889701744513,
+      "systemMemoryDeltaBytes" : 1699905536,
+      "systemMemoryUsedBytes" : 79681617920
+    },
+    {
+      "cpuPercent" : 3.097430595688258,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 67108864,
+      "elapsedSeconds" : 15.037336792,
+      "physicalFootprintBytes" : 648300440,
+      "processes" : [
+        {
+          "cpuPercent" : 3.097430595688258,
+          "process" : {
+            "cpuTimeSeconds" : 1.791473331,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 192241664,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648300440
+          }
+        }
+      ],
+      "systemCPUPercent" : 397.1925884334643,
+      "systemMemoryDeltaBytes" : 2371731456,
+      "systemMemoryUsedBytes" : 80353443840
+    },
+    {
+      "cpuPercent" : 2.9915466932211756,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 67108864,
+      "elapsedSeconds" : 16.037354125,
+      "physicalFootprintBytes" : 647579544,
+      "processes" : [
+        {
+          "cpuPercent" : 2.9915466932211756,
+          "process" : {
+            "cpuTimeSeconds" : 1.821383731,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 192241664,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647579544
+          }
+        }
+      ],
+      "systemCPUPercent" : 387.16216216216213,
+      "systemMemoryDeltaBytes" : 2206908416,
+      "systemMemoryUsedBytes" : 80188620800
+    },
+    {
+      "cpuPercent" : 3.068992245596525,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 75497472,
+      "elapsedSeconds" : 17.037370584,
+      "physicalFootprintBytes" : 647448472,
+      "processes" : [
+        {
+          "cpuPercent" : 3.068992245596525,
+          "process" : {
+            "cpuTimeSeconds" : 1.85207867,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 200630272,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647448472
+          }
+        }
+      ],
+      "systemCPUPercent" : 423.9460370994941,
+      "systemMemoryDeltaBytes" : 2063597568,
+      "systemMemoryUsedBytes" : 80045309952
+    },
+    {
+      "cpuPercent" : 3.11255487444987,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 75497472,
+      "elapsedSeconds" : 18.03738725,
+      "physicalFootprintBytes" : 649332632,
+      "processes" : [
+        {
+          "cpuPercent" : 3.11255487444987,
+          "process" : {
+            "cpuTimeSeconds" : 1.883204233,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 200630272,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649332632
+          }
+        }
+      ],
+      "systemCPUPercent" : 397.75659001682556,
+      "systemMemoryDeltaBytes" : 2215247872,
+      "systemMemoryUsedBytes" : 80196960256
+    },
+    {
+      "cpuPercent" : 3.009345161985245,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 19.037377542,
+      "physicalFootprintBytes" : 649136024,
+      "processes" : [
+        {
+          "cpuPercent" : 3.009345161985245,
+          "process" : {
+            "cpuTimeSeconds" : 1.913300541,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 209018880,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649136024
+          }
+        }
+      ],
+      "systemCPUPercent" : 391.8781725888325,
+      "systemMemoryDeltaBytes" : 1850654720,
+      "systemMemoryUsedBytes" : 79832367104
+    },
+    {
+      "cpuPercent" : 3.172721927825046,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 83886080,
+      "elapsedSeconds" : 20.036482959,
+      "physicalFootprintBytes" : 648595352,
+      "processes" : [
+        {
+          "cpuPercent" : 3.172721927825046,
+          "process" : {
+            "cpuTimeSeconds" : 1.94499375,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 209018880,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648595352
+          }
+        }
+      ],
+      "systemCPUPercent" : 410.561797752809,
+      "systemMemoryDeltaBytes" : 2234777600,
+      "systemMemoryUsedBytes" : 80216489984
+    },
+    {
+      "cpuPercent" : 3.0532417054961867,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 92274688,
+      "elapsedSeconds" : 21.037315709,
+      "physicalFootprintBytes" : 649086872,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0532417054961867,
+          "process" : {
+            "cpuTimeSeconds" : 1.975548485,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 217407488,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649086872
+          }
+        }
+      ],
+      "systemCPUPercent" : 395.07278835386336,
+      "systemMemoryDeltaBytes" : 2228961280,
+      "systemMemoryUsedBytes" : 80210673664
+    },
+    {
+      "cpuPercent" : 3.0727078844910527,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 109051904,
+      "elapsedSeconds" : 22.037256209,
+      "physicalFootprintBytes" : 654411672,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0727078844910527,
+          "process" : {
+            "cpuTimeSeconds" : 2.006276976,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 234184704,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 654411672
+          }
+        }
+      ],
+      "systemCPUPercent" : 451.7726505346089,
+      "systemMemoryDeltaBytes" : 2397175808,
+      "systemMemoryUsedBytes" : 80378888192
+    },
+    {
+      "cpuPercent" : 3.0498609846278733,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 109051904,
+      "elapsedSeconds" : 23.037345209,
+      "physicalFootprintBytes" : 647694232,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0498609846278733,
+          "process" : {
+            "cpuTimeSeconds" : 2.036777018,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 234184704,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647694232
+          }
+        }
+      ],
+      "systemCPUPercent" : 516.6101694915254,
+      "systemMemoryDeltaBytes" : 1525956608,
+      "systemMemoryUsedBytes" : 79507668992
+    },
+    {
+      "cpuPercent" : 3.0398975073293575,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 24.03730025,
+      "physicalFootprintBytes" : 649152408,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0398975073293575,
+          "process" : {
+            "cpuTimeSeconds" : 2.067172235,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 242573312,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649152408
+          }
+        }
+      ],
+      "systemCPUPercent" : 423.2922732362822,
+      "systemMemoryDeltaBytes" : 1526235136,
+      "systemMemoryUsedBytes" : 79507947520
+    },
+    {
+      "cpuPercent" : 3.026428187318466,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 25.037294334,
+      "physicalFootprintBytes" : 648513432,
+      "processes" : [
+        {
+          "cpuPercent" : 3.026428187318466,
+          "process" : {
+            "cpuTimeSeconds" : 2.097433696,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 242573312,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648513432
+          }
+        }
+      ],
+      "systemCPUPercent" : 450.25295109612136,
+      "systemMemoryDeltaBytes" : 1736294400,
+      "systemMemoryUsedBytes" : 79718006784
+    },
+    {
+      "cpuPercent" : 3.0074206611047645,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 117440512,
+      "elapsedSeconds" : 26.03728825,
+      "physicalFootprintBytes" : 648267672,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0074206611047645,
+          "process" : {
+            "cpuTimeSeconds" : 2.127507043,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 242573312,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648267672
+          }
+        }
+      ],
+      "systemCPUPercent" : 483.17388857625207,
+      "systemMemoryDeltaBytes" : 1507835904,
+      "systemMemoryUsedBytes" : 79489548288
+    },
+    {
+      "cpuPercent" : 3.085227320078569,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 125829120,
+      "elapsedSeconds" : 27.042233334,
+      "physicalFootprintBytes" : 647710616,
+      "processes" : [
+        {
+          "cpuPercent" : 3.085227320078569,
+          "process" : {
+            "cpuTimeSeconds" : 2.158511738,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 250961920,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647710616
+          }
+        }
+      ],
+      "systemCPUPercent" : 453.5195530726257,
+      "systemMemoryDeltaBytes" : 1504624640,
+      "systemMemoryUsedBytes" : 79486337024
+    },
+    {
+      "cpuPercent" : 2.991812378165602,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 134217728,
+      "elapsedSeconds" : 28.037341584,
+      "physicalFootprintBytes" : 648054680,
+      "processes" : [
+        {
+          "cpuPercent" : 2.991812378165602,
+          "process" : {
+            "cpuTimeSeconds" : 2.188292115,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 259350528,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648054680
+          }
+        }
+      ],
+      "systemCPUPercent" : 433.67346938775506,
+      "systemMemoryDeltaBytes" : 1751416832,
+      "systemMemoryUsedBytes" : 79733129216
+    },
+    {
+      "cpuPercent" : 3.014689573533149,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 142606336,
+      "elapsedSeconds" : 29.037345834,
+      "physicalFootprintBytes" : 647694232,
+      "processes" : [
+        {
+          "cpuPercent" : 3.014689573533149,
+          "process" : {
+            "cpuTimeSeconds" : 2.218436707,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 267739136,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647694232
+          }
+        }
+      ],
+      "systemCPUPercent" : 479.1221159257175,
+      "systemMemoryDeltaBytes" : 1984987136,
+      "systemMemoryUsedBytes" : 79966699520
+    },
+    {
+      "cpuPercent" : 3.0787095787727163,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 142606336,
+      "elapsedSeconds" : 30.037400834,
+      "physicalFootprintBytes" : 648267672,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0787095787727163,
+          "process" : {
+            "cpuTimeSeconds" : 2.249228172,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 267739136,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648267672
+          }
+        }
+      ],
+      "systemCPUPercent" : 416.6292134831461,
+      "systemMemoryDeltaBytes" : 1567555584,
+      "systemMemoryUsedBytes" : 79549267968
+    },
+    {
+      "cpuPercent" : 3.237285626773697,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 142606336,
+      "elapsedSeconds" : 31.03734525,
+      "physicalFootprintBytes" : 648628120,
+      "processes" : [
+        {
+          "cpuPercent" : 3.237285626773697,
+          "process" : {
+            "cpuTimeSeconds" : 2.281596577,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 267739136,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648628120
+          }
+        }
+      ],
+      "systemCPUPercent" : 384.12162162162167,
+      "systemMemoryDeltaBytes" : 1365245952,
+      "systemMemoryUsedBytes" : 79346958336
+    },
+    {
+      "cpuPercent" : 2.84155580033423,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 150994944,
+      "elapsedSeconds" : 32.037087334,
+      "physicalFootprintBytes" : 648578968,
+      "processes" : [
+        {
+          "cpuPercent" : 2.84155580033423,
+          "process" : {
+            "cpuTimeSeconds" : 2.310010198,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 276127744,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648578968
+          }
+        }
+      ],
+      "systemCPUPercent" : 346.0762331838565,
+      "systemMemoryDeltaBytes" : 1082097664,
+      "systemMemoryUsedBytes" : 79063810048
+    },
+    {
+      "cpuPercent" : 2.9422677852255865,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 159383552,
+      "elapsedSeconds" : 33.037355167,
+      "physicalFootprintBytes" : 648578968,
+      "processes" : [
+        {
+          "cpuPercent" : 2.9422677852255865,
+          "process" : {
+            "cpuTimeSeconds" : 2.339437239,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 284516352,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648578968
+          }
+        }
+      ],
+      "systemCPUPercent" : 373.39346110484774,
+      "systemMemoryDeltaBytes" : 1247641600,
+      "systemMemoryUsedBytes" : 79229353984
+    },
+    {
+      "cpuPercent" : 2.8424417558456403,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 167772160,
+      "elapsedSeconds" : 34.03736475,
+      "physicalFootprintBytes" : 648759192,
+      "processes" : [
+        {
+          "cpuPercent" : 2.8424417558456403,
+          "process" : {
+            "cpuTimeSeconds" : 2.367862212,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 292904960,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648759192
+          }
+        }
+      ],
+      "systemCPUPercent" : 365.640738668159,
+      "systemMemoryDeltaBytes" : 881410048,
+      "systemMemoryUsedBytes" : 78863122432
+    },
+    {
+      "cpuPercent" : 2.851140866703497,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 167772160,
+      "elapsedSeconds" : 35.037330959,
+      "physicalFootprintBytes" : 648726424,
+      "processes" : [
+        {
+          "cpuPercent" : 2.851140866703497,
+          "process" : {
+            "cpuTimeSeconds" : 2.396370368,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 292904960,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648726424
+          }
+        }
+      ],
+      "systemCPUPercent" : 419.05298759864706,
+      "systemMemoryDeltaBytes" : 1257570304,
+      "systemMemoryUsedBytes" : 79239282688
+    },
+    {
+      "cpuPercent" : 3.140638529680727,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 167772160,
+      "elapsedSeconds" : 36.037341542,
+      "physicalFootprintBytes" : 647989144,
+      "processes" : [
+        {
+          "cpuPercent" : 3.140638529680727,
+          "process" : {
+            "cpuTimeSeconds" : 2.427776769,
+            "diskReadBytes" : 17252352,
+            "diskWrittenBytes" : 292904960,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647989144
+          }
+        }
+      ],
+      "systemCPUPercent" : 397.4157303370786,
+      "systemMemoryDeltaBytes" : 1250967552,
+      "systemMemoryUsedBytes" : 79232679936
+    },
+    {
+      "cpuPercent" : 2.758619357706821,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 176160768,
+      "elapsedSeconds" : 37.03654475,
+      "physicalFootprintBytes" : 648578968,
+      "processes" : [
+        {
+          "cpuPercent" : 2.758619357706821,
+          "process" : {
+            "cpuTimeSeconds" : 2.455344035,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 301293568,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648578968
+          }
+        }
+      ],
+      "systemCPUPercent" : 443.1703204047218,
+      "systemMemoryDeltaBytes" : 1676509184,
+      "systemMemoryUsedBytes" : 79658221568
+    },
+    {
+      "cpuPercent" : 2.977844435229629,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 184549376,
+      "elapsedSeconds" : 38.037342917,
+      "physicalFootprintBytes" : 648955800,
+      "processes" : [
+        {
+          "cpuPercent" : 2.977844435229629,
+          "process" : {
+            "cpuTimeSeconds" : 2.485146451,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 309682176,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648955800
+          }
+        }
+      ],
+      "systemCPUPercent" : 411.718309859155,
+      "systemMemoryDeltaBytes" : 1678721024,
+      "systemMemoryUsedBytes" : 79660433408
+    },
+    {
+      "cpuPercent" : 3.0505324882381784,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 192937984,
+      "elapsedSeconds" : 39.037341375,
+      "physicalFootprintBytes" : 649185176,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0505324882381784,
+          "process" : {
+            "cpuTimeSeconds" : 2.515651556,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 318070784,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649185176
+          }
+        }
+      ],
+      "systemCPUPercent" : 436.3636363636363,
+      "systemMemoryDeltaBytes" : 1327169536,
+      "systemMemoryUsedBytes" : 79308881920
+    },
+    {
+      "cpuPercent" : 3.0271017164271434,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 192937984,
+      "elapsedSeconds" : 40.0373655,
+      "physicalFootprintBytes" : 647661464,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0271017164271434,
+          "process" : {
+            "cpuTimeSeconds" : 2.54591482,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 318070784,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647661464
+          }
+        }
+      ],
+      "systemCPUPercent" : 377.2394366197183,
+      "systemMemoryDeltaBytes" : 1447526400,
+      "systemMemoryUsedBytes" : 79429238784
+    },
+    {
+      "cpuPercent" : 2.988083214561871,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 192937984,
+      "elapsedSeconds" : 41.036946375,
+      "physicalFootprintBytes" : 648218520,
+      "processes" : [
+        {
+          "cpuPercent" : 2.988083214561871,
+          "process" : {
+            "cpuTimeSeconds" : 2.575782522,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 318070784,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648218520
+          }
+        }
+      ],
+      "systemCPUPercent" : 411.4864864864865,
+      "systemMemoryDeltaBytes" : 1439629312,
+      "systemMemoryUsedBytes" : 79421341696
+    },
+    {
+      "cpuPercent" : 3.098337116937754,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 201326592,
+      "elapsedSeconds" : 42.037356667,
+      "physicalFootprintBytes" : 647907224,
+      "processes" : [
+        {
+          "cpuPercent" : 3.098337116937754,
+          "process" : {
+            "cpuTimeSeconds" : 2.60678521,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 326459392,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647907224
+          }
+        }
+      ],
+      "systemCPUPercent" : 380.80808080808083,
+      "systemMemoryDeltaBytes" : 1240481792,
+      "systemMemoryUsedBytes" : 79222194176
+    },
+    {
+      "cpuPercent" : 2.9423747906316287,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 201326592,
+      "elapsedSeconds" : 43.036332125,
+      "physicalFootprintBytes" : 647743384,
+      "processes" : [
+        {
+          "cpuPercent" : 2.9423747906316287,
+          "process" : {
+            "cpuTimeSeconds" : 2.63617279,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 326459392,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 647743384
+          }
+        }
+      ],
+      "systemCPUPercent" : 386.22247317899496,
+      "systemMemoryDeltaBytes" : 1246593024,
+      "systemMemoryUsedBytes" : 79228305408
+    },
+    {
+      "cpuPercent" : 2.978192151175743,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 209715200,
+      "elapsedSeconds" : 44.037374875,
+      "physicalFootprintBytes" : 648349592,
+      "processes" : [
+        {
+          "cpuPercent" : 2.978192151175743,
+          "process" : {
+            "cpuTimeSeconds" : 2.665994556,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 334848000,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648349592
+          }
+        }
+      ],
+      "systemCPUPercent" : 383.2584269662921,
+      "systemMemoryDeltaBytes" : 1253703680,
+      "systemMemoryUsedBytes" : 79235416064
+    },
+    {
+      "cpuPercent" : 2.880163980918949,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 218103808,
+      "elapsedSeconds" : 45.03708,
+      "physicalFootprintBytes" : 648759192,
+      "processes" : [
+        {
+          "cpuPercent" : 2.880163980918949,
+          "process" : {
+            "cpuTimeSeconds" : 2.694785496,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 343236608,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648759192
+          }
+        }
+      ],
+      "systemCPUPercent" : 337.75280898876406,
+      "systemMemoryDeltaBytes" : 1086898176,
+      "systemMemoryUsedBytes" : 79068610560
+    },
+    {
+      "cpuPercent" : 2.9858379030830875,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 218103808,
+      "elapsedSeconds" : 46.036458917,
+      "physicalFootprintBytes" : 648251288,
+      "processes" : [
+        {
+          "cpuPercent" : 2.9858379030830875,
+          "process" : {
+            "cpuTimeSeconds" : 2.724624487,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 343236608,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648251288
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.5738349241999,
+      "systemMemoryDeltaBytes" : 1241792512,
+      "systemMemoryUsedBytes" : 79223504896
+    },
+    {
+      "cpuPercent" : 2.8407577366898815,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 218103808,
+      "elapsedSeconds" : 47.037371042,
+      "physicalFootprintBytes" : 648710040,
+      "processes" : [
+        {
+          "cpuPercent" : 2.8407577366898815,
+          "process" : {
+            "cpuTimeSeconds" : 2.753060279,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 343236608,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648710040
+          }
+        }
+      ],
+      "systemCPUPercent" : 381.8795723128869,
+      "systemMemoryDeltaBytes" : 878624768,
+      "systemMemoryUsedBytes" : 78860337152
+    },
+    {
+      "cpuPercent" : 2.957509570600157,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 218103808,
+      "elapsedSeconds" : 48.037305959,
+      "physicalFootprintBytes" : 648759192,
+      "processes" : [
+        {
+          "cpuPercent" : 2.957509570600157,
+          "process" : {
+            "cpuTimeSeconds" : 2.782626289,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 343236608,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648759192
+          }
+        }
+      ],
+      "systemCPUPercent" : 403.37837837837833,
+      "systemMemoryDeltaBytes" : 1281949696,
+      "systemMemoryUsedBytes" : 79263662080
+    },
+    {
+      "cpuPercent" : 2.80344408510411,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 218103808,
+      "elapsedSeconds" : 49.037358625,
+      "physicalFootprintBytes" : 648824728,
+      "processes" : [
+        {
+          "cpuPercent" : 2.80344408510411,
+          "process" : {
+            "cpuTimeSeconds" : 2.81066777,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 343236608,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648824728
+          }
+        }
+      ],
+      "systemCPUPercent" : 391.56829679595273,
+      "systemMemoryDeltaBytes" : 1431994368,
+      "systemMemoryUsedBytes" : 79413706752
+    },
+    {
+      "cpuPercent" : 3.08190302030947,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 226492416,
+      "elapsedSeconds" : 50.037287334,
+      "physicalFootprintBytes" : 649430936,
+      "processes" : [
+        {
+          "cpuPercent" : 3.08190302030947,
+          "process" : {
+            "cpuTimeSeconds" : 2.841476906,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 351625216,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649430936
+          }
+        }
+      ],
+      "systemCPUPercent" : 436.33295838020246,
+      "systemMemoryDeltaBytes" : 1475870720,
+      "systemMemoryUsedBytes" : 79457583104
+    },
+    {
+      "cpuPercent" : 2.74080668770637,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 226492416,
+      "elapsedSeconds" : 51.037310375,
+      "physicalFootprintBytes" : 649250712,
+      "processes" : [
+        {
+          "cpuPercent" : 2.74080668770637,
+          "process" : {
+            "cpuTimeSeconds" : 2.868892268,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 351625216,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649250712
+          }
+        }
+      ],
+      "systemCPUPercent" : 411.16751269035535,
+      "systemMemoryDeltaBytes" : 1280622592,
+      "systemMemoryUsedBytes" : 79262334976
+    },
+    {
+      "cpuPercent" : 3.033020020513964,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 243269632,
+      "elapsedSeconds" : 52.036385042,
+      "physicalFootprintBytes" : 648202136,
+      "processes" : [
+        {
+          "cpuPercent" : 3.033020020513964,
+          "process" : {
+            "cpuTimeSeconds" : 2.899196158,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 368402432,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648202136
+          }
+        }
+      ],
+      "systemCPUPercent" : 526.3098591549297,
+      "systemMemoryDeltaBytes" : 1341833216,
+      "systemMemoryUsedBytes" : 79323545600
+    },
+    {
+      "cpuPercent" : 2.9865099699502244,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 243269632,
+      "elapsedSeconds" : 53.037346584,
+      "physicalFootprintBytes" : 649316248,
+      "processes" : [
+        {
+          "cpuPercent" : 2.9865099699502244,
+          "process" : {
+            "cpuTimeSeconds" : 2.92909064,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 368402432,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649316248
+          }
+        }
+      ],
+      "systemCPUPercent" : 506.06060606060606,
+      "systemMemoryDeltaBytes" : 1686011904,
+      "systemMemoryUsedBytes" : 79667724288
+    },
+    {
+      "cpuPercent" : 3.132096376180652,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 243269632,
+      "elapsedSeconds" : 54.036327584,
+      "physicalFootprintBytes" : 648202136,
+      "processes" : [
+        {
+          "cpuPercent" : 3.132096376180652,
+          "process" : {
+            "cpuTimeSeconds" : 2.960371586,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 368402432,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648202136
+          }
+        }
+      ],
+      "systemCPUPercent" : 384.554678692221,
+      "systemMemoryDeltaBytes" : 1090912256,
+      "systemMemoryUsedBytes" : 79072624640
+    },
+    {
+      "cpuPercent" : 3.005157711019038,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 251658240,
+      "elapsedSeconds" : 55.03767875,
+      "physicalFootprintBytes" : 648857496,
+      "processes" : [
+        {
+          "cpuPercent" : 3.005157711019038,
+          "process" : {
+            "cpuTimeSeconds" : 2.990462865,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 376791040,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648857496
+          }
+        }
+      ],
+      "systemCPUPercent" : 384.7019122609674,
+      "systemMemoryDeltaBytes" : 1243643904,
+      "systemMemoryUsedBytes" : 79225356288
+    },
+    {
+      "cpuPercent" : 2.915211071861571,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 251658240,
+      "elapsedSeconds" : 56.037372459,
+      "physicalFootprintBytes" : 648546200,
+      "processes" : [
+        {
+          "cpuPercent" : 2.915211071861571,
+          "process" : {
+            "cpuTimeSeconds" : 3.019614287,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 376791040,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648546200
+          }
+        }
+      ],
+      "systemCPUPercent" : 416.78873239436615,
+      "systemMemoryDeltaBytes" : 1341652992,
+      "systemMemoryUsedBytes" : 79323365376
+    },
+    {
+      "cpuPercent" : 2.845477042436904,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 251658240,
+      "elapsedSeconds" : 57.037317959,
+      "physicalFootprintBytes" : 648529816,
+      "processes" : [
+        {
+          "cpuPercent" : 2.845477042436904,
+          "process" : {
+            "cpuTimeSeconds" : 3.048059697,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 376791040,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648529816
+          }
+        }
+      ],
+      "systemCPUPercent" : 529.5901179112858,
+      "systemMemoryDeltaBytes" : 1567391744,
+      "systemMemoryUsedBytes" : 79549104128
+    },
+    {
+      "cpuPercent" : 3.193281508686321,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 268435456,
+      "elapsedSeconds" : 58.036380709,
+      "physicalFootprintBytes" : 648284056,
+      "processes" : [
+        {
+          "cpuPercent" : 3.193281508686321,
+          "process" : {
+            "cpuTimeSeconds" : 3.079968625,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 393568256,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648284056
+          }
+        }
+      ],
+      "systemCPUPercent" : 379.6400449943757,
+      "systemMemoryDeltaBytes" : 1263321088,
+      "systemMemoryUsedBytes" : 79245033472
+    },
+    {
+      "cpuPercent" : 3.024837149087644,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 268435456,
+      "elapsedSeconds" : 59.037375709,
+      "physicalFootprintBytes" : 648890264,
+      "processes" : [
+        {
+          "cpuPercent" : 3.024837149087644,
+          "process" : {
+            "cpuTimeSeconds" : 3.110249332,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 393568256,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648890264
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.8235294117647,
+      "systemMemoryDeltaBytes" : 1239056384,
+      "systemMemoryUsedBytes" : 79220768768
+    },
+    {
+      "cpuPercent" : 3.0901582779080243,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 268435456,
+      "elapsedSeconds" : 60.036468209,
+      "physicalFootprintBytes" : 648529816,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0901582779080243,
+          "process" : {
+            "cpuTimeSeconds" : 3.141123545,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 393568256,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648529816
+          }
+        }
+      ],
+      "systemCPUPercent" : 339.7752808988764,
+      "systemMemoryDeltaBytes" : 1231421440,
+      "systemMemoryUsedBytes" : 79213133824
+    },
+    {
+      "cpuPercent" : 2.899798149276783,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 268435456,
+      "elapsedSeconds" : 61.036326709,
+      "physicalFootprintBytes" : 648742808,
+      "processes" : [
+        {
+          "cpuPercent" : 2.899798149276783,
+          "process" : {
+            "cpuTimeSeconds" : 3.170115159,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 393568256,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648742808
+          }
+        }
+      ],
+      "systemCPUPercent" : 333.63380281690144,
+      "systemMemoryDeltaBytes" : 1230585856,
+      "systemMemoryUsedBytes" : 79212298240
+    },
+    {
+      "cpuPercent" : 3.0063131347852936,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 276824064,
+      "elapsedSeconds" : 62.03635725,
+      "physicalFootprintBytes" : 648628120,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0063131347852936,
+          "process" : {
+            "cpuTimeSeconds" : 3.200178839,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 401956864,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 648628120
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.0044843049327,
+      "systemMemoryDeltaBytes" : 1229799424,
+      "systemMemoryUsedBytes" : 79211511808
+    },
+    {
+      "cpuPercent" : 3.186347296496189,
+      "diskReadBytes" : 4096,
+      "diskWrittenBytes" : 285212672,
+      "elapsedSeconds" : 62.746968959,
+      "physicalFootprintBytes" : 649086872,
+      "processes" : [
+        {
+          "cpuPercent" : 3.186347296496189,
+          "process" : {
+            "cpuTimeSeconds" : 3.222813762,
+            "diskReadBytes" : 17256448,
+            "diskWrittenBytes" : 410345472,
+            "executablePath" : "/Applications/Screen Glide.app/Contents/MacOS/Screen Glide",
+            "identity" : {
+              "pid" : 52376,
+              "startTimeNanoseconds" : 8932334964150
+            },
+            "name" : "Screen Glide",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 649086872
+          }
+        }
+      ],
+      "systemCPUPercent" : 330.6413301662708,
+      "systemMemoryDeltaBytes" : 1232994304,
+      "systemMemoryUsedBytes" : 79214706688
+    }
+  ],
+  "scenario" : "recording",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-02T10:47:26Z",
+  "summary" : {
+    "averageCPUPercent" : 2.917473485871565,
+    "averagePhysicalFootprintBytes" : 647852950,
+    "averageSystemCPUPercent" : 406.1406243052133,
+    "averageSystemMemoryDeltaBytes" : 1539256576,
+    "cpuTimeSeconds" : 1.8289349929999998,
+    "diskReadBytes" : 4096,
+    "diskWrittenBytes" : 285212672,
+    "durationSeconds" : 62.746968959,
+    "p95CPUPercent" : 3.172721927825046,
+    "p95SystemCPUPercent" : 506.06060606060606,
+    "peakCPUPercent" : 3.237285626773697,
+    "peakPhysicalFootprintBytes" : 677644136,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 529.5901179112858,
+    "peakSystemMemoryDeltaBytes" : 2885877760,
+    "physicalFootprintDeltaBytes" : 150683696
+  },
+  "target" : {
+    "build" : "3",
+    "bundleIdentifier" : "com.screenglide.app",
+    "bundlePath" : "/Applications/Screen Glide.app",
+    "name" : "Screen Glide",
+    "recorderID" : "screen-glide",
+    "version" : "1.0.2"
+  }
+}

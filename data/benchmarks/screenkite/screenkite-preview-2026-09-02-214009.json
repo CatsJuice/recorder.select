@@ -1,0 +1,4909 @@
+{
+  "endedAt" : "2026-09-02T13:41:12Z",
+  "id" : "2C495A4C-FC08-459E-A9A8-1E71E907ACFE",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.042e-06,
+      "physicalFootprintBytes" : 4694743568,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 33.326340996,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840925184,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4522004512
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364148,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024552533,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009328238,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 76271239168
+    },
+    {
+      "cpuPercent" : 1.6186947068439714,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 1.026536042,
+      "physicalFootprintBytes" : 4907162152,
+      "processes" : [
+        {
+          "cpuPercent" : 1.618499426516261,
+          "process" : {
+            "cpuTimeSeconds" : 33.342958601,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4734423096
+          }
+        },
+        {
+          "cpuPercent" : 8.746221161293903e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.024553431,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 7.265791744238151e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009328984,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 3.5160198655116346e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 370.81967213114757,
+      "systemMemoryDeltaBytes" : 434307072,
+      "systemMemoryUsedBytes" : 76705546240
+    },
+    {
+      "cpuPercent" : 3.1293706911716255,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 2.026538834,
+      "physicalFootprintBytes" : 4925086296,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1293706911716255,
+          "process" : {
+            "cpuTimeSeconds" : 33.374252304,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4752347240
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024553431,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009328984,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 411.1111111111111,
+      "systemMemoryDeltaBytes" : 451461120,
+      "systemMemoryUsedBytes" : 76722700288
+    },
+    {
+      "cpuPercent" : 2.7836941171680913,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 3.026540167,
+      "physicalFootprintBytes" : 5447621256,
+      "processes" : [
+        {
+          "cpuPercent" : 2.783543315314435,
+          "process" : {
+            "cpuTimeSeconds" : 33.402087395,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5274882200
+          }
+        },
+        {
+          "cpuPercent" : 7.640093912037566e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009329748,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 7.440091453608535e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.024554175,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 399.327731092437,
+      "systemMemoryDeltaBytes" : 1225506816,
+      "systemMemoryUsedBytes" : 77496745984
+    },
+    {
+      "cpuPercent" : 3.3554405520899473,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 4.026536625,
+      "physicalFootprintBytes" : 6543022896,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3554405520899473,
+          "process" : {
+            "cpuTimeSeconds" : 33.435639551,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6370283840
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024554175,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009329748,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 386.0752386299831,
+      "systemMemoryDeltaBytes" : 2384789504,
+      "systemMemoryUsedBytes" : 78656028672
+    },
+    {
+      "cpuPercent" : 2.62956869134456,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 5.026528334,
+      "physicalFootprintBytes" : 5457353472,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6293275890439625,
+          "process" : {
+            "cpuTimeSeconds" : 33.461932576,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5284614416
+          }
+        },
+        {
+          "cpuPercent" : 0.00012550119753228868,
+          "process" : {
+            "cpuTimeSeconds" : 0.009331003,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0.00011560110306559404,
+          "process" : {
+            "cpuTimeSeconds" : 0.024555331,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 354.77386934673365,
+      "systemMemoryDeltaBytes" : 1463779328,
+      "systemMemoryUsedBytes" : 77735018496
+    },
+    {
+      "cpuPercent" : 2.704309299858514,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 12288,
+      "elapsedSeconds" : 6.0265115,
+      "physicalFootprintBytes" : 5644065536,
+      "processes" : [
+        {
+          "cpuPercent" : 2.704309299858514,
+          "process" : {
+            "cpuTimeSeconds" : 33.488974807,
+            "diskReadBytes" : 42606592,
+            "diskWrittenBytes" : 840937472,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5471326480
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024555331,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009331003,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 297.48743718592965,
+      "systemMemoryDeltaBytes" : 1555857408,
+      "systemMemoryUsedBytes" : 77827096576
+    },
+    {
+      "cpuPercent" : 2.7709223385516903,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 110592,
+      "elapsedSeconds" : 7.026518542,
+      "physicalFootprintBytes" : 5646146304,
+      "processes" : [
+        {
+          "cpuPercent" : 2.770783934843578,
+          "process" : {
+            "cpuTimeSeconds" : 33.516681904,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841035776,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5473407248
+          }
+        },
+        {
+          "cpuPercent" : 7.520201481252407e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009331755,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 6.320169329980788e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.024555963,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 361.21076233183857,
+      "systemMemoryDeltaBytes" : 1277837312,
+      "systemMemoryUsedBytes" : 77549076480
+    },
+    {
+      "cpuPercent" : 2.6666157447011485,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 110592,
+      "elapsedSeconds" : 8.026518084,
+      "physicalFootprintBytes" : 5652175616,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6666157447011485,
+          "process" : {
+            "cpuTimeSeconds" : 33.543349127,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841035776,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5479436560
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024555963,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009331755,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.76536312849163,
+      "systemMemoryDeltaBytes" : 1559314432,
+      "systemMemoryUsedBytes" : 77830553600
+    },
+    {
+      "cpuPercent" : 2.7011486139248135,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 110592,
+      "elapsedSeconds" : 9.026539667,
+      "physicalFootprintBytes" : 5660416768,
+      "processes" : [
+        {
+          "cpuPercent" : 2.700964243792775,
+          "process" : {
+            "cpuTimeSeconds" : 33.570363145,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841035776,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5487677712
+          }
+        },
+        {
+          "cpuPercent" : 9.578448291365008e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.024556921,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 8.858564912469725e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009332641,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 348.74371859296485,
+      "systemMemoryDeltaBytes" : 1618853888,
+      "systemMemoryUsedBytes" : 77890093056
+    },
+    {
+      "cpuPercent" : 2.6662883808655833,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 110592,
+      "elapsedSeconds" : 10.0258835,
+      "physicalFootprintBytes" : 5656943384,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6662883808655833,
+          "process" : {
+            "cpuTimeSeconds" : 33.597004193,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841035776,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5484204328
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.024556921,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009332641,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 388.2352941176471,
+      "systemMemoryDeltaBytes" : 1534902272,
+      "systemMemoryUsedBytes" : 77806141440
+    },
+    {
+      "cpuPercent" : 2.647219580039499,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 11.02656,
+      "physicalFootprintBytes" : 5652142848,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6470403334745582,
+          "process" : {
+            "cpuTimeSeconds" : 33.623497255,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5479403792
+          }
+        },
+        {
+          "cpuPercent" : 9.991447321103137e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009333641,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 7.933209172966705e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.024557715,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93520928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 301.8446059250978,
+      "systemMemoryDeltaBytes" : 1481949184,
+      "systemMemoryUsedBytes" : 77753188352
+    },
+    {
+      "cpuPercent" : 2.5500896968660447,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 12.026599667,
+      "physicalFootprintBytes" : 5641755392,
+      "processes" : [
+        {
+          "cpuPercent" : 2.542831056301314,
+          "process" : {
+            "cpuTimeSeconds" : 33.648928226,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5468672272
+          }
+        },
+        {
+          "cpuPercent" : 0.007258640564730788,
+          "process" : {
+            "cpuTimeSeconds" : 0.024630309,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009333641,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 321.6806722689076,
+      "systemMemoryDeltaBytes" : 1493155840,
+      "systemMemoryUsedBytes" : 77764395008
+    },
+    {
+      "cpuPercent" : 2.5959486251656254,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 13.026207834,
+      "physicalFootprintBytes" : 5627812584,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5934830734089886,
+          "process" : {
+            "cpuTimeSeconds" : 33.674846734,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5454729464
+          }
+        },
+        {
+          "cpuPercent" : 0.0023576838672840997,
+          "process" : {
+            "cpuTimeSeconds" : 0.024653871,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0.00010786788935284574,
+          "process" : {
+            "cpuTimeSeconds" : 0.009334719,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 366.42498605688786,
+      "systemMemoryDeltaBytes" : 1237942272,
+      "systemMemoryUsedBytes" : 77509181440
+    },
+    {
+      "cpuPercent" : 2.560716679281327,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 14.02654975,
+      "physicalFootprintBytes" : 5628009192,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5583199353124324,
+          "process" : {
+            "cpuTimeSeconds" : 33.700442273,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5454926072
+          }
+        },
+        {
+          "cpuPercent" : 0.0023967439688945434,
+          "process" : {
+            "cpuTimeSeconds" : 0.02467785,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009334719,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 353.33707234997195,
+      "systemMemoryDeltaBytes" : 1597308928,
+      "systemMemoryUsedBytes" : 77868548096
+    },
+    {
+      "cpuPercent" : 2.5969365454058537,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 15.026178959,
+      "physicalFootprintBytes" : 5627009768,
+      "processes" : [
+        {
+          "cpuPercent" : 2.594376210269628,
+          "process" : {
+            "cpuTimeSeconds" : 33.726378586,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5453926648
+          }
+        },
+        {
+          "cpuPercent" : 0.00243759989587008,
+          "process" : {
+            "cpuTimeSeconds" : 0.024702219,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0.00012273524035583502,
+          "process" : {
+            "cpuTimeSeconds" : 0.009335946,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 447.4804031354983,
+      "systemMemoryDeltaBytes" : 1389903872,
+      "systemMemoryUsedBytes" : 77661143040
+    },
+    {
+      "cpuPercent" : 2.5356110595985197,
+      "diskReadBytes" : 65536,
+      "diskWrittenBytes" : 307200,
+      "elapsedSeconds" : 16.025568667,
+      "physicalFootprintBytes" : 5626714856,
+      "processes" : [
+        {
+          "cpuPercent" : 2.531618078319354,
+          "process" : {
+            "cpuTimeSeconds" : 33.751677133,
+            "diskReadBytes" : 42672128,
+            "diskWrittenBytes" : 841232384,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5453566200
+          }
+        },
+        {
+          "cpuPercent" : 0.002220046355528321,
+          "process" : {
+            "cpuTimeSeconds" : 0.024724404,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0.001772934923637623,
+          "process" : {
+            "cpuTimeSeconds" : 0.009353663,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.94913359418666,
+      "systemMemoryDeltaBytes" : 1490468864,
+      "systemMemoryUsedBytes" : 77761708032
+    },
+    {
+      "cpuPercent" : 2.544343800211013,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 17.0255295,
+      "physicalFootprintBytes" : 5628353256,
+      "processes" : [
+        {
+          "cpuPercent" : 2.541217389042787,
+          "process" : {
+            "cpuTimeSeconds" : 33.777085152,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5455204600
+          }
+        },
+        {
+          "cpuPercent" : 0.002375788441410253,
+          "process" : {
+            "cpuTimeSeconds" : 0.024748158,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0.0007506227268158008,
+          "process" : {
+            "cpuTimeSeconds" : 0.009361168,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 340.0782560089436,
+      "systemMemoryDeltaBytes" : 1431486464,
+      "systemMemoryUsedBytes" : 77702725632
+    },
+    {
+      "cpuPercent" : 2.6970887658434823,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 18.025627125,
+      "physicalFootprintBytes" : 6062234344,
+      "processes" : [
+        {
+          "cpuPercent" : 2.694326542405481,
+          "process" : {
+            "cpuTimeSeconds" : 33.804037943,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5889085688
+          }
+        },
+        {
+          "cpuPercent" : 0.0023349744884495144,
+          "process" : {
+            "cpuTimeSeconds" : 0.024771516,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0.0004272489495519067,
+          "process" : {
+            "cpuTimeSeconds" : 0.009365442,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.65546218487395,
+      "systemMemoryDeltaBytes" : 1874018304,
+      "systemMemoryUsedBytes" : 78145257472
+    },
+    {
+      "cpuPercent" : 2.5352243718849823,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 19.025546917,
+      "physicalFootprintBytes" : 5817604840,
+      "processes" : [
+        {
+          "cpuPercent" : 2.532636315489446,
+          "process" : {
+            "cpuTimeSeconds" : 33.829354947,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5644456184
+          }
+        },
+        {
+          "cpuPercent" : 0.00252463295791262,
+          "process" : {
+            "cpuTimeSeconds" : 0.024796753,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 6.342343762392215e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009366076,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.44196428571433,
+      "systemMemoryDeltaBytes" : 1803550720,
+      "systemMemoryUsedBytes" : 78074789888
+    },
+    {
+      "cpuPercent" : 2.709183088396729,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 20.025592375,
+      "physicalFootprintBytes" : 6337518312,
+      "processes" : [
+        {
+          "cpuPercent" : 2.707064963915675,
+          "process" : {
+            "cpuTimeSeconds" : 33.856431674,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6164369656
+          }
+        },
+        {
+          "cpuPercent" : 0.002118124481053946,
+          "process" : {
+            "cpuTimeSeconds" : 0.024817939,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009366076,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 318.47704367301236,
+      "systemMemoryDeltaBytes" : 1974304768,
+      "systemMemoryUsedBytes" : 78245543936
+    },
+    {
+      "cpuPercent" : 2.5667397570442305,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 21.025563417,
+      "physicalFootprintBytes" : 6293494504,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5641644808401565,
+          "process" : {
+            "cpuTimeSeconds" : 33.882069573,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6120345848
+          }
+        },
+        {
+          "cpuPercent" : 0.0025042658306654417,
+          "process" : {
+            "cpuTimeSeconds" : 0.024842978,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93864992
+          }
+        },
+        {
+          "cpuPercent" : 7.101037340847738e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009366786,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.8569032979318,
+      "systemMemoryDeltaBytes" : 2164834304,
+      "systemMemoryUsedBytes" : 78436073472
+    },
+    {
+      "cpuPercent" : 2.542738323594633,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 22.025581084,
+      "physicalFootprintBytes" : 5627321064,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5399140158460547,
+          "process" : {
+            "cpuTimeSeconds" : 33.90747314,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5454188792
+          }
+        },
+        {
+          "cpuPercent" : 0.0028243077485780007,
+          "process" : {
+            "cpuTimeSeconds" : 0.024871226,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009366786,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.9614309670207,
+      "systemMemoryDeltaBytes" : 2040512512,
+      "systemMemoryUsedBytes" : 78311751680
+    },
+    {
+      "cpuPercent" : 2.6716956412882102,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 23.025569292,
+      "physicalFootprintBytes" : 6085892840,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6690901966113287,
+          "process" : {
+            "cpuTimeSeconds" : 33.934160511,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5912760568
+          }
+        },
+        {
+          "cpuPercent" : 0.0025278344097420676,
+          "process" : {
+            "cpuTimeSeconds" : 0.024896501,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 7.761026713977097e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009367562,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 316.75977653631287,
+      "systemMemoryDeltaBytes" : 1815232512,
+      "systemMemoryUsedBytes" : 78086471680
+    },
+    {
+      "cpuPercent" : 3.2070047230928047,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 24.025556,
+      "physicalFootprintBytes" : 8383634152,
+      "processes" : [
+        {
+          "cpuPercent" : 3.204088888599939,
+          "process" : {
+            "cpuTimeSeconds" : 33.966199922,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 8210501880
+          }
+        },
+        {
+          "cpuPercent" : 0.002915834492865824,
+          "process" : {
+            "cpuTimeSeconds" : 0.024925658,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009367562,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 346.27033090297255,
+      "systemMemoryDeltaBytes" : 7145275392,
+      "systemMemoryUsedBytes" : 83416514560
+    },
+    {
+      "cpuPercent" : 2.876434742392752,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 25.025852917,
+      "physicalFootprintBytes" : 7185439464,
+      "processes" : [
+        {
+          "cpuPercent" : 2.873841877958474,
+          "process" : {
+            "cpuTimeSeconds" : 33.994950927,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7012307192
+          }
+        },
+        {
+          "cpuPercent" : 0.0025063023448376525,
+          "process" : {
+            "cpuTimeSeconds" : 0.024950732,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 8.656208944047364e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009368428,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.54759238521837,
+      "systemMemoryDeltaBytes" : 5437521920,
+      "systemMemoryUsedBytes" : 81708761088
+    },
+    {
+      "cpuPercent" : 2.692538710457884,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 26.0256035,
+      "physicalFootprintBytes" : 6625467112,
+      "processes" : [
+        {
+          "cpuPercent" : 2.689775305673601,
+          "process" : {
+            "cpuTimeSeconds" : 34.02184182,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6452383992
+          }
+        },
+        {
+          "cpuPercent" : 0.002553151160778541,
+          "process" : {
+            "cpuTimeSeconds" : 0.024976257,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0.00021025362350468127,
+          "process" : {
+            "cpuTimeSeconds" : 0.00937053,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75039536
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.2188024622272,
+      "systemMemoryDeltaBytes" : 3509600256,
+      "systemMemoryUsedBytes" : 79780839424
+    },
+    {
+      "cpuPercent" : 2.759410883792571,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 27.025572125,
+      "physicalFootprintBytes" : 5934734056,
+      "processes" : [
+        {
+          "cpuPercent" : 2.7566973758021676,
+          "process" : {
+            "cpuTimeSeconds" : 34.049403633,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5761650936
+          }
+        },
+        {
+          "cpuPercent" : 0.0026472955949135572,
+          "process" : {
+            "cpuTimeSeconds" : 0.025002725,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.62123954901581e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009371192,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75039536
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 326.90582959641256,
+      "systemMemoryDeltaBytes" : 2268512256,
+      "systemMemoryUsedBytes" : 78539751424
+    },
+    {
+      "cpuPercent" : 2.7650795154623213,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 28.025619,
+      "physicalFootprintBytes" : 6011247336,
+      "processes" : [
+        {
+          "cpuPercent" : 2.762652949322633,
+          "process" : {
+            "cpuTimeSeconds" : 34.077032825,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5838180600
+          }
+        },
+        {
+          "cpuPercent" : 0.0023785707652425278,
+          "process" : {
+            "cpuTimeSeconds" : 0.025026513,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 4.799537444567621e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009371672,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 316.93683622135273,
+      "systemMemoryDeltaBytes" : 1819754496,
+      "systemMemoryUsedBytes" : 78090993664
+    },
+    {
+      "cpuPercent" : 2.69278887413175,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 29.025634375,
+      "physicalFootprintBytes" : 6026681064,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6901071740310387,
+          "process" : {
+            "cpuTimeSeconds" : 34.103935902,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5853614328
+          }
+        },
+        {
+          "cpuPercent" : 0.0025736081581007636,
+          "process" : {
+            "cpuTimeSeconds" : 0.025052251,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0.00010809194261041381,
+          "process" : {
+            "cpuTimeSeconds" : 0.009372753,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.80446927374305,
+      "systemMemoryDeltaBytes" : 1863073792,
+      "systemMemoryUsedBytes" : 78134312960
+    },
+    {
+      "cpuPercent" : 2.57377243263583,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 8695808,
+      "elapsedSeconds" : 30.025619167,
+      "physicalFootprintBytes" : 6018783976,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5714970089811637,
+          "process" : {
+            "cpuTimeSeconds" : 34.129652865,
+            "diskReadBytes" : 42684416,
+            "diskWrittenBytes" : 849620992,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5845717240
+          }
+        },
+        {
+          "cpuPercent" : 0.002275423654666641,
+          "process" : {
+            "cpuTimeSeconds" : 0.025075007,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009372753,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 293.77453729669094,
+      "systemMemoryDeltaBytes" : 1840775168,
+      "systemMemoryUsedBytes" : 78112014336
+    },
+    {
+      "cpuPercent" : 2.5074667148237975,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 31.025770542,
+      "physicalFootprintBytes" : 5627910888,
+      "processes" : [
+        {
+          "cpuPercent" : 2.504919092306468,
+          "process" : {
+            "cpuTimeSeconds" : 34.154703801,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5454844152
+          }
+        },
+        {
+          "cpuPercent" : 0.002415631712601092,
+          "process" : {
+            "cpuTimeSeconds" : 0.025099165,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0.00013199080472868122,
+          "process" : {
+            "cpuTimeSeconds" : 0.009374073,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 332.1070234113712,
+      "systemMemoryDeltaBytes" : 1641463808,
+      "systemMemoryUsedBytes" : 77912702976
+    },
+    {
+      "cpuPercent" : 2.562486474555117,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 32.025764042,
+      "physicalFootprintBytes" : 5628959464,
+      "processes" : [
+        {
+          "cpuPercent" : 2.560162066609323,
+          "process" : {
+            "cpuTimeSeconds" : 34.180307537,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5455892728
+          }
+        },
+        {
+          "cpuPercent" : 0.0023244079457935864,
+          "process" : {
+            "cpuTimeSeconds" : 0.025122411,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009374073,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 304.70852017937216,
+      "systemMemoryDeltaBytes" : 1443430400,
+      "systemMemoryUsedBytes" : 77714669568
+    },
+    {
+      "cpuPercent" : 2.508896430341477,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 33.026277292,
+      "physicalFootprintBytes" : 5630171880,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5064466207125458,
+          "process" : {
+            "cpuTimeSeconds" : 34.205383159,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5457105144
+          }
+        },
+        {
+          "cpuPercent" : 0.0023810402370871417,
+          "process" : {
+            "cpuTimeSeconds" : 0.025146232,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.876939184404291e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009374761,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.7150837988827,
+      "systemMemoryDeltaBytes" : 1090043904,
+      "systemMemoryUsedBytes" : 77361283072
+    },
+    {
+      "cpuPercent" : 3.152483865814753,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 34.0256085,
+      "physicalFootprintBytes" : 7025875808,
+      "processes" : [
+        {
+          "cpuPercent" : 3.150117305981697,
+          "process" : {
+            "cpuTimeSeconds" : 34.236860907,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6852809072
+          }
+        },
+        {
+          "cpuPercent" : 0.0023665598330556204,
+          "process" : {
+            "cpuTimeSeconds" : 0.02516988,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009374761,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 339.2035894559731,
+      "systemMemoryDeltaBytes" : 2852323328,
+      "systemMemoryUsedBytes" : 79123562496
+    },
+    {
+      "cpuPercent" : 2.526166488017093,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 35.025642667,
+      "physicalFootprintBytes" : 6119938912,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5236366308833778,
+          "process" : {
+            "cpuTimeSeconds" : 34.262099696,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5946872176
+          }
+        },
+        {
+          "cpuPercent" : 0.00246766310434195,
+          "process" : {
+            "cpuTimeSeconds" : 0.025194559,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.219402937305364e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009375383,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.056856187291,
+      "systemMemoryDeltaBytes" : 2404597760,
+      "systemMemoryUsedBytes" : 78675836928
+    },
+    {
+      "cpuPercent" : 2.548213207780989,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 36.025630375,
+      "physicalFootprintBytes" : 6120020832,
+      "processes" : [
+        {
+          "cpuPercent" : 2.545980968529294,
+          "process" : {
+            "cpuTimeSeconds" : 34.287559058,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5946954096
+          }
+        },
+        {
+          "cpuPercent" : 0.002232239251695172,
+          "process" : {
+            "cpuTimeSeconds" : 0.025216881,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009375383,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.34247341913823,
+      "systemMemoryDeltaBytes" : 1909063680,
+      "systemMemoryUsedBytes" : 78180302848
+    },
+    {
+      "cpuPercent" : 2.521113348764204,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 37.025667625,
+      "physicalFootprintBytes" : 6128917368,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5187517238449835,
+          "process" : {
+            "cpuTimeSeconds" : 34.312747376,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5955850632
+          }
+        },
+        {
+          "cpuPercent" : 0.002288027259037271,
+          "process" : {
+            "cpuTimeSeconds" : 0.025239762,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 7.359766018330548e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009376119,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 302.182428651371,
+      "systemMemoryDeltaBytes" : 1930838016,
+      "systemMemoryUsedBytes" : 78202077184
+    },
+    {
+      "cpuPercent" : 2.5654701229623775,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 38.025656959,
+      "physicalFootprintBytes" : 6115613536,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5624607134944424,
+          "process" : {
+            "cpuTimeSeconds" : 34.338372754,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5942546800
+          }
+        },
+        {
+          "cpuPercent" : 0.0030094094679350577,
+          "process" : {
+            "cpuTimeSeconds" : 0.025269857,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009376119,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 309.2333519865697,
+      "systemMemoryDeltaBytes" : 1908768768,
+      "systemMemoryUsedBytes" : 78180007936
+    },
+    {
+      "cpuPercent" : 2.5372090041324658,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 39.025615625,
+      "physicalFootprintBytes" : 6116465504,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5348133134159494,
+          "process" : {
+            "cpuTimeSeconds" : 34.363715695,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5943398768
+          }
+        },
+        {
+          "cpuPercent" : 0.0023306773996437363,
+          "process" : {
+            "cpuTimeSeconds" : 0.025293159,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.50133168726959e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009376769,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.57894736842104,
+      "systemMemoryDeltaBytes" : 1941061632,
+      "systemMemoryUsedBytes" : 78212300800
+    },
+    {
+      "cpuPercent" : 2.602498327120949,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 40.025642167,
+      "physicalFootprintBytes" : 6117088096,
+      "processes" : [
+        {
+          "cpuPercent" : 2.600113478822608,
+          "process" : {
+            "cpuTimeSeconds" : 34.389719574,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5944021360
+          }
+        },
+        {
+          "cpuPercent" : 0.0023848482983410777,
+          "process" : {
+            "cpuTimeSeconds" : 0.02531701,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009376769,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 409.0452261306533,
+      "systemMemoryDeltaBytes" : 1561804800,
+      "systemMemoryUsedBytes" : 77833043968
+    },
+    {
+      "cpuPercent" : 2.505979544924965,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 41.025678042,
+      "physicalFootprintBytes" : 6114581344,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5036488924589024,
+          "process" : {
+            "cpuTimeSeconds" : 34.414758722,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5941514608
+          }
+        },
+        {
+          "cpuPercent" : 0.00226315963434161,
+          "process" : {
+            "cpuTimeSeconds" : 0.025339644,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.749283172136135e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009377444,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.76536312849163,
+      "systemMemoryDeltaBytes" : 1934655488,
+      "systemMemoryUsedBytes" : 78205894656
+    },
+    {
+      "cpuPercent" : 2.654755131242663,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 42.025655834,
+      "physicalFootprintBytes" : 6116236128,
+      "processes" : [
+        {
+          "cpuPercent" : 2.652454764147856,
+          "process" : {
+            "cpuTimeSeconds" : 34.441282496,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5943169392
+          }
+        },
+        {
+          "cpuPercent" : 0.002300367094806768,
+          "process" : {
+            "cpuTimeSeconds" : 0.025362647,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009377444,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 344.05829596412553,
+      "systemMemoryDeltaBytes" : 1556611072,
+      "systemMemoryUsedBytes" : 77827850240
+    },
+    {
+      "cpuPercent" : 2.553327408821261,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 43.02569725,
+      "physicalFootprintBytes" : 6117645152,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5508580036883983,
+          "process" : {
+            "cpuTimeSeconds" : 34.466792056,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5944578416
+          }
+        },
+        {
+          "cpuPercent" : 0.0023999078027419135,
+          "process" : {
+            "cpuTimeSeconds" : 0.025386647,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.949733012108966e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009378139,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 325.53191489361706,
+      "systemMemoryDeltaBytes" : 1906081792,
+      "systemMemoryUsedBytes" : 78177320960
+    },
+    {
+      "cpuPercent" : 2.502030491312909,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 17084416,
+      "elapsedSeconds" : 44.025756459,
+      "physicalFootprintBytes" : 6115777376,
+      "processes" : [
+        {
+          "cpuPercent" : 2.502030491312909,
+          "process" : {
+            "cpuTimeSeconds" : 34.49181484,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 858009600,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5942710640
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025386647,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009378139,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.37053571428567,
+      "systemMemoryDeltaBytes" : 1906802688,
+      "systemMemoryUsedBytes" : 78178041856
+    },
+    {
+      "cpuPercent" : 2.631906343504525,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 45.02566775,
+      "physicalFootprintBytes" : 6102227808,
+      "processes" : [
+        {
+          "cpuPercent" : 2.631734217865034,
+          "process" : {
+            "cpuTimeSeconds" : 34.518128262,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5929161072
+          }
+        },
+        {
+          "cpuPercent" : 8.90132592374083e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.025387537,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 8.311238025391273e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.00937897,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 323.97987702627165,
+      "systemMemoryDeltaBytes" : 1606549504,
+      "systemMemoryUsedBytes" : 77877788672
+    },
+    {
+      "cpuPercent" : 1.8787555539562422,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 46.025680625,
+      "physicalFootprintBytes" : 6007200608,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8768608970028422,
+          "process" : {
+            "cpuTimeSeconds" : 34.536898288,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5834068336
+          }
+        },
+        {
+          "cpuPercent" : 0.0018946569533999718,
+          "process" : {
+            "cpuTimeSeconds" : 0.009397918,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025387537,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        }
+      ],
+      "systemCPUPercent" : 268.64169927333705,
+      "systemMemoryDeltaBytes" : 1270022144,
+      "systemMemoryUsedBytes" : 77541261312
+    },
+    {
+      "cpuPercent" : 1.6423568414272733,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 47.025744917,
+      "physicalFootprintBytes" : 6006479712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6415423117822718,
+          "process" : {
+            "cpuTimeSeconds" : 34.553315129,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5833347440
+          }
+        },
+        {
+          "cpuPercent" : 0.0007547348097807635,
+          "process" : {
+            "cpuTimeSeconds" : 0.009405466,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 5.979483522085675e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.025388135,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 274.9163879598662,
+      "systemMemoryDeltaBytes" : 1593081856,
+      "systemMemoryUsedBytes" : 77864321024
+    },
+    {
+      "cpuPercent" : 1.665389565725449,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 48.025762125,
+      "physicalFootprintBytes" : 6004398944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.664841760404286,
+          "process" : {
+            "cpuTimeSeconds" : 34.569966424,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5831266672
+          }
+        },
+        {
+          "cpuPercent" : 0.0005478053211630216,
+          "process" : {
+            "cpuTimeSeconds" : 0.009410945,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025388135,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.16071428571433,
+      "systemMemoryDeltaBytes" : 1227980800,
+      "systemMemoryUsedBytes" : 77499219968
+    },
+    {
+      "cpuPercent" : 1.6776279815474835,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 49.025721667,
+      "physicalFootprintBytes" : 6004546400,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6774568362439526,
+          "process" : {
+            "cpuTimeSeconds" : 34.586736552,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5831414128
+          }
+        },
+        {
+          "cpuPercent" : 0.00010142684849826929,
+          "process" : {
+            "cpuTimeSeconds" : 0.025389149,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 6.971845503271046e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009411642,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.06971556051315,
+      "systemMemoryDeltaBytes" : 1590345728,
+      "systemMemoryUsedBytes" : 77861584896
+    },
+    {
+      "cpuPercent" : 1.6456596885671133,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 50.025772334,
+      "physicalFootprintBytes" : 6004218720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6456596885671133,
+          "process" : {
+            "cpuTimeSeconds" : 34.603194174,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5831086448
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025389149,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009411642,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.70194986072423,
+      "systemMemoryDeltaBytes" : 1578893312,
+      "systemMemoryUsedBytes" : 77850132480
+    },
+    {
+      "cpuPercent" : 1.6493752571221978,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 51.025691792,
+      "physicalFootprintBytes" : 6006659936,
+      "processes" : [
+        {
+          "cpuPercent" : 1.649032209252612,
+          "process" : {
+            "cpuTimeSeconds" : 34.619682195,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5833527664
+          }
+        },
+        {
+          "cpuPercent" : 0.00017962506524086275,
+          "process" : {
+            "cpuTimeSeconds" : 0.009413438,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0.00016342280434499966,
+          "process" : {
+            "cpuTimeSeconds" : 0.025390783,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.8255033557047,
+      "systemMemoryDeltaBytes" : 1581498368,
+      "systemMemoryUsedBytes" : 77852737536
+    },
+    {
+      "cpuPercent" : 1.6702317173868533,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 52.025695875,
+      "physicalFootprintBytes" : 6009101152,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6702317173868533,
+          "process" : {
+            "cpuTimeSeconds" : 34.636385071,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5835968880
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025390783,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93848608
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009413438,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.08923591745673,
+      "systemMemoryDeltaBytes" : 1826177024,
+      "systemMemoryUsedBytes" : 78097416192
+    },
+    {
+      "cpuPercent" : 1.6733974816103074,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 53.025704625,
+      "physicalFootprintBytes" : 6006414176,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6723511961275184,
+          "process" : {
+            "cpuTimeSeconds" : 34.653108815,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5833331056
+          }
+        },
+        {
+          "cpuPercent" : 0.0009766864484756076,
+          "process" : {
+            "cpuTimeSeconds" : 0.02540055,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 6.959903431336719e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009414134,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.9130434782609,
+      "systemMemoryDeltaBytes" : 1469120512,
+      "systemMemoryUsedBytes" : 77740359680
+    },
+    {
+      "cpuPercent" : 1.655961602929557,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 54.025690042,
+      "physicalFootprintBytes" : 6006446944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.655961602929557,
+          "process" : {
+            "cpuTimeSeconds" : 34.669667345,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5833363824
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.02540055,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009414134,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.11266034578915,
+      "systemMemoryDeltaBytes" : 1608613888,
+      "systemMemoryUsedBytes" : 77879853056
+    },
+    {
+      "cpuPercent" : 1.6588170726322784,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 55.025717167,
+      "physicalFootprintBytes" : 6009199456,
+      "processes" : [
+        {
+          "cpuPercent" : 1.658666586006777,
+          "process" : {
+            "cpuTimeSeconds" : 34.686255485,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5836116336
+          }
+        },
+        {
+          "cpuPercent" : 7.579326387367409e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.025401308,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 7.469336162754479e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009414881,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75088688
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.463687150838,
+      "systemMemoryDeltaBytes" : 1439055872,
+      "systemMemoryUsedBytes" : 77710295040
+    },
+    {
+      "cpuPercent" : 1.6408611190381155,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 56.025718334,
+      "physicalFootprintBytes" : 6000122720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6406240316926526,
+          "process" : {
+            "cpuTimeSeconds" : 34.702662601,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5827088752
+          }
+        },
+        {
+          "cpuPercent" : 0.00023708734546286359,
+          "process" : {
+            "cpuTimeSeconds" : 0.009417252,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75039536
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025401308,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.4357262103506,
+      "systemMemoryDeltaBytes" : 1583480832,
+      "systemMemoryUsedBytes" : 77854720000
+    },
+    {
+      "cpuPercent" : 1.6556371384889559,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 57.025766,
+      "physicalFootprintBytes" : 6000401248,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6554525519637722,
+          "process" : {
+            "cpuTimeSeconds" : 34.719218335,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5827367280
+          }
+        },
+        {
+          "cpuPercent" : 0.00011729143772506069,
+          "process" : {
+            "cpuTimeSeconds" : 0.025402481,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 6.72950874587536e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009417925,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75039536
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.42713567839195,
+      "systemMemoryDeltaBytes" : 1581203456,
+      "systemMemoryUsedBytes" : 77852442624
+    },
+    {
+      "cpuPercent" : 1.658219907215439,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 58.025725542,
+      "physicalFootprintBytes" : 6000040800,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6581344897938726,
+          "process" : {
+            "cpuTimeSeconds" : 34.735796298,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5827023216
+          }
+        },
+        {
+          "cpuPercent" : 8.54174215664464e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.009418779,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025402481,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.03848298940324,
+      "systemMemoryDeltaBytes" : 1740308480,
+      "systemMemoryUsedBytes" : 78011547648
+    },
+    {
+      "cpuPercent" : 1.6620489527178837,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 24133632,
+      "elapsedSeconds" : 59.025735459,
+      "physicalFootprintBytes" : 6000319328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6616258928201546,
+          "process" : {
+            "cpuTimeSeconds" : 34.752414132,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 865058816,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5827301744
+          }
+        },
+        {
+          "cpuPercent" : 0.00021647947969348223,
+          "process" : {
+            "cpuTimeSeconds" : 0.025404646,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 0.00020658041803561604,
+          "process" : {
+            "cpuTimeSeconds" : 0.009420845,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.72778088317494,
+      "systemMemoryDeltaBytes" : 1777041408,
+      "systemMemoryUsedBytes" : 78048280576
+    },
+    {
+      "cpuPercent" : 1.7479681102182294,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 25915392,
+      "elapsedSeconds" : 60.02571325,
+      "physicalFootprintBytes" : 6000319328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7479681102182294,
+          "process" : {
+            "cpuTimeSeconds" : 34.769891146,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 866840576,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5827301744
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.002364509,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4194976
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025404646,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009420845,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.6963788300836,
+      "systemMemoryDeltaBytes" : 1789198336,
+      "systemMemoryUsedBytes" : 78060437504
+    },
+    {
+      "cpuPercent" : 1.6692165579324754,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 25915392,
+      "elapsedSeconds" : 61.025705542,
+      "physicalFootprintBytes" : 5999369056,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6503235865498542,
+          "process" : {
+            "cpuTimeSeconds" : 34.786393446,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 866840576,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5826384240
+          }
+        },
+        {
+          "cpuPercent" : 0.018400143435333943,
+          "process" : {
+            "cpuTimeSeconds" : 0.0025485,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4162208
+          }
+        },
+        {
+          "cpuPercent" : 0.0002879163271591575,
+          "process" : {
+            "cpuTimeSeconds" : 0.025407525,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 0.00020491162012803026,
+          "process" : {
+            "cpuTimeSeconds" : 0.009422894,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 262.876254180602,
+      "systemMemoryDeltaBytes" : 1463500800,
+      "systemMemoryUsedBytes" : 77734739968
+    },
+    {
+      "cpuPercent" : 1.643636439867722,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 25915392,
+      "elapsedSeconds" : 62.025751167,
+      "physicalFootprintBytes" : 5999024992,
+      "processes" : [
+        {
+          "cpuPercent" : 1.643636439867722,
+          "process" : {
+            "cpuTimeSeconds" : 34.802833236,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 866840576,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5826040176
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.0025485,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4162208
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.025407525,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93799456
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009422894,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.6963788300836,
+      "systemMemoryDeltaBytes" : 1582022656,
+      "systemMemoryUsedBytes" : 77853261824
+    },
+    {
+      "cpuPercent" : 0.689804971574285,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 26198016,
+      "elapsedSeconds" : 62.866981709,
+      "physicalFootprintBytes" : 5995240288,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6896146419479807,
+          "process" : {
+            "cpuTimeSeconds" : 34.808634083,
+            "diskReadBytes" : 42688512,
+            "diskWrittenBytes" : 867123200,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/MacOS/ScreenKite",
+            "identity" : {
+              "pid" : 72229,
+              "startTimeNanoseconds" : 9152350986737
+            },
+            "name" : "ScreenKite",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 5822271856
+          }
+        },
+        {
+          "cpuPercent" : 0.00019032962630428904,
+          "process" : {
+            "cpuTimeSeconds" : 0.025409126,
+            "diskReadBytes" : 225280,
+            "diskWrittenBytes" : 229376,
+            "executablePath" : "/Users/catsjuice/Library/Application Support/com.screenkite.mac/ChatRuntime/current/screenkite-chat-server",
+            "identity" : {
+              "pid" : 91558,
+              "startTimeNanoseconds" : 9189100403926
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 93783072
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.0025485,
+            "diskReadBytes" : 8192,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/ScreenKite.app/Contents/PlugIns/ScreenKiteThumbnailExtension.appex/Contents/MacOS/ScreenKiteThumbnailExtension",
+            "identity" : {
+              "pid" : 90083,
+              "startTimeNanoseconds" : 9187102258651
+            },
+            "name" : "ScreenKiteThumbnailExtension",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 4162208
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.009422894,
+            "diskReadBytes" : 1695744,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "",
+            "identity" : {
+              "pid" : 91083,
+              "startTimeNanoseconds" : 9188930387014
+            },
+            "name" : "screenkite-chat-server",
+            "parentPID" : 72229,
+            "physicalFootprintBytes" : 75023152
+          }
+        }
+      ],
+      "systemCPUPercent" : 239.76143141153082,
+      "systemMemoryDeltaBytes" : 1842954240,
+      "systemMemoryUsedBytes" : 78114193408
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-02T13:40:09Z",
+  "summary" : {
+    "averageCPUPercent" : 2.3557394891616417,
+    "averagePhysicalFootprintBytes" : 5958336283,
+    "averageSystemCPUPercent" : 316.5141263429987,
+    "averageSystemMemoryDeltaBytes" : 1801943552,
+    "cpuTimeSeconds" : 1.4834286880000012,
+    "diskReadBytes" : 81920,
+    "diskWrittenBytes" : 26198016,
+    "durationSeconds" : 62.866981709,
+    "p95CPUPercent" : 3.1293706911716255,
+    "p95SystemCPUPercent" : 399.327731092437,
+    "peakCPUPercent" : 3.3554405520899473,
+    "peakPhysicalFootprintBytes" : 8383634152,
+    "peakProcessCount" : 4,
+    "peakSystemCPUPercent" : 447.4804031354983,
+    "peakSystemMemoryDeltaBytes" : 7145275392,
+    "physicalFootprintDeltaBytes" : 1300496720
+  },
+  "target" : {
+    "build" : "673",
+    "bundleIdentifier" : "com.screenkite.mac",
+    "bundlePath" : "/Applications/ScreenKite.app",
+    "name" : "ScreenKite",
+    "recorderID" : "screenkite",
+    "version" : "1.18.3"
+  }
+}

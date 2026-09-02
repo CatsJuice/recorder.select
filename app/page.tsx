@@ -10,9 +10,11 @@ import { SortRule, TableToolbar } from '../components/table-toolbar';
 import { ThemeToggle } from '../components/theme-toggle';
 import { LocalChatWidget } from '../components/local-chat-widget';
 import { LanguageSwitcher } from '../components/language-switcher';
+import { TechnologyIcon } from '../components/technology-icon';
 import { useI18n } from '../lib/i18n';
 import { displayDomain, fieldDefinitions, fieldGroups, recorders, type FieldDefinition, type FieldGroup, type Recorder } from '../lib/recorders';
 import { formatPerformanceValue, loadPerformanceProfiles, performanceFieldMaximum, performanceFields, performanceMetricGroups, performanceTimelineMaximum, performanceValue, type BenchmarkRun, type PerformanceMetric, type PerformanceProfiles } from '../lib/performance';
+import { subjectiveReviewFor, subjectiveReviewKeys, type SubjectiveReviewKey } from '../lib/subjective-reviews';
 
 const price = (value:number|null|undefined) => value == null ? '/' : value === 0 ? 'Free' : `$${value}`;
 const platformIcons = { win: faWindows, mac: faApple, linux: faLinux } as const;
@@ -24,6 +26,7 @@ const nonWeightedFieldKeys = new Set(['name', 'website', 'score', ...updateMetad
 const weightedFields = fieldDefinitions.filter((field) => !nonWeightedFieldKeys.has(field.key) && field.scoreable !== false);
 const defaultFieldWeights = Object.fromEntries(weightedFields.map((field) => [field.key, 5]));
 const fieldWeightsStorageKey = 'recorder-select:field-weights:v1';
+const tableFullWidthStorageKey = 'recorder-select:table-full-width:v1';
 const generalComparisonFields = fieldDefinitions.filter((field) => field.group === 'general' && !nonWeightedFieldKeys.has(field.key));
 const topLevelGroups = fieldGroups.filter((group) => !group.parentKey && group.key !== 'general');
 const childGroupsOf = (group: FieldGroup) => fieldGroups.filter((candidate) => candidate.parentKey === group.key);
@@ -125,7 +128,7 @@ const updateWithTransition = (kind: 'selection' | 'compare', update: () => void)
 };
 
 export default function Home() {
-  const { t, fieldLabel, groupLabel } = useI18n();
+  const { locale, t, fieldLabel, fieldUnit, groupLabel } = useI18n();
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Record<string, string>>(() => ({...defaultFilters}));
   const [sortRules, setSortRules] = useState<SortRule[]>([{ id: 'score-default', key: 'score', direction: 'desc' }]);
@@ -137,8 +140,11 @@ export default function Home() {
   const [performanceStatus, setPerformanceStatus] = useState<'idle' | 'loading' | 'loaded' | 'error'>('idle');
   const [fieldWeights, setFieldWeights] = useState<Record<string, number>>(defaultFieldWeights);
   const [fieldWeightsHydrated, setFieldWeightsHydrated] = useState(false);
+  const [tableFullWidth, setTableFullWidth] = useState(false);
+  const [tableFullWidthHydrated, setTableFullWidthHydrated] = useState(false);
   const [chatHeight, setChatHeight] = useState(58);
   const [chatExpanded, setChatExpanded] = useState(false);
+  const [subjectiveReviewsExpanded, setSubjectiveReviewsExpanded] = useState(false);
   useEffect(() => {
     if (!expandedGroups.performance || performanceStatus !== 'idle') return;
     setPerformanceStatus('loading');
@@ -173,6 +179,23 @@ export default function Home() {
       // Keep the current session usable when browser storage is unavailable.
     }
   }, [fieldWeights, fieldWeightsHydrated]);
+  useEffect(() => {
+    try {
+      setTableFullWidth(window.localStorage.getItem(tableFullWidthStorageKey) === 'true');
+    } catch {
+      setTableFullWidth(false);
+    } finally {
+      setTableFullWidthHydrated(true);
+    }
+  }, []);
+  useEffect(() => {
+    if (!tableFullWidthHydrated) return;
+    try {
+      window.localStorage.setItem(tableFullWidthStorageKey, String(tableFullWidth));
+    } catch {
+      // Keep the current session usable when browser storage is unavailable.
+    }
+  }, [tableFullWidth, tableFullWidthHydrated]);
   const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, weightedFields.reduce((total, field) => total + scoreBaseForField(field, recorder) * (fieldWeights[field.key] ?? 5), 0)])), [fieldWeights]);
   const orderedRecorders = useMemo(() => [...recorders].sort((a,b) => {
       for (const rule of sortRules) {
@@ -283,7 +306,8 @@ export default function Home() {
     if (preview.type === 'boolean') return preview.value === null || preview.value === undefined
       ? <span className="unknown-value">{t('unknown')}</span>
       : <span className={preview.value?'yes':'no'}><FontAwesomeIcon icon={preview.value?faCheck:faMinus} /></span>;
-    return <span className="field-group-summary">{preview.label}</span>;
+    const previewUnitField = preview.unitFieldKey ? fieldDefinitions.find((field) => field.key === preview.unitFieldKey) : undefined;
+    return <span className="field-group-summary">{preview.label}{previewUnitField && fieldUnit(previewUnitField)}</span>;
   };
   const renderFieldValue = (field: FieldDefinition, app: Recorder) => {
     const performanceField = performanceFields[field.key];
@@ -316,10 +340,14 @@ export default function Home() {
       }
       return values.join(', ');
     }
-    if (field.type === 'price') return <>{price(value as number|null|undefined)}{value != null && Number(value) > 0 && field.unit && <small>{field.unit}</small>}</>;
+    if (field.type === 'price') return <>{price(value as number|null|undefined)}{value != null && Number(value) > 0 && field.unit && <small>{fieldUnit(field)}</small>}</>;
     if (field.type === 'select') return value == null ? <span className="unknown-value">{t('unknown')}</span> : field.options?.find((option) => option.value === value)?.label ?? String(value);
-    if (field.type === 'select-text') return value == null || value === '' ? <span className="unknown-value">{t('unknown')}</span> : field.options?.find((option) => option.value === String(value).toLowerCase())?.label ?? String(value);
-    if (field.type === 'number') return value == null ? <span className="unknown-value">{t('unknown')}</span> : <>{String(value)}{field.unit&&<small>{field.unit}</small>}</>;
+    if (field.type === 'select-text') {
+      if (value == null || value === '') return <span className="unknown-value">{t('unknown')}</span>;
+      const label = field.options?.find((option) => option.value === String(value).toLowerCase())?.label ?? String(value);
+      return field.key === 'technologyApproach' ? <span className="technology-approach-value"><TechnologyIcon technology={String(value)} /><span>{label}</span></span> : label;
+    }
+    if (field.type === 'number') return value == null ? <span className="unknown-value">{t('unknown')}</span> : <>{String(value)}{field.unit&&<small>{fieldUnit(field)}</small>}</>;
     return value == null || value === '' ? <span className="unknown-value">{t('unknown')}</span> : String(value);
   };
   const isBestValue = (field: FieldDefinition, app: Recorder) => {
@@ -387,12 +415,26 @@ export default function Home() {
       {directFields.map((field)=>renderFieldRow(field, level + 1, childrenVisible))}
     </Fragment>;
   };
+  const subjectiveReviewLabel = (key: SubjectiveReviewKey) => t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary');
+  const renderSubjectiveReviews = () => <Fragment>
+    <tr className={`field-group-row comparison-field-row subjective-review-group ${subjectiveReviewsExpanded?'is-expanded':'is-collapsed'}`}>
+      <th><button type="button" className="field-group-toggle" aria-expanded={subjectiveReviewsExpanded} onClick={()=>setSubjectiveReviewsExpanded((current)=>!current)}><FontAwesomeIcon className={subjectiveReviewsExpanded?'expanded':''} icon={faChevronRight} aria-hidden="true" /><span>{t('subjectiveReview')}</span><small className="not-scored-badge">{t('notScored')}</small></button></th>
+      {orderedRecorders.map((app)=><td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id)} />)}
+    </tr>
+    {subjectiveReviewKeys.map((key)=><tr key={key} aria-hidden={!subjectiveReviewsExpanded} className={`comparison-field-row field-child-row subjective-review-row ${subjectiveReviewsExpanded?'is-expanded':'is-tree-collapsed'}`}>
+      <th><div className="subjective-review-collapse"><div className="subjective-review-clip"><div className="subjective-review-content">{subjectiveReviewLabel(key)}</div></div></div></th>
+      {orderedRecorders.map((app)=>{const review=subjectiveReviewFor(locale,app.id,key);return <td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id)}><div className="subjective-review-collapse"><div className="subjective-review-clip"><div className="subjective-review-content">{review ?? <span className="subjective-review-empty">—</span>}</div></div></div></td>})}
+    </tr>)}
+  </Fragment>;
 
   return <main>
-    <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
-    <section className="workspace shell" id="compare">
-      <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} />
+    <div className={`page-header-slot ${tableFullWidth ? 'is-hidden' : ''}`} aria-hidden={tableFullWidth} inert={tableFullWidth}>
+      <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
+    </div>
+    <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
+      <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
       <div className="table-wrap comparison-surface" style={{paddingBottom:tableBottomSafeArea,scrollPaddingBottom:tableBottomSafeArea}}><table className="comparison-table"><thead><tr><th className="feature-head"><span>{t('recorders',{count:visible.length})}</span><small>{compareMode ? t('selectedRecorders') : t('selectToCompare')}</small><button type="button" className="reset-weights" onClick={()=>setFieldWeights({...defaultFieldWeights})}><FontAwesomeIcon icon={faArrowRotateLeft} aria-hidden="true" />{t('resetWeights')}</button></th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const isSelected=selected.includes(app.id);return <th key={app.id} data-recorder-id={app.id} className={productCellClass(app.id)} aria-hidden={!shown}><div className={`select-app ${isSelected?'selected':''}`}><button type="button" tabIndex={shown?0:-1} className="select-app-hit" onClick={()=>toggleCompare(app.id)} aria-label={t('compareProduct',{name:app.name})} /><span className="check">{isSelected&&<FontAwesomeIcon icon={faCheck} />}</span><span className="app-icon" style={{background:app.icon ? 'transparent' : app.accent}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span><strong className="app-name">{app.name}</strong><a className="app-domain-link" href={app.website} target="_blank" rel="noreferrer" aria-label={t('visitWebsite',{name:app.name})}>{displayDomain(app.website)}</a><span className="app-score"><strong>{recorderScores[app.id].toFixed(1)}</strong> {t('score')}</span></div></th>})}</tr></thead><tbody>
+        {renderSubjectiveReviews()}
         {generalComparisonFields.map((field) => renderFieldRow(field))}
         {topLevelGroups.map((group) => renderGroupRows(group))}
         <tr aria-hidden={isUpdateMetadataHidden} className={`comparison-field-row ${isUpdateMetadataHidden?'is-field-hidden':'is-expanded'}`}><th>{t('lastUpdated')}</th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const updatedAt=app.lastUpdatedAt;const version=app.lastUpdatedVersion;return <td key={app.id} data-recorder-id={app.id} aria-hidden={!shown} className={productCellClass(app.id)}><div className="last-updated-cell">{updatedAt?<time dateTime={updatedAt}>{updatedAt}</time>:<span className="unknown-value">{t('unknown')}</span>}<small>{version?t('version',{version}):t('versionUnknown')}</small></div></td>})}</tr>

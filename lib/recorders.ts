@@ -567,7 +567,7 @@ export const recorders: Recorder[] = [
     supportsSeparatePressReleaseSounds: true,
     supportsClickEffects: true,
     supportsTranscription: true,
-    transcriptionProviders: ['apple', 'local-whisper-kit', 'byok', 'official-api'],
+    transcriptionProviders: ['apple', 'local-whisper-kit', 'byok'],
     supportsSubtitleEditing: true,
     supportsWordLevelEditing: true,
     subtitleOutputType: 'burned-in',

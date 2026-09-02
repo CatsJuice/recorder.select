@@ -25,12 +25,16 @@ const sources = {
   },
 };
 
-const workloadLabels = {
+const recorderWorkloadLabels = {
   'screen-studio': '5K',
   shotbase: '5K',
   screencam: '5K',
   'screen-sage-pro': '2K limit',
 };
+
+const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
+  ? '1080p · 60 fps · Balanced compression'
+  : recorderWorkloadLabels[recorderId];
 
 const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).map(async ([recorderId, scenarios]) => {
   const runs = await Promise.all(Object.entries(scenarios).map(async ([scenario, source]) => {
@@ -38,7 +42,7 @@ const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).ma
     if (raw.scenario !== scenario) throw new Error(`Expected ${scenario} in ${source}`);
     return [scenario, {
       scenario: raw.scenario,
-      workloadLabel: workloadLabels[recorderId],
+      workloadLabel: workloadLabelFor(recorderId, scenario),
       summary: {
         durationSeconds: raw.summary.durationSeconds,
         averageCPUPercent: raw.summary.averageCPUPercent,

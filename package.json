@@ -15,7 +15,8 @@
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern public/vendor",
     "test:mac": "swift test --package-path apps/benchmark-macos",
-    "build:mac": "scripts/build-macos-app.sh"
+    "build:mac": "scripts/build-macos-app.sh",
+    "test:table": "node --test tests/canvas-table.test.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

@@ -1,23 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { Fragment, useEffect, useMemo, useState, type CSSProperties } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRotateLeft, faCheck, faChevronRight, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { faApple, faLinux, faWindows } from '@fortawesome/free-brands-svg-icons';
 import { SortRule, TableToolbar } from '../components/table-toolbar';
 import { ThemeToggle } from '../components/theme-toggle';
 import { LocalChatWidget } from '../components/local-chat-widget';
 import { LanguageSwitcher } from '../components/language-switcher';
-import { TechnologyIcon } from '../components/technology-icon';
+import { CanvasComparisonTable } from '../components/canvas-comparison-table';
 import { useI18n } from '../lib/i18n';
-import { displayDomain, fieldDefinitions, fieldGroups, recorders, type FieldDefinition, type FieldGroup, type Recorder } from '../lib/recorders';
-import { formatPerformanceValue, loadPerformanceProfiles, performanceFieldMaximum, performanceFields, performanceMetricGroups, performanceTimelineMaximum, performanceValue, type BenchmarkRun, type PerformanceMetric, type PerformanceProfiles } from '../lib/performance';
-import { subjectiveReviewFor, subjectiveReviewKeys, type SubjectiveReviewKey } from '../lib/subjective-reviews';
+import { createScoreContributions } from '../lib/recorder-scoring';
+import { fieldDefinitions, fieldGroups, recorders, type FieldDefinition } from '../lib/recorders';
+import { loadPerformanceProfiles, performanceFields, performanceValue, type PerformanceProfiles } from '../lib/performance';
 
-const price = (value:number|null|undefined) => value == null ? '/' : value === 0 ? 'Free' : `$${value}`;
-const platformIcons = { win: faWindows, mac: faApple, linux: faLinux } as const;
 const filterableFields = fieldDefinitions.filter((field) => field.type === 'boolean' || field.type === 'select' || field.type === 'multiselect');
 const defaultFilters = Object.fromEntries(filterableFields.map((field) => [field.key, 'any']));
 const updateMetadataKeys = ['lastUpdatedAt', 'lastUpdatedVersion'] as const;
@@ -27,96 +22,15 @@ const weightedFields = fieldDefinitions.filter((field) => !nonWeightedFieldKeys.
 const defaultFieldWeights = Object.fromEntries(weightedFields.map((field) => [field.key, 5]));
 const fieldWeightsStorageKey = 'recorder-select:field-weights:v1';
 const tableFullWidthStorageKey = 'recorder-select:table-full-width:v1';
-const generalComparisonFields = fieldDefinitions.filter((field) => field.group === 'general' && !nonWeightedFieldKeys.has(field.key));
-const topLevelGroups = fieldGroups.filter((group) => !group.parentKey && group.key !== 'general');
-const childGroupsOf = (group: FieldGroup) => fieldGroups.filter((candidate) => candidate.parentKey === group.key);
-const directFieldsOf = (group: FieldGroup) => fieldDefinitions.filter((field) => field.group === group.key);
-const descendantFieldsOf = (group: FieldGroup): FieldDefinition[] => [
-  ...directFieldsOf(group),
-  ...childGroupsOf(group).flatMap(descendantFieldsOf),
-];
-const tieredBase = (value: number, values: number[], lowerIsBetter: boolean) => {
-  const sorted = [...new Set(values)].sort((left, right) => left - right);
-  const index = sorted.indexOf(value);
-  if (index < 0) return 0;
-  if (sorted.length === 1) return 1;
-  const tier = Math.round((index / (sorted.length - 1)) * 9);
-  return lowerIsBetter ? 1 - tier / 10 : .1 + tier / 10;
-};
-const scoreBaseForField = (field: FieldDefinition, recorder: Recorder) => {
-  const value = recorder[field.key];
-  if (value === null || value === undefined || value === '') return 0;
-  if (field.key === 'technologyApproach') return 0;
-  if (field.type === 'price' && typeof value === 'number') {
-    const knownPrices = recorders.map((item) => item[field.key]).filter((item): item is number => typeof item === 'number');
-    return value === 0 ? 1 : tieredBase(value, knownPrices, true);
-  }
-  if (field.key === 'appSizeMB' && typeof value === 'number') {
-    const knownSizes = recorders.map((item) => item.appSizeMB).filter((item): item is number => typeof item === 'number');
-    return tieredBase(value, knownSizes, true);
-  }
-  if (field.key === 'platforms' && Array.isArray(value)) return Math.min(value.length, 3) / 3;
-  if (field.key === 'requiresRegistration' && typeof value === 'boolean') return value ? .5 : 1;
-  if (field.type === 'boolean') return value === true ? 1 : 0;
-  if (field.type === 'multiselect' && Array.isArray(value)) return field.options?.length ? Math.min(value.length / field.options.length, 1) : 0;
-  if (field.type === 'select') {
-    const optionIndex = field.options?.findIndex((option) => option.value === value) ?? -1;
-    const option = optionIndex >= 0 ? field.options?.[optionIndex] : undefined;
-    if (!option || !field.options?.length) return 0;
-    const rank = option.rank ?? optionIndex + 1;
-    const maxRank = Math.max(...field.options.map((item, index) => item.rank ?? index + 1));
-    return maxRank > 0 ? rank / maxRank : 0;
-  }
-  if (field.type === 'number' && typeof value === 'number') {
-    const knownValues = recorders.map((item) => item[field.key]).filter((item): item is number => typeof item === 'number');
-    return tieredBase(value, knownValues, !field.higherIsBetter);
-  }
-  return 0;
-};
+const scoreContributions = createScoreContributions(recorders, weightedFields);
+
 type TransitionDocument = Document & {
   startViewTransition?: (update: () => void) => { finished: Promise<void> };
 };
 
-function PerformanceSparkline({ run, metric, maximum }: { run: BenchmarkRun; metric: PerformanceMetric; maximum: number }) {
-  const width = 160;
-  const height = 44;
-  const inset = 2;
-  const duration = Math.max(run.summary.durationSeconds, 1);
-  const ceiling = Math.max(maximum, 1);
-  const hasSystemMetric = metric === 'cpu'
-    ? run.samples.some((sample) => typeof sample.systemCPUPercent === 'number')
-    : run.samples.some((sample) => typeof sample.systemMemoryDeltaBytes === 'number');
-  const timelineSamples = hasSystemMetric
-    ? run.samples.filter((sample) => metric === 'cpu'
-      ? typeof sample.systemCPUPercent === 'number'
-      : typeof sample.systemMemoryDeltaBytes === 'number')
-    : run.samples;
-  if (timelineSamples.length === 0) return <span className="unknown-value">—</span>;
-  const points = timelineSamples.map((sample) => {
-    const value = metric === 'cpu'
-      ? hasSystemMetric ? sample.systemCPUPercent! : sample.cpuPercent
-      : hasSystemMetric ? sample.systemMemoryDeltaBytes! : sample.physicalFootprintBytes;
-    const x = inset + (sample.elapsedSeconds / duration) * (width - inset * 2);
-    const y = height - inset - Math.min(value / ceiling, 1) * (height - inset * 2);
-    return [x, y] as const;
-  });
-  const line = points.map(([x, y]) => `${x.toFixed(2)},${y.toFixed(2)}`).join(' ');
-  const area = points.length > 0 ? `M ${points[0][0]} ${height} L ${points.map(([x, y]) => `${x} ${y}`).join(' L ')} L ${points.at(-1)?.[0] ?? width} ${height} Z` : '';
-  const peak = metric === 'cpu'
-    ? run.summary.peakSystemCPUPercent ?? run.summary.peakCPUPercent
-    : run.summary.peakSystemMemoryDeltaBytes ?? run.summary.peakPhysicalFootprintBytes;
-  const workloadPrefix = run.workloadLabel ? `${run.workloadLabel} workload, ` : '';
-  const label = metric === 'cpu' ? `${workloadPrefix}CPU timeline, peak ${peak.toFixed(2)}%` : `${workloadPrefix}memory timeline, peak ${(peak / 1024 ** 3).toFixed(2)} GiB`;
-  return <span className="performance-sparkline-wrap">
-    {run.workloadLabel && <small className="performance-workload-label">{run.workloadLabel}</small>}
-    <svg className={`performance-sparkline ${metric}`} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" role="img" aria-label={label}>
-      <path className="performance-sparkline-area" d={area} />
-      <polyline className="performance-sparkline-line" points={line} />
-    </svg>
-  </span>;
-}
-
 const updateWithTransition = (kind: 'selection' | 'compare', update: () => void) => {
+  // Canvas owns layout transitions; a View Transition bitmap would cover its live frames.
+  if (kind === 'compare') { update(); return; }
   const transitionDocument = document as TransitionDocument;
   if (!transitionDocument.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     update();
@@ -128,7 +42,7 @@ const updateWithTransition = (kind: 'selection' | 'compare', update: () => void)
 };
 
 export default function Home() {
-  const { locale, t, fieldLabel, fieldUnit, groupLabel } = useI18n();
+  const { t } = useI18n();
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Record<string, string>>(() => ({...defaultFilters}));
   const [sortRules, setSortRules] = useState<SortRule[]>([{ id: 'score-default', key: 'score', direction: 'desc' }]);
@@ -142,11 +56,12 @@ export default function Home() {
   const [fieldWeightsHydrated, setFieldWeightsHydrated] = useState(false);
   const [tableFullWidth, setTableFullWidth] = useState(false);
   const [tableFullWidthHydrated, setTableFullWidthHydrated] = useState(false);
+  const [tableInitialized, setTableInitialized] = useState(false);
   const [chatHeight, setChatHeight] = useState(58);
   const [chatExpanded, setChatExpanded] = useState(false);
   const [subjectiveReviewsExpanded, setSubjectiveReviewsExpanded] = useState(false);
   useEffect(() => {
-    if (!expandedGroups.performance || performanceStatus !== 'idle') return;
+    if ((!expandedGroups.performance && !sortRules.some(rule => performanceFields[rule.key])) || performanceStatus !== 'idle') return;
     setPerformanceStatus('loading');
     loadPerformanceProfiles()
       .then((profiles) => {
@@ -156,7 +71,7 @@ export default function Home() {
       .catch(() => {
         setPerformanceStatus('error');
       });
-  }, [expandedGroups.performance, performanceStatus]);
+  }, [expandedGroups.performance, performanceStatus, sortRules]);
   useEffect(() => {
     try {
       const stored = JSON.parse(window.localStorage.getItem(fieldWeightsStorageKey) ?? '{}') as Record<string, unknown>;
@@ -190,13 +105,24 @@ export default function Home() {
   }, []);
   useEffect(() => {
     if (!tableFullWidthHydrated) return;
+    document.documentElement.dataset.tableFullWidth = String(tableFullWidth);
     try {
       window.localStorage.setItem(tableFullWidthStorageKey, String(tableFullWidth));
     } catch {
       // Keep the current session usable when browser storage is unavailable.
     }
   }, [tableFullWidth, tableFullWidthHydrated]);
-  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, weightedFields.reduce((total, field) => total + scoreBaseForField(field, recorder) * (fieldWeights[field.key] ?? 5), 0)])), [fieldWeights]);
+  useEffect(() => {
+    if (!tableFullWidthHydrated || !fieldWeightsHydrated) return;
+    // Commit and paint restored preferences with both CSS and Canvas transitions disabled.
+    // Enabling motion on the following frame must not animate the hydration itself.
+    let paintedFrame = 0;
+    const restoredFrame = requestAnimationFrame(() => {
+      paintedFrame = requestAnimationFrame(() => setTableInitialized(true));
+    });
+    return () => { cancelAnimationFrame(restoredFrame); cancelAnimationFrame(paintedFrame); };
+  }, [tableFullWidthHydrated, fieldWeightsHydrated]);
+  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, weightedFields.reduce((total, field, index) => total + scoreContributions[recorder.id][index] * (fieldWeights[field.key] ?? 5), 0)])), [fieldWeights]);
   const orderedRecorders = useMemo(() => [...recorders].sort((a,b) => {
       for (const rule of sortRules) {
         const left = rule.key === 'score' ? recorderScores[a.id] : performanceValue(performanceProfiles, a.id, rule.key) ?? a[rule.key];
@@ -217,8 +143,9 @@ export default function Home() {
       }
       return 0;
     }), [sortRules, recorderScores, performanceProfiles]);
+  const comparisonSelection = compareMode ? selected : null;
   const visible = useMemo(() => orderedRecorders
-    .filter((app) => !compareMode || selected.includes(app.id))
+    .filter((app) => !comparisonSelection || comparisonSelection.includes(app.id))
     .filter((app) => app.name.toLowerCase().includes(query.toLowerCase()))
     .filter((app) => filterableFields.every((field) => {
       const filter = filters[field.key] ?? 'any';
@@ -228,8 +155,7 @@ export default function Home() {
       if (field.type === 'boolean') return typeof value === 'boolean' && value === (filter === 'yes');
       if (field.type === 'multiselect') return Array.isArray(value) && value.includes(filter);
       return field.type === 'select' && value === filter;
-    })), [orderedRecorders, query, filters, compareMode, selected, performanceProfiles]);
-  const visibleIds = useMemo(() => new Set(visible.map((app) => app.id)), [visible]);
+    })), [orderedRecorders, query, filters, comparisonSelection, performanceProfiles]);
   const identicalFieldKeys = useMemo(() => {
     const keys = new Set<FieldDefinition['key']>();
     if (!compareMode || visible.length < 2) return keys;
@@ -245,13 +171,13 @@ export default function Home() {
     if (!compareMode) setHideIdentical(false);
   }, [compareMode]);
 
-  const toggleCompare = (id:string) => updateWithTransition('selection', () => setSelected((current) => {
+  const toggleCompare = (id:string) => updateWithTransition(compareMode ? 'compare' : 'selection', () => setSelected((current) => {
     const next = current.includes(id) ? current.filter((item) => item !== id) : [...current, id];
     if (next.length === 0) setCompareMode(false);
     return next;
   }));
   const clearSelection = () => {
-    updateWithTransition('selection', () => {
+    updateWithTransition(compareMode ? 'compare' : 'selection', () => {
       setSelected([]);
       setCompareMode(false);
     });
@@ -285,160 +211,19 @@ export default function Home() {
   const displayedSelection = selected.length > 4 ? selected.slice(0, 3) : selected;
   const overflowSelectionCount = selected.length > 4 ? selected.length - 3 : 0;
   const tableBottomSafeArea = Math.max(64, chatHeight + (selected.length > 0 ? 72 : 16));
-  const productCellClass = (id: string, best = false, performanceExtreme?: 'low' | 'high' | null) => ['product-column', !visibleIds.has(id) && 'column-hidden', best && visibleIds.has(id) && 'best-value', performanceExtreme && visibleIds.has(id) && `performance-${performanceExtreme}`].filter(Boolean).join(' ');
-  const isFieldHidden = (key: FieldDefinition['key']) => compareMode && hideIdentical && identicalFieldKeys.has(key);
-  const isUpdateMetadataHidden = compareMode && hideIdentical && updateMetadataKeys.every((key) => identicalFieldKeys.has(key));
-  const isGroupHidden = (fields: FieldDefinition[]) => compareMode && hideIdentical && visible.length > 1 && fields.every((field) => identicalFieldKeys.has(field.key));
-  const toggleGroup = (group: FieldGroup) => {
-    if (group.key === 'performance' && !expandedGroups.performance && performanceStatus === 'error') setPerformanceStatus('idle');
-    setExpandedGroups((current) => ({ ...current, [group.key]: !current[group.key] }));
+  const toggleGroup = (id: string) => {
+    if (id === 'subjectiveReviews') { setSubjectiveReviewsExpanded(current => !current); return; }
+    if (id === 'performance' && !expandedGroups.performance && performanceStatus === 'error') setPerformanceStatus('idle');
+    setExpandedGroups(current => ({ ...current, [id]: !current[id] }));
   };
-  const performanceFieldMaxima = useMemo(() => Object.fromEntries(Object.keys(performanceFields).map((key) => [key, performanceFieldMaximum(performanceProfiles, key, visible.map((item) => item.id))])), [performanceProfiles, visible]);
-  const performanceTimelineMaxima = useMemo(() => Object.fromEntries(Object.values(performanceMetricGroups).map(({scenario, metric}) => [`${scenario}:${metric}`, performanceTimelineMaximum(performanceProfiles, scenario, metric)])), [performanceProfiles]);
-  const renderWeightedFieldLabel = (field: FieldDefinition) => {
-    if (field.scoreable === false) return <th className="field-label-cell performance-field-label"><span>{fieldLabel(field)}</span></th>;
-    const weight = fieldWeights[field.key] ?? 5;
-    return <th className="field-label-cell"><div className="field-label-line"><span>{fieldLabel(field)}</span><small>× {weight}</small></div><div className="field-weight-panel"><header><span>{t('weight')}</span><strong>{weight}</strong></header><div className="weight-anchor-labels" aria-hidden="true">{Array.from({length:11},(_,value)=><span key={value} style={{gridColumnStart:value + 1}}>{value}</span>)}</div><input type="range" min="0" max="10" step="0.5" value={weight} style={{'--weight-progress':`${weight * 10}%`} as CSSProperties} aria-label={`${fieldLabel(field)} ${t('weight')}`} onPointerUp={(event)=>event.currentTarget.blur()} onPointerCancel={(event)=>event.currentTarget.blur()} onChange={(event)=>setFieldWeights((current)=>({...current,[field.key]:Number(event.target.value)}))}/></div></th>;
-  };
-  const renderGroupPreview = (group: FieldGroup, app: Recorder) => {
-    const preview = group.getCollapsedPreview?.(app);
-    if (!preview) return null;
-    if (preview.type === 'boolean') return preview.value === null || preview.value === undefined
-      ? <span className="unknown-value">{t('unknown')}</span>
-      : <span className={preview.value?'yes':'no'}><FontAwesomeIcon icon={preview.value?faCheck:faMinus} /></span>;
-    const previewUnitField = preview.unitFieldKey ? fieldDefinitions.find((field) => field.key === preview.unitFieldKey) : undefined;
-    return <span className="field-group-summary">{preview.label}{previewUnitField && fieldUnit(previewUnitField)}</span>;
-  };
-  const renderFieldValue = (field: FieldDefinition, app: Recorder) => {
-    const performanceField = performanceFields[field.key];
-    if (performanceField) {
-      const run = performanceProfiles[app.id]?.[performanceField.scenario];
-      const value = performanceValue(performanceProfiles, app.id, field.key);
-      if (performanceStatus === 'loading' || performanceStatus === 'idle') return <span className="performance-loading" aria-label="Loading performance data" />;
-      if (value === undefined) return <span className="unknown-value">{performanceStatus === 'error' ? 'Load failed' : t('unknown')}</span>;
-      const maximum = performanceFieldMaxima[field.key] ?? 0;
-      const height = maximum > 0 ? Math.min(100, value / maximum * 100) : 0;
-      return <div className="performance-bar-cell" style={{'--performance-bar-height':`${height}%`} as CSSProperties}><span>{formatPerformanceValue(value, performanceField.format)}</span>{run?.workloadLabel && <small className="performance-workload-label">{run.workloadLabel}</small>}</div>;
-    }
-    const value = app[field.key];
-    if (field.type === 'boolean') {
-      if (value === null || value === undefined) return <span className="unknown-value">{t('unknown')}</span>;
-      const supported = value === true;
-      return <span className={supported?'yes':'no'}><FontAwesomeIcon icon={supported?faCheck:faMinus} /></span>;
-    }
-    if (field.type === 'multiselect') {
-      if (!Array.isArray(value)) return <span className="unknown-value">{t('unknown')}</span>;
-      const values = value as string[];
-      if (values.length === 0) return '—';
-      if (field.key === 'platforms') {
-        const labels = values.map((item) => field.options?.find((option) => option.value === item)?.label ?? item);
-        return <span className="platform-list" aria-label={labels.join(', ')}>{values.map((item) => {
-          const label = field.options?.find((option) => option.value === item)?.label ?? item;
-          const icon = platformIcons[item as keyof typeof platformIcons];
-          return icon ? <span key={item} title={label} aria-hidden="true"><FontAwesomeIcon icon={icon} /></span> : null;
-        })}</span>;
-      }
-      return values.join(', ');
-    }
-    if (field.type === 'price') return <>{price(value as number|null|undefined)}{value != null && Number(value) > 0 && field.unit && <small>{fieldUnit(field)}</small>}</>;
-    if (field.type === 'select') return value == null ? <span className="unknown-value">{t('unknown')}</span> : field.options?.find((option) => option.value === value)?.label ?? String(value);
-    if (field.type === 'select-text') {
-      if (value == null || value === '') return <span className="unknown-value">{t('unknown')}</span>;
-      const label = field.options?.find((option) => option.value === String(value).toLowerCase())?.label ?? String(value);
-      return field.key === 'technologyApproach' ? <span className="technology-approach-value"><TechnologyIcon technology={String(value)} /><span>{label}</span></span> : label;
-    }
-    if (field.type === 'number') return value == null ? <span className="unknown-value">{t('unknown')}</span> : <>{String(value)}{field.unit&&<small>{fieldUnit(field)}</small>}</>;
-    return value == null || value === '' ? <span className="unknown-value">{t('unknown')}</span> : String(value);
-  };
-  const isBestValue = (field: FieldDefinition, app: Recorder) => {
-    if (!compareMode || visible.length < 2) return false;
-    const value = performanceValue(performanceProfiles, app.id, field.key) ?? app[field.key];
-    if (value === null || value === undefined) return false;
-    const performanceField = performanceFields[field.key];
-    if (performanceField) return false;
-    if (field.type === 'boolean') return Boolean(value) === (field.booleanBest ?? true);
-    if (field.type === 'multiselect') {
-      const counts = visible.map((item) => Array.isArray(item[field.key]) ? item[field.key].length : 0);
-      return Array.isArray(value) && value.length === Math.max(...counts);
-    }
-    if (field.type === 'select') {
-      const rank = field.options?.find((option) => option.value === value)?.rank;
-      const ranks = visible.map((item) => field.options?.find((option) => option.value === item[field.key])?.rank).filter((item): item is number => item !== undefined);
-      return rank !== undefined && ranks.length > 0 && rank === Math.max(...ranks);
-    }
-    if (field.type === 'price' || field.type === 'number') {
-      const values = visible.map((item) => performanceValue(performanceProfiles, item.id, field.key) ?? item[field.key]).filter((item): item is number => typeof item === 'number');
-      if (values.length === 0) return false;
-      const best = field.type === 'price' || !field.higherIsBetter ? Math.min(...values) : Math.max(...values);
-      return Number(value) === best;
-    }
-    return false;
-  };
-  const performanceExtremeFor = (field: FieldDefinition, app: Recorder): 'low' | 'high' | null => {
-    const performanceField = performanceFields[field.key];
-    if (!performanceField) return null;
-    const currentRun = performanceProfiles[app.id]?.[performanceField.scenario];
-    const currentValue = performanceValue(performanceProfiles, app.id, field.key);
-    if (!currentRun || typeof currentValue !== 'number') return null;
-    const comparableValues = visible.flatMap((item) => {
-      const run = performanceProfiles[item.id]?.[performanceField.scenario];
-      const value = performanceValue(performanceProfiles, item.id, field.key);
-      return run?.workloadLabel === currentRun.workloadLabel && typeof value === 'number' ? [value] : [];
-    });
-    if (comparableValues.length < 2) return null;
-    const lowest = Math.min(...comparableValues);
-    const highest = Math.max(...comparableValues);
-    if (lowest === highest) return null;
-    if (currentValue === lowest) return 'low';
-    if (currentValue === highest) return 'high';
-    return null;
-  };
-  const renderFieldRow = (field: FieldDefinition, level = 0, treeVisible = true) => {
-    const fieldHidden = isFieldHidden(field.key);
-    const rowVisible = treeVisible && !fieldHidden;
-    return <tr key={field.key} aria-hidden={!rowVisible} className={`${level > 0 ? 'field-child-row' : ''} comparison-field-row field-level-${level} ${performanceFields[field.key]?'performance-value-row':''} ${treeVisible?'is-expanded':'is-collapsed is-tree-collapsed'} ${fieldHidden?'is-field-hidden':''}`}>{renderWeightedFieldLabel(field)}{orderedRecorders.map((app)=><td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id,isBestValue(field,app),performanceExtremeFor(field,app))}>{renderFieldValue(field,app)}</td>)}</tr>;
-  };
-  const renderGroupRows = (group: FieldGroup, level = 0, ancestorExpanded = true) => {
-    const expanded = expandedGroups[group.key];
-    const directFields = directFieldsOf(group);
-    const childGroups = childGroupsOf(group);
-    const allFields = descendantFieldsOf(group);
-    const hidden = isGroupHidden(allFields);
-    const childrenVisible = ancestorExpanded && expanded && !hidden;
-    const performanceMetric = performanceMetricGroups[group.key];
-    return <Fragment key={group.key}>
-      <tr aria-hidden={!ancestorExpanded||hidden} className={`field-group-row comparison-field-row group-level-${level} ${performanceMetric?'performance-metric-row':''} ${expanded?'is-expanded':'is-collapsed'} ${!ancestorExpanded?'is-tree-collapsed':''} ${hidden?'is-field-hidden':''}`}>
-        <th><button type="button" tabIndex={ancestorExpanded&&!hidden?0:-1} className="field-group-toggle" aria-expanded={expanded} onClick={()=>toggleGroup(group)}><FontAwesomeIcon className={expanded?'expanded':''} icon={faChevronRight} aria-hidden="true" /><span>{groupLabel(group)}</span><small>{allFields.length}</small></button></th>
-        {orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const preview=group.getCollapsedPreview?.(app);const previewBest=preview?.type==='boolean'&&preview.value===true&&compareMode&&visible.length>1;const run=performanceMetric ? performanceProfiles[app.id]?.[performanceMetric.scenario] : undefined;return <td key={app.id} data-recorder-id={app.id} aria-hidden={!shown} className={productCellClass(app.id,previewBest)}><button type="button" tabIndex={shown&&ancestorExpanded&&!hidden?0:-1} className="field-group-cell-toggle" aria-expanded={expanded} aria-label={`${expanded?'Collapse':'Expand'} ${group.label} for ${app.name}`} onClick={()=>toggleGroup(group)}>{performanceMetric ? (run ? <PerformanceSparkline run={run} metric={performanceMetric.metric} maximum={performanceTimelineMaxima[`${performanceMetric.scenario}:${performanceMetric.metric}`] ?? 0} /> : performanceStatus === 'loading'||performanceStatus === 'idle' ? <span className="performance-loading" aria-label="Loading performance data" /> : <span className="unknown-value">{performanceStatus === 'error' ? 'Load failed' : t('unknown')}</span>) : !expanded&&renderGroupPreview(group,app)}</button></td>})}
-      </tr>
-      {childGroups.map((child) => renderGroupRows(child, level + 1, childrenVisible))}
-      {directFields.map((field)=>renderFieldRow(field, level + 1, childrenVisible))}
-    </Fragment>;
-  };
-  const subjectiveReviewLabel = (key: SubjectiveReviewKey) => t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary');
-  const renderSubjectiveReviews = () => <Fragment>
-    <tr className={`field-group-row comparison-field-row subjective-review-group ${subjectiveReviewsExpanded?'is-expanded':'is-collapsed'}`}>
-      <th><button type="button" className="field-group-toggle" aria-expanded={subjectiveReviewsExpanded} onClick={()=>setSubjectiveReviewsExpanded((current)=>!current)}><FontAwesomeIcon className={subjectiveReviewsExpanded?'expanded':''} icon={faChevronRight} aria-hidden="true" /><span>{t('subjectiveReview')}</span><small className="not-scored-badge">{t('notScored')}</small></button></th>
-      {orderedRecorders.map((app)=><td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id)} />)}
-    </tr>
-    {subjectiveReviewKeys.map((key)=><tr key={key} aria-hidden={!subjectiveReviewsExpanded} className={`comparison-field-row field-child-row subjective-review-row ${subjectiveReviewsExpanded?'is-expanded':'is-tree-collapsed'}`}>
-      <th><div className="subjective-review-collapse"><div className="subjective-review-clip"><div className="subjective-review-content">{subjectiveReviewLabel(key)}</div></div></div></th>
-      {orderedRecorders.map((app)=>{const review=subjectiveReviewFor(locale,app.id,key);return <td key={app.id} data-recorder-id={app.id} aria-hidden={!visibleIds.has(app.id)} className={productCellClass(app.id)}><div className="subjective-review-collapse"><div className="subjective-review-clip"><div className="subjective-review-content">{review ?? <span className="subjective-review-empty">—</span>}</div></div></div></td>})}
-    </tr>)}
-  </Fragment>;
 
-  return <main>
+  return <main className="comparison-page" data-table-initializing={!tableInitialized}>
     <div className={`page-header-slot ${tableFullWidth ? 'is-hidden' : ''}`} aria-hidden={tableFullWidth} inert={tableFullWidth}>
       <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
     </div>
     <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
       <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
-      <div className="table-wrap comparison-surface" style={{paddingBottom:tableBottomSafeArea,scrollPaddingBottom:tableBottomSafeArea}}><table className="comparison-table"><thead><tr><th className="feature-head"><span>{t('recorders',{count:visible.length})}</span><small>{compareMode ? t('selectedRecorders') : t('selectToCompare')}</small><button type="button" className="reset-weights" onClick={()=>setFieldWeights({...defaultFieldWeights})}><FontAwesomeIcon icon={faArrowRotateLeft} aria-hidden="true" />{t('resetWeights')}</button></th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const isSelected=selected.includes(app.id);return <th key={app.id} data-recorder-id={app.id} className={productCellClass(app.id)} aria-hidden={!shown}><div className={`select-app ${isSelected?'selected':''}`}><button type="button" tabIndex={shown?0:-1} className="select-app-hit" onClick={()=>toggleCompare(app.id)} aria-label={t('compareProduct',{name:app.name})} /><span className="check">{isSelected&&<FontAwesomeIcon icon={faCheck} />}</span><span className="app-icon" style={{background:app.icon ? 'transparent' : app.accent}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span><strong className="app-name">{app.name}</strong><a className="app-domain-link" href={app.website} target="_blank" rel="noreferrer" aria-label={t('visitWebsite',{name:app.name})}>{displayDomain(app.website)}</a><span className="app-score"><strong>{recorderScores[app.id].toFixed(1)}</strong> {t('score')}</span></div></th>})}</tr></thead><tbody>
-        {renderSubjectiveReviews()}
-        {generalComparisonFields.map((field) => renderFieldRow(field))}
-        {topLevelGroups.map((group) => renderGroupRows(group))}
-        <tr aria-hidden={isUpdateMetadataHidden} className={`comparison-field-row ${isUpdateMetadataHidden?'is-field-hidden':'is-expanded'}`}><th>{t('lastUpdated')}</th>{orderedRecorders.map((app)=>{const shown=visibleIds.has(app.id);const updatedAt=app.lastUpdatedAt;const version=app.lastUpdatedVersion;return <td key={app.id} data-recorder-id={app.id} aria-hidden={!shown} className={productCellClass(app.id)}><div className="last-updated-cell">{updatedAt?<time dateTime={updatedAt}>{updatedAt}</time>:<span className="unknown-value">{t('unknown')}</span>}<small>{version?t('version',{version}):t('versionUnknown')}</small></div></td>})}</tr>
-      </tbody></table>{visible.length===0&&<div className="empty">{t('noMatches')}</div>}</div>
+      <CanvasComparisonTable animationsEnabled={tableInitialized} products={visible} scores={recorderScores} selected={selected} compareMode={compareMode} hideIdentical={hideIdentical} identicalFieldKeys={identicalFieldKeys} expandedGroups={expandedGroups} subjectiveReviewsExpanded={subjectiveReviewsExpanded} performanceProfiles={performanceProfiles} performanceStatus={performanceStatus} fieldWeights={fieldWeights} bottomSafeArea={tableBottomSafeArea} onToggleProduct={toggleCompare} onToggleGroup={toggleGroup} onWeightChange={(key, weight) => setFieldWeights(current => ({ ...current, [key]: weight }))} onResetWeights={() => setFieldWeights({ ...defaultFieldWeights })} />
     </section>
     <div className={`compare-dock-shell t-resize ${chatExpanded?'chat-expanded':''} ${selected.length===0?'is-empty':''}`}>{selected.length>0&&<div className="compare-dock" style={{bottom:chatHeight+8}}><div className="compare-dock-summary"><div className="compare-avatars">{displayedSelection.map((id)=>{const app=recorders.find((item)=>item.id===id)!;return <span key={id} style={{background:app.icon ? 'transparent' : app.accent,viewTransitionName:`compare-avatar-${id}`}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span>})}{overflowSelectionCount>0&&<span className="avatar-overflow" style={{viewTransitionName:'compare-avatar-overflow'}}>+{overflowSelectionCount}</span>}</div>{compareMode?<label className="hide-identical-control"><input type="checkbox" checked={hideIdentical} onChange={(event)=>setHideIdentical(event.target.checked)} /><span>{t('hideIdentical')}</span></label>:<p><strong>{t('selected',{count:selected.length})}</strong><small>{t('ready')}</small></p>}</div><div className="compare-dock-actions"><button className="clear-selection" onClick={clearSelection}>{t('clear')}</button><button className={`compare-action ${compareMode?'exit':''}`} aria-pressed={compareMode} onClick={()=>setCompareMode((current)=>!current)}>{compareMode?t('exitComparison'):t('compareSelected')}</button></div></div>}</div>
     <LocalChatWidget recorderScores={recorderScores} onHeightChange={setChatHeight} onExpandedChange={setChatExpanded} onUpdateComparison={updateComparisonFromChat} onUpdateSort={updateSortFromChat} onUpdateFilters={updateFiltersFromChat} />

@@ -1,5 +1,6 @@
 'use client';
 
+import { focusRecorderColumn } from '../lib/comparison-table-events';
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -292,33 +293,6 @@ const recorderById = new Map(recorders.map((recorder) => [recorder.id, recorder]
 const sortableFieldIds = new Set<string>(assistantSortableFields.map((field) => field.key));
 const fieldById = new Map<string, (typeof fieldDefinitions)[number]>(fieldDefinitions.map((field) => [field.key, field]));
 
-const focusRecorderColumn = (recorderId: string) => {
-  const cells = [...document.querySelectorAll<HTMLElement>(`[data-recorder-id="${CSS.escape(recorderId)}"]`)];
-  const header = cells[0];
-  const scrollSurface = header?.closest<HTMLElement>('.table-wrap');
-  if (!header || !scrollSurface) return;
-
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const surfaceRect = scrollSurface.getBoundingClientRect();
-  const headerRect = header.getBoundingClientRect();
-  const isVisible = headerRect.left >= surfaceRect.left && headerRect.right <= surfaceRect.right;
-  const highlight = () => {
-    cells.forEach((cell) => cell.classList.remove('chat-column-highlight'));
-    void header.offsetWidth;
-    cells.forEach((cell) => cell.classList.add('chat-column-highlight'));
-  };
-
-  if (isVisible) {
-    highlight();
-    return;
-  }
-
-  const centeredLeft = scrollSurface.scrollLeft
-    + headerRect.left - surfaceRect.left
-    - (scrollSurface.clientWidth - headerRect.width) / 2;
-  scrollSurface.scrollTo({ left: centeredLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
-  window.setTimeout(highlight, reduceMotion ? 0 : 280);
-};
 
 type ParsedToolCall = { name?: unknown; arguments?: unknown };
 

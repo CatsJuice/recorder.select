@@ -72,7 +72,7 @@ export const performanceFieldMaximum = (profiles: PerformanceProfiles, fieldKey:
   const values = recorderIds
     .map((recorderId) => performanceValue(profiles, recorderId, fieldKey))
     .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));
-  return values.length > 0 ? Math.max(...values) : 0;
+  return values.reduce((maximum, value) => Math.max(maximum, value), 0);
 };
 
 export const performanceTimelineMaximum = (profiles: PerformanceProfiles, scenario: PerformanceScenario, metric: PerformanceMetric) => {
@@ -90,7 +90,7 @@ export const performanceTimelineMaximum = (profiles: PerformanceProfiles, scenar
       return typeof sample.systemCPUPercent === 'number' ? [sample.systemCPUPercent] : [];
     });
   });
-  return values.length > 0 ? Math.max(...values) : 0;
+  return values.reduce((maximum, value) => Math.max(maximum, value), 0);
 };
 
 export const formatPerformanceValue = (value: number, format: PerformanceField['format']) => {

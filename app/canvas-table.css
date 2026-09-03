@@ -1,0 +1,37 @@
+.canvas-comparison{position:relative;flex:1 1 auto;min-height:240px;height:calc(100dvh - 172px);overflow:hidden;border-radius:0 0 11px 11px;isolation:isolate;background:#fff}
+.workspace-full-width .canvas-comparison{height:calc(100dvh - 100px)}
+.canvas-table-scroll{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;scroll-behavior:auto;outline:none;touch-action:pan-x pan-y;contain:strict}
+.canvas-table-surface{position:absolute;top:0;left:0;pointer-events:none}
+.canvas-table-scroll:focus-visible{outline:2px solid #3678e8;outline-offset:-2px}
+.canvas-table-a11y{position:absolute;width:1px;height:1px;top:0;left:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.canvas-table-links-clip{position:absolute;top:0;left:190px;right:0;height:168px;overflow:clip;pointer-events:none}
+.canvas-table-links{position:absolute;top:0;left:0;will-change:transform}
+.canvas-table-links a{position:absolute;top:103px;height:25px;pointer-events:auto;border-radius:3px}
+.canvas-table-links a:hover{background:rgba(120,120,120,.08)}
+.canvas-table-links a:focus-visible{outline:2px solid #3678e8}
+.canvas-table-dialog{position:fixed;inset:0;margin:auto;width:min(420px,calc(100vw - 32px));max-height:80dvh;padding:0;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);box-shadow:0 20px 80px #0003}
+.canvas-table-dialog::backdrop{background:#0003}
+.canvas-table-dialog>div{padding:20px}
+.canvas-table-dialog header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;font-size:15px}
+.canvas-table-dialog header button{border:0;background:var(--soft);color:var(--ink);width:32px;height:32px;border-radius:6px;font-size:22px;cursor:pointer}
+.canvas-cell-detail{font-size:15px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;user-select:text}
+.canvas-table-dialog small{color:var(--muted)}
+[data-theme='dark'] .canvas-comparison,[data-theme='dark'] .canvas-table-dialog{background:#0e0e0e}
+@media(max-width:760px){.canvas-comparison{height:calc(100dvh - 186px)}}
+@media(forced-colors:active){.canvas-table-scroll:focus-visible{outline:2px solid Highlight}}
+
+/* Native top-layer popover escapes the canvas viewport's clipping without a backdrop. */
+.canvas-weight-popover{position:fixed;inset:auto;margin:0;max-width:calc(100vw - 16px);color:var(--ink);opacity:0;transform:translateX(-4px);transition:opacity 140ms ease,transform 180ms var(--ease-in-out),display 180ms allow-discrete,overlay 180ms allow-discrete}
+.canvas-weight-popover:popover-open{opacity:1;pointer-events:auto;transform:translateX(0)}
+.canvas-weight-title{margin-bottom:10px;font-size:13px;font-weight:600}
+@starting-style{.canvas-weight-popover:popover-open{opacity:0;transform:translateX(-4px)}}
+@media(prefers-reduced-motion:reduce){.canvas-weight-popover,.canvas-weight-popover:popover-open{transform:none;transition:opacity 140ms ease,display 140ms allow-discrete,overlay 140ms allow-discrete}}
+
+/* The head bootstrap applies the saved layout before hydration and the first canvas draw. */
+.comparison-page[data-table-initializing='true'] .page-header-slot,
+.comparison-page[data-table-initializing='true'] .page-header-slot .nav,
+.comparison-page[data-table-initializing='true'] .t-resize{transition:none!important}
+html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .page-header-slot{height:0;visibility:hidden}
+html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .page-header-slot .nav{transform:translateY(-100%)}
+html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .workspace{width:calc(100% - 32px)}
+html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .canvas-comparison{height:calc(100dvh - 100px)}

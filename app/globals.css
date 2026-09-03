@@ -4,6 +4,7 @@
 @import './dark-mode.css';
 @import './toolbar-tools.css';
 @import './chat.css';
+@import './canvas-table.css';
 /* Layered application styles. */
 :root{--font-size-regular:13px;--ease-in-out:cubic-bezier(.77,0,.175,1)}
 body{font-size:var(--font-size-regular)}

@@ -1,5 +1,5 @@
 import { fieldDefinitions, fieldGroups, type FieldDefinition, type FieldGroup, type Recorder } from './recorders';
-import { formatPerformanceValue, performanceFields, performanceMetricGroups, performanceTimelineMaximum, performanceValue, type PerformanceProfiles } from './performance';
+import { formatPerformanceValue, performanceFields, performanceMetricGroups, performanceTimelinePoints, performanceTimelineScale, performanceValue, type PerformanceProfiles } from './performance';
 import { subjectiveReviewFor, subjectiveReviewKeys } from './subjective-reviews';
 import type { Locale } from './i18n';
 import { downsample } from './canvas-table-layout';
@@ -14,7 +14,7 @@ export type TableCell = {
   bar?: number;
   icons?: string[];
   sparkline?: Array<readonly [number, number]>;
-  metric?: 'cpu' | 'memory';
+  heatThresholds?: readonly number[];
 };
 export type TableRow = {
   id: string;
@@ -148,7 +148,6 @@ export function createComparisonModel(options: ModelOptions) {
       },
     });
   };
-  const timelineMaxima = new Map<string, number>();
   const addGroup = (group: FieldGroup, level: number) => {
     const fields = groupFields.get(group.key)!;
     if (products.length > 1 && fields.length > 0 && fields.every(field => hidden(field.key))) return;
@@ -159,16 +158,14 @@ export function createComparisonModel(options: ModelOptions) {
       if (metric) {
         const run = profiles[app.id]?.[metric.scenario];
         if (!run) return missingPerformance();
-        const key = `${metric.scenario}:${metric.metric}`;
-        if (!timelineMaxima.has(key)) timelineMaxima.set(key, performanceTimelineMaximum(profiles, metric.scenario, metric.metric));
-        const ceiling = Math.max(timelineMaxima.get(key)!, 1);
-        const hasSystem = run.samples.some(sample => typeof (metric.metric === 'cpu' ? sample.systemCPUPercent : sample.systemMemoryDeltaBytes) === 'number');
-        const points = run.samples.flatMap(sample => {
-          const value = metric.metric === 'cpu' ? hasSystem ? sample.systemCPUPercent : sample.cpuPercent : hasSystem ? sample.systemMemoryDeltaBytes : sample.physicalFootprintBytes;
-          return value === undefined ? [] : [[Math.min(1, Math.max(0, sample.elapsedSeconds / Math.max(run.summary.durationSeconds, 1))), Math.min(1, Math.max(0, value / ceiling))] as const];
-        });
+        const scale = performanceTimelineScale(profiles, metric.scenario, metric.metric);
+        const ceiling = Math.max(scale.maximum, 1);
+        const points = performanceTimelinePoints(run, metric.metric).map(([time, value]) => [
+          Math.min(1, Math.max(0, time / Math.max(run.summary.durationSeconds, 1))),
+          Math.min(1, value / ceiling),
+        ] as const);
         const peak = metric.metric === 'cpu' ? run.summary.peakSystemCPUPercent ?? run.summary.peakCPUPercent : run.summary.peakSystemMemoryDeltaBytes ?? run.summary.peakPhysicalFootprintBytes;
-        return { text: `${groupLabel(group)}: ${formatPerformanceValue(peak, metric.metric)}`, secondary: run.workloadLabel, sparkline: downsample(points), metric: metric.metric };
+        return { text: `${groupLabel(group)}: ${formatPerformanceValue(peak, metric.metric)}`, secondary: run.workloadLabel, sparkline: downsample(points), heatThresholds: scale.heatThresholds };
       }
       const preview = !expanded && group.getCollapsedPreview?.(app);
       if (!preview) return { text: '' };

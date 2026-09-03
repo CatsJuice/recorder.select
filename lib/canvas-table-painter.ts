@@ -19,14 +19,15 @@ export type PaintScene = {
   emptyLabel: string;
 };
 export type Viewport = { width: number; height: number; left: number; top: number };
-const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', low: '#e6f4ed', high: '#fff0ed', focus: '#3678e8', highlight: '#fff4cd', cpu: '#6d73dd', memory: '#399b83' };
-const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', low: '#132c24', high: '#342019', focus: '#7aaaff', highlight: '#3b331c', cpu: '#a3a6ff', memory: '#63cdb2' };
+const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', bar: '#e8f0fd', low: '#e6f4ed', high: '#fff0ed', focus: '#3678e8', highlight: '#fff4cd', heat: ['#29956c', '#80a536', '#c29a25', '#df7835', '#d64c4c'] };
+const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', bar: '#18273c', low: '#132c24', high: '#342019', focus: '#7aaaff', highlight: '#3b331c', heat: ['#63cda0', '#afd36c', '#e8c65b', '#f6a362', '#f47c7c'] };
 const iconDefinitions = { mac: faApple, win: faWindows, linux: faLinux, native: faSwift };
 
 /** Retained resource caches; the only per-frame work is the visible rectangle. */
 export class CanvasTablePainter {
   private images = new Map<string, HTMLImageElement>();
   private textCache = new Map<string, string[]>();
+  private textWidthCache = new Map<string, number>();
   private paths = new Map<string, { paths: Path2D[]; width: number; height: number }>();
   private font = 'Arial, sans-serif';
   private palette = light;
@@ -34,16 +35,16 @@ export class CanvasTablePainter {
   constructor(private invalidate: () => void) {}
 
   configure(font: string, isDark: boolean) {
-    if (this.font !== font) this.textCache.clear();
+    if (this.font !== font) this.clearTextCache();
     this.font = font;
     this.palette = isDark ? dark : light;
   }
-  clearTextCache() { this.textCache.clear(); }
+  clearTextCache() { this.textCache.clear(); this.textWidthCache.clear(); }
   dispose() {
     this.disposed = true;
     for (const image of this.images.values()) image.onload = image.onerror = null;
     this.images.clear();
-    this.textCache.clear();
+    this.clearTextCache();
   }
   private image(src: string) {
     let image = this.images.get(src);
@@ -142,13 +143,14 @@ export class CanvasTablePainter {
   private cell(ctx: CanvasRenderingContext2D, cell: TableCell, row: TableRow, x: number, y: number, width: number) {
     const p = this.palette;
     const height = row.height;
-    const background = cell.extreme === 'low' ? p.low : cell.extreme === 'high' ? p.high : cell.best ? p.best : row.expanded !== undefined ? p.group : p.background;
+    const background = cell.best ? p.best : row.expanded !== undefined ? p.group : p.background;
     this.rect(ctx, x, y, width, height, background);
     ctx.save();
     ctx.beginPath(); ctx.rect(x + 1, y + 1, width - 2, height - 2); ctx.clip();
     if (cell.bar !== undefined) {
-      ctx.fillStyle = cell.extreme === 'high' ? p.high : p.low;
-      ctx.fillRect(x + 8, y + height * (1 - cell.bar), width - 16, height * cell.bar);
+      ctx.fillStyle = cell.extreme === 'high' ? p.high : cell.extreme === 'low' ? p.low : p.bar;
+      // Fill the cell's width; the existing clip keeps its grid borders visible.
+      ctx.fillRect(x, y + height * (1 - cell.bar), width, height * cell.bar);
     }
     if (cell.boolean !== undefined) this.check(ctx, x + width / 2, y + height / 2, cell.boolean);
     else if (cell.sparkline?.length) {
@@ -157,7 +159,19 @@ export class CanvasTablePainter {
       const bottom = y + height - 12;
       const graphHeight = height - (cell.secondary ? 38 : 24);
       const plotWidth = width - 24;
-      const color = cell.metric === 'cpu' ? p.cpu : p.memory;
+      const thresholds = cell.heatThresholds ?? [];
+      let color: string | CanvasGradient = p.heat[0];
+      if (thresholds.length) {
+        const gradient = ctx.createLinearGradient(0, bottom, 0, bottom - graphHeight);
+        gradient.addColorStop(0, p.heat[0]);
+        thresholds.forEach((threshold, index) => {
+          // Paired stops create discrete heat bands without repainting the path.
+          gradient.addColorStop(threshold, p.heat[Math.round(index / thresholds.length * 4)]);
+          gradient.addColorStop(threshold, p.heat[Math.round((index + 1) / thresholds.length * 4)]);
+        });
+        gradient.addColorStop(1, p.heat[4]);
+        color = gradient;
+      }
       ctx.beginPath();
       points.forEach(([time, value], index) => {
         const px = left + time * plotWidth;
@@ -174,9 +188,30 @@ export class CanvasTablePainter {
     } else if (cell.icons?.length && cell.icons.every(icon => ['mac', 'win', 'linux'].includes(icon))) {
       cell.icons.forEach((icon, index) => this.icon(ctx, icon, x + width / 2 + (index - (cell.icons!.length - 1) / 2) * 28, y + height / 2, 17));
     } else {
-      const withIcon = cell.icons?.some(icon => ['native', 'electron', 'tauri'].includes(icon));
-      if (withIcon) this.icon(ctx, cell.icons![0], x + 22, y + height / 2, 18);
-      this.text(ctx, cell.text, x + width / 2 + (withIcon ? 10 : 0), y + height / 2 - (cell.secondary ? 9 : 0), width - (withIcon ? 54 : 24), { align: 'center', lines: 2, color: cell.muted ? p.muted : p.ink });
+      const technology = cell.icons?.find(icon => ['native', 'electron', 'tauri'].includes(icon));
+      const centerY = y + height / 2 - (cell.secondary ? 9 : 0);
+      if (technology) {
+        const iconSize = 18;
+        const gap = 8;
+        const labelWidth = Math.max(1, width - 24 - iconSize - gap);
+        ctx.font = `500 13px ${this.font}`;
+        const lines = this.lines(ctx, cell.text, labelWidth, 2);
+        const measuredWidth = Math.max(...lines.map(line => {
+          const key = `${ctx.font}|${line}`;
+          let measured = this.textWidthCache.get(key);
+          if (measured === undefined) {
+            measured = ctx.measureText(line).width;
+            if (this.textWidthCache.size >= 512) this.textWidthCache.clear();
+            this.textWidthCache.set(key, measured);
+          }
+          return measured;
+        }));
+        const groupLeft = x + (width - iconSize - gap - measuredWidth) / 2;
+        this.icon(ctx, technology, groupLeft + iconSize / 2, centerY, iconSize);
+        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, color: cell.muted ? p.muted : p.ink });
+      } else {
+        this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, color: cell.muted ? p.muted : p.ink });
+      }
       if (cell.secondary) this.text(ctx, cell.secondary, x + width / 2, y + height / 2 + 15, width - 20, { size: 11, color: p.muted, align: 'center' });
     }
     ctx.restore();

@@ -7,6 +7,7 @@ const server = await createServer({ configFile: false, server: { middlewareMode:
 after(() => server.close());
 const layout = await server.ssrLoadModule('/lib/canvas-table-layout.ts');
 const { createComparisonModel } = await server.ssrLoadModule('/lib/comparison-table-model.ts');
+const { performanceTimelineScale, performanceTimelinePoints } = await server.ssrLoadModule('/lib/performance.ts');
 const { createScoreContributions } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
 const { fieldDefinitions, fieldGroups, recorders } = await server.ssrLoadModule('/lib/recorders.ts');
 const { CanvasTablePainter } = await server.ssrLoadModule('/lib/canvas-table-painter.ts');
@@ -83,6 +84,43 @@ test('performance extremes compare only matching workloads; all equal values hav
   const tied = createComparisonModel({ ...base, products, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])), performanceProfiles: Object.fromEntries(products.map(product => [product.id, { recording: run(10, '1080p') }])) });
   const tiedRow = tied.rows.find(row => row.id === 'recordingCpuAverage');
   assert.ok(products.every((_, index) => tiedRow.cell(index).extreme === undefined));
+});
+
+test('timeline heat bands use all profiles and remain stable when products are filtered', () => {
+  const products = [0, 25, 50, 75, 100].map((value, index) => ({ ...recorders[0], id: `heat-${index}` }));
+  const profiles = Object.fromEntries(products.map((product, index) => [product.id, { recording: run(index * 25, '5K') }]));
+  const scale = performanceTimelineScale(profiles, 'recording', 'cpu');
+  assert.equal(scale.maximum, 100);
+  assert.equal(scale.heatThresholds.length, 4);
+  scale.heatThresholds.forEach((value, index) => assert.ok(Math.abs(value - (index + 1) / 5) < 1e-12));
+  const options = { ...base, products, performanceProfiles: profiles, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) };
+  const cell = (model, column = 0) => model.rows.find(row => row.id === 'performanceRecordingCPU').cell(column);
+  const all = cell(createComparisonModel(options), 2);
+  const filtered = cell(createComparisonModel({ ...options, products: [products[2]], compareMode: true }));
+  assert.deepEqual(filtered.sparkline, all.sparkline);
+  assert.equal(filtered.sparkline[0][1], .5);
+  assert.equal(filtered.heatThresholds, scale.heatThresholds);
+  assert.equal(performanceTimelineScale(profiles, 'recording', 'cpu'), scale);
+  assert.deepEqual(performanceTimelineScale(profiles, 'recording', 'memory').heatThresholds, []);
+  assert.equal(performanceTimelineScale(profiles, 'preview', 'cpu').maximum, 0);
+});
+
+test('heat scales handle empty data, ties, invalid samples and system metric preference', () => {
+  assert.deepEqual(performanceTimelineScale({}, 'recording', 'cpu'), { maximum: 0, heatThresholds: [] });
+  const tied = { a: { recording: run(10) }, b: { recording: run(10) } };
+  assert.deepEqual(performanceTimelineScale(tied, 'recording', 'cpu'), { maximum: 10, heatThresholds: [] });
+  const mixed = run(1000);
+  mixed.samples = [
+    { elapsedSeconds: 0, cpuPercent: 1000, systemCPUPercent: 20, physicalFootprintBytes: 10 },
+    { elapsedSeconds: 1, cpuPercent: 2000, systemCPUPercent: NaN, physicalFootprintBytes: 10 },
+    { elapsedSeconds: 2, cpuPercent: 3000, physicalFootprintBytes: 10 },
+    { elapsedSeconds: 3, cpuPercent: 4000, systemCPUPercent: 40, physicalFootprintBytes: 10 },
+    { elapsedSeconds: Infinity, cpuPercent: 5000, systemCPUPercent: 500, physicalFootprintBytes: 10 },
+  ];
+  assert.deepEqual(performanceTimelinePoints(mixed, 'cpu'), [[0, 20], [3, 40]]);
+  const scale = performanceTimelineScale({ a: { recording: mixed } }, 'recording', 'cpu');
+  assert.equal(scale.maximum, 40);
+  assert.ok(scale.heatThresholds.every((value, index, values) => value > 0 && value < 1 && (!index || value > values[index - 1])));
 });
 
 test('loading, failure and missing performance remain distinct', () => {

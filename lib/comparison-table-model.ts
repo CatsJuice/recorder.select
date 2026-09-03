@@ -2,7 +2,7 @@ import { fieldDefinitions, fieldGroups, type FieldDefinition, type FieldGroup, t
 import { formatPerformanceValue, performanceFields, performanceMetricGroups, performanceTimelinePoints, performanceTimelineScale, performanceValue, type PerformanceProfiles } from './performance';
 import { subjectiveReviewFor, subjectiveReviewKeys } from './subjective-reviews';
 import type { Locale } from './i18n';
-import { downsample } from './canvas-table-layout';
+import { downsample, MOBILE_LABEL_HEIGHT } from './canvas-table-layout';
 
 export type TableCell = {
   text: string;
@@ -22,6 +22,7 @@ export type TableRow = {
   level: number;
   top: number;
   height: number;
+  labelHeight?: number;
   expanded?: boolean;
   badge?: string;
   weightKey?: string;
@@ -30,6 +31,7 @@ export type TableRow = {
   cell: (column: number) => TableCell;
 };
 export type ModelOptions = {
+  mobile?: boolean;
   products: Recorder[];
   compareMode: boolean;
   hideIdentical: boolean;
@@ -60,8 +62,10 @@ export function createComparisonModel(options: ModelOptions) {
   const unknown = (): TableCell => ({ text: t('unknown'), muted: true });
   const missingPerformance = (): TableCell => ({ text: options.performanceStatus === 'error' ? t('performanceLoadFailed') : options.performanceStatus === 'loaded' ? t('unknown') : t('performanceLoading'), muted: true });
   // Cells are created on first visible use, not as an eagerly allocated N × M matrix.
-  const add = (row: Omit<TableRow, 'top'>) => {
-    rows.push({ ...row, top: totalHeight, cell: column => {
+  const add = (row: Omit<TableRow, 'top'> & { mobileLabelOnly?: boolean }) => {
+    const { mobileLabelOnly, ...source } = row;
+    const renderedRow = { ...source, labelHeight: options.mobile ? MOBILE_LABEL_HEIGHT : undefined, height: options.mobile ? MOBILE_LABEL_HEIGHT + (mobileLabelOnly ? 0 : row.height) : row.height };
+    rows.push({ ...renderedRow, top: totalHeight, cell: column => {
       const key = `${row.id}:${column}`;
       let cell = cellCache.get(key);
       if (!cell) {
@@ -71,7 +75,7 @@ export function createComparisonModel(options: ModelOptions) {
       cellCache.set(key, cell);
       return cell;
     } });
-    totalHeight += row.height;
+    totalHeight += renderedRow.height;
   };
   const addField = (field: FieldDefinition, level: number) => {
     if (hidden(field.key)) return;
@@ -153,7 +157,7 @@ export function createComparisonModel(options: ModelOptions) {
     if (products.length > 1 && fields.length > 0 && fields.every(field => hidden(field.key))) return;
     const expanded = !!options.expandedGroups[group.key];
     const metric = performanceMetricGroups[group.key];
-    add({ id: group.key, label: groupLabel(group), level, height: metric ? 84 : 48, expanded, badge: String(fields.length), cell: column => {
+    add({ id: group.key, label: groupLabel(group), level, height: metric ? 84 : 48, mobileLabelOnly: !metric && (expanded || !group.getCollapsedPreview), expanded, badge: String(fields.length), cell: column => {
       const app = products[column];
       if (metric) {
         const run = profiles[app.id]?.[metric.scenario];
@@ -177,7 +181,7 @@ export function createComparisonModel(options: ModelOptions) {
     children(group).forEach(child => addGroup(child, level + 1));
     direct(group).forEach(field => addField(field, level + 1));
   };
-  add({ id: 'subjectiveReviews', label: t('subjectiveReview'), level: 0, height: 48, expanded: options.subjectiveReviewsExpanded, badge: t('notScored'), cell: () => ({ text: '' }) });
+  add({ id: 'subjectiveReviews', mobileLabelOnly: true, label: t('subjectiveReview'), level: 0, height: 48, expanded: options.subjectiveReviewsExpanded, badge: t('notScored'), cell: () => ({ text: '' }) });
   if (options.subjectiveReviewsExpanded) subjectiveReviewKeys.forEach(key => {
     const texts = products.map(app => subjectiveReviewFor(options.locale, app.id, key) ?? '—');
     // Conservative line budget at the minimum column width; stable when scrolling horizontally.

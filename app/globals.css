@@ -5,6 +5,7 @@
 @import './toolbar-tools.css';
 @import './chat.css';
 @import './canvas-table.css';
+@import './mobile-tool-sheet.css';
 /* Layered application styles. */
 :root{--font-size-regular:13px;--ease-in-out:cubic-bezier(.77,0,.175,1)}
 body{font-size:var(--font-size-regular)}
@@ -81,3 +82,25 @@ tbody th,
 [data-theme='dark'] .choice-tabs button.selected,[data-theme='dark'] .recorder-form .multi-select button.selected{background:#eee;color:#111;box-shadow:none}
 [data-theme='dark'] .input-wrap select option{background:#171717;color:#eee}
 @media(max-width:760px){.form-subgroup{margin-left:6px;padding-left:13px}.choice-tabs{width:100%}.select-text-control{grid-template-columns:1fr}.select-text-control .choice-tabs{width:100%}}
+
+/* Mobile comparison is an edge-to-edge field list, with no table frame. */
+@media (max-width:760px) {
+  .comparison-page .workspace,
+  html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .workspace {
+    width:100%;margin:0;border:0;border-radius:0;box-shadow:none;
+    height:calc(100dvh - 72px);max-height:none;
+  }
+  .comparison-page .workspace.workspace-full-width,
+  html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .workspace {
+    height:100dvh;
+  }
+  .comparison-page .workspace .toolbar {
+    flex-direction:row;flex:0 0 66px;height:66px;border-radius:0;border-bottom:0;
+    padding:12px;gap:8px;
+  }
+  .comparison-page .canvas-comparison,
+  html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .canvas-comparison {
+    height:auto;min-height:0;border-radius:0;
+  }
+  .canvas-comparison.is-mobile .canvas-table-links-clip {left:0}
+}

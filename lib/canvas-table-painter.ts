@@ -2,11 +2,12 @@ import { faApple, faWindows, faLinux, faSwift } from '@fortawesome/free-brands-s
 import { electronPath, tauriPath } from './technology-icon-paths';
 import { displayDomain, type Recorder } from './recorders';
 import type { TableCell, TableRow } from './comparison-table-model';
-import { HEADER_HEIGHT, LABEL_WIDTH, MIN_COLUMN_WIDTH, rowAt, visibleRange, type CellAddress } from './canvas-table-layout';
+import { HEADER_HEIGHT, LABEL_WIDTH, MIN_COLUMN_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, rowAt, visibleRange, type CellAddress } from './canvas-table-layout';
 
 export type PaintRow = TableRow & { opacity?: number; contentHeight?: number; expandedProgress?: number; targetIndex?: number; cellLayers?: (column: number) => Array<{ cell: TableCell; opacity: number }> };
 export type PaintColumn = { id: string; top: number; height: number; width: number; contentWidth: number; opacity: number; targetIndex: number };
 export type PaintScene = {
+  mobile?: boolean;
   products: Recorder[];
   rows: PaintRow[];
   columns?: PaintColumn[];
@@ -140,11 +141,12 @@ export class CanvasTablePainter {
     ctx.restore();
     return true;
   }
-  private cell(ctx: CanvasRenderingContext2D, cell: TableCell, row: TableRow, x: number, y: number, width: number) {
+  private cell(ctx: CanvasRenderingContext2D, cell: TableCell, row: TableRow, x: number, y: number, width: number, mobile = false) {
     const p = this.palette;
     const height = row.height;
-    const background = cell.best ? p.best : row.expanded !== undefined ? p.group : p.background;
-    this.rect(ctx, x, y, width, height, background);
+    const background = cell.best ? p.best : !mobile && row.expanded !== undefined ? p.group : p.background;
+    if (mobile) { ctx.fillStyle = background; ctx.fillRect(x, y, width, height); }
+    else this.rect(ctx, x, y, width, height, background);
     ctx.save();
     ctx.beginPath(); ctx.rect(x + 1, y + 1, width - 2, height - 2); ctx.clip();
     if (cell.bar !== undefined) {
@@ -218,15 +220,17 @@ export class CanvasTablePainter {
   }
   draw(ctx: CanvasRenderingContext2D, scene: PaintScene, viewport: Viewport, active: CellAddress | null, hovered: CellAddress | null, highlightedId: string | null) {
     const { width, height, left, top } = viewport;
-    const range = visibleRange(scene.rows, scene.products.length, width, height, left, top);
+    const mobile = !!scene.mobile;
+    const labelWidth = mobile ? 0 : LABEL_WIDTH;
+    const range = visibleRange(scene.rows, scene.products.length, width, height, left, top, mobile);
     if (scene.columns) {
       range.firstColumn = rowAt(scene.columns, left);
-      range.endColumn = Math.min(scene.columns.length, rowAt(scene.columns, left + Math.max(0, width - LABEL_WIDTH)) + 1);
+      range.endColumn = Math.min(scene.columns.length, rowAt(scene.columns, left + Math.max(0, width - labelWidth)) + 1);
     }
     const { cellWidth, firstColumn, endColumn, firstRow, endRow } = range;
     const bounds = (column: number) => {
       const slot = scene.columns?.[column];
-      return { x: LABEL_WIDTH + (slot?.top ?? column * cellWidth) - left, width: slot?.width ?? cellWidth, contentWidth: slot ? Math.max(MIN_COLUMN_WIDTH, slot.width) : cellWidth, opacity: slot?.opacity ?? 1, index: slot?.targetIndex ?? column };
+      return { x: labelWidth + (slot?.top ?? column * cellWidth) - left, width: slot?.width ?? cellWidth, contentWidth: slot ? Math.max(MIN_COLUMN_WIDTH, slot.width) : cellWidth, opacity: slot?.opacity ?? 1, index: slot?.targetIndex ?? column };
     };
     const p = this.palette;
     ctx.clearRect(0, 0, width, height);
@@ -239,39 +243,54 @@ export class CanvasTablePainter {
         ctx.strokeStyle = p.focus; ctx.lineWidth = 2; ctx.strokeRect(x + 2, y + 2, w - 4, h - 4);
       }
     };
-    ctx.save(); ctx.beginPath(); ctx.rect(LABEL_WIDTH, HEADER_HEIGHT, Math.max(0, width - LABEL_WIDTH), Math.max(0, height - HEADER_HEIGHT)); ctx.clip();
+    ctx.save(); ctx.beginPath(); ctx.rect(labelWidth, HEADER_HEIGHT, Math.max(0, width - labelWidth), Math.max(0, height - HEADER_HEIGHT)); ctx.clip();
     for (let rowIndex = firstRow; rowIndex < endRow; rowIndex++) {
       const row = scene.rows[rowIndex];
       if (row.height < .1 || row.opacity === 0) continue;
-      const y = HEADER_HEIGHT + row.top - top;
+      const labelHeight = row.labelHeight ?? 0;
+      const y = HEADER_HEIGHT + row.top - top + labelHeight;
+      const bodyHeight = row.height - labelHeight;
+      if (bodyHeight < .1) continue;
       for (let column = firstColumn; column < endColumn; column++) {
         const slot = bounds(column);
         if (slot.width < .1 || slot.opacity === 0) continue;
-        ctx.save(); ctx.beginPath(); ctx.rect(slot.x, y, slot.width, row.height); ctx.clip();
+        ctx.save(); ctx.beginPath(); ctx.rect(slot.x, y, slot.width, bodyHeight); ctx.clip();
         ctx.globalAlpha = (row.opacity ?? 1) * slot.opacity;
         const layers = row.cellLayers?.(column) ?? [{ cell: row.cell(column), opacity: 1 }];
         for (const layer of layers) {
           if (layer.opacity <= 0) continue;
           ctx.save(); ctx.globalAlpha *= layer.opacity;
-          this.cell(ctx, layer.cell, { ...row, height: row.contentHeight ?? row.height }, slot.x, y, slot.contentWidth);
+          this.cell(ctx, layer.cell, { ...row, height: Math.max(0, (row.contentHeight ?? row.height) - labelHeight) }, slot.x, y, slot.contentWidth, mobile);
           ctx.restore();
         }
-        if (scene.products[column].id === highlightedId) { ctx.save(); ctx.fillStyle = p.highlight; ctx.globalAlpha *= .45; ctx.fillRect(slot.x, y, slot.width, row.height); ctx.restore(); }
-        if (slot.index >= 0 && (row.targetIndex ?? rowIndex) >= 0) highlight({ row: row.targetIndex ?? rowIndex, column: slot.index }, slot.x, y, slot.width, row.height);
+        if (scene.products[column].id === highlightedId) { ctx.save(); ctx.fillStyle = p.highlight; ctx.globalAlpha *= .45; ctx.fillRect(slot.x, y, slot.width, bodyHeight); ctx.restore(); }
+        if (slot.index >= 0 && (row.targetIndex ?? rowIndex) >= 0) highlight({ row: row.targetIndex ?? rowIndex, column: slot.index }, slot.x, y, slot.width, bodyHeight);
         ctx.restore();
       }
     }
     ctx.restore();
-    // Frozen row labels are painted after the scrolled body.
-    ctx.save(); ctx.beginPath(); ctx.rect(0, HEADER_HEIGHT, LABEL_WIDTH + 1, Math.max(0, height - HEADER_HEIGHT)); ctx.clip();
-    for (let index = firstRow; index < endRow; index++) {
+    // Sticky ancestors are drawn last, above scrolling labels and values.
+    const sticky = mobile ? mobileStickyHeaders(scene.rows, top) : [];
+    const pinned = new Set(sticky.map(header => header.row));
+    const labels = [
+      ...Array.from({ length: endRow - firstRow }, (_, index) => index + firstRow)
+        .filter(index => !pinned.has(index))
+        .map(index => ({ row: index, top: HEADER_HEIGHT + scene.rows[index].top - top, clipTop: HEADER_HEIGHT })),
+      ...sticky.toReversed(),
+    ];
+    ctx.save(); ctx.beginPath(); ctx.rect(0, HEADER_HEIGHT, mobile ? width : LABEL_WIDTH + 1, Math.max(0, height - HEADER_HEIGHT)); ctx.clip();
+    for (const label of labels) {
+      const index = label.row;
       const row = scene.rows[index];
       if (row.height < .1 || row.opacity === 0) continue;
-      const contentHeight = row.contentHeight ?? row.height;
-      const y = HEADER_HEIGHT + row.top - top;
-      ctx.save(); ctx.beginPath(); ctx.rect(0, y, LABEL_WIDTH + 1, row.height); ctx.clip();
+      const contentHeight = mobile ? row.labelHeight ?? 0 : row.contentHeight ?? row.height;
+      const y = label.top;
+      const clipTop = Math.max(y, label.clipTop);
+      const clipHeight = Math.max(0, y + Math.min(row.height, contentHeight) - clipTop);
+      ctx.save(); ctx.beginPath(); ctx.rect(0, clipTop, mobile ? width : LABEL_WIDTH + 1, clipHeight); ctx.clip();
       ctx.globalAlpha = row.opacity ?? 1;
-      this.rect(ctx, 0, y, LABEL_WIDTH, contentHeight, row.expanded !== undefined ? p.group : p.label);
+      if (mobile) { ctx.fillStyle = p.group; ctx.fillRect(0, y, width, contentHeight); }
+      else this.rect(ctx, 0, y, LABEL_WIDTH, contentHeight, row.expanded !== undefined ? p.group : p.label);
       const indent = 16 + row.level * 10;
       if (row.expanded !== undefined) {
         ctx.save(); ctx.translate(indent + 4, y + contentHeight / 2);
@@ -281,15 +300,22 @@ export class CanvasTablePainter {
         ctx.restore();
       }
       const labelX = indent + (row.expanded !== undefined ? 16 : 0);
-      this.text(ctx, row.label, labelX, y + contentHeight / 2 - (row.weight !== undefined ? 7 : 0), LABEL_WIDTH - labelX - (row.badge ? 35 : 12), { lines: 2, size: 12, weight: row.expanded !== undefined ? 650 : 500 });
-      if (row.weight !== undefined) this.text(ctx, `× ${row.weight}`, labelX, y + contentHeight / 2 + 17, LABEL_WIDTH - labelX - 12, { color: p.muted, size: 11 });
-      if (row.badge) this.text(ctx, row.badge, LABEL_WIDTH - 10, y + contentHeight / 2, 32, { size: 10, color: p.muted, align: 'right' });
-      if ((row.targetIndex ?? index) >= 0) highlight({ row: row.targetIndex ?? index, column: -1 }, 0, y, LABEL_WIDTH, row.height);
+      if (mobile) {
+        this.text(ctx, row.label, labelX, y + contentHeight / 2, width - labelX - (row.weight !== undefined || row.badge ? 64 : 12), { lines: 2, size: 12, weight: row.expanded !== undefined ? 650 : 500 });
+        const trailing = row.weight !== undefined ? `× ${row.weight}` : row.badge;
+        if (trailing) this.text(ctx, trailing, width - 14, y + contentHeight / 2, 54, { size: 11, color: p.muted, align: 'right' });
+        if ((row.targetIndex ?? index) >= 0) highlight({ row: row.targetIndex ?? index, column: -1 }, 0, y, width, contentHeight);
+      } else {
+        this.text(ctx, row.label, labelX, y + contentHeight / 2 - (row.weight !== undefined ? 7 : 0), LABEL_WIDTH - labelX - (row.badge ? 35 : 12), { lines: 2, size: 12, weight: row.expanded !== undefined ? 650 : 500 });
+        if (row.weight !== undefined) this.text(ctx, `× ${row.weight}`, labelX, y + contentHeight / 2 + 17, LABEL_WIDTH - labelX - 12, { color: p.muted, size: 11 });
+        if (row.badge) this.text(ctx, row.badge, LABEL_WIDTH - 10, y + contentHeight / 2, 32, { size: 10, color: p.muted, align: 'right' });
+        if ((row.targetIndex ?? index) >= 0) highlight({ row: row.targetIndex ?? index, column: -1 }, 0, y, LABEL_WIDTH, row.height);
+      }
       ctx.restore();
     }
     ctx.restore();
     // Frozen product headers; icons are loaded only for columns that have been visible.
-    ctx.save(); ctx.beginPath(); ctx.rect(LABEL_WIDTH, 0, Math.max(0, width - LABEL_WIDTH), HEADER_HEIGHT + 1); ctx.clip();
+    ctx.save(); ctx.beginPath(); ctx.rect(labelWidth, mobile ? MOBILE_SUMMARY_HEIGHT : 0, Math.max(0, width - labelWidth), mobile ? HEADER_HEIGHT - MOBILE_SUMMARY_HEIGHT : HEADER_HEIGHT + 1); ctx.clip();
     for (let column = firstColumn; column < endColumn; column++) {
       const app = scene.products[column];
       const slot = bounds(column);
@@ -299,16 +325,20 @@ export class CanvasTablePainter {
       ctx.save(); ctx.beginPath(); ctx.rect(x, 0, slot.width, HEADER_HEIGHT + 1); ctx.clip();
       ctx.globalAlpha = slot.opacity;
       const selected = scene.selected.has(app.id);
-      this.rect(ctx, x, 0, cellWidth, HEADER_HEIGHT, selected ? p.selected : p.background);
-      if (selected) { ctx.fillStyle = p.ink; ctx.fillRect(x, 0, cellWidth, 3); }
-      if (highlightedId === app.id) { ctx.fillStyle = p.highlight; ctx.fillRect(x + 1, 3, cellWidth - 2, HEADER_HEIGHT - 4); }
-      ctx.save(); ctx.beginPath(); ctx.roundRect(x + 18, 24, 38, 38, 9); ctx.clip();
+      const headerTop = mobile ? MOBILE_SUMMARY_HEIGHT : 0;
+      if (mobile) { ctx.fillStyle = selected ? p.selected : p.background; ctx.fillRect(x, headerTop, cellWidth, HEADER_HEIGHT - headerTop); }
+      else this.rect(ctx, x, 0, cellWidth, HEADER_HEIGHT, selected ? p.selected : p.background);
+      if (selected) { ctx.fillStyle = p.ink; ctx.fillRect(x, headerTop, cellWidth, 3); }
+      if (highlightedId === app.id) { ctx.fillStyle = p.highlight; ctx.fillRect(x + 1, headerTop + 3, cellWidth - 2, HEADER_HEIGHT - headerTop - 4); }
+      const iconTop = mobile ? 44 : 24;
+      const iconSize = mobile ? 28 : 38;
+      ctx.save(); ctx.beginPath(); ctx.roundRect(x + 18, iconTop, iconSize, iconSize, mobile ? 8 : 9); ctx.clip();
       const image = app.icon && this.image(app.icon);
-      if (image) ctx.drawImage(image, x + 18, 24, 38, 38);
-      else { ctx.fillStyle = app.accent; ctx.fillRect(x + 18, 24, 38, 38); this.text(ctx, app.name[0], x + 37, 43, 35, { color: '#fff', align: 'center', size: 18, weight: 700 }); }
+      if (image) ctx.drawImage(image, x + 18, iconTop, iconSize, iconSize);
+      else { ctx.fillStyle = app.accent; ctx.fillRect(x + 18, iconTop, iconSize, iconSize); this.text(ctx, app.name[0], x + 18 + iconSize / 2, iconTop + iconSize / 2, iconSize, { color: '#fff', align: 'center', size: 18, weight: 700 }); }
       ctx.restore();
-      if (selected) this.check(ctx, x + cellWidth - 23, 26, true, true);
-      else { ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(x + cellWidth - 33, 16, 20, 20, 5); ctx.stroke(); }
+      if (selected) this.check(ctx, x + cellWidth - 23, mobile ? 54 : 26, true, true);
+      else { ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(x + cellWidth - 33, mobile ? 44 : 16, 20, 20, 5); ctx.stroke(); }
       this.text(ctx, app.name, x + 18, 91, cellWidth - 30, { weight: 650 });
       this.text(ctx, displayDomain(app.website), x + 18, 115, cellWidth - 30, { size: 11, color: p.muted });
       this.text(ctx, `${(scene.scores[app.id] ?? 0).toFixed(1)} ${scene.scoreLabel}`, x + 18, 143, cellWidth - 30, { size: 12 });
@@ -316,13 +346,20 @@ export class CanvasTablePainter {
       ctx.restore();
     }
     ctx.restore();
-    this.rect(ctx, 0, 0, LABEL_WIDTH, HEADER_HEIGHT, p.label);
-    this.text(ctx, scene.title, 18, 35, LABEL_WIDTH - 36, { weight: 650 });
-    this.text(ctx, scene.subtitle, 18, 72, LABEL_WIDTH - 36, { size: 11, lines: 3, color: p.muted });
-    ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(14, 112, LABEL_WIDTH - 28, 34, 6); ctx.stroke();
-    this.text(ctx, scene.resetLabel, LABEL_WIDTH / 2, 129, LABEL_WIDTH - 36, { align: 'center', size: 11, color: p.muted });
-    highlight({ row: -1, column: -1 }, 0, 0, LABEL_WIDTH, HEADER_HEIGHT);
-    if (!scene.products.length) this.text(ctx, scene.emptyLabel, LABEL_WIDTH + Math.max(0, width - LABEL_WIDTH) / 2, HEADER_HEIGHT + 50, Math.max(1, width - LABEL_WIDTH - 24), { align: 'center', lines: 3, color: p.muted });
+    if (mobile) {
+      ctx.fillStyle = p.group; ctx.fillRect(0, 0, width, MOBILE_SUMMARY_HEIGHT);
+      this.text(ctx, scene.title, 12, MOBILE_SUMMARY_HEIGHT / 2, Math.max(1, width * .55 - 12), { size: 11, weight: 650 });
+      this.text(ctx, scene.resetLabel, width - 12, MOBILE_SUMMARY_HEIGHT / 2, Math.max(1, width * .4), { align: 'right', size: 11, color: p.muted });
+      highlight({ row: -1, column: -1 }, width * .6, 0, width * .4, MOBILE_SUMMARY_HEIGHT);
+    } else {
+      this.rect(ctx, 0, 0, LABEL_WIDTH, HEADER_HEIGHT, p.label);
+      this.text(ctx, scene.title, 18, 35, LABEL_WIDTH - 36, { weight: 650 });
+      this.text(ctx, scene.subtitle, 18, 72, LABEL_WIDTH - 36, { size: 11, lines: 3, color: p.muted });
+      ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(14, 112, LABEL_WIDTH - 28, 34, 6); ctx.stroke();
+      this.text(ctx, scene.resetLabel, LABEL_WIDTH / 2, 129, LABEL_WIDTH - 36, { align: 'center', size: 11, color: p.muted });
+      highlight({ row: -1, column: -1 }, 0, 0, LABEL_WIDTH, HEADER_HEIGHT);
+    }
+    if (!scene.products.length) this.text(ctx, scene.emptyLabel, labelWidth + Math.max(0, width - labelWidth) / 2, HEADER_HEIGHT + 50, Math.max(1, width - labelWidth - 24), { align: 'center', lines: 3, color: p.muted });
     return range;
   }
 }

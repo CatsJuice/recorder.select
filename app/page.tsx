@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { Drawer } from '@base-ui/react/drawer';
 import { useEffect, useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { SortRule, TableToolbar } from '../components/table-toolbar';
@@ -217,9 +218,11 @@ export default function Home() {
     setExpandedGroups(current => ({ ...current, [id]: !current[id] }));
   };
 
-  return <main className="comparison-page" data-table-initializing={!tableInitialized}>
+  return <Drawer.Provider>
+    <Drawer.IndentBackground className="page-sheet-background" />
+    <Drawer.Indent render={<main />} className="comparison-page" data-table-initializing={!tableInitialized}>
     <div className={`page-header-slot ${tableFullWidth ? 'is-hidden' : ''}`} aria-hidden={tableFullWidth} inert={tableFullWidth}>
-      <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
+      <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
     </div>
     <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
       <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
@@ -227,5 +230,6 @@ export default function Home() {
     </section>
     <div className={`compare-dock-shell t-resize ${chatExpanded?'chat-expanded':''} ${selected.length===0?'is-empty':''}`}>{selected.length>0&&<div className="compare-dock" style={{bottom:chatHeight+8}}><div className="compare-dock-summary"><div className="compare-avatars">{displayedSelection.map((id)=>{const app=recorders.find((item)=>item.id===id)!;return <span key={id} style={{background:app.icon ? 'transparent' : app.accent,viewTransitionName:`compare-avatar-${id}`}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span>})}{overflowSelectionCount>0&&<span className="avatar-overflow" style={{viewTransitionName:'compare-avatar-overflow'}}>+{overflowSelectionCount}</span>}</div>{compareMode?<label className="hide-identical-control"><input type="checkbox" checked={hideIdentical} onChange={(event)=>setHideIdentical(event.target.checked)} /><span>{t('hideIdentical')}</span></label>:<p><strong>{t('selected',{count:selected.length})}</strong><small>{t('ready')}</small></p>}</div><div className="compare-dock-actions"><button className="clear-selection" onClick={clearSelection}>{t('clear')}</button><button className={`compare-action ${compareMode?'exit':''}`} aria-pressed={compareMode} onClick={()=>setCompareMode((current)=>!current)}>{compareMode?t('exitComparison'):t('compareSelected')}</button></div></div>}</div>
     <LocalChatWidget recorderScores={recorderScores} onHeightChange={setChatHeight} onExpandedChange={setChatExpanded} onUpdateComparison={updateComparisonFromChat} onUpdateSort={updateSortFromChat} onUpdateFilters={updateFiltersFromChat} />
-  </main>;
+  </Drawer.Indent>
+  </Drawer.Provider>;
 }

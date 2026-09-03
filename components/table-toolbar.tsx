@@ -1,6 +1,7 @@
 'use client';
 
-import type { CSSProperties } from 'react';
+import type { CSSProperties, ReactNode, RefObject } from 'react';
+import { Drawer } from '@base-ui/react/drawer';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, useSensors, type DragEndEvent } from '@dnd-kit/core';
@@ -51,6 +52,7 @@ type SortableRuleItemProps = {
   sortableFields: FieldDefinition[];
   sortRules: SortRule[];
   reducedMotion: boolean;
+  mobile: boolean;
   onUpdate: (id: string, patch: Partial<SortRule>) => void;
   onRemove: (id: string) => void;
 };
@@ -62,7 +64,7 @@ type FieldMenuPosition = {
   maxHeight: number;
 };
 
-function GroupedFieldSelect({ rule, index, sortableFields, sortRules, onUpdate }: Pick<SortableRuleItemProps, 'rule' | 'index' | 'sortableFields' | 'sortRules' | 'onUpdate'>) {
+function GroupedFieldSelect({ rule, index, sortableFields, sortRules, onUpdate, mobile }: Pick<SortableRuleItemProps, 'rule' | 'index' | 'sortableFields' | 'sortRules' | 'onUpdate' | 'mobile'>) {
   const { fieldLabel, groupLabel } = useI18n();
   const [open, setOpen] = useState(false);
   const [position, setPosition] = useState<FieldMenuPosition | null>(null);
@@ -147,6 +149,19 @@ function GroupedFieldSelect({ rule, index, sortableFields, sortRules, onUpdate }
     };
   }, [open]);
 
+  if (mobile) return <select
+    aria-label={`Sort priority ${index + 1} field`}
+    value={rule.key}
+    onChange={(event) => {
+      const field = sortableFields.find((item) => item.key === event.target.value);
+      if (field) onUpdate(rule.id, {key: field.key, direction: defaultSortDirection(field)});
+    }}
+  >
+    {groupedFields.map((group) => <optgroup key={group.key} label={groupLabel(group)}>
+      {group.fields.map((field) => <option key={field.key} value={field.key} disabled={sortRules.some((item) => item.id !== rule.id && item.key === field.key)}>{fieldLabel(field)}</option>)}
+    </optgroup>)}
+  </select>;
+
   return <div className="sort-field-select" ref={rootRef}>
     <button
       type="button"
@@ -214,7 +229,7 @@ function GroupedFieldSelect({ rule, index, sortableFields, sortRules, onUpdate }
   </div>;
 }
 
-function SortableRuleItem({ rule, index, sortableFields, sortRules, reducedMotion, onUpdate, onRemove }: SortableRuleItemProps) {
+function SortableRuleItem({ rule, index, sortableFields, sortRules, reducedMotion, mobile, onUpdate, onRemove }: SortableRuleItemProps) {
   const { t } = useI18n();
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: rule.id,
@@ -230,10 +245,43 @@ function SortableRuleItem({ rule, index, sortableFields, sortRules, reducedMotio
 
   return <div ref={setNodeRef} style={style} className={`sort-rule ${isDragging ? 'is-dragging' : ''}`}>
     <button type="button" className="drag-handle" {...attributes} {...listeners} aria-label={`${t('sort')} ${index + 1}`} title={t('sort')}><FontAwesomeIcon icon={faBars} /></button>
-    <GroupedFieldSelect rule={rule} index={index} sortableFields={sortableFields} sortRules={sortRules} onUpdate={onUpdate} />
+    <GroupedFieldSelect mobile={mobile} rule={rule} index={index} sortableFields={sortableFields} sortRules={sortRules} onUpdate={onUpdate} />
     <button type="button" className="sort-direction-toggle" aria-label={`Switch ${rule.key} sort to ${rule.direction === 'asc' ? 'descending' : 'ascending'}`} title={rule.direction === 'asc' ? 'Ascending' : 'Descending'} onClick={() => onUpdate(rule.id, {direction:rule.direction === 'asc' ? 'desc' : 'asc'})}>{rule.direction === 'asc' ? 'ASC' : 'DESC'}</button>
     <button type="button" className="remove-rule" onClick={() => onRemove(rule.id)} aria-label={`Remove ${rule.key} sort`}><FontAwesomeIcon icon={faXmark} /></button>
   </div>;
+}
+
+function ToolPanel({ mobile, open, onClose, triggerRef, title, kind, actions, children }: {
+  mobile: boolean;
+  open: boolean;
+  onClose: () => void;
+  triggerRef: RefObject<HTMLButtonElement | null>;
+  title: string;
+  kind: 'filter' | 'sort';
+  actions: ReactNode;
+  children: ReactNode;
+}) {
+  const { t } = useI18n();
+  if (!mobile) return open ? <div className={`tool-menu ${kind}-menu`} role="dialog" aria-label={title}>
+    <div className="tool-menu-header"><strong>{title}</strong>{actions}</div>
+    {children}
+  </div> : null;
+
+  return <Drawer.Root open={open} onOpenChange={(nextOpen) => { if (!nextOpen) onClose(); }} swipeDirection="down">
+    <Drawer.Portal>
+      <Drawer.Backdrop className="mobile-sheet-backdrop" />
+      <Drawer.Viewport className="mobile-sheet-viewport">
+        <Drawer.Popup className={`toolbar mobile-tool-sheet ${kind}-sheet`} finalFocus={triggerRef}>
+          <div className="mobile-sheet-grabber" aria-hidden="true"><span /></div>
+          <header className="mobile-sheet-header" data-base-ui-swipe-ignore>
+            <Drawer.Title>{title}</Drawer.Title>
+            <div className="mobile-sheet-actions">{actions}<Drawer.Close className="mobile-sheet-close" aria-label={t('close')}><FontAwesomeIcon icon={faXmark} /></Drawer.Close></div>
+          </header>
+          <Drawer.Content className="mobile-sheet-content" data-base-ui-swipe-ignore>{children}</Drawer.Content>
+        </Drawer.Popup>
+      </Drawer.Viewport>
+    </Drawer.Portal>
+  </Drawer.Root>;
 }
 
 export function TableToolbar({
@@ -249,6 +297,9 @@ export function TableToolbar({
   onFullWidthChange,
 }: TableToolbarProps) {
   const { t, fieldLabel, groupLabel, optionLabel } = useI18n();
+  const [mobile, setMobile] = useState(false);
+  const filterTriggerRef = useRef<HTMLButtonElement>(null);
+  const sortTriggerRef = useRef<HTMLButtonElement>(null);
   const [openPanel, setOpenPanel] = useState<'filter' | 'sort' | null>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [expandedFilterGroups, setExpandedFilterGroups] = useState<Record<string, boolean>>(() => Object.fromEntries(fieldGroups.map((group) => [group.key, group.key === 'general'])));
@@ -273,6 +324,15 @@ export function TableToolbar({
   );
 
   useEffect(() => {
+    const media = window.matchMedia('(max-width: 760px)');
+    const update = () => setMobile(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+
+  useEffect(() => {
+    if (mobile) return;
     const closeOnOutsideClick = (event: MouseEvent) => {
       if ((event.target as Element).closest?.('.sort-field-menu')) return;
       if (!toolsRef.current?.contains(event.target as Node)) setOpenPanel(null);
@@ -286,7 +346,7 @@ export function TableToolbar({
       document.removeEventListener('mousedown', closeOnOutsideClick);
       document.removeEventListener('keydown', closeOnEscape);
     };
-  }, []);
+  }, [mobile]);
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -335,16 +395,15 @@ export function TableToolbar({
         </button>
 
         <div className="tool-anchor">
-          <button type="button" className={`icon-tool ${activeFilterCount ? 'has-rules' : ''}`} aria-label={t('filters')} aria-expanded={openPanel === 'filter'} onClick={() => setOpenPanel((panel) => panel === 'filter' ? null : 'filter')}>
+          <button ref={filterTriggerRef} type="button" className={`icon-tool ${activeFilterCount ? 'has-rules' : ''}`} aria-label={t('filters')} aria-expanded={openPanel === 'filter'} onClick={() => setOpenPanel((panel) => panel === 'filter' ? null : 'filter')}>
             <FontAwesomeIcon className="tool-icon filter-icon" icon={faFilter} aria-hidden="true" />
             {activeFilterCount > 0 && <span className="rule-count">{activeFilterCount}</span>}
           </button>
-          {openPanel === 'filter' && <div className="tool-menu filter-menu" role="dialog" aria-label={t('filters')}>
-            <div className="tool-menu-header"><div><strong>{t('filters')}</strong></div>{activeFilterCount > 0 && <button type="button" onClick={() => filterFields.forEach((field) => onFilterChange(field.key, 'any'))}>{t('clear')}</button>}</div>
+          <ToolPanel mobile={mobile} open={openPanel === 'filter'} onClose={() => setOpenPanel(null)} triggerRef={filterTriggerRef} title={t('filters')} kind="filter" actions={activeFilterCount > 0 && <button type="button" onClick={() => filterFields.forEach((field) => onFilterChange(field.key, 'any'))}>{t('clear')}</button>}>
             <div className="filter-list">
               {groupedFilterFields.filter((group) => filterGroupIsVisible(group.key)).map((group) => { const expanded = expandedFilterGroups[group.key] ?? false; const activeInGroup = group.fields.filter((field) => (filters[field.key] ?? 'any') !== 'any').length; return <section className={`filter-group ${expanded ? 'is-expanded' : 'is-collapsed'}`} key={group.key} style={{'--filter-group-inset':`${group.depth * 18}px`} as CSSProperties}>
                 <button type="button" className="filter-group-title" aria-expanded={expanded} onClick={() => setExpandedFilterGroups((current) => ({...current,[group.key]:!expanded}))}><FontAwesomeIcon icon={faChevronRight} aria-hidden="true" /><span>{groupLabel(group)}</span>{activeInGroup > 0 && <small>{activeInGroup}</small>}</button>
-                <div className="filter-group-fields"><div>
+                <div className="filter-group-fields" inert={!expanded}><div>
                 {group.fields.map((field) => {
                   const choices = field.type === 'boolean'
                     ? [{value:'any',label:t('any')},{value:'yes',label:t('yes')},{value:'no',label:t('no')},{value:'unknown',label:t('unknown')}]
@@ -360,26 +419,25 @@ export function TableToolbar({
                 </div></div>
               </section>; })}
             </div>
-          </div>}
+          </ToolPanel>
         </div>
 
         <div className="tool-anchor">
-          <button type="button" className={`icon-tool ${sortRules.length ? 'has-rules' : ''}`} aria-label={t('sort')} aria-expanded={openPanel === 'sort'} onClick={() => setOpenPanel((panel) => panel === 'sort' ? null : 'sort')}>
+          <button ref={sortTriggerRef} type="button" className={`icon-tool ${sortRules.length ? 'has-rules' : ''}`} aria-label={t('sort')} aria-expanded={openPanel === 'sort'} onClick={() => setOpenPanel((panel) => panel === 'sort' ? null : 'sort')}>
             <FontAwesomeIcon className="tool-icon" icon={faArrowDownWideShort} aria-hidden="true" />
             {sortRules.length > 0 && <span className="rule-count">{sortRules.length}</span>}
           </button>
-          {openPanel === 'sort' && <div className="tool-menu sort-menu" role="dialog" aria-label={t('sort')}>
-            <div className="tool-menu-header"><div><strong>{t('sort')}</strong></div>{sortRules.length > 0 && <button type="button" onClick={() => onSortRulesChange([])}>{t('clear')}</button>}</div>
+          <ToolPanel mobile={mobile} open={openPanel === 'sort'} onClose={() => setOpenPanel(null)} triggerRef={sortTriggerRef} title={t('sort')} kind="sort" actions={sortRules.length > 0 && <button type="button" onClick={() => onSortRulesChange([])}>{t('clear')}</button>}>
             <div className="sort-list">
               {sortRules.length === 0 && <p className="rules-empty">{t('noSort')}</p>}
               <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleSortEnd}>
                 <SortableContext items={sortRules.map((rule) => rule.id)} strategy={verticalListSortingStrategy}>
-                  {sortRules.map((rule, index) => <SortableRuleItem key={rule.id} rule={rule} index={index} sortableFields={sortableFields} sortRules={sortRules} reducedMotion={reducedMotion} onUpdate={updateSortRule} onRemove={(id) => onSortRulesChange(sortRules.filter((item) => item.id !== id))} />)}
+                  {sortRules.map((rule, index) => <SortableRuleItem key={rule.id} rule={rule} index={index} sortableFields={sortableFields} sortRules={sortRules} reducedMotion={reducedMotion} mobile={mobile} onUpdate={updateSortRule} onRemove={(id) => onSortRulesChange(sortRules.filter((item) => item.id !== id))} />)}
                 </SortableContext>
               </DndContext>
             </div>
             <button type="button" className="add-rule" disabled={sortRules.length === sortableFields.length} onClick={addSortRule}><FontAwesomeIcon icon={faPlus} />{t('addSort')}</button>
-          </div>}
+          </ToolPanel>
         </div>
       </div>
     </div>

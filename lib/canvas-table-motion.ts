@@ -1,4 +1,4 @@
-import { columnWidth, HEADER_HEIGHT, LABEL_WIDTH, rowAt, type CellAddress } from './canvas-table-layout';
+import { columnWidth, HEADER_HEIGHT, LABEL_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, rowAt, type CellAddress } from './canvas-table-layout';
 import type { TableCell } from './comparison-table-model';
 import type { PaintColumn, PaintRow, PaintScene } from './canvas-table-painter';
 
@@ -58,7 +58,7 @@ export class CanvasTableMotion {
     this.target = scene;
     this.width = width;
     this.reduced = reduced;
-    if (!previous || reordered(previous.products.map(product => product.id), scene.products.map(product => product.id))) {
+    if (!previous || !!previous.mobile !== !!scene.mobile || reordered(previous.products.map(product => product.id), scene.products.map(product => product.id))) {
       this.transitionScene = null;
       return;
     }
@@ -70,8 +70,8 @@ export class CanvasTableMotion {
     const productIds = reduced ? scene.products.map(product => product.id) : mergeExits(previous.products.map(product => product.id), scene.products.map(product => product.id));
     const rowIds = reduced ? scene.rows.map(row => row.id) : mergeExits(previous.rows.map(row => row.id), scene.rows.map(row => row.id));
     const products = productIds.map(id => scene.products[nextIndices.get(id)!] ?? previous.products[previousIndices.get(id)!]);
-    const oldWidth = columnWidth(previousWidth, previous.products.length);
-    const newWidth = columnWidth(width, scene.products.length);
+    const oldWidth = columnWidth(previousWidth, previous.products.length, previous.mobile);
+    const newWidth = columnWidth(width, scene.products.length, scene.mobile);
     this.columnTweens = productIds.map(id => {
       const oldIndex = previousIndices.get(id);
       const nextIndex = nextIndices.get(id);
@@ -90,7 +90,7 @@ export class CanvasTableMotion {
         const oldIndex = previousIndices.get(productIds[column]);
         return oldIndex === undefined ? [] : old.cellLayers?.(oldIndex) ?? [{ cell: old.cell(oldIndex), opacity: 1 }];
       } : undefined;
-      return { previousLayers, row: { ...source, cellLayers: undefined, contentHeight: next?.height ?? old!.contentHeight ?? old!.height, targetIndex: nextRowIndices.get(id) ?? -1,
+      return { previousLayers, row: { ...source, cellLayers: undefined, contentHeight: scene.mobile ? Math.max(next?.height ?? 0, old?.contentHeight ?? old?.height ?? 0) : next?.height ?? old!.contentHeight ?? old!.height, targetIndex: nextRowIndices.get(id) ?? -1,
         // Product indexes change during filtering. Resolve values by stable ID, including exiting columns.
         cell: column => {
           const productId = productIds[column];
@@ -118,7 +118,7 @@ export class CanvasTableMotion {
       this.transitionScene = null;
       this.rowTweens = [];
       this.columnTweens = [];
-      return { scene: this.target, totalWidth: LABEL_WIDTH + this.target.products.length * columnWidth(this.width, this.target.products.length), totalHeight: this.target.rows.at(-1) ? this.target.rows.at(-1)!.top + this.target.rows.at(-1)!.height : 0, running: false };
+      return { scene: this.target, totalWidth: (this.target.mobile ? 0 : LABEL_WIDTH) + this.target.products.length * columnWidth(this.width, this.target.products.length, this.target.mobile), totalHeight: this.target.rows.at(-1) ? this.target.rows.at(-1)!.top + this.target.rows.at(-1)!.height : 0, running: false };
     }
     const progress = tableEase((now - this.started) / this.duration);
     let top = 0;
@@ -139,7 +139,7 @@ export class CanvasTableMotion {
       left += width;
       return column;
     });
-    return { scene: { ...this.transitionScene, rows, columns }, totalWidth: LABEL_WIDTH + left, totalHeight: top, running: true };
+    return { scene: { ...this.transitionScene, rows, columns }, totalWidth: (this.target.mobile ? 0 : LABEL_WIDTH) + left, totalHeight: top, running: true };
   }
 
   finish() { this.transitionScene = null; this.rowTweens = []; this.columnTweens = []; }
@@ -148,9 +148,21 @@ export class CanvasTableMotion {
 /** Pointer hit testing uses what was painted, then maps back to the live model. Exits are inert. */
 export function motionHitTest(scene: PaintScene, width: number, height: number, left: number, top: number, x: number, y: number): CellAddress | null {
   if (x < 0 || y < 0 || x >= width || y >= height) return null;
-  const column = x < LABEL_WIDTH ? -1 : scene.columns ? rowAt(scene.columns, x - LABEL_WIDTH + left) : Math.floor((x - LABEL_WIDTH + left) / columnWidth(width, scene.products.length));
-  const row = y < HEADER_HEIGHT ? -1 : rowAt(scene.rows, y - HEADER_HEIGHT + top);
-  if (column >= scene.products.length || row >= scene.rows.length) return null;
+  if (scene.mobile && y < MOBILE_SUMMARY_HEIGHT) return { row: -1, column: -1 };
+  if (scene.mobile && y >= HEADER_HEIGHT) {
+    const sticky = mobileStickyHeaders(scene.rows, top).find(header => y >= Math.max(header.top, header.clipTop) && y < header.top + header.height);
+    if (sticky) {
+      const target = scene.rows[sticky.row].targetIndex ?? sticky.row;
+      return target < 0 ? null : { row: target, column: -1 };
+    }
+  }
+  const labelWidth = scene.mobile ? 0 : LABEL_WIDTH;
+  let column = x < labelWidth ? -1 : scene.columns ? rowAt(scene.columns, x - labelWidth + left) : Math.floor((x - labelWidth + left) / columnWidth(width, scene.products.length, scene.mobile));
+  const contentY = y - HEADER_HEIGHT + top;
+  const row = y < HEADER_HEIGHT ? -1 : rowAt(scene.rows, contentY);
+  if (row >= scene.rows.length) return null;
+  if (scene.mobile && row >= 0 && contentY - scene.rows[row].top < (scene.rows[row].labelHeight ?? 0)) column = -1;
+  if (column >= scene.products.length) return null;
   const targetColumn = column < 0 ? -1 : scene.columns?.[column].targetIndex ?? column;
   const targetRow = row < 0 ? -1 : scene.rows[row].targetIndex ?? row;
   if ((column >= 0 && targetColumn < 0) || (row >= 0 && targetRow < 0)) return null;

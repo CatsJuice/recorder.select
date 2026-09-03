@@ -14,6 +14,12 @@ The comparison surface uses one viewport-sized Canvas 2D bitmap. The native scro
 
 The saved full-width layout is applied by a head bootstrap before hydration. CSS and Canvas motion remain disabled while full-width and weight preferences hydrate and their layout is painted. Subsequent user changes retain their normal transitions.
 
+## Mobile layout
+
+At viewport widths of 760px and below, the surface fills the available page width without a frame, outer margin, or cell borders. Each field has a full-width, 40px label strip above its horizontally scrolling values. Label strips are painted in viewport coordinates, so they stay fixed during horizontal scrolling. Category headings without summaries have no empty value strip. Product headers remain fixed vertically; a compact summary/reset strip replaces the desktop corner.
+
+The same model and motion controller drive both layouts. Mobile rows include their label height in the shared coordinate system used for drawing, hit testing and keyboard navigation. Collapsible headers stick below the product headers, stacking active ancestors and sliding out at each group's end. A cached hierarchy keeps scrolling work bounded to the active group chain. Drawing, pointer targets, keyboard reveal and virtual accessibility rows all include these pinned headers. Website links use the full viewport width, and weight popovers anchor below the field label. Crossing the breakpoint settles the layout immediately, while filtering and expansion retain their normal animations.
+
 ## Interactions and accessibility
 
 The toolbar and comparison dock keep their existing controls. Click a product header to select it, a group to toggle it, or a value to open selectable full text. Website hit regions are real links, preserving keyboard access, context menus and modified clicks. Hover a weighted field label to open its floating range control. The native non-modal popover stays open while crossing into it or dragging the slider; its position follows the painted row. Touch and keyboard activation open the same popover and focus the slider. Escape or clicking outside closes it.

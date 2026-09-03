@@ -28,6 +28,13 @@
   border-top-right-radius: 12px;
 }
 
+@media (max-width: 760px) {
+  .nav .brand-name,
+  .nav .submit-link {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page-header-slot,
   .page-header-slot .nav {

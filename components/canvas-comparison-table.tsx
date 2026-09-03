@@ -4,11 +4,12 @@ import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useSta
 import { useI18n } from '../lib/i18n';
 import { createComparisonModel, type ModelOptions, type TableRow } from '../lib/comparison-table-model';
 import { CanvasTablePainter, type PaintScene } from '../lib/canvas-table-painter';
-import { HEADER_HEIGHT, LABEL_WIDTH, columnWidth, visibleRange, rowAt, type CellAddress } from '../lib/canvas-table-layout';
+import { HEADER_HEIGHT, LABEL_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, columnWidth, visibleRange, rowAt, type CellAddress } from '../lib/canvas-table-layout';
 import { CanvasTableMotion, motionHitTest } from '../lib/canvas-table-motion';
+import { CanvasScrollEdge } from '../lib/canvas-scroll-edge';
 import { focusRecorderEvent } from '../lib/comparison-table-events';
 
-type Props = Omit<ModelOptions, 'locale' | 't' | 'fieldLabel' | 'fieldUnit' | 'groupLabel'> & {
+type Props = Omit<ModelOptions, 'locale' | 't' | 'fieldLabel' | 'fieldUnit' | 'groupLabel' | 'mobile'> & {
   animationsEnabled: boolean;
   scores: Record<string, number>;
   selected: string[];
@@ -19,16 +20,26 @@ type Props = Omit<ModelOptions, 'locale' | 't' | 'fieldLabel' | 'fieldUnit' | 'g
   onResetWeights: () => void;
 };
 type FocusedCell = { rowId: string | null; productId: string | null };
-type WindowRange = { firstColumn: number; endColumn: number; firstRow: number; endRow: number; cellWidth: number; columns?: number[] };
+type WindowRange = { firstColumn: number; endColumn: number; firstRow: number; endRow: number; cellWidth: number; columns?: number[]; stickyRows?: number[] };
+const SCROLL_EDGE_WIDTH = 80;
 const sameAddress = (a: CellAddress | null, b: CellAddress | null) => a?.row === b?.row && a?.column === b?.column;
 
 export function CanvasComparisonTable(props: Props) {
   const { animationsEnabled, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, scores, selected, bottomSafeArea } = props;
   const { locale, t, fieldLabel, fieldUnit, groupLabel } = useI18n();
-  const model = useMemo(() => createComparisonModel({ products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel }), [products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel]);
-  const scene = useMemo<PaintScene>(() => ({ products, rows: model.rows, scores, selected: new Set(selected), title: t('recorders', { count: products.length }), subtitle: t(compareMode ? 'selectedRecorders' : 'selectToCompare'), resetLabel: t('resetWeights'), scoreLabel: t('score'), emptyLabel: t('noMatches') }), [products, model.rows, scores, selected, compareMode, t]);
+  const [mobile, setMobile] = useState(false);
+  useLayoutEffect(() => {
+    const query = matchMedia('(max-width: 760px)');
+    const sync = () => setMobile(query.matches);
+    sync();
+    query.addEventListener('change', sync);
+    return () => query.removeEventListener('change', sync);
+  }, []);
+  const model = useMemo(() => createComparisonModel({ mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel }), [mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel]);
+  const scene = useMemo<PaintScene>(() => ({ mobile, products, rows: model.rows, scores, selected: new Set(selected), title: t('recorders', { count: products.length }), subtitle: t(compareMode ? 'selectedRecorders' : 'selectToCompare'), resetLabel: t('resetWeights'), scoreLabel: t('score'), emptyLabel: t('noMatches') }), [mobile, products, model.rows, scores, selected, compareMode, t]);
   const [focused, setFocused] = useState<FocusedCell>({ rowId: null, productId: null });
   const [hasFocus, setHasFocus] = useState(false);
+  const keyboardInputRef = useRef(true);
   const [windowRange, setWindowRange] = useState<WindowRange>({ firstColumn: 0, endColumn: 0, firstRow: 0, endRow: 0, cellWidth: 148 });
   const [editor, setEditor] = useState<{ rowId: string; productId: string | null } | null>(null);
   const [weightEditor, setWeightEditor] = useState<{ rowId: string; focusInput: boolean; open: boolean } | null>(null);
@@ -39,6 +50,7 @@ export function CanvasComparisonTable(props: Props) {
   const rootRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const edgeRef = useRef<HTMLCanvasElement>(null);
   const spacerRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -52,6 +64,19 @@ export function CanvasComparisonTable(props: Props) {
   const active = useMemo<CellAddress>(() => ({ row: focused.rowId === null ? -1 : model.rows.findIndex(row => row.id === focused.rowId), column: focused.productId === null ? -1 : products.findIndex(product => product.id === focused.productId) }), [focused, model.rows, products]);
   const currentRef = useRef({ scene, totalHeight: model.totalHeight, bottomSafeArea, active, hasFocus, animationsEnabled });
   const gridId = useId();
+  useEffect(() => {
+    const pointer = () => { keyboardInputRef.current = false; setHasFocus(false); };
+    const keyboard = () => {
+      keyboardInputRef.current = true;
+      if (scrollerRef.current?.contains(document.activeElement)) setHasFocus(true);
+    };
+    document.addEventListener('pointerdown', pointer, true);
+    document.addEventListener('keydown', keyboard, true);
+    return () => {
+      document.removeEventListener('pointerdown', pointer, true);
+      document.removeEventListener('keydown', keyboard, true);
+    };
+  }, []);
   const cellId = (row: number, column: number) => `${gridId}-${row + 1}-${column + 1}`;
   const weightRow = weightEditor && model.rows.find(row => row.id === weightEditor.rowId && row.weightKey);
   const cancelWeightClose = useCallback(() => {
@@ -90,11 +115,12 @@ export function CanvasComparisonTable(props: Props) {
     const place = () => {
       const scroller = scrollerRef.current!;
       const row = (paintedSceneRef.current ?? currentRef.current.scene).rows.find(candidate => candidate.id === weightRow.id);
-      if (!row || row.targetIndex === -1 || row.height <= 0 || row.top + row.height <= scroller.scrollTop || HEADER_HEIGHT + row.top - scroller.scrollTop >= scroller.clientHeight) { closeWeight(); return; }
+      if (!row || row.targetIndex === -1 || row.height <= 0 || row.top + (currentRef.current.scene.mobile ? row.labelHeight ?? row.height : row.height) <= scroller.scrollTop || HEADER_HEIGHT + row.top - scroller.scrollTop >= scroller.clientHeight) { closeWeight(); return; }
       const rect = scroller.getBoundingClientRect();
-      const center = rect.top + HEADER_HEIGHT + row.top - scroller.scrollTop + row.height / 2;
-      panel.style.left = `${Math.max(8, Math.min(rect.left + LABEL_WIDTH - 8, window.innerWidth - panel.offsetWidth - 8))}px`;
-      panel.style.top = `${Math.max(8, Math.min(center - panel.offsetHeight / 2, window.innerHeight - panel.offsetHeight - 8))}px`;
+      const mobile = currentRef.current.scene.mobile;
+      const center = rect.top + HEADER_HEIGHT + row.top - scroller.scrollTop + (mobile ? row.labelHeight ?? 40 : row.height) / 2;
+      panel.style.left = `${Math.max(8, Math.min(rect.left + (mobile ? scroller.clientWidth - panel.offsetWidth - 8 : LABEL_WIDTH - 8), window.innerWidth - panel.offsetWidth - 8))}px`;
+      panel.style.top = `${Math.max(8, Math.min(mobile ? Math.min(center + 20, rect.bottom - panel.offsetHeight - 8) : center - panel.offsetHeight / 2, window.innerHeight - panel.offsetHeight - 8))}px`;
     };
     if (!panel.matches(':popover-open')) panel.showPopover();
     syncWeightRef.current = place;
@@ -146,6 +172,7 @@ export function CanvasComparisonTable(props: Props) {
     let lastHeight = 0;
     const schedule = () => { if (!frame && !disposed) frame = requestAnimationFrame(draw); };
     const painter = new CanvasTablePainter(schedule);
+    const edgePainter = new CanvasScrollEdge();
     const motion = new CanvasTableMotion();
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
     let linkPositions = new Map<string, { left: number; width: number; opacity: number }>();
@@ -187,8 +214,38 @@ export function CanvasComparisonTable(props: Props) {
       }
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       const paintRange = painter.draw(ctx, animated.scene, { width, height, left: scroller.scrollLeft, top: scroller.scrollTop }, current.hasFocus ? current.active : null, hoverRef.current, highlightRef.current);
+      const edge = edgeRef.current;
+      if (edge) {
+        const remaining = Math.max(0, scroller.scrollWidth - width - scroller.scrollLeft);
+        edge.hidden = remaining <= 1;
+        edge.style.right = `${scroller.offsetWidth - width}px`;
+        edge.style.height = `${height}px`;
+
+        // Blur only horizontally scrolling content; fixed mobile labels stay crisp.
+        const excluded: Array<[number, number]> = [];
+        if (animated.scene.mobile) {
+          excluded.push([0, MOBILE_SUMMARY_HEIGHT]);
+          for (let index = paintRange.firstRow; index < paintRange.endRow; index++) {
+            const row = animated.scene.rows[index];
+            const y = HEADER_HEIGHT + row.top - scroller.scrollTop;
+            excluded.push([Math.max(HEADER_HEIGHT, y), y + Math.min(row.height, row.labelHeight ?? 0)]);
+          }
+          for (const header of mobileStickyHeaders(animated.scene.rows, scroller.scrollTop)) {
+            excluded.push([Math.max(header.top, header.clipTop), header.top + header.height]);
+          }
+        }
+        const bands: Array<[number, number]> = [];
+        for (const [start, end] of excluded.sort((a, b) => a[0] - b[0])) {
+          const bottom = Math.min(height, end);
+          if (bottom <= start) continue;
+          const last = bands.at(-1);
+          if (last && start <= last[1]) last[1] = Math.max(last[1], bottom);
+          else bands.push([start, bottom]);
+        }
+        edgePainter.draw(edge, canvas, SCROLL_EDGE_WIDTH, height, dpr, edge.hidden ? 0 : Math.min(1, remaining / SCROLL_EDGE_WIDTH), bands);
+      }
       // ARIA references the live model; link hit regions follow the actual painted columns.
-      const range: WindowRange = visibleRange(current.scene.rows, current.scene.products.length, width, height, scroller.scrollLeft, scroller.scrollTop);
+      const range: WindowRange = visibleRange(current.scene.rows, current.scene.products.length, width, height, scroller.scrollLeft, scroller.scrollTop, current.scene.mobile);
       const columns: number[] = [];
       linkPositions = new Map();
       for (let column = paintRange.firstColumn; column < paintRange.endColumn; column++) {
@@ -199,13 +256,15 @@ export function CanvasComparisonTable(props: Props) {
         linkPositions.set(animated.scene.products[column].id, { left: slot?.top ?? column * range.cellWidth, width: slot?.width ?? range.cellWidth, opacity: slot?.opacity ?? 1 });
       }
       range.columns = columns;
+      range.stickyRows = current.scene.mobile ? mobileStickyHeaders(current.scene.rows, scroller.scrollTop).map(header => header.row) : [];
       if (linksRef.current) {
         linksRef.current.style.transform = `translateX(${-scroller.scrollLeft}px)`;
-        linksRef.current.parentElement!.style.width = `${Math.max(0, width - LABEL_WIDTH)}px`;
+        linksRef.current.parentElement!.style.left = `${current.scene.mobile ? 0 : LABEL_WIDTH}px`;
+        linksRef.current.parentElement!.style.width = `${Math.max(0, width - (current.scene.mobile ? 0 : LABEL_WIDTH))}px`;
       }
       syncLinks();
       syncWeightRef.current();
-      setWindowRange(previous => previous.firstColumn === range.firstColumn && previous.endColumn === range.endColumn && previous.firstRow === range.firstRow && previous.endRow === range.endRow && previous.cellWidth === range.cellWidth && previous.columns?.length === columns.length && previous.columns.every((column, index) => column === columns[index]) ? previous : range);
+      setWindowRange(previous => previous.firstColumn === range.firstColumn && previous.endColumn === range.endColumn && previous.firstRow === range.firstRow && previous.endRow === range.endRow && previous.cellWidth === range.cellWidth && previous.columns?.length === columns.length && previous.columns.every((column, index) => column === columns[index]) && previous.stickyRows?.length === range.stickyRows!.length && previous.stickyRows.every((row, index) => row === range.stickyRows![index]) ? previous : range);
       if (animated.running) schedule();
       // A new scrollbar can reduce the viewport by its own width/height.
       if (lastWidth !== width || lastHeight !== height) { lastWidth = width; lastHeight = height; schedule(); }
@@ -242,27 +301,36 @@ export function CanvasComparisonTable(props: Props) {
       reducedMotion.removeEventListener('change', schedule);
       syncLinksRef.current = () => {};
       painter.dispose();
+      edgePainter.dispose();
     };
   }, []);
 
   const focusCell = useCallback((address: CellAddress, reveal = false) => {
     const row = model.rows[address.row];
+    if (mobile && row?.height === row?.labelHeight && row) address = { ...address, column: -1 };
     const product = products[address.column];
     setFocused({ rowId: row?.id ?? null, productId: product?.id ?? null });
     const scroller = scrollerRef.current!;
     if (reveal) {
-      const width = columnWidth(scroller.clientWidth, products.length);
+      const width = columnWidth(scroller.clientWidth, products.length, mobile);
+      const labelWidth = mobile ? 0 : LABEL_WIDTH;
       if (product) {
         const left = address.column * width;
         if (left < scroller.scrollLeft) scroller.scrollLeft = left;
-        else if (left + width > scroller.scrollLeft + scroller.clientWidth - LABEL_WIDTH) scroller.scrollLeft = Math.max(left, left + width - scroller.clientWidth + LABEL_WIDTH);
+        else if (left + width > scroller.scrollLeft + scroller.clientWidth - labelWidth) scroller.scrollLeft = Math.max(left, left + width - scroller.clientWidth + labelWidth);
       }
       if (row) {
-        if (row.top < scroller.scrollTop) scroller.scrollTop = row.top;
+        const pinned = mobile ? mobileStickyHeaders(model.rows, scroller.scrollTop) : [];
+        if (address.column === -1 && pinned.some(header => header.row === address.row)) return;
+        const covered = pinned.reduce((bottom, header) => Math.max(bottom, header.top + header.height - HEADER_HEIGHT), 0);
+        if (row.top < scroller.scrollTop + covered) {
+          const ancestors = mobile ? mobileStickyHeaders(model.rows, row.top).filter(header => header.row < address.row) : [];
+          scroller.scrollTop = Math.max(0, row.top - ancestors.reduce((sum, header) => sum + header.height, 0));
+        }
         else if (row.top + row.height > scroller.scrollTop + scroller.clientHeight - HEADER_HEIGHT) scroller.scrollTop = Math.min(row.top, row.top + row.height - scroller.clientHeight + HEADER_HEIGHT);
       }
     }
-  }, [model.rows, products]);
+  }, [model.rows, products, mobile]);
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout>;
     const onFocus = (event: Event) => {
@@ -287,7 +355,16 @@ export function CanvasComparisonTable(props: Props) {
       return;
     }
     const row = model.rows[address.row];
-    if (row.expanded !== undefined) props.onToggleGroup(row.id);
+    if (row.expanded !== undefined) {
+      const scroller = scrollerRef.current!;
+      if (mobile && row.expanded) {
+        const painted = paintedSceneRef.current ?? scene;
+        const pinned = mobileStickyHeaders(painted.rows, scroller.scrollTop).find(header => painted.rows[header.row].id === row.id);
+        // Keep a collapsed section within reach instead of retaining an offset deep inside its removed content.
+        if (pinned) scroller.scrollTop = Math.max(0, row.top - (pinned.clipTop - HEADER_HEIGHT));
+      }
+      props.onToggleGroup(row.id);
+    }
     else if (address.column === -1 && row.weightKey) openWeight(row.id, true);
     else if (address.column >= 0) setEditor({ rowId: row.id, productId: products[address.column]?.id ?? null });
   };
@@ -341,7 +418,7 @@ export function CanvasComparisonTable(props: Props) {
 
   const visibleColumns = (windowRange.columns ?? []).filter(index => index < products.length);
   const accessibleColumns = [...new Set([-1, ...visibleColumns, active.column])].sort((a, b) => a - b);
-  const accessibleRows = [...new Set([-1, ...Array.from({ length: windowRange.endRow - windowRange.firstRow }, (_, index) => index + windowRange.firstRow), active.row])].filter(index => index < model.rows.length).sort((a, b) => a - b);
+  const accessibleRows = [...new Set([-1, ...(windowRange.stickyRows ?? []), ...Array.from({ length: windowRange.endRow - windowRange.firstRow }, (_, index) => index + windowRange.firstRow), active.row])].filter(index => index < model.rows.length).sort((a, b) => a - b);
   const labelFor = (row: TableRow | undefined, column: number) => {
     if (!row) return column < 0 ? `${scene.title}, ${scene.resetLabel}` : `${products[column].name}, ${scores[products[column].id]?.toFixed(1)} ${t('score')}`;
     if (column < 0) return row.weightKey ? `${row.label}, ${t('weight')} ${row.weight}` : row.label;
@@ -349,9 +426,9 @@ export function CanvasComparisonTable(props: Props) {
     return `${products[column].name}, ${row.label}: ${cell.text}${cell.secondary ? `, ${cell.secondary}` : ''}`;
   };
 
-  return <div className="canvas-comparison comparison-surface" ref={rootRef}>
-    <div className="canvas-table-scroll" ref={scrollerRef} role="grid" tabIndex={0} aria-label={scene.title} aria-rowcount={model.rows.length + 1} aria-colcount={products.length + 1} aria-multiselectable="true" aria-activedescendant={cellId(active.row, active.column)} aria-describedby={`${gridId}-help`}
-      onFocus={() => setHasFocus(true)} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false); }} onKeyDown={onKeyDown}
+  return <div className={`canvas-comparison comparison-surface${mobile ? ' is-mobile' : ''}`} ref={rootRef}>
+    <div className="canvas-table-scroll" ref={scrollerRef} role="grid" tabIndex={0} data-keyboard-focus={hasFocus} aria-label={scene.title} aria-rowcount={model.rows.length + 1} aria-colcount={products.length + 1} aria-multiselectable="true" aria-activedescendant={cellId(active.row, active.column)} aria-describedby={`${gridId}-help`}
+      onFocus={() => setHasFocus(keyboardInputRef.current)} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false); }} onKeyDown={onKeyDown}
       onCopy={event => { event.clipboardData.setData('text/plain', labelFor(model.rows[active.row], active.column)); event.preventDefault(); }}
       onPointerMove={onPointerMove} onPointerLeave={() => { hoverRef.current = null; deferWeightClose(); scheduleRef.current(); }}
       onPointerDown={event => { if (event.button !== 0) return; pointerRef.current = { x: event.clientX, y: event.clientY, left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop }; }}
@@ -364,8 +441,10 @@ export function CanvasComparisonTable(props: Props) {
         event.currentTarget.focus({ preventScroll: true });
         // Only the actual reset button in the corner is clickable.
         if (address.row === -1 && address.column === -1) {
-          const y = event.clientY - event.currentTarget.getBoundingClientRect().top;
-          if (y < 112 || y > 146) { focusCell(address); return; }
+          const rect = event.currentTarget.getBoundingClientRect();
+          const y = event.clientY - rect.top;
+          const x = event.clientX - rect.left;
+          if (mobile ? y >= MOBILE_SUMMARY_HEIGHT || x < event.currentTarget.clientWidth * .6 : y < 112 || y > 146) { focusCell(address); return; }
         }
         activate(address);
       }}>
@@ -385,6 +464,7 @@ export function CanvasComparisonTable(props: Props) {
       </div>
     </div>
     <canvas ref={canvasRef} className="canvas-table-surface" aria-hidden="true" />
+    <canvas ref={edgeRef} className="canvas-scroll-edge" style={{ width: SCROLL_EDGE_WIDTH }} aria-hidden="true" hidden />
     <div className="canvas-table-links-clip"><div className="canvas-table-links" ref={linksRef}>{visibleColumns.map(column => <a key={products[column].id} data-product-id={products[column].id} href={products[column].website} target="_blank" rel="noreferrer" style={{ left: column * windowRange.cellWidth + 12, width: windowRange.cellWidth - 24 }} aria-label={t('visitWebsite', { name: products[column].name })} title={t('visitWebsite', { name: products[column].name })} onFocus={() => focusCell({ row: -1, column }, true)} />)}</div></div>
     <div ref={weightPopoverRef} popover="manual" role="dialog" aria-labelledby={`${gridId}-weight-title`} className="field-weight-panel canvas-weight-popover"
       onPointerEnter={cancelWeightClose} onPointerLeave={deferWeightClose}

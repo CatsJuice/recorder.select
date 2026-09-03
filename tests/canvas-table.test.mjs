@@ -312,3 +312,132 @@ test('animation paints only visible cells and cleans up every outgoing column on
   assert.equal(motion.sample(260).scene.columns, undefined);
   painter.dispose();
 });
+
+
+test('mobile fields stack above values while category headings have no empty value strip', () => {
+  const options = { ...base, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) };
+  const desktop = createComparisonModel(options);
+  const mobile = createComparisonModel({ ...options, mobile: true });
+  const find = (model, id) => model.rows.find(row => row.id === id);
+  assert.equal(find(mobile, 'monthlyPrice').height, find(desktop, 'monthlyPrice').height + layout.MOBILE_LABEL_HEIGHT);
+  assert.equal(find(mobile, 'subjectiveReviews').height, layout.MOBILE_LABEL_HEIGHT);
+  assert.equal(find(mobile, 'performance').height, layout.MOBILE_LABEL_HEIGHT);
+  assert.equal(find(mobile, 'performanceRecordingCPU').height, 84 + layout.MOBILE_LABEL_HEIGHT);
+  assert.deepEqual(mobile.rows.map(row => row.id), desktop.rows.map(row => row.id));
+  mobile.rows.forEach((row, index) => {
+    assert.equal(row.labelHeight, layout.MOBILE_LABEL_HEIGHT);
+    if (index) assert.equal(row.top, mobile.rows[index - 1].top + mobile.rows[index - 1].height);
+  });
+});
+
+test('mobile labels stay hittable across horizontal scrolling and exact label/value boundaries', () => {
+  const rows = [{ id: 'field', label: 'Field', top: 0, height: 100, labelHeight: 40, level: 0, cell: () => ({ text: 'value' }) }];
+  const products = Array.from({ length: 10 }, (_, index) => ({ ...recorders[0], id: `mobile-${index}` }));
+  const scene = { ...motionScene([]), mobile: true, rows, products };
+  const hit = (left, x, y, top = 0) => {
+    const expected = layout.hitTest(rows, products.length, 390, 700, left, top, x, y, true);
+    assert.deepEqual(motionHitTest(scene, 390, 700, left, top, x, y), expected);
+    return expected;
+  };
+  for (const left of [0, 148, 593]) {
+    assert.deepEqual(hit(left, 12, 180), { row: 0, column: -1 });
+    assert.deepEqual(hit(left, 389, 207), { row: 0, column: -1 });
+    assert.deepEqual(hit(left, 12, 208), { row: 0, column: Math.floor((left + 12) / 148) });
+  }
+  assert.deepEqual(hit(148, 12, 100), { row: -1, column: 1 });
+  assert.deepEqual(hit(148, 12, 168, 40), { row: 0, column: 1 });
+  assert.equal(hit(0, 12, 268), null);
+  assert.equal(hit(0, 390, 200), null);
+  assert.equal(layout.columnWidth(390, 2, true), 195);
+  assert.equal(layout.columnWidth(390, 1, true), 390);
+});
+
+test('mobile painter keeps label text fixed, scrolls values, and emits no grid borders', () => {
+  const products = Array.from({ length: 5 }, (_, index) => ({ ...recorders[0], id: `mobile-${index}`, icon: undefined }));
+  const rows = [{ id: 'field', label: 'Fixed field', top: 0, height: 100, labelHeight: 40, level: 0, cell: column => ({ text: `Value ${column}` }) }];
+  const scene = { ...motionScene([]), mobile: true, products, rows };
+  let text = [];
+  let borders = 0;
+  const ctx = new Proxy({ measureText: value => ({ width: value.length * 7 }), fillText: (value, x, y) => text.push({ value, x, y }), strokeRect: () => borders++ }, { get: (target, key) => key in target ? target[key] : () => {} });
+  const painter = new CanvasTablePainter(() => {});
+  painter.draw(ctx, scene, { width: 390, height: 700, left: 0, top: 0 }, null, null, null);
+  const label = text.find(item => item.value === 'Fixed field');
+  const value = text.find(item => item.value === 'Value 1');
+  assert.ok(label.y < value.y);
+  text = [];
+  painter.draw(ctx, scene, { width: 390, height: 700, left: 148, top: 0 }, null, null, null);
+  assert.deepEqual(text.find(item => item.value === 'Fixed field'), label);
+  assert.equal(text.find(item => item.value === 'Value 1').x, value.x - 148);
+  assert.equal(borders, 0);
+  painter.dispose();
+});
+
+test('mobile filtering animates with full viewport columns and mode changes settle immediately', () => {
+  const mobileScene = ids => ({ ...motionScene(['field'], ids), mobile: true, rows: [{ ...motionScene(['field']).rows[0], height: 100, labelHeight: 40 }] });
+  const motion = new CanvasTableMotion();
+  motion.update(mobileScene(['a', 'b', 'c']), 390, 0);
+  assert.equal(motion.sample(0).totalWidth, 444);
+  motion.update(mobileScene(['a', 'c']), 390, 10);
+  const frame = motion.sample(110);
+  assert.ok(frame.running);
+  assert.deepEqual(motionHitTest(frame.scene, 390, 700, 60, 0, 20, 180), { row: 0, column: -1 });
+  motion.finish();
+  assert.equal(motion.sample(110).totalWidth, 390);
+  motion.update(motionScene(['field'], ['a', 'c']), 1000, 120);
+  assert.equal(motion.sample(120).running, false);
+  assert.equal(motion.sample(120).totalWidth, 1000);
+});
+
+const stickyScene = () => {
+  let top = 0;
+  const rows = [
+    ['parent', 0, 40, true], ['first-child', 1, 40, true], ['first-value', 2, 200],
+    ['second-child', 1, 40, true], ['second-value', 2, 200],
+    ['next-parent', 0, 40, true], ['last-value', 1, 100],
+  ].map(([id, level, height, expanded]) => {
+    const row = { id, label: id, level, height, expanded, labelHeight: 40, top, cell: () => ({ text: 'Value' }) };
+    top += height;
+    return row;
+  });
+  return { ...motionScene([]), mobile: true, rows };
+};
+
+test('mobile sticky headers stack ancestors and get pushed out at their own group boundary', () => {
+  const { rows } = stickyScene();
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 100), [
+    { row: 0, top: 168, height: 40, clipTop: 168 },
+    { row: 1, top: 208, height: 40, clipTop: 208 },
+  ]);
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 230).at(-1), { row: 1, top: 178, height: 40, clipTop: 208 });
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 250).map(header => header.row), [0, 3]);
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 490), [{ row: 0, top: 158, height: 40, clipTop: 168 }]);
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 520).map(header => header.row), [5]);
+  assert.deepEqual(layout.mobileStickyHeaders(rows, 660), []);
+  assert.deepEqual(layout.mobileStickyHeaders([], 0), []);
+});
+
+test('sticky hit testing uses visible clipped headers and keeps exiting headers inert', () => {
+  const scene = stickyScene();
+  for (const left of [0, 148]) {
+    for (const [y, row] of [[180, 0], [210, 1], [220, 3]]) {
+      assert.deepEqual(motionHitTest(scene, 390, 700, left, 230, 30, y), { row, column: -1 });
+      assert.deepEqual(layout.hitTest(scene.rows, scene.products.length, 390, 700, left, 230, 30, y, true), { row, column: -1 });
+    }
+  }
+  const exiting = { ...scene, rows: scene.rows.map((row, index) => ({ ...row, targetIndex: index === 1 ? -1 : index + 10 })) };
+  assert.deepEqual(motionHitTest(exiting, 390, 700, 0, 100, 30, 180), { row: 10, column: -1 });
+  assert.equal(motionHitTest(exiting, 390, 700, 0, 100, 30, 220), null);
+});
+
+test('painter redraws sticky ancestors outside the visible row range without duplicating labels', () => {
+  const scene = stickyScene();
+  scene.products = scene.products.map(product => ({ ...product, icon: undefined }));
+  const text = [];
+  const ctx = new Proxy({ measureText: value => ({ width: value.length * 7 }), fillText: (value, x, y) => text.push({ value, x, y }) }, { get: (target, key) => key in target ? target[key] : () => {} });
+  const painter = new CanvasTablePainter(() => {});
+  const range = painter.draw(ctx, scene, { width: 390, height: 700, left: 148, top: 100 }, null, null, null);
+  assert.equal(range.firstRow, 2);
+  assert.deepEqual(text.filter(item => item.value === 'parent'), [{ value: 'parent', x: 32, y: 188 }]);
+  assert.deepEqual(text.filter(item => item.value === 'first-child'), [{ value: 'first-child', x: 42, y: 228 }]);
+  painter.dispose();
+});

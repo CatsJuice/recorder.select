@@ -931,7 +931,7 @@ td.best-value{background:rgba(22,163,74,.08);color:#137333;transition:background
 .toolbar .filter-group-title:active{transform:none}
 .filter-group-title svg{width:8px;height:8px;transition:transform 180ms cubic-bezier(.23,1,.32,1)}
 .filter-group.is-expanded>.filter-group-title svg{transform:rotate(90deg)}
-.filter-group-title small{min-width:18px;height:18px;display:grid;place-items:center;margin-left:auto;padding:0 5px;border-radius:5px;background:#eee;color:#777;font:600 8px/1 var(--font-geist-mono)}
+.filter-group-title small{min-width:18px;height:18px;display:grid;place-items:center;flex-shrink:0;padding:0 5px;border-radius:5px;background:#eee;color:#777;font:600 10px/1 var(--font-geist-mono);letter-spacing:0}
 .filter-group-fields{display:grid;grid-template-rows:0fr;transition:grid-template-rows 200ms cubic-bezier(.77,0,.175,1)}
 .filter-group.is-expanded>.filter-group-fields{grid-template-rows:1fr}
 .filter-group-fields>div{min-height:0;overflow:hidden}

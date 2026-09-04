@@ -118,12 +118,22 @@ export class CanvasTablePainter {
     }
     lines.forEach((line, index) => ctx.fillText(line, x, y + (index - (lines.length - 1) / 2) * lineHeight));
   }
-  private rect(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, color: string) {
+  private rect(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, color: string, leftBorder = true) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, width, height);
     ctx.strokeStyle = this.palette.line;
     ctx.lineWidth = 1;
-    ctx.strokeRect(x + .5, y + .5, width, height);
+    if (leftBorder) {
+      ctx.strokeRect(x + .5, y + .5, width, height);
+    } else {
+      // The outer workspace supplies the frozen label column's left border.
+      ctx.beginPath();
+      ctx.moveTo(x, y + .5);
+      ctx.lineTo(x + width + .5, y + .5);
+      ctx.lineTo(x + width + .5, y + height + .5);
+      ctx.lineTo(x, y + height + .5);
+      ctx.stroke();
+    }
   }
   private check(ctx: CanvasRenderingContext2D, x: number, y: number, yes: boolean, selected = false) {
     const p = this.palette;
@@ -307,7 +317,7 @@ export class CanvasTablePainter {
       ctx.save(); ctx.beginPath(); ctx.rect(0, clipTop, mobile ? width : LABEL_WIDTH + 1, clipHeight); ctx.clip();
       ctx.globalAlpha = row.opacity ?? 1;
       if (mobile) { ctx.fillStyle = p.group; ctx.fillRect(0, y, width, contentHeight); }
-      else this.rect(ctx, 0, y, LABEL_WIDTH, contentHeight, row.expanded !== undefined ? p.group : p.label);
+      else this.rect(ctx, 0, y, LABEL_WIDTH, contentHeight, row.expanded !== undefined ? p.group : p.label, false);
       const indent = 16 + row.level * 10;
       if (row.expanded !== undefined) {
         ctx.save(); ctx.translate(indent + 4, y + contentHeight / 2);
@@ -384,7 +394,7 @@ export class CanvasTablePainter {
       this.text(ctx, scene.resetLabel, width - 12, MOBILE_SUMMARY_HEIGHT / 2, Math.max(1, width * .4), { align: 'right', size: 11, color: p.muted });
       highlight({ row: -1, column: -1 }, width * .6, 0, width * .4, MOBILE_SUMMARY_HEIGHT);
     } else {
-      this.rect(ctx, 0, 0, LABEL_WIDTH, HEADER_HEIGHT, p.label);
+      this.rect(ctx, 0, 0, LABEL_WIDTH, HEADER_HEIGHT, p.label, false);
       this.text(ctx, scene.title, 18, 35, LABEL_WIDTH - 36, { weight: 650 });
       this.text(ctx, scene.subtitle, 18, 72, LABEL_WIDTH - 36, { size: 11, lines: 3, color: p.muted });
       ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(14, 112, LABEL_WIDTH - 28, 34, 6); ctx.stroke();

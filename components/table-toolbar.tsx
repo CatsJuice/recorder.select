@@ -305,6 +305,15 @@ export function TableToolbar({
   const [expandedFilterGroups, setExpandedFilterGroups] = useState<Record<string, boolean>>(() => Object.fromEntries(fieldGroups.map((group) => [group.key, group.key === 'general'])));
   const toolsRef = useRef<HTMLDivElement>(null);
   const activeFilterCount = Object.values(filters).filter((value) => value !== 'any').length;
+  const activeFilterCountsByGroup = new Map<string, number>();
+  for (const field of filterFields) {
+    if ((filters[field.key] ?? 'any') === 'any') continue;
+    let group = fieldGroups.find((candidate) => candidate.key === field.group);
+    while (group) {
+      activeFilterCountsByGroup.set(group.key, (activeFilterCountsByGroup.get(group.key) ?? 0) + 1);
+      group = fieldGroups.find((candidate) => candidate.key === group?.parentKey);
+    }
+  }
   const groupedFilterFields = fieldGroups.map((group) => ({
     ...group,
     depth: fieldGroupDepth(group.key),
@@ -401,7 +410,7 @@ export function TableToolbar({
           </button>
           <ToolPanel mobile={mobile} open={openPanel === 'filter'} onClose={() => setOpenPanel(null)} triggerRef={filterTriggerRef} title={t('filters')} kind="filter" actions={activeFilterCount > 0 && <button type="button" onClick={() => filterFields.forEach((field) => onFilterChange(field.key, 'any'))}>{t('clear')}</button>}>
             <div className="filter-list">
-              {groupedFilterFields.filter((group) => filterGroupIsVisible(group.key)).map((group) => { const expanded = expandedFilterGroups[group.key] ?? false; const activeInGroup = group.fields.filter((field) => (filters[field.key] ?? 'any') !== 'any').length; return <section className={`filter-group ${expanded ? 'is-expanded' : 'is-collapsed'}`} key={group.key} style={{'--filter-group-inset':`${group.depth * 18}px`} as CSSProperties}>
+              {groupedFilterFields.filter((group) => filterGroupIsVisible(group.key)).map((group) => { const expanded = expandedFilterGroups[group.key] ?? false; const activeInGroup = activeFilterCountsByGroup.get(group.key) ?? 0; return <section className={`filter-group ${expanded ? 'is-expanded' : 'is-collapsed'}`} key={group.key} style={{'--filter-group-inset':`${group.depth * 18}px`} as CSSProperties}>
                 <button type="button" className="filter-group-title" aria-expanded={expanded} onClick={() => setExpandedFilterGroups((current) => ({...current,[group.key]:!expanded}))}><FontAwesomeIcon icon={faChevronRight} aria-hidden="true" /><span>{groupLabel(group)}</span>{activeInGroup > 0 && <small>{activeInGroup}</small>}</button>
                 <div className="filter-group-fields" inert={!expanded}><div>
                 {group.fields.map((field) => {

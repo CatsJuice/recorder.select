@@ -2,6 +2,7 @@
 .workspace-full-width .canvas-comparison{height:calc(100dvh - 100px)}
 .canvas-table-scroll{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;scroll-behavior:auto;outline:none;touch-action:pan-x pan-y;contain:strict}
 .canvas-table-surface{position:absolute;top:0;left:0;pointer-events:none}
+.canvas-comparison,.canvas-table-scroll,.canvas-table-links a{touch-action:pinch-zoom}
 .canvas-scroll-edge{position:absolute;top:0;right:0;z-index:1;pointer-events:none}
 .canvas-table-scroll[data-keyboard-focus='true']:focus-visible{outline:2px solid #3678e8;outline-offset:-2px}
 .canvas-table-a11y{position:absolute;width:1px;height:1px;top:0;left:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}

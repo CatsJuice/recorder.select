@@ -12,12 +12,112 @@ const { createScoreContributions } = await server.ssrLoadModule('/lib/recorder-s
 const { fieldDefinitions, fieldGroups, recorders } = await server.ssrLoadModule('/lib/recorders.ts');
 const { CanvasTablePainter } = await server.ssrLoadModule('/lib/canvas-table-painter.ts');
 const { CanvasTableMotion, motionHitTest, TABLE_MOTION_DURATION } = await server.ssrLoadModule('/lib/canvas-table-motion.ts');
+const { CanvasTableGesture, attachTableGesture } = await server.ssrLoadModule('/lib/canvas-table-gesture.ts');
+const { CanvasScrollEdge } = await server.ssrLoadModule('/lib/canvas-scroll-edge.ts');
 const base = {
   products: recorders.slice(0, 3), compareMode: false, hideIdentical: false, identicalFieldKeys: new Set(),
   expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, group.defaultExpanded ?? true])),
   subjectiveReviewsExpanded: false, performanceProfiles: {}, performanceStatus: 'loaded', fieldWeights: {}, locale: 'en',
   t: key => key, fieldLabel: field => field.label, fieldUnit: field => field.unit, groupLabel: group => group.label,
 };
+
+test('touch intent ignores jitter and locks the dominant axis until the next contact', () => {
+  const gesture = new CanvasTableGesture();
+  gesture.start(100, 100, 200, 300, 0);
+  gesture.move(104, 105, 10, 1000, 1000);
+  assert.equal(gesture.axis, null);
+  assert.equal(gesture.left, 200);
+  assert.equal(gesture.top, 300);
+  gesture.move(80, 88, 20, 1000, 1000);
+  assert.equal(gesture.axis, 'x');
+  gesture.move(70, 0, 30, 1000, 1000);
+  assert.equal(gesture.left, 230);
+  assert.equal(gesture.top, 300, 'cross-axis drift stays frozen');
+  gesture.release(35);
+  gesture.step(51, 1000, 1000);
+  assert.ok(gesture.left > 230);
+  assert.equal(gesture.top, 300, 'momentum is also locked');
+  gesture.start(100, 100, gesture.left, 300, 60);
+  gesture.move(88, 80, 80, 1000, 1000);
+  assert.equal(gesture.axis, 'y');
+  assert.equal(gesture.top, 320);
+});
+
+test('momentum is elapsed-time based, interruptible, bounded and cancelled after a hold', () => {
+  const make = () => {
+    const gesture = new CanvasTableGesture();
+    gesture.start(100, 100, 100, 200, 0);
+    gesture.move(80, 100, 20, 1000, 1000);
+    gesture.release(20);
+    return gesture;
+  };
+  const slow = make(), fast = make();
+  slow.step(52, 1000, 1000);
+  fast.step(36, 1000, 1000); fast.step(52, 1000, 1000);
+  assert.ok(Math.abs(slow.left - fast.left) < .00001);
+  fast.release(52, true);
+  assert.equal(fast.step(68, 1000, 1000), false);
+  const held = make(); held.release(150);
+  assert.equal(held.step(166, 1000, 1000), false);
+  const edge = make(); edge.step(60, 125, 1000);
+  assert.equal(edge.left, 125);
+  assert.equal(edge.step(80, 125, 1000), false);
+  edge.start(0, 0, 0, 0, 100);
+  edge.move(10, 30, 120, 0, 0);
+  assert.equal(edge.left, 0); assert.equal(edge.top, 0);
+});
+
+test('gesture adapter coalesces input, suppresses drag clicks, preserves taps and cleans up', () => {
+  const listeners = new Map();
+  let capture = false, frames = 0, cancelledTaps = 0, writes = 0, left = 100;
+  const root = {
+    addEventListener: (name, handler) => listeners.set(name, handler),
+    removeEventListener: name => listeners.delete(name),
+    hasPointerCapture: () => capture, setPointerCapture: () => { capture = true; }, releasePointerCapture: () => { capture = false; },
+  };
+  const scroller = { scrollTop: 200, scrollWidth: 2000, scrollHeight: 3000, clientWidth: 390, clientHeight: 700,
+    get scrollLeft() { return left; }, set scrollLeft(value) { writes++; left = value; } };
+  const adapter = attachTableGesture(root, scroller, () => frames++, () => cancelledTaps++);
+  const event = { pointerType: 'touch', isPrimary: true, pointerId: 1, clientX: 100, clientY: 100, timeStamp: 0, target: { closest: () => null } };
+  listeners.get('pointerdown')(event);
+  listeners.get('pointermove')({ ...event, clientX: 80, timeStamp: 20 });
+  listeners.get('lostpointercapture')({ ...event, type: 'lostpointercapture', timeStamp: 20 });
+  listeners.get('pointermove')({ ...event, clientX: 60, clientY: 0, timeStamp: 40 });
+  assert.equal(writes, 0, 'events do not synchronously write scroll position');
+  adapter.update(40);
+  assert.equal(writes, 1); assert.equal(left, 140); assert.equal(scroller.scrollTop, 200);
+  assert.equal(cancelledTaps, 2); assert.ok(frames > 0);
+  listeners.get('pointerup')({ ...event, type: 'pointerup', timeStamp: 40 });
+  adapter.update(56);
+  assert.ok(left > 140);
+  let prevented = 0;
+  const click = { detail: 1, preventDefault: () => prevented++, stopPropagation() {} };
+  listeners.get('click')(click); assert.equal(prevented, 1);
+  listeners.get('pointerdown')({ ...event, timeStamp: 60 });
+  listeners.get('pointerup')({ ...event, type: 'pointerup', timeStamp: 70 });
+  listeners.get('click')(click); assert.equal(prevented, 1, 'tap remains native');
+  listeners.get('pointerdown')({ ...event, timeStamp: 80 });
+  listeners.get('pointerdown')({ ...event, isPrimary: false, pointerId: 2, timeStamp: 81 });
+  listeners.get('pointermove')({ ...event, clientX: 0, timeStamp: 90 });
+  const before = left; adapter.update(90); assert.equal(left, before, 'pinch cancels panning');
+  adapter.dispose(); assert.equal(listeners.size, 0);
+});
+
+test('edge blur uses a 1x backing store while sampling the full retina source', () => {
+  const previousDocument = globalThis.document;
+  const calls = [];
+  const canvas = () => ({ width: 0, height: 0, getContext: () => new Proxy({
+    drawImage: (...args) => calls.push(args), createLinearGradient: () => ({ addColorStop() {} }),
+  }, { get: (target, key) => key in target ? target[key] : () => {} }) });
+  globalThis.document = { createElement: canvas };
+  try {
+    const edge = new CanvasScrollEdge(), target = canvas(), source = { width: 1170, height: 2100 };
+    edge.draw(target, source, 80, 700, 3, 1, [[0, 48]]);
+    assert.equal(target.width, 80); assert.equal(target.height, 700);
+    assert.deepEqual(calls[0], [source, 840, 0, 330, 2100, 0, 30, 110, 700]);
+    edge.dispose();
+  } finally { globalThis.document = previousDocument; }
+});
 
 test('hit testing respects both frozen panes, exact edges and empty space', () => {
   const rows = [{ top: 0, height: 48 }, { top: 48, height: 72 }];
@@ -181,6 +281,38 @@ const motionScene = (rowIds, productIds = ['a', 'b', 'c']) => ({
   scores: {}, selected: new Set(), title: 'Recorders', subtitle: '', resetLabel: 'Reset', scoreLabel: 'score', emptyLabel: 'Empty',
 });
 const closeTo = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-5, `${actual} ≠ ${expected}`);
+
+test('technology labels align visible glyph bounds with icons and cache their measurements', () => {
+  const painter = new CanvasTablePainter(() => {});
+  let measurements = 0;
+  let iconY = 0;
+  let text = [];
+  const metrics = value => ({ width: value.length * 7, actualBoundingBoxAscent: 7, actualBoundingBoxDescent: value.includes('g') ? 3 : 1 });
+  const ctx = new Proxy({
+    measureText: value => { measurements++; return metrics(value); },
+    fillText: (value, x, y) => text.push({ value, y }),
+  }, { get: (target, key) => key in target ? target[key] : () => {} });
+  painter.icon = (_ctx, _key, _x, y) => { iconY = y; };
+  for (const [icon, label] of [['native', 'Native'], ['electron', 'Electron'], ['tauri', 'Tauri'], ['native', 'Native\nLong']]) {
+    for (const mobile of [false, true]) {
+      const draw = () => painter.cell(ctx, { text: label, icons: [icon] }, { height: 60 }, 0, 100, 200, mobile);
+      text = [];
+      draw();
+      const first = text[0], last = text.at(-1);
+      const top = first.y - metrics(first.value).actualBoundingBoxAscent;
+      const bottom = last.y + metrics(last.value).actualBoundingBoxDescent;
+      closeTo((top + bottom) / 2, iconY);
+      const measured = measurements;
+      draw();
+      assert.equal(measurements, measured, 'no new measurements on a cached redraw');
+    }
+  }
+  const measured = measurements;
+  painter.clearTextCache();
+  painter.cell(ctx, { text: 'Native', icons: ['native'] }, { height: 60 }, 0, 100, 200);
+  assert.ok(measurements > measured, 'font reload invalidates alignment metrics');
+  painter.dispose();
+});
 
 test('expansion clips and fades new rows, moves neighbours, and releases the animation when done', () => {
   const motion = new CanvasTableMotion();

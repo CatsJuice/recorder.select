@@ -4,6 +4,10 @@ export class CanvasScrollEdge {
   private layer = document.createElement('canvas');
 
   draw(target: HTMLCanvasElement, canvas: HTMLCanvasElement, width: number, height: number, dpr: number, opacity: number, excluded: readonly (readonly [number, number])[]) {
+    // Blur is low-frequency: rasterize it at 1x, independently of the crisp table.
+    // At DPR 3 this removes 8/9 of the pixels from all three filter passes.
+    const sourceDpr = dpr;
+    dpr = Math.min(dpr, 1);
     const edgeWidth = Math.max(1, Math.round(width * dpr));
     const edgeHeight = Math.max(1, Math.round(height * dpr));
     const padding = Math.ceil(30 * dpr);
@@ -21,12 +25,13 @@ export class CanvasScrollEdge {
     output.clearRect(0, 0, edgeWidth, edgeHeight);
     if (opacity <= 0) return;
     source.clearRect(0, 0, tileWidth, tileHeight);
-    const cropWidth = Math.min(canvas.width, edgeWidth + padding);
+    const cropWidth = Math.min(canvas.width, Math.round((width + 30) * sourceDpr));
     const sourceX = canvas.width - cropWidth;
-    const destinationX = edgeWidth + padding - cropWidth;
-    source.drawImage(canvas, sourceX, 0, cropWidth, edgeHeight, destinationX, padding, cropWidth, edgeHeight);
+    const destinationWidth = cropWidth / sourceDpr * dpr;
+    const destinationX = edgeWidth + padding - destinationWidth;
+    source.drawImage(canvas, sourceX, 0, cropWidth, canvas.height, destinationX, padding, destinationWidth, edgeHeight);
     // Extend the outermost pixels so the blur never samples transparent black outside the viewport.
-    source.drawImage(canvas, canvas.width - 1, 0, 1, edgeHeight, edgeWidth + padding, padding, padding, edgeHeight);
+    source.drawImage(canvas, canvas.width - 1, 0, 1, canvas.height, edgeWidth + padding, padding, padding, edgeHeight);
     source.drawImage(this.source, 0, padding, tileWidth, 1, 0, 0, tileWidth, padding);
     source.drawImage(this.source, 0, padding + edgeHeight - 1, tileWidth, 1, 0, padding + edgeHeight, tileWidth, padding);
     output.globalAlpha = opacity;

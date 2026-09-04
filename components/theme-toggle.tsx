@@ -8,7 +8,6 @@ export function ThemeToggle() {
     const nextTheme: Theme = currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = nextTheme;
     document.documentElement.style.colorScheme = nextTheme;
-    window.localStorage.setItem('recorder-theme', nextTheme);
   };
 
   const rays = Array.from({ length: 12 }, (_, index) => {

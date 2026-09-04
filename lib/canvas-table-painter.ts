@@ -29,6 +29,7 @@ export class CanvasTablePainter {
   private images = new Map<string, HTMLImageElement>();
   private textCache = new Map<string, string[]>();
   private textWidthCache = new Map<string, number>();
+  private textCenterCache = new Map<string, number>();
   private paths = new Map<string, { paths: Path2D[]; width: number; height: number }>();
   private font = 'Arial, sans-serif';
   private palette = light;
@@ -40,7 +41,7 @@ export class CanvasTablePainter {
     this.font = font;
     this.palette = isDark ? dark : light;
   }
-  clearTextCache() { this.textCache.clear(); this.textWidthCache.clear(); }
+  clearTextCache() { this.textCache.clear(); this.textWidthCache.clear(); this.textCenterCache.clear(); }
   dispose() {
     this.disposed = true;
     for (const image of this.images.values()) image.onload = image.onerror = null;
@@ -92,13 +93,27 @@ export class CanvasTablePainter {
     this.textCache.set(key, lines);
     return lines;
   }
-  private text(ctx: CanvasRenderingContext2D, value: string, x: number, y: number, width: number, options: { size?: number; weight?: number; color?: string; align?: CanvasTextAlign; lines?: number; lineHeight?: number } = {}) {
+  private text(ctx: CanvasRenderingContext2D, value: string, x: number, y: number, width: number, options: { size?: number; weight?: number; color?: string; align?: CanvasTextAlign; lines?: number; lineHeight?: number; visualCenter?: boolean } = {}) {
     ctx.font = `${options.weight ?? 500} ${options.size ?? 13}px ${this.font}`;
     ctx.fillStyle = options.color ?? this.palette.ink;
     ctx.textAlign = options.align ?? 'left';
     ctx.textBaseline = 'middle';
     const lines = this.lines(ctx, value, Math.max(1, width), options.lines ?? 1);
     const lineHeight = options.lineHeight ?? 18;
+    if (options.visualCenter) {
+      // Canvas "middle" centers the em box, not the visible glyphs. Align the
+      // ink bounds of the whole label (including wrapped lines) with the icon.
+      const key = `${ctx.font}|${JSON.stringify(lines)}`;
+      let offset = this.textCenterCache.get(key);
+      if (offset === undefined) {
+        const first = ctx.measureText(lines[0]);
+        const last = lines.length === 1 ? first : ctx.measureText(lines[lines.length - 1]);
+        offset = ((first.actualBoundingBoxAscent ?? 0) - (last.actualBoundingBoxDescent ?? 0)) / 2;
+        if (this.textCenterCache.size >= 512) this.textCenterCache.clear();
+        this.textCenterCache.set(key, offset);
+      }
+      y += offset;
+    }
     lines.forEach((line, index) => ctx.fillText(line, x, y + (index - (lines.length - 1) / 2) * lineHeight));
   }
   private rect(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, color: string) {
@@ -210,7 +225,7 @@ export class CanvasTablePainter {
         }));
         const groupLeft = x + (width - iconSize - gap - measuredWidth) / 2;
         this.icon(ctx, technology, groupLeft + iconSize / 2, centerY, iconSize);
-        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, color: cell.muted ? p.muted : p.ink });
+        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, visualCenter: true, color: cell.muted ? p.muted : p.ink });
       } else {
         this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, color: cell.muted ? p.muted : p.ink });
       }

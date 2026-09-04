@@ -7,6 +7,7 @@ import { CanvasTablePainter, type PaintScene } from '../lib/canvas-table-painter
 import { HEADER_HEIGHT, LABEL_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, columnWidth, visibleRange, rowAt, type CellAddress } from '../lib/canvas-table-layout';
 import { CanvasTableMotion, motionHitTest } from '../lib/canvas-table-motion';
 import { CanvasScrollEdge } from '../lib/canvas-scroll-edge';
+import { attachTableGesture } from '../lib/canvas-table-gesture';
 import { focusRecorderEvent } from '../lib/comparison-table-events';
 
 type Props = Omit<ModelOptions, 'locale' | 't' | 'fieldLabel' | 'fieldUnit' | 'groupLabel' | 'mobile'> & {
@@ -171,11 +172,15 @@ export function CanvasComparisonTable(props: Props) {
     let lastWidth = 0;
     let lastHeight = 0;
     const schedule = () => { if (!frame && !disposed) frame = requestAnimationFrame(draw); };
+    const gesture = attachTableGesture(root, scroller, schedule, () => { pointerRef.current = null; });
     const painter = new CanvasTablePainter(schedule);
     const edgePainter = new CanvasScrollEdge();
     const motion = new CanvasTableMotion();
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
     let linkPositions = new Map<string, { left: number; width: number; opacity: number }>();
+    let linksKey = '';
+    let spacerWidth = 0;
+    let spacerHeight = 0;
     const syncLinks = () => {
       linksRef.current?.querySelectorAll<HTMLAnchorElement>('a[data-product-id]').forEach(anchor => {
         const slot = linkPositions.get(anchor.dataset.productId!);
@@ -199,12 +204,15 @@ export function CanvasComparisonTable(props: Props) {
       const width = scroller.clientWidth;
       const height = scroller.clientHeight;
       const now = performance.now();
+      const scrolling = gesture.update(now);
       motion.update(current.scene, width, now, reducedMotion.matches);
       if (!current.animationsEnabled || instantRef.current) { motion.finish(); instantRef.current = false; }
       const animated = motion.sample(now);
       paintedSceneRef.current = animated.scene;
-      spacer.style.width = `${Math.max(width, animated.totalWidth)}px`;
-      spacer.style.height = `${Math.max(height, HEADER_HEIGHT + animated.totalHeight + current.bottomSafeArea)}px`;
+      const nextWidth = Math.max(width, animated.totalWidth);
+      const nextHeight = Math.max(height, HEADER_HEIGHT + animated.totalHeight + current.bottomSafeArea);
+      if (spacerWidth !== nextWidth) { spacerWidth = nextWidth; spacer.style.width = `${nextWidth}px`; }
+      if (spacerHeight !== nextHeight) { spacerHeight = nextHeight; spacer.style.height = `${nextHeight}px`; }
       const dpr = window.devicePixelRatio || 1;
       const physicalWidth = Math.max(1, Math.round(width * dpr));
       const physicalHeight = Math.max(1, Math.round(height * dpr));
@@ -262,10 +270,11 @@ export function CanvasComparisonTable(props: Props) {
         linksRef.current.parentElement!.style.left = `${current.scene.mobile ? 0 : LABEL_WIDTH}px`;
         linksRef.current.parentElement!.style.width = `${Math.max(0, width - (current.scene.mobile ? 0 : LABEL_WIDTH))}px`;
       }
-      syncLinks();
+      const nextLinksKey = [...linkPositions].map(([id, slot]) => `${id}:${slot.left}:${slot.width}:${slot.opacity}`).join('|');
+      if (nextLinksKey !== linksKey) { linksKey = nextLinksKey; syncLinks(); }
       syncWeightRef.current();
       setWindowRange(previous => previous.firstColumn === range.firstColumn && previous.endColumn === range.endColumn && previous.firstRow === range.firstRow && previous.endRow === range.endRow && previous.cellWidth === range.cellWidth && previous.columns?.length === columns.length && previous.columns.every((column, index) => column === columns[index]) && previous.stickyRows?.length === range.stickyRows!.length && previous.stickyRows.every((row, index) => row === range.stickyRows![index]) ? previous : range);
-      if (animated.running) schedule();
+      if (animated.running || scrolling) schedule();
       // A new scrollbar can reduce the viewport by its own width/height.
       if (lastWidth !== width || lastHeight !== height) { lastWidth = width; lastHeight = height; schedule(); }
     };
@@ -291,6 +300,7 @@ export function CanvasComparisonTable(props: Props) {
     configure();
     return () => {
       disposed = true;
+      gesture.dispose();
       cancelAnimationFrame(frame);
       scheduleRef.current = () => {};
       observer.disconnect(); themeObserver.disconnect();
@@ -431,7 +441,7 @@ export function CanvasComparisonTable(props: Props) {
       onFocus={() => setHasFocus(keyboardInputRef.current)} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false); }} onKeyDown={onKeyDown}
       onCopy={event => { event.clipboardData.setData('text/plain', labelFor(model.rows[active.row], active.column)); event.preventDefault(); }}
       onPointerMove={onPointerMove} onPointerLeave={() => { hoverRef.current = null; deferWeightClose(); scheduleRef.current(); }}
-      onPointerDown={event => { if (event.button !== 0) return; pointerRef.current = { x: event.clientX, y: event.clientY, left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop }; }}
+      onPointerDown={event => { if (event.button !== 0 || !event.isPrimary) return; pointerRef.current = { x: event.clientX, y: event.clientY, left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop }; }}
       onPointerCancel={() => { pointerRef.current = null; }}
       onPointerUp={event => {
         const start = pointerRef.current; pointerRef.current = null;

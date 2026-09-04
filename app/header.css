@@ -3,8 +3,10 @@
 }
 
 .page-header-slot {
+  position: relative;
+  z-index: 40;
   height: 72px;
-  overflow: hidden;
+  overflow: visible;
   transition: height 220ms var(--ease-in-out);
 }
 
@@ -15,6 +17,7 @@
 
 .page-header-slot.is-hidden {
   height: 0;
+  overflow: hidden;
 }
 
 .page-header-slot.is-hidden .nav {

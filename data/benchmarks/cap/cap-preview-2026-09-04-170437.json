@@ -1,0 +1,1809 @@
+{
+  "endedAt" : "2026-09-04T09:05:39Z",
+  "id" : "4A4F08FD-EA64-4833-A745-60359F788601",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.8833e-05,
+      "physicalFootprintBytes" : 891275880,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.915738256,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 891275880
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 96516014080
+    },
+    {
+      "cpuPercent" : 0.16789555555778557,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.045158,
+      "physicalFootprintBytes" : 891619944,
+      "processes" : [
+        {
+          "cpuPercent" : 0.16789555555778557,
+          "process" : {
+            "cpuTimeSeconds" : 0.91749292,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 891619944
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.1337990327781,
+      "systemMemoryDeltaBytes" : 398180352,
+      "systemMemoryUsedBytes" : 96914194432
+    },
+    {
+      "cpuPercent" : 1.136319936193858,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.045294667,
+      "physicalFootprintBytes" : 2245365216,
+      "processes" : [
+        {
+          "cpuPercent" : 1.136319936193858,
+          "process" : {
+            "cpuTimeSeconds" : 0.928860212,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2245365216
+          }
+        }
+      ],
+      "systemCPUPercent" : 358.78378378378375,
+      "systemMemoryDeltaBytes" : 2156560384,
+      "systemMemoryUsedBytes" : 98672574464
+    },
+    {
+      "cpuPercent" : 0.8296765589931258,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.045724417,
+      "physicalFootprintBytes" : 2386366040,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8296765589931258,
+          "process" : {
+            "cpuTimeSeconds" : 0.937161341,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2386366040
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.71309192200556,
+      "systemMemoryDeltaBytes" : 2047983616,
+      "systemMemoryUsedBytes" : 98563997696
+    },
+    {
+      "cpuPercent" : 0.7946302302886782,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.046010917,
+      "physicalFootprintBytes" : 2409205336,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7946302302886782,
+          "process" : {
+            "cpuTimeSeconds" : 0.945108724,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2409205336
+          }
+        }
+      ],
+      "systemCPUPercent" : 225.503355704698,
+      "systemMemoryDeltaBytes" : 1743618048,
+      "systemMemoryUsedBytes" : 98259632128
+    },
+    {
+      "cpuPercent" : 0.7707903764328352,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.046036167,
+      "physicalFootprintBytes" : 2407534192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7707903764328352,
+          "process" : {
+            "cpuTimeSeconds" : 0.952817554,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2407534192
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.13218070273285,
+      "systemMemoryDeltaBytes" : 2061942784,
+      "systemMemoryUsedBytes" : 98577956864
+    },
+    {
+      "cpuPercent" : 0.8085647430298051,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6.045567458,
+      "physicalFootprintBytes" : 2405748312,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8085647430298051,
+          "process" : {
+            "cpuTimeSeconds" : 0.960898189,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2405748312
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.96638655462186,
+      "systemMemoryDeltaBytes" : 1651392512,
+      "systemMemoryUsedBytes" : 98167406592
+    },
+    {
+      "cpuPercent" : 0.8093725666002012,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.045124208,
+      "physicalFootprintBytes" : 2409303664,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8093725666002012,
+          "process" : {
+            "cpuTimeSeconds" : 0.968988662,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2409303664
+          }
+        }
+      ],
+      "systemCPUPercent" : 293.79541643376183,
+      "systemMemoryDeltaBytes" : 2092105728,
+      "systemMemoryUsedBytes" : 98608119808
+    },
+    {
+      "cpuPercent" : 0.7931708332697183,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 8.046035333,
+      "physicalFootprintBytes" : 2409598552,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7931708332697183,
+          "process" : {
+            "cpuTimeSeconds" : 0.976930088,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2409598552
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.6963788300836,
+      "systemMemoryDeltaBytes" : 1815724032,
+      "systemMemoryUsedBytes" : 98331738112
+    },
+    {
+      "cpuPercent" : 0.7968821731615295,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 9.045567,
+      "physicalFootprintBytes" : 2410745432,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7968821731615295,
+          "process" : {
+            "cpuTimeSeconds" : 0.984892707,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2410745432
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.2188024622272,
+      "systemMemoryDeltaBytes" : 2143780864,
+      "systemMemoryUsedBytes" : 98659794944
+    },
+    {
+      "cpuPercent" : 0.7871203002919707,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 10.045486333,
+      "physicalFootprintBytes" : 2410106456,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7871203002919707,
+          "process" : {
+            "cpuTimeSeconds" : 0.992763808,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2410106456
+          }
+        }
+      ],
+      "systemCPUPercent" : 379.1596638655462,
+      "systemMemoryDeltaBytes" : 2346237952,
+      "systemMemoryUsedBytes" : 98862252032
+    },
+    {
+      "cpuPercent" : 0.6784299176226283,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 11.045688083,
+      "physicalFootprintBytes" : 2412514904,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6784299176226283,
+          "process" : {
+            "cpuTimeSeconds" : 0.999550279,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2412514904
+          }
+        }
+      ],
+      "systemCPUPercent" : 323.0769230769231,
+      "systemMemoryDeltaBytes" : 1701036032,
+      "systemMemoryUsedBytes" : 98217050112
+    },
+    {
+      "cpuPercent" : 0.7814239054471539,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 12.045365583,
+      "physicalFootprintBytes" : 2414923376,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7814239054471539,
+          "process" : {
+            "cpuTimeSeconds" : 1.007360482,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2414923376
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.60335195530723,
+      "systemMemoryDeltaBytes" : 2063269888,
+      "systemMemoryUsedBytes" : 98579283968
+    },
+    {
+      "cpuPercent" : 0.8029998023900536,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 13.045340125,
+      "physicalFootprintBytes" : 2417462896,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8029998023900536,
+          "process" : {
+            "cpuTimeSeconds" : 1.015390116,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2417462896
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.2436974789916,
+      "systemMemoryDeltaBytes" : 1695055872,
+      "systemMemoryUsedBytes" : 98211069952
+    },
+    {
+      "cpuPercent" : 0.7950867847243516,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 14.046030333,
+      "physicalFootprintBytes" : 2417757808,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7950867847243516,
+          "process" : {
+            "cpuTimeSeconds" : 1.023347594,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2417757808
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.99163413273843,
+      "systemMemoryDeltaBytes" : 2043084800,
+      "systemMemoryUsedBytes" : 98559098880
+    },
+    {
+      "cpuPercent" : 0.7885868925844083,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 15.04586625,
+      "physicalFootprintBytes" : 2421591664,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7885868925844083,
+          "process" : {
+            "cpuTimeSeconds" : 1.031232145,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2421591664
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.81141578063796,
+      "systemMemoryDeltaBytes" : 2075672576,
+      "systemMemoryUsedBytes" : 98591686656
+    },
+    {
+      "cpuPercent" : 0.7756053019164769,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 16.045409333,
+      "physicalFootprintBytes" : 2419805808,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7756053019164769,
+          "process" : {
+            "cpuTimeSeconds" : 1.038984553,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2419805808
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.52763819095475,
+      "systemMemoryDeltaBytes" : 2119974912,
+      "systemMemoryUsedBytes" : 98635988992
+    },
+    {
+      "cpuPercent" : 0.805764141368319,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 17.045552458,
+      "physicalFootprintBytes" : 2420084336,
+      "processes" : [
+        {
+          "cpuPercent" : 0.805764141368319,
+          "process" : {
+            "cpuTimeSeconds" : 1.047044513,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2420084336
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.80771380659587,
+      "systemMemoryDeltaBytes" : 2131034112,
+      "systemMemoryUsedBytes" : 98647048192
+    },
+    {
+      "cpuPercent" : 0.7814829388513219,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 18.045454333,
+      "physicalFootprintBytes" : 2420395632,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7814829388513219,
+          "process" : {
+            "cpuTimeSeconds" : 1.054856545,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2420395632
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.56424581005587,
+      "systemMemoryDeltaBytes" : 2137767936,
+      "systemMemoryUsedBytes" : 98653782016
+    },
+    {
+      "cpuPercent" : 0.7696908771529163,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 19.046024083,
+      "physicalFootprintBytes" : 2420723312,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7696908771529163,
+          "process" : {
+            "cpuTimeSeconds" : 1.062558417,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2420723312
+          }
+        }
+      ],
+      "systemCPUPercent" : 270.5027932960894,
+      "systemMemoryDeltaBytes" : 2125676544,
+      "systemMemoryUsedBytes" : 98641690624
+    },
+    {
+      "cpuPercent" : 0.7903563255636764,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 20.046013458,
+      "physicalFootprintBytes" : 2421034608,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7903563255636764,
+          "process" : {
+            "cpuTimeSeconds" : 1.070462192,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2421034608
+          }
+        }
+      ],
+      "systemCPUPercent" : 310.20635805911877,
+      "systemMemoryDeltaBytes" : 2131410944,
+      "systemMemoryUsedBytes" : 98647425024
+    },
+    {
+      "cpuPercent" : 0.7905105715834153,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 21.046061125,
+      "physicalFootprintBytes" : 2421345904,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7905105715834153,
+          "process" : {
+            "cpuTimeSeconds" : 1.078368357,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2421345904
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.58636109558415,
+      "systemMemoryDeltaBytes" : 2162212864,
+      "systemMemoryUsedBytes" : 98678226944
+    },
+    {
+      "cpuPercent" : 0.822503037319898,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 22.045998625,
+      "physicalFootprintBytes" : 2423426672,
+      "processes" : [
+        {
+          "cpuPercent" : 0.822503037319898,
+          "process" : {
+            "cpuTimeSeconds" : 1.086590876,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2423426672
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.3854748603352,
+      "systemMemoryDeltaBytes" : 2138112000,
+      "systemMemoryUsedBytes" : 98654126080
+    },
+    {
+      "cpuPercent" : 0.7945197819384208,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 23.046028625,
+      "physicalFootprintBytes" : 2421640816,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7945197819384208,
+          "process" : {
+            "cpuTimeSeconds" : 1.094538561,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2421640816
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.43575418994413,
+      "systemMemoryDeltaBytes" : 2122137600,
+      "systemMemoryUsedBytes" : 98638151680
+    },
+    {
+      "cpuPercent" : 0.811860217966711,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 24.046018042,
+      "physicalFootprintBytes" : 2426506864,
+      "processes" : [
+        {
+          "cpuPercent" : 0.811860217966711,
+          "process" : {
+            "cpuTimeSeconds" : 1.102656261,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2426506864
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.96989966555185,
+      "systemMemoryDeltaBytes" : 1806237696,
+      "systemMemoryUsedBytes" : 98322251776
+    },
+    {
+      "cpuPercent" : 0.7902522004707754,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 25.046007833,
+      "physicalFootprintBytes" : 2426818160,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7902522004707754,
+          "process" : {
+            "cpuTimeSeconds" : 1.110557675,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2426818160
+          }
+        }
+      ],
+      "systemCPUPercent" : 251.79775280898875,
+      "systemMemoryDeltaBytes" : 2137686016,
+      "systemMemoryUsedBytes" : 98653700096
+    },
+    {
+      "cpuPercent" : 0.773699436810351,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 26.046044,
+      "physicalFootprintBytes" : 2425359984,
+      "processes" : [
+        {
+          "cpuPercent" : 0.773699436810351,
+          "process" : {
+            "cpuTimeSeconds" : 1.118296357,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2425359984
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.31924360400444,
+      "systemMemoryDeltaBytes" : 1760133120,
+      "systemMemoryUsedBytes" : 98276147200
+    },
+    {
+      "cpuPercent" : 0.7997834412138173,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 27.04574275,
+      "physicalFootprintBytes" : 2427604592,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7997834412138173,
+          "process" : {
+            "cpuTimeSeconds" : 1.126290809,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2427604592
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.7646730016769,
+      "systemMemoryDeltaBytes" : 2167898112,
+      "systemMemoryUsedBytes" : 98683912192
+    },
+    {
+      "cpuPercent" : 0.7904096092141794,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 28.046030667,
+      "physicalFootprintBytes" : 2427915888,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7904096092141794,
+          "process" : {
+            "cpuTimeSeconds" : 1.134197852,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2427915888
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.65771812080538,
+      "systemMemoryDeltaBytes" : 2045001728,
+      "systemMemoryUsedBytes" : 98561015808
+    },
+    {
+      "cpuPercent" : 0.7862533227638422,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 29.045849042,
+      "physicalFootprintBytes" : 2428046960,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7862533227638422,
+          "process" : {
+            "cpuTimeSeconds" : 1.142058282,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2428046960
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.4022346368715,
+      "systemMemoryDeltaBytes" : 2221506560,
+      "systemMemoryUsedBytes" : 98737520640
+    },
+    {
+      "cpuPercent" : 0.7804374448331931,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 30.045798958,
+      "physicalFootprintBytes" : 2426736240,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7804374448331931,
+          "process" : {
+            "cpuTimeSeconds" : 1.149862967,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2426736240
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.58636109558415,
+      "systemMemoryDeltaBytes" : 2261827584,
+      "systemMemoryUsedBytes" : 98777841664
+    },
+    {
+      "cpuPercent" : 0.7795531559277676,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 31.046051208,
+      "physicalFootprintBytes" : 2428833392,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7795531559277676,
+          "process" : {
+            "cpuTimeSeconds" : 1.157660909,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2428833392
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.44692737430165,
+      "systemMemoryDeltaBytes" : 1884733440,
+      "systemMemoryUsedBytes" : 98400747520
+    },
+    {
+      "cpuPercent" : 0.7819161011730987,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 32.04610325,
+      "physicalFootprintBytes" : 2427047536,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7819161011730987,
+          "process" : {
+            "cpuTimeSeconds" : 1.165480258,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2427047536
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.09821428571433,
+      "systemMemoryDeltaBytes" : 2235596800,
+      "systemMemoryUsedBytes" : 98751610880
+    },
+    {
+      "cpuPercent" : 0.7463882492561621,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 33.045399958,
+      "physicalFootprintBytes" : 2429455984,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7463882492561621,
+          "process" : {
+            "cpuTimeSeconds" : 1.172938365,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2429455984
+          }
+        }
+      ],
+      "systemCPUPercent" : 262.31155778894475,
+      "systemMemoryDeltaBytes" : 2240987136,
+      "systemMemoryUsedBytes" : 98757001216
+    },
+    {
+      "cpuPercent" : 0.8025993156517425,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 34.046032292,
+      "physicalFootprintBytes" : 2429767280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8025993156517425,
+          "process" : {
+            "cpuTimeSeconds" : 1.180969764,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2429767280
+          }
+        }
+      ],
+      "systemCPUPercent" : 236.0491071428571,
+      "systemMemoryDeltaBytes" : 2239348736,
+      "systemMemoryUsedBytes" : 98755362816
+    },
+    {
+      "cpuPercent" : 0.7874059099560894,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 35.04536475,
+      "physicalFootprintBytes" : 2430553712,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7874059099560894,
+          "process" : {
+            "cpuTimeSeconds" : 1.188837181,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2430553712
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.27802690582956,
+      "systemMemoryDeltaBytes" : 2280685568,
+      "systemMemoryUsedBytes" : 98796699648
+    },
+    {
+      "cpuPercent" : 0.7804844118792681,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 36.045995625,
+      "physicalFootprintBytes" : 2430865008,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7804844118792681,
+          "process" : {
+            "cpuTimeSeconds" : 1.196646909,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2430865008
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.9714605484051,
+      "systemMemoryDeltaBytes" : 2248343552,
+      "systemMemoryUsedBytes" : 98764357632
+    },
+    {
+      "cpuPercent" : 0.8129378741059864,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 37.045731875,
+      "physicalFootprintBytes" : 2429079152,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8129378741059864,
+          "process" : {
+            "cpuTimeSeconds" : 1.204775173,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2429079152
+          }
+        }
+      ],
+      "systemCPUPercent" : 296,
+      "systemMemoryDeltaBytes" : 2234187776,
+      "systemMemoryUsedBytes" : 98750201856
+    },
+    {
+      "cpuPercent" : 0.8078106702972699,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 38.046020125,
+      "physicalFootprintBytes" : 2429390448,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8078106702972699,
+          "process" : {
+            "cpuTimeSeconds" : 1.212855551,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2429390448
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.627802690583,
+      "systemMemoryDeltaBytes" : 2453159936,
+      "systemMemoryUsedBytes" : 98969174016
+    },
+    {
+      "cpuPercent" : 0.7744646058555832,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 39.045030875,
+      "physicalFootprintBytes" : 2431831664,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7744646058555832,
+          "process" : {
+            "cpuTimeSeconds" : 1.220591919,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2431831664
+          }
+        }
+      ],
+      "systemCPUPercent" : 242.3463687150838,
+      "systemMemoryDeltaBytes" : 2077556736,
+      "systemMemoryUsedBytes" : 98593570816
+    },
+    {
+      "cpuPercent" : 0.7526330315260291,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 40.045777375,
+      "physicalFootprintBytes" : 2434223728,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7526330315260291,
+          "process" : {
+            "cpuTimeSeconds" : 1.228125341,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2434223728
+          }
+        }
+      ],
+      "systemCPUPercent" : 283.2026875699888,
+      "systemMemoryDeltaBytes" : 2431123456,
+      "systemMemoryUsedBytes" : 98947137536
+    },
+    {
+      "cpuPercent" : 0.6660758501308082,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 41.045995833,
+      "physicalFootprintBytes" : 2430389872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6660758501308082,
+          "process" : {
+            "cpuTimeSeconds" : 1.234786349,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2430389872
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.2727272727273,
+      "systemMemoryDeltaBytes" : 2451062784,
+      "systemMemoryUsedBytes" : 98967076864
+    },
+    {
+      "cpuPercent" : 0.7953881738186563,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 42.045913875,
+      "physicalFootprintBytes" : 2432306800,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7953881738186563,
+          "process" : {
+            "cpuTimeSeconds" : 1.242740416,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2432306800
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.3065326633166,
+      "systemMemoryDeltaBytes" : 2438594560,
+      "systemMemoryUsedBytes" : 98954608640
+    },
+    {
+      "cpuPercent" : 0.7752289617780562,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 43.046105292,
+      "physicalFootprintBytes" : 2430520944,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7752289617780562,
+          "process" : {
+            "cpuTimeSeconds" : 1.250494467,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2430520944
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.96644295302013,
+      "systemMemoryDeltaBytes" : 2449375232,
+      "systemMemoryUsedBytes" : 98965389312
+    },
+    {
+      "cpuPercent" : 0.8013206382367737,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 44.045386583,
+      "physicalFootprintBytes" : 2430815856,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8013206382367737,
+          "process" : {
+            "cpuTimeSeconds" : 1.258503194,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2430815856
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.96752519596862,
+      "systemMemoryDeltaBytes" : 1895759872,
+      "systemMemoryUsedBytes" : 98411773952
+    },
+    {
+      "cpuPercent" : 0.7803323871134342,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 45.046067542,
+      "physicalFootprintBytes" : 2433240712,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7803323871134342,
+          "process" : {
+            "cpuTimeSeconds" : 1.266310348,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2433240712
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.82608695652172,
+      "systemMemoryDeltaBytes" : 2021523456,
+      "systemMemoryUsedBytes" : 98537537536
+    },
+    {
+      "cpuPercent" : 0.7910632513471562,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 46.045460167,
+      "physicalFootprintBytes" : 2433568392,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7910632513471562,
+          "process" : {
+            "cpuTimeSeconds" : 1.274215125,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2433568392
+          }
+        }
+      ],
+      "systemCPUPercent" : 242.48183342649523,
+      "systemMemoryDeltaBytes" : 1879474176,
+      "systemMemoryUsedBytes" : 98395488256
+    },
+    {
+      "cpuPercent" : 0.7827098250065522,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 47.0458065,
+      "physicalFootprintBytes" : 2432274056,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7827098250065522,
+          "process" : {
+            "cpuTimeSeconds" : 1.282045147,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2432274056
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.22321428571433,
+      "systemMemoryDeltaBytes" : 2226421760,
+      "systemMemoryUsedBytes" : 98742435840
+    },
+    {
+      "cpuPercent" : 0.7998442352223007,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 48.046027417,
+      "physicalFootprintBytes" : 2434109064,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7998442352223007,
+          "process" : {
+            "cpuTimeSeconds" : 1.290045398,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2434109064
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.7039106145251,
+      "systemMemoryDeltaBytes" : 2422046720,
+      "systemMemoryUsedBytes" : 98938060800
+    },
+    {
+      "cpuPercent" : 0.7725740052440446,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 49.046091167,
+      "physicalFootprintBytes" : 2432323184,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7725740052440446,
+          "process" : {
+            "cpuTimeSeconds" : 1.297772548,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2432323184
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.1164613661814,
+      "systemMemoryDeltaBytes" : 2474262528,
+      "systemMemoryUsedBytes" : 98990276608
+    },
+    {
+      "cpuPercent" : 0.7509356976678148,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 50.046019792,
+      "physicalFootprintBytes" : 2432634504,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7509356976678148,
+          "process" : {
+            "cpuTimeSeconds" : 1.305281073,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2432634504
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.0446428571429,
+      "systemMemoryDeltaBytes" : 2503180288,
+      "systemMemoryUsedBytes" : 99019194368
+    },
+    {
+      "cpuPercent" : 0.7838595686564299,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 51.045438583,
+      "physicalFootprintBytes" : 2432929392,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7838595686564299,
+          "process" : {
+            "cpuTimeSeconds" : 1.313114295,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2432929392
+          }
+        }
+      ],
+      "systemCPUPercent" : 297.47899159663865,
+      "systemMemoryDeltaBytes" : 2199207936,
+      "systemMemoryUsedBytes" : 98715222016
+    },
+    {
+      "cpuPercent" : 0.8106272413855398,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 52.0460505,
+      "physicalFootprintBytes" : 2433814128,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8106272413855398,
+          "process" : {
+            "cpuTimeSeconds" : 1.321227706,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2433814128
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.9732441471572,
+      "systemMemoryDeltaBytes" : 2551365632,
+      "systemMemoryUsedBytes" : 99067379712
+    },
+    {
+      "cpuPercent" : 0.8340467988817588,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 53.045979708,
+      "physicalFootprintBytes" : 2436206192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8340467988817588,
+          "process" : {
+            "cpuTimeSeconds" : 1.329566492,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2436206192
+          }
+        }
+      ],
+      "systemCPUPercent" : 363.44206974128235,
+      "systemMemoryDeltaBytes" : 2487795712,
+      "systemMemoryUsedBytes" : 99003809792
+    },
+    {
+      "cpuPercent" : 0.8504005675213742,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 54.045083708,
+      "physicalFootprintBytes" : 2436517488,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8504005675213742,
+          "process" : {
+            "cpuTimeSeconds" : 1.33806169,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2436517488
+          }
+        }
+      ],
+      "systemCPUPercent" : 426.7415730337079,
+      "systemMemoryDeltaBytes" : 2466906112,
+      "systemMemoryUsedBytes" : 98982920192
+    },
+    {
+      "cpuPercent" : 0.8047987888760605,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 55.045963583,
+      "physicalFootprintBytes" : 2438221448,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8047987888760605,
+          "process" : {
+            "cpuTimeSeconds" : 1.34611551,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2438221448
+          }
+        }
+      ],
+      "systemCPUPercent" : 397.8627671541057,
+      "systemMemoryDeltaBytes" : 2558132224,
+      "systemMemoryUsedBytes" : 99074146304
+    },
+    {
+      "cpuPercent" : 0.801978226309273,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 56.046011375,
+      "physicalFootprintBytes" : 2438565536,
+      "processes" : [
+        {
+          "cpuPercent" : 0.801978226309273,
+          "process" : {
+            "cpuTimeSeconds" : 1.354136671,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2438565536
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.44196428571433,
+      "systemMemoryDeltaBytes" : 2243248128,
+      "systemMemoryUsedBytes" : 98759262208
+    },
+    {
+      "cpuPercent" : 0.7951906460675725,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 57.046016875,
+      "physicalFootprintBytes" : 2438876808,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7951906460675725,
+          "process" : {
+            "cpuTimeSeconds" : 1.362089315,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2438876808
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.0005595970901,
+      "systemMemoryDeltaBytes" : 1830617088,
+      "systemMemoryUsedBytes" : 98346631168
+    },
+    {
+      "cpuPercent" : 0.8109157692188584,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 58.045989417,
+      "physicalFootprintBytes" : 2437271176,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8109157692188584,
+          "process" : {
+            "cpuTimeSeconds" : 1.370197134,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2437271176
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.71733034212,
+      "systemMemoryDeltaBytes" : 2138832896,
+      "systemMemoryUsedBytes" : 98654846976
+    },
+    {
+      "cpuPercent" : 0.8002771285344144,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 59.045688667,
+      "physicalFootprintBytes" : 2435468936,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8002771285344144,
+          "process" : {
+            "cpuTimeSeconds" : 1.378198111,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2435468936
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.1696428571429,
+      "systemMemoryDeltaBytes" : 1726971904,
+      "systemMemoryUsedBytes" : 98242985984
+    },
+    {
+      "cpuPercent" : 0.7912130701283203,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 60.045779625,
+      "physicalFootprintBytes" : 2434485896,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7912130701283203,
+          "process" : {
+            "cpuTimeSeconds" : 1.386112646,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2434485896
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.12946428571433,
+      "systemMemoryDeltaBytes" : 1776140288,
+      "systemMemoryUsedBytes" : 98292154368
+    },
+    {
+      "cpuPercent" : 0.6782529829990841,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 61.045952625,
+      "physicalFootprintBytes" : 2434813576,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6782529829990841,
+          "process" : {
+            "cpuTimeSeconds" : 1.392895706,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2434813576
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.6355505869201,
+      "systemMemoryDeltaBytes" : 1779204096,
+      "systemMemoryUsedBytes" : 98295218176
+    },
+    {
+      "cpuPercent" : 0.3872190383617598,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 61.888441125,
+      "physicalFootprintBytes" : 2419265160,
+      "processes" : [
+        {
+          "cpuPercent" : 0.3872190383617598,
+          "process" : {
+            "cpuTimeSeconds" : 1.396157791,
+            "diskReadBytes" : 14884864,
+            "diskWrittenBytes" : 123326464,
+            "executablePath" : "/Applications/Cap.app/Contents/MacOS/Cap",
+            "identity" : {
+              "pid" : 88237,
+              "startTimeNanoseconds" : 12944240100450
+            },
+            "name" : "Cap",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2419265160
+          }
+        }
+      ],
+      "systemCPUPercent" : 185.837193911317,
+      "systemMemoryDeltaBytes" : 1808482304,
+      "systemMemoryUsedBytes" : 98324496384
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T09:04:37Z",
+  "summary" : {
+    "averageCPUPercent" : 0.7757181516724266,
+    "averagePhysicalFootprintBytes" : 2373940198,
+    "averageSystemCPUPercent" : 280.53251590501975,
+    "averageSystemMemoryDeltaBytes" : 2066009397,
+    "cpuTimeSeconds" : 0.480419535,
+    "diskReadBytes" : 0,
+    "diskWrittenBytes" : 0,
+    "durationSeconds" : 61.888441125,
+    "p95CPUPercent" : 0.8296765589931258,
+    "p95SystemCPUPercent" : 363.44206974128235,
+    "peakCPUPercent" : 1.136319936193858,
+    "peakPhysicalFootprintBytes" : 2438876808,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 426.7415730337079,
+    "peakSystemMemoryDeltaBytes" : 2558132224,
+    "physicalFootprintDeltaBytes" : 1527989280
+  },
+  "target" : {
+    "build" : "0.5.9",
+    "bundleIdentifier" : "so.cap.desktop",
+    "bundlePath" : "/Applications/Cap.app",
+    "name" : "Cap",
+    "recorderID" : "cap",
+    "version" : "0.5.9"
+  }
+}

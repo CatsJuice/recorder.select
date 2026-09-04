@@ -1,0 +1,2006 @@
+{
+  "endedAt" : "2026-09-04T08:05:33Z",
+  "id" : "C8D1168A-3BD3-442D-8C96-7BA920AA950B",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 9.792e-06,
+      "physicalFootprintBytes" : 2147298872,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 3.455381111,
+            "diskReadBytes" : 413696,
+            "diskWrittenBytes" : 511832064,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 455608792
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103095871,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014731014,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003721838,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 2.501510699,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 880870696
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 9.906243539,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254822536
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.151589401,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 94488002560
+    },
+    {
+      "cpuPercent" : 0.9208127724871761,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.040652375,
+      "physicalFootprintBytes" : 2143153720,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4319444497011979,
+          "process" : {
+            "cpuTimeSeconds" : 2.50600493,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 877315368
+          }
+        },
+        {
+          "cpuPercent" : 0.3558446320198001,
+          "process" : {
+            "cpuTimeSeconds" : 9.909945978,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254249096
+          }
+        },
+        {
+          "cpuPercent" : 0.12920530202688724,
+          "process" : {
+            "cpuTimeSeconds" : 3.456725447,
+            "diskReadBytes" : 413696,
+            "diskWrittenBytes" : 511832064,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 455592408
+          }
+        },
+        {
+          "cpuPercent" : 0.0024941731776122744,
+          "process" : {
+            "cpuTimeSeconds" : 0.151615352,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0.001144776568090546,
+          "process" : {
+            "cpuTimeSeconds" : 0.103107782,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0.0001017814109317702,
+          "process" : {
+            "cpuTimeSeconds" : 0.014732073,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 7.765758265621244e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.003722646,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 363.8814016172507,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 94099144704
+    },
+    {
+      "cpuPercent" : 2.2521207283740825,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 2.041426125,
+      "physicalFootprintBytes" : 2603446032,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3168553401316672,
+          "process" : {
+            "cpuTimeSeconds" : 3.469907485,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 511963136,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 885410480
+          }
+        },
+        {
+          "cpuPercent" : 0.4741497706348514,
+          "process" : {
+            "cpuTimeSeconds" : 9.914692331,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254314632
+          }
+        },
+        {
+          "cpuPercent" : 0.4586388538136888,
+          "process" : {
+            "cpuTimeSeconds" : 2.510596015,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 907724072
+          }
+        },
+        {
+          "cpuPercent" : 0.00242991177034639,
+          "process" : {
+            "cpuTimeSeconds" : 0.151639676,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 4.685202352820105e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.103108251,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014732073,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003722646,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 376.7207610520425,
+      "systemMemoryDeltaBytes" : 1159348224,
+      "systemMemoryUsedBytes" : 95647350784
+    },
+    {
+      "cpuPercent" : 1.7936998969231526,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 3.041413667,
+      "physicalFootprintBytes" : 2614357800,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9117828797388745,
+          "process" : {
+            "cpuTimeSeconds" : 3.479024043,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 511963136,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 899025608
+          }
+        },
+        {
+          "cpuPercent" : 0.46842178628647485,
+          "process" : {
+            "cpuTimeSeconds" : 2.51527958,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 904906024
+          }
+        },
+        {
+          "cpuPercent" : 0.41107569367480207,
+          "process" : {
+            "cpuTimeSeconds" : 9.918802515,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254429320
+          }
+        },
+        {
+          "cpuPercent" : 0.002419537223001077,
+          "process" : {
+            "cpuTimeSeconds" : 0.151663868,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103108251,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014732073,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003722646,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 332.5867861142217,
+      "systemMemoryDeltaBytes" : 1266991104,
+      "systemMemoryUsedBytes" : 95754993664
+    },
+    {
+      "cpuPercent" : 2.0301768821987842,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 4.041426292,
+      "physicalFootprintBytes" : 2618470208,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0716951112283124,
+          "process" : {
+            "cpuTimeSeconds" : 3.489741634,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 511963136,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 905300704
+          }
+        },
+        {
+          "cpuPercent" : 0.47796546163823145,
+          "process" : {
+            "cpuTimeSeconds" : 2.52005952,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 902382888
+          }
+        },
+        {
+          "cpuPercent" : 0.47779777165068965,
+          "process" : {
+            "cpuTimeSeconds" : 9.923580778,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254789768
+          }
+        },
+        {
+          "cpuPercent" : 0.0027185376815505183,
+          "process" : {
+            "cpuTimeSeconds" : 0.151691055,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103108251,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014732073,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003722646,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 296.30459126539756,
+      "systemMemoryDeltaBytes" : 1025015808,
+      "systemMemoryUsedBytes" : 95513018368
+    },
+    {
+      "cpuPercent" : 1.6987196288754849,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 8519680,
+      "elapsedSeconds" : 5.041446209,
+      "physicalFootprintBytes" : 2617339712,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8137633572247163,
+          "process" : {
+            "cpuTimeSeconds" : 3.497879746,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 520351744,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 903989984
+          }
+        },
+        {
+          "cpuPercent" : 0.4797990916517612,
+          "process" : {
+            "cpuTimeSeconds" : 2.524857793,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 902546728
+          }
+        },
+        {
+          "cpuPercent" : 0.401873973025312,
+          "process" : {
+            "cpuTimeSeconds" : 9.927599754,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254806152
+          }
+        },
+        {
+          "cpuPercent" : 0.0027469385019917047,
+          "process" : {
+            "cpuTimeSeconds" : 0.151718526,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0.0003196812053022232,
+          "process" : {
+            "cpuTimeSeconds" : 0.103111448,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0.000142591616753723,
+          "process" : {
+            "cpuTimeSeconds" : 0.014733499,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 7.399564964776013e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.003723386,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.20425293788475,
+      "systemMemoryDeltaBytes" : 1093730304,
+      "systemMemoryUsedBytes" : 95581732864
+    },
+    {
+      "cpuPercent" : 1.901988592663025,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 16908288,
+      "elapsedSeconds" : 6.041409875,
+      "physicalFootprintBytes" : 2620845888,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9604019033405323,
+          "process" : {
+            "cpuTimeSeconds" : 3.507482737,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 528740352,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 907528928
+          }
+        },
+        {
+          "cpuPercent" : 0.47633468781768873,
+          "process" : {
+            "cpuTimeSeconds" : 2.52962063,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 902448424
+          }
+        },
+        {
+          "cpuPercent" : 0.46277473633338473,
+          "process" : {
+            "cpuTimeSeconds" : 9.932227006,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254871688
+          }
+        },
+        {
+          "cpuPercent" : 0.0024772651714192076,
+          "process" : {
+            "cpuTimeSeconds" : 0.151743296,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103111448,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014733499,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003723386,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.2678571428571,
+      "systemMemoryDeltaBytes" : 662224896,
+      "systemMemoryUsedBytes" : 95150227456
+    },
+    {
+      "cpuPercent" : 1.8142423063959239,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 16908288,
+      "elapsedSeconds" : 7.041430584,
+      "physicalFootprintBytes" : 2608738112,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9536855798383592,
+          "process" : {
+            "cpuTimeSeconds" : 3.517019956,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 528740352,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 912100064
+          }
+        },
+        {
+          "cpuPercent" : 0.4651604848280784,
+          "process" : {
+            "cpuTimeSeconds" : 2.534272412,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 886408488
+          }
+        },
+        {
+          "cpuPercent" : 0.3929496349060607,
+          "process" : {
+            "cpuTimeSeconds" : 9.936156652,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254232712
+          }
+        },
+        {
+          "cpuPercent" : 0.0024466068234257603,
+          "process" : {
+            "cpuTimeSeconds" : 0.151767763,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103111448,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014733499,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003723386,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.94963626189144,
+      "systemMemoryDeltaBytes" : 1010712576,
+      "systemMemoryUsedBytes" : 95498715136
+    },
+    {
+      "cpuPercent" : 1.9943624338452441,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 25296896,
+      "elapsedSeconds" : 8.040443584,
+      "physicalFootprintBytes" : 2614112112,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0007282094047483,
+          "process" : {
+            "cpuTimeSeconds" : 3.527016115,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 537128960,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 917129976
+          }
+        },
+        {
+          "cpuPercent" : 0.49779590014302305,
+          "process" : {
+            "cpuTimeSeconds" : 9.941129078,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254642312
+          }
+        },
+        {
+          "cpuPercent" : 0.49304922421272973,
+          "process" : {
+            "cpuTimeSeconds" : 2.539197424,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 886342976
+          }
+        },
+        {
+          "cpuPercent" : 0.002747654017439037,
+          "process" : {
+            "cpuTimeSeconds" : 0.151795209,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 4.144606730422197e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.103111862,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.014733499,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003723386,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 412.73239436619724,
+      "systemMemoryDeltaBytes" : 1060634624,
+      "systemMemoryUsedBytes" : 95548637184
+    },
+    {
+      "cpuPercent" : 1.8711977342294226,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 33685504,
+      "elapsedSeconds" : 9.041426417,
+      "physicalFootprintBytes" : 2611916680,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9635609670884785,
+          "process" : {
+            "cpuTimeSeconds" : 3.536662097,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 545517568,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 911674104
+          }
+        },
+        {
+          "cpuPercent" : 0.4960022743836855,
+          "process" : {
+            "cpuTimeSeconds" : 2.544162786,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 889587008
+          }
+        },
+        {
+          "cpuPercent" : 0.40680918699624763,
+          "process" : {
+            "cpuTimeSeconds" : 9.945201549,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254658720
+          }
+        },
+        {
+          "cpuPercent" : 0.002522984113567153,
+          "process" : {
+            "cpuTimeSeconds" : 0.151820466,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0.002133803050635471,
+          "process" : {
+            "cpuTimeSeconds" : 0.103133223,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0.00010398806121961927,
+          "process" : {
+            "cpuTimeSeconds" : 0.01473454,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 6.453053558871923e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.003724032,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 358.99441340782124,
+      "systemMemoryDeltaBytes" : 1023066112,
+      "systemMemoryUsedBytes" : 95511068672
+    },
+    {
+      "cpuPercent" : 1.844932643119276,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 33685504,
+      "elapsedSeconds" : 10.041459917,
+      "physicalFootprintBytes" : 2614570864,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9119626265485039,
+          "process" : {
+            "cpuTimeSeconds" : 3.545783247,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 545517568,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 917523192
+          }
+        },
+        {
+          "cpuPercent" : 0.5068251181388188,
+          "process" : {
+            "cpuTimeSeconds" : 2.549231884,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 886408512
+          }
+        },
+        {
+          "cpuPercent" : 0.42357382801411103,
+          "process" : {
+            "cpuTimeSeconds" : 9.949437995,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254642312
+          }
+        },
+        {
+          "cpuPercent" : 0.0025710704178423236,
+          "process" : {
+            "cpuTimeSeconds" : 0.151846181,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103133223,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.01473454,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003724032,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 343.77464788732397,
+      "systemMemoryDeltaBytes" : 1007927296,
+      "systemMemoryUsedBytes" : 95495929856
+    },
+    {
+      "cpuPercent" : 2.228188606042254,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 42074112,
+      "elapsedSeconds" : 11.0414295,
+      "physicalFootprintBytes" : 2626678664,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3097421655087194,
+          "process" : {
+            "cpuTimeSeconds" : 3.558880631,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 553906176,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 926550800
+          }
+        },
+        {
+          "cpuPercent" : 0.46791404525285285,
+          "process" : {
+            "cpuTimeSeconds" : 2.553911011,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 889750848
+          }
+        },
+        {
+          "cpuPercent" : 0.44805868816877437,
+          "process" : {
+            "cpuTimeSeconds" : 9.953918569,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 254380168
+          }
+        },
+        {
+          "cpuPercent" : 0.002420806959819788,
+          "process" : {
+            "cpuTimeSeconds" : 0.151870389,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 5.29001520878486e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.103133752,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.01473454,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003724032,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.40201005025125,
+      "systemMemoryDeltaBytes" : 1044430848,
+      "systemMemoryUsedBytes" : 95532433408
+    },
+    {
+      "cpuPercent" : 1.7041390973688089,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 63635456,
+      "elapsedSeconds" : 12.041463625,
+      "physicalFootprintBytes" : 2512269144,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9141966671495139,
+          "process" : {
+            "cpuTimeSeconds" : 3.568023625,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 575467520,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 782076640
+          }
+        },
+        {
+          "cpuPercent" : 0.4800666525099466,
+          "process" : {
+            "cpuTimeSeconds" : 2.558712217,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 918930752
+          }
+        },
+        {
+          "cpuPercent" : 0.307467148379069,
+          "process" : {
+            "cpuTimeSeconds" : 9.956993586,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 255264904
+          }
+        },
+        {
+          "cpuPercent" : 0.0024086293302795006,
+          "process" : {
+            "cpuTimeSeconds" : 0.151894478,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103133752,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.01473454,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.003724032,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.7583892617449,
+      "systemMemoryDeltaBytes" : 598409216,
+      "systemMemoryUsedBytes" : 95086411776
+    },
+    {
+      "cpuPercent" : 0.37433375320457035,
+      "diskReadBytes" : 122880,
+      "diskWrittenBytes" : 63635456,
+      "elapsedSeconds" : 12.403107792,
+      "physicalFootprintBytes" : 2512269144,
+      "processes" : [
+        {
+          "cpuPercent" : 0.2826624718510596,
+          "process" : {
+            "cpuTimeSeconds" : 9.958015936,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 85187,
+              "startTimeNanoseconds" : 12747683619017
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 255264904
+          }
+        },
+        {
+          "cpuPercent" : 0.05149220791070367,
+          "process" : {
+            "cpuTimeSeconds" : 3.568209865,
+            "diskReadBytes" : 536576,
+            "diskWrittenBytes" : 575467520,
+            "executablePath" : "/Applications/Openscreen.app/Contents/MacOS/Openscreen",
+            "identity" : {
+              "pid" : 83592,
+              "startTimeNanoseconds" : 12744533911640
+            },
+            "name" : "Openscreen",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 782093024
+          }
+        },
+        {
+          "cpuPercent" : 0.03727213039097628,
+          "process" : {
+            "cpuTimeSeconds" : 2.558847025,
+            "diskReadBytes" : 81920,
+            "diskWrittenBytes" : 2457600,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83593,
+              "startTimeNanoseconds" : 12744539915776
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 918914368
+          }
+        },
+        {
+          "cpuPercent" : 0.0026080648476241868,
+          "process" : {
+            "cpuTimeSeconds" : 0.151903911,
+            "diskReadBytes" : 237568,
+            "diskWrittenBytes" : 14815232,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Resources/electron/native/bin/darwin-arm64/whisper-stt-server",
+            "identity" : {
+              "pid" : 85476,
+              "startTimeNanoseconds" : 12748172548129
+            },
+            "name" : "whisper-stt-server",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 465273912
+          }
+        },
+        {
+          "cpuPercent" : 0.0002988782042065945,
+          "process" : {
+            "cpuTimeSeconds" : 0.003725113,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 12288,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83594,
+              "startTimeNanoseconds" : 12744539942582
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 7144312
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.103133752,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83612,
+              "startTimeNanoseconds" : 12744549519346
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 39208352
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.01473454,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper.app/Contents/MacOS/Openscreen Helper",
+            "identity" : {
+              "pid" : 83610,
+              "startTimeNanoseconds" : 12744549231042
+            },
+            "name" : "Openscreen Helper",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 10388488
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.004351372,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Openscreen.app/Contents/Frameworks/Openscreen Helper (Renderer).app/Contents/MacOS/Openscreen Helper (Renderer)",
+            "identity" : {
+              "pid" : 84124,
+              "startTimeNanoseconds" : 12745656650431
+            },
+            "name" : "Openscreen Helper (Renderer)",
+            "parentPID" : 83592,
+            "physicalFootprintBytes" : 33981784
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.6196319018405,
+      "systemMemoryDeltaBytes" : 274497536,
+      "systemMemoryUsedBytes" : 94762500096
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T08:05:20Z",
+  "summary" : {
+    "averageCPUPercent" : 1.7253011596713237,
+    "averagePhysicalFootprintBytes" : 2533247639,
+    "averageSystemCPUPercent" : 316.3997517897481,
+    "averageSystemMemoryDeltaBytes" : 801927753,
+    "cpuTimeSeconds" : 0.2222966690000009,
+    "diskReadBytes" : 122880,
+    "diskWrittenBytes" : 63635456,
+    "durationSeconds" : 12.403107792,
+    "p95CPUPercent" : 2.2521207283740825,
+    "p95SystemCPUPercent" : 412.73239436619724,
+    "peakCPUPercent" : 2.2521207283740825,
+    "peakPhysicalFootprintBytes" : 2626678664,
+    "peakProcessCount" : 8,
+    "peakSystemCPUPercent" : 412.73239436619724,
+    "peakSystemMemoryDeltaBytes" : 1266991104,
+    "physicalFootprintDeltaBytes" : 364970272,
+    "realtimeFactor" : 0.2067184632
+  },
+  "target" : {
+    "build" : "1.10.0",
+    "bundleIdentifier" : "com.etiennelescot.openscreen",
+    "bundlePath" : "/Applications/Openscreen.app",
+    "name" : "Openscreen",
+    "recorderID" : "openscreen",
+    "version" : "1.10.0"
+  }
+}

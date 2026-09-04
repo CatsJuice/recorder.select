@@ -1,0 +1,1809 @@
+{
+  "endedAt" : "2026-09-04T06:14:39Z",
+  "id" : "3A205990-E0D0-41D2-9D93-05125992CE82",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.375e-06,
+      "physicalFootprintBytes" : 256591120,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.900817247,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 256591120
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 90155286528
+    },
+    {
+      "cpuPercent" : 0.5181077787449312,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.034575958,
+      "physicalFootprintBytes" : 429868328,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5181077787449312,
+          "process" : {
+            "cpuTimeSeconds" : 1.906177812,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 429868328
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.3376623376623,
+      "systemMemoryDeltaBytes" : 1017659392,
+      "systemMemoryUsedBytes" : 91172945920
+    },
+    {
+      "cpuPercent" : 0.6475316749671813,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.034577583,
+      "physicalFootprintBytes" : 430032168,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6475316749671813,
+          "process" : {
+            "cpuTimeSeconds" : 1.912653391,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 430032168
+          }
+        }
+      ],
+      "systemCPUPercent" : 176.27308337996644,
+      "systemMemoryDeltaBytes" : 958824448,
+      "systemMemoryUsedBytes" : 91114110976
+    },
+    {
+      "cpuPercent" : 0.6828071475974083,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.034668417,
+      "physicalFootprintBytes" : 231359784,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6828071475974083,
+          "process" : {
+            "cpuTimeSeconds" : 1.919483588,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 231359784
+          }
+        }
+      ],
+      "systemCPUPercent" : 207.2666294019005,
+      "systemMemoryDeltaBytes" : 1050312704,
+      "systemMemoryUsedBytes" : 91205599232
+    },
+    {
+      "cpuPercent" : 0.7256261362836711,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.034658333,
+      "physicalFootprintBytes" : 231310632,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7256261362836711,
+          "process" : {
+            "cpuTimeSeconds" : 1.926741131,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 231310632
+          }
+        }
+      ],
+      "systemCPUPercent" : 185.4120267260579,
+      "systemMemoryDeltaBytes" : 1061715968,
+      "systemMemoryUsedBytes" : 91217002496
+    },
+    {
+      "cpuPercent" : 0.7100569606187087,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.034624708,
+      "physicalFootprintBytes" : 232097064,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7100569606187087,
+          "process" : {
+            "cpuTimeSeconds" : 1.933839887,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 232097064
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.95535714285717,
+      "systemMemoryDeltaBytes" : 1039073280,
+      "systemMemoryUsedBytes" : 91194359808
+    },
+    {
+      "cpuPercent" : 0.7306051619659522,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6.034749417,
+      "physicalFootprintBytes" : 230786344,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7306051619659522,
+          "process" : {
+            "cpuTimeSeconds" : 1.941147756,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230786344
+          }
+        }
+      ],
+      "systemCPUPercent" : 186.7261572783045,
+      "systemMemoryDeltaBytes" : 1012023296,
+      "systemMemoryUsedBytes" : 91167309824
+    },
+    {
+      "cpuPercent" : 0.7062261786629318,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 7.034552208,
+      "physicalFootprintBytes" : 230802728,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7062261786629318,
+          "process" : {
+            "cpuTimeSeconds" : 1.948206464,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230802728
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.08482142857144,
+      "systemMemoryDeltaBytes" : 1058996224,
+      "systemMemoryUsedBytes" : 91214282752
+    },
+    {
+      "cpuPercent" : 0.8299288749135691,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 8.034161542,
+      "physicalFootprintBytes" : 230884648,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8299288749135691,
+          "process" : {
+            "cpuTimeSeconds" : 1.956503717,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230884648
+          }
+        }
+      ],
+      "systemCPUPercent" : 179.3986636971047,
+      "systemMemoryDeltaBytes" : 982908928,
+      "systemMemoryUsedBytes" : 91138195456
+    },
+    {
+      "cpuPercent" : 0.81219854845173,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 9.034600583,
+      "physicalFootprintBytes" : 230098216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.81219854845173,
+          "process" : {
+            "cpuTimeSeconds" : 1.964628089,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230098216
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.36241610738253,
+      "systemMemoryDeltaBytes" : 1020444672,
+      "systemMemoryUsedBytes" : 91175731200
+    },
+    {
+      "cpuPercent" : 0.7816087946071528,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 10.034710333,
+      "physicalFootprintBytes" : 230442280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7816087946071528,
+          "process" : {
+            "cpuTimeSeconds" : 1.972448396,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230442280
+          }
+        }
+      ],
+      "systemCPUPercent" : 336.68341708542715,
+      "systemMemoryDeltaBytes" : 1107951616,
+      "systemMemoryUsedBytes" : 91263238144
+    },
+    {
+      "cpuPercent" : 0.738899974183243,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 11.034619583,
+      "physicalFootprintBytes" : 230524200,
+      "processes" : [
+        {
+          "cpuPercent" : 0.738899974183243,
+          "process" : {
+            "cpuTimeSeconds" : 1.979834063,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 230524200
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.1383928571429,
+      "systemMemoryDeltaBytes" : 1013858304,
+      "systemMemoryUsedBytes" : 91169144832
+    },
+    {
+      "cpuPercent" : 0.7193189612427769,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 12.034706042,
+      "physicalFootprintBytes" : 224150824,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7193189612427769,
+          "process" : {
+            "cpuTimeSeconds" : 1.98702927,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224150824
+          }
+        }
+      ],
+      "systemCPUPercent" : 210.81985499163414,
+      "systemMemoryDeltaBytes" : 982564864,
+      "systemMemoryUsedBytes" : 91137851392
+    },
+    {
+      "cpuPercent" : 0.7206946674355601,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 13.034817417,
+      "physicalFootprintBytes" : 223446312,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7206946674355601,
+          "process" : {
+            "cpuTimeSeconds" : 1.994237177,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223446312
+          }
+        }
+      ],
+      "systemCPUPercent" : 212.8276631344116,
+      "systemMemoryDeltaBytes" : 674430976,
+      "systemMemoryUsedBytes" : 90829717504
+    },
+    {
+      "cpuPercent" : 0.7358266371314962,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 14.0346775,
+      "physicalFootprintBytes" : 224265512,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7358266371314962,
+          "process" : {
+            "cpuTimeSeconds" : 2.001594087,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224265512
+          }
+        }
+      ],
+      "systemCPUPercent" : 186.83035714285717,
+      "systemMemoryDeltaBytes" : 971423744,
+      "systemMemoryUsedBytes" : 91126710272
+    },
+    {
+      "cpuPercent" : 0.7048478287525293,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 15.034738333,
+      "physicalFootprintBytes" : 224298280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7048478287525293,
+          "process" : {
+            "cpuTimeSeconds" : 2.008644002,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224298280
+          }
+        }
+      ],
+      "systemCPUPercent" : 202.56267409470752,
+      "systemMemoryDeltaBytes" : 651837440,
+      "systemMemoryUsedBytes" : 90807123968
+    },
+    {
+      "cpuPercent" : 0.5636328033661241,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 16.034661292,
+      "physicalFootprintBytes" : 223446312,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5636328033661241,
+          "process" : {
+            "cpuTimeSeconds" : 2.014278463,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223446312
+          }
+        }
+      ],
+      "systemCPUPercent" : 245.13224535734386,
+      "systemMemoryDeltaBytes" : 1001701376,
+      "systemMemoryUsedBytes" : 91156987904
+    },
+    {
+      "cpuPercent" : 0.7012079297648326,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 17.034611792,
+      "physicalFootprintBytes" : 424576296,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7012079297648326,
+          "process" : {
+            "cpuTimeSeconds" : 2.021288628,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 424576296
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.42458100558656,
+      "systemMemoryDeltaBytes" : 1087864832,
+      "systemMemoryUsedBytes" : 91243151360
+    },
+    {
+      "cpuPercent" : 1.1294926003171628,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 18.034759,
+      "physicalFootprintBytes" : 228885800,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1294926003171628,
+          "process" : {
+            "cpuTimeSeconds" : 2.032590907,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 228885800
+          }
+        }
+      ],
+      "systemCPUPercent" : 236.0491071428571,
+      "systemMemoryDeltaBytes" : 882606080,
+      "systemMemoryUsedBytes" : 91037892608
+    },
+    {
+      "cpuPercent" : 1.037400526093176,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 19.034674542,
+      "physicalFootprintBytes" : 227263784,
+      "processes" : [
+        {
+          "cpuPercent" : 1.037400526093176,
+          "process" : {
+            "cpuTimeSeconds" : 2.042962582,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 227263784
+          }
+        }
+      ],
+      "systemCPUPercent" : 216.84327941996654,
+      "systemMemoryDeltaBytes" : 728006656,
+      "systemMemoryUsedBytes" : 90883293184
+    },
+    {
+      "cpuPercent" : 1.0434479796689415,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 20.03471325,
+      "physicalFootprintBytes" : 226673960,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0434479796689415,
+          "process" : {
+            "cpuTimeSeconds" : 2.053397547,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 226673960
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.5682451253482,
+      "systemMemoryDeltaBytes" : 192741376,
+      "systemMemoryUsedBytes" : 90348027904
+    },
+    {
+      "cpuPercent" : 1.0553757541451447,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 21.0347045,
+      "physicalFootprintBytes" : 227362088,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0553757541451447,
+          "process" : {
+            "cpuTimeSeconds" : 2.0639504,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 227362088
+          }
+        }
+      ],
+      "systemCPUPercent" : 208.92857142857144,
+      "systemMemoryDeltaBytes" : 561152000,
+      "systemMemoryUsedBytes" : 90716438528
+    },
+    {
+      "cpuPercent" : 1.0413448399495926,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 22.034746583,
+      "physicalFootprintBytes" : 227050792,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0413448399495926,
+          "process" : {
+            "cpuTimeSeconds" : 2.074365377,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 227050792
+          }
+        }
+      ],
+      "systemCPUPercent" : 203.338898163606,
+      "systemMemoryDeltaBytes" : 547962880,
+      "systemMemoryUsedBytes" : 90703249408
+    },
+    {
+      "cpuPercent" : 1.0691096371299276,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 23.034674958,
+      "physicalFootprintBytes" : 226690344,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0691096371299276,
+          "process" : {
+            "cpuTimeSeconds" : 2.085054998,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 226690344
+          }
+        }
+      ],
+      "systemCPUPercent" : 190.95477386934675,
+      "systemMemoryDeltaBytes" : 596721664,
+      "systemMemoryUsedBytes" : 90752008192
+    },
+    {
+      "cpuPercent" : 1.0577293989685739,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 24.034257167,
+      "physicalFootprintBytes" : 227181864,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0577293989685739,
+          "process" : {
+            "cpuTimeSeconds" : 2.095626965,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 227181864
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.33555926544238,
+      "systemMemoryDeltaBytes" : 568246272,
+      "systemMemoryUsedBytes" : 90723532800
+    },
+    {
+      "cpuPercent" : 1.0503728886342,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 25.03474,
+      "physicalFootprintBytes" : 226755880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0503728886342,
+          "process" : {
+            "cpuTimeSeconds" : 2.10613699,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 226755880
+          }
+        }
+      ],
+      "systemCPUPercent" : 198.77300613496934,
+      "systemMemoryDeltaBytes" : 569229312,
+      "systemMemoryUsedBytes" : 90724515840
+    },
+    {
+      "cpuPercent" : 1.0528219706867856,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 26.034748083,
+      "physicalFootprintBytes" : 227165480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0528219706867856,
+          "process" : {
+            "cpuTimeSeconds" : 2.116664968,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 227165480
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.58217270194987,
+      "systemMemoryDeltaBytes" : 602472448,
+      "systemMemoryUsedBytes" : 90757758976
+    },
+    {
+      "cpuPercent" : 1.0729959396909823,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 27.034733667,
+      "physicalFootprintBytes" : 224068904,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0729959396909823,
+          "process" : {
+            "cpuTimeSeconds" : 2.127394597,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224068904
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.35893155258768,
+      "systemMemoryDeltaBytes" : 379060224,
+      "systemMemoryUsedBytes" : 90534346752
+    },
+    {
+      "cpuPercent" : 1.0480636076942167,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 28.034749125,
+      "physicalFootprintBytes" : 223986984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0480636076942167,
+          "process" : {
+            "cpuTimeSeconds" : 2.137875613,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223986984
+          }
+        }
+      ],
+      "systemCPUPercent" : 193.64548494983276,
+      "systemMemoryDeltaBytes" : 227016704,
+      "systemMemoryUsedBytes" : 90382303232
+    },
+    {
+      "cpuPercent" : 1.0951942986327567,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 29.034760542,
+      "physicalFootprintBytes" : 224658728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0951942986327567,
+          "process" : {
+            "cpuTimeSeconds" : 2.148828,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224658728
+          }
+        }
+      ],
+      "systemCPUPercent" : 198.44097995545658,
+      "systemMemoryDeltaBytes" : 411336704,
+      "systemMemoryUsedBytes" : 90566623232
+    },
+    {
+      "cpuPercent" : 1.0191572944695126,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 30.034705125,
+      "physicalFootprintBytes" : 224314664,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0191572944695126,
+          "process" : {
+            "cpuTimeSeconds" : 2.1590172,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224314664
+          }
+        }
+      ],
+      "systemCPUPercent" : 190.84821428571428,
+      "systemMemoryDeltaBytes" : 436617216,
+      "systemMemoryUsedBytes" : 90591903744
+    },
+    {
+      "cpuPercent" : 1.0245110180509611,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 31.034725333,
+      "physicalFootprintBytes" : 224052520,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0245110180509611,
+          "process" : {
+            "cpuTimeSeconds" : 2.16926279,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224052520
+          }
+        }
+      ],
+      "systemCPUPercent" : 187.83482142857144,
+      "systemMemoryDeltaBytes" : 408453120,
+      "systemMemoryUsedBytes" : 90563739648
+    },
+    {
+      "cpuPercent" : 1.0343419797536448,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 32.034719958,
+      "physicalFootprintBytes" : 222774568,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0343419797536448,
+          "process" : {
+            "cpuTimeSeconds" : 2.179605837,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 222774568
+          }
+        }
+      ],
+      "systemCPUPercent" : 188.83928571428572,
+      "systemMemoryDeltaBytes" : 437714944,
+      "systemMemoryUsedBytes" : 90593001472
+    },
+    {
+      "cpuPercent" : 0.9973298083699006,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 33.034793375,
+      "physicalFootprintBytes" : 224773416,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9973298083699006,
+          "process" : {
+            "cpuTimeSeconds" : 2.189581751,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224773416
+          }
+        }
+      ],
+      "systemCPUPercent" : 196.43652561247217,
+      "systemMemoryDeltaBytes" : 85475328,
+      "systemMemoryUsedBytes" : 90240761856
+    },
+    {
+      "cpuPercent" : 1.040139125840308,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 34.034730083,
+      "physicalFootprintBytes" : 224150824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.040139125840308,
+          "process" : {
+            "cpuTimeSeconds" : 2.199981013,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224150824
+          }
+        }
+      ],
+      "systemCPUPercent" : 193.1072818232351,
+      "systemMemoryDeltaBytes" : 383746048,
+      "systemMemoryUsedBytes" : 90539032576
+    },
+    {
+      "cpuPercent" : 1.0550691704301416,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 35.034756958,
+      "physicalFootprintBytes" : 224609576,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0550691704301416,
+          "process" : {
+            "cpuTimeSeconds" : 2.210532507,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224609576
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.89732142857144,
+      "systemMemoryDeltaBytes" : 26787840,
+      "systemMemoryUsedBytes" : 90182074368
+    },
+    {
+      "cpuPercent" : 1.0549404134205171,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 36.034754458,
+      "physicalFootprintBytes" : 223462696,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0549404134205171,
+          "process" : {
+            "cpuTimeSeconds" : 2.221081643,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223462696
+          }
+        }
+      ],
+      "systemCPUPercent" : 214.71571906354515,
+      "systemMemoryDeltaBytes" : 373768192,
+      "systemMemoryUsedBytes" : 90529054720
+    },
+    {
+      "cpuPercent" : 1.0652421011651334,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 37.034798583,
+      "physicalFootprintBytes" : 223626536,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0652421011651334,
+          "process" : {
+            "cpuTimeSeconds" : 2.231735989,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223626536
+          }
+        }
+      ],
+      "systemCPUPercent" : 203.56545961002786,
+      "systemMemoryDeltaBytes" : 372031488,
+      "systemMemoryUsedBytes" : 90527318016
+    },
+    {
+      "cpuPercent" : 1.0431567231189092,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 38.034703417,
+      "physicalFootprintBytes" : 223986984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0431567231189092,
+          "process" : {
+            "cpuTimeSeconds" : 2.242162523,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223986984
+          }
+        }
+      ],
+      "systemCPUPercent" : 237.79264214046822,
+      "systemMemoryDeltaBytes" : 524828672,
+      "systemMemoryUsedBytes" : 90680115200
+    },
+    {
+      "cpuPercent" : 1.0783272033744749,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 39.034799583,
+      "physicalFootprintBytes" : 223675688,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0783272033744749,
+          "process" : {
+            "cpuTimeSeconds" : 2.252950488,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223675688
+          }
+        }
+      ],
+      "systemCPUPercent" : 201.22973728339858,
+      "systemMemoryDeltaBytes" : 521011200,
+      "systemMemoryUsedBytes" : 90676297728
+    },
+    {
+      "cpuPercent" : 1.0447784572036756,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 40.034797375,
+      "physicalFootprintBytes" : 224429352,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0447784572036756,
+          "process" : {
+            "cpuTimeSeconds" : 2.263396762,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224429352
+          }
+        }
+      ],
+      "systemCPUPercent" : 200.66889632107024,
+      "systemMemoryDeltaBytes" : 4816896,
+      "systemMemoryUsedBytes" : 90160103424
+    },
+    {
+      "cpuPercent" : 1.0096934543081602,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 41.034740042,
+      "physicalFootprintBytes" : 223659304,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0096934543081602,
+          "process" : {
+            "cpuTimeSeconds" : 2.273493015,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223659304
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.96820970440606,
+      "systemMemoryDeltaBytes" : 379568128,
+      "systemMemoryUsedBytes" : 90534854656
+    },
+    {
+      "cpuPercent" : 1.0967945688005662,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 42.034801708,
+      "physicalFootprintBytes" : 224150824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0967945688005662,
+          "process" : {
+            "cpuTimeSeconds" : 2.284460495,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224150824
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.25250278086767,
+      "systemMemoryDeltaBytes" : 379011072,
+      "systemMemoryUsedBytes" : 90534297600
+    },
+    {
+      "cpuPercent" : 0.9987903358812098,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 43.034835,
+      "physicalFootprintBytes" : 225051944,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9987903358812098,
+          "process" : {
+            "cpuTimeSeconds" : 2.294452823,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 225051944
+          }
+        }
+      ],
+      "systemCPUPercent" : 210.81985499163414,
+      "systemMemoryDeltaBytes" : 399130624,
+      "systemMemoryUsedBytes" : 90554417152
+    },
+    {
+      "cpuPercent" : 1.034854294114239,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 44.03477675,
+      "physicalFootprintBytes" : 224101672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.034854294114239,
+          "process" : {
+            "cpuTimeSeconds" : 2.304799705,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224101672
+          }
+        }
+      ],
+      "systemCPUPercent" : 200.55710306406684,
+      "systemMemoryDeltaBytes" : 175849472,
+      "systemMemoryUsedBytes" : 90331136000
+    },
+    {
+      "cpuPercent" : 1.0272941062352343,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 45.034775208,
+      "physicalFootprintBytes" : 224494888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0272941062352343,
+          "process" : {
+            "cpuTimeSeconds" : 2.315071323,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224494888
+          }
+        }
+      ],
+      "systemCPUPercent" : 194.86607142857144,
+      "systemMemoryDeltaBytes" : 370589696,
+      "systemMemoryUsedBytes" : 90525876224
+    },
+    {
+      "cpuPercent" : 1.0459853219464532,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 46.03479775,
+      "physicalFootprintBytes" : 224593192,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0459853219464532,
+          "process" : {
+            "cpuTimeSeconds" : 2.325531721,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224593192
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.11339633129515,
+      "systemMemoryDeltaBytes" : 25051136,
+      "systemMemoryUsedBytes" : 90180337664
+    },
+    {
+      "cpuPercent" : 1.0944605966703602,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 47.0347855,
+      "physicalFootprintBytes" : 224478504,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0944605966703602,
+          "process" : {
+            "cpuTimeSeconds" : 2.33647614,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224478504
+          }
+        }
+      ],
+      "systemCPUPercent" : 193.5376044568245,
+      "systemMemoryDeltaBytes" : 348241920,
+      "systemMemoryUsedBytes" : 90503528448
+    },
+    {
+      "cpuPercent" : 1.0975517810831448,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 48.034804875,
+      "physicalFootprintBytes" : 223167784,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0975517810831448,
+          "process" : {
+            "cpuTimeSeconds" : 2.347451495,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223167784
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.80267558528425,
+      "systemMemoryDeltaBytes" : 14712832,
+      "systemMemoryUsedBytes" : 90169999360
+    },
+    {
+      "cpuPercent" : 1.0551005201123658,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 49.034777667,
+      "physicalFootprintBytes" : 224019752,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0551005201123658,
+          "process" : {
+            "cpuTimeSeconds" : 2.358001708,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224019752
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.59888579387186,
+      "systemMemoryDeltaBytes" : 393723904,
+      "systemMemoryUsedBytes" : 90549010432
+    },
+    {
+      "cpuPercent" : 1.0529065596382388,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 50.034793167,
+      "physicalFootprintBytes" : 223102248,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0529065596382388,
+          "process" : {
+            "cpuTimeSeconds" : 2.368531916,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223102248
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.92049272116466,
+      "systemMemoryDeltaBytes" : 344145920,
+      "systemMemoryUsedBytes" : 90499432448
+    },
+    {
+      "cpuPercent" : 1.0496703312989348,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 51.034749042,
+      "physicalFootprintBytes" : 224380200,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0496703312989348,
+          "process" : {
+            "cpuTimeSeconds" : 2.379025846,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224380200
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.8120805369128,
+      "systemMemoryDeltaBytes" : 389971968,
+      "systemMemoryUsedBytes" : 90545258496
+    },
+    {
+      "cpuPercent" : 1.0495901654191409,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 52.034837375,
+      "physicalFootprintBytes" : 223135016,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0495901654191409,
+          "process" : {
+            "cpuTimeSeconds" : 2.389528385,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223135016
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.90184049079755,
+      "systemMemoryDeltaBytes" : 367017984,
+      "systemMemoryUsedBytes" : 90522304512
+    },
+    {
+      "cpuPercent" : 1.0570321075483164,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 53.033999208,
+      "physicalFootprintBytes" : 224511272,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0570321075483164,
+          "process" : {
+            "cpuTimeSeconds" : 2.40008511,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224511272
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.52487423141417,
+      "systemMemoryDeltaBytes" : 41893888,
+      "systemMemoryUsedBytes" : 90197180416
+    },
+    {
+      "cpuPercent" : 1.0498968412232337,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 54.034054417,
+      "physicalFootprintBytes" : 223069480,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0498968412232337,
+          "process" : {
+            "cpuTimeSeconds" : 2.41058633,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223069480
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.8494983277592,
+      "systemMemoryDeltaBytes" : 576258048,
+      "systemMemoryUsedBytes" : 90731544576
+    },
+    {
+      "cpuPercent" : 1.0554356603317723,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 55.034083375,
+      "physicalFootprintBytes" : 223200552,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0554356603317723,
+          "process" : {
+            "cpuTimeSeconds" : 2.421140618,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223200552
+          }
+        }
+      ],
+      "systemCPUPercent" : 200.1117318435754,
+      "systemMemoryDeltaBytes" : 376897536,
+      "systemMemoryUsedBytes" : 90532184064
+    },
+    {
+      "cpuPercent" : 1.0591670729767184,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 56.034003458,
+      "physicalFootprintBytes" : 224691496,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0591670729767184,
+          "process" : {
+            "cpuTimeSeconds" : 2.431730572,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224691496
+          }
+        }
+      ],
+      "systemCPUPercent" : 230.87173792337586,
+      "systemMemoryDeltaBytes" : 353271808,
+      "systemMemoryUsedBytes" : 90508558336
+    },
+    {
+      "cpuPercent" : 1.0377780191318364,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 57.034002542,
+      "physicalFootprintBytes" : 223102248,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0377780191318364,
+          "process" : {
+            "cpuTimeSeconds" : 2.442108798,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223102248
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.0814277746793,
+      "systemMemoryDeltaBytes" : 554942464,
+      "systemMemoryUsedBytes" : 90710228992
+    },
+    {
+      "cpuPercent" : 1.056652876906806,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 58.034078125,
+      "physicalFootprintBytes" : 223593768,
+      "processes" : [
+        {
+          "cpuPercent" : 1.056652876906806,
+          "process" : {
+            "cpuTimeSeconds" : 2.452678867,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223593768
+          }
+        }
+      ],
+      "systemCPUPercent" : 251.41903171953257,
+      "systemMemoryDeltaBytes" : 447266816,
+      "systemMemoryUsedBytes" : 90602553344
+    },
+    {
+      "cpuPercent" : 1.0790211848589202,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 59.034034167,
+      "physicalFootprintBytes" : 223429928,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0790211848589202,
+          "process" : {
+            "cpuTimeSeconds" : 2.46346753,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223429928
+          }
+        }
+      ],
+      "systemCPUPercent" : 192.85714285714283,
+      "systemMemoryDeltaBytes" : 576995328,
+      "systemMemoryUsedBytes" : 90732281856
+    },
+    {
+      "cpuPercent" : 1.064938710194408,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 60.034005375,
+      "physicalFootprintBytes" : 224134416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.064938710194408,
+          "process" : {
+            "cpuTimeSeconds" : 2.474115818,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224134416
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.68227424749165,
+      "systemMemoryDeltaBytes" : 420102144,
+      "systemMemoryUsedBytes" : 90575388672
+    },
+    {
+      "cpuPercent" : 1.061454959717233,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 61.034017542,
+      "physicalFootprintBytes" : 224068880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.061454959717233,
+          "process" : {
+            "cpuTimeSeconds" : 2.484730625,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 224068880
+          }
+        }
+      ],
+      "systemCPUPercent" : 191.63879598662209,
+      "systemMemoryDeltaBytes" : 178438144,
+      "systemMemoryUsedBytes" : 90333724672
+    },
+    {
+      "cpuPercent" : 0.5520117758819465,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 61.765000875,
+      "physicalFootprintBytes" : 223397136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5520117758819465,
+          "process" : {
+            "cpuTimeSeconds" : 2.488764814,
+            "diskReadBytes" : 45379584,
+            "diskWrittenBytes" : 170438656,
+            "executablePath" : "/Applications/Minshot.app/Contents/MacOS/Minshot",
+            "identity" : {
+              "pid" : 58726,
+              "startTimeNanoseconds" : 12698917519105
+            },
+            "name" : "Minshot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223397136
+          }
+        }
+      ],
+      "systemCPUPercent" : 212.49047981721247,
+      "systemMemoryDeltaBytes" : 421085184,
+      "systemMemoryUsedBytes" : 90576371712
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T06:13:37Z",
+  "summary" : {
+    "averageCPUPercent" : 0.9504120974157689,
+    "averagePhysicalFootprintBytes" : 235652651,
+    "averageSystemCPUPercent" : 216.8011069387858,
+    "averageSystemMemoryDeltaBytes" : 540786688,
+    "cpuTimeSeconds" : 0.5879475670000001,
+    "diskReadBytes" : 0,
+    "diskWrittenBytes" : 0,
+    "durationSeconds" : 61.765000875,
+    "p95CPUPercent" : 1.0951942986327567,
+    "p95SystemCPUPercent" : 271.8120805369128,
+    "peakCPUPercent" : 1.1294926003171628,
+    "peakPhysicalFootprintBytes" : 430032168,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 336.68341708542715,
+    "peakSystemMemoryDeltaBytes" : 1107951616,
+    "physicalFootprintDeltaBytes" : -33193984
+  },
+  "target" : {
+    "build" : "36",
+    "bundleIdentifier" : "dev.zayn.minshot",
+    "bundlePath" : "/Applications/Minshot.app",
+    "name" : "Minshot",
+    "recorderID" : "minshot",
+    "version" : "0.26.2"
+  }
+}

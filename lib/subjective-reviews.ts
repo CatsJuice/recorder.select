@@ -4,6 +4,25 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "还行",
+    summary: "开源，免费，功能较完善",
+  },
+  recordly: {
+    ui: "一般",
+    ux: "问题较多，比如录制工具条是全屏窗口，背后的内容无法交互，开始录制后录制指示器部分也是一个较大的窗口，摄像头只能在内部调整位置，背后的内容无法交互",
+    summary: "开源，免费。但性能问题突出，并且导出环节一直失败，无论是用兼容模式还是 beta 模式，所以缺少导出性能测试数据",
+  },
+  openscreen: {
+    ui: "一般",
+    ux: "有点怪，例如选择桌面录制需要好几步，录制完的文件都不知道怎么删除，关闭窗口应用自动退出了",
+    summary: "开源，免费",
+  },
+  minshot: {
+    ui: "精致，并且有很多细节",
+    ux: "功能集成度非常高，设计很精妙，但是没有引导不一定能找到，习惯后很方便",
+    summary: "小而美，基础功能方面缺少自动运镜",
+  },
   screendrop: {
     ui: "精美，非常干净和简洁",
     ux: "",
@@ -51,6 +70,25 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "Decent.",
+    summary: "Open source, free, and fairly comprehensive in features.",
+  },
+  recordly: {
+    ui: "Average.",
+    ux: "Several issues: the recording toolbar is a full-screen window that blocks interaction with the content behind it. Once recording starts, the recording indicator also occupies a large window. The camera view can only be repositioned within that window, and the content behind it remains inaccessible.",
+    summary: "Open source and free, but with significant performance issues. Export consistently failed in both compatibility and beta modes, so export benchmark data is unavailable.",
+  },
+  openscreen: {
+    ui: "Average.",
+    ux: "Somewhat odd: selecting desktop recording takes several steps, it is unclear how to delete recorded files, and closing the window automatically quits the app.",
+    summary: "Open source and free.",
+  },
+  minshot: {
+    ui: "Polished, with many thoughtful details.",
+    ux: "The features are tightly integrated and cleverly designed, but can be hard to discover without guidance. Very convenient once you get used to it.",
+    summary: "Small and beautifully crafted, but automatic camera movement is missing from the basic features.",
+  },
   screendrop: {
     ui: "Beautiful, very clean and simple.",
     ux: "",
@@ -97,6 +135,25 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "還行",
+    summary: "開源，免費，功能較完善",
+  },
+  recordly: {
+    ui: "一般",
+    ux: "問題較多，例如錄製工具列是全螢幕視窗，無法操作背後的內容。開始錄製後，錄製指示器也佔據一個較大的視窗，攝影機畫面只能在該視窗內調整位置，無法操作背後的內容",
+    summary: "開源、免費，但效能問題明顯，而且無論使用相容模式還是 beta 模式，匯出都一直失敗，因此缺少匯出效能測試資料",
+  },
+  openscreen: {
+    ui: "一般",
+    ux: "有點奇怪，例如選擇桌面錄製需要好幾個步驟，錄製完的檔案不知道怎麼刪除，關閉視窗後應用程式就自動結束了",
+    summary: "開源、免費",
+  },
+  minshot: {
+    ui: "精緻，而且有許多細節",
+    ux: "功能整合度非常高，設計很巧妙，但沒有引導不一定能找到，習慣後很方便",
+    summary: "小而美，基本功能方面缺少自動運鏡",
+  },
   screendrop: {
     ui: "精美，非常乾淨簡潔",
     ux: "",
@@ -131,6 +188,25 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "まずまず。",
+    summary: "オープンソースで無料。機能も比較的充実している。",
+  },
+  recordly: {
+    ui: "普通。",
+    ux: "問題が多く、録画ツールバーは全画面ウィンドウになっていて背後のコンテンツを操作できません。録画開始後も録画インジケーターが大きなウィンドウを占め、カメラ映像の位置はその内部でしか調整できず、背後のコンテンツを操作できません。",
+    summary: "オープンソースで無料ですが、パフォーマンスの問題が顕著です。互換モードでも beta モードでも書き出しが繰り返し失敗したため、書き出しの性能テストデータはありません。",
+  },
+  openscreen: {
+    ui: "普通。",
+    ux: "少し違和感がある。例えば、デスクトップ録画の選択に何段階も必要で、録画済みファイルの削除方法がわかりにくく、ウィンドウを閉じるとアプリも自動的に終了する。",
+    summary: "オープンソースで無料。",
+  },
+  minshot: {
+    ui: "洗練されていて、細部まで工夫されている。",
+    ux: "機能の統合度が非常に高く、設計も巧み。ただし、案内がないと機能を見つけにくいことがある。慣れるととても便利。",
+    summary: "コンパクトで美しいが、基本機能として自動カメラワークが欠けている。",
+  },
   screendrop: {
     ui: "美しく、とてもすっきりしていてシンプル。",
     ux: "",
@@ -165,6 +241,25 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "괜찮음.",
+    summary: "오픈 소스이며 무료이고, 기능도 비교적 잘 갖춰져 있음.",
+  },
+  recordly: {
+    ui: "보통.",
+    ux: "문제가 많습니다. 녹화 도구 모음이 전체 화면 창이라 뒤의 콘텐츠와 상호작용할 수 없습니다. 녹화를 시작한 뒤에도 녹화 표시기가 큰 창을 차지하며, 카메라 화면은 그 창 안에서만 위치를 조절할 수 있고 뒤의 콘텐츠는 조작할 수 없습니다.",
+    summary: "오픈 소스이며 무료지만 성능 문제가 두드러집니다. 호환 모드와 beta 모드 모두에서 내보내기가 계속 실패하여 내보내기 성능 테스트 데이터가 없습니다.",
+  },
+  openscreen: {
+    ui: "보통.",
+    ux: "조금 이상하다. 예를 들어 데스크톱 녹화를 선택하려면 여러 단계를 거쳐야 하고, 녹화한 파일을 어떻게 삭제하는지 알기 어려우며, 창을 닫으면 앱도 자동으로 종료된다.",
+    summary: "오픈 소스이며 무료.",
+  },
+  minshot: {
+    ui: "세련되고 세심한 디테일이 많다.",
+    ux: "기능이 매우 긴밀하게 통합되어 있고 설계도 정교하지만, 안내가 없으면 기능을 찾기 어려울 수 있다. 익숙해지면 매우 편리하다.",
+    summary: "작고 아름답지만, 기본 기능 중 자동 카메라 움직임이 빠져 있다.",
+  },
   screendrop: {
     ui: "아름답고 매우 깔끔하며 간결하다.",
     ux: "",
@@ -199,6 +294,25 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "Aceptable.",
+    summary: "De código abierto, gratuito y con funciones bastante completas.",
+  },
+  recordly: {
+    ui: "Normal.",
+    ux: "Presenta varios problemas: la barra de grabación es una ventana de pantalla completa que impide interactuar con el contenido de detrás. Al iniciar la grabación, el indicador también ocupa una ventana grande; la cámara solo se puede mover dentro de ella y el contenido de detrás sigue siendo inaccesible.",
+    summary: "De código abierto y gratuito, pero con problemas de rendimiento importantes. La exportación falló repetidamente tanto en el modo de compatibilidad como en el modo beta, por lo que faltan los datos de rendimiento de exportación.",
+  },
+  openscreen: {
+    ui: "Normal.",
+    ux: "Resulta algo extraña: seleccionar la grabación del escritorio requiere varios pasos, no queda claro cómo eliminar los archivos grabados y cerrar la ventana cierra automáticamente la aplicación.",
+    summary: "De código abierto y gratuita.",
+  },
+  minshot: {
+    ui: "Cuidada, con muchos detalles bien pensados.",
+    ux: "Las funciones están muy bien integradas y el diseño es ingenioso, pero algunas pueden ser difíciles de descubrir sin orientación. Muy cómodo una vez que te acostumbras.",
+    summary: "Pequeño y bien diseñado, pero le falta el movimiento automático de cámara entre las funciones básicas.",
+  },
   screendrop: {
     ui: "Bonita, muy limpia y sencilla.",
     ux: "",
@@ -233,6 +347,25 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "Correcte.",
+    summary: "Open source, gratuit et assez complet en fonctionnalités.",
+  },
+  recordly: {
+    ui: "Moyenne.",
+    ux: "Plusieurs problèmes : la barre d’enregistrement est une fenêtre plein écran qui empêche d’interagir avec le contenu derrière elle. Après le démarrage, l’indicateur d’enregistrement occupe aussi une grande fenêtre ; la caméra ne peut être déplacée qu’à l’intérieur et le contenu derrière reste inaccessible.",
+    summary: "Open source et gratuit, mais avec des problèmes de performances importants. L’exportation a systématiquement échoué en mode de compatibilité comme en mode beta ; les données de performances d’exportation sont donc indisponibles.",
+  },
+  openscreen: {
+    ui: "Moyenne.",
+    ux: "Un peu déroutante : sélectionner l’enregistrement du bureau demande plusieurs étapes, la manière de supprimer les fichiers enregistrés n’est pas claire et fermer la fenêtre quitte automatiquement l’application.",
+    summary: "Open source et gratuite.",
+  },
+  minshot: {
+    ui: "Soignée, avec de nombreux détails bien pensés.",
+    ux: "Les fonctions sont très bien intégrées et la conception est ingénieuse, mais certaines peuvent être difficiles à découvrir sans indications. Très pratique une fois les habitudes prises.",
+    summary: "Petit et soigné, mais il manque le mouvement automatique de caméra parmi les fonctions de base.",
+  },
   screendrop: {
     ui: "Belle, très épurée et simple.",
     ux: "",
@@ -267,6 +400,25 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "Ordentlich.",
+    summary: "Open Source, kostenlos und mit recht umfangreichen Funktionen.",
+  },
+  recordly: {
+    ui: "Durchschnittlich.",
+    ux: "Mehrere Probleme: Die Aufnahmeleiste ist ein Vollbildfenster, das die Interaktion mit dahinterliegenden Inhalten verhindert. Nach dem Start belegt auch die Aufnahmeanzeige ein großes Fenster. Die Kameraansicht lässt sich nur darin verschieben, und die Inhalte dahinter bleiben unzugänglich.",
+    summary: "Open Source und kostenlos, aber mit erheblichen Leistungsproblemen. Der Export schlug sowohl im Kompatibilitätsmodus als auch im Beta-Modus wiederholt fehl, daher fehlen Leistungsdaten zum Export.",
+  },
+  openscreen: {
+    ui: "Durchschnittlich.",
+    ux: "Etwas eigenartig: Die Auswahl der Desktopaufnahme erfordert mehrere Schritte, es ist unklar, wie sich aufgenommene Dateien löschen lassen, und beim Schließen des Fensters wird die App automatisch beendet.",
+    summary: "Open Source und kostenlos.",
+  },
+  minshot: {
+    ui: "Ausgefeilt, mit vielen durchdachten Details.",
+    ux: "Die Funktionen sind sehr eng integriert und clever gestaltet, lassen sich ohne Anleitung aber nicht immer leicht entdecken. Nach der Eingewöhnung sehr praktisch.",
+    summary: "Klein und schön gestaltet, allerdings fehlen automatische Kamerabewegungen bei den Grundfunktionen.",
+  },
   screendrop: {
     ui: "Schön, sehr aufgeräumt und schlicht.",
     ux: "",
@@ -301,6 +453,25 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  cap: {
+    ui: "Razoável.",
+    summary: "Código aberto, gratuito e com recursos bastante completos.",
+  },
+  recordly: {
+    ui: "Mediana.",
+    ux: "Vários problemas: a barra de gravação é uma janela em tela cheia que impede a interação com o conteúdo atrás dela. Após iniciar a gravação, o indicador também ocupa uma janela grande; a câmera só pode ser reposicionada dentro dela e o conteúdo atrás continua inacessível.",
+    summary: "Código aberto e gratuito, mas com problemas significativos de desempenho. A exportação falhou repetidamente tanto no modo de compatibilidade quanto no modo beta, por isso não há dados de desempenho de exportação.",
+  },
+  openscreen: {
+    ui: "Mediana.",
+    ux: "Um pouco estranha: selecionar a gravação da área de trabalho exige várias etapas, não fica claro como excluir os arquivos gravados e fechar a janela encerra o aplicativo automaticamente.",
+    summary: "De código aberto e gratuito.",
+  },
+  minshot: {
+    ui: "Refinada, com muitos detalhes bem pensados.",
+    ux: "As funções são muito bem integradas e o design é engenhoso, mas algumas podem ser difíceis de descobrir sem orientação. Muito prático depois que você se acostuma.",
+    summary: "Pequeno e bem cuidado, mas falta o movimento automático de câmera entre as funções básicas.",
+  },
   screendrop: {
     ui: "Bonita, muito limpa e simples.",
     ux: "",

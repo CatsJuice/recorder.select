@@ -74,8 +74,30 @@ sources.screendrop = {
   recording: 'data/benchmarks/screendrop/screendrop-recording-2026-09-04-131743.json',
 };
 
+sources.minshot = {
+  recording: 'data/benchmarks/minshot/minshot-recording-2026-09-04-141030.json',
+  preview: 'data/benchmarks/minshot/minshot-preview-2026-09-04-141337.json',
+  export: 'data/benchmarks/minshot/minshot-export-2026-09-04-141455.json',
+};
+
+sources.openscreen = {
+  preview: 'data/benchmarks/openscreen/openscreen-preview-2026-09-04-155612.json',
+  export: 'data/benchmarks/openscreen/openscreen-export-2026-09-04-160520.json',
+};
+
+sources.recordly = {
+  recording: 'data/benchmarks/recordly/recordly-recording-2026-09-04-163558.json',
+  preview: 'data/benchmarks/recordly/recordly-preview-2026-09-04-163721.json',
+};
+
+sources.cap = {
+  "export": "data/benchmarks/cap/cap-export-2026-09-04-170623.json",
+  "preview": "data/benchmarks/cap/cap-preview-2026-09-04-170437.json",
+  "recording": "data/benchmarks/cap/cap-recording-2026-09-04-170247.json"
+};
+
 const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
-  ? ['bettershot', 'screendrop'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
+  ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
   : '5K';
 
 // Anomalies belong to a specific measurement, not every future run of the app.

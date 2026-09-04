@@ -24,6 +24,8 @@ export type BenchmarkSample = {
 export type BenchmarkRun = {
   scenario: PerformanceScenario;
   workloadLabel?: string;
+  /** Reviewed anomalies for specific metrics; raw measurements remain unchanged. */
+  outlierFields?: readonly string[];
   summary: BenchmarkSummary;
   samples: BenchmarkSample[];
 };
@@ -125,4 +127,12 @@ export const formatPerformanceValue = (value: number, format: PerformanceField['
 export async function loadPerformanceProfiles(): Promise<PerformanceProfiles> {
   const { generatedPerformanceProfiles } = await import('./performance-profiles.generated');
   return generatedPerformanceProfiles as unknown as PerformanceProfiles;
+}
+
+// Benchmark data is lazy-loaded into React state. A full development refresh
+// prevents a regenerated module from leaving the already-loaded snapshot stale.
+if (import.meta.hot) {
+  import.meta.hot.accept('./performance-profiles.generated', () => {
+    window.location.reload();
+  });
 }

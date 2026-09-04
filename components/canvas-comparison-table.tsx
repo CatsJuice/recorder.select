@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from 'react';
+import { recorderWarningFor } from '../lib/recorder-warnings';
 import { useI18n } from '../lib/i18n';
 import { createComparisonModel, type ModelOptions, type TableRow } from '../lib/comparison-table-model';
 import { CanvasTablePainter, type PaintScene } from '../lib/canvas-table-painter';
@@ -392,7 +393,7 @@ export function CanvasComparisonTable(props: Props) {
     if (address?.column === -1 && row?.weightKey && window.matchMedia('(any-hover: hover)').matches) openWeight(row.id, false);
     else deferWeightClose();
     event.currentTarget.style.cursor = address && (address.row === -1 || row?.expanded !== undefined || row?.weightKey || address.column >= 0) ? 'pointer' : 'default';
-    event.currentTarget.title = row?.weightKey && address?.column === -1 ? '' : address && address.column >= 0 && row ? row.cell(address.column).text : row?.label ?? '';
+    event.currentTarget.title = address?.row === -1 && address.column >= 0 ? recorderWarningFor(locale, products[address.column].id) : row?.weightKey && address?.column === -1 ? '' : address && address.column >= 0 && row ? row.cell(address.column).text : row?.label ?? '';
     scheduleRef.current();
   };
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -430,7 +431,7 @@ export function CanvasComparisonTable(props: Props) {
   const accessibleColumns = [...new Set([-1, ...visibleColumns, active.column])].sort((a, b) => a - b);
   const accessibleRows = [...new Set([-1, ...(windowRange.stickyRows ?? []), ...Array.from({ length: windowRange.endRow - windowRange.firstRow }, (_, index) => index + windowRange.firstRow), active.row])].filter(index => index < model.rows.length).sort((a, b) => a - b);
   const labelFor = (row: TableRow | undefined, column: number) => {
-    if (!row) return column < 0 ? `${scene.title}, ${scene.resetLabel}` : `${products[column].name}, ${scores[products[column].id]?.toFixed(1)} ${t('score')}`;
+    if (!row) return column < 0 ? `${scene.title}, ${scene.resetLabel}` : `${products[column].name}, ${scores[products[column].id]?.toFixed(1)} ${t('score')}${recorderWarningFor(locale, products[column].id) ? `, ${recorderWarningFor(locale, products[column].id)}` : ''}`;
     if (column < 0) return row.weightKey ? `${row.label}, ${t('weight')} ${row.weight}` : row.label;
     const cell = row.cell(column);
     return `${products[column].name}, ${row.label}: ${cell.text}${cell.secondary ? `, ${cell.secondary}` : ''}`;
@@ -440,7 +441,7 @@ export function CanvasComparisonTable(props: Props) {
     <div className="canvas-table-scroll" ref={scrollerRef} role="grid" tabIndex={0} data-keyboard-focus={hasFocus} aria-label={scene.title} aria-rowcount={model.rows.length + 1} aria-colcount={products.length + 1} aria-multiselectable="true" aria-activedescendant={cellId(active.row, active.column)} aria-describedby={`${gridId}-help`}
       onFocus={() => setHasFocus(keyboardInputRef.current)} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setHasFocus(false); }} onKeyDown={onKeyDown}
       onCopy={event => { event.clipboardData.setData('text/plain', labelFor(model.rows[active.row], active.column)); event.preventDefault(); }}
-      onPointerMove={onPointerMove} onPointerLeave={() => { hoverRef.current = null; deferWeightClose(); scheduleRef.current(); }}
+      onPointerMove={onPointerMove} onPointerLeave={event => { event.currentTarget.title = ''; hoverRef.current = null; deferWeightClose(); scheduleRef.current(); }}
       onPointerDown={event => { if (event.button !== 0 || !event.isPrimary) return; pointerRef.current = { x: event.clientX, y: event.clientY, left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop }; }}
       onPointerCancel={() => { pointerRef.current = null; }}
       onPointerUp={event => {

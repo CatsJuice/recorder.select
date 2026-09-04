@@ -142,7 +142,7 @@ const buildAssistantContext = (question: string, recorderScores: Record<string, 
     })),
     categorySummary: Object.fromEntries(topLevelSummaryGroups.map((group) => {
       const preview = group.getCollapsedPreview?.(recorder);
-      return [group.label, preview?.type === 'boolean' ? preview.value : preview?.label ?? null];
+      return [group.label, preview?.type === 'price' ? { minimumPriceUSD: preview.value, billingField: preview.unitFieldKey ?? null } : preview?.type === 'boolean' ? preview.value : preview?.label ?? null];
     })),
   }));
   return { fields, products, totalProductCount: recorders.length };

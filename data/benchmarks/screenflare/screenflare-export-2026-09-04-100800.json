@@ -1,0 +1,662 @@
+{
+  "endedAt" : "2026-09-04T02:08:20Z",
+  "id" : "646D3779-FE7C-4574-ACD8-94F9DBF613EB",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.2541e-05,
+      "physicalFootprintBytes" : 234620224,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 4.633616638,
+            "diskReadBytes" : 30195712,
+            "diskWrittenBytes" : 476106752,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 234620224
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 95241945088
+    },
+    {
+      "cpuPercent" : 0.8231697178095113,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 114688,
+      "elapsedSeconds" : 1.037757041,
+      "physicalFootprintBytes" : 701531624,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8231697178095113,
+          "process" : {
+            "cpuTimeSeconds" : 4.642158771,
+            "diskReadBytes" : 30277632,
+            "diskWrittenBytes" : 476221440,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 701531624
+          }
+        }
+      ],
+      "systemCPUPercent" : 367.2077922077922,
+      "systemMemoryDeltaBytes" : 1084358656,
+      "systemMemoryUsedBytes" : 96326303744
+    },
+    {
+      "cpuPercent" : 2.4297662474800727,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 1703936,
+      "elapsedSeconds" : 2.037694083,
+      "physicalFootprintBytes" : 1392575904,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4297662474800727,
+          "process" : {
+            "cpuTimeSeconds" : 4.666457211,
+            "diskReadBytes" : 30277632,
+            "diskWrittenBytes" : 477810688,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1392575904
+          }
+        }
+      ],
+      "systemCPUPercent" : 421.51260504201684,
+      "systemMemoryDeltaBytes" : 1939292160,
+      "systemMemoryUsedBytes" : 97181237248
+    },
+    {
+      "cpuPercent" : 2.019101345178243,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 3080192,
+      "elapsedSeconds" : 3.037592416,
+      "physicalFootprintBytes" : 1729922536,
+      "processes" : [
+        {
+          "cpuPercent" : 2.019101345178243,
+          "process" : {
+            "cpuTimeSeconds" : 4.686642327,
+            "diskReadBytes" : 30277632,
+            "diskWrittenBytes" : 479186944,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1729922536
+          }
+        }
+      ],
+      "systemCPUPercent" : 346.1151481274455,
+      "systemMemoryDeltaBytes" : 2371469312,
+      "systemMemoryUsedBytes" : 97613414400
+    },
+    {
+      "cpuPercent" : 2.33886828038665,
+      "diskReadBytes" : 81920,
+      "diskWrittenBytes" : 12648448,
+      "elapsedSeconds" : 4.03753575,
+      "physicalFootprintBytes" : 1555596752,
+      "processes" : [
+        {
+          "cpuPercent" : 2.33886828038665,
+          "process" : {
+            "cpuTimeSeconds" : 4.710032035,
+            "diskReadBytes" : 30277632,
+            "diskWrittenBytes" : 488755200,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1555596752
+          }
+        }
+      ],
+      "systemCPUPercent" : 356.1659192825112,
+      "systemMemoryDeltaBytes" : 2420408320,
+      "systemMemoryUsedBytes" : 97662353408
+    },
+    {
+      "cpuPercent" : 2.6760172897780117,
+      "diskReadBytes" : 90112,
+      "diskWrittenBytes" : 21200896,
+      "elapsedSeconds" : 5.03848325,
+      "physicalFootprintBytes" : 1923220968,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6760172897780117,
+          "process" : {
+            "cpuTimeSeconds" : 4.736818696,
+            "diskReadBytes" : 30285824,
+            "diskWrittenBytes" : 497307648,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1923220968
+          }
+        }
+      ],
+      "systemCPUPercent" : 335.04751257685854,
+      "systemMemoryDeltaBytes" : 2163867648,
+      "systemMemoryUsedBytes" : 97405812736
+    },
+    {
+      "cpuPercent" : 1.9549261692431195,
+      "diskReadBytes" : 90112,
+      "diskWrittenBytes" : 22511616,
+      "elapsedSeconds" : 6.037920833,
+      "physicalFootprintBytes" : 983729640,
+      "processes" : [
+        {
+          "cpuPercent" : 1.9549261692431195,
+          "process" : {
+            "cpuTimeSeconds" : 4.756359545,
+            "diskReadBytes" : 30285824,
+            "diskWrittenBytes" : 498618368,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 983729640
+          }
+        }
+      ],
+      "systemCPUPercent" : 328.82681564245814,
+      "systemMemoryDeltaBytes" : 2491498496,
+      "systemMemoryUsedBytes" : 97733443584
+    },
+    {
+      "cpuPercent" : 2.445862890304474,
+      "diskReadBytes" : 102400,
+      "diskWrittenBytes" : 31014912,
+      "elapsedSeconds" : 7.038372333,
+      "physicalFootprintBytes" : 494355944,
+      "processes" : [
+        {
+          "cpuPercent" : 2.445862890304474,
+          "process" : {
+            "cpuTimeSeconds" : 4.780829645,
+            "diskReadBytes" : 30298112,
+            "diskWrittenBytes" : 507121664,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 494355944
+          }
+        }
+      ],
+      "systemCPUPercent" : 326.99832308552266,
+      "systemMemoryDeltaBytes" : 2132295680,
+      "systemMemoryUsedBytes" : 97374240768
+    },
+    {
+      "cpuPercent" : 2.5197368628500643,
+      "diskReadBytes" : 102400,
+      "diskWrittenBytes" : 31014912,
+      "elapsedSeconds" : 8.03758775,
+      "physicalFootprintBytes" : 493061584,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5197368628500643,
+          "process" : {
+            "cpuTimeSeconds" : 4.806001432,
+            "diskReadBytes" : 30298112,
+            "diskWrittenBytes" : 507121664,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 493061584
+          }
+        }
+      ],
+      "systemCPUPercent" : 322.14765100671144,
+      "systemMemoryDeltaBytes" : 2457108480,
+      "systemMemoryUsedBytes" : 97699053568
+    },
+    {
+      "cpuPercent" : 2.714744976722633,
+      "diskReadBytes" : 110592,
+      "diskWrittenBytes" : 39518208,
+      "elapsedSeconds" : 9.038301125,
+      "physicalFootprintBytes" : 566937064,
+      "processes" : [
+        {
+          "cpuPercent" : 2.714744976722633,
+          "process" : {
+            "cpuTimeSeconds" : 4.833170119,
+            "diskReadBytes" : 30306304,
+            "diskWrittenBytes" : 515624960,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 566937064
+          }
+        }
+      ],
+      "systemCPUPercent" : 343.09670206819453,
+      "systemMemoryDeltaBytes" : 2474328064,
+      "systemMemoryUsedBytes" : 97716273152
+    },
+    {
+      "cpuPercent" : 2.4253307323338924,
+      "diskReadBytes" : 118784,
+      "diskWrittenBytes" : 48070656,
+      "elapsedSeconds" : 10.037944875,
+      "physicalFootprintBytes" : 565855696,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4253307323338924,
+          "process" : {
+            "cpuTimeSeconds" : 4.857413535,
+            "diskReadBytes" : 30314496,
+            "diskWrittenBytes" : 524177408,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 565855696
+          }
+        }
+      ],
+      "systemCPUPercent" : 304.5378151260505,
+      "systemMemoryDeltaBytes" : 2469036032,
+      "systemMemoryUsedBytes" : 97710981120
+    },
+    {
+      "cpuPercent" : 2.2094260684104596,
+      "diskReadBytes" : 118784,
+      "diskWrittenBytes" : 48824320,
+      "elapsedSeconds" : 11.03828925,
+      "physicalFootprintBytes" : 570213864,
+      "processes" : [
+        {
+          "cpuPercent" : 2.2094260684104596,
+          "process" : {
+            "cpuTimeSeconds" : 4.879515699,
+            "diskReadBytes" : 30314496,
+            "diskWrittenBytes" : 524931072,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 570213864
+          }
+        }
+      ],
+      "systemCPUPercent" : 309.86072423398326,
+      "systemMemoryDeltaBytes" : 2289369088,
+      "systemMemoryUsedBytes" : 97531314176
+    },
+    {
+      "cpuPercent" : 2.317259845255069,
+      "diskReadBytes" : 126976,
+      "diskWrittenBytes" : 57901056,
+      "elapsedSeconds" : 12.037974583,
+      "physicalFootprintBytes" : 562857472,
+      "processes" : [
+        {
+          "cpuPercent" : 2.317259845255069,
+          "process" : {
+            "cpuTimeSeconds" : 4.902680076,
+            "diskReadBytes" : 30322688,
+            "diskWrittenBytes" : 534007808,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 562857472
+          }
+        }
+      ],
+      "systemCPUPercent" : 328.0044717719397,
+      "systemMemoryDeltaBytes" : 2128674816,
+      "systemMemoryUsedBytes" : 97370619904
+    },
+    {
+      "cpuPercent" : 2.454661764306926,
+      "diskReadBytes" : 143360,
+      "diskWrittenBytes" : 57966592,
+      "elapsedSeconds" : 13.038330041,
+      "physicalFootprintBytes" : 500106728,
+      "processes" : [
+        {
+          "cpuPercent" : 2.454661764306926,
+          "process" : {
+            "cpuTimeSeconds" : 4.927237891,
+            "diskReadBytes" : 30339072,
+            "diskWrittenBytes" : 534073344,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 500106728
+          }
+        }
+      ],
+      "systemCPUPercent" : 350.33557046979865,
+      "systemMemoryDeltaBytes" : 2477309952,
+      "systemMemoryUsedBytes" : 97719255040
+    },
+    {
+      "cpuPercent" : 2.490054408232198,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 66355200,
+      "elapsedSeconds" : 14.03799025,
+      "physicalFootprintBytes" : 509330896,
+      "processes" : [
+        {
+          "cpuPercent" : 2.490054408232198,
+          "process" : {
+            "cpuTimeSeconds" : 4.952130663,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 542461952,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 509330896
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.47321428571433,
+      "systemMemoryDeltaBytes" : 2118074368,
+      "systemMemoryUsedBytes" : 97360019456
+    },
+    {
+      "cpuPercent" : 2.5039073566594814,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 66355200,
+      "elapsedSeconds" : 15.038404875,
+      "physicalFootprintBytes" : 495699432,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5039073566594814,
+          "process" : {
+            "cpuTimeSeconds" : 4.977182302,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 542461952,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 495699432
+          }
+        }
+      ],
+      "systemCPUPercent" : 312.73743016759784,
+      "systemMemoryDeltaBytes" : 2454372352,
+      "systemMemoryUsedBytes" : 97696317440
+    },
+    {
+      "cpuPercent" : 2.4845841561395736,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 74743808,
+      "elapsedSeconds" : 16.038321541,
+      "physicalFootprintBytes" : 524109312,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4845841561395736,
+          "process" : {
+            "cpuTimeSeconds" : 5.002022722,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 550850560,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 524109312
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.7039106145251,
+      "systemMemoryDeltaBytes" : 2461728768,
+      "systemMemoryUsedBytes" : 97703673856
+    },
+    {
+      "cpuPercent" : 2.4029006189792783,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 74842112,
+      "elapsedSeconds" : 17.038394583,
+      "physicalFootprintBytes" : 503121336,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4029006189792783,
+          "process" : {
+            "cpuTimeSeconds" : 5.026052406,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 550948864,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 503121336
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.5240761478163,
+      "systemMemoryDeltaBytes" : 2441871360,
+      "systemMemoryUsedBytes" : 97683816448
+    },
+    {
+      "cpuPercent" : 2.5901348211230233,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 83542016,
+      "elapsedSeconds" : 18.037567958,
+      "physicalFootprintBytes" : 1854424504,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5901348211230233,
+          "process" : {
+            "cpuTimeSeconds" : 5.051933372,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 559648768,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1854424504
+          }
+        }
+      ],
+      "systemCPUPercent" : 409.0452261306533,
+      "systemMemoryDeltaBytes" : 2335358976,
+      "systemMemoryUsedBytes" : 97577304064
+    },
+    {
+      "cpuPercent" : 1.7521231575095928,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 91930624,
+      "elapsedSeconds" : 19.038343625,
+      "physicalFootprintBytes" : 602375488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7521231575095928,
+          "process" : {
+            "cpuTimeSeconds" : 5.069465604,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 568037376,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 602375488
+          }
+        }
+      ],
+      "systemCPUPercent" : 371.06145251396646,
+      "systemMemoryDeltaBytes" : 121765888,
+      "systemMemoryUsedBytes" : 95363710976
+    },
+    {
+      "cpuPercent" : 0.022569173755701548,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 91930624,
+      "elapsedSeconds" : 20.037886083,
+      "physicalFootprintBytes" : 431031616,
+      "processes" : [
+        {
+          "cpuPercent" : 0.022569173755701548,
+          "process" : {
+            "cpuTimeSeconds" : 5.069691205,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 568037376,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 431031616
+          }
+        }
+      ],
+      "systemCPUPercent" : 390.1179112857945,
+      "systemMemoryDeltaBytes" : 527286272,
+      "systemMemoryUsedBytes" : 95769231360
+    },
+    {
+      "cpuPercent" : 0.009301976747369404,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 91930624,
+      "elapsedSeconds" : 20.079078416,
+      "physicalFootprintBytes" : 431031616,
+      "processes" : [
+        {
+          "cpuPercent" : 0.009301976747369404,
+          "process" : {
+            "cpuTimeSeconds" : 5.06969503,
+            "diskReadBytes" : 30347264,
+            "diskWrittenBytes" : 568037376,
+            "executablePath" : "/Applications/Screenflare.app/Contents/MacOS/Screenflare",
+            "identity" : {
+              "pid" : 39891,
+              "startTimeNanoseconds" : 12309858697954
+            },
+            "name" : "Screenflare",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 431031616
+          }
+        }
+      ],
+      "systemCPUPercent" : 559.4594594594595,
+      "systemMemoryDeltaBytes" : 615743488,
+      "systemMemoryUsedBytes" : 95857688576
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T02:08:00Z",
+  "summary" : {
+    "averageCPUPercent" : 2.0754498980573977,
+    "averagePhysicalFootprintBytes" : 801168645,
+    "averageSystemCPUPercent" : 354.52284434508624,
+    "averageSystemMemoryDeltaBytes" : 1907964463,
+    "cpuTimeSeconds" : 0.43607839199999976,
+    "diskReadBytes" : 151552,
+    "diskWrittenBytes" : 91930624,
+    "durationSeconds" : 20.079078416,
+    "p95CPUPercent" : 2.6760172897780117,
+    "p95SystemCPUPercent" : 421.51260504201684,
+    "peakCPUPercent" : 2.714744976722633,
+    "peakPhysicalFootprintBytes" : 1923220968,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 559.4594594594595,
+    "peakSystemMemoryDeltaBytes" : 2491498496,
+    "physicalFootprintDeltaBytes" : 196411392,
+    "realtimeFactor" : 0.33465130693333334
+  },
+  "target" : {
+    "build" : "0.1.13",
+    "bundleIdentifier" : "app.screenflare",
+    "bundlePath" : "/Applications/Screenflare.app",
+    "name" : "Screenflare",
+    "recorderID" : "screenflare",
+    "version" : "0.1.13"
+  }
+}

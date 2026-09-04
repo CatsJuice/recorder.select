@@ -10,7 +10,7 @@ import { LocalChatWidget } from '../components/local-chat-widget';
 import { LanguageSwitcher } from '../components/language-switcher';
 import { CanvasComparisonTable } from '../components/canvas-comparison-table';
 import { useI18n } from '../lib/i18n';
-import { createScoreContributions } from '../lib/recorder-scoring';
+import { calculateRecorderScore, createScoreContributions } from '../lib/recorder-scoring';
 import { fieldDefinitions, fieldGroups, recorders, type FieldDefinition } from '../lib/recorders';
 import { loadPerformanceProfiles, performanceFields, performanceValue, type PerformanceProfiles } from '../lib/performance';
 
@@ -123,7 +123,7 @@ export default function Home() {
     });
     return () => { cancelAnimationFrame(restoredFrame); cancelAnimationFrame(paintedFrame); };
   }, [tableFullWidthHydrated, fieldWeightsHydrated]);
-  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, weightedFields.reduce((total, field, index) => total + scoreContributions[recorder.id][index] * (fieldWeights[field.key] ?? 5), 0)])), [fieldWeights]);
+  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, calculateRecorderScore(scoreContributions[recorder.id], weightedFields, fieldWeights)])), [fieldWeights]);
   const orderedRecorders = useMemo(() => [...recorders].sort((a,b) => {
       for (const rule of sortRules) {
         const left = rule.key === 'score' ? recorderScores[a.id] : performanceValue(performanceProfiles, a.id, rule.key) ?? a[rule.key];

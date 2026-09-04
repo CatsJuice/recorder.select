@@ -1,0 +1,1893 @@
+{
+  "endedAt" : "2026-09-04T03:50:41Z",
+  "id" : "C1ABAACF-103A-4273-972B-AACBD293B89A",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.2833e-05,
+      "physicalFootprintBytes" : 205554864,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.316422882,
+            "diskReadBytes" : 8851456,
+            "diskWrittenBytes" : 27389952,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 205554864
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 92875931648
+    },
+    {
+      "cpuPercent" : 0.6309573944779862,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.096554625,
+      "physicalFootprintBytes" : 202507440,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6309573944779862,
+          "process" : {
+            "cpuTimeSeconds" : 0.323341318,
+            "diskReadBytes" : 8851456,
+            "diskWrittenBytes" : 27389952,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 202507440
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.1317671092952,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 92854042624
+    },
+    {
+      "cpuPercent" : 0.7774289421491163,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.096364041,
+      "physicalFootprintBytes" : 327992592,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7774289421491163,
+          "process" : {
+            "cpuTimeSeconds" : 0.331117723,
+            "diskReadBytes" : 8851456,
+            "diskWrittenBytes" : 27389952,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 327992592
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.1812080536913,
+      "systemMemoryDeltaBytes" : 944521216,
+      "systemMemoryUsedBytes" : 93820452864
+    },
+    {
+      "cpuPercent" : 0.6808804554352849,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.096454291,
+      "physicalFootprintBytes" : 322258192,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6808804554352849,
+          "process" : {
+            "cpuTimeSeconds" : 0.337925298,
+            "diskReadBytes" : 8851456,
+            "diskWrittenBytes" : 27389952,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 322258192
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.8222097588334,
+      "systemMemoryDeltaBytes" : 1144897536,
+      "systemMemoryUsedBytes" : 94020829184
+    },
+    {
+      "cpuPercent" : 0.9842733377144184,
+      "diskReadBytes" : 8192,
+      "diskWrittenBytes" : 6733824,
+      "elapsedSeconds" : 4.096573791,
+      "physicalFootprintBytes" : 322684176,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9842733377144184,
+          "process" : {
+            "cpuTimeSeconds" : 0.347769338,
+            "diskReadBytes" : 8859648,
+            "diskWrittenBytes" : 34123776,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 322684176
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.93288590604027,
+      "systemMemoryDeltaBytes" : 833863680,
+      "systemMemoryUsedBytes" : 93709795328
+    },
+    {
+      "cpuPercent" : 0.7099910403397315,
+      "diskReadBytes" : 8192,
+      "diskWrittenBytes" : 6733824,
+      "elapsedSeconds" : 5.095999458,
+      "physicalFootprintBytes" : 325911824,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7099910403397315,
+          "process" : {
+            "cpuTimeSeconds" : 0.354866546,
+            "diskReadBytes" : 8859648,
+            "diskWrittenBytes" : 34123776,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 325911824
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.6256983240223,
+      "systemMemoryDeltaBytes" : 1452998656,
+      "systemMemoryUsedBytes" : 94328930304
+    },
+    {
+      "cpuPercent" : 0.6031365489765333,
+      "diskReadBytes" : 8192,
+      "diskWrittenBytes" : 8568832,
+      "elapsedSeconds" : 6.096592291,
+      "physicalFootprintBytes" : 323683600,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6031365489765333,
+          "process" : {
+            "cpuTimeSeconds" : 0.360900894,
+            "diskReadBytes" : 8859648,
+            "diskWrittenBytes" : 35958784,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 323683600
+          }
+        }
+      ],
+      "systemCPUPercent" : 313.5678391959799,
+      "systemMemoryDeltaBytes" : 1429258240,
+      "systemMemoryUsedBytes" : 94305189888
+    },
+    {
+      "cpuPercent" : 0.4082516694669489,
+      "diskReadBytes" : 8192,
+      "diskWrittenBytes" : 8568832,
+      "elapsedSeconds" : 7.096604458,
+      "physicalFootprintBytes" : 522159376,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4082516694669489,
+          "process" : {
+            "cpuTimeSeconds" : 0.364983162,
+            "diskReadBytes" : 8859648,
+            "diskWrittenBytes" : 35958784,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 522159376
+          }
+        }
+      ],
+      "systemCPUPercent" : 279.709334823924,
+      "systemMemoryDeltaBytes" : 1448378368,
+      "systemMemoryUsedBytes" : 94324310016
+    },
+    {
+      "cpuPercent" : 0.3757206224097029,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 19939328,
+      "elapsedSeconds" : 8.096000083,
+      "physicalFootprintBytes" : 354731304,
+      "processes" : [
+        {
+          "cpuPercent" : 0.3757206224097029,
+          "process" : {
+            "cpuTimeSeconds" : 0.368737563,
+            "diskReadBytes" : 8884224,
+            "diskWrittenBytes" : 47329280,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 354731304
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.2889137737962,
+      "systemMemoryDeltaBytes" : 1894088704,
+      "systemMemoryUsedBytes" : 94770020352
+    },
+    {
+      "cpuPercent" : 0.2799594521741269,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 28327936,
+      "elapsedSeconds" : 9.096573,
+      "physicalFootprintBytes" : 356304168,
+      "processes" : [
+        {
+          "cpuPercent" : 0.2799594521741269,
+          "process" : {
+            "cpuTimeSeconds" : 0.371538567,
+            "diskReadBytes" : 8884224,
+            "diskWrittenBytes" : 55717888,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 356304168
+          }
+        }
+      ],
+      "systemCPUPercent" : 255.13392857142856,
+      "systemMemoryDeltaBytes" : 1500004352,
+      "systemMemoryUsedBytes" : 94375936000
+    },
+    {
+      "cpuPercent" : 0.2835439496586422,
+      "diskReadBytes" : 49152,
+      "diskWrittenBytes" : 37748736,
+      "elapsedSeconds" : 10.096587291,
+      "physicalFootprintBytes" : 347866408,
+      "processes" : [
+        {
+          "cpuPercent" : 0.2835439496586422,
+          "process" : {
+            "cpuTimeSeconds" : 0.374374476,
+            "diskReadBytes" : 8900608,
+            "diskWrittenBytes" : 65138688,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347866408
+          }
+        }
+      ],
+      "systemCPUPercent" : 416.77852348993287,
+      "systemMemoryDeltaBytes" : 1553596416,
+      "systemMemoryUsedBytes" : 94429528064
+    },
+    {
+      "cpuPercent" : 0.4398474060211207,
+      "diskReadBytes" : 49152,
+      "diskWrittenBytes" : 37748736,
+      "elapsedSeconds" : 11.096564375,
+      "physicalFootprintBytes" : 347866408,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4398474060211207,
+          "process" : {
+            "cpuTimeSeconds" : 0.378772403,
+            "diskReadBytes" : 8900608,
+            "diskWrittenBytes" : 65138688,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347866408
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.7840717891195,
+      "systemMemoryDeltaBytes" : 1006780416,
+      "systemMemoryUsedBytes" : 93882712064
+    },
+    {
+      "cpuPercent" : 0.49347948869990943,
+      "diskReadBytes" : 69632,
+      "diskWrittenBytes" : 42811392,
+      "elapsedSeconds" : 12.096554541,
+      "physicalFootprintBytes" : 347882792,
+      "processes" : [
+        {
+          "cpuPercent" : 0.49347948869990943,
+          "process" : {
+            "cpuTimeSeconds" : 0.383707041,
+            "diskReadBytes" : 8921088,
+            "diskWrittenBytes" : 70201344,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347882792
+          }
+        }
+      ],
+      "systemCPUPercent" : 371.85929648241205,
+      "systemMemoryDeltaBytes" : 1204666368,
+      "systemMemoryUsedBytes" : 94080598016
+    },
+    {
+      "cpuPercent" : 0.45272947040420747,
+      "diskReadBytes" : 69632,
+      "diskWrittenBytes" : 42811392,
+      "elapsedSeconds" : 13.095700833,
+      "physicalFootprintBytes" : 348570920,
+      "processes" : [
+        {
+          "cpuPercent" : 0.45272947040420747,
+          "process" : {
+            "cpuTimeSeconds" : 0.388230383,
+            "diskReadBytes" : 8921088,
+            "diskWrittenBytes" : 70201344,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348570920
+          }
+        }
+      ],
+      "systemCPUPercent" : 253.3931575995513,
+      "systemMemoryDeltaBytes" : 1246609408,
+      "systemMemoryUsedBytes" : 94122541056
+    },
+    {
+      "cpuPercent" : 0.5759796571798494,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 47579136,
+      "elapsedSeconds" : 14.096581916,
+      "physicalFootprintBytes" : 347948328,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5759796571798494,
+          "process" : {
+            "cpuTimeSeconds" : 0.393996122,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 74969088,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347948328
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.8841634023503,
+      "systemMemoryDeltaBytes" : 1228259328,
+      "systemMemoryUsedBytes" : 94104190976
+    },
+    {
+      "cpuPercent" : 0.6789304036524052,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 47579136,
+      "elapsedSeconds" : 15.096608458,
+      "physicalFootprintBytes" : 369902888,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6789304036524052,
+          "process" : {
+            "cpuTimeSeconds" : 0.400785744,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 74969088,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 369902888
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.0814277746793,
+      "systemMemoryDeltaBytes" : 914145280,
+      "systemMemoryUsedBytes" : 93790076928
+    },
+    {
+      "cpuPercent" : 0.556508673927744,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 53346304,
+      "elapsedSeconds" : 16.096607333,
+      "physicalFootprintBytes" : 369935656,
+      "processes" : [
+        {
+          "cpuPercent" : 0.556508673927744,
+          "process" : {
+            "cpuTimeSeconds" : 0.406350837,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 80736256,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 369935656
+          }
+        }
+      ],
+      "systemCPUPercent" : 328.0987100392597,
+      "systemMemoryDeltaBytes" : 1321320448,
+      "systemMemoryUsedBytes" : 94197252096
+    },
+    {
+      "cpuPercent" : 0.536972491429065,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 53346304,
+      "elapsedSeconds" : 17.096557375,
+      "physicalFootprintBytes" : 367052072,
+      "processes" : [
+        {
+          "cpuPercent" : 0.536972491429065,
+          "process" : {
+            "cpuTimeSeconds" : 0.411719607,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 80736256,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367052072
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.5266404935502,
+      "systemMemoryDeltaBytes" : 980451328,
+      "systemMemoryUsedBytes" : 93856382976
+    },
+    {
+      "cpuPercent" : 0.4829970120983647,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 58507264,
+      "elapsedSeconds" : 18.096558625,
+      "physicalFootprintBytes" : 366019880,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4829970120983647,
+          "process" : {
+            "cpuTimeSeconds" : 0.416549332,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 85897216,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 366019880
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.8317442512619,
+      "systemMemoryDeltaBytes" : 1300217856,
+      "systemMemoryUsedBytes" : 94176149504
+    },
+    {
+      "cpuPercent" : 0.7755469218392245,
+      "diskReadBytes" : 77824,
+      "diskWrittenBytes" : 58507264,
+      "elapsedSeconds" : 19.096606625,
+      "physicalFootprintBytes" : 343967016,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7755469218392245,
+          "process" : {
+            "cpuTimeSeconds" : 0.424306637,
+            "diskReadBytes" : 8929280,
+            "diskWrittenBytes" : 85897216,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 343967016
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.68474007825597,
+      "systemMemoryDeltaBytes" : 1269972992,
+      "systemMemoryUsedBytes" : 94145904640
+    },
+    {
+      "cpuPercent" : 0.5891398255870061,
+      "diskReadBytes" : 86016,
+      "diskWrittenBytes" : 63569920,
+      "elapsedSeconds" : 20.095902208,
+      "physicalFootprintBytes" : 344687912,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5891398255870061,
+          "process" : {
+            "cpuTimeSeconds" : 0.430193045,
+            "diskReadBytes" : 8937472,
+            "diskWrittenBytes" : 90959872,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344687912
+          }
+        }
+      ],
+      "systemCPUPercent" : 297.81267526640494,
+      "systemMemoryDeltaBytes" : 1276002304,
+      "systemMemoryUsedBytes" : 94151933952
+    },
+    {
+      "cpuPercent" : 0.48059197828487177,
+      "diskReadBytes" : 86016,
+      "diskWrittenBytes" : 63569920,
+      "elapsedSeconds" : 21.096570708,
+      "physicalFootprintBytes" : 344786216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.48059197828487177,
+          "process" : {
+            "cpuTimeSeconds" : 0.435002065,
+            "diskReadBytes" : 8937472,
+            "diskWrittenBytes" : 90959872,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344786216
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.660145332588,
+      "systemMemoryDeltaBytes" : 1276657664,
+      "systemMemoryUsedBytes" : 94152589312
+    },
+    {
+      "cpuPercent" : 0.4644150465691596,
+      "diskReadBytes" : 94208,
+      "diskWrittenBytes" : 68698112,
+      "elapsedSeconds" : 22.096425291,
+      "physicalFootprintBytes" : 344786216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.4644150465691596,
+          "process" : {
+            "cpuTimeSeconds" : 0.439645532,
+            "diskReadBytes" : 8945664,
+            "diskWrittenBytes" : 96088064,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344786216
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.32845894263215,
+      "systemMemoryDeltaBytes" : 946569216,
+      "systemMemoryUsedBytes" : 93822500864
+    },
+    {
+      "cpuPercent" : 0.5136541911586766,
+      "diskReadBytes" : 94208,
+      "diskWrittenBytes" : 68698112,
+      "elapsedSeconds" : 23.096432875,
+      "physicalFootprintBytes" : 344786216,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5136541911586766,
+          "process" : {
+            "cpuTimeSeconds" : 0.444782002,
+            "diskReadBytes" : 8945664,
+            "diskWrittenBytes" : 96088064,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344786216
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.7986577181208,
+      "systemMemoryDeltaBytes" : 1139605504,
+      "systemMemoryUsedBytes" : 94015537152
+    },
+    {
+      "cpuPercent" : 0.543540958301384,
+      "diskReadBytes" : 102400,
+      "diskWrittenBytes" : 73924608,
+      "elapsedSeconds" : 24.096585833,
+      "physicalFootprintBytes" : 543802664,
+      "processes" : [
+        {
+          "cpuPercent" : 0.543540958301384,
+          "process" : {
+            "cpuTimeSeconds" : 0.450218765,
+            "diskReadBytes" : 8953856,
+            "diskWrittenBytes" : 101314560,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 543802664
+          }
+        }
+      ],
+      "systemCPUPercent" : 284.2105263157895,
+      "systemMemoryDeltaBytes" : 1619263488,
+      "systemMemoryUsedBytes" : 94495195136
+    },
+    {
+      "cpuPercent" : 0.8338623062225899,
+      "diskReadBytes" : 102400,
+      "diskWrittenBytes" : 73924608,
+      "elapsedSeconds" : 25.096545375,
+      "physicalFootprintBytes" : 348521768,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8338623062225899,
+          "process" : {
+            "cpuTimeSeconds" : 0.458555753,
+            "diskReadBytes" : 8953856,
+            "diskWrittenBytes" : 101314560,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348521768
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.22607722439847,
+      "systemMemoryDeltaBytes" : 1232289792,
+      "systemMemoryUsedBytes" : 94108221440
+    },
+    {
+      "cpuPercent" : 0.8511982396559297,
+      "diskReadBytes" : 118784,
+      "diskWrittenBytes" : 78856192,
+      "elapsedSeconds" : 26.096590916,
+      "physicalFootprintBytes" : 348849448,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8511982396559297,
+          "process" : {
+            "cpuTimeSeconds" : 0.46706994,
+            "diskReadBytes" : 8970240,
+            "diskWrittenBytes" : 106246144,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348849448
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.42696629213486,
+      "systemMemoryDeltaBytes" : 1198030848,
+      "systemMemoryUsedBytes" : 94073962496
+    },
+    {
+      "cpuPercent" : 0.7238410743194187,
+      "diskReadBytes" : 118784,
+      "diskWrittenBytes" : 78856192,
+      "elapsedSeconds" : 27.096567541,
+      "physicalFootprintBytes" : 347850024,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7238410743194187,
+          "process" : {
+            "cpuTimeSeconds" : 0.474307268,
+            "diskReadBytes" : 8970240,
+            "diskWrittenBytes" : 106246144,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347850024
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.16060436485725,
+      "systemMemoryDeltaBytes" : 1202536448,
+      "systemMemoryUsedBytes" : 94078468096
+    },
+    {
+      "cpuPercent" : 0.8765116109553599,
+      "diskReadBytes" : 135168,
+      "diskWrittenBytes" : 85098496,
+      "elapsedSeconds" : 28.096595083,
+      "physicalFootprintBytes" : 349029672,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8765116109553599,
+          "process" : {
+            "cpuTimeSeconds" : 0.483073834,
+            "diskReadBytes" : 8986624,
+            "diskWrittenBytes" : 112488448,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 349029672
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.95302013422815,
+      "systemMemoryDeltaBytes" : 1002094592,
+      "systemMemoryUsedBytes" : 93878026240
+    },
+    {
+      "cpuPercent" : 0.8161997055256267,
+      "diskReadBytes" : 135168,
+      "diskWrittenBytes" : 85098496,
+      "elapsedSeconds" : 29.09654775,
+      "physicalFootprintBytes" : 347440424,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8161997055256267,
+          "process" : {
+            "cpuTimeSeconds" : 0.491233376,
+            "diskReadBytes" : 8986624,
+            "diskWrittenBytes" : 112488448,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347440424
+          }
+        }
+      ],
+      "systemCPUPercent" : 336.87150837988827,
+      "systemMemoryDeltaBytes" : 1425817600,
+      "systemMemoryUsedBytes" : 94301749248
+    },
+    {
+      "cpuPercent" : 0.9174954242813467,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 92979200,
+      "elapsedSeconds" : 30.095899583,
+      "physicalFootprintBytes" : 349717800,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9174954242813467,
+          "process" : {
+            "cpuTimeSeconds" : 0.500402503,
+            "diskReadBytes" : 9003008,
+            "diskWrittenBytes" : 120369152,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 349717800
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.41255605381167,
+      "systemMemoryDeltaBytes" : 881836032,
+      "systemMemoryUsedBytes" : 93757767680
+    },
+    {
+      "cpuPercent" : 0.9052811711849065,
+      "diskReadBytes" : 151552,
+      "diskWrittenBytes" : 92979200,
+      "elapsedSeconds" : 31.096631625,
+      "physicalFootprintBytes" : 348489000,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9052811711849065,
+          "process" : {
+            "cpuTimeSeconds" : 0.509466421,
+            "diskReadBytes" : 9003008,
+            "diskWrittenBytes" : 120369152,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348489000
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.0733072188025,
+      "systemMemoryDeltaBytes" : 1176780800,
+      "systemMemoryUsedBytes" : 94052712448
+    },
+    {
+      "cpuPercent" : 1.044033275132487,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 98926592,
+      "elapsedSeconds" : 32.096636625,
+      "physicalFootprintBytes" : 370279720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.044033275132487,
+          "process" : {
+            "cpuTimeSeconds" : 0.519904359,
+            "diskReadBytes" : 9023488,
+            "diskWrittenBytes" : 126316544,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 370279720
+          }
+        }
+      ],
+      "systemCPUPercent" : 269.3946188340807,
+      "systemMemoryDeltaBytes" : 1196785664,
+      "systemMemoryUsedBytes" : 94072717312
+    },
+    {
+      "cpuPercent" : 0.9876226521263711,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 98926592,
+      "elapsedSeconds" : 33.096471,
+      "physicalFootprintBytes" : 378324264,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9876226521263711,
+          "process" : {
+            "cpuTimeSeconds" : 0.529776205,
+            "diskReadBytes" : 9023488,
+            "diskWrittenBytes" : 126316544,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 378324264
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.7150837988827,
+      "systemMemoryDeltaBytes" : 1206534144,
+      "systemMemoryUsedBytes" : 94082465792
+    },
+    {
+      "cpuPercent" : 0.7418152456233746,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 103940096,
+      "elapsedSeconds" : 34.096538041,
+      "physicalFootprintBytes" : 370754856,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7418152456233746,
+          "process" : {
+            "cpuTimeSeconds" : 0.537194784,
+            "diskReadBytes" : 9035776,
+            "diskWrittenBytes" : 131330048,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 370754856
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.6505888951206,
+      "systemMemoryDeltaBytes" : 1196179456,
+      "systemMemoryUsedBytes" : 94072111104
+    },
+    {
+      "cpuPercent" : 0.8986121125112644,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 103940096,
+      "elapsedSeconds" : 35.096563916,
+      "physicalFootprintBytes" : 368772392,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8986121125112644,
+          "process" : {
+            "cpuTimeSeconds" : 0.546182362,
+            "diskReadBytes" : 9035776,
+            "diskWrittenBytes" : 131330048,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 368772392
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.2991071428571,
+      "systemMemoryDeltaBytes" : 869335040,
+      "systemMemoryUsedBytes" : 93745266688
+    },
+    {
+      "cpuPercent" : 0.9355594105812443,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 104660992,
+      "elapsedSeconds" : 36.09575225,
+      "physicalFootprintBytes" : 367281448,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9355594105812443,
+          "process" : {
+            "cpuTimeSeconds" : 0.555533849,
+            "diskReadBytes" : 9035776,
+            "diskWrittenBytes" : 132050944,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367281448
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.29675251959685,
+      "systemMemoryDeltaBytes" : 1189478400,
+      "systemMemoryUsedBytes" : 94065410048
+    },
+    {
+      "cpuPercent" : 0.9712042502877839,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 104660992,
+      "elapsedSeconds" : 37.096624625,
+      "physicalFootprintBytes" : 367199528,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9712042502877839,
+          "process" : {
+            "cpuTimeSeconds" : 0.565252089,
+            "diskReadBytes" : 9035776,
+            "diskWrittenBytes" : 132050944,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367199528
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.0733072188025,
+      "systemMemoryDeltaBytes" : 860913664,
+      "systemMemoryUsedBytes" : 93736845312
+    },
+    {
+      "cpuPercent" : 0.9079863981617364,
+      "diskReadBytes" : 200704,
+      "diskWrittenBytes" : 110149632,
+      "elapsedSeconds" : 38.0965375,
+      "physicalFootprintBytes" : 366986536,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9079863981617364,
+          "process" : {
+            "cpuTimeSeconds" : 0.574328814,
+            "diskReadBytes" : 9052160,
+            "diskWrittenBytes" : 137539584,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 366986536
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.4117647058824,
+      "systemMemoryDeltaBytes" : 1176387584,
+      "systemMemoryUsedBytes" : 94052319232
+    },
+    {
+      "cpuPercent" : 0.8019887068359781,
+      "diskReadBytes" : 200704,
+      "diskWrittenBytes" : 110149632,
+      "elapsedSeconds" : 39.096550833,
+      "physicalFootprintBytes" : 367002920,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8019887068359781,
+          "process" : {
+            "cpuTimeSeconds" : 0.582348809,
+            "diskReadBytes" : 9052160,
+            "diskWrittenBytes" : 137539584,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367002920
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.37513997760357,
+      "systemMemoryDeltaBytes" : 1176535040,
+      "systemMemoryUsedBytes" : 94052466688
+    },
+    {
+      "cpuPercent" : 0.8046296986336899,
+      "diskReadBytes" : 212992,
+      "diskWrittenBytes" : 115507200,
+      "elapsedSeconds" : 40.096049083,
+      "physicalFootprintBytes" : 367199528,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8046296986336899,
+          "process" : {
+            "cpuTimeSeconds" : 0.590392906,
+            "diskReadBytes" : 9064448,
+            "diskWrittenBytes" : 142897152,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367199528
+          }
+        }
+      ],
+      "systemCPUPercent" : 319.01289960740326,
+      "systemMemoryDeltaBytes" : 1436516352,
+      "systemMemoryUsedBytes" : 94312448000
+    },
+    {
+      "cpuPercent" : 0.7798817196495006,
+      "diskReadBytes" : 212992,
+      "diskWrittenBytes" : 115507200,
+      "elapsedSeconds" : 41.09656975,
+      "physicalFootprintBytes" : 353944872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7798817196495006,
+          "process" : {
+            "cpuTimeSeconds" : 0.598194832,
+            "diskReadBytes" : 9064448,
+            "diskWrittenBytes" : 142897152,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 353944872
+          }
+        }
+      ],
+      "systemCPUPercent" : 332.0290665176076,
+      "systemMemoryDeltaBytes" : 1213120512,
+      "systemMemoryUsedBytes" : 94089052160
+    },
+    {
+      "cpuPercent" : 0.7483003550334113,
+      "diskReadBytes" : 225280,
+      "diskWrittenBytes" : 121569280,
+      "elapsedSeconds" : 42.0965915,
+      "physicalFootprintBytes" : 353191208,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7483003550334113,
+          "process" : {
+            "cpuTimeSeconds" : 0.605679315,
+            "diskReadBytes" : 9076736,
+            "diskWrittenBytes" : 148959232,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 353191208
+          }
+        }
+      ],
+      "systemCPUPercent" : 374.7062115277001,
+      "systemMemoryDeltaBytes" : 1198489600,
+      "systemMemoryUsedBytes" : 94074421248
+    },
+    {
+      "cpuPercent" : 0.7763716245821001,
+      "diskReadBytes" : 225280,
+      "diskWrittenBytes" : 121569280,
+      "elapsedSeconds" : 43.0965375,
+      "physicalFootprintBytes" : 353633576,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7763716245821001,
+          "process" : {
+            "cpuTimeSeconds" : 0.613440345,
+            "diskReadBytes" : 9076736,
+            "diskWrittenBytes" : 148959232,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 353633576
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.0605720695457,
+      "systemMemoryDeltaBytes" : 1412579328,
+      "systemMemoryUsedBytes" : 94288510976
+    },
+    {
+      "cpuPercent" : 0.8838326254820684,
+      "diskReadBytes" : 233472,
+      "diskWrittenBytes" : 128827392,
+      "elapsedSeconds" : 44.096431166,
+      "physicalFootprintBytes" : 348095784,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8838326254820684,
+          "process" : {
+            "cpuTimeSeconds" : 0.622277667,
+            "diskReadBytes" : 9084928,
+            "diskWrittenBytes" : 156217344,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348095784
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.20425293788475,
+      "systemMemoryDeltaBytes" : 1186660352,
+      "systemMemoryUsedBytes" : 94062592000
+    },
+    {
+      "cpuPercent" : 0.8939773721678413,
+      "diskReadBytes" : 233472,
+      "diskWrittenBytes" : 128827392,
+      "elapsedSeconds" : 45.096547666,
+      "physicalFootprintBytes" : 346146088,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8939773721678413,
+          "process" : {
+            "cpuTimeSeconds" : 0.63121881,
+            "diskReadBytes" : 9084928,
+            "diskWrittenBytes" : 156217344,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 346146088
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.32026875699887,
+      "systemMemoryDeltaBytes" : 951992320,
+      "systemMemoryUsedBytes" : 93827923968
+    },
+    {
+      "cpuPercent" : 0.9563714155686964,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 138510336,
+      "elapsedSeconds" : 46.096613541,
+      "physicalFootprintBytes" : 346277160,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9563714155686964,
+          "process" : {
+            "cpuTimeSeconds" : 0.640786148,
+            "diskReadBytes" : 9097216,
+            "diskWrittenBytes" : 165900288,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 346277160
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.3193277310924,
+      "systemMemoryDeltaBytes" : 1147912192,
+      "systemMemoryUsedBytes" : 94023843840
+    },
+    {
+      "cpuPercent" : 0.9479989256218633,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 138510336,
+      "elapsedSeconds" : 47.09659225,
+      "physicalFootprintBytes" : 344065320,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9479989256218633,
+          "process" : {
+            "cpuTimeSeconds" : 0.650265589,
+            "diskReadBytes" : 9097216,
+            "diskWrittenBytes" : 165900288,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344065320
+          }
+        }
+      ],
+      "systemCPUPercent" : 304.18293363078635,
+      "systemMemoryDeltaBytes" : 1147699200,
+      "systemMemoryUsedBytes" : 94023630848
+    },
+    {
+      "cpuPercent" : 0.9265126060504246,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 144621568,
+      "elapsedSeconds" : 48.096594875,
+      "physicalFootprintBytes" : 345081128,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9265126060504246,
+          "process" : {
+            "cpuTimeSeconds" : 0.659530678,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 172011520,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 345081128
+          }
+        }
+      ],
+      "systemCPUPercent" : 313.78923766816143,
+      "systemMemoryDeltaBytes" : 819953664,
+      "systemMemoryUsedBytes" : 93695885312
+    },
+    {
+      "cpuPercent" : 0.9678404161479983,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 144621568,
+      "elapsedSeconds" : 49.096597041,
+      "physicalFootprintBytes" : 345163048,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9678404161479983,
+          "process" : {
+            "cpuTimeSeconds" : 0.669209112,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 172011520,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 345163048
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.52763819095475,
+      "systemMemoryDeltaBytes" : 1201995776,
+      "systemMemoryUsedBytes" : 94077927424
+    },
+    {
+      "cpuPercent" : 0.8675954050504806,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 150044672,
+      "elapsedSeconds" : 50.0966095,
+      "physicalFootprintBytes" : 344868136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8675954050504806,
+          "process" : {
+            "cpuTimeSeconds" : 0.677885613,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 177434624,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344868136
+          }
+        }
+      ],
+      "systemCPUPercent" : 255.84778959149412,
+      "systemMemoryDeltaBytes" : 820609024,
+      "systemMemoryUsedBytes" : 93696540672
+    },
+    {
+      "cpuPercent" : 0.9784387901470383,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 150044672,
+      "elapsedSeconds" : 51.09628025,
+      "physicalFootprintBytes" : 344851752,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9784387901470383,
+          "process" : {
+            "cpuTimeSeconds" : 0.687668881,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 177434624,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344851752
+          }
+        }
+      ],
+      "systemCPUPercent" : 312.25517627308335,
+      "systemMemoryDeltaBytes" : 1202290688,
+      "systemMemoryUsedBytes" : 94078222336
+    },
+    {
+      "cpuPercent" : 0.9047060229934626,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 154861568,
+      "elapsedSeconds" : 52.0966005,
+      "physicalFootprintBytes" : 367510824,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9047060229934626,
+          "process" : {
+            "cpuTimeSeconds" : 0.69671621,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 182251520,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367510824
+          }
+        }
+      ],
+      "systemCPUPercent" : 297.14605484051486,
+      "systemMemoryDeltaBytes" : 1169899520,
+      "systemMemoryUsedBytes" : 94045831168
+    },
+    {
+      "cpuPercent" : 0.9078271732305934,
+      "diskReadBytes" : 253952,
+      "diskWrittenBytes" : 154861568,
+      "elapsedSeconds" : 53.096465208,
+      "physicalFootprintBytes" : 367625512,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9078271732305934,
+          "process" : {
+            "cpuTimeSeconds" : 0.705792918,
+            "diskReadBytes" : 9105408,
+            "diskWrittenBytes" : 182251520,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367625512
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.9598662207358,
+      "systemMemoryDeltaBytes" : 1163542528,
+      "systemMemoryUsedBytes" : 94039474176
+    },
+    {
+      "cpuPercent" : 0.9037006031659509,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 160776192,
+      "elapsedSeconds" : 54.096589208,
+      "physicalFootprintBytes" : 367658280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9037006031659509,
+          "process" : {
+            "cpuTimeSeconds" : 0.714831077,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 188166144,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367658280
+          }
+        }
+      ],
+      "systemCPUPercent" : 312.78026905829597,
+      "systemMemoryDeltaBytes" : 1441988608,
+      "systemMemoryUsedBytes" : 94317920256
+    },
+    {
+      "cpuPercent" : 0.9642354207510431,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 160776192,
+      "elapsedSeconds" : 55.096607375,
+      "physicalFootprintBytes" : 367494440,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9642354207510431,
+          "process" : {
+            "cpuTimeSeconds" : 0.724474794,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 188166144,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367494440
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.44221105527635,
+      "systemMemoryDeltaBytes" : 1292075008,
+      "systemMemoryUsedBytes" : 94168006656
+    },
+    {
+      "cpuPercent" : 0.9419290477890141,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 166477824,
+      "elapsedSeconds" : 56.096597708,
+      "physicalFootprintBytes" : 366904616,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9419290477890141,
+          "process" : {
+            "cpuTimeSeconds" : 0.733893077,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 193867776,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 366904616
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.5560538116592,
+      "systemMemoryDeltaBytes" : 1237123072,
+      "systemMemoryUsedBytes" : 94113054720
+    },
+    {
+      "cpuPercent" : 0.8841612615693538,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 166477824,
+      "elapsedSeconds" : 57.096008208,
+      "physicalFootprintBytes" : 366462248,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8841612615693538,
+          "process" : {
+            "cpuTimeSeconds" : 0.742728737,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 193867776,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 366462248
+          }
+        }
+      ],
+      "systemCPUPercent" : 310.8999441028507,
+      "systemMemoryDeltaBytes" : 1207304192,
+      "systemMemoryUsedBytes" : 94083235840
+    },
+    {
+      "cpuPercent" : 0.8918333865842348,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 172736512,
+      "elapsedSeconds" : 58.09654875,
+      "physicalFootprintBytes" : 369493288,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8918333865842348,
+          "process" : {
+            "cpuTimeSeconds" : 0.751650633,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 200126464,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 369493288
+          }
+        }
+      ],
+      "systemCPUPercent" : 364.4295302013423,
+      "systemMemoryDeltaBytes" : 1140654080,
+      "systemMemoryUsedBytes" : 94016585728
+    },
+    {
+      "cpuPercent" : 0.8426822904992227,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 172736512,
+      "elapsedSeconds" : 59.096544041,
+      "physicalFootprintBytes" : 369116456,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8426822904992227,
+          "process" : {
+            "cpuTimeSeconds" : 0.760077155,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 200126464,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 369116456
+          }
+        }
+      ],
+      "systemCPUPercent" : 283.52017937219733,
+      "systemMemoryDeltaBytes" : 1091584000,
+      "systemMemoryUsedBytes" : 93967515648
+    },
+    {
+      "cpuPercent" : 0.8459419354868287,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 181846016,
+      "elapsedSeconds" : 60.096291916,
+      "physicalFootprintBytes" : 367117608,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8459419354868287,
+          "process" : {
+            "cpuTimeSeconds" : 0.768534346,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 209235968,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367117608
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.21836506159013,
+      "systemMemoryDeltaBytes" : 1091387392,
+      "systemMemoryUsedBytes" : 93967319040
+    },
+    {
+      "cpuPercent" : 0.8555142369342079,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 181846016,
+      "elapsedSeconds" : 61.096541458,
+      "physicalFootprintBytes" : 367592744,
+      "processes" : [
+        {
+          "cpuPercent" : 0.8555142369342079,
+          "process" : {
+            "cpuTimeSeconds" : 0.777091635,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 209235968,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367592744
+          }
+        }
+      ],
+      "systemCPUPercent" : 300.67264573991037,
+      "systemMemoryDeltaBytes" : 769638400,
+      "systemMemoryUsedBytes" : 93645570048
+    },
+    {
+      "cpuPercent" : 0.799393568286122,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 187809792,
+      "elapsedSeconds" : 62.096535,
+      "physicalFootprintBytes" : 345015592,
+      "processes" : [
+        {
+          "cpuPercent" : 0.799393568286122,
+          "process" : {
+            "cpuTimeSeconds" : 0.785085585,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 215199744,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 345015592
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.35946248600226,
+      "systemMemoryDeltaBytes" : 866320384,
+      "systemMemoryUsedBytes" : 93742252032
+    },
+    {
+      "cpuPercent" : 1.0577737042027826,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 187809792,
+      "elapsedSeconds" : 63.095873791,
+      "physicalFootprintBytes" : 367314216,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0577737042027826,
+          "process" : {
+            "cpuTimeSeconds" : 0.795656878,
+            "diskReadBytes" : 9113600,
+            "diskWrittenBytes" : 215199744,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367314216
+          }
+        }
+      ],
+      "systemCPUPercent" : 319.01289960740326,
+      "systemMemoryDeltaBytes" : 756056064,
+      "systemMemoryUsedBytes" : 93631987712
+    },
+    {
+      "cpuPercent" : 1.0523377305014177,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 193880064,
+      "elapsedSeconds" : 64.096153375,
+      "physicalFootprintBytes" : 88212608,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0523377305014177,
+          "process" : {
+            "cpuTimeSeconds" : 0.806183044,
+            "diskReadBytes" : 9146368,
+            "diskWrittenBytes" : 221270016,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 88212608
+          }
+        }
+      ],
+      "systemCPUPercent" : 334.86033519553075,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 92837888000
+    },
+    {
+      "cpuPercent" : 0.11357568306656872,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 193880064,
+      "elapsedSeconds" : 64.742377875,
+      "physicalFootprintBytes" : 87475328,
+      "processes" : [
+        {
+          "cpuPercent" : 0.11357568306656872,
+          "process" : {
+            "cpuTimeSeconds" : 0.806917026,
+            "diskReadBytes" : 9146368,
+            "diskWrittenBytes" : 221270016,
+            "executablePath" : "/Applications/BetterShot.app/Contents/MacOS/BetterShot",
+            "identity" : {
+              "pid" : 45017,
+              "startTimeNanoseconds" : 12497244443558
+            },
+            "name" : "BetterShot",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 87475328
+          }
+        }
+      ],
+      "systemCPUPercent" : 213.5064935064935,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 92714418176
+    }
+  ],
+  "scenario" : "recording",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T03:49:36Z",
+  "summary" : {
+    "averageCPUPercent" : 0.754293100623951,
+    "averagePhysicalFootprintBytes" : 346934247,
+    "averageSystemCPUPercent" : 298.27825864640596,
+    "averageSystemMemoryDeltaBytes" : 1104409941,
+    "cpuTimeSeconds" : 0.490494144,
+    "diskReadBytes" : 294912,
+    "diskWrittenBytes" : 193880064,
+    "durationSeconds" : 64.742377875,
+    "p95CPUPercent" : 0.9876226521263711,
+    "p95SystemCPUPercent" : 364.4295302013423,
+    "peakCPUPercent" : 1.0577737042027826,
+    "peakPhysicalFootprintBytes" : 543802664,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 416.77852348993287,
+    "peakSystemMemoryDeltaBytes" : 1894088704,
+    "physicalFootprintDeltaBytes" : -118079536
+  },
+  "target" : {
+    "build" : "15",
+    "bundleIdentifier" : "com.bettershot.app",
+    "bundlePath" : "/Applications/BetterShot.app",
+    "name" : "BetterShot",
+    "recorderID" : "bettershot",
+    "version" : "0.4.3"
+  }
+}

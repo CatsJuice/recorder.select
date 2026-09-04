@@ -49,24 +49,40 @@ const sources = {
     preview: 'data/benchmarks/screenkite/screenkite-preview-2026-09-02-214009.json',
     export: 'data/benchmarks/screenkite/screenkite-export-2026-09-02-214246.json',
   },
+  screenflare: {
+    recording: 'data/benchmarks/screenflare/screenflare-recording-2026-09-04-100456.json',
+    preview: 'data/benchmarks/screenflare/screenflare-preview-2026-09-04-100630.json',
+    export: 'data/benchmarks/screenflare/screenflare-export-2026-09-04-100800.json',
+  },
 };
 
-const recorderWorkloadLabels = {
-  'screen-studio': '5K',
-  shotbase: '5K',
-  screencam: '5K',
-  'screen-sage-pro': '2K limit',
-  screencharm: '5K',
-  prequel: '5K',
-  kapture: '5K',
-  'screen-glide': '5K',
-  smoothcapture: '5K',
-  screenkite: '5K',
+sources.matte = {
+  recording: 'data/benchmarks/matte/matte-recording-2026-09-04-105310.json',
+  preview: 'data/benchmarks/matte/matte-preview-2026-09-04-111251.json',
+  export: 'data/benchmarks/matte/matte-export-2026-09-04-111447.json',
+};
+
+sources.bettershot = {
+  recording: 'data/benchmarks/bettershot/bettershot-recording-2026-09-04-114936.json',
+  preview: 'data/benchmarks/bettershot/bettershot-preview-2026-09-04-115124.json',
+  export: 'data/benchmarks/bettershot/bettershot-export-2026-09-04-115309.json',
+};
+
+sources.screendrop = {
+  export: 'data/benchmarks/screendrop/screendrop-export-2026-09-04-132212.json',
+  preview: 'data/benchmarks/screendrop/screendrop-preview-2026-09-04-132027.json',
+  recording: 'data/benchmarks/screendrop/screendrop-recording-2026-09-04-131743.json',
 };
 
 const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
-  ? '1080p 60fps balanced'
-  : recorderWorkloadLabels[recorderId];
+  ? ['bettershot', 'screendrop'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
+  : '5K';
+
+// Anomalies belong to a specific measurement, not every future run of the app.
+const outlierFieldsBySource = {
+  'data/benchmarks/bettershot/bettershot-export-2026-09-04-115309.json': ['exportDuration'],
+  'data/benchmarks/screendrop/screendrop-export-2026-09-04-132212.json': ['exportDuration'],
+};
 
 const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).map(async ([recorderId, scenarios]) => {
   const runs = await Promise.all(Object.entries(scenarios).map(async ([scenario, source]) => {
@@ -75,6 +91,7 @@ const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).ma
     return [scenario, {
       scenario: raw.scenario,
       workloadLabel: workloadLabelFor(recorderId, scenario),
+      ...(outlierFieldsBySource[source] ? { outlierFields: outlierFieldsBySource[source] } : {}),
       summary: {
         durationSeconds: raw.summary.durationSeconds,
         averageCPUPercent: raw.summary.averageCPUPercent,

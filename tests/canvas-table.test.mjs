@@ -8,7 +8,7 @@ after(() => server.close());
 const layout = await server.ssrLoadModule('/lib/canvas-table-layout.ts');
 const { createComparisonModel } = await server.ssrLoadModule('/lib/comparison-table-model.ts');
 const { performanceTimelineScale, performanceTimelinePoints } = await server.ssrLoadModule('/lib/performance.ts');
-const { createScoreContributions } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
+const { calculateRecorderScore, createScoreContributions } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
 const { fieldDefinitions, fieldGroups, recorders } = await server.ssrLoadModule('/lib/recorders.ts');
 const { CanvasTablePainter } = await server.ssrLoadModule('/lib/canvas-table-painter.ts');
 const { CanvasTableMotion, motionHitTest, TABLE_MOTION_DURATION } = await server.ssrLoadModule('/lib/canvas-table-motion.ts');
@@ -20,6 +20,21 @@ const base = {
   subjectiveReviewsExpanded: false, performanceProfiles: {}, performanceStatus: 'loaded', fieldWeights: {}, locale: 'en',
   t: key => key, fieldLabel: field => field.label, fieldUnit: field => field.unit, groupLabel: group => group.label,
 };
+
+test('additional recording capabilities are supported only by Matte', () => {
+  assert.equal(recorders.filter(recorder => recorder.id === 'matte').length, 1);
+  for (const key of ['supportsVirtualMachineRecording', 'supportsSimultaneousMultiDeviceRecording']) {
+    const field = fieldDefinitions.find(field => field.key === key);
+    assert.equal(field?.group, 'recording');
+    assert.equal(field?.type, 'boolean');
+    for (const recorder of recorders) assert.equal(recorder[key] === true, recorder.id === 'matte', `${recorder.id}: ${key}`);
+    const preview = fieldGroups.find(group => group.key === 'recording').getCollapsedPreview;
+    const before = preview(recorders[0]).label.split('/').map(Number);
+    const after = preview({ ...recorders[0], [key]: true }).label.split('/').map(Number);
+    assert.equal(after[0], before[0] + 1);
+    assert.equal(after[1], before[1]);
+  }
+});
 
 test('touch intent ignores jitter and locks the dominant axis until the next contact', () => {
   const gesture = new CanvasTableGesture();
@@ -172,18 +187,84 @@ test('cell formatting retains false, zero, unknown, icons, units and cached valu
 });
 
 const run = (value, workloadLabel) => ({ workloadLabel, scenario: 'recording', summary: { durationSeconds: 1, averageCPUPercent: value, peakCPUPercent: value, averagePhysicalFootprintBytes: 1, peakPhysicalFootprintBytes: 1 }, samples: [{ elapsedSeconds: 0, cpuPercent: value, physicalFootprintBytes: 1 }, { elapsedSeconds: 1, cpuPercent: value, physicalFootprintBytes: 1 }] });
-test('performance extremes compare only matching workloads; all equal values have no extreme', () => {
+test('performance extremes compare the visible row across workload labels; ties remain neutral', () => {
   const products = ['a', 'b', 'c'].map(id => ({ ...recorders[0], id }));
   const model = createComparisonModel({ ...base, products, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])), performanceProfiles: { a: { recording: run(10, '1080p') }, b: { recording: run(20, '1080p') }, c: { recording: run(1, '4K') } } });
   const row = model.rows.find(row => row.id === 'recordingCpuAverage');
-  assert.equal(row.cell(0).extreme, 'low');
+  assert.equal(row.cell(0).extreme, undefined);
   assert.equal(row.cell(1).extreme, 'high');
-  assert.equal(row.cell(2).extreme, undefined);
+  assert.equal(row.cell(2).extreme, 'low');
   assert.equal(row.cell(1).bar, 1);
   assert.equal(row.cell(0).secondary, '1080p');
   const tied = createComparisonModel({ ...base, products, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])), performanceProfiles: Object.fromEntries(products.map(product => [product.id, { recording: run(10, '1080p') }])) });
   const tiedRow = tied.rows.find(row => row.id === 'recordingCpuAverage');
   assert.ok(products.every((_, index) => tiedRow.cell(index).extreme === undefined));
+});
+
+test('adding a slower exporter with an unknown workload updates extrema, including after filtering', () => {
+  const products = ['fast', 'previous-slow', 'bettershot', 'missing'].map(id => ({ ...recorders[0], id }));
+  const profiles = Object.fromEntries(products.slice(0, 3).map((product, index) => {
+    const entry = run(1, ['1080p 60fps balance', '1080p 60fps', 'Export settings unspecified'][index]);
+    return [product.id, { export: { ...entry, scenario: 'export', summary: { ...entry.summary, durationSeconds: [11.51, 30.34, 214.96][index] } } }];
+  }));
+  const rowFor = visible => createComparisonModel({ ...base, products: visible, performanceProfiles: profiles, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) }).rows.find(row => row.id === 'exportDuration');
+  const before = rowFor(products.slice(0, 2));
+  assert.equal(before.cell(1).extreme, 'high');
+  const after = rowFor(products);
+  assert.deepEqual(products.map((_, index) => after.cell(index).extreme), ['low', undefined, 'high', undefined]);
+  assert.equal(after.cell(2).bar, 1);
+  assert.equal(after.cell(1).bar, 30.34 / 214.96);
+  const filtered = rowFor(products.slice(1, 3));
+  assert.equal(filtered.cell(0).extreme, 'low');
+  assert.equal(filtered.cell(1).extreme, 'high');
+  assert.equal(rowFor([products[2]]).cell(0).extreme, undefined);
+});
+
+test('reviewed outliers keep full bars but do not affect normal extrema or scaling', async () => {
+  const { generatedPerformanceProfiles } = await server.ssrLoadModule('/lib/performance-profiles.generated.ts');
+  assert.deepEqual(generatedPerformanceProfiles.bettershot.export.outlierFields, ['exportDuration']);
+  const products = ['normal-a', 'normal-b', 'bettershot'].map(id => ({ ...recorders[0], id }));
+  const profiles = Object.fromEntries(products.map((product, index) => {
+    const entry = run(10 + index, 'test');
+    return [product.id, { export: index === 2 ? generatedPerformanceProfiles.bettershot.export : { ...entry, scenario: 'export', summary: { ...entry.summary, durationSeconds: [10, 20][index] } } }];
+  }));
+  const modelFor = visible => createComparisonModel({ ...base, products: visible, performanceProfiles: profiles, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) });
+  const row = modelFor(products).rows.find(row => row.id === 'exportDuration');
+  assert.deepEqual(products.map((_, index) => row.cell(index).bar), [.5, 1, 1]);
+  assert.deepEqual(products.map((_, index) => row.cell(index).extreme), ['low', 'high', undefined]);
+  assert.equal(row.cell(2).outlier, true);
+  assert.equal(row.cell(2).text, '214.96 s');
+  assert.equal(row.cell(2).secondary, profiles.bettershot.export.workloadLabel);
+  assert.equal(modelFor(products).rows.find(row => row.id === 'exportCpuAverage').cell(2).outlier, false);
+  const alone = modelFor([products[2]]).rows.find(row => row.id === 'exportDuration').cell(0);
+  assert.equal(alone.outlier, true);
+  assert.equal(alone.bar, 1);
+  assert.equal(alone.extreme, undefined);
+  const singleNormal = modelFor(products.slice(1)).rows.find(row => row.id === 'exportDuration');
+  assert.equal(singleNormal.cell(0).bar, 1);
+  assert.equal(singleNormal.cell(0).extreme, undefined);
+});
+
+test('outlier bars use a deeper fill and remain full height on desktop and mobile', () => {
+  const painter = new CanvasTablePainter(() => {});
+  const icons = [];
+  painter.icon = (_ctx, key) => icons.push(key);
+  const fills = [];
+  const ctx = new Proxy({
+    measureText: value => ({ width: value.length * 7 }),
+    fillRect: (x, y, width, height) => fills.push({ color: ctx.fillStyle, x, y, width, height }),
+  }, { get: (target, key) => key in target ? target[key] : () => {} });
+  for (const mobile of [false, true]) {
+    fills.length = 0;
+    icons.length = 0;
+    painter.cell(ctx, { text: '214.96 s', outlier: true, bar: 1 }, { height: 72 }, 0, 0, 156, mobile);
+    assert.deepEqual(icons, ['warning']);
+    assert.ok(fills.some(fill => fill.color === '#f4b4ae' && fill.y === 0 && fill.height === 72));
+    fills.length = 0;
+    painter.cell(ctx, { text: '20 s', extreme: 'high', bar: 1 }, { height: 72 }, 0, 0, 156, mobile);
+    assert.ok(fills.some(fill => fill.color === '#fff0ed'));
+  }
+  painter.dispose();
 });
 
 test('timeline heat bands use all profiles and remain stable when products are filtered', () => {
@@ -571,5 +652,63 @@ test('painter redraws sticky ancestors outside the visible row range without dup
   assert.equal(range.firstRow, 2);
   assert.deepEqual(text.filter(item => item.value === 'parent'), [{ value: 'parent', x: 32, y: 188 }]);
   assert.deepEqual(text.filter(item => item.value === 'first-child'), [{ value: 'first-child', x: 42, y: 228 }]);
+  painter.dispose();
+});
+
+
+test('app size bars share the visible maximum, mark extrema, and skip unknown sizes', () => {
+  const products = [10, 50, 100, null].map((appSizeMB, index) => ({ ...recorders[0], id: `size-${index}`, appSizeMB }));
+  const rowFor = products => createComparisonModel({ ...base, products }).rows.find(row => row.id === 'appSizeMB');
+  const row = rowFor(products);
+  assert.deepEqual(products.map((_, i) => row.cell(i).bar), [.1, .5, 1, undefined]);
+  assert.deepEqual(products.map((_, i) => row.cell(i).extreme), ['low', undefined, 'high', undefined]);
+  assert.equal(row.cell(3).muted, true);
+  const filtered = rowFor(products.slice(0, 2));
+  assert.equal(filtered.cell(0).bar, .2);
+  assert.equal(filtered.cell(1).extreme, 'high');
+  const tied = rowFor(products.slice(0, 2).map(product => ({ ...product, appSizeMB: 0 })));
+  assert.equal(tied.cell(0).bar, 0);
+  assert.equal(tied.cell(0).extreme, undefined);
+});
+
+
+test('recorder totals equal weighted contributions without deductions', () => {
+  const fields = [{ key: 'first' }, { key: 'second' }];
+  assert.equal(calculateRecorderScore([1, .5], fields, {}), 7.5);
+  assert.equal(calculateRecorderScore([1, .5], fields, { first: 3, second: 8 }), 7);
+  assert.equal(calculateRecorderScore([1, .5], fields, { first: 0, second: 0 }), 0);
+});
+
+
+test('Screendrop export measurement renders its warning and deeper background', async () => {
+  const { generatedPerformanceProfiles } = await server.ssrLoadModule('/lib/performance-profiles.generated.ts');
+  const products = recorders.filter(product => ['screendrop', 'bettershot', 'screen-studio'].includes(product.id));
+  const column = products.findIndex(product => product.id === 'screendrop');
+  const painter = new CanvasTablePainter(() => {});
+  const icons = [];
+  const fills = [];
+  painter.icon = (_ctx, key) => icons.push(key);
+  const ctx = new Proxy({
+    measureText: value => ({ width: value.length * 7 }),
+    fillRect: () => fills.push(ctx.fillStyle),
+  }, { get: (target, key) => key in target ? target[key] : () => {} });
+  for (const mobile of [false, true]) {
+    const model = createComparisonModel({ ...base, mobile, products, performanceProfiles: generatedPerformanceProfiles, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) });
+    const row = model.rows.find(row => row.id === 'exportDuration');
+    const cell = row.cell(column);
+    assert.equal(cell.text, '140.47 s');
+    assert.equal(cell.outlier, true);
+    assert.equal(cell.bar, 1);
+    assert.equal(cell.extreme, undefined);
+    for (const dark of [false, true]) {
+      painter.configure('Arial', dark);
+      icons.length = 0;
+      fills.length = 0;
+      painter.cell(ctx, cell, row, 0, 0, 156, mobile);
+      assert.deepEqual(icons, ['warning']);
+      assert.ok(fills.includes(dark ? '#782e2a' : '#f4b4ae'));
+    }
+    assert.equal(model.rows.find(row => row.id === 'exportCpuAverage').cell(column).outlier, false);
+  }
   painter.dispose();
 });

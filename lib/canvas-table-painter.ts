@@ -1,4 +1,6 @@
+import { hasRecorderWarning } from './recorder-warnings';
 import { faApple, faWindows, faLinux, faSwift } from '@fortawesome/free-brands-svg-icons';
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { electronPath, tauriPath } from './technology-icon-paths';
 import { displayDomain, type Recorder } from './recorders';
 import type { TableCell, TableRow } from './comparison-table-model';
@@ -20,9 +22,9 @@ export type PaintScene = {
   emptyLabel: string;
 };
 export type Viewport = { width: number; height: number; left: number; top: number };
-const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', bar: '#e8f0fd', low: '#e6f4ed', high: '#fff0ed', focus: '#3678e8', highlight: '#fff4cd', heat: ['#29956c', '#80a536', '#c29a25', '#df7835', '#d64c4c'] };
-const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', bar: '#18273c', low: '#132c24', high: '#342019', focus: '#7aaaff', highlight: '#3b331c', heat: ['#63cda0', '#afd36c', '#e8c65b', '#f6a362', '#f47c7c'] };
-const iconDefinitions = { mac: faApple, win: faWindows, linux: faLinux, native: faSwift };
+const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', bar: '#e8f0fd', freePrice: '#16804a', low: '#e6f4ed', high: '#fff0ed', outlier: '#f4b4ae', focus: '#3678e8', highlight: '#fff4cd', heat: ['#29956c', '#80a536', '#c29a25', '#df7835', '#d64c4c'] };
+const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', bar: '#18273c', freePrice: '#63cda0', low: '#132c24', high: '#342019', outlier: '#782e2a', focus: '#7aaaff', highlight: '#3b331c', heat: ['#63cda0', '#afd36c', '#e8c65b', '#f6a362', '#f47c7c'] };
+const iconDefinitions = { mac: faApple, win: faWindows, linux: faLinux, native: faSwift, warning: faTriangleExclamation };
 
 /** Retained resource caches; the only per-frame work is the visible rectangle. */
 export class CanvasTablePainter {
@@ -136,7 +138,7 @@ export class CanvasTablePainter {
     else { ctx.moveTo(x - 3, y); ctx.lineTo(x + 3, y); }
     ctx.stroke();
   }
-  private icon(ctx: CanvasRenderingContext2D, key: string, x: number, y: number, size: number) {
+  private icon(ctx: CanvasRenderingContext2D, key: string, x: number, y: number, size: number, color = this.palette.ink) {
     let cached = this.paths.get(key);
     if (!cached) {
       const definition = iconDefinitions[key as keyof typeof iconDefinitions];
@@ -151,7 +153,7 @@ export class CanvasTablePainter {
     const scale = size / Math.max(cached.width, cached.height);
     ctx.translate(x - cached.width * scale / 2, y - cached.height * scale / 2);
     ctx.scale(scale, scale);
-    ctx.fillStyle = this.palette.ink;
+    ctx.fillStyle = color;
     cached.paths.forEach(path => ctx.fill(path));
     ctx.restore();
     return true;
@@ -159,13 +161,13 @@ export class CanvasTablePainter {
   private cell(ctx: CanvasRenderingContext2D, cell: TableCell, row: TableRow, x: number, y: number, width: number, mobile = false) {
     const p = this.palette;
     const height = row.height;
-    const background = cell.best ? p.best : !mobile && row.expanded !== undefined ? p.group : p.background;
+    const background = cell.caution ? p.highlight : cell.best ? p.best : !mobile && row.expanded !== undefined ? p.group : p.background;
     if (mobile) { ctx.fillStyle = background; ctx.fillRect(x, y, width, height); }
     else this.rect(ctx, x, y, width, height, background);
     ctx.save();
     ctx.beginPath(); ctx.rect(x + 1, y + 1, width - 2, height - 2); ctx.clip();
     if (cell.bar !== undefined) {
-      ctx.fillStyle = cell.extreme === 'high' ? p.high : cell.extreme === 'low' ? p.low : p.bar;
+      ctx.fillStyle = cell.outlier ? p.outlier : cell.extreme === 'high' ? p.high : cell.extreme === 'low' ? p.low : p.bar;
       // Fill the cell's width; the existing clip keeps its grid borders visible.
       ctx.fillRect(x, y + height * (1 - cell.bar), width, height * cell.bar);
     }
@@ -201,14 +203,14 @@ export class CanvasTablePainter {
       ctx.save(); ctx.globalAlpha *= .16; ctx.fillStyle = color; ctx.fill(); ctx.restore();
       if (cell.secondary) this.text(ctx, cell.secondary, x + width / 2, y + 15, width - 20, { size: 11, color: p.muted, align: 'center' });
     } else if (row.review) {
-      this.text(ctx, cell.text, x + 16, y + height / 2, width - 32, { weight: 400, lines: Math.max(1, Math.floor((height - 24) / 20)), lineHeight: 20, color: cell.muted ? p.muted : p.ink });
+      this.text(ctx, cell.text, x + 16, y + height / 2, width - 32, { weight: 400, lines: Math.max(1, Math.floor((height - 24) / 20)), lineHeight: 20, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
     } else if (cell.icons?.length && cell.icons.every(icon => ['mac', 'win', 'linux'].includes(icon))) {
       cell.icons.forEach((icon, index) => this.icon(ctx, icon, x + width / 2 + (index - (cell.icons!.length - 1) / 2) * 28, y + height / 2, 17));
     } else {
-      const technology = cell.icons?.find(icon => ['native', 'electron', 'tauri'].includes(icon));
+      const leadingIcon = cell.outlier ? 'warning' : cell.icons?.find(icon => ['native', 'electron', 'tauri'].includes(icon));
       const centerY = y + height / 2 - (cell.secondary ? 9 : 0);
-      if (technology) {
-        const iconSize = 18;
+      if (leadingIcon) {
+        const iconSize = cell.outlier ? 14 : 18;
         const gap = 8;
         const labelWidth = Math.max(1, width - 24 - iconSize - gap);
         ctx.font = `500 13px ${this.font}`;
@@ -224,10 +226,10 @@ export class CanvasTablePainter {
           return measured;
         }));
         const groupLeft = x + (width - iconSize - gap - measuredWidth) / 2;
-        this.icon(ctx, technology, groupLeft + iconSize / 2, centerY, iconSize);
-        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, visualCenter: true, color: cell.muted ? p.muted : p.ink });
+        this.icon(ctx, leadingIcon, groupLeft + iconSize / 2, centerY, iconSize);
+        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, visualCenter: true, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
       } else {
-        this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, color: cell.muted ? p.muted : p.ink });
+        this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
       }
       if (cell.secondary) this.text(ctx, cell.secondary, x + width / 2, y + height / 2 + 15, width - 20, { size: 11, color: p.muted, align: 'center' });
     }
@@ -354,7 +356,22 @@ export class CanvasTablePainter {
       ctx.restore();
       if (selected) this.check(ctx, x + cellWidth - 23, mobile ? 54 : 26, true, true);
       else { ctx.strokeStyle = p.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(x + cellWidth - 33, mobile ? 44 : 16, 20, 20, 5); ctx.stroke(); }
-      this.text(ctx, app.name, x + 18, 91, cellWidth - 30, { weight: 650 });
+      const hasWarning = hasRecorderWarning(app.id);
+      const nameWidth = cellWidth - 30 - (hasWarning ? 17 : 0);
+      this.text(ctx, app.name, x + 18, 91, nameWidth, { weight: 650 });
+      if (hasWarning) {
+        const key = `header-name:${app.name}:${this.font}`;
+        let measuredWidth = this.textWidthCache.get(key);
+        let centerOffset = this.textCenterCache.get(key);
+        if (measuredWidth === undefined || centerOffset === undefined) {
+          const metrics = ctx.measureText(app.name);
+          measuredWidth = metrics.width;
+          centerOffset = ((metrics.actualBoundingBoxDescent ?? 0) - (metrics.actualBoundingBoxAscent ?? 0)) / 2;
+          this.textWidthCache.set(key, measuredWidth);
+          this.textCenterCache.set(key, centerOffset);
+        }
+        this.icon(ctx, 'warning', x + 18 + Math.min(nameWidth, measuredWidth) + 10.5, 91 + centerOffset, 11, '#eab308');
+      }
       this.text(ctx, displayDomain(app.website), x + 18, 115, cellWidth - 30, { size: 11, color: p.muted });
       this.text(ctx, `${(scene.scores[app.id] ?? 0).toFixed(1)} ${scene.scoreLabel}`, x + 18, 143, cellWidth - 30, { size: 12 });
       if (slot.index >= 0) highlight({ row: -1, column: slot.index }, x, 0, slot.width, HEADER_HEIGHT);

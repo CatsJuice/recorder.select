@@ -4,6 +4,27 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "精美，非常干净和简洁",
+    ux: "",
+    summary: "免费，小巧精美，有一定的基础功能，但是导出速度非常慢，几乎到了不可用的程度，或许是高分辨率下的 bug",
+  },
+  bettershot: {
+    ui: "和 Screendrop 一模一样",
+    ux: "引导做得很糟糕，甚至连授权引导都没做好，要手动去设置里打开权限",
+    summary: "功能和界面和 Screendrop 基本一模一样，根据仓库对比得出，BetterShot 建仓更早，但后来大量复制了 Screendrop 的代码，未注明来源，请自行斟酌",
+  },
+  screeen: { summary: '因下载需要付费，尚未测试，仅作列出。' },
+  matte: {
+    ui: '精致、干净',
+    ux: '交互都很直观，但是设置项较多',
+    summary: '并非简单的录屏软件，主要用于 3D 设备套壳渲染和动画制作，能力上与其他录屏软件有很大差异，上手成本更高',
+  },
+  screenflare: {
+    ui: '简洁偏原生，整体干净',
+    ux: '有一些交互体验不是很好，例如两个时间轴片段能重叠',
+    summary: '软件体积极小，基础功能完善，处于较早期，但是 bug 有点多，例如开启运动模糊导出后完全坏掉，而且预览模式下不支持运动模糊，这对整体的评估有较大影响',
+  },
   screencam: {
     ui: '有比较多的细节和微动效，整体偏原生风格',
     ux: '有较多创新交互，例如直接拖拽画面改变缩放中心、双击对焦，以及在 Zoom 片段上显示缩放波形图并调整缩放大小和速度',
@@ -30,6 +51,27 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "Beautiful, very clean and simple.",
+    ux: "",
+    summary: "Free, compact and beautifully designed, with some basic features. However, exporting is so slow that it is almost unusable, possibly due to a bug at high resolutions.",
+  },
+  bettershot: {
+    ui: "Identical to Screendrop.",
+    ux: "The onboarding is poor; even permission setup is poorly guided, requiring users to enable permissions manually in Settings.",
+    summary: "The features and interface are almost identical to Screendrop. A comparison of the repositories indicates that BetterShot was created earlier, but later copied large amounts of Screendrop code without attribution. Please use your own judgment.",
+  },
+  screeen: { summary: 'Not tested because downloading requires payment; listed for reference only.' },
+  matte: {
+    ui: 'Polished and clean.',
+    ux: 'The interactions are intuitive, but there are many settings.',
+    summary: 'Not simply a screen recorder: its primary focus is rendering and animating 3D device mockups. Its capabilities differ substantially from other screen recorders, with a steeper learning curve.',
+  },
+  screenflare: {
+    ui: 'Simple and clean, with a mostly native feel.',
+    ux: 'Some interactions could be better; for example, two timeline clips can overlap.',
+    summary: 'The app is extremely small and covers the basics well. It is still at an early stage, however, and has quite a few bugs. For example, enabling motion blur produces a completely broken export, and motion blur is not supported in preview mode. These issues significantly affect the overall assessment.',
+  },
   screencam: {
     ui: 'Rich in thoughtful details and micro-interactions, with an overall native feel.',
     ux: 'Many inventive interactions, including dragging the canvas to move the zoom center, double-clicking to focus, and using a waveform on Zoom clips to adjust zoom level and speed.',
@@ -55,6 +97,27 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "精美，非常乾淨簡潔",
+    ux: "",
+    summary: "免費、小巧精美，具備一些基本功能，但匯出速度非常慢，幾乎到了無法使用的程度，或許是高解析度下的 bug",
+  },
+  bettershot: {
+    ui: "和 Screendrop 一模一樣",
+    ux: "新手引導做得很糟糕，連權限授權引導都沒做好，需要手動到設定中開啟權限",
+    summary: "功能和介面與 Screendrop 基本一模一樣，根據倉庫比對得出，BetterShot 建倉更早，但後來大量複製了 Screendrop 的程式碼，未註明來源，請自行斟酌",
+  },
+  screeen: { summary: '因下載需要付費，尚未測試，僅作列出。' },
+  matte: {
+    ui: '精緻、乾淨',
+    ux: '互動都很直覺，但設定項目較多',
+    summary: '並非單純的螢幕錄製軟體，主要用於 3D 裝置模型渲染與動畫製作，功能定位與其他螢幕錄製軟體有很大差異，上手門檻更高',
+  },
+  screenflare: {
+    ui: '簡潔偏原生，整體乾淨',
+    ux: '有些互動體驗不太好，例如兩個時間軸片段可以重疊',
+    summary: '軟體體積極小，基本功能完善，仍處於較早期階段，但 bug 有點多。例如開啟動態模糊後，匯出結果完全損壞，而且預覽模式不支援動態模糊，這些問題對整體評估有較大影響',
+  },
   screencam: { ui: '有許多細節與微動效，整體偏原生風格', ux: '有不少創新互動，例如直接拖曳畫面改變縮放中心、按兩下對焦，以及在 Zoom 片段上顯示縮放波形圖並調整縮放大小與速度', summary: '輕量、價格便宜、功能豐富' },
   'screen-sage-pro': { ui: '專業、精緻，偏原生風格', summary: '輕量、功能豐富，擁有獨特的鏡頭版面動畫功能' },
   'screen-studio': { ui: '精緻，但有些控制項較粗糙', ux: '標竿般的存在', summary: '可以說是標準答案' },
@@ -68,6 +131,27 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "美しく、とてもすっきりしていてシンプル。",
+    ux: "",
+    summary: "無料でコンパクト、美しいデザインで基本的な機能もいくつか備えている。ただし、書き出しはほぼ使い物にならないほど遅い。高解像度で発生する不具合かもしれない。",
+  },
+  bettershot: {
+    ui: "Screendrop とまったく同じ。",
+    ux: "初期設定の案内が不十分で、権限の許可さえ適切に案内されず、設定から手動で有効にする必要がある。",
+    summary: "機能とインターフェースは Screendrop とほぼ同一です。リポジトリの比較によると、BetterShot のリポジトリは先に作成されましたが、その後 Screendrop のコードを大量にコピーし、出典を明記していません。各自でご判断ください。",
+  },
+  screeen: { summary: 'ダウンロードが有料のため未検証。参考情報として掲載のみ。' },
+  matte: {
+    ui: '洗練されていて、すっきりしている。',
+    ux: '操作はどれも直感的だが、設定項目が多い。',
+    summary: '単なる画面録画ソフトではなく、主に3Dデバイスモックアップのレンダリングやアニメーション制作を目的としている。他の画面録画ソフトとは機能の方向性が大きく異なり、使いこなすまでにより多くの学習が必要。',
+  },
+  screenflare: {
+    ui: 'シンプルでネイティブらしく、全体的にすっきりしている。',
+    ux: '一部の操作には改善の余地がある。例えば、タイムライン上の2つのクリップが重なってしまう。',
+    summary: 'アプリ容量は極めて小さく、基本機能も充実している。まだ初期段階で、不具合はやや多い。例えば、モーションブラーを有効にすると書き出し結果が完全に崩れ、プレビューモードではモーションブラーに対応していない。これらの問題は総合評価に大きく影響する。',
+  },
   screencam: { ui: '細部やマイクロインタラクションが豊富で、全体的にネイティブらしいデザイン。', ux: '画面をドラッグしてズーム中心を変える、ダブルクリックでフォーカスする、Zoom クリップの波形から倍率や速度を調整するなど、独創的な操作が多い。', summary: '軽量で安価、機能も豊富。' },
   'screen-sage-pro': { ui: 'プロフェッショナルで洗練され、ネイティブらしい。', summary: '軽量かつ多機能で、独自のカメラレイアウトアニメーションを備える。' },
   'screen-studio': { ui: '洗練されているが、一部のコントロールはやや粗い。', ux: 'この分野のベンチマーク。', summary: 'いわば模範解答。' },
@@ -81,6 +165,27 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "아름답고 매우 깔끔하며 간결하다.",
+    ux: "",
+    summary: "무료이고 작고 아름다우며 기본 기능도 어느 정도 갖추고 있다. 하지만 내보내기 속도가 거의 사용할 수 없을 정도로 느리다. 고해상도에서 발생하는 버그일 수도 있다.",
+  },
+  bettershot: {
+    ui: "Screendrop과 완전히 동일하다.",
+    ux: "온보딩 안내가 매우 부족하다. 권한 설정 안내조차 제대로 되어 있지 않아 설정에서 직접 권한을 켜야 한다.",
+    summary: "기능과 인터페이스는 Screendrop과 거의 동일합니다. 저장소를 비교한 결과 BetterShot의 저장소가 먼저 만들어졌지만, 이후 출처를 밝히지 않고 Screendrop의 코드를 대량으로 복사했습니다. 각자 신중히 판단해 주세요.",
+  },
+  screeen: { summary: '다운로드에 결제가 필요하여 테스트하지 않았으며, 참고용으로만 등록했습니다.' },
+  matte: {
+    ui: '세련되고 깔끔하다.',
+    ux: '조작은 모두 직관적이지만 설정 항목이 많다.',
+    summary: '단순한 화면 녹화 프로그램이 아니라 주로 3D 기기 목업 렌더링과 애니메이션 제작에 초점을 맞춘다. 다른 화면 녹화 프로그램과 기능의 방향성이 크게 달라 익히는 데 더 많은 시간이 필요하다.',
+  },
+  screenflare: {
+    ui: '간결하고 네이티브에 가까우며 전체적으로 깔끔하다.',
+    ux: '일부 상호작용은 개선이 필요하다. 예를 들어 타임라인의 두 클립이 겹칠 수 있다.',
+    summary: '앱 용량이 매우 작고 기본 기능도 잘 갖추고 있다. 다만 아직 초기 단계이며 버그가 다소 많다. 예를 들어 모션 블러를 켜면 내보낸 결과가 완전히 망가지고, 미리보기 모드에서는 모션 블러를 지원하지 않는다. 이런 문제는 전반적인 평가에 큰 영향을 준다.',
+  },
   screencam: { ui: '세부 요소와 마이크로 인터랙션이 풍부하며 전체적으로 네이티브 앱에 가까운 스타일이다.', ux: '화면을 드래그해 줌 중심을 옮기거나, 더블 클릭으로 초점을 맞추고, Zoom 클립의 파형에서 배율과 속도를 조절하는 등 참신한 상호작용이 많다.', summary: '가볍고 저렴하며 기능이 풍부하다.' },
   'screen-sage-pro': { ui: '전문적이고 정교하며 네이티브에 가까운 느낌이다.', summary: '가볍고 기능이 풍부하며 독특한 카메라 레이아웃 애니메이션을 제공한다.' },
   'screen-studio': { ui: '정교하지만 일부 컨트롤은 다소 거칠다.', ux: '이 분야의 기준점 같은 존재다.', summary: '표준 답안이라고 할 만하다.' },
@@ -94,6 +199,27 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "Bonita, muy limpia y sencilla.",
+    ux: "",
+    summary: "Gratis, compacta y bonita, con algunas funciones básicas. Sin embargo, la exportación es tan lenta que resulta casi inutilizable, posiblemente por un error con resoluciones altas.",
+  },
+  bettershot: {
+    ui: "Idéntica a Screendrop.",
+    ux: "La guía inicial es muy deficiente; ni siquiera orienta bien sobre los permisos, que hay que activar manualmente en Ajustes.",
+    summary: "Las funciones y la interfaz son casi idénticas a las de Screendrop. La comparación de los repositorios indica que BetterShot se creó antes, pero posteriormente copió grandes cantidades de código de Screendrop sin atribución. Valóralo por tu cuenta.",
+  },
+  screeen: { summary: 'No se ha probado porque la descarga requiere pago; se incluye solo como referencia.' },
+  matte: {
+    ui: 'Cuidada y limpia.',
+    ux: 'Las interacciones son intuitivas, pero hay muchos ajustes.',
+    summary: 'No es simplemente un grabador de pantalla: se centra en renderizar y animar maquetas de dispositivos en 3D. Sus capacidades difieren mucho de las de otros grabadores y la curva de aprendizaje es mayor.',
+  },
+  screenflare: {
+    ui: 'Sencilla y limpia, con un estilo bastante nativo.',
+    ux: 'Algunas interacciones necesitan mejorar; por ejemplo, dos clips de la línea de tiempo pueden superponerse.',
+    summary: 'La aplicación ocupa muy poco espacio y cubre bien las funciones básicas. Sin embargo, aún está en una etapa temprana y tiene bastantes errores. Por ejemplo, activar el desenfoque de movimiento produce una exportación completamente defectuosa, y la vista previa no admite este efecto. Estos problemas influyen considerablemente en la valoración general.',
+  },
   screencam: { ui: 'Muchos detalles y microinteracciones, con una apariencia general bastante nativa.', ux: 'Incluye interacciones innovadoras: arrastrar el lienzo para mover el centro del zoom, hacer doble clic para enfocar y ajustar nivel y velocidad mediante la onda de los clips Zoom.', summary: 'Ligero, económico y con muchas funciones.' },
   'screen-sage-pro': { ui: 'Profesional, refinado y con apariencia nativa.', summary: 'Ligero y completo, con animaciones únicas para la disposición de cámara.' },
   'screen-studio': { ui: 'Refinado, aunque algunos controles se sienten algo toscos.', ux: 'El referente de la categoría.', summary: 'Podría considerarse la respuesta estándar.' },
@@ -107,6 +233,27 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "Belle, très épurée et simple.",
+    ux: "",
+    summary: "Gratuite, compacte et soignée, avec quelques fonctions de base. Cependant, l’exportation est si lente qu’elle est presque inutilisable, peut-être à cause d’un bug à haute résolution.",
+  },
+  bettershot: {
+    ui: "Identique à Screendrop.",
+    ux: "L’accompagnement initial est très mauvais : même l’attribution des autorisations est mal expliquée et il faut les activer manuellement dans les réglages.",
+    summary: "Les fonctionnalités et l’interface sont presque identiques à celles de Screendrop. La comparaison des dépôts indique que celui de BetterShot a été créé plus tôt, mais que de grandes quantités de code de Screendrop ont ensuite été copiées sans attribution. À chacun de se faire son opinion.",
+  },
+  screeen: { summary: 'Non testé, car le téléchargement est payant ; répertorié uniquement à titre indicatif.' },
+  matte: {
+    ui: 'Soignée et épurée.',
+    ux: 'Les interactions sont intuitives, mais les réglages sont nombreux.',
+    summary: 'Ce n’est pas un simple outil d’enregistrement d’écran : il sert principalement au rendu et à l’animation de maquettes d’appareils en 3D. Ses capacités diffèrent fortement de celles des autres outils d’enregistrement, et sa prise en main demande davantage de temps.',
+  },
+  screenflare: {
+    ui: 'Simple et épurée, avec un style plutôt natif.',
+    ux: 'Certaines interactions méritent des améliorations : par exemple, deux clips de la timeline peuvent se chevaucher.',
+    summary: 'L’application est extrêmement compacte et couvre bien les fonctions de base. Elle en est toutefois encore à ses débuts et comporte pas mal de bugs. Par exemple, activer le flou de mouvement produit un export complètement défectueux, et ce flou n’est pas pris en charge dans l’aperçu. Ces problèmes ont une incidence importante sur l’évaluation globale.',
+  },
   screencam: { ui: 'De nombreux détails et micro-interactions, dans un style globalement natif.', ux: 'Plusieurs interactions innovantes : déplacer le centre du zoom en faisant glisser l’image, double-cliquer pour cibler, ou régler niveau et vitesse depuis la forme d’onde des clips Zoom.', summary: 'Léger, abordable et riche en fonctionnalités.' },
   'screen-sage-pro': { ui: 'Professionnel, soigné et proche d’une application native.', summary: 'Léger et riche en fonctions, avec des animations uniques de disposition de caméra.' },
   'screen-studio': { ui: 'Soigné, même si certains contrôles paraissent un peu grossiers.', ux: 'La référence de la catégorie.', summary: 'On peut le considérer comme la réponse standard.' },
@@ -120,6 +267,27 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "Schön, sehr aufgeräumt und schlicht.",
+    ux: "",
+    summary: "Kostenlos, kompakt und schön gestaltet, mit einigen Grundfunktionen. Der Export ist jedoch so langsam, dass er fast unbrauchbar ist. Möglicherweise liegt ein Fehler bei hohen Auflösungen vor.",
+  },
+  bettershot: {
+    ui: "Identisch mit Screendrop.",
+    ux: "Die Einführung ist sehr schlecht. Selbst die Vergabe von Berechtigungen wird nicht richtig erklärt, sodass man sie manuell in den Einstellungen aktivieren muss.",
+    summary: "Funktionen und Oberfläche sind mit Screendrop nahezu identisch. Der Vergleich der Repositories zeigt, dass BetterShot früher angelegt wurde, später jedoch große Mengen Screendrop-Code ohne Quellenangabe kopierte. Bitte bilde dir selbst ein Urteil.",
+  },
+  screeen: { summary: 'Nicht getestet, da der Download kostenpflichtig ist; nur zur Information aufgeführt.' },
+  matte: {
+    ui: 'Ausgefeilt und aufgeräumt.',
+    ux: 'Die Interaktionen sind intuitiv, allerdings gibt es viele Einstellungen.',
+    summary: 'Kein einfacher Bildschirmrekorder: Der Schwerpunkt liegt auf dem Rendern und Animieren von 3D-Gerätemockups. Die Möglichkeiten unterscheiden sich deutlich von anderen Bildschirmrekordern, und die Einarbeitung ist aufwendiger.',
+  },
+  screenflare: {
+    ui: 'Schlicht und aufgeräumt, mit einem eher nativen Erscheinungsbild.',
+    ux: 'Einige Interaktionen sind verbesserungsbedürftig; beispielsweise können sich zwei Clips auf der Zeitleiste überlappen.',
+    summary: 'Die App ist extrem klein und deckt die Grundfunktionen gut ab. Sie befindet sich allerdings noch in einem frühen Stadium und hat recht viele Bugs. Beispielsweise führt aktivierte Bewegungsunschärfe zu einem völlig fehlerhaften Export, während die Vorschau keine Bewegungsunschärfe unterstützt. Diese Probleme beeinflussen die Gesamtbewertung erheblich.',
+  },
   screencam: { ui: 'Viele durchdachte Details und Mikrointeraktionen, insgesamt mit nativem Erscheinungsbild.', ux: 'Viele innovative Interaktionen: Zoomzentrum durch Ziehen verschieben, per Doppelklick fokussieren sowie Zoomstärke und -geschwindigkeit über die Wellenform eines Zoom-Clips anpassen.', summary: 'Leichtgewichtig, günstig und funktionsreich.' },
   'screen-sage-pro': { ui: 'Professionell, ausgefeilt und mit nativem Erscheinungsbild.', summary: 'Leicht und funktionsreich, mit einzigartigen Animationen für Kamera-Layouts.' },
   'screen-studio': { ui: 'Ausgefeilt, auch wenn einige Bedienelemente etwas grob wirken.', ux: 'Der Maßstab in dieser Kategorie.', summary: 'Sozusagen die Standardantwort.' },
@@ -133,6 +301,27 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  screendrop: {
+    ui: "Bonita, muito limpa e simples.",
+    ux: "",
+    summary: "Gratuita, compacta e bonita, com algumas funções básicas. Porém, a exportação é tão lenta que fica quase inutilizável, talvez devido a um bug em altas resoluções.",
+  },
+  bettershot: {
+    ui: "Idêntica à do Screendrop.",
+    ux: "A orientação inicial é muito ruim; até a configuração de permissões é mal explicada, exigindo que sejam ativadas manualmente nos Ajustes.",
+    summary: "As funções e a interface são quase idênticas às do Screendrop. A comparação dos repositórios indica que o BetterShot foi criado antes, mas depois copiou grandes quantidades de código do Screendrop sem atribuição. Avalie por conta própria.",
+  },
+  screeen: { summary: 'Não testado porque o download exige pagamento; listado apenas como referência.' },
+  matte: {
+    ui: 'Refinada e limpa.',
+    ux: 'As interações são intuitivas, mas há muitas configurações.',
+    summary: 'Não é apenas um gravador de tela: o foco principal é renderizar e animar mockups de dispositivos em 3D. Seus recursos diferem bastante dos de outros gravadores, com uma curva de aprendizado maior.',
+  },
+  screenflare: {
+    ui: 'Simples e limpa, com aparência próxima de um app nativo.',
+    ux: 'Algumas interações precisam melhorar; por exemplo, dois clipes na linha do tempo podem se sobrepor.',
+    summary: 'O aplicativo é extremamente pequeno e atende bem às funções básicas. No entanto, ainda está em estágio inicial e tem vários bugs. Por exemplo, ativar o desfoque de movimento gera uma exportação completamente defeituosa, e a prévia não oferece suporte a esse efeito. Esses problemas afetam bastante a avaliação geral.',
+  },
   screencam: { ui: 'Muitos detalhes e microinterações, com aparência geral próxima de um app nativo.', ux: 'Várias interações inovadoras: arrastar a tela para mover o centro do zoom, clicar duas vezes para focar e ajustar nível e velocidade pela forma de onda dos clipes Zoom.', summary: 'Leve, barato e rico em recursos.' },
   'screen-sage-pro': { ui: 'Profissional, refinado e com aparência nativa.', summary: 'Leve e rico em recursos, com animações exclusivas de layout da câmera.' },
   'screen-studio': { ui: 'Refinado, embora alguns controles pareçam um pouco grosseiros.', ux: 'A referência da categoria.', summary: 'Pode ser considerado a resposta padrão.' },

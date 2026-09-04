@@ -30,3 +30,8 @@ export function createScoreContributions(products: Recorder[], fields: FieldDefi
   });
   return Object.fromEntries(products.map(product => [product.id, scorers.map(score => score(product))]));
 }
+
+/** Sum the configurable weighted contributions. */
+export function calculateRecorderScore(contributions: number[], fields: FieldDefinition[], weights: Record<string, number>) {
+  return fields.reduce((total, field, index) => total + contributions[index] * (weights[field.key] ?? 5), 0);
+}

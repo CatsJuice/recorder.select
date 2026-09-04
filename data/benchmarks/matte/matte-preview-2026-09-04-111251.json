@@ -1,0 +1,1865 @@
+{
+  "endedAt" : "2026-09-04T03:13:54Z",
+  "id" : "FC11734B-F9A9-4013-8BED-47CE610E706F",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 6.834e-06,
+      "physicalFootprintBytes" : 7330026200,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 5.066343036,
+            "diskReadBytes" : 16703488,
+            "diskWrittenBytes" : 231034880,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7330026200
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100812849152
+    },
+    {
+      "cpuPercent" : 0.37471065997072384,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.039427209,
+      "physicalFootprintBytes" : 6957077208,
+      "processes" : [
+        {
+          "cpuPercent" : 0.37471065997072384,
+          "process" : {
+            "cpuTimeSeconds" : 5.070237911,
+            "diskReadBytes" : 16703488,
+            "diskWrittenBytes" : 231034880,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6957077208
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.60570199031736,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100579377152
+    },
+    {
+      "cpuPercent" : 1.2983391173370744,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 2.0395442089999998,
+      "physicalFootprintBytes" : 7332598488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2983391173370744,
+          "process" : {
+            "cpuTimeSeconds" : 5.083226812,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7332598488
+          }
+        }
+      ],
+      "systemCPUPercent" : 279.25801011804384,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100759420928
+    },
+    {
+      "cpuPercent" : 1.1523824841398533,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 3.040080542,
+      "physicalFootprintBytes" : 7310807768,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1523824841398533,
+          "process" : {
+            "cpuTimeSeconds" : 5.094753525,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7310807768
+          }
+        }
+      ],
+      "systemCPUPercent" : 208.81204684885665,
+      "systemMemoryDeltaBytes" : 302383104,
+      "systemMemoryUsedBytes" : 101115232256
+    },
+    {
+      "cpuPercent" : 1.1168142679959496,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 4.039360542,
+      "physicalFootprintBytes" : 7283790552,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1168142679959496,
+          "process" : {
+            "cpuTimeSeconds" : 5.105914635,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7283790552
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.660145332588,
+      "systemMemoryDeltaBytes" : 333889536,
+      "systemMemoryUsedBytes" : 101146738688
+    },
+    {
+      "cpuPercent" : 1.0617351451956814,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 5.040140084,
+      "physicalFootprintBytes" : 7281349336,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0617351451956814,
+          "process" : {
+            "cpuTimeSeconds" : 5.116541485,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7281349336
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.0954773869347,
+      "systemMemoryDeltaBytes" : 323862528,
+      "systemMemoryUsedBytes" : 101136711680
+    },
+    {
+      "cpuPercent" : 1.1248650274219871,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 6.040110542,
+      "physicalFootprintBytes" : 7275041496,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1248650274219871,
+          "process" : {
+            "cpuTimeSeconds" : 5.127788837,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7275041496
+          }
+        }
+      ],
+      "systemCPUPercent" : 226.13065326633165,
+      "systemMemoryDeltaBytes" : 229081088,
+      "systemMemoryUsedBytes" : 101041930240
+    },
+    {
+      "cpuPercent" : 1.10517706954254,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 7.039264959,
+      "physicalFootprintBytes" : 7277695704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.10517706954254,
+          "process" : {
+            "cpuTimeSeconds" : 5.138831245,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7277695704
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.55679910464468,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100648763392
+    },
+    {
+      "cpuPercent" : 1.09801918055702,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 8.039367042,
+      "physicalFootprintBytes" : 7275401944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.09801918055702,
+          "process" : {
+            "cpuTimeSeconds" : 5.149812043,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7275401944
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.34656232532143,
+      "systemMemoryDeltaBytes" : 235077632,
+      "systemMemoryUsedBytes" : 101047926784
+    },
+    {
+      "cpuPercent" : 1.1016707682294673,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 9.039438209,
+      "physicalFootprintBytes" : 7276188376,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1016707682294673,
+          "process" : {
+            "cpuTimeSeconds" : 5.160831268,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7276188376
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.24022346368713,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100744331264
+    },
+    {
+      "cpuPercent" : 1.0715950199671236,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 10.040092709,
+      "physicalFootprintBytes" : 7274173144,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0715950199671236,
+          "process" : {
+            "cpuTimeSeconds" : 5.171551451,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7274173144
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.0954773869347,
+      "systemMemoryDeltaBytes" : 65175552,
+      "systemMemoryUsedBytes" : 100878024704
+    },
+    {
+      "cpuPercent" : 1.1155081134927758,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 11.039314459,
+      "physicalFootprintBytes" : 7274205912,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1155081134927758,
+          "process" : {
+            "cpuTimeSeconds" : 5.182700474,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7274205912
+          }
+        }
+      ],
+      "systemCPUPercent" : 218.21229050279328,
+      "systemMemoryDeltaBytes" : 242810880,
+      "systemMemoryUsedBytes" : 101055660032
+    },
+    {
+      "cpuPercent" : 1.1108257548154397,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 12.0393705,
+      "physicalFootprintBytes" : 7227642584,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1108257548154397,
+          "process" : {
+            "cpuTimeSeconds" : 5.193808919,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7227642584
+          }
+        }
+      ],
+      "systemCPUPercent" : 236.9747899159664,
+      "systemMemoryDeltaBytes" : 247414784,
+      "systemMemoryUsedBytes" : 101060263936
+    },
+    {
+      "cpuPercent" : 1.1198509113903234,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 13.039586292,
+      "physicalFootprintBytes" : 7229002456,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1198509113903234,
+          "process" : {
+            "cpuTimeSeconds" : 5.205011817,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7229002456
+          }
+        }
+      ],
+      "systemCPUPercent" : 233.25917686318132,
+      "systemMemoryDeltaBytes" : 219840512,
+      "systemMemoryUsedBytes" : 101032689664
+    },
+    {
+      "cpuPercent" : 1.1055025916979198,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 14.039736709,
+      "physicalFootprintBytes" : 7229313752,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1055025916979198,
+          "process" : {
+            "cpuTimeSeconds" : 5.216067304,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7229313752
+          }
+        }
+      ],
+      "systemCPUPercent" : 229.53020134228188,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100634591232
+    },
+    {
+      "cpuPercent" : 1.2597656379753899,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 15.039344375,
+      "physicalFootprintBytes" : 7361516248,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2597656379753899,
+          "process" : {
+            "cpuTimeSeconds" : 5.228658513,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7361516248
+          }
+        }
+      ],
+      "systemCPUPercent" : 232.42034656232536,
+      "systemMemoryDeltaBytes" : 228687872,
+      "systemMemoryUsedBytes" : 101041537024
+    },
+    {
+      "cpuPercent" : 1.1860283685740332,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 16.039539584,
+      "physicalFootprintBytes" : 7359779544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1860283685740332,
+          "process" : {
+            "cpuTimeSeconds" : 5.240521954,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7359779544
+          }
+        }
+      ],
+      "systemCPUPercent" : 221.35271101173842,
+      "systemMemoryDeltaBytes" : 237699072,
+      "systemMemoryUsedBytes" : 101050548224
+    },
+    {
+      "cpuPercent" : 1.115930785910939,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 17.03934825,
+      "physicalFootprintBytes" : 7360238296,
+      "processes" : [
+        {
+          "cpuPercent" : 1.115930785910939,
+          "process" : {
+            "cpuTimeSeconds" : 5.251678426,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7360238296
+          }
+        }
+      ],
+      "systemCPUPercent" : 211.1731843575419,
+      "systemMemoryDeltaBytes" : 313606144,
+      "systemMemoryUsedBytes" : 101126455296
+    },
+    {
+      "cpuPercent" : 1.1008696766624204,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 18.039358584,
+      "physicalFootprintBytes" : 7340528344,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1008696766624204,
+          "process" : {
+            "cpuTimeSeconds" : 5.262688003,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7340528344
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.23915461624026,
+      "systemMemoryDeltaBytes" : 258293760,
+      "systemMemoryUsedBytes" : 101071142912
+    },
+    {
+      "cpuPercent" : 1.1957088232684605,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 19.039331709,
+      "physicalFootprintBytes" : 7359943384,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1957088232684605,
+          "process" : {
+            "cpuTimeSeconds" : 5.274643346,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7359943384
+          }
+        }
+      ],
+      "systemCPUPercent" : 226.2626262626263,
+      "systemMemoryDeltaBytes" : 239124480,
+      "systemMemoryUsedBytes" : 101051973632
+    },
+    {
+      "cpuPercent" : 1.1843581306253674,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 20.039510459,
+      "physicalFootprintBytes" : 7289918168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1843581306253674,
+          "process" : {
+            "cpuTimeSeconds" : 5.286488957,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7289918168
+          }
+        }
+      ],
+      "systemCPUPercent" : 207.035175879397,
+      "systemMemoryDeltaBytes" : 165625856,
+      "systemMemoryUsedBytes" : 100978475008
+    },
+    {
+      "cpuPercent" : 1.0974154705563008,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 21.039595959,
+      "physicalFootprintBytes" : 7291704024,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0974154705563008,
+          "process" : {
+            "cpuTimeSeconds" : 5.297466612,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7291704024
+          }
+        }
+      ],
+      "systemCPUPercent" : 226.00446428571433,
+      "systemMemoryDeltaBytes" : 285556736,
+      "systemMemoryUsedBytes" : 101098405888
+    },
+    {
+      "cpuPercent" : 1.0833393834131386,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 22.039580292,
+      "physicalFootprintBytes" : 7268602584,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0833393834131386,
+          "process" : {
+            "cpuTimeSeconds" : 5.308299266,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7268602584
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.3065326633166,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100772593664
+    },
+    {
+      "cpuPercent" : 1.184754952262707,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 23.039459667,
+      "physicalFootprintBytes" : 7286821640,
+      "processes" : [
+        {
+          "cpuPercent" : 1.184754952262707,
+          "process" : {
+            "cpuTimeSeconds" : 5.320144991,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7286821640
+          }
+        }
+      ],
+      "systemCPUPercent" : 224.24581005586592,
+      "systemMemoryDeltaBytes" : 241745920,
+      "systemMemoryUsedBytes" : 101054595072
+    },
+    {
+      "cpuPercent" : 1.278685331856341,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 24.039599209,
+      "physicalFootprintBytes" : 7269896920,
+      "processes" : [
+        {
+          "cpuPercent" : 1.278685331856341,
+          "process" : {
+            "cpuTimeSeconds" : 5.332934683,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7269896920
+          }
+        }
+      ],
+      "systemCPUPercent" : 224.8745119910764,
+      "systemMemoryDeltaBytes" : 228032512,
+      "systemMemoryUsedBytes" : 101040881664
+    },
+    {
+      "cpuPercent" : 1.0854881046164728,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 25.039613584,
+      "physicalFootprintBytes" : 7268520664,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0854881046164728,
+          "process" : {
+            "cpuTimeSeconds" : 5.3437891,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7268520664
+          }
+        }
+      ],
+      "systemCPUPercent" : 207.73109243697482,
+      "systemMemoryDeltaBytes" : 249348096,
+      "systemMemoryUsedBytes" : 101062197248
+    },
+    {
+      "cpuPercent" : 1.1300582357457352,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 26.039536417,
+      "physicalFootprintBytes" : 7272780504,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1300582357457352,
+          "process" : {
+            "cpuTimeSeconds" : 5.355086885,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7272780504
+          }
+        }
+      ],
+      "systemCPUPercent" : 357.7889447236181,
+      "systemMemoryDeltaBytes" : 377110528,
+      "systemMemoryUsedBytes" : 101189959680
+    },
+    {
+      "cpuPercent" : 1.0120793828946861,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 27.03954675,
+      "physicalFootprintBytes" : 7269798616,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0120793828946861,
+          "process" : {
+            "cpuTimeSeconds" : 5.365207756,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7269798616
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.46231155778895,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100555735040
+    },
+    {
+      "cpuPercent" : 1.2013756323738733,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 28.040193584,
+      "physicalFootprintBytes" : 7372133080,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2013756323738733,
+          "process" : {
+            "cpuTimeSeconds" : 5.377231713,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7372133080
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.27678571428567,
+      "systemMemoryDeltaBytes" : 99434496,
+      "systemMemoryUsedBytes" : 100912283648
+    },
+    {
+      "cpuPercent" : 1.1317283523965942,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 29.039615375,
+      "physicalFootprintBytes" : 7375033048,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1317283523965942,
+          "process" : {
+            "cpuTimeSeconds" : 5.388542474,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7375033048
+          }
+        }
+      ],
+      "systemCPUPercent" : 242.61744966442956,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100633509888
+    },
+    {
+      "cpuPercent" : 1.0740376919397747,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 30.039553709,
+      "physicalFootprintBytes" : 7379079896,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0740376919397747,
+          "process" : {
+            "cpuTimeSeconds" : 5.399280548,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7379079896
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.8588957055215,
+      "systemMemoryDeltaBytes" : 119668736,
+      "systemMemoryUsedBytes" : 100932517888
+    },
+    {
+      "cpuPercent" : 1.0721326972447347,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 31.039341875,
+      "physicalFootprintBytes" : 7353471704,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0721326972447347,
+          "process" : {
+            "cpuTimeSeconds" : 5.410000726,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7353471704
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.39597315436242,
+      "systemMemoryDeltaBytes" : 155516928,
+      "systemMemoryUsedBytes" : 100968366080
+    },
+    {
+      "cpuPercent" : 1.090921852384664,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 32.039574625,
+      "physicalFootprintBytes" : 7351292632,
+      "processes" : [
+        {
+          "cpuPercent" : 1.090921852384664,
+          "process" : {
+            "cpuTimeSeconds" : 5.42091117,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7351292632
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.73578595317724,
+      "systemMemoryDeltaBytes" : 91144192,
+      "systemMemoryUsedBytes" : 100903993344
+    },
+    {
+      "cpuPercent" : 1.0411018059784398,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 33.039593792,
+      "physicalFootprintBytes" : 7349899992,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0411018059784398,
+          "process" : {
+            "cpuTimeSeconds" : 5.431323335,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7349899992
+          }
+        }
+      ],
+      "systemCPUPercent" : 206.26048071548348,
+      "systemMemoryDeltaBytes" : 74432512,
+      "systemMemoryUsedBytes" : 100887281664
+    },
+    {
+      "cpuPercent" : 1.027305599029614,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 34.039331167,
+      "physicalFootprintBytes" : 7351358168,
+      "processes" : [
+        {
+          "cpuPercent" : 1.027305599029614,
+          "process" : {
+            "cpuTimeSeconds" : 5.441592444,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7351358168
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.8255033557047,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100718788608
+    },
+    {
+      "cpuPercent" : 1.0720419948901216,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 35.039641792,
+      "physicalFootprintBytes" : 7368119000,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0720419948901216,
+          "process" : {
+            "cpuTimeSeconds" : 5.452318502,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7368119000
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.85499163413274,
+      "systemMemoryDeltaBytes" : 72794112,
+      "systemMemoryUsedBytes" : 100885643264
+    },
+    {
+      "cpuPercent" : 1.1649682125494842,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 36.039612875,
+      "physicalFootprintBytes" : 7300485848,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1649682125494842,
+          "process" : {
+            "cpuTimeSeconds" : 5.463966991,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7300485848
+          }
+        }
+      ],
+      "systemCPUPercent" : 213.30352152040243,
+      "systemMemoryDeltaBytes" : 4702208,
+      "systemMemoryUsedBytes" : 100817551360
+    },
+    {
+      "cpuPercent" : 1.0300295705783993,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 37.039379459,
+      "physicalFootprintBytes" : 7299830488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0300295705783993,
+          "process" : {
+            "cpuTimeSeconds" : 5.474265779,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7299830488
+          }
+        }
+      ],
+      "systemCPUPercent" : 284.7910863509749,
+      "systemMemoryDeltaBytes" : 67649536,
+      "systemMemoryUsedBytes" : 100880498688
+    },
+    {
+      "cpuPercent" : 1.0218970035067296,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 38.039383084,
+      "physicalFootprintBytes" : 7280710360,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0218970035067296,
+          "process" : {
+            "cpuTimeSeconds" : 5.484482939,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7280710360
+          }
+        }
+      ],
+      "systemCPUPercent" : 206.3758389261745,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100803870720
+    },
+    {
+      "cpuPercent" : 1.0504889403414985,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 39.039692334,
+      "physicalFootprintBytes" : 7279104728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0504889403414985,
+          "process" : {
+            "cpuTimeSeconds" : 5.494992609,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7279104728
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.95982142857144,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100804657152
+    },
+    {
+      "cpuPercent" : 1.0216372537031182,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 40.039623584,
+      "physicalFootprintBytes" : 7279629016,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0216372537031182,
+          "process" : {
+            "cpuTimeSeconds" : 5.505207441,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7279629016
+          }
+        }
+      ],
+      "systemCPUPercent" : 199.66555183946488,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100477534208
+    },
+    {
+      "cpuPercent" : 1.0699666813899702,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 41.039678792,
+      "physicalFootprintBytes" : 7280579288,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0699666813899702,
+          "process" : {
+            "cpuTimeSeconds" : 5.515908357,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7280579288
+          }
+        }
+      ],
+      "systemCPUPercent" : 213.66181410974244,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100779180032
+    },
+    {
+      "cpuPercent" : 1.1382415146273255,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 42.039683209,
+      "physicalFootprintBytes" : 7303189208,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1382415146273255,
+          "process" : {
+            "cpuTimeSeconds" : 5.527290959,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7303189208
+          }
+        }
+      ],
+      "systemCPUPercent" : 200.7808142777468,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100470341632
+    },
+    {
+      "cpuPercent" : 1.2892918135017206,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 43.039637542,
+      "physicalFootprintBytes" : 7371199192,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2892918135017206,
+          "process" : {
+            "cpuTimeSeconds" : 5.540182424,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7371199192
+          }
+        }
+      ],
+      "systemCPUPercent" : 233.6877448237269,
+      "systemMemoryDeltaBytes" : 53723136,
+      "systemMemoryUsedBytes" : 100866572288
+    },
+    {
+      "cpuPercent" : 1.0543053632565829,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 44.039342459,
+      "physicalFootprintBytes" : 7370330840,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0543053632565829,
+          "process" : {
+            "cpuTimeSeconds" : 5.550721817,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7370330840
+          }
+        }
+      ],
+      "systemCPUPercent" : 225.25139664804473,
+      "systemMemoryDeltaBytes" : 104726528,
+      "systemMemoryUsedBytes" : 100917575680
+    },
+    {
+      "cpuPercent" : 1.011499463932049,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 45.039640667,
+      "physicalFootprintBytes" : 7352079064,
+      "processes" : [
+        {
+          "cpuPercent" : 1.011499463932049,
+          "process" : {
+            "cpuTimeSeconds" : 5.56083971,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7352079064
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.6100278551532,
+      "systemMemoryDeltaBytes" : 58294272,
+      "systemMemoryUsedBytes" : 100871143424
+    },
+    {
+      "cpuPercent" : 1.177042930675033,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 46.039647417,
+      "physicalFootprintBytes" : 7372149464,
+      "processes" : [
+        {
+          "cpuPercent" : 1.177042930675033,
+          "process" : {
+            "cpuTimeSeconds" : 5.572611565,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7372149464
+          }
+        }
+      ],
+      "systemCPUPercent" : 223.11557788944722,
+      "systemMemoryDeltaBytes" : 55918592,
+      "systemMemoryUsedBytes" : 100868767744
+    },
+    {
+      "cpuPercent" : 1.2705750448263406,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 47.039619417,
+      "physicalFootprintBytes" : 7303762648,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2705750448263406,
+          "process" : {
+            "cpuTimeSeconds" : 5.585315165,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7303762648
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.6440962506995,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100696276992
+    },
+    {
+      "cpuPercent" : 1.1125860472096314,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 48.039702959,
+      "physicalFootprintBytes" : 7304205016,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1125860472096314,
+          "process" : {
+            "cpuTimeSeconds" : 5.596443628,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7304205016
+          }
+        }
+      ],
+      "systemCPUPercent" : 218.97321428571428,
+      "systemMemoryDeltaBytes" : 211812352,
+      "systemMemoryUsedBytes" : 101024661504
+    },
+    {
+      "cpuPercent" : 1.054769057071439,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 49.039699084,
+      "physicalFootprintBytes" : 7280825048,
+      "processes" : [
+        {
+          "cpuPercent" : 1.054769057071439,
+          "process" : {
+            "cpuTimeSeconds" : 5.606990985,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7280825048
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.6440962506995,
+      "systemMemoryDeltaBytes" : 187105280,
+      "systemMemoryUsedBytes" : 100999954432
+    },
+    {
+      "cpuPercent" : 1.123915001816221,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 50.040029709,
+      "physicalFootprintBytes" : 7286379224,
+      "processes" : [
+        {
+          "cpuPercent" : 1.123915001816221,
+          "process" : {
+            "cpuTimeSeconds" : 5.618233747,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7286379224
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.51315053161724,
+      "systemMemoryDeltaBytes" : 264765440,
+      "systemMemoryUsedBytes" : 101077614592
+    },
+    {
+      "cpuPercent" : 1.147783806846018,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 51.039679625,
+      "physicalFootprintBytes" : 7285527256,
+      "processes" : [
+        {
+          "cpuPercent" : 1.147783806846018,
+          "process" : {
+            "cpuTimeSeconds" : 5.629707542,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7285527256
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.01793721973095,
+      "systemMemoryDeltaBytes" : 95076352,
+      "systemMemoryUsedBytes" : 100907925504
+    },
+    {
+      "cpuPercent" : 1.1466883980496898,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 52.039865,
+      "physicalFootprintBytes" : 7302337240,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1466883980496898,
+          "process" : {
+            "cpuTimeSeconds" : 5.641176426,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7302337240
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.41402337228718,
+      "systemMemoryDeltaBytes" : 282820608,
+      "systemMemoryUsedBytes" : 101095669760
+    },
+    {
+      "cpuPercent" : 1.4048112606593033,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 53.039672584,
+      "physicalFootprintBytes" : 7373066968,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4048112606593033,
+          "process" : {
+            "cpuTimeSeconds" : 5.655222223,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7373066968
+          }
+        }
+      ],
+      "systemCPUPercent" : 284.1573033707865,
+      "systemMemoryDeltaBytes" : 117702656,
+      "systemMemoryUsedBytes" : 100930551808
+    },
+    {
+      "cpuPercent" : 1.117954601550419,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 54.039643375,
+      "physicalFootprintBytes" : 7373918936,
+      "processes" : [
+        {
+          "cpuPercent" : 1.117954601550419,
+          "process" : {
+            "cpuTimeSeconds" : 5.666399739,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7373918936
+          }
+        }
+      ],
+      "systemCPUPercent" : 220.22346368715083,
+      "systemMemoryDeltaBytes" : 378093568,
+      "systemMemoryUsedBytes" : 101190942720
+    },
+    {
+      "cpuPercent" : 1.1717528001227715,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 55.039635667,
+      "physicalFootprintBytes" : 7352357592,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1717528001227715,
+          "process" : {
+            "cpuTimeSeconds" : 5.67811623,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7352357592
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.3281075027995,
+      "systemMemoryDeltaBytes" : 83869696,
+      "systemMemoryUsedBytes" : 100896718848
+    },
+    {
+      "cpuPercent" : 1.1770336382158608,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 56.039322834,
+      "physicalFootprintBytes" : 7371510488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1770336382158608,
+          "process" : {
+            "cpuTimeSeconds" : 5.689884587,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7371510488
+          }
+        }
+      ],
+      "systemCPUPercent" : 351.7357222844345,
+      "systemMemoryDeltaBytes" : 642170880,
+      "systemMemoryUsedBytes" : 101455020032
+    },
+    {
+      "cpuPercent" : 1.2690371630022768,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 57.03964975,
+      "physicalFootprintBytes" : 7301878488,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2690371630022768,
+          "process" : {
+            "cpuTimeSeconds" : 5.702578458,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7301878488
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.8590604026846,
+      "systemMemoryDeltaBytes" : 302055424,
+      "systemMemoryUsedBytes" : 101114904576
+    },
+    {
+      "cpuPercent" : 1.0285405366037745,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 58.039722667,
+      "physicalFootprintBytes" : 7303467736,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0285405366037745,
+          "process" : {
+            "cpuTimeSeconds" : 5.712866766,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7303467736
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.70194986072423,
+      "systemMemoryDeltaBytes" : 317423616,
+      "systemMemoryUsedBytes" : 101130272768
+    },
+    {
+      "cpuPercent" : 1.0513677209471948,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 59.039703667,
+      "physicalFootprintBytes" : 7280841432,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0513677209471948,
+          "process" : {
+            "cpuTimeSeconds" : 5.723379663,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7280841432
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.37430167597765,
+      "systemMemoryDeltaBytes" : 277463040,
+      "systemMemoryUsedBytes" : 101090312192
+    },
+    {
+      "cpuPercent" : 1.111738642080614,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 60.039679792,
+      "physicalFootprintBytes" : 7281545944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.111738642080614,
+          "process" : {
+            "cpuTimeSeconds" : 5.734494926,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7281545944
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.5704697986577,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100742955008
+    },
+    {
+      "cpuPercent" : 1.0117341370581607,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 61.039335625,
+      "physicalFootprintBytes" : 7279071960,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0117341370581607,
+          "process" : {
+            "cpuTimeSeconds" : 5.744610367,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7279071960
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.21709786276716,
+      "systemMemoryDeltaBytes" : 216072192,
+      "systemMemoryUsedBytes" : 101028921344
+    },
+    {
+      "cpuPercent" : 0.6559347140887023,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 62.039750584,
+      "physicalFootprintBytes" : 7281480408,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6559347140887023,
+          "process" : {
+            "cpuTimeSeconds" : 5.751173295,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7281480408
+          }
+        }
+      ],
+      "systemCPUPercent" : 204,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100689707008
+    },
+    {
+      "cpuPercent" : 0.1142384361776726,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 63.039679334,
+      "physicalFootprintBytes" : 6929158872,
+      "processes" : [
+        {
+          "cpuPercent" : 0.1142384361776726,
+          "process" : {
+            "cpuTimeSeconds" : 5.752315286,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 6929158872
+          }
+        }
+      ],
+      "systemCPUPercent" : 228.41100505334083,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 100463083520
+    },
+    {
+      "cpuPercent" : 0.6791366700859425,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 147456,
+      "elapsedSeconds" : 63.564495959,
+      "physicalFootprintBytes" : 7139971800,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6791366700859425,
+          "process" : {
+            "cpuTimeSeconds" : 5.755879627,
+            "diskReadBytes" : 16736256,
+            "diskWrittenBytes" : 231182336,
+            "executablePath" : "/Applications/Matte.app/Contents/MacOS/Matte",
+            "identity" : {
+              "pid" : 95689,
+              "startTimeNanoseconds" : 12410689284534
+            },
+            "name" : "Matte",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 7139971800
+          }
+        }
+      ],
+      "systemCPUPercent" : 356.5495207667731,
+      "systemMemoryDeltaBytes" : 28360704,
+      "systemMemoryUsedBytes" : 100841209856
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-04T03:12:51Z",
+  "summary" : {
+    "averageCPUPercent" : 1.0822045382316814,
+    "averagePhysicalFootprintBytes" : 7296236091,
+    "averageSystemCPUPercent" : 238.9693438124297,
+    "averageSystemMemoryDeltaBytes" : 144417902,
+    "cpuTimeSeconds" : 0.6895365909999995,
+    "diskReadBytes" : 32768,
+    "diskWrittenBytes" : 147456,
+    "durationSeconds" : 63.564495959,
+    "p95CPUPercent" : 1.278685331856341,
+    "p95SystemCPUPercent" : 299.3281075027995,
+    "peakCPUPercent" : 1.4048112606593033,
+    "peakPhysicalFootprintBytes" : 7379079896,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 357.7889447236181,
+    "peakSystemMemoryDeltaBytes" : 642170880,
+    "physicalFootprintDeltaBytes" : -190054400
+  },
+  "target" : {
+    "build" : "181",
+    "bundleIdentifier" : "com.jose.Matte",
+    "bundlePath" : "/Applications/Matte.app",
+    "name" : "Matte",
+    "recorderID" : "matte",
+    "version" : "2.0"
+  }
+}

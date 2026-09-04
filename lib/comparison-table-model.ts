@@ -9,8 +9,11 @@ export type TableCell = {
   secondary?: string;
   boolean?: boolean;
   muted?: boolean;
+  freePrice?: boolean;
   best?: boolean;
   extreme?: 'low' | 'high';
+  outlier?: boolean;
+  caution?: boolean;
   bar?: number;
   icons?: string[];
   sparkline?: Array<readonly [number, number]>;
@@ -88,21 +91,21 @@ export function createComparisonModel(options: ModelOptions) {
       extremes = new Map();
       const perf = performanceFields[field.key];
       const values = products.map(app => performanceValue(profiles, app.id, field.key) ?? app[field.key]);
-      if (perf) {
-        const workloads = new Map<string | undefined, Array<{ id: string; value: number }>>();
+      if (perf || field.key === 'appSizeMB') {
+        // Labels describe a run; extrema and bar heights share the visible row.
+        const entries: Array<{ id: string; value: number }> = [];
         products.forEach((app, index) => {
-          const run = profiles[app.id]?.[perf.scenario];
+          const run = perf ? profiles[app.id]?.[perf.scenario] : undefined;
           const value = values[index];
-          if (!run || typeof value !== 'number') return;
+          if ((perf && !run) || typeof value !== 'number' || !Number.isFinite(value)) return;
+          if (run?.outlierFields?.includes(field.key)) return;
           maximum = Math.max(maximum, value);
-          const entries = workloads.get(run.workloadLabel) ?? [];
           entries.push({ id: app.id, value });
-          workloads.set(run.workloadLabel, entries);
         });
-        for (const entries of workloads.values()) {
+        if (entries.length > 1) {
           const low = entries.reduce((min, entry) => Math.min(min, entry.value), Infinity);
           const high = entries.reduce((max, entry) => Math.max(max, entry.value), -Infinity);
-          if (low === high) continue;
+          if (low === high) return;
           for (const entry of entries) {
             if (entry.value === low) extremes!.set(entry.id, 'low');
             if (entry.value === high) extremes!.set(entry.id, 'high');
@@ -134,8 +137,15 @@ export function createComparisonModel(options: ModelOptions) {
         const perf = performanceFields[field.key];
         if (perf) {
           const number = performanceValue(profiles, app.id, field.key);
-          if (number === undefined) return missingPerformance();
-          return { text: formatPerformanceValue(number, perf.format), secondary: profiles[app.id]?.[perf.scenario]?.workloadLabel, bar: maximum > 0 ? Math.max(0, number / maximum) : 0, extreme: extremes!.get(app.id) };
+          if (number === undefined || !Number.isFinite(number)) return missingPerformance();
+          const run = profiles[app.id]?.[perf.scenario];
+          const outlier = run?.outlierFields?.includes(field.key) ?? false;
+          const formatted = formatPerformanceValue(number, perf.format);
+          return { text: formatted, secondary: run?.workloadLabel, bar: outlier ? 1 : maximum > 0 ? Math.min(1, Math.max(0, number / maximum)) : 0, extreme: extremes!.get(app.id), outlier };
+        }
+        if (field.key === 'appSizeMB') {
+          if (typeof value !== 'number' || !Number.isFinite(value)) return unknown();
+          return { text: `${value}${fieldUnit(field) ?? ''}`, bar: maximum > 0 ? Math.min(1, Math.max(0, value / maximum)) : 0, extreme: extremes!.get(app.id) };
         }
         const style = { best: bestIds!.has(app.id) };
         if (field.type === 'boolean') return value == null ? unknown() : { text: t(value ? 'yes' : 'no'), boolean: value === true, ...style };
@@ -144,7 +154,7 @@ export function createComparisonModel(options: ModelOptions) {
           const labels = value.map(item => field.options?.find(option => option.value === item)?.label ?? item);
           return { text: labels.join(', ') || '—', icons: field.key === 'platforms' ? value : undefined, ...style };
         }
-        if (field.type === 'price') return { text: Number(value) === 0 ? t('free') : `$${value}${fieldUnit(field) ?? ''}`, ...style };
+        if (field.type === 'price') return { text: Number(value) === 0 ? t('free') : `$${value}${fieldUnit(field) ?? ''}`, freePrice: Number(value) === 0, ...style };
         if (field.type === 'select' || field.type === 'select-text') {
           return { text: field.options?.find(option => option.value === (field.type === 'select-text' ? String(value).toLowerCase() : value))?.label ?? String(value), icons: field.key === 'technologyApproach' ? [String(value).toLowerCase()] : undefined, ...style };
         }
@@ -175,6 +185,11 @@ export function createComparisonModel(options: ModelOptions) {
       if (!preview) return { text: '' };
       if (preview.type === 'boolean') return preview.value == null ? unknown() : { text: t(preview.value ? 'yes' : 'no'), boolean: preview.value, best: options.compareMode && products.length > 1 && preview.value };
       const unitField = fieldDefinitions.find(field => field.key === preview.unitFieldKey);
+      if (preview.type === 'price') {
+        if (preview.value === null) return unknown();
+        if (preview.value === 0) return { text: t('free'), freePrice: true };
+        return { text: t('priceFrom', { price: `$${preview.value}${unitField ? fieldUnit(unitField) ?? '' : ''}` }) };
+      }
       return { text: `${preview.label}${unitField ? fieldUnit(unitField) ?? '' : ''}` };
     } });
     if (!expanded) return;
@@ -186,7 +201,7 @@ export function createComparisonModel(options: ModelOptions) {
     const texts = products.map(app => subjectiveReviewFor(options.locale, app.id, key) ?? '—');
     // Conservative line budget at the minimum column width; stable when scrolling horizontally.
     const lines = texts.reduce((max, text) => Math.max(max, Math.ceil(Array.from(text).reduce((size, character) => size + (character.charCodeAt(0) > 255 ? 14 : 8), 0) / 100)), 1);
-    add({ id: `review-${key}`, label: t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary'), level: 1, height: Math.max(72, lines * 20 + 32), review: true, cell: column => ({ text: texts[column], muted: texts[column] === '—' }) });
+    add({ id: `review-${key}`, label: t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary'), level: 1, height: Math.max(72, lines * 20 + 32), review: true, cell: column => ({ text: texts[column], muted: texts[column] === '—', caution: key === 'summary' && ['bettershot', 'glisio', 'screeen'].includes(products[column].id) }) });
   });
   fieldDefinitions.filter(field => field.group === 'general' && !excluded.has(field.key)).forEach(field => addField(field, 0));
   fieldGroups.filter(group => !group.parentKey && group.key !== 'general').forEach(group => addGroup(group, 0));

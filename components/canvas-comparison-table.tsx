@@ -257,7 +257,7 @@ export function CanvasComparisonTable(props: Props) {
       const range: WindowRange = visibleRange(current.scene.rows, current.scene.products.length, width, height, scroller.scrollLeft, scroller.scrollTop, current.scene.mobile);
       const columns: number[] = [];
       linkPositions = new Map();
-      for (let column = paintRange.firstColumn; column < paintRange.endColumn; column++) {
+      for (const column of paintRange.columns) {
         const slot = animated.scene.columns?.[column];
         const targetIndex = slot?.targetIndex ?? column;
         if (targetIndex < 0) continue;

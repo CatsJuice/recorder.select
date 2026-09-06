@@ -29,15 +29,8 @@ function mergeExits(previous: string[], next: string[]) {
   }
   return [...next.flatMap(id => [...(before.get(id) ?? []).reverse(), id]), ...(before.get(null) ?? []).reverse()];
 }
-function reordered(previous: string[], next: string[]) {
-  const nextSet = new Set(next);
-  const previousSet = new Set(previous);
-  const common = previous.filter(id => nextSet.has(id));
-  return next.filter(id => previousSet.has(id)).some((id, index) => common[index] !== id);
-}
-
 type RowTween = { previousLayers?: (column: number) => Array<{ cell: TableCell; opacity: number }>; row: PaintRow; from: number; to: number; opacity: number; endOpacity: number; openness: number; endOpenness: number };
-type ColumnTween = { column: PaintColumn; from: number; to: number; opacity: number; endOpacity: number };
+type ColumnTween = { column: PaintColumn; from: number; to: number; offset: number; opacity: number; endOpacity: number };
 export type TableMotionFrame = { scene: PaintScene; totalWidth: number; totalHeight: number; running: boolean };
 
 /** Retains exits only while needed. Retargets from the current displayed geometry, never from endpoints. */
@@ -58,7 +51,7 @@ export class CanvasTableMotion {
     this.target = scene;
     this.width = width;
     this.reduced = reduced;
-    if (!previous || !!previous.mobile !== !!scene.mobile || reordered(previous.products.map(product => product.id), scene.products.map(product => product.id))) {
+    if (!previous || !!previous.mobile !== !!scene.mobile) {
       this.transitionScene = null;
       return;
     }
@@ -72,13 +65,18 @@ export class CanvasTableMotion {
     const products = productIds.map(id => scene.products[nextIndices.get(id)!] ?? previous.products[previousIndices.get(id)!]);
     const oldWidth = columnWidth(previousWidth, previous.products.length, previous.mobile);
     const newWidth = columnWidth(width, scene.products.length, scene.mobile);
+    let packedLeft = 0;
     this.columnTweens = productIds.map(id => {
       const oldIndex = previousIndices.get(id);
       const nextIndex = nextIndices.get(id);
       const old = oldIndex === undefined ? undefined : previous.columns?.[oldIndex];
       const from = old?.width ?? (oldIndex === undefined ? 0 : oldWidth);
       const to = nextIndex === undefined ? 0 : newWidth;
-      return { column: { id, top: 0, height: 0, width: from, contentWidth: nextIndex === undefined ? old?.contentWidth ?? oldWidth : newWidth, opacity: 1, targetIndex: nextIndex ?? -1 }, from: reduced ? to : from, to, opacity: old?.opacity ?? (oldIndex === undefined ? 0 : 1), endOpacity: nextIndex === undefined ? 0 : 1 };
+      // Keep each product at its painted position, even when target order and widths change together.
+      // The offset settles to zero as the packed layout reaches its destination.
+      const offset = reduced || oldIndex === undefined ? 0 : (old?.top ?? oldIndex * oldWidth) - packedLeft;
+      packedLeft += from;
+      return { column: { id, top: 0, height: 0, width: from, contentWidth: nextIndex === undefined ? old?.contentWidth ?? oldWidth : newWidth, opacity: 1, targetIndex: nextIndex ?? -1 }, from: reduced ? to : from, to, offset, opacity: old?.opacity ?? (oldIndex === undefined ? 0 : 1), endOpacity: nextIndex === undefined ? 0 : 1 };
     });
     this.rowTweens = rowIds.map(id => {
       const old = previousRows.get(id);
@@ -101,7 +99,7 @@ export class CanvasTableMotion {
         },
       }, from: reduced ? to : from, to, opacity: old?.opacity ?? (old ? 1 : 0), endOpacity: next ? 1 : 0, openness: old?.expandedProgress ?? Number(old?.expanded ?? source.expanded ?? false), endOpenness: Number(next?.expanded ?? false) };
     });
-    const changed = this.rowTweens.some(tween => tween.from !== tween.to || tween.opacity !== tween.endOpacity || tween.openness !== tween.endOpenness || !!tween.previousLayers) || this.columnTweens.some(tween => tween.from !== tween.to || tween.opacity !== tween.endOpacity);
+    const changed = this.rowTweens.some(tween => tween.from !== tween.to || tween.opacity !== tween.endOpacity || tween.openness !== tween.endOpenness || !!tween.previousLayers) || this.columnTweens.some(tween => tween.from !== tween.to || tween.offset !== 0 || tween.opacity !== tween.endOpacity);
     if (!changed) {
       // A data/selection refresh during a transition still arrives here with intermediate geometry above.
       this.transitionScene = null;
@@ -135,7 +133,7 @@ export class CanvasTableMotion {
     });
     const columns = this.columnTweens.map(tween => {
       const width = mix(tween.from, tween.to, progress);
-      const column = { ...tween.column, top: left, height: width, width, opacity: mix(tween.opacity, tween.endOpacity, progress) };
+      const column = { ...tween.column, top: left + mix(tween.offset, 0, progress), height: width, width, opacity: mix(tween.opacity, tween.endOpacity, progress) };
       left += width;
       return column;
     });
@@ -157,7 +155,10 @@ export function motionHitTest(scene: PaintScene, width: number, height: number, 
     }
   }
   const labelWidth = scene.mobile ? 0 : LABEL_WIDTH;
-  let column = x < labelWidth ? -1 : scene.columns ? rowAt(scene.columns, x - labelWidth + left) : Math.floor((x - labelWidth + left) / columnWidth(width, scene.products.length, scene.mobile));
+  const contentX = x - labelWidth + left;
+  // Sorting columns can cross. Hit the last painted column, rather than binary-searching by position.
+  const paintedColumn = scene.columns?.findLastIndex(slot => slot.width >= .1 && slot.opacity > 0 && contentX >= slot.top && contentX < slot.top + slot.width);
+  let column = x < labelWidth ? -1 : paintedColumn === undefined ? Math.floor(contentX / columnWidth(width, scene.products.length, scene.mobile)) : paintedColumn < 0 ? scene.products.length : paintedColumn;
   const contentY = y - HEADER_HEIGHT + top;
   const row = y < HEADER_HEIGHT ? -1 : rowAt(scene.rows, contentY);
   if (row >= scene.rows.length) return null;

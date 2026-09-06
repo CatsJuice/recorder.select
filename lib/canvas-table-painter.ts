@@ -4,7 +4,7 @@ import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { electronPath, tauriPath } from './technology-icon-paths';
 import { displayDomain, type Recorder } from './recorders';
 import type { TableCell, TableRow } from './comparison-table-model';
-import { HEADER_HEIGHT, LABEL_WIDTH, MIN_COLUMN_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, rowAt, visibleRange, type CellAddress } from './canvas-table-layout';
+import { HEADER_HEIGHT, LABEL_WIDTH, MIN_COLUMN_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders, visibleRange, type CellAddress } from './canvas-table-layout';
 
 export type PaintRow = TableRow & { opacity?: number; contentHeight?: number; expandedProgress?: number; targetIndex?: number; cellLayers?: (column: number) => Array<{ cell: TableCell; opacity: number }> };
 export type PaintColumn = { id: string; top: number; height: number; width: number; contentWidth: number; opacity: number; targetIndex: number };
@@ -250,11 +250,11 @@ export class CanvasTablePainter {
     const mobile = !!scene.mobile;
     const labelWidth = mobile ? 0 : LABEL_WIDTH;
     const range = visibleRange(scene.rows, scene.products.length, width, height, left, top, mobile);
-    if (scene.columns) {
-      range.firstColumn = rowAt(scene.columns, left);
-      range.endColumn = Math.min(scene.columns.length, rowAt(scene.columns, left + Math.max(0, width - labelWidth)) + 1);
-    }
-    const { cellWidth, firstColumn, endColumn, firstRow, endRow } = range;
+    // Animated columns are in paint order, not spatial order: distant columns can cross the viewport.
+    const columns = scene.columns
+      ? scene.columns.flatMap((slot, index) => slot.width >= .1 && slot.opacity > 0 && slot.top + slot.width > left && slot.top < left + Math.max(0, width - labelWidth) ? [index] : [])
+      : Array.from({ length: range.endColumn - range.firstColumn }, (_, index) => range.firstColumn + index);
+    const { cellWidth, firstRow, endRow } = range;
     const bounds = (column: number) => {
       const slot = scene.columns?.[column];
       return { x: labelWidth + (slot?.top ?? column * cellWidth) - left, width: slot?.width ?? cellWidth, contentWidth: slot ? Math.max(MIN_COLUMN_WIDTH, slot.width) : cellWidth, opacity: slot?.opacity ?? 1, index: slot?.targetIndex ?? column };
@@ -278,7 +278,7 @@ export class CanvasTablePainter {
       const y = HEADER_HEIGHT + row.top - top + labelHeight;
       const bodyHeight = row.height - labelHeight;
       if (bodyHeight < .1) continue;
-      for (let column = firstColumn; column < endColumn; column++) {
+      for (const column of columns) {
         const slot = bounds(column);
         if (slot.width < .1 || slot.opacity === 0) continue;
         ctx.save(); ctx.beginPath(); ctx.rect(slot.x, y, slot.width, bodyHeight); ctx.clip();
@@ -343,7 +343,7 @@ export class CanvasTablePainter {
     ctx.restore();
     // Frozen product headers; icons are loaded only for columns that have been visible.
     ctx.save(); ctx.beginPath(); ctx.rect(labelWidth, mobile ? MOBILE_SUMMARY_HEIGHT : 0, Math.max(0, width - labelWidth), mobile ? HEADER_HEIGHT - MOBILE_SUMMARY_HEIGHT : HEADER_HEIGHT + 1); ctx.clip();
-    for (let column = firstColumn; column < endColumn; column++) {
+    for (const column of columns) {
       const app = scene.products[column];
       const slot = bounds(column);
       if (slot.width < .1 || slot.opacity === 0) continue;
@@ -402,6 +402,6 @@ export class CanvasTablePainter {
       highlight({ row: -1, column: -1 }, 0, 0, LABEL_WIDTH, HEADER_HEIGHT);
     }
     if (!scene.products.length) this.text(ctx, scene.emptyLabel, labelWidth + Math.max(0, width - labelWidth) / 2, HEADER_HEIGHT + 50, Math.max(1, width - labelWidth - 24), { align: 'center', lines: 3, color: p.muted });
-    return range;
+    return { ...range, columns };
   }
 }

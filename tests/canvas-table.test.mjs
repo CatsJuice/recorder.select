@@ -363,6 +363,94 @@ const motionScene = (rowIds, productIds = ['a', 'b', 'c']) => ({
 });
 const closeTo = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-5, `${actual} ≠ ${expected}`);
 
+test('sorting translates whole columns by product ID on desktop and mobile', () => {
+  for (const mobile of [false, true]) {
+    const width = mobile ? 390 : 1000;
+    const cellWidth = layout.columnWidth(width, 3, mobile);
+    const motion = new CanvasTableMotion();
+    motion.update({ ...motionScene(['row']), mobile }, width, 0);
+    const target = { ...motionScene(['row'], ['c', 'b', 'a']), mobile };
+    motion.update(target, width, 10);
+    const start = motion.sample(10);
+    assert.equal(start.running, true);
+    assert.deepEqual(start.scene.columns.map(column => column.top), [2 * cellWidth, cellWidth, 0]);
+    const middle = motion.sample(110);
+    for (const [index, id] of ['c', 'b', 'a'].entries()) {
+      assert.equal(middle.scene.products[index].id, id);
+      assert.equal(middle.scene.rows[0].cell(index).text, `row:${id}`);
+      closeTo(middle.scene.columns[index].width, cellWidth);
+    }
+    assert.ok(middle.scene.columns[0].top > 0 && middle.scene.columns[0].top < 2 * cellWidth);
+    closeTo(middle.totalWidth, start.totalWidth);
+    const done = motion.sample(10 + TABLE_MOTION_DURATION);
+    assert.equal(done.scene, target);
+    assert.equal(done.running, false);
+  }
+});
+
+test('reordering retargets painted positions through reversal, filtering and resizing', () => {
+  const motion = new CanvasTableMotion();
+  const initial = motionScene(['row']);
+  motion.update(initial, 1000, 0);
+  motion.update(motionScene(['row'], ['c', 'b', 'a']), 1000, 10);
+  const changes = [
+    [90, initial, 1000],
+    [150, motionScene(['row'], ['c', 'a']), 800],
+    [200, initial, 1100],
+  ];
+  for (const [now, target, width] of changes) {
+    const before = motion.sample(now).scene;
+    motion.update(target, width, now);
+    const after = motion.sample(now).scene;
+    for (const previous of before.columns) {
+      const current = after.columns.find(column => column.id === previous.id);
+      closeTo(current.top, previous.top);
+      closeTo(current.width, previous.width);
+      closeTo(current.opacity, previous.opacity);
+    }
+  }
+  assert.equal(motion.sample(450).scene, initial);
+});
+
+test('sorting culls by painted position and hits the topmost overlapping column', () => {
+  const motion = new CanvasTableMotion();
+  const ids = Array.from({ length: 100 }, (_, index) => `app-${index}`);
+  motion.update(motionScene(['row'], ids), 1000, 0);
+  motion.update(motionScene(['row'], ids.toReversed()), 1000, 10);
+  const painter = new CanvasTablePainter(() => {});
+  const ctx = new Proxy({ measureText: text => ({ width: text.length * 7 }) }, { get: (target, key) => key in target ? target[key] : () => {} });
+  const start = motion.sample(10).scene;
+  const painted = [];
+  const cell = start.rows[0].cell;
+  start.rows[0].cell = column => { painted.push(column); return cell(column); };
+  const range = painter.draw(ctx, start, { width: 1000, height: 600, left: 0, top: 0 }, null, null, null);
+  assert.deepEqual(range.columns, [94, 95, 96, 97, 98, 99]);
+  assert.deepEqual(painted, range.columns, 'offscreen destination columns still paint at their current positions');
+  assert.deepEqual(motionHitTest(start, 1000, 600, 0, 0, 200, 180), { row: 0, column: 99 });
+  const crossing = motion.sample(10 + TABLE_MOTION_DURATION / 2).scene;
+  const front = crossing.columns.at(-1);
+  const left = front.top;
+  for (const y of [40, 180]) {
+    assert.deepEqual(motionHitTest(crossing, 1000, 600, left, 0, 210, y), { row: y < 168 ? -1 : 0, column: 99 });
+  }
+  assert.equal(motionHitTest(crossing, 1000, 600, left, 0, 990, 180), null, 'gaps between moving columns do not activate a product');
+  painter.dispose();
+});
+
+test('reduced motion and disabled animation settle reordered columns immediately', () => {
+  const motion = new CanvasTableMotion();
+  const initial = motionScene(['row']);
+  const target = motionScene(['row'], ['c', 'b', 'a']);
+  motion.update(initial, 1000, 0);
+  motion.update(target, 1000, 10, true);
+  assert.equal(motion.sample(10).scene, target);
+  assert.equal(motion.sample(10).running, false);
+  motion.update(initial, 1000, 20);
+  assert.equal(motion.sample(20).running, true);
+  motion.finish();
+  assert.equal(motion.sample(20).scene, initial);
+});
+
 test('technology labels align visible glyph bounds with icons and cache their measurements', () => {
   const painter = new CanvasTablePainter(() => {});
   let measurements = 0;

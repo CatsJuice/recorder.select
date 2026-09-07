@@ -2978,7 +2978,7 @@ export const recorders: Recorder[] = ([
     technologyApproach: 'Electron',
     platforms: ['mac'],
     supportsIntelMac: true,
-    appSizeMB: 890.7,
+    appSizeMB: 260,
     requiresRegistration: false,
     availableOnMacAppStore: false,
     isOpenSource: false,

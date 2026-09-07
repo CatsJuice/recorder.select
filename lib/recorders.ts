@@ -457,7 +457,7 @@ export const recorders: Recorder[] = ([
     website: 'https://shotbase.com/',
     lastUpdatedAt: '2026-09-01',
     lastUpdatedVersion: '1.3.2(Build 10)',
-    technologyApproach: 'Electron',
+    technologyApproach: 'Native',
     platforms: ['mac'],
     supportsIntelMac: false,
     appSizeMB: 402.9,

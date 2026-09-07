@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { GitHubLink } from '../components/github-link';
 import { Drawer } from '@base-ui/react/drawer';
 import { useEffect, useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
@@ -222,7 +223,7 @@ export default function Home() {
     <Drawer.IndentBackground className="page-sheet-background" />
     <Drawer.Indent render={<main />} className="comparison-page" data-table-initializing={!tableInitialized}>
     <div className={`page-header-slot ${tableFullWidth ? 'is-hidden' : ''}`} aria-hidden={tableFullWidth} inert={tableFullWidth}>
-      <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
+      <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><GitHubLink /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
     </div>
     <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
       <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />

@@ -100,13 +100,30 @@ export function attachTableGesture(root: HTMLElement, scroller: HTMLElement, sch
     suppressClick = false;
   };
   const interrupt = () => gesture.release(performance.now(), true);
+  const wheel = (event: WheelEvent) => {
+    interrupt();
+    // Header links are siblings of the scroller, so native wheel scrolling cannot
+    // reach it. Forward only that overlay; body scrolling remains native.
+    if (event.ctrlKey || event.defaultPrevented || !(event.target as Element).closest('.canvas-table-links')) return;
+    const unitX = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? scroller.clientWidth : 1;
+    const unitY = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? scroller.clientHeight : 1;
+    const horizontal = event.shiftKey && event.deltaX === 0;
+    const dx = (horizontal ? event.deltaY : event.deltaX) * unitX;
+    const dy = horizontal ? 0 : event.deltaY * unitY;
+    if (!dx && !dy) return;
+    event.preventDefault();
+    dirty = false;
+    scroller.scrollLeft = Math.max(0, Math.min(scroller.scrollWidth - scroller.clientWidth, scroller.scrollLeft + dx));
+    scroller.scrollTop = Math.max(0, Math.min(scroller.scrollHeight - scroller.clientHeight, scroller.scrollTop + dy));
+    schedule();
+  };
   root.addEventListener('pointerdown', down, true);
   root.addEventListener('pointermove', move, true);
   root.addEventListener('pointerup', end, true);
   root.addEventListener('pointercancel', end, true);
   root.addEventListener('lostpointercapture', end, true);
   root.addEventListener('click', click, true);
-  root.addEventListener('wheel', interrupt, { passive: true });
+  root.addEventListener('wheel', wheel, { passive: false });
   root.addEventListener('keydown', interrupt);
   return {
     update(now: number) {
@@ -126,7 +143,7 @@ export function attachTableGesture(root: HTMLElement, scroller: HTMLElement, sch
       root.removeEventListener('pointercancel', end, true);
       root.removeEventListener('lostpointercapture', end, true);
       root.removeEventListener('click', click, true);
-      root.removeEventListener('wheel', interrupt);
+      root.removeEventListener('wheel', wheel);
       root.removeEventListener('keydown', interrupt);
       if (pointer !== null && root.hasPointerCapture(pointer)) root.releasePointerCapture(pointer);
     },

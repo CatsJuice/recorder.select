@@ -44,3 +44,17 @@
     transition: none;
   }
 }
+
+.nav .nav-links .github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border-radius: 8px;
+  color: var(--ink);
+}
+.github-link svg { width: 20px; height: 20px; }
+.github-link:hover { background: var(--soft); }
+.github-link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }

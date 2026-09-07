@@ -44,3 +44,6 @@ next-env.d.ts
 .swiftpm/
 xcuserdata/
 *.xcuserstate
+
+# Offline XHS build
+/dist-xhs/

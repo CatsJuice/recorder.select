@@ -1,0 +1,26 @@
+:root{--font-geist-sans:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;--font-geist-mono:Menlo,Consolas,monospace}
+html{touch-action:manipulation}body{-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}img{max-width:100%}button,input,select{min-width:0}button:focus,a:focus,input:focus,select:focus{outline:2px solid #3678e8;outline-offset:2px}
+/* Reserve the XHS navigation controls even when the host reports no safe inset. */
+:root{--xhs-top-clearance:calc(24px + var(--safe-area-inset-top,0px))}
+@supports(padding-top:env(safe-area-inset-top)){:root{--xhs-top-clearance:calc(24px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)))}}
+.comparison-page{padding-top:24px;padding-top:var(--xhs-top-clearance)}
+.shell{margin-left:auto;margin-right:auto}.workspace{max-height:calc(var(--app-height,100vh) - 104px - var(--xhs-top-clearance))}.canvas-comparison{height:calc(var(--app-height,100vh) - 172px - var(--xhs-top-clearance))}.workspace-full-width .canvas-comparison{height:calc(var(--app-height,100vh) - 100px - var(--xhs-top-clearance))}
+.canvas-table-scroll,.filter-list,.sort-list{-webkit-overflow-scrolling:touch}.canvas-table-links a{cursor:pointer}
+.compare-dock-shell{width:600px;max-width:calc(100vw - 24px);bottom:12px;bottom:calc(12px + var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)));transition:opacity 180ms ease}
+.compare-dock-shell .compare-dock{position:relative;left:auto;bottom:auto;transform:none;width:100%}.compare-dock button{display:block}
+.canvas-weight-popover{display:none;z-index:100;transition:opacity 140ms ease;max-width:calc(100vw - 16px)}.canvas-weight-popover.xhs-popover-open{display:block;opacity:1;pointer-events:auto;transform:none}
+.no-flex-gap .brand>*+*,.no-flex-gap .nav-links>*+*,.no-flex-gap .data-tools>*+*,.no-flex-gap .compare-dock>*+*,.no-flex-gap .compare-dock-actions>*+*{margin-left:8px}
+.no-flex-gap .tool-menu-header>*+*,.no-flex-gap .search>*+*{margin-left:8px}
+@media(max-width:760px){.canvas-comparison{height:calc(var(--app-height,100vh) - 186px - var(--xhs-top-clearance))}.workspace-full-width .canvas-comparison{height:calc(var(--app-height,100vh) - 100px - var(--xhs-top-clearance))}.shell{width:calc(100% - 24px)}.brand-name{font-size:12px}.compare-dock button{display:block}.compare-dock-shell{width:calc(100vw - 24px)}}
+.toolbar.mobile-tool-sheet{height:calc(var(--app-height,100vh) - 24px - var(--xhs-top-clearance))}
+.mobile-tool-sheet .mobile-sheet-content{padding:8px 12px 20px;padding-bottom:calc(20px + var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px)))}
+.xhs-simple-motion .mobile-sheet-backdrop,.xhs-simple-motion .toolbar.mobile-tool-sheet{transition:none}
+
+html[data-table-full-width="true"] .comparison-page[data-table-initializing="true"] .canvas-comparison{height:calc(var(--app-height,100vh) - 100px - var(--xhs-top-clearance))}
+
+/* Give the inset background more headroom behind the XHS sheet. */
+@media(max-width:760px) and (prefers-reduced-motion:no-preference){
+  .comparison-page[data-active]{
+    transform:translateY(calc(24px * (1 - var(--drawer-swipe-progress,0)))) scale(calc(.96 + .04 * var(--drawer-swipe-progress,0)));
+  }
+}

@@ -1,0 +1,1809 @@
+{
+  "endedAt" : "2026-09-06T15:20:33Z",
+  "id" : "37F81E4B-79AA-443D-932C-10FA0C8C7CFB",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.0458e-05,
+      "physicalFootprintBytes" : 199493048,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.544150234,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426434560,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 199493048
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73825337344
+    },
+    {
+      "cpuPercent" : 0.43030322861827675,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.053694166,
+      "physicalFootprintBytes" : 927155760,
+      "processes" : [
+        {
+          "cpuPercent" : 0.43030322861827675,
+          "process" : {
+            "cpuTimeSeconds" : 1.548684709,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426434560,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 927155760
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.9201277955272,
+      "systemMemoryDeltaBytes" : 526630912,
+      "systemMemoryUsedBytes" : 74351968256
+    },
+    {
+      "cpuPercent" : 0.7688529769005559,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 81920,
+      "elapsedSeconds" : 2.05348075,
+      "physicalFootprintBytes" : 749520432,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7688529769005559,
+          "process" : {
+            "cpuTimeSeconds" : 1.556371892,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426516480,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 749520432
+          }
+        }
+      ],
+      "systemCPUPercent" : 362.01680672268907,
+      "systemMemoryDeltaBytes" : 264323072,
+      "systemMemoryUsedBytes" : 74089660416
+    },
+    {
+      "cpuPercent" : 1.0109846942170841,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 81920,
+      "elapsedSeconds" : 3.053491166,
+      "physicalFootprintBytes" : 756713008,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0109846942170841,
+          "process" : {
+            "cpuTimeSeconds" : 1.56648199,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426516480,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 756713008
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.89915966386553,
+      "systemMemoryDeltaBytes" : 1008713728,
+      "systemMemoryUsedBytes" : 74834051072
+    },
+    {
+      "cpuPercent" : 1.165884940580212,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 4.053524083,
+      "physicalFootprintBytes" : 744359472,
+      "processes" : [
+        {
+          "cpuPercent" : 1.165884940580212,
+          "process" : {
+            "cpuTimeSeconds" : 1.578141554,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426565632,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 744359472
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.0072504182934,
+      "systemMemoryDeltaBytes" : 635650048,
+      "systemMemoryUsedBytes" : 74460987392
+    },
+    {
+      "cpuPercent" : 1.3412517750201869,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 5.05347225,
+      "physicalFootprintBytes" : 755467824,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3412517750201869,
+          "process" : {
+            "cpuTimeSeconds" : 1.591553362,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426565632,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 755467824
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.3160854893138,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73739730944
+    },
+    {
+      "cpuPercent" : 0.9639167072026601,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 131072,
+      "elapsedSeconds" : 6.053503,
+      "physicalFootprintBytes" : 796706400,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9639167072026601,
+          "process" : {
+            "cpuTimeSeconds" : 1.601192609,
+            "diskReadBytes" : 34455552,
+            "diskWrittenBytes" : 426565632,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 796706400
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.78959149412424,
+      "systemMemoryDeltaBytes" : 290684928,
+      "systemMemoryUsedBytes" : 74116022272
+    },
+    {
+      "cpuPercent" : 1.2487891897442183,
+      "diskReadBytes" : 98304,
+      "diskWrittenBytes" : 180224,
+      "elapsedSeconds" : 7.053552,
+      "physicalFootprintBytes" : 756500016,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2487891897442183,
+          "process" : {
+            "cpuTimeSeconds" : 1.613681246,
+            "diskReadBytes" : 34553856,
+            "diskWrittenBytes" : 426614784,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 756500016
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.672442705422,
+      "systemMemoryDeltaBytes" : 707837952,
+      "systemMemoryUsedBytes" : 74533175296
+    },
+    {
+      "cpuPercent" : 1.6063705215173105,
+      "diskReadBytes" : 98304,
+      "diskWrittenBytes" : 180224,
+      "elapsedSeconds" : 8.053571208,
+      "physicalFootprintBytes" : 781370976,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6063705215173105,
+          "process" : {
+            "cpuTimeSeconds" : 1.629746071,
+            "diskReadBytes" : 34553856,
+            "diskWrittenBytes" : 426614784,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 781370976
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.4070351758794,
+      "systemMemoryDeltaBytes" : 939802624,
+      "systemMemoryUsedBytes" : 74765139968
+    },
+    {
+      "cpuPercent" : 1.3860218860572893,
+      "diskReadBytes" : 98304,
+      "diskWrittenBytes" : 180224,
+      "elapsedSeconds" : 9.05352575,
+      "physicalFootprintBytes" : 891209432,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3860218860572893,
+          "process" : {
+            "cpuTimeSeconds" : 1.643604987,
+            "diskReadBytes" : 34553856,
+            "diskWrittenBytes" : 426614784,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 891209432
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.85499163413274,
+      "systemMemoryDeltaBytes" : 310427648,
+      "systemMemoryUsedBytes" : 74135764992
+    },
+    {
+      "cpuPercent" : 2.449755407083195,
+      "diskReadBytes" : 98304,
+      "diskWrittenBytes" : 180224,
+      "elapsedSeconds" : 10.053589083,
+      "physicalFootprintBytes" : 1099269824,
+      "processes" : [
+        {
+          "cpuPercent" : 2.449755407083195,
+          "process" : {
+            "cpuTimeSeconds" : 1.668104212,
+            "diskReadBytes" : 34553856,
+            "diskWrittenBytes" : 426614784,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1099269824
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.3281075027995,
+      "systemMemoryDeltaBytes" : 529481728,
+      "systemMemoryUsedBytes" : 74354819072
+    },
+    {
+      "cpuPercent" : 2.447183473875096,
+      "diskReadBytes" : 98304,
+      "diskWrittenBytes" : 229376,
+      "elapsedSeconds" : 11.053525875,
+      "physicalFootprintBytes" : 1022805552,
+      "processes" : [
+        {
+          "cpuPercent" : 2.447183473875096,
+          "process" : {
+            "cpuTimeSeconds" : 1.692572482,
+            "diskReadBytes" : 34553856,
+            "diskWrittenBytes" : 426663936,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1022805552
+          }
+        }
+      ],
+      "systemCPUPercent" : 404.92445439283716,
+      "systemMemoryDeltaBytes" : 1334214656,
+      "systemMemoryUsedBytes" : 75159552000
+    },
+    {
+      "cpuPercent" : 2.4427678933310153,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 12.053522833,
+      "physicalFootprintBytes" : 807339712,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4427678933310153,
+          "process" : {
+            "cpuTimeSeconds" : 1.716999536,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426713088,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 807339712
+          }
+        }
+      ],
+      "systemCPUPercent" : 420.1005025125628,
+      "systemMemoryDeltaBytes" : 648364032,
+      "systemMemoryUsedBytes" : 74473701376
+    },
+    {
+      "cpuPercent" : 2.4393466120336655,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 13.05356075,
+      "physicalFootprintBytes" : 815646376,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4393466120336655,
+          "process" : {
+            "cpuTimeSeconds" : 1.741395784,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426713088,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 815646376
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.0951315053162,
+      "systemMemoryDeltaBytes" : 219119616,
+      "systemMemoryUsedBytes" : 74044456960
+    },
+    {
+      "cpuPercent" : 2.43684634685753,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 14.053534083,
+      "physicalFootprintBytes" : 854165160,
+      "processes" : [
+        {
+          "cpuPercent" : 2.43684634685753,
+          "process" : {
+            "cpuTimeSeconds" : 1.76576177,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426713088,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 854165160
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.71587743732584,
+      "systemMemoryDeltaBytes" : 264880128,
+      "systemMemoryUsedBytes" : 74090217472
+    },
+    {
+      "cpuPercent" : 2.4019312281007723,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 15.053519083,
+      "physicalFootprintBytes" : 853280424,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4019312281007723,
+          "process" : {
+            "cpuTimeSeconds" : 1.789779499,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426713088,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 853280424
+          }
+        }
+      ],
+      "systemCPUPercent" : 266.77852348993287,
+      "systemMemoryDeltaBytes" : 1017626624,
+      "systemMemoryUsedBytes" : 74842963968
+    },
+    {
+      "cpuPercent" : 2.4436971436288917,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 16.053549625,
+      "physicalFootprintBytes" : 854820520,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4436971436288917,
+          "process" : {
+            "cpuTimeSeconds" : 1.814219801,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426713088,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 854820520
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.6256983240223,
+      "systemMemoryDeltaBytes" : 962150400,
+      "systemMemoryUsedBytes" : 74787487744
+    },
+    {
+      "cpuPercent" : 2.070183835951273,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 327680,
+      "elapsedSeconds" : 17.05356375,
+      "physicalFootprintBytes" : 1034225344,
+      "processes" : [
+        {
+          "cpuPercent" : 2.070183835951273,
+          "process" : {
+            "cpuTimeSeconds" : 1.834921673,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426762240,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1034225344
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.41206030150755,
+      "systemMemoryDeltaBytes" : 537526272,
+      "systemMemoryUsedBytes" : 74362863616
+    },
+    {
+      "cpuPercent" : 2.423653043690549,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 327680,
+      "elapsedSeconds" : 18.053561208,
+      "physicalFootprintBytes" : 823772864,
+      "processes" : [
+        {
+          "cpuPercent" : 2.423653043690549,
+          "process" : {
+            "cpuTimeSeconds" : 1.859157134,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426762240,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 823772864
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.58021240916713,
+      "systemMemoryDeltaBytes" : 199426048,
+      "systemMemoryUsedBytes" : 74024763392
+    },
+    {
+      "cpuPercent" : 2.41869329133115,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 327680,
+      "elapsedSeconds" : 19.053561583,
+      "physicalFootprintBytes" : 841942720,
+      "processes" : [
+        {
+          "cpuPercent" : 2.41869329133115,
+          "process" : {
+            "cpuTimeSeconds" : 1.883343691,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426762240,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 841942720
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.8590604026846,
+      "systemMemoryDeltaBytes" : 213745664,
+      "systemMemoryUsedBytes" : 74039083008
+    },
+    {
+      "cpuPercent" : 2.422731872133209,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 327680,
+      "elapsedSeconds" : 20.053570291,
+      "physicalFootprintBytes" : 779781752,
+      "processes" : [
+        {
+          "cpuPercent" : 2.422731872133209,
+          "process" : {
+            "cpuTimeSeconds" : 1.907571146,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426762240,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 779781752
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.47236180904525,
+      "systemMemoryDeltaBytes" : 968654848,
+      "systemMemoryUsedBytes" : 74793992192
+    },
+    {
+      "cpuPercent" : 2.4691794345990963,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 21.053589041,
+      "physicalFootprintBytes" : 972818016,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4691794345990963,
+          "process" : {
+            "cpuTimeSeconds" : 1.93226432,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 972818016
+          }
+        }
+      ],
+      "systemCPUPercent" : 490.35874439461884,
+      "systemMemoryDeltaBytes" : 839450624,
+      "systemMemoryUsedBytes" : 74664787968
+    },
+    {
+      "cpuPercent" : 2.428597429287539,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 22.053598541,
+      "physicalFootprintBytes" : 936642168,
+      "processes" : [
+        {
+          "cpuPercent" : 2.428597429287539,
+          "process" : {
+            "cpuTimeSeconds" : 1.956552561,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 936642168
+          }
+        }
+      ],
+      "systemCPUPercent" : 354.1643376187814,
+      "systemMemoryDeltaBytes" : 358055936,
+      "systemMemoryUsedBytes" : 74183393280
+    },
+    {
+      "cpuPercent" : 2.447881533422461,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 23.053603125,
+      "physicalFootprintBytes" : 946063040,
+      "processes" : [
+        {
+          "cpuPercent" : 2.447881533422461,
+          "process" : {
+            "cpuTimeSeconds" : 1.981031257,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 946063040
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.99328859060404,
+      "systemMemoryDeltaBytes" : 548716544,
+      "systemMemoryUsedBytes" : 74374053888
+    },
+    {
+      "cpuPercent" : 2.4185726019690557,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 24.053577333,
+      "physicalFootprintBytes" : 776029864,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4185726019690557,
+          "process" : {
+            "cpuTimeSeconds" : 2.005213204,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 776029864
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.6871508379888,
+      "systemMemoryDeltaBytes" : 1089634304,
+      "systemMemoryUsedBytes" : 74914971648
+    },
+    {
+      "cpuPercent" : 2.4508701860000146,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 25.053613875,
+      "physicalFootprintBytes" : 777537192,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4508701860000146,
+          "process" : {
+            "cpuTimeSeconds" : 2.029723262,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 777537192
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.672442705422,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73773875200
+    },
+    {
+      "cpuPercent" : 2.3959115222605067,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 26.053607083,
+      "physicalFootprintBytes" : 695256696,
+      "processes" : [
+        {
+          "cpuPercent" : 2.3959115222605067,
+          "process" : {
+            "cpuTimeSeconds" : 2.053683089,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 695256696
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.46953605366127,
+      "systemMemoryDeltaBytes" : 127975424,
+      "systemMemoryUsedBytes" : 73953312768
+    },
+    {
+      "cpuPercent" : 1.1813709468994595,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 27.053655541,
+      "physicalFootprintBytes" : 744523336,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1813709468994595,
+          "process" : {
+            "cpuTimeSeconds" : 2.065499238,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 744523336
+          }
+        }
+      ],
+      "systemCPUPercent" : 244.63087248322148,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73596272640
+    },
+    {
+      "cpuPercent" : 1.0323960435302666,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 28.053685708,
+      "physicalFootprintBytes" : 741951048,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0323960435302666,
+          "process" : {
+            "cpuTimeSeconds" : 2.075823697,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 741951048
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.83277591973243,
+      "systemMemoryDeltaBytes" : 864387072,
+      "systemMemoryUsedBytes" : 74689724416
+    },
+    {
+      "cpuPercent" : 1.0456183669162833,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 29.053718875,
+      "physicalFootprintBytes" : 742147656,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0456183669162833,
+          "process" : {
+            "cpuTimeSeconds" : 2.086281531,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 742147656
+          }
+        }
+      ],
+      "systemCPUPercent" : 227.75919732441469,
+      "systemMemoryDeltaBytes" : 544227328,
+      "systemMemoryUsedBytes" : 74369564672
+    },
+    {
+      "cpuPercent" : 1.4217075179360166,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 360448,
+      "elapsedSeconds" : 30.053635375,
+      "physicalFootprintBytes" : 794560216,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4217075179360166,
+          "process" : {
+            "cpuTimeSeconds" : 2.100492465,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426795008,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 794560216
+          }
+        }
+      ],
+      "systemCPUPercent" : 205.7142857142857,
+      "systemMemoryDeltaBytes" : 313835520,
+      "systemMemoryUsedBytes" : 74139172864
+    },
+    {
+      "cpuPercent" : 2.5014973876728273,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 31.053741,
+      "physicalFootprintBytes" : 1199310432,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5014973876728273,
+          "process" : {
+            "cpuTimeSeconds" : 2.125513283,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1199310432
+          }
+        }
+      ],
+      "systemCPUPercent" : 304.69273743016754,
+      "systemMemoryDeltaBytes" : 628867072,
+      "systemMemoryUsedBytes" : 74454204416
+    },
+    {
+      "cpuPercent" : 2.4561717854151643,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 32.053641333,
+      "physicalFootprintBytes" : 862275144,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4561717854151643,
+          "process" : {
+            "cpuTimeSeconds" : 2.150069673,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 862275144
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.3125,
+      "systemMemoryDeltaBytes" : 625934336,
+      "systemMemoryUsedBytes" : 74451271680
+    },
+    {
+      "cpuPercent" : 1.8164833553325883,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 33.053696666,
+      "physicalFootprintBytes" : 768853624,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8164833553325883,
+          "process" : {
+            "cpuTimeSeconds" : 2.168238054,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 768853624
+          }
+        }
+      ],
+      "systemCPUPercent" : 341.7085427135678,
+      "systemMemoryDeltaBytes" : 184287232,
+      "systemMemoryUsedBytes" : 74009624576
+    },
+    {
+      "cpuPercent" : 1.8508569976797715,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 34.053667416,
+      "physicalFootprintBytes" : 811648608,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8508569976797715,
+          "process" : {
+            "cpuTimeSeconds" : 2.186744996,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 811648608
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.3065326633166,
+      "systemMemoryDeltaBytes" : 162070528,
+      "systemMemoryUsedBytes" : 73987407872
+    },
+    {
+      "cpuPercent" : 1.7716793708532452,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 35.053749,
+      "physicalFootprintBytes" : 802342496,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7716793708532452,
+          "process" : {
+            "cpuTimeSeconds" : 2.204463554,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 802342496
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.9860257126886,
+      "systemMemoryDeltaBytes" : 153796608,
+      "systemMemoryUsedBytes" : 73979133952
+    },
+    {
+      "cpuPercent" : 1.2521163278034828,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 36.053118791,
+      "physicalFootprintBytes" : 754959944,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2521163278034828,
+          "process" : {
+            "cpuTimeSeconds" : 2.216979509,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 754959944
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.8595317725753,
+      "systemMemoryDeltaBytes" : 806338560,
+      "systemMemoryUsedBytes" : 74631675904
+    },
+    {
+      "cpuPercent" : 1.3491382018408498,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 37.053689166,
+      "physicalFootprintBytes" : 801359504,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3491382018408498,
+          "process" : {
+            "cpuTimeSeconds" : 2.230475812,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 801359504
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.22153673583847,
+      "systemMemoryDeltaBytes" : 175603712,
+      "systemMemoryUsedBytes" : 74000941056
+    },
+    {
+      "cpuPercent" : 1.7635615352701786,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 38.053752,
+      "physicalFootprintBytes" : 798951008,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7635615352701786,
+          "process" : {
+            "cpuTimeSeconds" : 2.248112678,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 798951008
+          }
+        }
+      ],
+      "systemCPUPercent" : 238.05803571428567,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73623601152
+    },
+    {
+      "cpuPercent" : 1.6728064819987576,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 39.053686625,
+      "physicalFootprintBytes" : 791496312,
+      "processes" : [
+        {
+          "cpuPercent" : 1.6728064819987576,
+          "process" : {
+            "cpuTimeSeconds" : 2.264839307,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 791496312
+          }
+        }
+      ],
+      "systemCPUPercent" : 238.4572386808273,
+      "systemMemoryDeltaBytes" : 131514368,
+      "systemMemoryUsedBytes" : 73956851712
+    },
+    {
+      "cpuPercent" : 1.7569349958728477,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 40.053613666,
+      "physicalFootprintBytes" : 802342544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7569349958728477,
+          "process" : {
+            "cpuTimeSeconds" : 2.282407452,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 802342544
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.27232142857144,
+      "systemMemoryDeltaBytes" : 509657088,
+      "systemMemoryUsedBytes" : 74334994432
+    },
+    {
+      "cpuPercent" : 1.5593603124168267,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 425984,
+      "elapsedSeconds" : 41.053674958,
+      "physicalFootprintBytes" : 837174928,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5593603124168267,
+          "process" : {
+            "cpuTimeSeconds" : 2.298002211,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426860544,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 837174928
+          }
+        }
+      ],
+      "systemCPUPercent" : 353.37423312883436,
+      "systemMemoryDeltaBytes" : 540262400,
+      "systemMemoryUsedBytes" : 74365599744
+    },
+    {
+      "cpuPercent" : 1.7109786842366674,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 491520,
+      "elapsedSeconds" : 42.053203833,
+      "physicalFootprintBytes" : 993871504,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7109786842366674,
+          "process" : {
+            "cpuTimeSeconds" : 2.31510386,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426926080,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 993871504
+          }
+        }
+      ],
+      "systemCPUPercent" : 268.04238706079195,
+      "systemMemoryDeltaBytes" : 304283648,
+      "systemMemoryUsedBytes" : 74129620992
+    },
+    {
+      "cpuPercent" : 1.0187503244677563,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 540672,
+      "elapsedSeconds" : 43.053714375,
+      "physicalFootprintBytes" : 1032275528,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0187503244677563,
+          "process" : {
+            "cpuTimeSeconds" : 2.325296693,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426975232,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1032275528
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.78926774734487,
+      "systemMemoryDeltaBytes" : 373948416,
+      "systemMemoryUsedBytes" : 74199285760
+    },
+    {
+      "cpuPercent" : 0.9521310459238297,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 540672,
+      "elapsedSeconds" : 44.05374025,
+      "physicalFootprintBytes" : 739165768,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9521310459238297,
+          "process" : {
+            "cpuTimeSeconds" : 2.3348191,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426975232,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 739165768
+          }
+        }
+      ],
+      "systemCPUPercent" : 238.19095477386932,
+      "systemMemoryDeltaBytes" : 802144256,
+      "systemMemoryUsedBytes" : 74627481600
+    },
+    {
+      "cpuPercent" : 2.3116850213700837,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 540672,
+      "elapsedSeconds" : 45.052893375,
+      "physicalFootprintBytes" : 809895640,
+      "processes" : [
+        {
+          "cpuPercent" : 2.3116850213700837,
+          "process" : {
+            "cpuTimeSeconds" : 2.357910356,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426975232,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 809895640
+          }
+        }
+      ],
+      "systemCPUPercent" : 256.42458100558656,
+      "systemMemoryDeltaBytes" : 116883456,
+      "systemMemoryUsedBytes" : 73942220800
+    },
+    {
+      "cpuPercent" : 2.416632176659134,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 540672,
+      "elapsedSeconds" : 46.053228458,
+      "physicalFootprintBytes" : 895059648,
+      "processes" : [
+        {
+          "cpuPercent" : 2.416632176659134,
+          "process" : {
+            "cpuTimeSeconds" : 2.382085139,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 426975232,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 895059648
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.43575418994413,
+      "systemMemoryDeltaBytes" : 410091520,
+      "systemMemoryUsedBytes" : 74235428864
+    },
+    {
+      "cpuPercent" : 2.4568779918391557,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 638976,
+      "elapsedSeconds" : 47.053467333,
+      "physicalFootprintBytes" : 811943616,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4568779918391557,
+          "process" : {
+            "cpuTimeSeconds" : 2.406660747,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427073536,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 811943616
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.5925097820011,
+      "systemMemoryDeltaBytes" : 315752448,
+      "systemMemoryUsedBytes" : 74141089792
+    },
+    {
+      "cpuPercent" : 2.3912901463267593,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 48.053429458,
+      "physicalFootprintBytes" : 1047463616,
+      "processes" : [
+        {
+          "cpuPercent" : 2.3912901463267593,
+          "process" : {
+            "cpuTimeSeconds" : 2.430571856,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1047463616
+          }
+        }
+      ],
+      "systemCPUPercent" : 300.6703910614525,
+      "systemMemoryDeltaBytes" : 1103855616,
+      "systemMemoryUsedBytes" : 74929192960
+    },
+    {
+      "cpuPercent" : 2.4351405270991595,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 49.053656666,
+      "physicalFootprintBytes" : 801883792,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4351405270991595,
+          "process" : {
+            "cpuTimeSeconds" : 2.454928233,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 801883792
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.21836506159013,
+      "systemMemoryDeltaBytes" : 500219904,
+      "systemMemoryUsedBytes" : 74325557248
+    },
+    {
+      "cpuPercent" : 2.578034442511105,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 50.053304958,
+      "physicalFootprintBytes" : 858080960,
+      "processes" : [
+        {
+          "cpuPercent" : 2.578034442511105,
+          "process" : {
+            "cpuTimeSeconds" : 2.480700129,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 858080960
+          }
+        }
+      ],
+      "systemCPUPercent" : 345.26079641054406,
+      "systemMemoryDeltaBytes" : 204783616,
+      "systemMemoryUsedBytes" : 74030120960
+    },
+    {
+      "cpuPercent" : 2.5354612869535713,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 51.053654166,
+      "physicalFootprintBytes" : 1037305584,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5354612869535713,
+          "process" : {
+            "cpuTimeSeconds" : 2.506063635,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1037305584
+          }
+        }
+      ],
+      "systemCPUPercent" : 348.7122060470325,
+      "systemMemoryDeltaBytes" : 228474880,
+      "systemMemoryUsedBytes" : 74053812224
+    },
+    {
+      "cpuPercent" : 2.486088776639483,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 52.053648791,
+      "physicalFootprintBytes" : 859571928,
+      "processes" : [
+        {
+          "cpuPercent" : 2.486088776639483,
+          "process" : {
+            "cpuTimeSeconds" : 2.530921988,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 859571928
+          }
+        }
+      ],
+      "systemCPUPercent" : 370.67711247901514,
+      "systemMemoryDeltaBytes" : 1071251456,
+      "systemMemoryUsedBytes" : 74896588800
+    },
+    {
+      "cpuPercent" : 2.47353258559433,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 688128,
+      "elapsedSeconds" : 53.053246291,
+      "physicalFootprintBytes" : 987203240,
+      "processes" : [
+        {
+          "cpuPercent" : 2.47353258559433,
+          "process" : {
+            "cpuTimeSeconds" : 2.555650894,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427122688,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 987203240
+          }
+        }
+      ],
+      "systemCPUPercent" : 372.763083849184,
+      "systemMemoryDeltaBytes" : 526761984,
+      "systemMemoryUsedBytes" : 74352099328
+    },
+    {
+      "cpuPercent" : 2.4156216230805683,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 54.053626875,
+      "physicalFootprintBytes" : 1816528552,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4156216230805683,
+          "process" : {
+            "cpuTimeSeconds" : 2.579815734,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1816528552
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.9598662207358,
+      "systemMemoryDeltaBytes" : 1348894720,
+      "systemMemoryUsedBytes" : 75174232064
+    },
+    {
+      "cpuPercent" : 2.4006954754229657,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 55.05369575,
+      "physicalFootprintBytes" : 1699972800,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4006954754229657,
+          "process" : {
+            "cpuTimeSeconds" : 2.603826989,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1699972800
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.6871508379888,
+      "systemMemoryDeltaBytes" : 1423785984,
+      "systemMemoryUsedBytes" : 75249123328
+    },
+    {
+      "cpuPercent" : 1.5397470829455573,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 56.053257958,
+      "physicalFootprintBytes" : 753976928,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5397470829455573,
+          "process" : {
+            "cpuTimeSeconds" : 2.619218399,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 753976928
+          }
+        }
+      ],
+      "systemCPUPercent" : 270.2008928571429,
+      "systemMemoryDeltaBytes" : 1010532352,
+      "systemMemoryUsedBytes" : 74835869696
+    },
+    {
+      "cpuPercent" : 1.5302554784921516,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 57.053737208,
+      "physicalFootprintBytes" : 750503520,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5302554784921516,
+          "process" : {
+            "cpuTimeSeconds" : 2.634529879,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 750503520
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.66852367688023,
+      "systemMemoryDeltaBytes" : 636076032,
+      "systemMemoryUsedBytes" : 74461413376
+    },
+    {
+      "cpuPercent" : 1.3841415907610057,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 58.053742875,
+      "physicalFootprintBytes" : 744375904,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3841415907610057,
+          "process" : {
+            "cpuTimeSeconds" : 2.648371025,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 744375904
+          }
+        }
+      ],
+      "systemCPUPercent" : 241.47568474007826,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 73695166464
+    },
+    {
+      "cpuPercent" : 1.5770306841801842,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 59.052739083,
+      "physicalFootprintBytes" : 742688352,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5770306841801842,
+          "process" : {
+            "cpuTimeSeconds" : 2.664123516,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 742688352
+          }
+        }
+      ],
+      "systemCPUPercent" : 222.99107142857144,
+      "systemMemoryDeltaBytes" : 225886208,
+      "systemMemoryUsedBytes" : 74051223552
+    },
+    {
+      "cpuPercent" : 1.4285270847633358,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 60.053434875,
+      "physicalFootprintBytes" : 742164040,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4285270847633358,
+          "process" : {
+            "cpuTimeSeconds" : 2.678420446,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 742164040
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.03678929765886,
+      "systemMemoryDeltaBytes" : 663257088,
+      "systemMemoryUsedBytes" : 74488594432
+    },
+    {
+      "cpuPercent" : 1.5742673077942353,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 61.0537095,
+      "physicalFootprintBytes" : 738395720,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5742673077942353,
+          "process" : {
+            "cpuTimeSeconds" : 2.694165245,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 738395720
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.9760178471835,
+      "systemMemoryDeltaBytes" : 638861312,
+      "systemMemoryUsedBytes" : 74464198656
+    },
+    {
+      "cpuPercent" : 0.561802835532688,
+      "diskReadBytes" : 180224,
+      "diskWrittenBytes" : 901120,
+      "elapsedSeconds" : 61.910397833,
+      "physicalFootprintBytes" : 733136432,
+      "processes" : [
+        {
+          "cpuPercent" : 0.561802835532688,
+          "process" : {
+            "cpuTimeSeconds" : 2.698978348,
+            "diskReadBytes" : 34635776,
+            "diskWrittenBytes" : 427335680,
+            "executablePath" : "/Applications/Setapp/CleanShot X.app/Contents/MacOS/CleanShot X Setapp",
+            "identity" : {
+              "pid" : 54515,
+              "startTimeNanoseconds" : 17215219841895
+            },
+            "name" : "CleanShot X Setapp",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 733136432
+          }
+        }
+      ],
+      "systemCPUPercent" : 243.75,
+      "systemMemoryDeltaBytes" : 128466944,
+      "systemMemoryUsedBytes" : 73953804288
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-06T15:19:31Z",
+  "summary" : {
+    "averageCPUPercent" : 1.8635575899265342,
+    "averagePhysicalFootprintBytes" : 858718309,
+    "averageSystemCPUPercent" : 287.2714637932975,
+    "averageSystemMemoryDeltaBytes" : 511398213,
+    "cpuTimeSeconds" : 1.1548281139999999,
+    "diskReadBytes" : 180224,
+    "diskWrittenBytes" : 901120,
+    "durationSeconds" : 61.910397833,
+    "p95CPUPercent" : 2.486088776639483,
+    "p95SystemCPUPercent" : 372.763083849184,
+    "peakCPUPercent" : 2.578034442511105,
+    "peakPhysicalFootprintBytes" : 1816528552,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 490.35874439461884,
+    "peakSystemMemoryDeltaBytes" : 1423785984,
+    "physicalFootprintDeltaBytes" : 533643384
+  },
+  "target" : {
+    "build" : "5.0",
+    "bundleIdentifier" : "com.getcleanshot.app-setapp",
+    "bundlePath" : "/Applications/Setapp/CleanShot X.app",
+    "name" : "CleanShot X",
+    "recorderID" : "cleanshot-x",
+    "version" : "5.0"
+  }
+}

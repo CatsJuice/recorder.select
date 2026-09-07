@@ -201,7 +201,7 @@ export function createComparisonModel(options: ModelOptions) {
     const texts = products.map(app => subjectiveReviewFor(options.locale, app.id, key) ?? '—');
     // Conservative line budget at the minimum column width; stable when scrolling horizontally.
     const lines = texts.reduce((max, text) => Math.max(max, Math.ceil(Array.from(text).reduce((size, character) => size + (character.charCodeAt(0) > 255 ? 14 : 8), 0) / 100)), 1);
-    add({ id: `review-${key}`, label: t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary'), level: 1, height: Math.max(72, lines * 20 + 32), review: true, cell: column => ({ text: texts[column], muted: texts[column] === '—', caution: key === 'summary' && ['bettershot', 'glisio', 'screeen', 'recordly'].includes(products[column].id) }) });
+    add({ id: `review-${key}`, label: t(key === 'ui' ? 'subjectiveUi' : key === 'ux' ? 'subjectiveUx' : 'subjectiveSummary'), level: 1, height: Math.max(72, lines * 20 + 32), review: true, cell: column => ({ text: texts[column], muted: texts[column] === '—', caution: key === 'summary' && ['bettershot', 'glisio', 'screeen', 'screenmovie', 'recordly'].includes(products[column].id) }) });
   });
   fieldDefinitions.filter(field => field.group === 'general' && !excluded.has(field.key)).forEach(field => addField(field, 0));
   fieldGroups.filter(group => !group.parentKey && group.key !== 'general').forEach(group => addGroup(group, 0));

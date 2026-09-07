@@ -96,8 +96,14 @@ sources.cap = {
   "recording": "data/benchmarks/cap/cap-recording-2026-09-04-170247.json"
 };
 
+sources['cleanshot-x'] = {
+  recording: 'data/benchmarks/cleanshot-x/cleanshot-x-recording-2026-09-06-231745.json',
+  preview: 'data/benchmarks/cleanshot-x/cleanshot-x-preview-2026-09-06-231931.json',
+  export: 'data/benchmarks/cleanshot-x/cleanshot-x-export-2026-09-06-232117.json',
+};
+
 const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
-  ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
+  ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap', 'cleanshot-x'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
   : '5K';
 
 // Anomalies belong to a specific measurement, not every future run of the app.

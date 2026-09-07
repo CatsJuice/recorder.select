@@ -37,7 +37,7 @@ export default function SubmitPage() {
 
   const output = format === 'json'
     ? JSON.stringify(data, null, 2)
-    : `Add the following screen recorder to Recorder Select. Verify the official data before publishing.\n\n${editableFieldDefinitions.map((field) => {
+    : `Submit a pull request to https://github.com/CatsJuice/recorder.select to add or update the following screen recorder. Follow the repository contribution instructions and existing data schema in lib/recorders.ts. Verify the supplied information against official sources, keep unverified fields unknown, and avoid duplicating an existing recorder. Make the change on a separate branch (fork the repository if needed), run the relevant checks, and open a PR with a summary, source links, and validation results. Return the PR URL.\n\n${editableFieldDefinitions.map((field) => {
       const value = data[field.key];
       const displayValue = field.type === 'boolean' ? (value === null ? 'Unknown' : value ? 'Yes' : 'No') : Array.isArray(value) ? value.join(', ') || 'None' : value === '' || value === null ? 'Unknown' : value;
       return `${fieldLabel(field)}: ${displayValue}`;

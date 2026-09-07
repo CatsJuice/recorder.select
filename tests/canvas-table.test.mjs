@@ -800,3 +800,37 @@ test('Screendrop export measurement renders its warning and deeper background', 
   }
   painter.dispose();
 });
+
+test('header link overlay forwards wheel scrolling without doubling native body scrolling or capturing zoom', () => {
+  const listeners = new Map();
+  const root = {
+    addEventListener: (name, handler) => listeners.set(name, handler),
+    removeEventListener: name => listeners.delete(name),
+    hasPointerCapture: () => false,
+  };
+  const scroller = { scrollLeft: 100, scrollTop: 200, scrollWidth: 2000, scrollHeight: 3000, clientWidth: 400, clientHeight: 700 };
+  let frames = 0, prevented = 0;
+  const adapter = attachTableGesture(root, scroller, () => frames++, () => {});
+  const event = { target: { closest: selector => selector === '.canvas-table-links' ? {} : null }, deltaX: 60, deltaY: 0, deltaMode: 0, preventDefault: () => prevented++ };
+  const wheel = listeners.get('wheel');
+  wheel(event);
+  assert.equal(scroller.scrollLeft, 160);
+  assert.equal(scroller.scrollTop, 200);
+  adapter.update(100);
+  assert.equal(scroller.scrollLeft, 160, 'pending gesture frame does not undo wheel scrolling');
+  wheel({ ...event, shiftKey: true, deltaX: 0, deltaY: 2, deltaMode: 1 });
+  assert.equal(scroller.scrollLeft, 192, 'shift + line wheel scrolls horizontally');
+  wheel({ ...event, deltaX: 1, deltaY: 1, deltaMode: 2 });
+  assert.equal(scroller.scrollLeft, 592);
+  assert.equal(scroller.scrollTop, 900);
+  wheel({ ...event, deltaX: -9999 });
+  assert.equal(scroller.scrollLeft, 0);
+  wheel({ ...event, target: { closest: () => null } });
+  wheel({ ...event, ctrlKey: true });
+  wheel({ ...event, defaultPrevented: true });
+  assert.equal(scroller.scrollLeft, 0, 'native body scroll, pinch zoom and handled events are untouched');
+  assert.equal(prevented, 4);
+  assert.equal(frames, 4);
+  adapter.dispose();
+  assert.equal(listeners.size, 0);
+});

@@ -4,6 +4,10 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: '延续 CleanShot 一贯的精美 UI，精致',
+    summary: '有基础功能，但不多',
+  },
   cap: {
     ui: "还行",
     summary: "开源，免费，功能较完善",
@@ -34,6 +38,7 @@ const zhCN: Record<string, SubjectiveReview> = {
     summary: "功能和界面和 Screendrop 基本一模一样，根据仓库对比得出，BetterShot 建仓更早，但后来大量复制了 Screendrop 的代码，未注明来源，请自行斟酌",
   },
   screeen: { summary: '因下载需要付费，尚未测试，仅作列出。' },
+  screenmovie: { summary: '需要付费下载，未体验' },
   matte: {
     ui: '精致、干净',
     ux: '交互都很直观，但是设置项较多',
@@ -70,6 +75,10 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'Continues CleanShot’s tradition of beautiful, polished UI.',
+    summary: 'Offers basic features, but not many.',
+  },
   cap: {
     ui: "Decent.",
     summary: "Open source, free, and fairly comprehensive in features.",
@@ -100,6 +109,7 @@ const en: Record<string, SubjectiveReview> = {
     summary: "The features and interface are almost identical to Screendrop. A comparison of the repositories indicates that BetterShot was created earlier, but later copied large amounts of Screendrop code without attribution. Please use your own judgment.",
   },
   screeen: { summary: 'Not tested because downloading requires payment; listed for reference only.' },
+  screenmovie: { summary: 'Requires payment to download; not tested.' },
   matte: {
     ui: 'Polished and clean.',
     ux: 'The interactions are intuitive, but there are many settings.',
@@ -135,6 +145,10 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: '延續 CleanShot 一貫的精美 UI，精緻',
+    summary: '有基本功能，但不多',
+  },
   cap: {
     ui: "還行",
     summary: "開源，免費，功能較完善",
@@ -165,6 +179,7 @@ const zhTW: Record<string, SubjectiveReview> = {
     summary: "功能和介面與 Screendrop 基本一模一樣，根據倉庫比對得出，BetterShot 建倉更早，但後來大量複製了 Screendrop 的程式碼，未註明來源，請自行斟酌",
   },
   screeen: { summary: '因下載需要付費，尚未測試，僅作列出。' },
+  screenmovie: { summary: '需要付費下載，未體驗' },
   matte: {
     ui: '精緻、乾淨',
     ux: '互動都很直覺，但設定項目較多',
@@ -188,6 +203,10 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'CleanShot らしい美しく洗練された UI を受け継いでいる。',
+    summary: '基本的な機能はあるが、数は少ない。',
+  },
   cap: {
     ui: "まずまず。",
     summary: "オープンソースで無料。機能も比較的充実している。",
@@ -218,6 +237,7 @@ const ja: Record<string, SubjectiveReview> = {
     summary: "機能とインターフェースは Screendrop とほぼ同一です。リポジトリの比較によると、BetterShot のリポジトリは先に作成されましたが、その後 Screendrop のコードを大量にコピーし、出典を明記していません。各自でご判断ください。",
   },
   screeen: { summary: 'ダウンロードが有料のため未検証。参考情報として掲載のみ。' },
+  screenmovie: { summary: 'ダウンロードには購入が必要なため、未体験。' },
   matte: {
     ui: '洗練されていて、すっきりしている。',
     ux: '操作はどれも直感的だが、設定項目が多い。',
@@ -241,6 +261,10 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'CleanShot 특유의 아름답고 세련된 UI를 이어간다.',
+    summary: '기본 기능은 있지만 많지는 않다.',
+  },
   cap: {
     ui: "괜찮음.",
     summary: "오픈 소스이며 무료이고, 기능도 비교적 잘 갖춰져 있음.",
@@ -271,6 +295,7 @@ const ko: Record<string, SubjectiveReview> = {
     summary: "기능과 인터페이스는 Screendrop과 거의 동일합니다. 저장소를 비교한 결과 BetterShot의 저장소가 먼저 만들어졌지만, 이후 출처를 밝히지 않고 Screendrop의 코드를 대량으로 복사했습니다. 각자 신중히 판단해 주세요.",
   },
   screeen: { summary: '다운로드에 결제가 필요하여 테스트하지 않았으며, 참고용으로만 등록했습니다.' },
+  screenmovie: { summary: '다운로드에 결제가 필요하여 사용해 보지 않았습니다.' },
   matte: {
     ui: '세련되고 깔끔하다.',
     ux: '조작은 모두 직관적이지만 설정 항목이 많다.',
@@ -294,6 +319,10 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'Mantiene la interfaz atractiva y cuidada que caracteriza a CleanShot.',
+    summary: 'Ofrece funciones básicas, pero no muchas.',
+  },
   cap: {
     ui: "Aceptable.",
     summary: "De código abierto, gratuito y con funciones bastante completas.",
@@ -324,6 +353,7 @@ const es: Record<string, SubjectiveReview> = {
     summary: "Las funciones y la interfaz son casi idénticas a las de Screendrop. La comparación de los repositorios indica que BetterShot se creó antes, pero posteriormente copió grandes cantidades de código de Screendrop sin atribución. Valóralo por tu cuenta.",
   },
   screeen: { summary: 'No se ha probado porque la descarga requiere pago; se incluye solo como referencia.' },
+  screenmovie: { summary: 'La descarga requiere pago; no se ha probado.' },
   matte: {
     ui: 'Cuidada y limpia.',
     ux: 'Las interacciones son intuitivas, pero hay muchos ajustes.',
@@ -347,6 +377,10 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'Conserve la belle interface soignée qui caractérise CleanShot.',
+    summary: 'Propose des fonctions de base, mais peu nombreuses.',
+  },
   cap: {
     ui: "Correcte.",
     summary: "Open source, gratuit et assez complet en fonctionnalités.",
@@ -377,6 +411,7 @@ const fr: Record<string, SubjectiveReview> = {
     summary: "Les fonctionnalités et l’interface sont presque identiques à celles de Screendrop. La comparaison des dépôts indique que celui de BetterShot a été créé plus tôt, mais que de grandes quantités de code de Screendrop ont ensuite été copiées sans attribution. À chacun de se faire son opinion.",
   },
   screeen: { summary: 'Non testé, car le téléchargement est payant ; répertorié uniquement à titre indicatif.' },
+  screenmovie: { summary: 'Le téléchargement est payant ; non testé.' },
   matte: {
     ui: 'Soignée et épurée.',
     ux: 'Les interactions sont intuitives, mais les réglages sont nombreux.',
@@ -400,6 +435,10 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'Führt die für CleanShot typische schöne und sorgfältig gestaltete Oberfläche fort.',
+    summary: 'Bietet grundlegende Funktionen, aber nicht viele.',
+  },
   cap: {
     ui: "Ordentlich.",
     summary: "Open Source, kostenlos und mit recht umfangreichen Funktionen.",
@@ -430,6 +469,7 @@ const de: Record<string, SubjectiveReview> = {
     summary: "Funktionen und Oberfläche sind mit Screendrop nahezu identisch. Der Vergleich der Repositories zeigt, dass BetterShot früher angelegt wurde, später jedoch große Mengen Screendrop-Code ohne Quellenangabe kopierte. Bitte bilde dir selbst ein Urteil.",
   },
   screeen: { summary: 'Nicht getestet, da der Download kostenpflichtig ist; nur zur Information aufgeführt.' },
+  screenmovie: { summary: 'Der Download ist kostenpflichtig; noch nicht getestet.' },
   matte: {
     ui: 'Ausgefeilt und aufgeräumt.',
     ux: 'Die Interaktionen sind intuitiv, allerdings gibt es viele Einstellungen.',
@@ -453,6 +493,10 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  'cleanshot-x': {
+    ui: 'Mantém a interface bonita e refinada que caracteriza o CleanShot.',
+    summary: 'Oferece recursos básicos, mas não muitos.',
+  },
   cap: {
     ui: "Razoável.",
     summary: "Código aberto, gratuito e com recursos bastante completos.",
@@ -483,6 +527,7 @@ const ptBR: Record<string, SubjectiveReview> = {
     summary: "As funções e a interface são quase idênticas às do Screendrop. A comparação dos repositórios indica que o BetterShot foi criado antes, mas depois copiou grandes quantidades de código do Screendrop sem atribuição. Avalie por conta própria.",
   },
   screeen: { summary: 'Não testado porque o download exige pagamento; listado apenas como referência.' },
+  screenmovie: { summary: 'O download exige pagamento; ainda não testado.' },
   matte: {
     ui: 'Refinada e limpa.',
     ux: 'As interações são intuitivas, mas há muitas configurações.',

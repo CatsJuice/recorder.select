@@ -46,6 +46,36 @@ const canvasMessages: Record<Locale, Messages> = {
 };
 for (const locale of locales) Object.assign(messages[locale], canvasMessages[locale]);
 
+Object.assign(en, {
+  viewScores: 'View scores',
+  scoreContribution: 'Score at current weight', scoreBase: 'Base', scoreFormula: 'Score = base × weight',
+  scoreRanking: 'Rank {rank} of {participants} measured products · {direction}', scoreLower: 'Lower is better', scoreHigher: 'Higher is better',
+  scoreRankScope: 'Ranked across the full dataset, unaffected by filters. Equal values tie; missing and reviewed outliers are excluded.',
+  scoreRankPosition: 'Ascending distinct-value position: {position} / {distinct}.',
+  scoreRankRule: 'The ascending position is mapped to 10 tiers. round means rounding to the nearest integer; the base ranges from 0.1 to 1.',
+  scoreSingleValue: 'All eligible values are equal, so each receives a base of 1.',
+  scoreMissing: 'No valid measurement or value: base = 0.', scoreOutlier: 'Reviewed anomalous measurement: excluded from ranking, base = 0.',
+  scoreFree: 'Free: base = 1.', scorePlatforms: 'Supported platforms / 3, capped at 1.',
+  scoreRegistration: 'Registration required: base = 0.5; not required: base = 1.',
+  scoreBoolean: 'Supported: base = 1; unsupported: base = 0.', scoreOptions: 'Selected options / available options, capped at 1.',
+  scoreSelect: 'Option rank / highest option rank.',
+});
+Object.assign(zhCN, {
+  viewScores: '查看得分',
+  scoreContribution: '当前权重下的得分', scoreBase: '基数', scoreFormula: '得分 = 基数 × 权重',
+  scoreRanking: '在 {participants} 款有效数据的软件中排名第 {rank} · {direction}', scoreLower: '越低越好', scoreHigher: '越高越好',
+  scoreRankScope: '按全量数据排名，不受筛选影响；相同数值并列，缺失值和已标记异常值不参与排名。',
+  scoreRankPosition: '数值从小到大去重后的位置：第 {position} / {distinct} 档。',
+  scoreRankRule: '将去重后的位置映射到 10 个计分档位。round 表示四舍五入取整，基数范围为 0.1～1。',
+  scoreSingleValue: '有效数值全部相同，每项基数均为 1。',
+  scoreMissing: '没有有效数据，基数为 0。', scoreOutlier: '该测量已标记异常，不参与排名，基数为 0。',
+  scoreFree: '免费，基数为 1。', scorePlatforms: '支持的平台数 ÷ 3，上限为 1。',
+  scoreRegistration: '需要注册：基数为 0.5；无需注册：基数为 1。',
+  scoreBoolean: '支持：基数为 1；不支持：基数为 0。', scoreOptions: '已选选项数 ÷ 可用选项数，上限为 1。',
+  scoreSelect: '选项等级 ÷ 最高选项等级。',
+});
+
+
 const groupNames: Partial<Record<Locale, Record<string,string>>> = {
   'zh-CN': {general:'通用',aiAutomation:'AI 与自动化',pricing:'价格',screenshots:'截图',zoomEffects:'缩放效果',dynamicBlur:'运动模糊',animationAdjustments:'动画调整',camera3d:'3D 运镜',recording:'录制',microphoneRecording:'麦克风录制',systemAudioRecording:'系统音频录制',cameraRecording:'相机录制',cameraLayouts:'摄像头布局',customBackgrounds:'自定义背景',pictureAdjustments:'画面调整',deviceFrames:'设备套壳',models3d:'3D 模型',annotations:'标注',cursor:'光标',transcription:'字幕与转录',backgroundMusic:'背景音乐',keystrokes:'按键',exportSharing:'导出与分享',presets:'预设'},
   'zh-TW': {general:'一般',aiAutomation:'AI 與自動化',pricing:'價格',screenshots:'截圖',zoomEffects:'縮放效果',dynamicBlur:'動態模糊',animationAdjustments:'動畫調整',camera3d:'3D 運鏡',recording:'錄製',microphoneRecording:'麥克風錄製',systemAudioRecording:'系統音訊錄製',cameraRecording:'相機錄製',cameraLayouts:'攝影機版面',customBackgrounds:'自訂背景',pictureAdjustments:'畫面調整',deviceFrames:'裝置外框',models3d:'3D 模型',annotations:'標註',cursor:'游標',transcription:'字幕與轉錄',backgroundMusic:'背景音樂',keystrokes:'按鍵',exportSharing:'匯出與分享',presets:'預設'},

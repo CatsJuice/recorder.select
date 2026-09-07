@@ -9,6 +9,7 @@ import { HEADER_HEIGHT, LABEL_WIDTH, MOBILE_SUMMARY_HEIGHT, mobileStickyHeaders,
 import { CanvasTableMotion, motionHitTest } from '../lib/canvas-table-motion';
 import { CanvasScrollEdge } from '../lib/canvas-scroll-edge';
 import { attachTableGesture } from '../lib/canvas-table-gesture';
+import { CellScoreDetail } from './cell-score-detail';
 import { focusRecorderEvent } from '../lib/comparison-table-events';
 
 type Props = Omit<ModelOptions, 'locale' | 't' | 'fieldLabel' | 'fieldUnit' | 'groupLabel' | 'mobile'> & {
@@ -27,7 +28,7 @@ const SCROLL_EDGE_WIDTH = 80;
 const sameAddress = (a: CellAddress | null, b: CellAddress | null) => a?.row === b?.row && a?.column === b?.column;
 
 export function CanvasComparisonTable(props: Props) {
-  const { animationsEnabled, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, scores, selected, bottomSafeArea } = props;
+  const { showScores, cellScores, animationsEnabled, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, scores, selected, bottomSafeArea } = props;
   const { locale, t, fieldLabel, fieldUnit, groupLabel } = useI18n();
   const [mobile, setMobile] = useState(false);
   useLayoutEffect(() => {
@@ -37,7 +38,7 @@ export function CanvasComparisonTable(props: Props) {
     query.addEventListener('change', sync);
     return () => query.removeEventListener('change', sync);
   }, []);
-  const model = useMemo(() => createComparisonModel({ mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel }), [mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel]);
+  const model = useMemo(() => createComparisonModel({ showScores, cellScores, mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel }), [showScores, cellScores, mobile, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, locale, t, fieldLabel, fieldUnit, groupLabel]);
   const scene = useMemo<PaintScene>(() => ({ mobile, products, rows: model.rows, scores, selected: new Set(selected), title: t('recorders', { count: products.length }), subtitle: t(compareMode ? 'selectedRecorders' : 'selectToCompare'), resetLabel: t('resetWeights'), scoreLabel: t('score'), emptyLabel: t('noMatches') }), [mobile, products, model.rows, scores, selected, compareMode, t]);
   const [focused, setFocused] = useState<FocusedCell>({ rowId: null, productId: null });
   const [hasFocus, setHasFocus] = useState(false);
@@ -59,6 +60,7 @@ export function CanvasComparisonTable(props: Props) {
   const scheduleRef = useRef<() => void>(() => {});
   const paintedSceneRef = useRef<PaintScene | null>(null);
   const instantRef = useRef(false);
+  const previousShowScores = useRef(showScores);
   const syncLinksRef = useRef<() => void>(() => {});
   const hoverRef = useRef<CellAddress | null>(null);
   const pointerRef = useRef<{ x: number; y: number; left: number; top: number } | null>(null);
@@ -154,10 +156,11 @@ export function CanvasComparisonTable(props: Props) {
   useEffect(() => cancelWeightClose, [cancelWeightClose]);
 
   useLayoutEffect(() => {
+    if (previousShowScores.current !== showScores) { instantRef.current = true; previousShowScores.current = showScores; }
     currentRef.current = { scene, totalHeight: model.totalHeight, bottomSafeArea, active, hasFocus, animationsEnabled };
     hoverRef.current = null;
     scheduleRef.current();
-  }, [scene, model.totalHeight, bottomSafeArea, active, hasFocus, animationsEnabled]);
+  }, [scene, model.totalHeight, bottomSafeArea, active, hasFocus, animationsEnabled, showScores]);
 
   useLayoutEffect(() => { syncLinksRef.current(); }, [windowRange, products]);
 
@@ -492,6 +495,7 @@ export function CanvasComparisonTable(props: Props) {
     <dialog ref={dialogRef} className="canvas-table-dialog" aria-label={editorRow?.label} onClose={() => { setEditor(null); scrollerRef.current?.focus({ preventScroll: true }); }} onClick={event => { if (event.target === event.currentTarget) event.currentTarget.close(); }}>
       <div><header><strong>{editorRow?.label}</strong><button type="button" aria-label={t('close')} onClick={() => dialogRef.current?.close()}>×</button></header>
         <small>{products[editorColumn]?.name}</small><p className="canvas-cell-detail">{editorCell?.text}</p>{editorCell?.secondary && <small>{editorCell.secondary}</small>}
+        {editorRow && products[editorColumn] && <CellScoreDetail fieldKey={editorRow.id} productId={products[editorColumn].id} weight={fieldWeights[editorRow.id] ?? 5} profiles={performanceProfiles} status={performanceStatus} />}
       </div>
     </dialog>
   </div>;

@@ -12,6 +12,7 @@ export type TableCell = {
   freePrice?: boolean;
   best?: boolean;
   extreme?: 'low' | 'high';
+  scoreExtreme?: 'best' | 'worst';
   outlier?: boolean;
   caution?: boolean;
   bar?: number;
@@ -20,6 +21,7 @@ export type TableCell = {
   heatThresholds?: readonly number[];
 };
 export type TableRow = {
+  scorePreview?: boolean;
   id: string;
   label: string;
   level: number;
@@ -35,6 +37,8 @@ export type TableRow = {
 };
 export type ModelOptions = {
   mobile?: boolean;
+  showScores?: boolean;
+  cellScores?: Record<string, Record<string, number>>;
   products: Recorder[];
   compareMode: boolean;
   hideIdentical: boolean;
@@ -67,12 +71,37 @@ export function createComparisonModel(options: ModelOptions) {
   // Cells are created on first visible use, not as an eagerly allocated N × M matrix.
   const add = (row: Omit<TableRow, 'top'> & { mobileLabelOnly?: boolean }) => {
     const { mobileLabelOnly, ...source } = row;
-    const renderedRow = { ...source, labelHeight: options.mobile ? MOBILE_LABEL_HEIGHT : undefined, height: options.mobile ? MOBILE_LABEL_HEIGHT + (mobileLabelOnly ? 0 : row.height) : row.height };
+    const renderedRow = { ...source, scorePreview: options.showScores, labelHeight: options.mobile ? MOBILE_LABEL_HEIGHT : undefined, height: options.mobile ? MOBILE_LABEL_HEIGHT + (mobileLabelOnly && !options.showScores ? 0 : row.height) : row.height };
+    let scoreValues: Array<number | undefined> | undefined;
+    let scoreLow = 0;
+    let scoreHigh = 0;
+    const prepareScores = () => {
+      if (scoreValues) return;
+      const group = fieldGroups.find(group => group.key === row.id);
+      const fields = group ? groupFields.get(group.key)! : fieldDefinitions.filter(field => field.key === row.id);
+      const keys = fields.filter(field => field.scoreable !== false && field.key !== 'technologyApproach').map(field => field.key);
+      scoreValues = products.map(product => {
+        const scores = options.cellScores?.[product.id] ?? {};
+        const scored = keys.filter(key => Object.hasOwn(scores, key) && Number.isFinite(scores[key]));
+        return scored.length ? Number(scored.reduce((sum, key) => sum + scores[key], 0).toFixed(2)) : undefined;
+      });
+      const valid = scoreValues.filter((value): value is number => value !== undefined);
+      scoreLow = valid.reduce((min, value) => Math.min(min, value), Infinity);
+      scoreHigh = valid.reduce((max, value) => Math.max(max, value), -Infinity);
+    };
     rows.push({ ...renderedRow, top: totalHeight, cell: column => {
       const key = `${row.id}:${column}`;
       let cell = cellCache.get(key);
       if (!cell) {
-        cell = row.cell(column);
+        if (options.showScores) {
+          prepareScores();
+          const value = scoreValues![column];
+          cell = value === undefined ? { text: '' } : { text: String(value) };
+          if (value !== undefined && scoreHigh > scoreLow) {
+            if (value === scoreHigh) cell.scoreExtreme = 'best';
+            else if (value === scoreLow) cell.scoreExtreme = 'worst';
+          }
+        } else cell = row.cell(column);
         if (cellCache.size >= 4096) cellCache.delete(cellCache.keys().next().value!);
       } else cellCache.delete(key);
       cellCache.set(key, cell);

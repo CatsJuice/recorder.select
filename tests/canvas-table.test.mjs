@@ -834,3 +834,157 @@ test('header link overlay forwards wheel scrolling without doubling native body 
   adapter.dispose();
   assert.equal(listeners.size, 0);
 });
+
+test('all performance summaries contribute ranked, adjustable scores from loaded profiles', async () => {
+  const { performanceFields } = await server.ssrLoadModule('/lib/performance.ts');
+  const fields = fieldDefinitions.filter(field => performanceFields[field.key]);
+  assert.equal(fields.length, 13);
+  assert.ok(fields.every(field => field.scoreable && field.higherIsBetter === false));
+  const products = ['fast', 'tied', 'slow', 'missing', 'invalid', 'outlier'].map(id => ({ ...recorders[0], id }));
+  const run = value => ({ summary: { durationSeconds: value, averageCPUPercent: 999, peakCPUPercent: 999,
+    averageSystemCPUPercent: value, peakSystemCPUPercent: value,
+    averagePhysicalFootprintBytes: 999, peakPhysicalFootprintBytes: 999,
+    averageSystemMemoryDeltaBytes: value, peakSystemMemoryDeltaBytes: value }, samples: [] });
+  const profile = value => Object.fromEntries(['recording', 'preview', 'export'].map(scenario => [scenario, run(value)]));
+  const profiles = { fast: profile(0), tied: profile(0), slow: profile(100), invalid: profile(NaN), outlier: profile(1) };
+  for (const run of Object.values(profiles.outlier)) run.outlierFields = fields.map(field => field.key);
+  const before = createScoreContributions(products, fields);
+  assert.ok(before.fast.every(value => value === 0));
+  const scores = createScoreContributions(products, fields, profiles);
+  for (const [index, field] of fields.entries()) {
+    assert.equal(scores.fast[index], 1, field.key);
+    assert.equal(scores.tied[index], 1, field.key);
+    assert.ok(Math.abs(scores.slow[index] - .1) < 1e-10, field.key);
+    for (const id of ['missing', 'invalid', 'outlier']) assert.equal(scores[id][index], 0, `${id}: ${field.key}`);
+  }
+  assert.equal(calculateRecorderScore(scores.fast, fields, {}), 65);
+  assert.equal(calculateRecorderScore(scores.fast, fields, { exportDuration: 0 }), 60);
+  const model = createComparisonModel({ ...base, products, performanceProfiles: profiles,
+    expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) });
+  for (const field of fields) assert.equal(model.rows.find(row => row.id === field.key).weightKey, field.key);
+});
+
+test('performance filters compare inclusive thresholds in %, GiB and seconds', async () => {
+  const { matchesPerformanceFilter, performanceValue } = await server.ssrLoadModule('/lib/performance.ts');
+  for (const [key, raw, threshold] of [['recordingCpuAverage', 25, 25], ['previewMemoryPeak', 2 * 1024 ** 3, 2], ['exportDuration', 12.5, 12.5]]) {
+    assert.equal(matchesPerformanceFilter(raw, key, `lte:${threshold}`), true);
+    assert.equal(matchesPerformanceFilter(raw, key, `gte:${threshold}`), true);
+    assert.equal(matchesPerformanceFilter(raw, key, `lte:${threshold - .1}`), false);
+    assert.equal(matchesPerformanceFilter(raw, key, `gte:${threshold + .1}`), false);
+    assert.equal(matchesPerformanceFilter(undefined, key, `lte:${threshold}`), false);
+    assert.equal(matchesPerformanceFilter(undefined, key, 'unknown'), true);
+    assert.equal(matchesPerformanceFilter(raw, key, 'unknown'), false);
+    assert.equal(matchesPerformanceFilter(undefined, key, 'any'), true);
+    for (const input of ['lte:', 'lte:NaN', 'gte:Infinity', 'lte:-1']) assert.equal(matchesPerformanceFilter(raw, key, input), false);
+  }
+  assert.equal(matchesPerformanceFilter(0, 'recordingCpuPeak', 'lte:0'), true);
+  assert.equal(performanceValue({ bad: { export: { summary: { durationSeconds: Infinity } } } }, 'bad', 'exportDuration'), undefined);
+});
+
+test('filter and sort menus retain every ancestor of nested performance fields', async () => {
+  const { groupToolbarFields } = await server.ssrLoadModule('/lib/toolbar-fields.ts');
+  const { performanceFields } = await server.ssrLoadModule('/lib/performance.ts');
+  for (const fields of [fieldDefinitions, fieldDefinitions.filter(field => performanceFields[field.key])]) {
+    const groups = groupToolbarFields(fields);
+    assert.ok(groups.some(group => group.key === 'performance'));
+    for (const group of groups) {
+      if (group.parentKey) {
+        const parentIndex = groups.findIndex(parent => parent.key === group.parentKey);
+        assert.ok(parentIndex >= 0 && parentIndex < groups.indexOf(group));
+      }
+    }
+    assert.equal(groups.find(group => group.key === 'performanceRecordingCPU').depth, 2);
+  }
+});
+
+test('score explanations expose competition ranks, distinct positions and exact tier formulas', async () => {
+  const { createFieldScoreEvaluator } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
+  const field = fieldDefinitions.find(field => field.key === 'recordingCpuAverage');
+  const products = [10, 20, 20, 30, null].map((value, index) => ({ ...recorders[0], id: String(index), testValue: value }));
+  const profiles = Object.fromEntries(products.filter(product => product.testValue !== null).map(product => [product.id, { recording: { summary: { averageCPUPercent: product.testValue }, samples: [] } }]));
+  const evaluate = createFieldScoreEvaluator(products, field, profiles);
+  const tied = evaluate(products[1]);
+  assert.deepEqual(tied.ranking, { rank: 2, participants: 4, ascendingRank: 2, distinct: 3, lowerIsBetter: true });
+  assert.equal(tied.formula, '1 − round((2 − 1) / (3 − 1) × 9) / 10 = 0.5');
+  assert.equal(tied.base, .5);
+  assert.equal(evaluate(products[2]).base, tied.base);
+  assert.equal(evaluate(products[3]).ranking.rank, 4);
+  assert.equal(evaluate(products[4]).reason, 'scoreMissing');
+  const contributions = createScoreContributions(products, [field], profiles);
+  for (const product of products) {
+    assert.equal(contributions[product.id][0], evaluate(product).base);
+    for (const weight of [0, 2.5, 10]) assert.equal(calculateRecorderScore(contributions[product.id], [field], { [field.key]: weight }), evaluate(product).base * weight);
+  }
+});
+
+test('explanations preserve ascending formulas for higher-is-better and equal values', async () => {
+  const { createFieldScoreEvaluator } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
+  const field = { key: 'metric', type: 'number', higherIsBetter: true };
+  const products = [1, 2, 3].map((metric, id) => ({ id: String(id), metric }));
+  const detail = createFieldScoreEvaluator(products, field)(products[1]);
+  assert.equal(detail.base, .6);
+  assert.equal(detail.formula, '0.1 + round((2 − 1) / (3 − 1) × 9) / 10 = 0.6');
+  assert.equal(createFieldScoreEvaluator(products, field)(products[2]).ranking.rank, 1);
+  const single = createFieldScoreEvaluator([products[0]], field)(products[0]);
+  assert.equal(single.base, 1);
+  assert.equal(single.reason, 'scoreSingleValue');
+  assert.equal(single.formula, '1');
+});
+
+test('non-numeric score explanations account for special rules and exclusions', async () => {
+  const { createFieldScoreEvaluator } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
+  for (const [key, value, base, reason] of [
+    ['monthlyPrice', 0, 1, 'scoreFree'], ['requiresRegistration', true, .5, 'scoreRegistration'],
+    ['platforms', ['mac', 'win'], 2 / 3, 'scorePlatforms'], ['supportsCli', false, 0, 'scoreBoolean'],
+    ['technologyApproach', 'native', 0, 'notScored'], ['appSizeMB', null, 0, 'scoreMissing'],
+  ]) {
+    const field = fieldDefinitions.find(field => field.key === key);
+    const product = { ...recorders[0], [key]: value };
+    const detail = createFieldScoreEvaluator([product], field)(product);
+    assert.equal(detail.base, base, key);
+    assert.equal(detail.reason, reason, key);
+  }
+});
+
+test('score preview replaces values and charts, sums descendants once and restores original cells', () => {
+  const product = recorders[0];
+  const cellScores = { [product.id]: { recordingCpuAverage: 2.5, recordingCpuPeak: 1,
+    recordingMemoryAverage: 3, recordingMemoryPeak: 0, exportDuration: 4 } };
+  const options = { ...base, products: [product], cellScores,
+    expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) };
+  const original = createComparisonModel(options);
+  const preview = createComparisonModel({ ...options, showScores: true });
+  const cell = id => preview.rows.find(row => row.id === id).cell(0);
+  assert.deepEqual(cell('recordingCpuAverage'), { text: '2.5' });
+  assert.deepEqual(cell('recordingMemoryPeak'), { text: '0' });
+  assert.deepEqual(cell('performanceRecordingCPU'), { text: '3.5' });
+  assert.deepEqual(cell('performanceRecording'), { text: '6.5' });
+  assert.deepEqual(cell('performance'), { text: '10.5' });
+  assert.deepEqual(cell('subjectiveReviews'), { text: '' });
+  assert.equal(preview.totalHeight, original.totalHeight);
+  const restored = createComparisonModel({ ...options, showScores: false });
+  for (const row of original.rows) assert.deepEqual(restored.rows.find(other => other.id === row.id).cell(0), row.cell(0));
+  const collapsed = createComparisonModel({ ...options, showScores: true, expandedGroups: { performance: false } });
+  assert.equal(collapsed.rows.find(row => row.id === 'performance').cell(0).text, '10.5');
+  const hidden = createComparisonModel({ ...options, showScores: true, compareMode: true, hideIdentical: true, identicalFieldKeys: new Set(['recordingCpuAverage']) });
+  assert.equal(hidden.rows.find(row => row.id === 'performance').cell(0).text, '10.5');
+  const reweighted = createComparisonModel({ ...options, showScores: true, cellScores: { [product.id]: { ...cellScores[product.id], exportDuration: 0 } } });
+  assert.equal(reweighted.rows.find(row => row.id === 'performance').cell(0).text, '6.5');
+});
+
+test('score preview formats at most two decimals, hides unscored fields and marks row extrema including ties', () => {
+  const products = recorders.slice(0, 4);
+  const cellScores = Object.fromEntries(products.map((product, index) => [product.id, { recordingCpuAverage: [2.5, 0, 2.5, 1.234][index], technologyApproach: 0 }]));
+  const options = { ...base, products, cellScores, showScores: true, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) };
+  const model = createComparisonModel(options);
+  for (const key of ['recordingCpuAverage', 'performanceRecordingCPU', 'performance']) {
+    const row = model.rows.find(row => row.id === key);
+    assert.deepEqual(row.cell(0), { text: '2.5', scoreExtreme: 'best' });
+    assert.deepEqual(row.cell(1), { text: '0', scoreExtreme: 'worst' });
+    assert.deepEqual(row.cell(2), { text: '2.5', scoreExtreme: 'best' });
+    assert.deepEqual(row.cell(3), { text: '1.23' });
+  }
+  assert.deepEqual(model.rows.find(row => row.id === 'technologyApproach').cell(0), { text: '' });
+  const tied = createComparisonModel({ ...options, products: [products[0], products[2]] });
+  assert.deepEqual(tied.rows.find(row => row.id === 'performance').cell(0), { text: '2.5' });
+});

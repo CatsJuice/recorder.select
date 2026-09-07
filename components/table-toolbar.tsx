@@ -8,19 +8,11 @@ import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, us
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDownWideShort, faBars, faCheck, faChevronDown, faChevronRight, faCompress, faExpand, faFilter, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownWideShort, faCalculator, faBars, faCheck, faChevronDown, faChevronRight, faCompress, faExpand, faFilter, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { fieldGroups, type FieldDefinition } from '../lib/recorders';
 import { useI18n } from '../lib/i18n';
-
-const fieldGroupDepth = (groupKey: FieldDefinition['group']) => {
-  let depth = 0;
-  let group = fieldGroups.find((item) => item.key === groupKey);
-  while (group?.parentKey) {
-    depth += 1;
-    group = fieldGroups.find((item) => item.key === group?.parentKey);
-  }
-  return depth;
-};
+import { performanceFields } from '../lib/performance';
+import { groupToolbarFields } from '../lib/toolbar-fields';
 
 const defaultSortDirection = (field: FieldDefinition): SortDirection =>
   field.type === 'boolean' && field.booleanBest === false ? 'asc'
@@ -33,6 +25,26 @@ export type SortRule = {
   direction: SortDirection;
 };
 
+function PerformanceFilter({ field, value, onChange }: { field: FieldDefinition; value: string; onChange: (value: string) => void }) {
+  const { t, fieldLabel } = useI18n();
+  const [operator, threshold] = value.split(':');
+  const numeric = operator === 'lte' || operator === 'gte';
+  const format = performanceFields[field.key].format;
+  const unit = format === 'cpu' ? '%' : format === 'memory' ? 'GiB' : 's';
+  return <div className="performance-filter">
+    <select aria-label={`${t('filters')}: ${fieldLabel(field)}`} value={operator} onChange={event => {
+      const next = event.target.value;
+      onChange(next === 'lte' || next === 'gte' ? `${next}:${threshold ?? '0'}` : next);
+    }}>
+      <option value="any">{t('any')}</option>
+      <option value="lte">≤</option>
+      <option value="gte">≥</option>
+      <option value="unknown">{t('unknown')}</option>
+    </select>
+    {numeric && <><input type="number" min="0" step="any" value={threshold ?? ''} aria-label={`${fieldLabel(field)} (${unit})`} onChange={event => onChange(`${operator}:${event.target.value}`)} /><span>{unit}</span></>}
+  </div>;
+}
+
 type TableToolbarProps = {
   query: string;
   onQueryChange: (value: string) => void;
@@ -42,6 +54,8 @@ type TableToolbarProps = {
   sortableFields: FieldDefinition[];
   sortRules: SortRule[];
   onSortRulesChange: (rules: SortRule[]) => void;
+  showScores: boolean;
+  onShowScoresChange: (show: boolean) => void;
   fullWidth: boolean;
   onFullWidthChange: (fullWidth: boolean) => void;
 };
@@ -73,11 +87,7 @@ function GroupedFieldSelect({ rule, index, sortableFields, sortRules, onUpdate, 
   const triggerRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const selectedField = sortableFields.find((field) => field.key === rule.key);
-  const groupedFields = fieldGroups.map((group) => ({
-    ...group,
-    depth: fieldGroupDepth(group.key),
-    fields: sortableFields.filter((field) => field.group === group.key),
-  })).filter((group) => group.fields.length > 0);
+  const groupedFields = groupToolbarFields(sortableFields);
   const groupIsVisible = (groupKey: string) => {
     let group = fieldGroups.find((candidate) => candidate.key === groupKey);
     while (group?.parentKey) {
@@ -293,6 +303,8 @@ export function TableToolbar({
   sortableFields,
   sortRules,
   onSortRulesChange,
+  showScores,
+  onShowScoresChange,
   fullWidth,
   onFullWidthChange,
 }: TableToolbarProps) {
@@ -301,6 +313,7 @@ export function TableToolbar({
   const filterTriggerRef = useRef<HTMLButtonElement>(null);
   const sortTriggerRef = useRef<HTMLButtonElement>(null);
   const [openPanel, setOpenPanel] = useState<'filter' | 'sort' | null>(null);
+  const [scoresPinned, setScoresPinned] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [expandedFilterGroups, setExpandedFilterGroups] = useState<Record<string, boolean>>(() => Object.fromEntries(fieldGroups.map((group) => [group.key, group.key === 'general'])));
   const toolsRef = useRef<HTMLDivElement>(null);
@@ -314,11 +327,7 @@ export function TableToolbar({
       group = fieldGroups.find((candidate) => candidate.key === group?.parentKey);
     }
   }
-  const groupedFilterFields = fieldGroups.map((group) => ({
-    ...group,
-    depth: fieldGroupDepth(group.key),
-    fields: filterFields.filter((field) => field.group === group.key),
-  })).filter((group) => group.fields.length > 0);
+  const groupedFilterFields = groupToolbarFields(filterFields);
   const filterGroupIsVisible = (groupKey: string) => {
     let group = fieldGroups.find((candidate) => candidate.key === groupKey);
     while (group?.parentKey) {
@@ -389,6 +398,19 @@ export function TableToolbar({
       </label>
 
       <div className="data-tools" ref={toolsRef}>
+        <button type="button" className="icon-tool score-preview-toggle" aria-label={t('viewScores')} title={t('viewScores')} aria-pressed={scoresPinned} data-preview={showScores}
+          onPointerEnter={event => { if (event.pointerType !== 'touch') onShowScoresChange(true); }}
+          onPointerLeave={() => { if (!scoresPinned) onShowScoresChange(false); }}
+          onPointerCancel={() => { if (!scoresPinned) onShowScoresChange(false); }}
+          onFocus={event => { if (event.currentTarget.matches(':focus-visible')) onShowScoresChange(true); }}
+          onBlur={() => { if (!scoresPinned) onShowScoresChange(false); }}
+          onClick={() => {
+            const pinned = !scoresPinned;
+            setScoresPinned(pinned);
+            onShowScoresChange(pinned);
+          }}
+          onKeyDown={event => { if (event.key === 'Escape') { setScoresPinned(false); onShowScoresChange(false); } }}
+        ><FontAwesomeIcon className="tool-icon" icon={faCalculator} aria-hidden="true" /></button>
         <button
           type="button"
           className="icon-tool width-toggle"
@@ -414,6 +436,10 @@ export function TableToolbar({
                 <button type="button" className="filter-group-title" aria-expanded={expanded} onClick={() => setExpandedFilterGroups((current) => ({...current,[group.key]:!expanded}))}><FontAwesomeIcon icon={faChevronRight} aria-hidden="true" /><span>{groupLabel(group)}</span>{activeInGroup > 0 && <small>{activeInGroup}</small>}</button>
                 <div className="filter-group-fields" inert={!expanded}><div>
                 {group.fields.map((field) => {
+                  if (performanceFields[field.key]) return <div className="filter-row" key={field.key}>
+                    <span title={fieldLabel(field)}>{fieldLabel(field)}</span>
+                    <PerformanceFilter field={field} value={filters[field.key] ?? 'any'} onChange={value => onFilterChange(field.key, value)} />
+                  </div>;
                   const choices = field.type === 'boolean'
                     ? [{value:'any',label:t('any')},{value:'yes',label:t('yes')},{value:'no',label:t('no')},{value:'unknown',label:t('unknown')}]
                     : [{value:'any',label:t('any')},...(field.options ?? []).map((option)=>({...option,label:optionLabel(option)})),{value:'unknown',label:t('unknown')}];

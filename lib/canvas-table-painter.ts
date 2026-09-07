@@ -22,8 +22,8 @@ export type PaintScene = {
   emptyLabel: string;
 };
 export type Viewport = { width: number; height: number; left: number; top: number };
-const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', bar: '#e8f0fd', freePrice: '#16804a', low: '#e6f4ed', high: '#fff0ed', outlier: '#f4b4ae', focus: '#3678e8', highlight: '#fff4cd', heat: ['#29956c', '#80a536', '#c29a25', '#df7835', '#d64c4c'] };
-const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', bar: '#18273c', freePrice: '#63cda0', low: '#132c24', high: '#342019', outlier: '#782e2a', focus: '#7aaaff', highlight: '#3b331c', heat: ['#63cda0', '#afd36c', '#e8c65b', '#f6a362', '#f47c7c'] };
+const light = { background: '#ffffff', label: '#fcfcfc', group: '#f7f7f7', ink: '#111111', muted: '#767676', line: '#e8e8e8', selected: '#f2f2f2', best: '#eff8ef', bar: '#e8f0fd', freePrice: '#16804a', scoreBest: '#16804a', scoreWorst: '#c0392b', low: '#e6f4ed', high: '#fff0ed', outlier: '#f4b4ae', focus: '#3678e8', highlight: '#fff4cd', heat: ['#29956c', '#80a536', '#c29a25', '#df7835', '#d64c4c'] };
+const dark = { background: '#0e0e0e', label: '#111111', group: '#181818', ink: '#f2f2f2', muted: '#a0a0a0', line: '#2a2a2a', selected: '#222222', best: '#18291c', bar: '#18273c', freePrice: '#63cda0', scoreBest: '#63cda0', scoreWorst: '#f47c7c', low: '#132c24', high: '#342019', outlier: '#782e2a', focus: '#7aaaff', highlight: '#3b331c', heat: ['#63cda0', '#afd36c', '#e8c65b', '#f6a362', '#f47c7c'] };
 const iconDefinitions = { mac: faApple, win: faWindows, linux: faLinux, native: faSwift, warning: faTriangleExclamation };
 
 /** Retained resource caches; the only per-frame work is the visible rectangle. */
@@ -213,7 +213,7 @@ export class CanvasTablePainter {
       ctx.save(); ctx.globalAlpha *= .16; ctx.fillStyle = color; ctx.fill(); ctx.restore();
       if (cell.secondary) this.text(ctx, cell.secondary, x + width / 2, y + 15, width - 20, { size: 11, color: p.muted, align: 'center' });
     } else if (row.review) {
-      this.text(ctx, cell.text, x + 16, y + height / 2, width - 32, { weight: 400, lines: Math.max(1, Math.floor((height - 24) / 20)), lineHeight: 20, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
+      this.text(ctx, cell.text, x + 16, y + height / 2, width - 32, { weight: 400, lines: Math.max(1, Math.floor((height - 24) / 20)), lineHeight: 20, color: cell.scoreExtreme === 'best' ? p.scoreBest : cell.scoreExtreme === 'worst' ? p.scoreWorst : cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
     } else if (cell.icons?.length && cell.icons.every(icon => ['mac', 'win', 'linux'].includes(icon))) {
       cell.icons.forEach((icon, index) => this.icon(ctx, icon, x + width / 2 + (index - (cell.icons!.length - 1) / 2) * 28, y + height / 2, 17));
     } else {
@@ -237,9 +237,9 @@ export class CanvasTablePainter {
         }));
         const groupLeft = x + (width - iconSize - gap - measuredWidth) / 2;
         this.icon(ctx, leadingIcon, groupLeft + iconSize / 2, centerY, iconSize);
-        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, visualCenter: true, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
+        this.text(ctx, cell.text, groupLeft + iconSize + gap, centerY, labelWidth, { lines: 2, visualCenter: true, color: cell.scoreExtreme === 'best' ? p.scoreBest : cell.scoreExtreme === 'worst' ? p.scoreWorst : cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
       } else {
-        this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, color: cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
+        this.text(ctx, cell.text, x + width / 2, centerY, width - 24, { align: 'center', lines: 2, ...(row.scorePreview ? { size: 16, weight: 500 } : {}), color: cell.scoreExtreme === 'best' ? p.scoreBest : cell.scoreExtreme === 'worst' ? p.scoreWorst : cell.freePrice ? p.freePrice : cell.muted ? p.muted : p.ink });
       }
       if (cell.secondary) this.text(ctx, cell.secondary, x + width / 2, y + height / 2 + 15, width - 20, { size: 11, color: p.muted, align: 'center' });
     }

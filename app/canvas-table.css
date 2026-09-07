@@ -37,3 +37,10 @@ html[data-table-full-width='true'] .comparison-page[data-table-initializing='tru
 html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .page-header-slot .nav{transform:translateY(-100%)}
 html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .workspace{width:calc(100% - 32px)}
 html[data-table-full-width='true'] .comparison-page[data-table-initializing='true'] .canvas-comparison{height:calc(100dvh - 100px)}
+
+.cell-score-breakdown{border-top:1px solid var(--line);margin-top:20px;padding-top:16px;font-size:14px;line-height:1.6}
+.cell-score-breakdown p{margin:10px 0}
+.cell-score-total{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.cell-score-total strong{font-size:26px;font-variant-numeric:tabular-nums}
+.cell-score-breakdown code{display:block;padding:10px 12px;border-radius:8px;background:var(--soft);font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;user-select:text}
+.cell-score-breakdown .cell-score-path,.cell-score-breakdown .cell-score-note{color:var(--muted);font-size:13px}

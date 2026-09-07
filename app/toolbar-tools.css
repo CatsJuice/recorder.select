@@ -1070,3 +1070,11 @@ td.best-value{background:rgba(22,163,74,.08);color:#137333;transition:background
 [data-theme='dark'] .language-menu button:hover,
 [data-theme='dark'] .language-menu button:focus-visible{background:#222;color:#fff}
 [data-theme='dark'] .language-menu button.selected{background:#292929;color:#fff}
+
+.performance-filter{display:flex;align-items:center;gap:8px;min-width:0}
+.performance-filter select,.performance-filter input{height:34px;min-width:0;border:1px solid var(--line);border-radius:6px;background:var(--soft);color:var(--ink);padding:0 8px;font-size:13px}
+.performance-filter select{flex:0 1 100px}
+.performance-filter input{width:80px;flex:1}
+.performance-filter>span{font-size:12px;color:var(--muted)}
+
+.toolbar .score-preview-toggle{flex-shrink:0}

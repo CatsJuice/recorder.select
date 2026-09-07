@@ -67,7 +67,8 @@ export const performanceFields: Record<string, PerformanceField> = {
 export const performanceValue = (profiles: PerformanceProfiles, recorderId: string, fieldKey: string) => {
   const field = performanceFields[fieldKey];
   const run = field ? profiles[recorderId]?.[field.scenario] : undefined;
-  return field && run ? field.value(run.summary) : undefined;
+  const value = field && run ? field.value(run.summary) : undefined;
+  return typeof value === 'number' && Number.isFinite(value) ? value : undefined;
 };
 
 export const performanceFieldMaximum = (profiles: PerformanceProfiles, fieldKey: string, recorderIds = Object.keys(profiles)) => {
@@ -135,4 +136,16 @@ if (import.meta.hot) {
   import.meta.hot.accept('./performance-profiles.generated', () => {
     window.location.reload();
   });
+}
+
+/** Filter thresholds use the same units as the table: %, GiB and seconds. */
+export function matchesPerformanceFilter(value: number | undefined, fieldKey: string, filter: string) {
+  if (filter === 'any') return true;
+  if (filter === 'unknown') return value === undefined;
+  const [operator, input] = filter.split(':');
+  if (!['lte', 'gte'].includes(operator) || !input?.trim()) return false;
+  const threshold = Number(input);
+  if (!Number.isFinite(threshold) || threshold < 0 || value === undefined) return false;
+  const displayedValue = performanceFields[fieldKey]?.format === 'memory' ? value / 1024 ** 3 : value;
+  return operator === 'lte' ? displayedValue <= threshold : displayedValue >= threshold;
 }

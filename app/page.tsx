@@ -13,9 +13,9 @@ import { CanvasComparisonTable } from '../components/canvas-comparison-table';
 import { useI18n } from '../lib/i18n';
 import { calculateRecorderScore, createScoreContributions } from '../lib/recorder-scoring';
 import { fieldDefinitions, fieldGroups, recorders, type FieldDefinition } from '../lib/recorders';
-import { loadPerformanceProfiles, performanceFields, performanceValue, type PerformanceProfiles } from '../lib/performance';
+import { loadPerformanceProfiles, matchesPerformanceFilter, performanceFields, performanceValue, type PerformanceProfiles } from '../lib/performance';
 
-const filterableFields = fieldDefinitions.filter((field) => field.type === 'boolean' || field.type === 'select' || field.type === 'multiselect');
+const filterableFields = fieldDefinitions.filter((field) => field.type === 'boolean' || field.type === 'select' || field.type === 'multiselect' || !!performanceFields[field.key]);
 const defaultFilters = Object.fromEntries(filterableFields.map((field) => [field.key, 'any']));
 const updateMetadataKeys = ['lastUpdatedAt', 'lastUpdatedVersion'] as const;
 const sortableFields = fieldDefinitions.filter((field) => field.key !== 'website');
@@ -24,7 +24,6 @@ const weightedFields = fieldDefinitions.filter((field) => !nonWeightedFieldKeys.
 const defaultFieldWeights = Object.fromEntries(weightedFields.map((field) => [field.key, 5]));
 const fieldWeightsStorageKey = 'recorder-select:field-weights:v1';
 const tableFullWidthStorageKey = 'recorder-select:table-full-width:v1';
-const scoreContributions = createScoreContributions(recorders, weightedFields);
 
 type TransitionDocument = Document & {
   startViewTransition?: (update: () => void) => { finished: Promise<void> };
@@ -46,6 +45,7 @@ const updateWithTransition = (kind: 'selection' | 'compare', update: () => void)
 export default function Home() {
   const { t } = useI18n();
   const [query, setQuery] = useState('');
+  const [showScores, setShowScores] = useState(false);
   const [filters, setFilters] = useState<Record<string, string>>(() => ({...defaultFilters}));
   const [sortRules, setSortRules] = useState<SortRule[]>([{ id: 'score-default', key: 'score', direction: 'desc' }]);
   const [selected, setSelected] = useState<string[]>([]);
@@ -63,7 +63,7 @@ export default function Home() {
   const [chatExpanded, setChatExpanded] = useState(false);
   const [subjectiveReviewsExpanded, setSubjectiveReviewsExpanded] = useState(false);
   useEffect(() => {
-    if ((!expandedGroups.performance && !sortRules.some(rule => performanceFields[rule.key])) || performanceStatus !== 'idle') return;
+    if (performanceStatus !== 'idle') return;
     setPerformanceStatus('loading');
     loadPerformanceProfiles()
       .then((profiles) => {
@@ -73,7 +73,7 @@ export default function Home() {
       .catch(() => {
         setPerformanceStatus('error');
       });
-  }, [expandedGroups.performance, performanceStatus, sortRules]);
+  }, [performanceStatus]);
   useEffect(() => {
     try {
       const stored = JSON.parse(window.localStorage.getItem(fieldWeightsStorageKey) ?? '{}') as Record<string, unknown>;
@@ -124,7 +124,9 @@ export default function Home() {
     });
     return () => { cancelAnimationFrame(restoredFrame); cancelAnimationFrame(paintedFrame); };
   }, [tableFullWidthHydrated, fieldWeightsHydrated]);
-  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, calculateRecorderScore(scoreContributions[recorder.id], weightedFields, fieldWeights)])), [fieldWeights]);
+  const scoreContributions = useMemo(() => createScoreContributions(recorders, weightedFields, performanceProfiles), [performanceProfiles]);
+  const cellScores = useMemo(() => Object.fromEntries(recorders.map(recorder => [recorder.id, Object.fromEntries(weightedFields.map((field, index) => [field.key, scoreContributions[recorder.id][index] * (fieldWeights[field.key] ?? 5)]))])), [scoreContributions, fieldWeights]);
+  const recorderScores = useMemo(() => Object.fromEntries(recorders.map((recorder) => [recorder.id, calculateRecorderScore(scoreContributions[recorder.id], weightedFields, fieldWeights)])), [fieldWeights, scoreContributions]);
   const orderedRecorders = useMemo(() => [...recorders].sort((a,b) => {
       for (const rule of sortRules) {
         const left = rule.key === 'score' ? recorderScores[a.id] : performanceValue(performanceProfiles, a.id, rule.key) ?? a[rule.key];
@@ -152,6 +154,7 @@ export default function Home() {
     .filter((app) => filterableFields.every((field) => {
       const filter = filters[field.key] ?? 'any';
       const value = performanceValue(performanceProfiles, app.id, field.key) ?? app[field.key];
+      if (performanceFields[field.key]) return matchesPerformanceFilter(performanceValue(performanceProfiles, app.id, field.key), field.key, filter);
       if (filter === 'any') return true;
       if (filter === 'unknown') return value === null || value === undefined;
       if (field.type === 'boolean') return typeof value === 'boolean' && value === (filter === 'yes');
@@ -204,6 +207,7 @@ export default function Home() {
   const updateFiltersFromChat = (nextFilters: Array<{ key: string; value: string }>) => {
     const requested = new Map(nextFilters.filter((filter) => {
       const field = fieldDefinitions.find((candidate) => candidate.key === filter.key);
+      if (field && performanceFields[field.key]) return filter.value === 'unknown' || /^(lte|gte):(?:\d+(?:\.\d*)?|\.\d+)$/.test(filter.value);
       return field?.type === 'boolean'
         ? ['yes', 'no', 'unknown'].includes(filter.value)
         : (field?.type === 'select' || field?.type === 'multiselect') && field.options?.some((option) => option.value === filter.value);
@@ -226,8 +230,8 @@ export default function Home() {
       <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><GitHubLink /><Link className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></Link></div></nav>
     </div>
     <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
-      <TableToolbar query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
-      <CanvasComparisonTable animationsEnabled={tableInitialized} products={visible} scores={recorderScores} selected={selected} compareMode={compareMode} hideIdentical={hideIdentical} identicalFieldKeys={identicalFieldKeys} expandedGroups={expandedGroups} subjectiveReviewsExpanded={subjectiveReviewsExpanded} performanceProfiles={performanceProfiles} performanceStatus={performanceStatus} fieldWeights={fieldWeights} bottomSafeArea={tableBottomSafeArea} onToggleProduct={toggleCompare} onToggleGroup={toggleGroup} onWeightChange={(key, weight) => setFieldWeights(current => ({ ...current, [key]: weight }))} onResetWeights={() => setFieldWeights({ ...defaultFieldWeights })} />
+      <TableToolbar showScores={showScores} onShowScoresChange={setShowScores} query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
+      <CanvasComparisonTable showScores={showScores} cellScores={cellScores} animationsEnabled={tableInitialized} products={visible} scores={recorderScores} selected={selected} compareMode={compareMode} hideIdentical={hideIdentical} identicalFieldKeys={identicalFieldKeys} expandedGroups={expandedGroups} subjectiveReviewsExpanded={subjectiveReviewsExpanded} performanceProfiles={performanceProfiles} performanceStatus={performanceStatus} fieldWeights={fieldWeights} bottomSafeArea={tableBottomSafeArea} onToggleProduct={toggleCompare} onToggleGroup={toggleGroup} onWeightChange={(key, weight) => setFieldWeights(current => ({ ...current, [key]: weight }))} onResetWeights={() => setFieldWeights({ ...defaultFieldWeights })} />
     </section>
     <div className={`compare-dock-shell t-resize ${chatExpanded?'chat-expanded':''} ${selected.length===0?'is-empty':''}`}>{selected.length>0&&<div className="compare-dock" style={{bottom:chatHeight+8}}><div className="compare-dock-summary"><div className="compare-avatars">{displayedSelection.map((id)=>{const app=recorders.find((item)=>item.id===id)!;return <span key={id} style={{background:app.icon ? 'transparent' : app.accent,viewTransitionName:`compare-avatar-${id}`}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span>})}{overflowSelectionCount>0&&<span className="avatar-overflow" style={{viewTransitionName:'compare-avatar-overflow'}}>+{overflowSelectionCount}</span>}</div>{compareMode?<label className="hide-identical-control"><input type="checkbox" checked={hideIdentical} onChange={(event)=>setHideIdentical(event.target.checked)} /><span>{t('hideIdentical')}</span></label>:<p><strong>{t('selected',{count:selected.length})}</strong><small>{t('ready')}</small></p>}</div><div className="compare-dock-actions"><button className="clear-selection" onClick={clearSelection}>{t('clear')}</button><button className={`compare-action ${compareMode?'exit':''}`} aria-pressed={compareMode} onClick={()=>setCompareMode((current)=>!current)}>{compareMode?t('exitComparison'):t('compareSelected')}</button></div></div>}</div>
     <LocalChatWidget recorderScores={recorderScores} onHeightChange={setChatHeight} onExpandedChange={setChatExpanded} onUpdateComparison={updateComparisonFromChat} onUpdateSort={updateSortFromChat} onUpdateFilters={updateFiltersFromChat} />

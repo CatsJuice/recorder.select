@@ -4,6 +4,11 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "一般，充满了蓝紫色渐变",
+    ux: "弹窗、红点之类的有点多",
+    summary: "到处都是蓝紫色渐变受不了。有一些内置 AI 功能，比如降噪、背景移除、虚拟形象、根据字幕粗剪，所以价格也有点贵",
+  },
   'cleanshot-x': {
     ui: '延续 CleanShot 一贯的精美 UI，精致',
     summary: '有基础功能，但不多',
@@ -75,6 +80,11 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "Average, full of blue-purple gradients.",
+    ux: "A few too many pop-ups, notification dots, and similar distractions.",
+    summary: "The blue-purple gradients everywhere are unbearable. It has some built-in AI features, such as noise reduction, background removal, virtual avatars, and rough cuts based on subtitles, so it is also a bit expensive.",
+  },
   'cleanshot-x': {
     ui: 'Continues CleanShot’s tradition of beautiful, polished UI.',
     summary: 'Offers basic features, but not many.',
@@ -145,6 +155,11 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "一般，充滿了藍紫色漸層",
+    ux: "彈出視窗、紅點之類的有點多",
+    summary: "到處都是藍紫色漸層，受不了。有一些內建 AI 功能，例如降噪、背景移除、虛擬形象、根據字幕粗剪，所以價格也有點貴",
+  },
   'cleanshot-x': {
     ui: '延續 CleanShot 一貫的精美 UI，精緻',
     summary: '有基本功能，但不多',
@@ -203,6 +218,11 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "普通。青紫のグラデーションだらけ。",
+    ux: "ポップアップや通知の赤い点などが少し多い。",
+    summary: "どこもかしこも青紫のグラデーションで、正直うんざり。ノイズ除去、背景除去、バーチャルアバター、字幕に基づくラフカットなどの AI 機能を内蔵しているので、価格もやや高い。",
+  },
   'cleanshot-x': {
     ui: 'CleanShot らしい美しく洗練された UI を受け継いでいる。',
     summary: '基本的な機能はあるが、数は少ない。',
@@ -261,6 +281,11 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "보통. 파란색과 보라색 그라데이션으로 가득하다.",
+    ux: "팝업이나 빨간 알림 점 같은 것이 조금 많다.",
+    summary: "어디에나 있는 파란색과 보라색 그라데이션이 견디기 힘들다. 노이즈 제거, 배경 제거, 가상 아바타, 자막 기반 러프 컷 같은 AI 기능이 내장되어 있어 가격도 조금 비싸다.",
+  },
   'cleanshot-x': {
     ui: 'CleanShot 특유의 아름답고 세련된 UI를 이어간다.',
     summary: '기본 기능은 있지만 많지는 않다.',
@@ -319,6 +344,11 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "Normal, llena de degradados azules y violetas.",
+    ux: "Hay demasiadas ventanas emergentes, puntos de notificación y distracciones similares.",
+    summary: "Los degradados azules y violetas por todas partes son insoportables. Incluye algunas funciones de IA, como reducción de ruido, eliminación de fondo, avatares virtuales y montaje preliminar basado en subtítulos, así que también resulta algo caro.",
+  },
   'cleanshot-x': {
     ui: 'Mantiene la interfaz atractiva y cuidada que caracteriza a CleanShot.',
     summary: 'Ofrece funciones básicas, pero no muchas.',
@@ -377,6 +407,11 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "Moyenne, pleine de dégradés bleus et violets.",
+    ux: "Un peu trop de fenêtres contextuelles, de pastilles de notification et autres distractions.",
+    summary: "Les dégradés bleus et violets partout sont insupportables. Quelques fonctions IA sont intégrées, comme la réduction du bruit, la suppression du fond, les avatars virtuels et le montage préliminaire à partir des sous-titres, ce qui rend aussi le prix un peu élevé.",
+  },
   'cleanshot-x': {
     ui: 'Conserve la belle interface soignée qui caractérise CleanShot.',
     summary: 'Propose des fonctions de base, mais peu nombreuses.',
@@ -435,6 +470,11 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "Durchschnittlich, voller blau-violetter Farbverläufe.",
+    ux: "Etwas zu viele Pop-ups, Benachrichtigungspunkte und ähnliche Ablenkungen.",
+    summary: "Die blau-violetten Farbverläufe überall sind unerträglich. Es gibt einige integrierte KI-Funktionen wie Rauschunterdrückung, Hintergrundentfernung, virtuelle Avatare und einen Rohschnitt anhand von Untertiteln, daher ist der Preis auch etwas hoch.",
+  },
   'cleanshot-x': {
     ui: 'Führt die für CleanShot typische schöne und sorgfältig gestaltete Oberfläche fort.',
     summary: 'Bietet grundlegende Funktionen, aber nicht viele.',
@@ -493,6 +533,11 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  focusee: {
+    ui: "Mediana, cheia de gradientes azuis e roxos.",
+    ux: "Há um pouco demais de pop-ups, pontos de notificação e distrações semelhantes.",
+    summary: "Os gradientes azuis e roxos por toda parte são insuportáveis. Há alguns recursos de IA integrados, como redução de ruído, remoção de fundo, avatares virtuais e cortes preliminares com base nas legendas, então o preço também é um pouco alto.",
+  },
   'cleanshot-x': {
     ui: 'Mantém a interface bonita e refinada que caracteriza o CleanShot.',
     summary: 'Oferece recursos básicos, mas não muitos.',

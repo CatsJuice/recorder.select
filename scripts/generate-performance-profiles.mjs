@@ -102,8 +102,20 @@ sources['cleanshot-x'] = {
   export: 'data/benchmarks/cleanshot-x/cleanshot-x-export-2026-09-06-232117.json',
 };
 
+sources.focusee = {
+  recording: 'data/benchmarks/focusee/focusee-recording-2026-09-08-195055.json',
+  preview: 'data/benchmarks/focusee/focusee-preview-2026-09-08-195232.json',
+  export: 'data/benchmarks/focusee/focusee-export-2026-09-08-195431.json',
+};
+
+sources.snapzy = {
+  recording: 'data/benchmarks/snapzy/snapzy-recording-2026-09-08-204200.json',
+  preview: 'data/benchmarks/snapzy/snapzy-preview-2026-09-08-203932.json',
+  export: 'data/benchmarks/snapzy/snapzy-export-2026-09-08-204909.json',
+};
+
 const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
-  ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap', 'cleanshot-x'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
+  ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap', 'cleanshot-x', 'focusee', 'snapzy'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
   : '5K';
 
 // Anomalies belong to a specific measurement, not every future run of the app.

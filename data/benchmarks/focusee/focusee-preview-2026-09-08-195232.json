@@ -1,0 +1,1865 @@
+{
+  "endedAt" : "2026-09-08T11:53:35Z",
+  "id" : "A44CA08B-9F41-40EF-8C29-FB3BF3A619C0",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.2708e-05,
+      "physicalFootprintBytes" : 332007176,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 9.479032678,
+            "diskReadBytes" : 122159104,
+            "diskWrittenBytes" : 323682304,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 332007176
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 91399618560
+    },
+    {
+      "cpuPercent" : 0.28975584803586657,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 8192,
+      "elapsedSeconds" : 1.047606375,
+      "physicalFootprintBytes" : 546096904,
+      "processes" : [
+        {
+          "cpuPercent" : 0.28975584803586657,
+          "process" : {
+            "cpuTimeSeconds" : 9.48206745,
+            "diskReadBytes" : 122191872,
+            "diskWrittenBytes" : 323690496,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 546096904
+          }
+        }
+      ],
+      "systemCPUPercent" : 297.26541554959783,
+      "systemMemoryDeltaBytes" : 66682880,
+      "systemMemoryUsedBytes" : 91466301440
+    },
+    {
+      "cpuPercent" : 0.6100459591013375,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 2.0456335,
+      "physicalFootprintBytes" : 542574344,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6100459591013375,
+          "process" : {
+            "cpuTimeSeconds" : 9.488156579,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 542574344
+          }
+        }
+      ],
+      "systemCPUPercent" : 277.4663677130045,
+      "systemMemoryDeltaBytes" : 1327546368,
+      "systemMemoryUsedBytes" : 92727164928
+    },
+    {
+      "cpuPercent" : 0.6324206240057265,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 3.045557625,
+      "physicalFootprintBytes" : 541968136,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6324206240057265,
+          "process" : {
+            "cpuTimeSeconds" : 9.494482424,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 541968136
+          }
+        }
+      ],
+      "systemCPUPercent" : 302.6905829596413,
+      "systemMemoryDeltaBytes" : 1341636608,
+      "systemMemoryUsedBytes" : 92741255168
+    },
+    {
+      "cpuPercent" : 1.051048125280568,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 4.045524333,
+      "physicalFootprintBytes" : 541591304,
+      "processes" : [
+        {
+          "cpuPercent" : 1.051048125280568,
+          "process" : {
+            "cpuTimeSeconds" : 9.504992025,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 541591304
+          }
+        }
+      ],
+      "systemCPUPercent" : 248.27586206896552,
+      "systemMemoryDeltaBytes" : 1342701568,
+      "systemMemoryUsedBytes" : 92742320128
+    },
+    {
+      "cpuPercent" : 1.1689141298966492,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 5.045499541,
+      "physicalFootprintBytes" : 666388328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1689141298966492,
+          "process" : {
+            "cpuTimeSeconds" : 9.516681986,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 666388328
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.60893854748605,
+      "systemMemoryDeltaBytes" : 1443479552,
+      "systemMemoryUsedBytes" : 92843098112
+    },
+    {
+      "cpuPercent" : 1.3314417739559439,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 6.045518666,
+      "physicalFootprintBytes" : 665978728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3314417739559439,
+          "process" : {
+            "cpuTimeSeconds" : 9.529995601,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 665978728
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.1116071428571,
+      "systemMemoryDeltaBytes" : 1060438016,
+      "systemMemoryUsedBytes" : 92460056576
+    },
+    {
+      "cpuPercent" : 1.2629729068648599,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 7.04549175,
+      "physicalFootprintBytes" : 666257256,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2629729068648599,
+          "process" : {
+            "cpuTimeSeconds" : 9.54262577,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 666257256
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.79387186629526,
+      "systemMemoryDeltaBytes" : 1449066496,
+      "systemMemoryUsedBytes" : 92848685056
+    },
+    {
+      "cpuPercent" : 1.3837992259653356,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 8.045552333,
+      "physicalFootprintBytes" : 666208104,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3837992259653356,
+          "process" : {
+            "cpuTimeSeconds" : 9.556463493,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 666208104
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.42404006677796,
+      "systemMemoryDeltaBytes" : 1046773760,
+      "systemMemoryUsedBytes" : 92446392320
+    },
+    {
+      "cpuPercent" : 0.9310273211336161,
+      "diskReadBytes" : 425984,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 9.045483,
+      "physicalFootprintBytes" : 666044264,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9310273211336161,
+          "process" : {
+            "cpuTimeSeconds" : 9.565772102,
+            "diskReadBytes" : 122585088,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 666044264
+          }
+        }
+      ],
+      "systemCPUPercent" : 328.3715724678232,
+      "systemMemoryDeltaBytes" : 1434746880,
+      "systemMemoryUsedBytes" : 92834365440
+    },
+    {
+      "cpuPercent" : 1.0304295111619726,
+      "diskReadBytes" : 442368,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 10.04548275,
+      "physicalFootprintBytes" : 526927672,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0304295111619726,
+          "process" : {
+            "cpuTimeSeconds" : 9.576075626,
+            "diskReadBytes" : 122601472,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 526927672
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.8595317725753,
+      "systemMemoryDeltaBytes" : 1269628928,
+      "systemMemoryUsedBytes" : 92669247488
+    },
+    {
+      "cpuPercent" : 1.1867219642717914,
+      "diskReadBytes" : 458752,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 11.045592708,
+      "physicalFootprintBytes" : 585451368,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1867219642717914,
+          "process" : {
+            "cpuTimeSeconds" : 9.58794554,
+            "diskReadBytes" : 122617856,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 585451368
+          }
+        }
+      ],
+      "systemCPUPercent" : 335.933147632312,
+      "systemMemoryDeltaBytes" : 1389215744,
+      "systemMemoryUsedBytes" : 92788834304
+    },
+    {
+      "cpuPercent" : 1.1873239932615294,
+      "diskReadBytes" : 458752,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 12.045589541,
+      "physicalFootprintBytes" : 582502248,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1873239932615294,
+          "process" : {
+            "cpuTimeSeconds" : 9.599819898,
+            "diskReadBytes" : 122617856,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 582502248
+          }
+        }
+      ],
+      "systemCPUPercent" : 276.9230769230769,
+      "systemMemoryDeltaBytes" : 1275478016,
+      "systemMemoryUsedBytes" : 92675096576
+    },
+    {
+      "cpuPercent" : 1.1347280765652643,
+      "diskReadBytes" : 491520,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 13.045590541,
+      "physicalFootprintBytes" : 583042920,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1347280765652643,
+          "process" : {
+            "cpuTimeSeconds" : 9.611168183,
+            "diskReadBytes" : 122650624,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 583042920
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.391959798995,
+      "systemMemoryDeltaBytes" : 932593664,
+      "systemMemoryUsedBytes" : 92332212224
+    },
+    {
+      "cpuPercent" : 1.1972044983534946,
+      "diskReadBytes" : 507904,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 14.045550833,
+      "physicalFootprintBytes" : 582174568,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1972044983534946,
+          "process" : {
+            "cpuTimeSeconds" : 9.623136579,
+            "diskReadBytes" : 122667008,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 582174568
+          }
+        }
+      ],
+      "systemCPUPercent" : 300.33482142857144,
+      "systemMemoryDeltaBytes" : 1312931840,
+      "systemMemoryUsedBytes" : 92712550400
+    },
+    {
+      "cpuPercent" : 1.1163126876918583,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 15.045571875,
+      "physicalFootprintBytes" : 574555984,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1163126876918583,
+          "process" : {
+            "cpuTimeSeconds" : 9.634302372,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 574555984
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.36683417085425,
+      "systemMemoryDeltaBytes" : 1283260416,
+      "systemMemoryUsedBytes" : 92682878976
+    },
+    {
+      "cpuPercent" : 1.219399146682557,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 16.045570458,
+      "physicalFootprintBytes" : 539543328,
+      "processes" : [
+        {
+          "cpuPercent" : 1.219399146682557,
+          "process" : {
+            "cpuTimeSeconds" : 9.646495611,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 539543328
+          }
+        }
+      ],
+      "systemCPUPercent" : 262.01896263245953,
+      "systemMemoryDeltaBytes" : 1221443584,
+      "systemMemoryUsedBytes" : 92621062144
+    },
+    {
+      "cpuPercent" : 1.1800698697181324,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 17.045646291,
+      "physicalFootprintBytes" : 539805472,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1800698697181324,
+          "process" : {
+            "cpuTimeSeconds" : 9.658297624,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 539805472
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.7270194986072,
+      "systemMemoryDeltaBytes" : 1249214464,
+      "systemMemoryUsedBytes" : 92648833024
+    },
+    {
+      "cpuPercent" : 1.2224552957898196,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 18.045639125,
+      "physicalFootprintBytes" : 661997416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2224552957898196,
+          "process" : {
+            "cpuTimeSeconds" : 9.670521308,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 661997416
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.15178571428567,
+      "systemMemoryDeltaBytes" : 1343455232,
+      "systemMemoryUsedBytes" : 92743073792
+    },
+    {
+      "cpuPercent" : 1.1022900947881091,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 19.044681333,
+      "physicalFootprintBytes" : 661931880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1022900947881091,
+          "process" : {
+            "cpuTimeSeconds" : 9.681533085,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 661931880
+          }
+        }
+      ],
+      "systemCPUPercent" : 311.38392857142856,
+      "systemMemoryDeltaBytes" : 1062830080,
+      "systemMemoryUsedBytes" : 92462448640
+    },
+    {
+      "cpuPercent" : 1.2825397539046164,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 20.045572208,
+      "physicalFootprintBytes" : 661686120,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2825397539046164,
+          "process" : {
+            "cpuTimeSeconds" : 9.694369926,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 661686120
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.4924874791319,
+      "systemMemoryDeltaBytes" : 1341489152,
+      "systemMemoryUsedBytes" : 92741107712
+    },
+    {
+      "cpuPercent" : 1.276785610896328,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 21.04559175,
+      "physicalFootprintBytes" : 663766888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.276785610896328,
+          "process" : {
+            "cpuTimeSeconds" : 9.70713931,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 663766888
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.6030150753769,
+      "systemMemoryDeltaBytes" : 1042546688,
+      "systemMemoryUsedBytes" : 92442165248
+    },
+    {
+      "cpuPercent" : 1.2087892766866062,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 22.045704041,
+      "physicalFootprintBytes" : 667223912,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2087892766866062,
+          "process" : {
+            "cpuTimeSeconds" : 9.719229849,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 667223912
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.4957983193277,
+      "systemMemoryDeltaBytes" : 1406992384,
+      "systemMemoryUsedBytes" : 92806610944
+    },
+    {
+      "cpuPercent" : 1.150121518289775,
+      "diskReadBytes" : 540672,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 23.045671208,
+      "physicalFootprintBytes" : 551372624,
+      "processes" : [
+        {
+          "cpuPercent" : 1.150121518289775,
+          "process" : {
+            "cpuTimeSeconds" : 9.730730838,
+            "diskReadBytes" : 122699776,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 551372624
+          }
+        }
+      ],
+      "systemCPUPercent" : 303.02013422818794,
+      "systemMemoryDeltaBytes" : 1286111232,
+      "systemMemoryUsedBytes" : 92685729792
+    },
+    {
+      "cpuPercent" : 1.1369807348845309,
+      "diskReadBytes" : 557056,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 24.045668833,
+      "physicalFootprintBytes" : 563103592,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1369807348845309,
+          "process" : {
+            "cpuTimeSeconds" : 9.742099542,
+            "diskReadBytes" : 122716160,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 563103592
+          }
+        }
+      ],
+      "systemCPUPercent" : 325.1677852348993,
+      "systemMemoryDeltaBytes" : 1300627456,
+      "systemMemoryUsedBytes" : 92700246016
+    },
+    {
+      "cpuPercent" : 1.0718674469788074,
+      "diskReadBytes" : 573440,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 25.045557625,
+      "physicalFootprintBytes" : 564692840,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0718674469788074,
+          "process" : {
+            "cpuTimeSeconds" : 9.752813929,
+            "diskReadBytes" : 122732544,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 564692840
+          }
+        }
+      ],
+      "systemCPUPercent" : 307.2188024622272,
+      "systemMemoryDeltaBytes" : 1373863936,
+      "systemMemoryUsedBytes" : 92773482496
+    },
+    {
+      "cpuPercent" : 1.3031214530576234,
+      "diskReadBytes" : 573440,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 26.045581791,
+      "physicalFootprintBytes" : 586696552,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3031214530576234,
+          "process" : {
+            "cpuTimeSeconds" : 9.765846331,
+            "diskReadBytes" : 122732544,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 586696552
+          }
+        }
+      ],
+      "systemCPUPercent" : 387.3672442705422,
+      "systemMemoryDeltaBytes" : 1164034048,
+      "systemMemoryUsedBytes" : 92563652608
+    },
+    {
+      "cpuPercent" : 1.3153939062652025,
+      "diskReadBytes" : 606208,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 27.04549975,
+      "physicalFootprintBytes" : 587532136,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3153939062652025,
+          "process" : {
+            "cpuTimeSeconds" : 9.778998947,
+            "diskReadBytes" : 122765312,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 587532136
+          }
+        }
+      ],
+      "systemCPUPercent" : 363.42281879194627,
+      "systemMemoryDeltaBytes" : 1497137152,
+      "systemMemoryUsedBytes" : 92896755712
+    },
+    {
+      "cpuPercent" : 1.3070615495776658,
+      "diskReadBytes" : 622592,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 28.0456485,
+      "physicalFootprintBytes" : 584058728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3070615495776658,
+          "process" : {
+            "cpuTimeSeconds" : 9.792076027,
+            "diskReadBytes" : 122781696,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 584058728
+          }
+        }
+      ],
+      "systemCPUPercent" : 327.63819095477385,
+      "systemMemoryDeltaBytes" : 1456816128,
+      "systemMemoryUsedBytes" : 92856434688
+    },
+    {
+      "cpuPercent" : 1.082220560185715,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 29.045531875,
+      "physicalFootprintBytes" : 553944888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.082220560185715,
+          "process" : {
+            "cpuTimeSeconds" : 9.802894016,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 553944888
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.93288590604027,
+      "systemMemoryDeltaBytes" : 1305182208,
+      "systemMemoryUsedBytes" : 92704800768
+    },
+    {
+      "cpuPercent" : 1.1071725185851304,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 30.045539291,
+      "physicalFootprintBytes" : 655574888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1071725185851304,
+          "process" : {
+            "cpuTimeSeconds" : 9.813964163,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 655574888
+          }
+        }
+      ],
+      "systemCPUPercent" : 417.8571428571429,
+      "systemMemoryDeltaBytes" : 1381711872,
+      "systemMemoryUsedBytes" : 92781330432
+    },
+    {
+      "cpuPercent" : 1.1194318454997831,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 31.045638208,
+      "physicalFootprintBytes" : 657835880,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1194318454997831,
+          "process" : {
+            "cpuTimeSeconds" : 9.82516399,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 657835880
+          }
+        }
+      ],
+      "systemCPUPercent" : 250.36455412226584,
+      "systemMemoryDeltaBytes" : 1385218048,
+      "systemMemoryUsedBytes" : 92784836608
+    },
+    {
+      "cpuPercent" : 1.1272292605251109,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 32.045600166,
+      "physicalFootprintBytes" : 661620584,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1272292605251109,
+          "process" : {
+            "cpuTimeSeconds" : 9.836434495,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 661620584
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.6368715083799,
+      "systemMemoryDeltaBytes" : 1418199040,
+      "systemMemoryUsedBytes" : 92817817600
+    },
+    {
+      "cpuPercent" : 1.1345656238269786,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 33.045644291,
+      "physicalFootprintBytes" : 661342056,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1345656238269786,
+          "process" : {
+            "cpuTimeSeconds" : 9.847781664,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 661342056
+          }
+        }
+      ],
+      "systemCPUPercent" : 290.6145251396648,
+      "systemMemoryDeltaBytes" : 1390198784,
+      "systemMemoryUsedBytes" : 92789817344
+    },
+    {
+      "cpuPercent" : 1.1647569164331544,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 34.045621375,
+      "physicalFootprintBytes" : 662259560,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1647569164331544,
+          "process" : {
+            "cpuTimeSeconds" : 9.859427338,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 662259560
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.7039106145251,
+      "systemMemoryDeltaBytes" : 1088929792,
+      "systemMemoryUsedBytes" : 92488548352
+    },
+    {
+      "cpuPercent" : 1.0796426247419748,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 35.045675625,
+      "physicalFootprintBytes" : 536020768,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0796426247419748,
+          "process" : {
+            "cpuTimeSeconds" : 9.870225731,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 536020768
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.3065326633166,
+      "systemMemoryDeltaBytes" : 1247395840,
+      "systemMemoryUsedBytes" : 92647014400
+    },
+    {
+      "cpuPercent" : 1.0791072357077187,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 36.045578,
+      "physicalFootprintBytes" : 537085728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0791072357077187,
+          "process" : {
+            "cpuTimeSeconds" : 9.881013544,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 537085728
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.16060436485725,
+      "systemMemoryDeltaBytes" : 1275052032,
+      "systemMemoryUsedBytes" : 92674670592
+    },
+    {
+      "cpuPercent" : 1.0069063040093014,
+      "diskReadBytes" : 655360,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 37.045358,
+      "physicalFootprintBytes" : 536102688,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0069063040093014,
+          "process" : {
+            "cpuTimeSeconds" : 9.891082868,
+            "diskReadBytes" : 122814464,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 536102688
+          }
+        }
+      ],
+      "systemCPUPercent" : 234.4326439351593,
+      "systemMemoryDeltaBytes" : 1254768640,
+      "systemMemoryUsedBytes" : 92654387200
+    },
+    {
+      "cpuPercent" : 1.0892098018761553,
+      "diskReadBytes" : 671744,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 38.045608458,
+      "physicalFootprintBytes" : 537528096,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0892098018761553,
+          "process" : {
+            "cpuTimeSeconds" : 9.90197533,
+            "diskReadBytes" : 122830848,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 537528096
+          }
+        }
+      ],
+      "systemCPUPercent" : 274.8322147651007,
+      "systemMemoryDeltaBytes" : 1294843904,
+      "systemMemoryUsedBytes" : 92694462464
+    },
+    {
+      "cpuPercent" : 1.1042860852604668,
+      "diskReadBytes" : 688128,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 39.045559791,
+      "physicalFootprintBytes" : 538527520,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1042860852604668,
+          "process" : {
+            "cpuTimeSeconds" : 9.913015749,
+            "diskReadBytes" : 122847232,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 538527520
+          }
+        }
+      ],
+      "systemCPUPercent" : 314.57286432160805,
+      "systemMemoryDeltaBytes" : 911114240,
+      "systemMemoryUsedBytes" : 92310732800
+    },
+    {
+      "cpuPercent" : 1.146431417407418,
+      "diskReadBytes" : 688128,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 40.045639166,
+      "physicalFootprintBytes" : 539395896,
+      "processes" : [
+        {
+          "cpuPercent" : 1.146431417407418,
+          "process" : {
+            "cpuTimeSeconds" : 9.924483673,
+            "diskReadBytes" : 122847232,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 539395896
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.9598662207358,
+      "systemMemoryDeltaBytes" : 1282670592,
+      "systemMemoryUsedBytes" : 92682289152
+    },
+    {
+      "cpuPercent" : 1.1228290613912582,
+      "diskReadBytes" : 720896,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 41.045640083,
+      "physicalFootprintBytes" : 540772152,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1228290613912582,
+          "process" : {
+            "cpuTimeSeconds" : 9.935712649,
+            "diskReadBytes" : 122880000,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 540772152
+          }
+        }
+      ],
+      "systemCPUPercent" : 298.99328859060404,
+      "systemMemoryDeltaBytes" : 937738240,
+      "systemMemoryUsedBytes" : 92337356800
+    },
+    {
+      "cpuPercent" : 1.053912196614511,
+      "diskReadBytes" : 737280,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 42.045661375,
+      "physicalFootprintBytes" : 540673848,
+      "processes" : [
+        {
+          "cpuPercent" : 1.053912196614511,
+          "process" : {
+            "cpuTimeSeconds" : 9.946252925,
+            "diskReadBytes" : 122896384,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 540673848
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.7646730016769,
+      "systemMemoryDeltaBytes" : 1270661120,
+      "systemMemoryUsedBytes" : 92670279680
+    },
+    {
+      "cpuPercent" : 1.0505229937591323,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 43.045618291,
+      "physicalFootprintBytes" : 567035728,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0505229937591323,
+          "process" : {
+            "cpuTimeSeconds" : 9.956755895,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 567035728
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.58636109558415,
+      "systemMemoryDeltaBytes" : 1301544960,
+      "systemMemoryUsedBytes" : 92701163520
+    },
+    {
+      "cpuPercent" : 1.039897288445789,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 44.04565725,
+      "physicalFootprintBytes" : 568608592,
+      "processes" : [
+        {
+          "cpuPercent" : 1.039897288445789,
+          "process" : {
+            "cpuTimeSeconds" : 9.967157108,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 568608592
+          }
+        }
+      ],
+      "systemCPUPercent" : 264.46927374301674,
+      "systemMemoryDeltaBytes" : 1302986752,
+      "systemMemoryUsedBytes" : 92702605312
+    },
+    {
+      "cpuPercent" : 1.0751790563515737,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 45.045645666,
+      "physicalFootprintBytes" : 577865576,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0751790563515737,
+          "process" : {
+            "cpuTimeSeconds" : 9.977907663,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 577865576
+          }
+        }
+      ],
+      "systemCPUPercent" : 282.41206030150755,
+      "systemMemoryDeltaBytes" : 1311244288,
+      "systemMemoryUsedBytes" : 92710862848
+    },
+    {
+      "cpuPercent" : 1.011118586401186,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 46.045713541,
+      "physicalFootprintBytes" : 578865000,
+      "processes" : [
+        {
+          "cpuPercent" : 1.011118586401186,
+          "process" : {
+            "cpuTimeSeconds" : 9.988018171,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 578865000
+          }
+        }
+      ],
+      "systemCPUPercent" : 310.5882352941177,
+      "systemMemoryDeltaBytes" : 954892288,
+      "systemMemoryUsedBytes" : 92354510848
+    },
+    {
+      "cpuPercent" : 1.1947601160962102,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 47.045545208,
+      "physicalFootprintBytes" : 581011280,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1947601160962102,
+          "process" : {
+            "cpuTimeSeconds" : 9.999965123,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 581011280
+          }
+        }
+      ],
+      "systemCPUPercent" : 270.90301003344484,
+      "systemMemoryDeltaBytes" : 1317027840,
+      "systemMemoryUsedBytes" : 92716646400
+    },
+    {
+      "cpuPercent" : 1.2511931500407547,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 48.04500925,
+      "physicalFootprintBytes" : 555943736,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2511931500407547,
+          "process" : {
+            "cpuTimeSeconds" : 10.012471103,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 555943736
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.919191919192,
+      "systemMemoryDeltaBytes" : 1297203200,
+      "systemMemoryUsedBytes" : 92696821760
+    },
+    {
+      "cpuPercent" : 1.0988301321381824,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 49.045647958,
+      "physicalFootprintBytes" : 585467752,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0988301321381824,
+          "process" : {
+            "cpuTimeSeconds" : 10.023466082,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 585467752
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.1875,
+      "systemMemoryDeltaBytes" : 1337720832,
+      "systemMemoryUsedBytes" : 92737339392
+    },
+    {
+      "cpuPercent" : 1.332332192753539,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 50.044760875,
+      "physicalFootprintBytes" : 623118208,
+      "processes" : [
+        {
+          "cpuPercent" : 1.332332192753539,
+          "process" : {
+            "cpuTimeSeconds" : 10.036776301,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 623118208
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.6256983240223,
+      "systemMemoryDeltaBytes" : 1358610432,
+      "systemMemoryUsedBytes" : 92758228992
+    },
+    {
+      "cpuPercent" : 1.4243252452097543,
+      "diskReadBytes" : 770048,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 51.045656833,
+      "physicalFootprintBytes" : 624199552,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4243252452097543,
+          "process" : {
+            "cpuTimeSeconds" : 10.051031316,
+            "diskReadBytes" : 122929152,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 624199552
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.7821229050279,
+      "systemMemoryDeltaBytes" : 1347092480,
+      "systemMemoryUsedBytes" : 92746711040
+    },
+    {
+      "cpuPercent" : 1.25371825328209,
+      "diskReadBytes" : 786432,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 52.044658416,
+      "physicalFootprintBytes" : 624887680,
+      "processes" : [
+        {
+          "cpuPercent" : 1.25371825328209,
+          "process" : {
+            "cpuTimeSeconds" : 10.063555603,
+            "diskReadBytes" : 122945536,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 624887680
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.1791713325868,
+      "systemMemoryDeltaBytes" : 1018413056,
+      "systemMemoryUsedBytes" : 92418031616
+    },
+    {
+      "cpuPercent" : 1.3520936202262688,
+      "diskReadBytes" : 802816,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 53.045202416,
+      "physicalFootprintBytes" : 625706904,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3520936202262688,
+          "process" : {
+            "cpuTimeSeconds" : 10.077085574,
+            "diskReadBytes" : 122961920,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 625706904
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.96655518394647,
+      "systemMemoryDeltaBytes" : 1351008256,
+      "systemMemoryUsedBytes" : 92750626816
+    },
+    {
+      "cpuPercent" : 1.0687388027435467,
+      "diskReadBytes" : 802816,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 54.045676458,
+      "physicalFootprintBytes" : 602687360,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0687388027435467,
+          "process" : {
+            "cpuTimeSeconds" : 10.087779309,
+            "diskReadBytes" : 122961920,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 602687360
+          }
+        }
+      ],
+      "systemCPUPercent" : 296.8138624930129,
+      "systemMemoryDeltaBytes" : 1002422272,
+      "systemMemoryUsedBytes" : 92402040832
+    },
+    {
+      "cpuPercent" : 1.1200529697094477,
+      "diskReadBytes" : 835584,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 55.045639833,
+      "physicalFootprintBytes" : 591120232,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1200529697094477,
+          "process" : {
+            "cpuTimeSeconds" : 10.098976297,
+            "diskReadBytes" : 122994688,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 591120232
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.9932848349188,
+      "systemMemoryDeltaBytes" : 1347698688,
+      "systemMemoryUsedBytes" : 92747317248
+    },
+    {
+      "cpuPercent" : 1.3206347555644598,
+      "diskReadBytes" : 851968,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 56.045647625,
+      "physicalFootprintBytes" : 610453352,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3206347555644598,
+          "process" : {
+            "cpuTimeSeconds" : 10.112183361,
+            "diskReadBytes" : 123011072,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 610453352
+          }
+        }
+      ],
+      "systemCPUPercent" : 285.2678571428571,
+      "systemMemoryDeltaBytes" : 1342963712,
+      "systemMemoryUsedBytes" : 92742582272
+    },
+    {
+      "cpuPercent" : 1.296836848689303,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 57.044958333,
+      "physicalFootprintBytes" : 611157888,
+      "processes" : [
+        {
+          "cpuPercent" : 1.296836848689303,
+          "process" : {
+            "cpuTimeSeconds" : 10.125143333,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 611157888
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.20425293788475,
+      "systemMemoryDeltaBytes" : 1378500608,
+      "systemMemoryUsedBytes" : 92778119168
+    },
+    {
+      "cpuPercent" : 1.0825902528935718,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 58.0455795,
+      "physicalFootprintBytes" : 610912128,
+      "processes" : [
+        {
+          "cpuPercent" : 1.0825902528935718,
+          "process" : {
+            "cpuTimeSeconds" : 10.135975824,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 610912128
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.0878567431449,
+      "systemMemoryDeltaBytes" : 1365147648,
+      "systemMemoryUsedBytes" : 92764766208
+    },
+    {
+      "cpuPercent" : 1.3152336728531697,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 59.045157625,
+      "physicalFootprintBytes" : 587237200,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3152336728531697,
+          "process" : {
+            "cpuTimeSeconds" : 10.149124249,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 587237200
+          }
+        }
+      ],
+      "systemCPUPercent" : 317.64705882352945,
+      "systemMemoryDeltaBytes" : 1014956032,
+      "systemMemoryUsedBytes" : 92414574592
+    },
+    {
+      "cpuPercent" : 0.869095568560532,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 60.045566916,
+      "physicalFootprintBytes" : 571377464,
+      "processes" : [
+        {
+          "cpuPercent" : 0.869095568560532,
+          "process" : {
+            "cpuTimeSeconds" : 10.157817632,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 571377464
+          }
+        }
+      ],
+      "systemCPUPercent" : 330.3861219921656,
+      "systemMemoryDeltaBytes" : 1341079552,
+      "systemMemoryUsedBytes" : 92740698112
+    },
+    {
+      "cpuPercent" : 0.9867825060772533,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 61.044861,
+      "physicalFootprintBytes" : 571508536,
+      "processes" : [
+        {
+          "cpuPercent" : 0.9867825060772533,
+          "process" : {
+            "cpuTimeSeconds" : 10.167679383,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 571508536
+          }
+        }
+      ],
+      "systemCPUPercent" : 308.857938718663,
+      "systemMemoryDeltaBytes" : 1315635200,
+      "systemMemoryUsedBytes" : 92715253760
+    },
+    {
+      "cpuPercent" : 1.2188902213423114,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 62.045647333,
+      "physicalFootprintBytes" : 714475416,
+      "processes" : [
+        {
+          "cpuPercent" : 1.2188902213423114,
+          "process" : {
+            "cpuTimeSeconds" : 10.179876853,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323780608,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 714475416
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.4537815126051,
+      "systemMemoryDeltaBytes" : 1484193792,
+      "systemMemoryUsedBytes" : 92883812352
+    },
+    {
+      "cpuPercent" : 0.5785882018555938,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 303104,
+      "elapsedSeconds" : 63.08029925,
+      "physicalFootprintBytes" : 685623168,
+      "processes" : [
+        {
+          "cpuPercent" : 0.5785882018555938,
+          "process" : {
+            "cpuTimeSeconds" : 10.185861671,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323985408,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 685623168
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.38772213247174,
+      "systemMemoryDeltaBytes" : 1447870464,
+      "systemMemoryUsedBytes" : 92847489024
+    },
+    {
+      "cpuPercent" : 0.024942257542845014,
+      "diskReadBytes" : 884736,
+      "diskWrittenBytes" : 303104,
+      "elapsedSeconds" : 63.120570625,
+      "physicalFootprintBytes" : 685623168,
+      "processes" : [
+        {
+          "cpuPercent" : 0.024942257542845014,
+          "process" : {
+            "cpuTimeSeconds" : 10.185871714,
+            "diskReadBytes" : 123043840,
+            "diskWrittenBytes" : 323985408,
+            "executablePath" : "/Applications/FocuSee.app/Contents/MacOS/FocuSee",
+            "identity" : {
+              "pid" : 35165,
+              "startTimeNanoseconds" : 20668515545484
+            },
+            "name" : "FocuSee",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 685623168
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.95652173913044,
+      "systemMemoryDeltaBytes" : 1447804928,
+      "systemMemoryUsedBytes" : 92847423488
+    }
+  ],
+  "scenario" : "preview",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-08T11:52:32Z",
+  "summary" : {
+    "averageCPUPercent" : 1.1042981319947935,
+    "averagePhysicalFootprintBytes" : 594103866,
+    "averageSystemCPUPercent" : 293.0052128211865,
+    "averageSystemMemoryDeltaBytes" : 1239268368,
+    "cpuTimeSeconds" : 0.7068390359999999,
+    "diskReadBytes" : 884736,
+    "diskWrittenBytes" : 303104,
+    "durationSeconds" : 63.120570625,
+    "p95CPUPercent" : 1.332332192753539,
+    "p95SystemCPUPercent" : 335.933147632312,
+    "peakCPUPercent" : 1.4243252452097543,
+    "peakPhysicalFootprintBytes" : 714475416,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 417.8571428571429,
+    "peakSystemMemoryDeltaBytes" : 1497137152,
+    "physicalFootprintDeltaBytes" : 353615992
+  },
+  "target" : {
+    "build" : "20260901",
+    "bundleIdentifier" : "com.imobie.FocuSee",
+    "bundlePath" : "/Applications/FocuSee.app",
+    "name" : "FocuSee",
+    "recorderID" : "focusee",
+    "version" : "2.5.0"
+  }
+}

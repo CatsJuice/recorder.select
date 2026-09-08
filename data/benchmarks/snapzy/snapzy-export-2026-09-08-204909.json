@@ -1,0 +1,354 @@
+{
+  "endedAt" : "2026-09-08T12:49:18Z",
+  "id" : "F6B2E6BA-6FC0-42C6-8E8B-CDA6B4EE22F3",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.0583e-05,
+      "physicalFootprintBytes" : 223184000,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 2.850390499,
+            "diskReadBytes" : 426799104,
+            "diskWrittenBytes" : 422113280,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 223184000
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 94119362560
+    },
+    {
+      "cpuPercent" : 0.476207317443417,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.039712958,
+      "physicalFootprintBytes" : 419054720,
+      "processes" : [
+        {
+          "cpuPercent" : 0.476207317443417,
+          "process" : {
+            "cpuTimeSeconds" : 2.855341938,
+            "diskReadBytes" : 426799104,
+            "diskWrittenBytes" : 422113280,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 419054720
+          }
+        }
+      ],
+      "systemCPUPercent" : 324.9729729729729,
+      "systemMemoryDeltaBytes" : 895172608,
+      "systemMemoryUsedBytes" : 95014535168
+    },
+    {
+      "cpuPercent" : 1.4160424313017592,
+      "diskReadBytes" : 9408512,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 2.039747541,
+      "physicalFootprintBytes" : 752846072,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4160424313017592,
+          "process" : {
+            "cpuTimeSeconds" : 2.869504579,
+            "diskReadBytes" : 436207616,
+            "diskWrittenBytes" : 422391808,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 752846072
+          }
+        }
+      ],
+      "systemCPUPercent" : 367.05882352941177,
+      "systemMemoryDeltaBytes" : 2923364352,
+      "systemMemoryUsedBytes" : 97042726912
+    },
+    {
+      "cpuPercent" : 1.4394571079384715,
+      "diskReadBytes" : 18714624,
+      "diskWrittenBytes" : 278528,
+      "elapsedSeconds" : 3.039757333,
+      "physicalFootprintBytes" : 652150032,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4394571079384715,
+          "process" : {
+            "cpuTimeSeconds" : 2.883898843,
+            "diskReadBytes" : 445513728,
+            "diskWrittenBytes" : 422391808,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 652150032
+          }
+        }
+      ],
+      "systemCPUPercent" : 408.40336134453776,
+      "systemMemoryDeltaBytes" : 2099953664,
+      "systemMemoryUsedBytes" : 96219316224
+    },
+    {
+      "cpuPercent" : 1.688119155908709,
+      "diskReadBytes" : 28561408,
+      "diskWrittenBytes" : 8667136,
+      "elapsedSeconds" : 4.039829333,
+      "physicalFootprintBytes" : 627541240,
+      "processes" : [
+        {
+          "cpuPercent" : 1.688119155908709,
+          "process" : {
+            "cpuTimeSeconds" : 2.900782329,
+            "diskReadBytes" : 455360512,
+            "diskWrittenBytes" : 430780416,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 627541240
+          }
+        }
+      ],
+      "systemCPUPercent" : 347.89915966386553,
+      "systemMemoryDeltaBytes" : 1900199936,
+      "systemMemoryUsedBytes" : 96019562496
+    },
+    {
+      "cpuPercent" : 1.7157592488421451,
+      "diskReadBytes" : 38408192,
+      "diskWrittenBytes" : 17055744,
+      "elapsedSeconds" : 5.039761625,
+      "physicalFootprintBytes" : 630654200,
+      "processes" : [
+        {
+          "cpuPercent" : 1.7157592488421451,
+          "process" : {
+            "cpuTimeSeconds" : 2.91793737,
+            "diskReadBytes" : 465207296,
+            "diskWrittenBytes" : 439169024,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 630654200
+          }
+        }
+      ],
+      "systemCPUPercent" : 425.7847533632287,
+      "systemMemoryDeltaBytes" : 1864663040,
+      "systemMemoryUsedBytes" : 95984025600
+    },
+    {
+      "cpuPercent" : 1.8519871010710238,
+      "diskReadBytes" : 51048448,
+      "diskWrittenBytes" : 25444352,
+      "elapsedSeconds" : 6.040212166,
+      "physicalFootprintBytes" : 660407544,
+      "processes" : [
+        {
+          "cpuPercent" : 1.8519871010710238,
+          "process" : {
+            "cpuTimeSeconds" : 2.936467491,
+            "diskReadBytes" : 477847552,
+            "diskWrittenBytes" : 447557632,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 660407544
+          }
+        }
+      ],
+      "systemCPUPercent" : 452.7855936972426,
+      "systemMemoryDeltaBytes" : 1546813440,
+      "systemMemoryUsedBytes" : 95666176000
+    },
+    {
+      "cpuPercent" : 1.5662995889345894,
+      "diskReadBytes" : 63737856,
+      "diskWrittenBytes" : 33832960,
+      "elapsedSeconds" : 7.039979875,
+      "physicalFootprintBytes" : 549438712,
+      "processes" : [
+        {
+          "cpuPercent" : 1.5662995889345894,
+          "process" : {
+            "cpuTimeSeconds" : 2.952128948,
+            "diskReadBytes" : 490536960,
+            "diskWrittenBytes" : 455946240,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 549438712
+          }
+        }
+      ],
+      "systemCPUPercent" : 361.61616161616166,
+      "systemMemoryDeltaBytes" : 1774239744,
+      "systemMemoryUsedBytes" : 95893602304
+    },
+    {
+      "cpuPercent" : 1.1833545401431205,
+      "diskReadBytes" : 63787008,
+      "diskWrittenBytes" : 73936896,
+      "elapsedSeconds" : 8.039864166,
+      "physicalFootprintBytes" : 422593688,
+      "processes" : [
+        {
+          "cpuPercent" : 1.1833545401431205,
+          "process" : {
+            "cpuTimeSeconds" : 2.963959856,
+            "diskReadBytes" : 490586112,
+            "diskWrittenBytes" : 496050176,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 422593688
+          }
+        }
+      ],
+      "systemCPUPercent" : 386.93467336683415,
+      "systemMemoryDeltaBytes" : 1030750208,
+      "systemMemoryUsedBytes" : 95150112768
+    },
+    {
+      "cpuPercent" : 0.16080838549433568,
+      "diskReadBytes" : 63787008,
+      "diskWrittenBytes" : 73936896,
+      "elapsedSeconds" : 9.039824416,
+      "physicalFootprintBytes" : 226608280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.16080838549433568,
+          "process" : {
+            "cpuTimeSeconds" : 2.96556773,
+            "diskReadBytes" : 490586112,
+            "diskWrittenBytes" : 496050176,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 226608280
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.4537815126051,
+      "systemMemoryDeltaBytes" : 1142505472,
+      "systemMemoryUsedBytes" : 95261868032
+    },
+    {
+      "cpuPercent" : 0.20693642998623976,
+      "diskReadBytes" : 63787008,
+      "diskWrittenBytes" : 73936896,
+      "elapsedSeconds" : 9.448317291,
+      "physicalFootprintBytes" : 226608280,
+      "processes" : [
+        {
+          "cpuPercent" : 0.20693642998623976,
+          "process" : {
+            "cpuTimeSeconds" : 2.966412765,
+            "diskReadBytes" : 490586112,
+            "diskWrittenBytes" : 496050176,
+            "executablePath" : "/Applications/Snapzy.app/Contents/MacOS/Snapzy",
+            "identity" : {
+              "pid" : 99962,
+              "startTimeNanoseconds" : 21152288642243
+            },
+            "name" : "Snapzy",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 226608280
+          }
+        }
+      ],
+      "systemCPUPercent" : 362.48275862068965,
+      "systemMemoryDeltaBytes" : 895401984,
+      "systemMemoryUsedBytes" : 95014764544
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-08T12:49:09Z",
+  "summary" : {
+    "averageCPUPercent" : 1.1704971307063812,
+    "averagePhysicalFootprintBytes" : 490098797,
+    "averageSystemCPUPercent" : 373.2392039687549,
+    "averageSystemMemoryDeltaBytes" : 1461187677,
+    "cpuTimeSeconds" : 0.11602226599999987,
+    "diskReadBytes" : 63787008,
+    "diskWrittenBytes" : 73936896,
+    "durationSeconds" : 9.448317291,
+    "p95CPUPercent" : 1.8519871010710238,
+    "p95SystemCPUPercent" : 452.7855936972426,
+    "peakCPUPercent" : 1.8519871010710238,
+    "peakPhysicalFootprintBytes" : 752846072,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 452.7855936972426,
+    "peakSystemMemoryDeltaBytes" : 2923364352,
+    "physicalFootprintDeltaBytes" : 3424280,
+    "realtimeFactor" : 0.15747195485
+  },
+  "target" : {
+    "build" : "173",
+    "bundleIdentifier" : "com.trongduong.snapzy",
+    "bundlePath" : "/Applications/Snapzy.app",
+    "name" : "Snapzy",
+    "recorderID" : "snapzy",
+    "version" : "1.31.0"
+  }
+}

@@ -3244,7 +3244,7 @@ export const recorders: Recorder[] = ([
     id: 'creavit-studio',
     name: 'Creavit Studio',
     website: 'https://creavit.studio/',
-    lastUpdatedAt: '2026-09-06',
+    lastUpdatedAt: '2026-09-08',
     lastUpdatedVersion: '3.6.0',
     technologyApproach: 'Electron',
     platforms: ['mac'],

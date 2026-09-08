@@ -4,6 +4,11 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "顶级，整体简洁干净，动效丰富，细节都很精致",
+    ux: "目前体验过的工具中，唯一将录制工具条放在 notch（刘海）区域的软件；缺点是与其他 notch 软件同时使用时会有冲突",
+    summary: "顶级的设计，但性能问题突出；录制工具条激进地使用 notch，是一把双刃剑",
+  },
   focusee: {
     ui: "一般，充满了蓝紫色渐变",
     ux: "弹窗、红点之类的有点多",
@@ -80,6 +85,11 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "Top-tier: clean and simple overall, with plentiful animations and finely crafted details.",
+    ux: "The only tool I have tried so far that places its recording toolbar in the notch. The downside is that it conflicts with other notch apps when used together.",
+    summary: "Top-tier design, but significant performance issues. The recording toolbar’s aggressive use of the notch is a double-edged sword.",
+  },
   focusee: {
     ui: "Average, full of blue-purple gradients.",
     ux: "A few too many pop-ups, notification dots, and similar distractions.",
@@ -155,6 +165,11 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "頂級，整體簡潔乾淨，動效豐富，細節都很精緻",
+    ux: "目前體驗過的工具中，唯一將錄製工具列放在 notch（瀏海）區域的軟體；缺點是與其他 notch 軟體同時使用時會有衝突",
+    summary: "頂級的設計，但效能問題突出；錄製工具列激進地使用 notch，是一把雙面刃",
+  },
   focusee: {
     ui: "一般，充滿了藍紫色漸層",
     ux: "彈出視窗、紅點之類的有點多",
@@ -218,6 +233,11 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "最高水準。全体的にシンプルで清潔感があり、アニメーションが豊富で、細部まで丁寧に作り込まれている。",
+    ux: "これまで試した中で、録画ツールバーをノッチに配置する唯一のツール。ただし、ほかのノッチ用アプリと同時に使うと競合する。",
+    summary: "デザインは最高水準だが、パフォーマンスの問題が目立つ。録画ツールバーでノッチを積極的に活用する設計は諸刃の剣。",
+  },
   focusee: {
     ui: "普通。青紫のグラデーションだらけ。",
     ux: "ポップアップや通知の赤い点などが少し多い。",
@@ -281,6 +301,11 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "최상급. 전체적으로 간결하고 깔끔하며, 애니메이션이 풍부하고 세부 디자인도 정교하다.",
+    ux: "지금까지 사용해 본 도구 중 녹화 도구 모음을 노치에 배치한 유일한 앱. 다만 다른 노치 앱과 함께 사용하면 충돌한다.",
+    summary: "최상급 디자인이지만 성능 문제가 두드러진다. 녹화 도구 모음이 노치를 적극적으로 활용하는 방식은 양날의 검이다.",
+  },
   focusee: {
     ui: "보통. 파란색과 보라색 그라데이션으로 가득하다.",
     ux: "팝업이나 빨간 알림 점 같은 것이 조금 많다.",
@@ -344,6 +369,11 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "De primer nivel: una interfaz sencilla y limpia, con muchas animaciones y detalles muy cuidados.",
+    ux: "La única herramienta que he probado hasta ahora que coloca la barra de grabación en el notch. El inconveniente es que entra en conflicto con otras aplicaciones para el notch al usarlas juntas.",
+    summary: "Diseño de primer nivel, pero con problemas importantes de rendimiento. El uso intensivo del notch para la barra de grabación es un arma de doble filo.",
+  },
   focusee: {
     ui: "Normal, llena de degradados azules y violetas.",
     ux: "Hay demasiadas ventanas emergentes, puntos de notificación y distracciones similares.",
@@ -407,6 +437,11 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "De très haut niveau : une interface simple et épurée, de nombreuses animations et des détails très soignés.",
+    ux: "Le seul outil que j’ai essayé jusqu’ici qui place sa barre d’enregistrement dans l’encoche. En revanche, il entre en conflit avec les autres applications utilisant l’encoche lorsqu’elles fonctionnent ensemble.",
+    summary: "Un design de très haut niveau, mais des problèmes de performances importants. L’utilisation intensive de l’encoche pour la barre d’enregistrement est à double tranchant.",
+  },
   focusee: {
     ui: "Moyenne, pleine de dégradés bleus et violets.",
     ux: "Un peu trop de fenêtres contextuelles, de pastilles de notification et autres distractions.",
@@ -470,6 +505,11 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "Erstklassig: insgesamt schlicht und aufgeräumt, mit vielen Animationen und sorgfältig ausgearbeiteten Details.",
+    ux: "Das einzige bisher von mir getestete Tool, das seine Aufnahmeleiste in der Notch platziert. Bei gleichzeitiger Nutzung anderer Notch-Apps kommt es allerdings zu Konflikten.",
+    summary: "Erstklassiges Design, aber deutliche Leistungsprobleme. Die intensive Nutzung der Notch für die Aufnahmeleiste ist ein zweischneidiges Schwert.",
+  },
   focusee: {
     ui: "Durchschnittlich, voller blau-violetter Farbverläufe.",
     ux: "Etwas zu viele Pop-ups, Benachrichtigungspunkte und ähnliche Ablenkungen.",
@@ -533,6 +573,11 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  'creavit-studio': {
+    ui: "De primeira linha: interface simples e limpa, com muitas animações e detalhes muito bem cuidados.",
+    ux: "A única ferramenta que experimentei até agora que coloca a barra de gravação no notch. A desvantagem é que ela entra em conflito com outros aplicativos de notch quando usados juntos.",
+    summary: "Design de primeira linha, mas com problemas significativos de desempenho. O uso intenso do notch pela barra de gravação é uma faca de dois gumes.",
+  },
   focusee: {
     ui: "Mediana, cheia de gradientes azuis e roxos.",
     ux: "Há um pouco demais de pop-ups, pontos de notificação e distrações semelhantes.",

@@ -1,0 +1,3726 @@
+{
+  "endedAt" : "2026-09-08T14:10:13Z",
+  "id" : "2D72E500-3AD7-4292-9F4D-0B4A023DE337",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.025e-05,
+      "physicalFootprintBytes" : 5621219096,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.543390366,
+            "diskReadBytes" : 119111680,
+            "diskWrittenBytes" : 410263552,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 163891336
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.161180933,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005903628,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 2.050402145,
+            "diskReadBytes" : 1556480,
+            "diskWrittenBytes" : 10829824,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 1697285800
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.1530396,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 5.764286739,
+            "diskReadBytes" : 11071488,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3600162040
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.721165484,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 98043871232
+    },
+    {
+      "cpuPercent" : 1.9767432302653505,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.047820875,
+      "physicalFootprintBytes" : 5459132184,
+      "processes" : [
+        {
+          "cpuPercent" : 1.4596152439770549,
+          "process" : {
+            "cpuTimeSeconds" : 5.779581262,
+            "diskReadBytes" : 11071488,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3437403384
+          }
+        },
+        {
+          "cpuPercent" : 0.38630487615764,
+          "process" : {
+            "cpuTimeSeconds" : 2.054450026,
+            "diskReadBytes" : 1556480,
+            "diskWrittenBytes" : 10829824,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 1698219688
+          }
+        },
+        {
+          "cpuPercent" : 0.0598337804359997,
+          "process" : {
+            "cpuTimeSeconds" : 0.161807899,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.05694557033988839,
+          "process" : {
+            "cpuTimeSeconds" : 0.543987068,
+            "diskReadBytes" : 119111680,
+            "diskWrittenBytes" : 410263552,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 163629192
+          }
+        },
+        {
+          "cpuPercent" : 0.01397743282764636,
+          "process" : {
+            "cpuTimeSeconds" : 0.721311946,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 6.632652712113876e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.005904323,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.1530396,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 410.2728731942215,
+      "systemMemoryDeltaBytes" : 33587200,
+      "systemMemoryUsedBytes" : 98077458432
+    },
+    {
+      "cpuPercent" : 7.238503727378065,
+      "diskReadBytes" : 16130048,
+      "diskWrittenBytes" : 77824,
+      "elapsedSeconds" : 2.047283708,
+      "physicalFootprintBytes" : 6916753264,
+      "processes" : [
+        {
+          "cpuPercent" : 5.824323017519341,
+          "process" : {
+            "cpuTimeSeconds" : 5.837789818,
+            "diskReadBytes" : 11874304,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 4472677016
+          }
+        },
+        {
+          "cpuPercent" : 0.9042081058284819,
+          "process" : {
+            "cpuTimeSeconds" : 0.553023766,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410324992,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 156256392
+          }
+        },
+        {
+          "cpuPercent" : 0.44660627990304025,
+          "process" : {
+            "cpuTimeSeconds" : 2.05891343,
+            "diskReadBytes" : 1556480,
+            "diskWrittenBytes" : 10846208,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 2124154632
+          }
+        },
+        {
+          "cpuPercent" : 0.051646947183653306,
+          "process" : {
+            "cpuTimeSeconds" : 0.162324061,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.011616915945032455,
+          "process" : {
+            "cpuTimeSeconds" : 0.721428046,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 5.5433001150290044e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.005904877,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 4.70279973660252e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.15304007,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000197371,
+            "diskReadBytes" : 802816,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3785304
+          }
+        }
+      ],
+      "systemCPUPercent" : 735.9506449803702,
+      "systemMemoryDeltaBytes" : 651149312,
+      "systemMemoryUsedBytes" : 98695020544
+    },
+    {
+      "cpuPercent" : 9.226673361144512,
+      "diskReadBytes" : 18391040,
+      "diskWrittenBytes" : 602112,
+      "elapsedSeconds" : 3.047841917,
+      "physicalFootprintBytes" : 8936738352,
+      "processes" : [
+        {
+          "cpuPercent" : 7.768385296031996,
+          "process" : {
+            "cpuTimeSeconds" : 5.915527849,
+            "diskReadBytes" : 11923456,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5153990088
+          }
+        },
+        {
+          "cpuPercent" : 1.174464308625287,
+          "process" : {
+            "cpuTimeSeconds" : 2.070666264,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11370496,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3429304984
+          }
+        },
+        {
+          "cpuPercent" : 0.1425023164619602,
+          "process" : {
+            "cpuTimeSeconds" : 0.554449783,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410324992,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 162793608
+          }
+        },
+        {
+          "cpuPercent" : 0.07707604585532772,
+          "process" : {
+            "cpuTimeSeconds" : 0.000968669,
+            "diskReadBytes" : 2899968,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 30769752
+          }
+        },
+        {
+          "cpuPercent" : 0.05241274645960386,
+          "process" : {
+            "cpuTimeSeconds" : 0.162848554,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.011832647710335951,
+          "process" : {
+            "cpuTimeSeconds" : 0.721546455,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005904877,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.15304007,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 806.408094435076,
+      "systemMemoryDeltaBytes" : 1119174656,
+      "systemMemoryUsedBytes" : 99163045888
+    },
+    {
+      "cpuPercent" : 18.652653359606365,
+      "diskReadBytes" : 21594112,
+      "diskWrittenBytes" : 8990720,
+      "elapsedSeconds" : 4.047444542,
+      "physicalFootprintBytes" : 8764968616,
+      "processes" : [
+        {
+          "cpuPercent" : 15.962533848706192,
+          "process" : {
+            "cpuTimeSeconds" : 6.075063498,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 4814267872
+          }
+        },
+        {
+          "cpuPercent" : 2.100974284926326,
+          "process" : {
+            "cpuTimeSeconds" : 2.091664202,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11370496,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3597781656
+          }
+        },
+        {
+          "cpuPercent" : 0.33416555927361685,
+          "process" : {
+            "cpuTimeSeconds" : 0.004308447,
+            "diskReadBytes" : 6070272,
+            "diskWrittenBytes" : 8388608,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7111352
+          }
+        },
+        {
+          "cpuPercent" : 0.18113427482066502,
+          "process" : {
+            "cpuTimeSeconds" : 0.556260108,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410324992,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 185927816
+          }
+        },
+        {
+          "cpuPercent" : 0.059307923639595514,
+          "process" : {
+            "cpuTimeSeconds" : 0.1634413,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.014040488999759133,
+          "process" : {
+            "cpuTimeSeconds" : 0.721686781,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0004969792402100545,
+          "process" : {
+            "cpuTimeSeconds" : 0.153045037,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005904877,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1118.946188340807,
+      "systemMemoryDeltaBytes" : 598753280,
+      "systemMemoryUsedBytes" : 98642624512
+    },
+    {
+      "cpuPercent" : 18.598903924426644,
+      "diskReadBytes" : 21594112,
+      "diskWrittenBytes" : 17383424,
+      "elapsedSeconds" : 5.047298375,
+      "physicalFootprintBytes" : 8980975320,
+      "processes" : [
+        {
+          "cpuPercent" : 16.09836401275628,
+          "process" : {
+            "cpuTimeSeconds" : 6.236025023,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5263468024
+          }
+        },
+        {
+          "cpuPercent" : 1.9536998895223257,
+          "process" : {
+            "cpuTimeSeconds" : 2.111198517,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11370496,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3389721240
+          }
+        },
+        {
+          "cpuPercent" : 0.24020719846388744,
+          "process" : {
+            "cpuTimeSeconds" : 0.55866185,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410329088,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 160778400
+          }
+        },
+        {
+          "cpuPercent" : 0.23493577430199475,
+          "process" : {
+            "cpuTimeSeconds" : 0.006657482,
+            "diskReadBytes" : 6070272,
+            "diskWrittenBytes" : 16777216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7127736
+          }
+        },
+        {
+          "cpuPercent" : 0.058070477431837325,
+          "process" : {
+            "cpuTimeSeconds" : 0.164021925,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013549961425944623,
+          "process" : {
+            "cpuTimeSeconds" : 0.721822262,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 7.661052437210013e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.153045803,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005904877,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1112.268907563025,
+      "systemMemoryDeltaBytes" : 1119436800,
+      "systemMemoryUsedBytes" : 99163308032
+    },
+    {
+      "cpuPercent" : 17.723230704328294,
+      "diskReadBytes" : 21594112,
+      "diskWrittenBytes" : 17588224,
+      "elapsedSeconds" : 6.047290333,
+      "physicalFootprintBytes" : 9061961504,
+      "processes" : [
+        {
+          "cpuPercent" : 15.48344959954,
+          "process" : {
+            "cpuTimeSeconds" : 6.390862906,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5304149544
+          }
+        },
+        {
+          "cpuPercent" : 1.9440898730340033,
+          "process" : {
+            "cpuTimeSeconds" : 2.130639841,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3421031088
+          }
+        },
+        {
+          "cpuPercent" : 0.18388317755549088,
+          "process" : {
+            "cpuTimeSeconds" : 0.008496354,
+            "diskReadBytes" : 6070272,
+            "diskWrittenBytes" : 16777216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7144120
+          }
+        },
+        {
+          "cpuPercent" : 0.056345967431960575,
+          "process" : {
+            "cpuTimeSeconds" : 0.164585397,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.042000781232904454,
+          "process" : {
+            "cpuTimeSeconds" : 0.559081867,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 169756832
+          }
+        },
+        {
+          "cpuPercent" : 0.01331680869480855,
+          "process" : {
+            "cpuTimeSeconds" : 0.721955433,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0001444968391316532,
+          "process" : {
+            "cpuTimeSeconds" : 0.005906322,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153045803,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 974.5800671892498,
+      "systemMemoryDeltaBytes" : 1099497472,
+      "systemMemoryUsedBytes" : 99143368704
+    },
+    {
+      "cpuPercent" : 18.44294323052627,
+      "diskReadBytes" : 21614592,
+      "diskWrittenBytes" : 34365440,
+      "elapsedSeconds" : 7.047393792,
+      "physicalFootprintBytes" : 8759054112,
+      "processes" : [
+        {
+          "cpuPercent" : 15.604086054156754,
+          "process" : {
+            "cpuTimeSeconds" : 6.546928629,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5053638184
+          }
+        },
+        {
+          "cpuPercent" : 2.321628188015919,
+          "process" : {
+            "cpuTimeSeconds" : 2.153859822,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3372960432
+          }
+        },
+        {
+          "cpuPercent" : 0.2516575026551295,
+          "process" : {
+            "cpuTimeSeconds" : 0.01101333,
+            "diskReadBytes" : 6090752,
+            "diskWrittenBytes" : 33554432,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7176888
+          }
+        },
+        {
+          "cpuPercent" : 0.1922487684269863,
+          "process" : {
+            "cpuTimeSeconds" : 0.561004661,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 165398688
+          }
+        },
+        {
+          "cpuPercent" : 0.059330646670073456,
+          "process" : {
+            "cpuTimeSeconds" : 0.165178798,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013992070601412436,
+          "process" : {
+            "cpuTimeSeconds" : 0.722095376,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005906322,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153045803,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1106.9949636261892,
+      "systemMemoryDeltaBytes" : 801882112,
+      "systemMemoryUsedBytes" : 98845753344
+    },
+    {
+      "cpuPercent" : 19.251092953246204,
+      "diskReadBytes" : 21626880,
+      "diskWrittenBytes" : 51142656,
+      "elapsedSeconds" : 8.047820583,
+      "physicalFootprintBytes" : 8783384352,
+      "processes" : [
+        {
+          "cpuPercent" : 16.25437110229413,
+          "process" : {
+            "cpuTimeSeconds" : 6.709543094,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5262206552
+          }
+        },
+        {
+          "cpuPercent" : 2.218131565074787,
+          "process" : {
+            "cpuTimeSeconds" : 2.176050793,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3169274496
+          }
+        },
+        {
+          "cpuPercent" : 0.4621550276137225,
+          "process" : {
+            "cpuTimeSeconds" : 0.565628223,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 184764576
+          }
+        },
+        {
+          "cpuPercent" : 0.24266676909674628,
+          "process" : {
+            "cpuTimeSeconds" : 0.013441054,
+            "diskReadBytes" : 6103040,
+            "diskWrittenBytes" : 50331648,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7258808
+          }
+        },
+        {
+          "cpuPercent" : 0.05916004810434063,
+          "process" : {
+            "cpuTimeSeconds" : 0.165770656,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.014116755089445652,
+          "process" : {
+            "cpuTimeSeconds" : 0.722236605,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0004916859730286409,
+          "process" : {
+            "cpuTimeSeconds" : 0.153050722,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005906322,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1041.2556053811659,
+      "systemMemoryDeltaBytes" : 716750848,
+      "systemMemoryUsedBytes" : 98760622080
+    },
+    {
+      "cpuPercent" : 14.773375322794,
+      "diskReadBytes" : 21626880,
+      "diskWrittenBytes" : 51142656,
+      "elapsedSeconds" : 9.047198042,
+      "physicalFootprintBytes" : 8520535840,
+      "processes" : [
+        {
+          "cpuPercent" : 12.511199664191999,
+          "process" : {
+            "cpuTimeSeconds" : 6.834588604,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5017265752
+          }
+        },
+        {
+          "cpuPercent" : 1.833032804794053,
+          "process" : {
+            "cpuTimeSeconds" : 2.19437138,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3169503872
+          }
+        },
+        {
+          "cpuPercent" : 0.22896617651862716,
+          "process" : {
+            "cpuTimeSeconds" : 0.015729499,
+            "diskReadBytes" : 6103040,
+            "diskWrittenBytes" : 50331648,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7340728
+          }
+        },
+        {
+          "cpuPercent" : 0.1268409054134313,
+          "process" : {
+            "cpuTimeSeconds" : 0.566895958,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 166545568
+          }
+        },
+        {
+          "cpuPercent" : 0.0592883068141438,
+          "process" : {
+            "cpuTimeSeconds" : 0.166363224,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013977928108626251,
+          "process" : {
+            "cpuTimeSeconds" : 0.72237631,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 6.953695311894982e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.005907017,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153050722,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 951.8166573504752,
+      "systemMemoryDeltaBytes" : 206848000,
+      "systemMemoryUsedBytes" : 98250719232
+    },
+    {
+      "cpuPercent" : 18.172709965834763,
+      "diskReadBytes" : 21643264,
+      "diskWrittenBytes" : 59531264,
+      "elapsedSeconds" : 10.047012208,
+      "physicalFootprintBytes" : 8555859720,
+      "processes" : [
+        {
+          "cpuPercent" : 15.720096416292916,
+          "process" : {
+            "cpuTimeSeconds" : 6.99175446,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5117912640
+          }
+        },
+        {
+          "cpuPercent" : 1.9917755292042574,
+          "process" : {
+            "cpuTimeSeconds" : 2.214284687,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3081931392
+          }
+        },
+        {
+          "cpuPercent" : 0.2269029749220981,
+          "process" : {
+            "cpuTimeSeconds" : 0.017998022,
+            "diskReadBytes" : 6119424,
+            "diskWrittenBytes" : 58720256,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7357112
+          }
+        },
+        {
+          "cpuPercent" : 0.16111928325288455,
+          "process" : {
+            "cpuTimeSeconds" : 0.568506791,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 188778656
+          }
+        },
+        {
+          "cpuPercent" : 0.059092097215348215,
+          "process" : {
+            "cpuTimeSeconds" : 0.166954013,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013655449712547774,
+          "process" : {
+            "cpuTimeSeconds" : 0.722512834,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 6.821523471302546e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.005907699,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153050722,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1011.9955156950674,
+      "systemMemoryDeltaBytes" : 473792512,
+      "systemMemoryUsedBytes" : 98517663744
+    },
+    {
+      "cpuPercent" : 17.449986498129324,
+      "diskReadBytes" : 21651456,
+      "diskWrittenBytes" : 67919872,
+      "elapsedSeconds" : 11.047846,
+      "physicalFootprintBytes" : 8775733024,
+      "processes" : [
+        {
+          "cpuPercent" : 15.031896939134656,
+          "process" : {
+            "cpuTimeSeconds" : 7.142191768,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5316191832
+          }
+        },
+        {
+          "cpuPercent" : 1.9773647196244537,
+          "process" : {
+            "cpuTimeSeconds" : 2.234073901,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3125234304
+          }
+        },
+        {
+          "cpuPercent" : 0.19317282469376001,
+          "process" : {
+            "cpuTimeSeconds" : 0.019931271,
+            "diskReadBytes" : 6127616,
+            "diskWrittenBytes" : 67108864,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7373496
+          }
+        },
+        {
+          "cpuPercent" : 0.1782054077927196,
+          "process" : {
+            "cpuTimeSeconds" : 0.570290248,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 167053472
+          }
+        },
+        {
+          "cpuPercent" : 0.05630737202137474,
+          "process" : {
+            "cpuTimeSeconds" : 0.16751753,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.012944809198961498,
+          "process" : {
+            "cpuTimeSeconds" : 0.722642384,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 9.442566339671036e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.153051667,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005907699,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 932.2508398656215,
+      "systemMemoryDeltaBytes" : 271974400,
+      "systemMemoryUsedBytes" : 98315845632
+    },
+    {
+      "cpuPercent" : 17.93538923451342,
+      "diskReadBytes" : 21667840,
+      "diskWrittenBytes" : 76308480,
+      "elapsedSeconds" : 12.047282375,
+      "physicalFootprintBytes" : 8505823008,
+      "processes" : [
+        {
+          "cpuPercent" : 15.777258328059233,
+          "process" : {
+            "cpuTimeSeconds" : 7.299868728,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5085931096
+          }
+        },
+        {
+          "cpuPercent" : 1.7400872372930525,
+          "process" : {
+            "cpuTimeSeconds" : 2.251464227,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3086535296
+          }
+        },
+        {
+          "cpuPercent" : 0.1945880365009266,
+          "process" : {
+            "cpuTimeSeconds" : 0.021875972,
+            "diskReadBytes" : 6144000,
+            "diskWrittenBytes" : 75497472,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7471800
+          }
+        },
+        {
+          "cpuPercent" : 0.15225167715324,
+          "process" : {
+            "cpuTimeSeconds" : 0.571811842,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 166004896
+          }
+        },
+        {
+          "cpuPercent" : 0.05715013772692293,
+          "process" : {
+            "cpuTimeSeconds" : 0.168088685,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013673087025605437,
+          "process" : {
+            "cpuTimeSeconds" : 0.722779032,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0003807307544374034,
+          "process" : {
+            "cpuTimeSeconds" : 0.153055472,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005907699,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 973.7373737373737,
+      "systemMemoryDeltaBytes" : 419823616,
+      "systemMemoryUsedBytes" : 98463694848
+    },
+    {
+      "cpuPercent" : 16.696822499597705,
+      "diskReadBytes" : 21680128,
+      "diskWrittenBytes" : 84697088,
+      "elapsedSeconds" : 13.047653125,
+      "physicalFootprintBytes" : 8798637856,
+      "processes" : [
+        {
+          "cpuPercent" : 14.444145744390594,
+          "process" : {
+            "cpuTimeSeconds" : 7.444369262,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5333263960
+          }
+        },
+        {
+          "cpuPercent" : 1.8398456031483026,
+          "process" : {
+            "cpuTimeSeconds" : 2.269870208,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3132803712
+          }
+        },
+        {
+          "cpuPercent" : 0.22389022889638147,
+          "process" : {
+            "cpuTimeSeconds" : 0.02411579,
+            "diskReadBytes" : 6156288,
+            "diskWrittenBytes" : 83886080,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7373496
+          }
+        },
+        {
+          "cpuPercent" : 0.11643427838014088,
+          "process" : {
+            "cpuTimeSeconds" : 0.572976661,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 165316768
+          }
+        },
+        {
+          "cpuPercent" : 0.05873397780307895,
+          "process" : {
+            "cpuTimeSeconds" : 0.168676265,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013772666979205747,
+          "process" : {
+            "cpuTimeSeconds" : 0.722916815,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005907699,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153055472,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 950.8105086640581,
+      "systemMemoryDeltaBytes" : 616529920,
+      "systemMemoryUsedBytes" : 98660401152
+    },
+    {
+      "cpuPercent" : 13.247488655936822,
+      "diskReadBytes" : 21680128,
+      "diskWrittenBytes" : 84697088,
+      "elapsedSeconds" : 14.047649417,
+      "physicalFootprintBytes" : 8759725856,
+      "processes" : [
+        {
+          "cpuPercent" : 11.058444852393073,
+          "process" : {
+            "cpuTimeSeconds" : 7.554955337,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5315208792
+          }
+        },
+        {
+          "cpuPercent" : 1.86849941811057,
+          "process" : {
+            "cpuTimeSeconds" : 2.288555477,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3104443008
+          }
+        },
+        {
+          "cpuPercent" : 0.21575722664271024,
+          "process" : {
+            "cpuTimeSeconds" : 0.026273394,
+            "diskReadBytes" : 6156288,
+            "diskWrittenBytes" : 83886080,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7389880
+          }
+        },
+        {
+          "cpuPercent" : 0.05869203675752476,
+          "process" : {
+            "cpuTimeSeconds" : 0.169263194,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.03184043169093264,
+          "process" : {
+            "cpuTimeSeconds" : 0.57329507,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 172804256
+          }
+        },
+        {
+          "cpuPercent" : 0.01415109186573904,
+          "process" : {
+            "cpuTimeSeconds" : 0.723058328,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 5.229923078314081e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.153055995,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 5.129924549075696e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.005908212,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 772.2938867077959,
+      "systemMemoryDeltaBytes" : 567230464,
+      "systemMemoryUsedBytes" : 98611101696
+    },
+    {
+      "cpuPercent" : 16.932456184794397,
+      "diskReadBytes" : 21680128,
+      "diskWrittenBytes" : 84697088,
+      "elapsedSeconds" : 15.04746175,
+      "physicalFootprintBytes" : 8824917816,
+      "processes" : [
+        {
+          "cpuPercent" : 14.705629014069356,
+          "process" : {
+            "cpuTimeSeconds" : 7.701963454,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5331674712
+          }
+        },
+        {
+          "cpuPercent" : 1.9016589511441708,
+          "process" : {
+            "cpuTimeSeconds" : 2.307565837,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3138472576
+          }
+        },
+        {
+          "cpuPercent" : 0.20988875598835308,
+          "process" : {
+            "cpuTimeSeconds" : 0.028371594,
+            "diskReadBytes" : 6156288,
+            "diskWrittenBytes" : 83886080,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7389880
+          }
+        },
+        {
+          "cpuPercent" : 0.05747612820250445,
+          "process" : {
+            "cpuTimeSeconds" : 0.169837767,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.04411044983348127,
+          "process" : {
+            "cpuTimeSeconds" : 0.57373603,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 187500728
+          }
+        },
+        {
+          "cpuPercent" : 0.013692885556529642,
+          "process" : {
+            "cpuTimeSeconds" : 0.723195212,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005908212,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153055995,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 992.929292929293,
+      "systemMemoryDeltaBytes" : 671809536,
+      "systemMemoryUsedBytes" : 98715680768
+    },
+    {
+      "cpuPercent" : 14.121537177305264,
+      "diskReadBytes" : 21688320,
+      "diskWrittenBytes" : 93085696,
+      "elapsedSeconds" : 16.047758875,
+      "physicalFootprintBytes" : 8611237688,
+      "processes" : [
+        {
+          "cpuPercent" : 12.069906125746915,
+          "process" : {
+            "cpuTimeSeconds" : 7.822716513,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5082703448
+          }
+        },
+        {
+          "cpuPercent" : 1.7190125567574572,
+          "process" : {
+            "cpuTimeSeconds" : 2.324763653,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3151841920
+          }
+        },
+        {
+          "cpuPercent" : 0.21366081349356347,
+          "process" : {
+            "cpuTimeSeconds" : 0.030509158,
+            "diskReadBytes" : 6164480,
+            "diskWrittenBytes" : 92274688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7406264
+          }
+        },
+        {
+          "cpuPercent" : 0.05814058935383867,
+          "process" : {
+            "cpuTimeSeconds" : 0.170419433,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.04674288840030671,
+          "process" : {
+            "cpuTimeSeconds" : 0.574203668,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 209406136
+          }
+        },
+        {
+          "cpuPercent" : 0.013684277996130804,
+          "process" : {
+            "cpuTimeSeconds" : 0.723332116,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.00038992555705397283,
+          "process" : {
+            "cpuTimeSeconds" : 0.153059896,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005908212,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 824.9580302182428,
+      "systemMemoryDeltaBytes" : 297467904,
+      "systemMemoryUsedBytes" : 98341339136
+    },
+    {
+      "cpuPercent" : 19.288415906399607,
+      "diskReadBytes" : 21700608,
+      "diskWrittenBytes" : 101474304,
+      "elapsedSeconds" : 17.04752025,
+      "physicalFootprintBytes" : 8582401848,
+      "processes" : [
+        {
+          "cpuPercent" : 17.27658282776172,
+          "process" : {
+            "cpuTimeSeconds" : 7.995424515,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5132772952
+          }
+        },
+        {
+          "cpuPercent" : 1.6734842302331898,
+          "process" : {
+            "cpuTimeSeconds" : 2.341492894,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3110783616
+          }
+        },
+        {
+          "cpuPercent" : 0.1527374225899773,
+          "process" : {
+            "cpuTimeSeconds" : 0.032036021,
+            "diskReadBytes" : 6176768,
+            "diskWrittenBytes" : 100663296,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7422648
+          }
+        },
+        {
+          "cpuPercent" : 0.11578175319483157,
+          "process" : {
+            "cpuTimeSeconds" : 0.575361098,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 171542712
+          }
+        },
+        {
+          "cpuPercent" : 0.05691214900848195,
+          "process" : {
+            "cpuTimeSeconds" : 0.170988364,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.012856403153836923,
+          "process" : {
+            "cpuTimeSeconds" : 0.723460637,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 6.11204575683786e-05,
+          "process" : {
+            "cpuTimeSeconds" : 0.153060507,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005908212,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 1003.3613445378151,
+      "systemMemoryDeltaBytes" : 459882496,
+      "systemMemoryUsedBytes" : 98503753728
+    },
+    {
+      "cpuPercent" : 18.17318486193526,
+      "diskReadBytes" : 21700608,
+      "diskWrittenBytes" : 109862912,
+      "elapsedSeconds" : 18.047735875,
+      "physicalFootprintBytes" : 8694583120,
+      "processes" : [
+        {
+          "cpuPercent" : 16.077602510764184,
+          "process" : {
+            "cpuTimeSeconds" : 8.156265688,
+            "diskReadBytes" : 11956224,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5237384816
+          }
+        },
+        {
+          "cpuPercent" : 1.8155446249780631,
+          "process" : {
+            "cpuTimeSeconds" : 2.359655697,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3088829056
+          }
+        },
+        {
+          "cpuPercent" : 0.1591874957940168,
+          "process" : {
+            "cpuTimeSeconds" : 0.033628541,
+            "diskReadBytes" : 6176768,
+            "diskWrittenBytes" : 109051904,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7422648
+          }
+        },
+        {
+          "cpuPercent" : 0.056619757164819824,
+          "process" : {
+            "cpuTimeSeconds" : 0.171554791,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.05108859844011093,
+          "process" : {
+            "cpuTimeSeconds" : 0.575872191,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 201066680
+          }
+        },
+        {
+          "cpuPercent" : 0.013010128178975622,
+          "process" : {
+            "cpuTimeSeconds" : 0.723590791,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.00013174661508577623,
+          "process" : {
+            "cpuTimeSeconds" : 0.00590953,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153060507,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 931.2780269058296,
+      "systemMemoryDeltaBytes" : 533790720,
+      "systemMemoryUsedBytes" : 98577661952
+    },
+    {
+      "cpuPercent" : 4.24745677114337,
+      "diskReadBytes" : 21729280,
+      "diskWrittenBytes" : 118251520,
+      "elapsedSeconds" : 19.047823542,
+      "physicalFootprintBytes" : 8756842320,
+      "processes" : [
+        {
+          "cpuPercent" : 3.93029797000186,
+          "process" : {
+            "cpuTimeSeconds" : 8.195566375,
+            "diskReadBytes" : 11972608,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5252343408
+          }
+        },
+        {
+          "cpuPercent" : 0.23974018500396424,
+          "process" : {
+            "cpuTimeSeconds" : 2.362052959,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3131591296
+          }
+        },
+        {
+          "cpuPercent" : 0.037161667788726246,
+          "process" : {
+            "cpuTimeSeconds" : 0.171926386,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.02370918305148429,
+          "process" : {
+            "cpuTimeSeconds" : 0.033865619,
+            "diskReadBytes" : 6189056,
+            "diskWrittenBytes" : 117440512,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7422648
+          }
+        },
+        {
+          "cpuPercent" : 0.009152233886410071,
+          "process" : {
+            "cpuTimeSeconds" : 0.575963708,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 205605048
+          }
+        },
+        {
+          "cpuPercent" : 0.007395531410925427,
+          "process" : {
+            "cpuTimeSeconds" : 0.723664742,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.00590953,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153060507,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 320.53422370617693,
+      "systemMemoryDeltaBytes" : 585334784,
+      "systemMemoryUsedBytes" : 98629206016
+    },
+    {
+      "cpuPercent" : 9.204111005375314,
+      "diskReadBytes" : 21729280,
+      "diskWrittenBytes" : 118251520,
+      "elapsedSeconds" : 20.047729375,
+      "physicalFootprintBytes" : 8815595344,
+      "processes" : [
+        {
+          "cpuPercent" : 8.224231900875823,
+          "process" : {
+            "cpuTimeSeconds" : 8.277803129,
+            "diskReadBytes" : 11972608,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 5249836656
+          }
+        },
+        {
+          "cpuPercent" : 0.8212938736712604,
+          "process" : {
+            "cpuTimeSeconds" : 2.370265342,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3177892480
+          }
+        },
+        {
+          "cpuPercent" : 0.07672959198457124,
+          "process" : {
+            "cpuTimeSeconds" : 0.034632863,
+            "diskReadBytes" : 6189056,
+            "diskWrittenBytes" : 117440512,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7422648
+          }
+        },
+        {
+          "cpuPercent" : 0.04517675693043521,
+          "process" : {
+            "cpuTimeSeconds" : 0.172378123,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.02650359339215105,
+          "process" : {
+            "cpuTimeSeconds" : 0.576228726,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 220563640
+          }
+        },
+        {
+          "cpuPercent" : 0.009714057311401904,
+          "process" : {
+            "cpuTimeSeconds" : 0.723761876,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0004612312096697517,
+          "process" : {
+            "cpuTimeSeconds" : 0.153065119,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.00590953,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 643.2160804020101,
+      "systemMemoryDeltaBytes" : 640253952,
+      "systemMemoryUsedBytes" : 98684125184
+    },
+    {
+      "cpuPercent" : 13.08768206405001,
+      "diskReadBytes" : 21753856,
+      "diskWrittenBytes" : 126640128,
+      "elapsedSeconds" : 21.047468042,
+      "physicalFootprintBytes" : 7341788360,
+      "processes" : [
+        {
+          "cpuPercent" : 11.090131911526925,
+          "process" : {
+            "cpuTimeSeconds" : 8.388669796,
+            "diskReadBytes" : 11988992,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 4134904784
+          }
+        },
+        {
+          "cpuPercent" : 1.6031273115566154,
+          "process" : {
+            "cpuTimeSeconds" : 2.386291606,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 2881620608
+          }
+        },
+        {
+          "cpuPercent" : 0.21678513646695544,
+          "process" : {
+            "cpuTimeSeconds" : 0.036800037,
+            "diskReadBytes" : 6197248,
+            "diskWrittenBytes" : 125829120,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Resources/app.asar.unpacked/node_modules/ffmpeg-static/ffmpeg",
+            "identity" : {
+              "pid" : 77084,
+              "startTimeNanoseconds" : 21294399276480
+            },
+            "name" : "ffmpeg",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 7488184
+          }
+        },
+        {
+          "cpuPercent" : 0.10767194306766038,
+          "process" : {
+            "cpuTimeSeconds" : 0.577305109,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410353664,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 157894864
+          }
+        },
+        {
+          "cpuPercent" : 0.056932789162370705,
+          "process" : {
+            "cpuTimeSeconds" : 0.172947273,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013032972269482915,
+          "process" : {
+            "cpuTimeSeconds" : 0.723892165,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.00590953,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10121216,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 8848248
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153065119,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 858.5393258426965,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 97412448256
+    },
+    {
+      "cpuPercent" : 2.4014460335164505,
+      "diskReadBytes" : 21934080,
+      "diskWrittenBytes" : 126668800,
+      "elapsedSeconds" : 22.047524833,
+      "physicalFootprintBytes" : 6865701368,
+      "processes" : [
+        {
+          "cpuPercent" : 1.3782550439890986,
+          "process" : {
+            "cpuTimeSeconds" : 8.402456785,
+            "diskReadBytes" : 12169216,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3865732000
+          }
+        },
+        {
+          "cpuPercent" : 0.7835953493864882,
+          "process" : {
+            "cpuTimeSeconds" : 2.394130083,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 2667907736
+          }
+        },
+        {
+          "cpuPercent" : 0.15951762862384655,
+          "process" : {
+            "cpuTimeSeconds" : 0.578900799,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410370048,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 171854032
+          }
+        },
+        {
+          "cpuPercent" : 0.06220416764544263,
+          "process" : {
+            "cpuTimeSeconds" : 0.173569515,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.013304815290677117,
+          "process" : {
+            "cpuTimeSeconds" : 0.724025256,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.004569028580897755,
+          "process" : {
+            "cpuTimeSeconds" : 0.005955235,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10133504,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 9175928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.153065119,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 375.8793969849246,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 96330203136
+    },
+    {
+      "cpuPercent" : 1.4512189481120121,
+      "diskReadBytes" : 21934080,
+      "diskWrittenBytes" : 126668800,
+      "elapsedSeconds" : 22.266654458,
+      "physicalFootprintBytes" : 6839126520,
+      "processes" : [
+        {
+          "cpuPercent" : 0.847066616891355,
+          "process" : {
+            "cpuTimeSeconds" : 2.395983913,
+            "diskReadBytes" : 1671168,
+            "diskWrittenBytes" : 11550720,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (GPU).app/Contents/MacOS/Creavit Studio Helper (GPU)",
+            "identity" : {
+              "pid" : 73428,
+              "startTimeNanoseconds" : 21287286856614
+            },
+            "name" : "Creavit Studio Helper (GPU)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 2641332888
+          }
+        },
+        {
+          "cpuPercent" : 0.516495743120453,
+          "process" : {
+            "cpuTimeSeconds" : 8.403587151,
+            "diskReadBytes" : 12169216,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 75556,
+              "startTimeNanoseconds" : 21291440105942
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 3865732000
+          }
+        },
+        {
+          "cpuPercent" : 0.0710646228215403,
+          "process" : {
+            "cpuTimeSeconds" : 0.173725042,
+            "diskReadBytes" : 1646592,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73663,
+              "startTimeNanoseconds" : 21287611897799
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 11043656
+          }
+        },
+        {
+          "cpuPercent" : 0.014771564593754253,
+          "process" : {
+            "cpuTimeSeconds" : 0.724057584,
+            "diskReadBytes" : 8896512,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Renderer).app/Contents/MacOS/Creavit Studio Helper (Renderer)",
+            "identity" : {
+              "pid" : 73658,
+              "startTimeNanoseconds" : 21287602651061
+            },
+            "name" : "Creavit Studio Helper (Renderer",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 89703888
+          }
+        },
+        {
+          "cpuPercent" : 0.0013145815186974322,
+          "process" : {
+            "cpuTimeSeconds" : 0.578903676,
+            "diskReadBytes" : 134438912,
+            "diskWrittenBytes" : 410370048,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/MacOS/Creavit Studio",
+            "identity" : {
+              "pid" : 73409,
+              "startTimeNanoseconds" : 21287273360700
+            },
+            "name" : "Creavit Studio",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 171854032
+          }
+        },
+        {
+          "cpuPercent" : 0.0005058191662120689,
+          "process" : {
+            "cpuTimeSeconds" : 0.153066226,
+            "diskReadBytes" : 14135296,
+            "diskWrittenBytes" : 20594688,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper (Plugin).app/Contents/MacOS/Creavit Studio Helper (Plugin)",
+            "identity" : {
+              "pid" : 73679,
+              "startTimeNanoseconds" : 21287625073639
+            },
+            "name" : "Creavit Studio Helper (Plugin)",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 47318168
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.005955235,
+            "diskReadBytes" : 7938048,
+            "diskWrittenBytes" : 10133504,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Creavit Studio Helper.app/Contents/MacOS/Creavit Studio Helper",
+            "identity" : {
+              "pid" : 73429,
+              "startTimeNanoseconds" : 21287286975206
+            },
+            "name" : "Creavit Studio Helper",
+            "parentPID" : 73409,
+            "physicalFootprintBytes" : 9175928
+          }
+        },
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 0.000130122,
+            "diskReadBytes" : 0,
+            "diskWrittenBytes" : 0,
+            "executablePath" : "/Applications/Creavit Studio.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler",
+            "identity" : {
+              "pid" : 73412,
+              "startTimeNanoseconds" : 21287283139351
+            },
+            "name" : "chrome_crashpad_handler",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 2965960
+          }
+        }
+      ],
+      "systemCPUPercent" : 344.3877551020408,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 96331841536
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-08T14:09:51Z",
+  "summary" : {
+    "averageCPUPercent" : 13.40408807045041,
+    "averagePhysicalFootprintBytes" : 8188862354,
+    "averageSystemCPUPercent" : 834.550678406936,
+    "averageSystemMemoryDeltaBytes" : 495207083,
+    "cpuTimeSeconds" : 3.0725125979999994,
+    "diskReadBytes" : 21934080,
+    "diskWrittenBytes" : 126668800,
+    "durationSeconds" : 22.266654458,
+    "p95CPUPercent" : 19.251092953246204,
+    "p95SystemCPUPercent" : 1112.268907563025,
+    "peakCPUPercent" : 19.288415906399607,
+    "peakPhysicalFootprintBytes" : 9061961504,
+    "peakProcessCount" : 9,
+    "peakSystemCPUPercent" : 1118.946188340807,
+    "peakSystemMemoryDeltaBytes" : 1119436800,
+    "physicalFootprintDeltaBytes" : 1217907424,
+    "realtimeFactor" : 0.3711109076333334
+  },
+  "target" : {
+    "build" : "3.6.0",
+    "bundleIdentifier" : "com.creavit.studio",
+    "bundlePath" : "/Applications/Creavit Studio.app",
+    "name" : "Creavit Studio",
+    "recorderID" : "creavit-studio",
+    "version" : "3.6.0"
+  }
+}

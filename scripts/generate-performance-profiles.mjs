@@ -114,7 +114,15 @@ sources.snapzy = {
   export: 'data/benchmarks/snapzy/snapzy-export-2026-09-08-204909.json',
 };
 
-const workloadLabelFor = (recorderId, scenario) => scenario === 'export'
+sources['creavit-studio'] = {
+  recording: 'data/benchmarks/creavit-studio/creavit-studio-recording-2026-09-08-220642.json',
+  preview: 'data/benchmarks/creavit-studio/creavit-studio-preview-2026-09-08-220819.json',
+  export: 'data/benchmarks/creavit-studio/creavit-studio-export-2026-09-08-220951.json',
+};
+
+const workloadLabelFor = (recorderId, scenario) => recorderId === 'creavit-studio'
+  ? scenario === 'export' ? '1080p 60fps social' : '5K'
+  : scenario === 'export'
   ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap', 'cleanshot-x', 'focusee', 'snapzy'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'
   : '5K';
 

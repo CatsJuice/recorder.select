@@ -4,6 +4,10 @@ export type SubjectiveReviewKey = 'ui' | 'ux' | 'summary';
 type SubjectiveReview = Partial<Record<SubjectiveReviewKey, string>>;
 
 const zhCN: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "简洁干净",
+    summary: "主要偏向截图工具，没有自动运镜、动态模糊、相机画面等功能",
+  },
   'creavit-studio': {
     ui: "顶级，整体简洁干净，动效丰富，细节都很精致",
     ux: "目前体验过的工具中，唯一将录制工具条放在 notch（刘海）区域的软件；缺点是与其他 notch 软件同时使用时会有冲突",
@@ -85,6 +89,10 @@ const zhCN: Record<string, SubjectiveReview> = {
 };
 
 const en: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "Simple and clean.",
+    summary: "Primarily a screenshot tool, without features such as automatic camera movement, motion blur, or a webcam view.",
+  },
   'creavit-studio': {
     ui: "Top-tier: clean and simple overall, with plentiful animations and finely crafted details.",
     ux: "The only tool I have tried so far that places its recording toolbar in the notch. The downside is that it conflicts with other notch apps when used together.",
@@ -165,6 +173,10 @@ const en: Record<string, SubjectiveReview> = {
 };
 
 const zhTW: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "簡潔乾淨",
+    summary: "主要偏向截圖工具，沒有自動運鏡、動態模糊、相機畫面等功能",
+  },
   'creavit-studio': {
     ui: "頂級，整體簡潔乾淨，動效豐富，細節都很精緻",
     ux: "目前體驗過的工具中，唯一將錄製工具列放在 notch（瀏海）區域的軟體；缺點是與其他 notch 軟體同時使用時會有衝突",
@@ -233,6 +245,10 @@ const zhTW: Record<string, SubjectiveReview> = {
 };
 
 const ja: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "シンプルでクリーン。",
+    summary: "主にスクリーンショット向けのツールで、自動カメラワーク、モーションブラー、Webカメラ映像などの機能はない。",
+  },
   'creavit-studio': {
     ui: "最高水準。全体的にシンプルで清潔感があり、アニメーションが豊富で、細部まで丁寧に作り込まれている。",
     ux: "これまで試した中で、録画ツールバーをノッチに配置する唯一のツール。ただし、ほかのノッチ用アプリと同時に使うと競合する。",
@@ -301,6 +317,10 @@ const ja: Record<string, SubjectiveReview> = {
 };
 
 const ko: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "간결하고 깔끔함.",
+    summary: "주로 스크린샷에 초점을 맞춘 도구로, 자동 카메라 움직임, 모션 블러, 웹캠 화면 등의 기능은 없음.",
+  },
   'creavit-studio': {
     ui: "최상급. 전체적으로 간결하고 깔끔하며, 애니메이션이 풍부하고 세부 디자인도 정교하다.",
     ux: "지금까지 사용해 본 도구 중 녹화 도구 모음을 노치에 배치한 유일한 앱. 다만 다른 노치 앱과 함께 사용하면 충돌한다.",
@@ -369,6 +389,10 @@ const ko: Record<string, SubjectiveReview> = {
 };
 
 const es: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "Sencilla y limpia.",
+    summary: "Es principalmente una herramienta de capturas de pantalla, sin funciones como movimiento automático de cámara, desenfoque de movimiento o vista de webcam.",
+  },
   'creavit-studio': {
     ui: "De primer nivel: una interfaz sencilla y limpia, con muchas animaciones y detalles muy cuidados.",
     ux: "La única herramienta que he probado hasta ahora que coloca la barra de grabación en el notch. El inconveniente es que entra en conflicto con otras aplicaciones para el notch al usarlas juntas.",
@@ -437,6 +461,10 @@ const es: Record<string, SubjectiveReview> = {
 };
 
 const fr: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "Simple et épurée.",
+    summary: "Principalement un outil de capture d’écran, sans fonctions telles que les mouvements automatiques de caméra, le flou de mouvement ou l’affichage de la webcam.",
+  },
   'creavit-studio': {
     ui: "De très haut niveau : une interface simple et épurée, de nombreuses animations et des détails très soignés.",
     ux: "Le seul outil que j’ai essayé jusqu’ici qui place sa barre d’enregistrement dans l’encoche. En revanche, il entre en conflit avec les autres applications utilisant l’encoche lorsqu’elles fonctionnent ensemble.",
@@ -505,6 +533,10 @@ const fr: Record<string, SubjectiveReview> = {
 };
 
 const de: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "Schlicht und aufgeräumt.",
+    summary: "Vor allem ein Screenshot-Tool, ohne Funktionen wie automatische Kamerabewegungen, Bewegungsunschärfe oder Webcam-Ansicht.",
+  },
   'creavit-studio': {
     ui: "Erstklassig: insgesamt schlicht und aufgeräumt, mit vielen Animationen und sorgfältig ausgearbeiteten Details.",
     ux: "Das einzige bisher von mir getestete Tool, das seine Aufnahmeleiste in der Notch platziert. Bei gleichzeitiger Nutzung anderer Notch-Apps kommt es allerdings zu Konflikten.",
@@ -573,6 +605,10 @@ const de: Record<string, SubjectiveReview> = {
 };
 
 const ptBR: Record<string, SubjectiveReview> = {
+  snapzy: {
+    ui: "Simples e limpa.",
+    summary: "É principalmente uma ferramenta de captura de tela, sem funções como movimento automático de câmera, desfoque de movimento ou visualização da webcam.",
+  },
   'creavit-studio': {
     ui: "De primeira linha: interface simples e limpa, com muitas animações e detalhes muito bem cuidados.",
     ux: "A única ferramenta que experimentei até agora que coloca a barra de gravação no notch. A desvantagem é que ela entra em conflito com outros aplicativos de notch quando usados juntos.",

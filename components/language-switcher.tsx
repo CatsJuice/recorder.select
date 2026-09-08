@@ -23,7 +23,7 @@ export function LanguageSwitcher() {
   const choose=(next:Locale)=>{setLocale(next);setOpen(false);triggerRef.current?.focus()};
 
   return <div className={`language-switcher ${open?'is-open':''}`} ref={rootRef}>
-    <button ref={triggerRef} type="button" className="language-trigger" aria-label={t('language')} aria-haspopup="listbox" aria-expanded={open} onClick={()=>setOpen((current)=>!current)}><span>{localeNames[locale]}</span><FontAwesomeIcon icon={faChevronDown} aria-hidden="true" /></button>
+    <button ref={triggerRef} type="button" className="language-trigger" aria-label={`${t('language')}: ${localeNames[locale]}`} aria-haspopup="listbox" aria-expanded={open} onClick={()=>setOpen((current)=>!current)}><span>{localeNames[locale]}</span><FontAwesomeIcon icon={faChevronDown} aria-hidden="true" /></button>
     {open&&<div className="language-menu" role="listbox" aria-label={t('language')}>
       {locales.map((item)=><button type="button" role="option" aria-selected={item===locale} className={item===locale?'selected':''} key={item} onClick={()=>choose(item)}>{localeNames[item]}</button>)}
     </div>}

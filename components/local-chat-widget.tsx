@@ -2,7 +2,6 @@
 
 import { focusRecorderColumn } from '../lib/comparison-table-events';
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
-import { createPortal } from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownWideShort, faArrowUp, faChevronRight, faFilter, faXmark } from '@fortawesome/free-solid-svg-icons';
 import type { WebWorkerMLCEngine } from '@mlc-ai/web-llm';
@@ -674,7 +673,6 @@ function ThinkingBlock({ content, active, startedAt, durationMs }: { content: st
 
 export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComparison, onUpdateSort, onUpdateFilters, recorderScores = {} }: LocalChatWidgetProps) {
   const { t, fieldLabel } = useI18n();
-  const [mounted, setMounted] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [status, setStatus] = useState<EngineStatus>('idle');
   const [progress, setProgress] = useState(0);
@@ -691,7 +689,6 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
   const disabled = status === 'loading' || status === 'generating';
   const canSend = !disabled && input.trim().length > 0;
 
-  useEffect(() => setMounted(true), []);
 
   useEffect(() => onExpandedChange?.(expanded), [expanded, onExpandedChange]);
 
@@ -716,7 +713,7 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
     const observer = new ResizeObserver(update);
     observer.observe(surface);
     return () => observer.disconnect();
-  }, [mounted, onHeightChange]);
+  }, [onHeightChange]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
@@ -944,9 +941,7 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
     '--download-progress': progress,
   } as CSSProperties;
 
-  if (!mounted) return null;
-
-  return createPortal(<>
+  return <>
     <div className={`local-chat-surface t-resize ${expanded ? 'is-expanded' : ''}`} ref={surfaceRef} style={surfaceStyle}>
       <div className="local-chat-conversation" aria-hidden={!expanded}>
         <div className="local-chat-messages" ref={scrollRef} aria-live="polite">
@@ -1001,5 +996,5 @@ export function LocalChatWidget({ onHeightChange, onExpandedChange, onUpdateComp
       <p>{t('downloadDescription',{size:MODEL_SIZE_LABEL})}</p>
       <div className="local-model-dialog-actions"><button type="button" onClick={() => downloadDialogRef.current?.close()}>{t('notNow')}</button><button type="button" onClick={() => void confirmDownload()}>{t('downloadAndSend')}</button></div>
     </dialog>
-  </>, document.body);
+  </>;
 }

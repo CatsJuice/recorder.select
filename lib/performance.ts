@@ -125,7 +125,11 @@ export const formatPerformanceValue = (value: number, format: PerformanceField['
   return `${(value / 1024 ** 3).toFixed(2)} GiB`;
 };
 
-export async function loadPerformanceProfiles(): Promise<PerformanceProfiles> {
+export async function loadPerformanceProfiles(includeSamples = true): Promise<PerformanceProfiles> {
+  if (!includeSamples) {
+    const { generatedPerformanceSummaries } = await import('./performance-summaries.generated');
+    return generatedPerformanceSummaries as unknown as PerformanceProfiles;
+  }
   const { generatedPerformanceProfiles } = await import('./performance-profiles.generated');
   return generatedPerformanceProfiles as unknown as PerformanceProfiles;
 }

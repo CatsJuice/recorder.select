@@ -988,3 +988,30 @@ test('score preview formats at most two decimals, hides unscored fields and mark
   const tied = createComparisonModel({ ...options, products: [products[0], products[2]] });
   assert.deepEqual(tied.rows.find(row => row.id === 'performance').cell(0), { text: '2.5' });
 });
+
+test('lazy benchmark summaries preserve every score contribution and measured value', async () => {
+  const { loadPerformanceProfiles } = await server.ssrLoadModule('/lib/performance.ts');
+  const summaries = await loadPerformanceProfiles(false);
+  const full = await loadPerformanceProfiles();
+  assert.deepEqual(Object.keys(summaries), Object.keys(full));
+  for (const [id, scenarios] of Object.entries(full)) {
+    for (const [scenario, run] of Object.entries(scenarios)) {
+      assert.deepEqual(summaries[id][scenario], { ...run, samples: [] });
+    }
+  }
+  const fields = fieldDefinitions.filter(field => field.scoreable !== false);
+  assert.deepEqual(createScoreContributions(recorders, fields, summaries), createScoreContributions(recorders, fields, full));
+});
+
+test('summary-only charts show loading and failure states until samples arrive', async () => {
+  const { loadPerformanceProfiles } = await server.ssrLoadModule('/lib/performance.ts');
+  const summaries = await loadPerformanceProfiles(false);
+  const product = recorders.find(product => summaries[product.id]?.recording);
+  const options = { ...base, products: [product], performanceProfiles: summaries, expandedGroups: { ...base.expandedGroups, performance: true } };
+  for (const [status, label] of [['loading', 'performanceLoading'], ['error', 'performanceLoadFailed']]) {
+    const model = createComparisonModel({ ...options, performanceStatus: status });
+    assert.equal(model.rows.find(row => row.id === 'performanceRecordingCPU').cell(0).text, label);
+  }
+  const loaded = createComparisonModel({ ...options, performanceProfiles: await loadPerformanceProfiles(), performanceStatus: 'loaded' });
+  assert.ok(loaded.rows.find(row => row.id === 'performanceRecordingCPU').cell(0).sparkline.length > 0);
+});

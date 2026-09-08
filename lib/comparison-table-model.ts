@@ -200,7 +200,7 @@ export function createComparisonModel(options: ModelOptions) {
       const app = products[column];
       if (metric) {
         const run = profiles[app.id]?.[metric.scenario];
-        if (!run) return missingPerformance();
+        if (!run || (run.samples.length === 0 && options.performanceStatus !== 'loaded')) return missingPerformance();
         const scale = performanceTimelineScale(profiles, metric.scenario, metric.metric);
         const ceiling = Math.max(scale.maximum, 1);
         const points = performanceTimelinePoints(run, metric.metric).map(([time, value]) => [

@@ -21,7 +21,7 @@ const result = await build({
     builder.onLoad({ filter: /\.(tsx?|jsx?)$/ }, async ({ path: file }) => {
       if (file.includes('node_modules')) return;
       let source = await fs.readFile(file, 'utf8');
-      if (file === path.join(root, 'app/page.tsx')) {
+      if (file === path.join(root, 'app/comparison-page.tsx')) {
         source = replace(source, /import Link from 'next\/link';/, '');
         source = replace(source, /import \{ GitHubLink \}[^\n]+\n/, '');
         source = replace(source, /<GitHubLink \/>/, '');
@@ -32,7 +32,7 @@ const result = await build({
         source = replace(source, /<LocalChatWidget[^\n]+\n/, '');
         source = replace(source, /\$\{chatExpanded\?'chat-expanded':''\}/, '');
         source = replace(source, /style=\{\{bottom:chatHeight\+8\}\}/, '');
-        source = replace(source, /<Link className="submit-link"[\s\S]*?<\/Link>/, '');
+        source = replace(source, /<a className="submit-link"[\s\S]*?<\/a>/, '');
         source = source.replace(/<Link /g, '<a ').replace(/<\/Link>/g, '</a>').replace('href="/"', 'href="#compare"').replace('src="/recorder-select.svg"', 'src="./recorder-select.svg"');
       }
       if (file.endsWith('/recorders.ts')) source = source.replace(/icon: '\//g, "icon: './");

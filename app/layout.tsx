@@ -2,22 +2,27 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { I18nProvider } from '../lib/i18n';
-import { siteUrl, socialImage, socialImageAlt } from '../lib/site-metadata';
+import { siteUrl, socialImage, socialImageAlt, siteTitle, siteDescription, siteKeywords } from '../lib/site-metadata';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
+  display: 'optional',
 });
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
+  display: 'optional',
+  preload: false,
   subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
-  title: 'Recorder Select — Compare screen recorders',
-  description: 'A clear, independent comparison of the best screen recording tools.',
+  title: siteTitle,
+  description: siteDescription,
+  keywords: siteKeywords,
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
   alternates: {
     canonical: '/',
   },
@@ -28,14 +33,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: 'Recorder Select',
-    title: 'Recorder Select',
-    description: 'Compare screen recorders clearly.',
+    title: siteTitle,
+    description: siteDescription,
     images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recorder Select',
-    description: 'Compare screen recorders clearly.',
+    title: siteTitle,
+    description: siteDescription,
     images: [{ url: '/og.png', alt: socialImageAlt }],
   },
 };

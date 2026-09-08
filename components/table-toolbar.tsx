@@ -428,7 +428,7 @@ export function TableToolbar({
         <div className="tool-anchor">
           <button ref={filterTriggerRef} type="button" className={`icon-tool ${activeFilterCount ? 'has-rules' : ''}`} aria-label={t('filters')} aria-expanded={openPanel === 'filter'} onClick={() => setOpenPanel((panel) => panel === 'filter' ? null : 'filter')}>
             <FontAwesomeIcon className="tool-icon filter-icon" icon={faFilter} aria-hidden="true" />
-            {activeFilterCount > 0 && <span className="rule-count">{activeFilterCount}</span>}
+            {activeFilterCount > 0 && <span className="rule-count" aria-hidden="true">{activeFilterCount}</span>}
           </button>
           <ToolPanel mobile={mobile} open={openPanel === 'filter'} onClose={() => setOpenPanel(null)} triggerRef={filterTriggerRef} title={t('filters')} kind="filter" actions={activeFilterCount > 0 && <button type="button" onClick={() => filterFields.forEach((field) => onFilterChange(field.key, 'any'))}>{t('clear')}</button>}>
             <div className="filter-list">
@@ -460,7 +460,7 @@ export function TableToolbar({
         <div className="tool-anchor">
           <button ref={sortTriggerRef} type="button" className={`icon-tool ${sortRules.length ? 'has-rules' : ''}`} aria-label={t('sort')} aria-expanded={openPanel === 'sort'} onClick={() => setOpenPanel((panel) => panel === 'sort' ? null : 'sort')}>
             <FontAwesomeIcon className="tool-icon" icon={faArrowDownWideShort} aria-hidden="true" />
-            {sortRules.length > 0 && <span className="rule-count">{sortRules.length}</span>}
+            {sortRules.length > 0 && <span className="rule-count" aria-hidden="true">{sortRules.length}</span>}
           </button>
           <ToolPanel mobile={mobile} open={openPanel === 'sort'} onClose={() => setOpenPanel(null)} triggerRef={sortTriggerRef} title={t('sort')} kind="sort" actions={sortRules.length > 0 && <button type="button" onClick={() => onSortRulesChange([])}>{t('clear')}</button>}>
             <div className="sort-list">

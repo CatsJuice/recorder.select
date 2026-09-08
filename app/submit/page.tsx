@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+/* eslint-disable @next/next/no-html-link-for-pages -- Use document navigation until vinext's RSC navigation setup works reliably. */
+
 import { useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faCheck, faCircle, faCopy } from '@fortawesome/free-solid-svg-icons';
@@ -100,7 +101,7 @@ export default function SubmitPage() {
   </div>;
 
   return <main className="submit-page">
-    <nav className="nav shell"><Link className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</Link><div className="nav-page-actions"><Link className="back-link" href="/"><FontAwesomeIcon icon={faArrowLeft} /> {t('backToComparison')}</Link><LanguageSwitcher /><ThemeToggle /></div></nav>
+    <nav className="nav shell"><a className="brand" href="/"><img className="brand-mark" src="/recorder-select.svg" alt="" />Recorder Select</a><div className="nav-page-actions"><a className="back-link" href="/"><FontAwesomeIcon icon={faArrowLeft} /> {t('backToComparison')}</a><LanguageSwitcher /><ThemeToggle /></div></nav>
     <div className="submit-shell shell">
       <header className="submit-header"><p className="eyebrow">{t('contribute')}</p><h1>{t('addRecorderTitle')}</h1><p>{t('submitIntro')}</p></header>
       <div className="form-layout">

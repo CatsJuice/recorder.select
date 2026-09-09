@@ -8,6 +8,7 @@ import { flushSync } from 'react-dom';
 import { SortRule, TableToolbar } from '../components/table-toolbar';
 import { ThemeToggle } from '../components/theme-toggle';
 import { LocalChatWidget } from '../components/local-chat-widget';
+import { OtherToolsMenu } from '../components/other-tools-menu';
 import { LanguageSwitcher } from '../components/language-switcher';
 import { CanvasComparisonTable } from '../components/canvas-comparison-table';
 import { useI18n } from '../lib/i18n';
@@ -237,7 +238,7 @@ export default function ComparisonPage({ overview }: { overview: ReactNode }) {
     <Drawer.IndentBackground className="page-sheet-background" />
     <Drawer.Indent render={<main />} className="comparison-page" data-table-initializing={!tableInitialized}>
     <div className={`page-header-slot ${tableFullWidth ? 'is-hidden' : ''}`} aria-hidden={tableFullWidth} inert={tableFullWidth}>
-      <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" width={28} height={28} alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><LanguageSwitcher /><ThemeToggle /><GitHubLink /><a className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></a></div></nav>
+      <nav className="nav shell"><Link className="brand" href="/" aria-label="Recorder Select"><img className="brand-mark" src="/recorder-select.svg" width={28} height={28} alt="" /><span className="brand-name">Recorder Select</span></Link><div className="nav-links"><OtherToolsMenu /><LanguageSwitcher /><ThemeToggle /><GitHubLink /><a className="submit-link" href="/submit">{t('addRecorder')} <span aria-hidden="true">↗</span></a></div></nav>
     </div>
     <section className={`workspace shell t-resize ${tableFullWidth ? 'workspace-full-width' : ''}`} id="compare">
       <TableToolbar showScores={showScores} onShowScoresChange={setShowScores} query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />

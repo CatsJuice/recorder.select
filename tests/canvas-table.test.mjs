@@ -21,6 +21,20 @@ const base = {
   t: key => key, fieldLabel: field => field.label, fieldUnit: field => field.unit, groupLabel: group => group.label,
 };
 
+test('BetterShot review describes 0.5.2 without caution styling in every locale', () => {
+  for (const locale of ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt-BR']) {
+    const model = createComparisonModel({ ...base, locale, subjectiveReviewsExpanded: true,
+      products: ['bettershot', 'glisio'].map(id => recorders.find(recorder => recorder.id === id)) });
+    const summary = model.rows.find(row => row.id === 'review-summary');
+    assert.match(summary.cell(0).text, /0\.5\.2/);
+    assert.equal(summary.cell(0).caution, false);
+    assert.equal(summary.cell(1).caution, true);
+    for (const key of ['ui', 'ux', 'summary']) {
+      assert.doesNotMatch(model.rows.find(row => row.id === `review-${key}`).cell(0).text, /Screendrop/i);
+    }
+  }
+});
+
 test('additional recording capabilities are supported only by Matte', () => {
   assert.equal(recorders.filter(recorder => recorder.id === 'matte').length, 1);
   for (const key of ['supportsVirtualMachineRecording', 'supportsSimultaneousMultiDeviceRecording']) {

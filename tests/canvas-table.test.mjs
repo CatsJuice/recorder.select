@@ -11,6 +11,7 @@ const { performanceTimelineScale, performanceTimelinePoints } = await server.ssr
 const { calculateRecorderScore, createScoreContributions } = await server.ssrLoadModule('/lib/recorder-scoring.ts');
 const { fieldDefinitions, fieldGroups, recorders } = await server.ssrLoadModule('/lib/recorders.ts');
 const { CanvasTablePainter } = await server.ssrLoadModule('/lib/canvas-table-painter.ts');
+const { hasRecorderWarning, recorderWarningFor } = await server.ssrLoadModule('/lib/recorder-warnings.ts');
 const { CanvasTableMotion, motionHitTest, TABLE_MOTION_DURATION } = await server.ssrLoadModule('/lib/canvas-table-motion.ts');
 const { CanvasTableGesture, attachTableGesture } = await server.ssrLoadModule('/lib/canvas-table-gesture.ts');
 const { CanvasScrollEdge } = await server.ssrLoadModule('/lib/canvas-scroll-edge.ts');
@@ -20,6 +21,30 @@ const base = {
   subjectiveReviewsExpanded: false, performanceProfiles: {}, performanceStatus: 'loaded', fieldWeights: {}, locale: 'en',
   t: key => key, fieldLabel: field => field.label, fieldUnit: field => field.unit, groupLabel: group => group.label,
 };
+
+test('BetterShot retains the maintainer review and attribution warnings in every locale', () => {
+  assert.equal(hasRecorderWarning('bettershot'), true);
+  for (const locale of ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt-BR']) {
+    const model = createComparisonModel({ ...base, locale, subjectiveReviewsExpanded: true,
+      products: ['bettershot', 'glisio'].map(id => recorders.find(recorder => recorder.id === id)) });
+    const summary = model.rows.find(row => row.id === 'review-summary');
+    for (const figure of ['71%', '68%', '84%', '0.4.0']) assert.ok(summary.cell(0).text.includes(figure), `${locale}: ${figure}`);
+    assert.equal(summary.cell(0).caution, true);
+    assert.equal(summary.cell(1).caution, true);
+    assert.match(summary.cell(0).text, /Screendrop/i);
+    assert.match(recorderWarningFor(locale, 'bettershot'), /Screendrop/i);
+    for (const key of ['ui', 'ux']) assert.notEqual(model.rows.find(row => row.id === `review-${key}`).cell(0).text, '—');
+  }
+});
+
+test('BetterShot distinguishes video annotations, preset sharing, and free pricing', () => {
+  const app = recorders.find(recorder => recorder.id === 'bettershot');
+  for (const key of ['supportsTextAnnotations', 'supportsArrowAnnotations', 'supportsLineAnnotations',
+    'supportsBoxAnnotations', 'supportsCircleAnnotations', 'supportsFocusEffect', 'supportsCustomImageAnnotations',
+    'supportsPresetImportExportSharing']) assert.equal(app[key], false, key);
+  assert.equal(app.supportsPresets, true, 'Saving local style presets does not imply preset file sharing');
+  for (const key of ['monthlyPrice', 'quarterlyPrice', 'yearlyPrice', 'lifetimePrice']) assert.equal(app[key], 0, key);
+});
 
 test('additional recording capabilities are supported only by Matte', () => {
   assert.equal(recorders.filter(recorder => recorder.id === 'matte').length, 1);

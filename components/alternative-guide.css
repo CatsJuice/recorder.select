@@ -1,0 +1,29 @@
+.alternative-guide{max-width:1120px;margin:auto;padding:0 24px 80px;font-size:1rem;line-height:1.75;color:var(--ink)}
+.guide-nav{display:flex;justify-content:space-between;gap:24px;padding:24px 0;border-bottom:1px solid var(--line)}
+.guide-nav>a:first-child{font-weight:650}
+.alternative-guide header{padding:56px 0 32px}
+.alternative-guide h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.12;letter-spacing:-.04em;max-width:22ch}
+.alternative-guide h2{font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.3;letter-spacing:-.025em;margin:0 0 20px;font-weight:650}
+.alternative-guide h3{font-size:1.15rem;font-weight:600;margin:24px 0 12px}
+.alternative-guide p{max-width:80ch;margin:16px 0;color:var(--muted)}
+.alternative-guide .guide-kicker{font-size:.875rem;margin:0 0 16px}
+.alternative-guide a{text-decoration:underline;text-underline-offset:4px}
+.alternative-guide a:hover{opacity:.75}
+.alternative-guide :is(a,[tabindex]):focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.alternative-guide .guide-cta{display:inline-block;padding:10px 18px;margin-top:12px;background:var(--ink);color:var(--soft);border-radius:8px;text-decoration:none}
+.guide-contents,.guide-products{display:flex;flex-wrap:wrap;gap:10px 24px}
+.guide-contents{padding:20px 0;border-block:1px solid var(--line)}
+.guide-products{list-style:none;padding:0;margin:16px 0}
+.alternative-guide>section{padding:36px 0;border-bottom:1px solid var(--line)}
+.alternative-guide [id]{scroll-margin-top:24px}
+.alternative-guide ol{padding-left:24px;max-width:80ch}
+.alternative-guide li{margin-block:4px}
+.guide-table-scroll{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.alternative-guide table{min-width:800px;table-layout:auto;font-size:.875rem}
+.alternative-guide caption{text-align:left;padding:16px;font-weight:600}
+.alternative-guide :is(th,td){width:auto;height:auto;padding:14px;text-align:left;vertical-align:top;background:transparent;font-size:.875rem;font-weight:400}
+.alternative-guide thead th{font-weight:600;background:var(--soft)}
+.alternative-guide tbody th{min-width:130px;font-weight:600;color:var(--ink)}
+.alternative-guide td:last-child{min-width:185px}
+.alternative-guide th small{display:block;color:var(--muted);font-size:.8rem;font-weight:400}
+@media(max-width:600px){.alternative-guide{padding-inline:16px}.alternative-guide header{padding-top:36px}.guide-contents{gap:12px 20px}}

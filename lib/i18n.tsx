@@ -157,7 +157,10 @@ export function I18nProvider({children}:{children:ReactNode}) {
   const [locale,setLocaleState] = useState<Locale>('en');
   useEffect(() => { setLocaleState(normalizeLocale(localStorage.getItem('recorder-locale') || navigator.language)); }, []);
   const setLocale = (next: Locale) => { setLocaleState(next); localStorage.setItem('recorder-locale',next); };
-  useEffect(() => { document.documentElement.lang=locale; },[locale]);
+  useEffect(() => {
+    // Editorial routes keep their explicit content language regardless of saved table preferences.
+    document.documentElement.lang = document.querySelector<HTMLElement>('[data-content-language]')?.dataset.contentLanguage || locale;
+  },[locale]);
   const value = useMemo<I18nContextValue>(() => ({
     locale, setLocale,
     t:(key,vars)=>interpolate(messages[locale][key] ?? en[key] ?? key,vars),

@@ -1,5 +1,4 @@
 import ComparisonPage from './comparison-page';
-import { RecorderOverview } from '../components/recorder-overview';
 import { recorders } from '../lib/recorders';
 import { siteDescription, siteTitle, siteUrl } from '../lib/site-metadata';
 
@@ -20,6 +19,6 @@ export default function Home() {
   };
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
-    <ComparisonPage overview={<RecorderOverview />} />
+    <ComparisonPage />
   </>;
 }

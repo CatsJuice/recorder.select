@@ -135,6 +135,7 @@ const workloadLabelFor = (recorderId, scenario) => recorderId === 'creavit-studi
 const outlierFieldsBySource = {
   'data/benchmarks/bettershot/bettershot-export-2026-09-04-115309.json': ['exportDuration'],
   'data/benchmarks/screendrop/screendrop-export-2026-09-04-132212.json': ['exportDuration'],
+  'data/benchmarks/screendrop/screendrop-export-2026-09-13-172423.json': ['exportDuration'],
 };
 
 const profiles = Object.fromEntries(await Promise.all(Object.entries(sources).map(async ([recorderId, scenarios]) => {

@@ -793,10 +793,10 @@ test('recorder totals equal weighted contributions without deductions', () => {
 });
 
 
-test('BetterShot export measurement renders its warning and deeper background', async () => {
+test('Screendrop export measurement renders its warning and deeper background', async () => {
   const { generatedPerformanceProfiles } = await server.ssrLoadModule('/lib/performance-profiles.generated.ts');
   const products = recorders.filter(product => ['screendrop', 'bettershot', 'screen-studio'].includes(product.id));
-  const column = products.findIndex(product => product.id === 'bettershot');
+  const column = products.findIndex(product => product.id === 'screendrop');
   const painter = new CanvasTablePainter(() => {});
   const icons = [];
   const fills = [];
@@ -809,7 +809,7 @@ test('BetterShot export measurement renders its warning and deeper background', 
     const model = createComparisonModel({ ...base, mobile, products, performanceProfiles: generatedPerformanceProfiles, expandedGroups: Object.fromEntries(fieldGroups.map(group => [group.key, true])) });
     const row = model.rows.find(row => row.id === 'exportDuration');
     const cell = row.cell(column);
-    assert.equal(cell.text, '214.96 s');
+    assert.equal(cell.text, '123.97 s');
     assert.equal(cell.outlier, true);
     assert.equal(cell.bar, 1);
     assert.equal(cell.extreme, undefined);

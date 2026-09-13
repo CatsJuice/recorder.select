@@ -120,6 +120,11 @@ sources['creavit-studio'] = {
   export: 'data/benchmarks/creavit-studio/creavit-studio-export-2026-09-08-220951.json',
 };
 
+sources.canvid = {
+  recording: 'data/benchmarks/canvid/canvid-recording-2026-09-10-163646.json',
+  preview: 'data/benchmarks/canvid/canvid-preview-2026-09-10-163821.json',
+};
+
 const workloadLabelFor = (recorderId, scenario) => recorderId === 'creavit-studio'
   ? scenario === 'export' ? '1080p 60fps social' : '5K'
   : scenario === 'export'

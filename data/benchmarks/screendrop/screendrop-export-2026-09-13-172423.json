@@ -1,0 +1,3546 @@
+{
+  "endedAt" : "2026-09-13T09:26:27Z",
+  "id" : "6F23F575-290B-4CD9-8318-107F0D303772",
+  "machine" : {
+    "logicalCoreCount" : 18,
+    "memoryBytes" : 137438953472,
+    "model" : "Mac17,7",
+    "operatingSystem" : "Version 26.5.2 (Build 25F84)",
+    "processor" : "Apple M5 Max",
+    "toolVersion" : "0.1.0"
+  },
+  "mediaDurationSeconds" : 60,
+  "sampleIntervalSeconds" : 1,
+  "samples" : [
+    {
+      "cpuPercent" : 0,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 8.541e-06,
+      "physicalFootprintBytes" : 213189952,
+      "processes" : [
+        {
+          "cpuPercent" : 0,
+          "process" : {
+            "cpuTimeSeconds" : 1.342501706,
+            "diskReadBytes" : 23875584,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 213189952
+          }
+        }
+      ],
+      "systemCPUPercent" : 0,
+      "systemMemoryDeltaBytes" : 0,
+      "systemMemoryUsedBytes" : 76487622656
+    },
+    {
+      "cpuPercent" : 0.6165279181185803,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 1.049525,
+      "physicalFootprintBytes" : 502383936,
+      "processes" : [
+        {
+          "cpuPercent" : 0.6165279181185803,
+          "process" : {
+            "cpuTimeSeconds" : 1.348974246,
+            "diskReadBytes" : 23875584,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 502383936
+          }
+        }
+      ],
+      "systemCPUPercent" : 251.80851063829786,
+      "systemMemoryDeltaBytes" : 285868032,
+      "systemMemoryUsedBytes" : 76773490688
+    },
+    {
+      "cpuPercent" : 0.17963785974296068,
+      "diskReadBytes" : 0,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 2.050001625,
+      "physicalFootprintBytes" : 471942464,
+      "processes" : [
+        {
+          "cpuPercent" : 0.17963785974296068,
+          "process" : {
+            "cpuTimeSeconds" : 1.350771479,
+            "diskReadBytes" : 23875584,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 471942464
+          }
+        }
+      ],
+      "systemCPUPercent" : 164.1857862339116,
+      "systemMemoryDeltaBytes" : 229310464,
+      "systemMemoryUsedBytes" : 76716933120
+    },
+    {
+      "cpuPercent" : 2.609444301457952,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 3.049629208,
+      "physicalFootprintBytes" : 536413624,
+      "processes" : [
+        {
+          "cpuPercent" : 2.609444301457952,
+          "process" : {
+            "cpuTimeSeconds" : 1.376850747,
+            "diskReadBytes" : 23908352,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 536413624
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.41340782122904,
+      "systemMemoryDeltaBytes" : 1902346240,
+      "systemMemoryUsedBytes" : 78389968896
+    },
+    {
+      "cpuPercent" : 2.540710532935727,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 4.049128125,
+      "physicalFootprintBytes" : 366757328,
+      "processes" : [
+        {
+          "cpuPercent" : 2.540710532935727,
+          "process" : {
+            "cpuTimeSeconds" : 1.402244665,
+            "diskReadBytes" : 23908352,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 366757328
+          }
+        }
+      ],
+      "systemCPUPercent" : 239.79933110367898,
+      "systemMemoryDeltaBytes" : 1735081984,
+      "systemMemoryUsedBytes" : 78222704640
+    },
+    {
+      "cpuPercent" : 2.5533045624345196,
+      "diskReadBytes" : 32768,
+      "diskWrittenBytes" : 0,
+      "elapsedSeconds" : 5.049120583,
+      "physicalFootprintBytes" : 346752488,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5533045624345196,
+          "process" : {
+            "cpuTimeSeconds" : 1.427781581,
+            "diskReadBytes" : 23908352,
+            "diskWrittenBytes" : 166989824,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 346752488
+          }
+        }
+      ],
+      "systemCPUPercent" : 218.72909698996654,
+      "systemMemoryDeltaBytes" : 1549893632,
+      "systemMemoryUsedBytes" : 78037516288
+    },
+    {
+      "cpuPercent" : 2.2968796937175986,
+      "diskReadBytes" : 139264,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 6.049396416,
+      "physicalFootprintBytes" : 945587664,
+      "processes" : [
+        {
+          "cpuPercent" : 2.2968796937175986,
+          "process" : {
+            "cpuTimeSeconds" : 1.450752448,
+            "diskReadBytes" : 24014848,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 945587664
+          }
+        }
+      ],
+      "systemCPUPercent" : 235.52338530066814,
+      "systemMemoryDeltaBytes" : 2739666944,
+      "systemMemoryUsedBytes" : 79227289600
+    },
+    {
+      "cpuPercent" : 3.5097292172136862,
+      "diskReadBytes" : 139264,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 7.049622916,
+      "physicalFootprintBytes" : 1949517384,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5097292172136862,
+          "process" : {
+            "cpuTimeSeconds" : 1.485854898,
+            "diskReadBytes" : 24014848,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1949517384
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.0580033463469,
+      "systemMemoryDeltaBytes" : 3409788928,
+      "systemMemoryUsedBytes" : 79897411584
+    },
+    {
+      "cpuPercent" : 3.860264146926487,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 8.049340541,
+      "physicalFootprintBytes" : 437208648,
+      "processes" : [
+        {
+          "cpuPercent" : 3.860264146926487,
+          "process" : {
+            "cpuTimeSeconds" : 1.524457369,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 437208648
+          }
+        }
+      ],
+      "systemCPUPercent" : 242.6740947075209,
+      "systemMemoryDeltaBytes" : 1682358272,
+      "systemMemoryUsedBytes" : 78169980928
+    },
+    {
+      "cpuPercent" : 3.8150025545480455,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 9.049641833,
+      "physicalFootprintBytes" : 438191616,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8150025545480455,
+          "process" : {
+            "cpuTimeSeconds" : 1.562617579,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 438191616
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.52763819095475,
+      "systemMemoryDeltaBytes" : 1661599744,
+      "systemMemoryUsedBytes" : 78149222400
+    },
+    {
+      "cpuPercent" : 3.186882797341605,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 10.049643791,
+      "physicalFootprintBytes" : 438306448,
+      "processes" : [
+        {
+          "cpuPercent" : 3.186882797341605,
+          "process" : {
+            "cpuTimeSeconds" : 1.59448697,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 438306448
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.68802228412255,
+      "systemMemoryDeltaBytes" : 1867874304,
+      "systemMemoryUsedBytes" : 78355496960
+    },
+    {
+      "cpuPercent" : 3.1465725118876837,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 11.049992458,
+      "physicalFootprintBytes" : 682739344,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1465725118876837,
+          "process" : {
+            "cpuTimeSeconds" : 1.625961908,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 682739344
+          }
+        }
+      ],
+      "systemCPUPercent" : 233.51893095768372,
+      "systemMemoryDeltaBytes" : 1598013440,
+      "systemMemoryUsedBytes" : 78085636096
+    },
+    {
+      "cpuPercent" : 3.4112366365142304,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 12.050000791,
+      "physicalFootprintBytes" : 659900072,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4112366365142304,
+          "process" : {
+            "cpuTimeSeconds" : 1.66007373,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 659900072
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.53072625698326,
+      "systemMemoryDeltaBytes" : 2069692416,
+      "systemMemoryUsedBytes" : 78557315072
+    },
+    {
+      "cpuPercent" : 3.813371926409872,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 13.049341083,
+      "physicalFootprintBytes" : 372754088,
+      "processes" : [
+        {
+          "cpuPercent" : 3.813371926409872,
+          "process" : {
+            "cpuTimeSeconds" : 1.698177902,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 372754088
+          }
+        }
+      ],
+      "systemCPUPercent" : 267.4860335195531,
+      "systemMemoryDeltaBytes" : 1755054080,
+      "systemMemoryUsedBytes" : 78242676736
+    },
+    {
+      "cpuPercent" : 3.5282618347601638,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 14.050016791,
+      "physicalFootprintBytes" : 593757744,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5282618347601638,
+          "process" : {
+            "cpuTimeSeconds" : 1.733494399,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 593757744
+          }
+        }
+      ],
+      "systemCPUPercent" : 229.3823038397329,
+      "systemMemoryDeltaBytes" : 1646067712,
+      "systemMemoryUsedBytes" : 78133690368
+    },
+    {
+      "cpuPercent" : 3.0363031766074777,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 15.049988916,
+      "physicalFootprintBytes" : 635422184,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0363031766074777,
+          "process" : {
+            "cpuTimeSeconds" : 1.763851262,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 635422184
+          }
+        }
+      ],
+      "systemCPUPercent" : 314.87465181058496,
+      "systemMemoryDeltaBytes" : 2020933632,
+      "systemMemoryUsedBytes" : 78508556288
+    },
+    {
+      "cpuPercent" : 3.7196258882153743,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 16.049722916,
+      "physicalFootprintBytes" : 340788688,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7196258882153743,
+          "process" : {
+            "cpuTimeSeconds" : 1.801033921,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 340788688
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.95652173913044,
+      "systemMemoryDeltaBytes" : 1539309568,
+      "systemMemoryUsedBytes" : 78026932224
+    },
+    {
+      "cpuPercent" : 3.749281435065993,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 17.049032166,
+      "physicalFootprintBytes" : 336938496,
+      "processes" : [
+        {
+          "cpuPercent" : 3.749281435065993,
+          "process" : {
+            "cpuTimeSeconds" : 1.838501498,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 336938496
+          }
+        }
+      ],
+      "systemCPUPercent" : 268.79194630872485,
+      "systemMemoryDeltaBytes" : 1491927040,
+      "systemMemoryUsedBytes" : 77979549696
+    },
+    {
+      "cpuPercent" : 4.043991559887847,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 18.049599583,
+      "physicalFootprintBytes" : 335136304,
+      "processes" : [
+        {
+          "cpuPercent" : 4.043991559887847,
+          "process" : {
+            "cpuTimeSeconds" : 1.878968168,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 335136304
+          }
+        }
+      ],
+      "systemCPUPercent" : 407.8125,
+      "systemMemoryDeltaBytes" : 1831518208,
+      "systemMemoryUsedBytes" : 78319140864
+    },
+    {
+      "cpuPercent" : 3.915470830642984,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 19.049972583,
+      "physicalFootprintBytes" : 386074184,
+      "processes" : [
+        {
+          "cpuPercent" : 3.915470830642984,
+          "process" : {
+            "cpuTimeSeconds" : 1.918133435,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 386074184
+          }
+        }
+      ],
+      "systemCPUPercent" : 379.31805477920625,
+      "systemMemoryDeltaBytes" : 1755660288,
+      "systemMemoryUsedBytes" : 78243282944
+    },
+    {
+      "cpuPercent" : 2.7557177217435322,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 20.049010666,
+      "physicalFootprintBytes" : 625346096,
+      "processes" : [
+        {
+          "cpuPercent" : 2.7557177217435322,
+          "process" : {
+            "cpuTimeSeconds" : 1.945668036,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 625346096
+          }
+        }
+      ],
+      "systemCPUPercent" : 309.86072423398326,
+      "systemMemoryDeltaBytes" : 1783463936,
+      "systemMemoryUsedBytes" : 78271086592
+    },
+    {
+      "cpuPercent" : 2.503166641017284,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 21.049621541,
+      "physicalFootprintBytes" : 348374576,
+      "processes" : [
+        {
+          "cpuPercent" : 2.503166641017284,
+          "process" : {
+            "cpuTimeSeconds" : 1.970711848,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 348374576
+          }
+        }
+      ],
+      "systemCPUPercent" : 389.5147796988288,
+      "systemMemoryDeltaBytes" : 1977876480,
+      "systemMemoryUsedBytes" : 78465499136
+    },
+    {
+      "cpuPercent" : 2.5935434912332567,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 22.049655916,
+      "physicalFootprintBytes" : 350717464,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5935434912332567,
+          "process" : {
+            "cpuTimeSeconds" : 1.996651492,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 350717464
+          }
+        }
+      ],
+      "systemCPUPercent" : 243.94868934746236,
+      "systemMemoryDeltaBytes" : 1540620288,
+      "systemMemoryUsedBytes" : 78028242944
+    },
+    {
+      "cpuPercent" : 2.5973598853477737,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 23.049986,
+      "physicalFootprintBytes" : 309020112,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5973598853477737,
+          "process" : {
+            "cpuTimeSeconds" : 2.022631186,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 309020112
+          }
+        }
+      ],
+      "systemCPUPercent" : 192.64214046822744,
+      "systemMemoryDeltaBytes" : 1408761856,
+      "systemMemoryUsedBytes" : 77896384512
+    },
+    {
+      "cpuPercent" : 2.6195276973260064,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 24.049999208,
+      "physicalFootprintBytes" : 347735576,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6195276973260064,
+          "process" : {
+            "cpuTimeSeconds" : 2.048829506,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 347735576
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.8695652173913,
+      "systemMemoryDeltaBytes" : 1523515392,
+      "systemMemoryUsedBytes" : 78011138048
+    },
+    {
+      "cpuPercent" : 2.647259151595899,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 25.049812791,
+      "physicalFootprintBytes" : 306841040,
+      "processes" : [
+        {
+          "cpuPercent" : 2.647259151595899,
+          "process" : {
+            "cpuTimeSeconds" : 2.075289255,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 306841040
+          }
+        }
+      ],
+      "systemCPUPercent" : 286.7966573816156,
+      "systemMemoryDeltaBytes" : 1669578752,
+      "systemMemoryUsedBytes" : 78157201408
+    },
+    {
+      "cpuPercent" : 2.5951914391950353,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 26.049994583,
+      "physicalFootprintBytes" : 355812864,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5951914391950353,
+          "process" : {
+            "cpuTimeSeconds" : 2.10125329,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 355812864
+          }
+        }
+      ],
+      "systemCPUPercent" : 219.73244147157192,
+      "systemMemoryDeltaBytes" : 1400782848,
+      "systemMemoryUsedBytes" : 77888405504
+    },
+    {
+      "cpuPercent" : 2.608982578184672,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 27.049985041,
+      "physicalFootprintBytes" : 374867480,
+      "processes" : [
+        {
+          "cpuPercent" : 2.608982578184672,
+          "process" : {
+            "cpuTimeSeconds" : 2.127341146,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 374867480
+          }
+        }
+      ],
+      "systemCPUPercent" : 239.19597989949744,
+      "systemMemoryDeltaBytes" : 1726152704,
+      "systemMemoryUsedBytes" : 78213775360
+    },
+    {
+      "cpuPercent" : 2.624237596438852,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 28.050010458,
+      "physicalFootprintBytes" : 336070168,
+      "processes" : [
+        {
+          "cpuPercent" : 2.624237596438852,
+          "process" : {
+            "cpuTimeSeconds" : 2.153586764,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 336070168
+          }
+        }
+      ],
+      "systemCPUPercent" : 241.67130919220057,
+      "systemMemoryDeltaBytes" : 1726447616,
+      "systemMemoryUsedBytes" : 78214070272
+    },
+    {
+      "cpuPercent" : 2.6022620211672938,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 29.050008791,
+      "physicalFootprintBytes" : 307152312,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6022620211672938,
+          "process" : {
+            "cpuTimeSeconds" : 2.179629954,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 307152312
+          }
+        }
+      ],
+      "systemCPUPercent" : 211.11728738187884,
+      "systemMemoryDeltaBytes" : 1128873984,
+      "systemMemoryUsedBytes" : 77616496640
+    },
+    {
+      "cpuPercent" : 2.6250520823263,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 30.049624958,
+      "physicalFootprintBytes" : 373147136,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6250520823263,
+          "process" : {
+            "cpuTimeSeconds" : 2.205845974,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 373147136
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.4484304932735,
+      "systemMemoryDeltaBytes" : 1728577536,
+      "systemMemoryUsedBytes" : 78216200192
+    },
+    {
+      "cpuPercent" : 2.6165915510748365,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 31.04997625,
+      "physicalFootprintBytes" : 308037048,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6165915510748365,
+          "process" : {
+            "cpuTimeSeconds" : 2.232019881,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 308037048
+          }
+        }
+      ],
+      "systemCPUPercent" : 245.81939799331107,
+      "systemMemoryDeltaBytes" : 1519910912,
+      "systemMemoryUsedBytes" : 78007533568
+    },
+    {
+      "cpuPercent" : 2.4624078818513526,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 32.049999041,
+      "physicalFootprintBytes" : 1969604048,
+      "processes" : [
+        {
+          "cpuPercent" : 2.4624078818513526,
+          "process" : {
+            "cpuTimeSeconds" : 2.256649293,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1969604048
+          }
+        }
+      ],
+      "systemCPUPercent" : 218.72909698996654,
+      "systemMemoryDeltaBytes" : 3034267648,
+      "systemMemoryUsedBytes" : 79521890304
+    },
+    {
+      "cpuPercent" : 3.695441574244384,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 33.049638875,
+      "physicalFootprintBytes" : 1722877584,
+      "processes" : [
+        {
+          "cpuPercent" : 3.695441574244384,
+          "process" : {
+            "cpuTimeSeconds" : 2.293590225,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1722877584
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.5723830734967,
+      "systemMemoryDeltaBytes" : 3116122112,
+      "systemMemoryUsedBytes" : 79603744768
+    },
+    {
+      "cpuPercent" : 3.7127132448982905,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 34.04975,
+      "physicalFootprintBytes" : 383125088,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7127132448982905,
+          "process" : {
+            "cpuTimeSeconds" : 2.330734999,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 383125088
+          }
+        }
+      ],
+      "systemCPUPercent" : 263.7325905292479,
+      "systemMemoryDeltaBytes" : 1793523712,
+      "systemMemoryUsedBytes" : 78281146368
+    },
+    {
+      "cpuPercent" : 3.1021868637122005,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 98304,
+      "elapsedSeconds" : 35.049975208,
+      "physicalFootprintBytes" : 764053064,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1021868637122005,
+          "process" : {
+            "cpuTimeSeconds" : 2.361745502,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 167088128,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 764053064
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.36871508379886,
+      "systemMemoryDeltaBytes" : 2084601856,
+      "systemMemoryUsedBytes" : 78572224512
+    },
+    {
+      "cpuPercent" : 3.620462615874635,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 36.049600125,
+      "physicalFootprintBytes" : 339641832,
+      "processes" : [
+        {
+          "cpuPercent" : 3.620462615874635,
+          "process" : {
+            "cpuTimeSeconds" : 2.397937538,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 339641832
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.64142538975506,
+      "systemMemoryDeltaBytes" : 1679474688,
+      "systemMemoryUsedBytes" : 78167097344
+    },
+    {
+      "cpuPercent" : 3.463885741571033,
+      "diskReadBytes" : 155648,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 37.050001875,
+      "physicalFootprintBytes" : 386467328,
+      "processes" : [
+        {
+          "cpuPercent" : 3.463885741571033,
+          "process" : {
+            "cpuTimeSeconds" : 2.432598241,
+            "diskReadBytes" : 24031232,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 386467328
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.12946428571433,
+      "systemMemoryDeltaBytes" : 1763311616,
+      "systemMemoryUsedBytes" : 78250934272
+    },
+    {
+      "cpuPercent" : 3.3806306446896772,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 38.049991083,
+      "physicalFootprintBytes" : 387483136,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3806306446896772,
+          "process" : {
+            "cpuTimeSeconds" : 2.466403329,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 387483136
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.12840466926068,
+      "systemMemoryDeltaBytes" : 1586937856,
+      "systemMemoryUsedBytes" : 78074560512
+    },
+    {
+      "cpuPercent" : 3.5966560681022894,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 39.049674583,
+      "physicalFootprintBytes" : 389760512,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5966560681022894,
+          "process" : {
+            "cpuTimeSeconds" : 2.502350724,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 389760512
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.12430011198205,
+      "systemMemoryDeltaBytes" : 1764491264,
+      "systemMemoryUsedBytes" : 78252113920
+    },
+    {
+      "cpuPercent" : 3.636005846669932,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 40.049708583,
+      "physicalFootprintBytes" : 379061784,
+      "processes" : [
+        {
+          "cpuPercent" : 3.636005846669932,
+          "process" : {
+            "cpuTimeSeconds" : 2.538713308,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 379061784
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.12046848856664,
+      "systemMemoryDeltaBytes" : 1768701952,
+      "systemMemoryUsedBytes" : 78256324608
+    },
+    {
+      "cpuPercent" : 3.055301580550257,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 41.049778458,
+      "physicalFootprintBytes" : 643139072,
+      "processes" : [
+        {
+          "cpuPercent" : 3.055301580550257,
+          "process" : {
+            "cpuTimeSeconds" : 2.569267192,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 643139072
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.11339633129515,
+      "systemMemoryDeltaBytes" : 1874083840,
+      "systemMemoryUsedBytes" : 78361706496
+    },
+    {
+      "cpuPercent" : 3.546498278758651,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 42.049991041,
+      "physicalFootprintBytes" : 358385200,
+      "processes" : [
+        {
+          "cpuPercent" : 3.546498278758651,
+          "process" : {
+            "cpuTimeSeconds" : 2.604742006,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 358385200
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.9732441471572,
+      "systemMemoryDeltaBytes" : 1539653632,
+      "systemMemoryUsedBytes" : 78027276288
+    },
+    {
+      "cpuPercent" : 3.6772204846139203,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 43.049667625,
+      "physicalFootprintBytes" : 338953704,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6772204846139203,
+          "process" : {
+            "cpuTimeSeconds" : 2.64150898,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 338953704
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.86287625418055,
+      "systemMemoryDeltaBytes" : 1764409344,
+      "systemMemoryUsedBytes" : 78252032000
+    },
+    {
+      "cpuPercent" : 3.2054329468530285,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 44.049634,
+      "physicalFootprintBytes" : 335873440,
+      "processes" : [
+        {
+          "cpuPercent" : 3.2054329468530285,
+          "process" : {
+            "cpuTimeSeconds" : 2.673560876,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 335873440
+          }
+        }
+      ],
+      "systemCPUPercent" : 199.44320712694878,
+      "systemMemoryDeltaBytes" : 1320845312,
+      "systemMemoryUsedBytes" : 77808467968
+    },
+    {
+      "cpuPercent" : 3.9521976602732782,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 45.049673375,
+      "physicalFootprintBytes" : 337724928,
+      "processes" : [
+        {
+          "cpuPercent" : 3.9521976602732782,
+          "process" : {
+            "cpuTimeSeconds" : 2.7130748,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 337724928
+          }
+        }
+      ],
+      "systemCPUPercent" : 352.7638190954774,
+      "systemMemoryDeltaBytes" : 1700036608,
+      "systemMemoryUsedBytes" : 78187659264
+    },
+    {
+      "cpuPercent" : 3.576382780249389,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 46.049750041,
+      "physicalFootprintBytes" : 385533464,
+      "processes" : [
+        {
+          "cpuPercent" : 3.576382780249389,
+          "process" : {
+            "cpuTimeSeconds" : 2.748850862,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 385533464
+          }
+        }
+      ],
+      "systemCPUPercent" : 261.3065326633166,
+      "systemMemoryDeltaBytes" : 1755480064,
+      "systemMemoryUsedBytes" : 78243102720
+    },
+    {
+      "cpuPercent" : 3.6303735126291445,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 47.050000875,
+      "physicalFootprintBytes" : 389252680,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6303735126291445,
+          "process" : {
+            "cpuTimeSeconds" : 2.785194321,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 389252680
+          }
+        }
+      ],
+      "systemCPUPercent" : 254.56570155902006,
+      "systemMemoryDeltaBytes" : 1581547520,
+      "systemMemoryUsedBytes" : 78069170176
+    },
+    {
+      "cpuPercent" : 3.8005877857661,
+      "diskReadBytes" : 172032,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 48.049999875,
+      "physicalFootprintBytes" : 359745048,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8005877857661,
+          "process" : {
+            "cpuTimeSeconds" : 2.823166798,
+            "diskReadBytes" : 24047616,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 359745048
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.46231155778895,
+      "systemMemoryDeltaBytes" : 1730461696,
+      "systemMemoryUsedBytes" : 78218084352
+    },
+    {
+      "cpuPercent" : 2.7219326792193685,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 49.050017291,
+      "physicalFootprintBytes" : 597689760,
+      "processes" : [
+        {
+          "cpuPercent" : 2.7219326792193685,
+          "process" : {
+            "cpuTimeSeconds" : 2.850420944,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 597689760
+          }
+        }
+      ],
+      "systemCPUPercent" : 341.08440469536055,
+      "systemMemoryDeltaBytes" : 1777025024,
+      "systemMemoryUsedBytes" : 78264647680
+    },
+    {
+      "cpuPercent" : 3.7398479995479614,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 50.049970375,
+      "physicalFootprintBytes" : 655328816,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7398479995479614,
+          "process" : {
+            "cpuTimeSeconds" : 2.887799221,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 655328816
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.9598662207358,
+      "systemMemoryDeltaBytes" : 1938456576,
+      "systemMemoryUsedBytes" : 78426079232
+    },
+    {
+      "cpuPercent" : 3.0248166443693485,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 51.049971041,
+      "physicalFootprintBytes" : 436520472,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0248166443693485,
+          "process" : {
+            "cpuTimeSeconds" : 2.918017927,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 436520472
+          }
+        }
+      ],
+      "systemCPUPercent" : 305.20425293788475,
+      "systemMemoryDeltaBytes" : 1823768576,
+      "systemMemoryUsedBytes" : 78311391232
+    },
+    {
+      "cpuPercent" : 3.2019823529104494,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 52.050006666,
+      "physicalFootprintBytes" : 638010832,
+      "processes" : [
+        {
+          "cpuPercent" : 3.2019823529104494,
+          "process" : {
+            "cpuTimeSeconds" : 2.950047143,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 638010832
+          }
+        }
+      ],
+      "systemCPUPercent" : 258.2869855394883,
+      "systemMemoryDeltaBytes" : 2018164736,
+      "systemMemoryUsedBytes" : 78505787392
+    },
+    {
+      "cpuPercent" : 3.1092299542613766,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 53.050006,
+      "physicalFootprintBytes" : 687457720,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1092299542613766,
+          "process" : {
+            "cpuTimeSeconds" : 2.981133684,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 687457720
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.2324805339266,
+      "systemMemoryDeltaBytes" : 1872609280,
+      "systemMemoryUsedBytes" : 78360231936
+    },
+    {
+      "cpuPercent" : 3.3742900126738715,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 54.049639458,
+      "physicalFootprintBytes" : 432457288,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3742900126738715,
+          "process" : {
+            "cpuTimeSeconds" : 3.014869612,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 432457288
+          }
+        }
+      ],
+      "systemCPUPercent" : 292.436974789916,
+      "systemMemoryDeltaBytes" : 1812742144,
+      "systemMemoryUsedBytes" : 78300364800
+    },
+    {
+      "cpuPercent" : 3.3556613957041055,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 55.049942125,
+      "physicalFootprintBytes" : 425707056,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3556613957041055,
+          "process" : {
+            "cpuTimeSeconds" : 3.048423417,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 425707056
+          }
+        }
+      ],
+      "systemCPUPercent" : 299.4991652754591,
+      "systemMemoryDeltaBytes" : 1815609344,
+      "systemMemoryUsedBytes" : 78303232000
+    },
+    {
+      "cpuPercent" : 3.4707978908471584,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 56.049968,
+      "physicalFootprintBytes" : 641926560,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4707978908471584,
+          "process" : {
+            "cpuTimeSeconds" : 3.083138754,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 641926560
+          }
+        }
+      ],
+      "systemCPUPercent" : 393.75,
+      "systemMemoryDeltaBytes" : 1857585152,
+      "systemMemoryUsedBytes" : 78345207808
+    },
+    {
+      "cpuPercent" : 2.8468305509490466,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 57.050010541,
+      "physicalFootprintBytes" : 673564136,
+      "processes" : [
+        {
+          "cpuPercent" : 2.8468305509490466,
+          "process" : {
+            "cpuTimeSeconds" : 3.111637141,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 673564136
+          }
+        }
+      ],
+      "systemCPUPercent" : 265.0306748466258,
+      "systemMemoryDeltaBytes" : 1928003584,
+      "systemMemoryUsedBytes" : 78415626240
+    },
+    {
+      "cpuPercent" : 3.7310930618098954,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 58.049602875,
+      "physicalFootprintBytes" : 442271256,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7310930618098954,
+          "process" : {
+            "cpuTimeSeconds" : 3.148896197,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 442271256
+          }
+        }
+      ],
+      "systemCPUPercent" : 300.83565459610026,
+      "systemMemoryDeltaBytes" : 1819721728,
+      "systemMemoryUsedBytes" : 78307344384
+    },
+    {
+      "cpuPercent" : 3.592984530521357,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 59.049989166,
+      "physicalFootprintBytes" : 430343752,
+      "processes" : [
+        {
+          "cpuPercent" : 3.592984530521357,
+          "process" : {
+            "cpuTimeSeconds" : 3.184843874,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 430343752
+          }
+        }
+      ],
+      "systemCPUPercent" : 237.79264214046822,
+      "systemMemoryDeltaBytes" : 1489977344,
+      "systemMemoryUsedBytes" : 77977600000
+    },
+    {
+      "cpuPercent" : 3.523921328849517,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 60.049619125,
+      "physicalFootprintBytes" : 346015232,
+      "processes" : [
+        {
+          "cpuPercent" : 3.523921328849517,
+          "process" : {
+            "cpuTimeSeconds" : 3.220068231,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 346015232
+          }
+        }
+      ],
+      "systemCPUPercent" : 287.43718592964825,
+      "systemMemoryDeltaBytes" : 1748271104,
+      "systemMemoryUsedBytes" : 78235893760
+    },
+    {
+      "cpuPercent" : 3.812374181122221,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 61.049992916,
+      "physicalFootprintBytes" : 391759408,
+      "processes" : [
+        {
+          "cpuPercent" : 3.812374181122221,
+          "process" : {
+            "cpuTimeSeconds" : 3.258205664,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 391759408
+          }
+        }
+      ],
+      "systemCPUPercent" : 331.20805369127515,
+      "systemMemoryDeltaBytes" : 1776730112,
+      "systemMemoryUsedBytes" : 78264352768
+    },
+    {
+      "cpuPercent" : 3.8433803095635217,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 62.0499955,
+      "physicalFootprintBytes" : 345851344,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8433803095635217,
+          "process" : {
+            "cpuTimeSeconds" : 3.296640026,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 345851344
+          }
+        }
+      ],
+      "systemCPUPercent" : 253.56347438752783,
+      "systemMemoryDeltaBytes" : 1277968384,
+      "systemMemoryUsedBytes" : 77765591040
+    },
+    {
+      "cpuPercent" : 3.8151246990728573,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 63.049983,
+      "physicalFootprintBytes" : 394511944,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8151246990728573,
+          "process" : {
+            "cpuTimeSeconds" : 3.334784552,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 394511944
+          }
+        }
+      ],
+      "systemCPUPercent" : 319.0635451505017,
+      "systemMemoryDeltaBytes" : 1780711424,
+      "systemMemoryUsedBytes" : 78268334080
+    },
+    {
+      "cpuPercent" : 3.671261807730033,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 64.049638791,
+      "physicalFootprintBytes" : 391693848,
+      "processes" : [
+        {
+          "cpuPercent" : 3.671261807730033,
+          "process" : {
+            "cpuTimeSeconds" : 3.371495079,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 391693848
+          }
+        }
+      ],
+      "systemCPUPercent" : 289.12437255995536,
+      "systemMemoryDeltaBytes" : 1567457280,
+      "systemMemoryUsedBytes" : 78055079936
+    },
+    {
+      "cpuPercent" : 3.4452712915265806,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 8486912,
+      "elapsedSeconds" : 65.049979125,
+      "physicalFootprintBytes" : 343737904,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4452712915265806,
+          "process" : {
+            "cpuTimeSeconds" : 3.405952321,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 175476736,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 343737904
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.6989966555184,
+      "systemMemoryDeltaBytes" : 1406189568,
+      "systemMemoryUsedBytes" : 77893812224
+    },
+    {
+      "cpuPercent" : 3.880323456469994,
+      "diskReadBytes" : 184320,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 66.049605625,
+      "physicalFootprintBytes" : 344704464,
+      "processes" : [
+        {
+          "cpuPercent" : 3.880323456469994,
+          "process" : {
+            "cpuTimeSeconds" : 3.444749381,
+            "diskReadBytes" : 24059904,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344704464
+          }
+        }
+      ],
+      "systemCPUPercent" : 351.75879396984925,
+      "systemMemoryDeltaBytes" : 1701412864,
+      "systemMemoryUsedBytes" : 78189035520
+    },
+    {
+      "cpuPercent" : 3.568774346059443,
+      "diskReadBytes" : 192512,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 67.049966666,
+      "physicalFootprintBytes" : 350520808,
+      "processes" : [
+        {
+          "cpuPercent" : 3.568774346059443,
+          "process" : {
+            "cpuTimeSeconds" : 3.48043832,
+            "diskReadBytes" : 24068096,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 350520808
+          }
+        }
+      ],
+      "systemCPUPercent" : 273.9130434782609,
+      "systemMemoryDeltaBytes" : 1692483584,
+      "systemMemoryUsedBytes" : 78180106240
+    },
+    {
+      "cpuPercent" : 3.6804874846667,
+      "diskReadBytes" : 208896,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 68.049589,
+      "physicalFootprintBytes" : 393168432,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6804874846667,
+          "process" : {
+            "cpuTimeSeconds" : 3.517234604,
+            "diskReadBytes" : 24084480,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 393168432
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.3616071428571,
+      "systemMemoryDeltaBytes" : 1460568064,
+      "systemMemoryUsedBytes" : 77948190720
+    },
+    {
+      "cpuPercent" : 3.6376157765388744,
+      "diskReadBytes" : 208896,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 69.049588666,
+      "physicalFootprintBytes" : 371869184,
+      "processes" : [
+        {
+          "cpuPercent" : 3.6376157765388744,
+          "process" : {
+            "cpuTimeSeconds" : 3.553605369,
+            "diskReadBytes" : 24084480,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 371869184
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.0814277746793,
+      "systemMemoryDeltaBytes" : 1549189120,
+      "systemMemoryUsedBytes" : 78036811776
+    },
+    {
+      "cpuPercent" : 3.8458461821968033,
+      "diskReadBytes" : 208896,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 70.050007208,
+      "physicalFootprintBytes" : 342836736,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8458461821968033,
+          "process" : {
+            "cpuTimeSeconds" : 3.592092375,
+            "diskReadBytes" : 24084480,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 342836736
+          }
+        }
+      ],
+      "systemCPUPercent" : 276.76880222841226,
+      "systemMemoryDeltaBytes" : 1786462208,
+      "systemMemoryUsedBytes" : 78274084864
+    },
+    {
+      "cpuPercent" : 2.909988721408079,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 71.049680041,
+      "physicalFootprintBytes" : 644335104,
+      "processes" : [
+        {
+          "cpuPercent" : 2.909988721408079,
+          "process" : {
+            "cpuTimeSeconds" : 3.621175822,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 644335104
+          }
+        }
+      ],
+      "systemCPUPercent" : 252.70194986072423,
+      "systemMemoryDeltaBytes" : 1730232320,
+      "systemMemoryUsedBytes" : 78217854976
+    },
+    {
+      "cpuPercent" : 3.461389459097778,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 72.049975041,
+      "physicalFootprintBytes" : 380257840,
+      "processes" : [
+        {
+          "cpuPercent" : 3.461389459097778,
+          "process" : {
+            "cpuTimeSeconds" : 3.655799782,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 380257840
+          }
+        }
+      ],
+      "systemCPUPercent" : 326.2688232013386,
+      "systemMemoryDeltaBytes" : 1789591552,
+      "systemMemoryUsedBytes" : 78277214208
+    },
+    {
+      "cpuPercent" : 3.8536100988274558,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 73.04980675,
+      "physicalFootprintBytes" : 344802792,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8536100988274558,
+          "process" : {
+            "cpuTimeSeconds" : 3.694338831,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344802792
+          }
+        }
+      ],
+      "systemCPUPercent" : 296.82451253481895,
+      "systemMemoryDeltaBytes" : 1759805440,
+      "systemMemoryUsedBytes" : 78247428096
+    },
+    {
+      "cpuPercent" : 3.020578319511178,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 74.050011875,
+      "physicalFootprintBytes" : 624493984,
+      "processes" : [
+        {
+          "cpuPercent" : 3.020578319511178,
+          "process" : {
+            "cpuTimeSeconds" : 3.724550454,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 624493984
+          }
+        }
+      ],
+      "systemCPUPercent" : 228.89012827663132,
+      "systemMemoryDeltaBytes" : 1694187520,
+      "systemMemoryUsedBytes" : 78181810176
+    },
+    {
+      "cpuPercent" : 3.5521147387325347,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 75.049983,
+      "physicalFootprintBytes" : 351815168,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5521147387325347,
+          "process" : {
+            "cpuTimeSeconds" : 3.760063692,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 351815168
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.9714605484051,
+      "systemMemoryDeltaBytes" : 1516257280,
+      "systemMemoryUsedBytes" : 78003879936
+    },
+    {
+      "cpuPercent" : 3.994679854514612,
+      "diskReadBytes" : 217088,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 76.049967833,
+      "physicalFootprintBytes" : 392676912,
+      "processes" : [
+        {
+          "cpuPercent" : 3.994679854514612,
+          "process" : {
+            "cpuTimeSeconds" : 3.800004893,
+            "diskReadBytes" : 24092672,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 392676912
+          }
+        }
+      ],
+      "systemCPUPercent" : 362.6043405676127,
+      "systemMemoryDeltaBytes" : 1775403008,
+      "systemMemoryUsedBytes" : 78263025664
+    },
+    {
+      "cpuPercent" : 3.0351605016343552,
+      "diskReadBytes" : 229376,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 77.04996975,
+      "physicalFootprintBytes" : 614598120,
+      "processes" : [
+        {
+          "cpuPercent" : 3.0351605016343552,
+          "process" : {
+            "cpuTimeSeconds" : 3.830356431,
+            "diskReadBytes" : 24104960,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 614598120
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.68802228412255,
+      "systemMemoryDeltaBytes" : 1632124928,
+      "systemMemoryUsedBytes" : 78119747584
+    },
+    {
+      "cpuPercent" : 3.4374837108919523,
+      "diskReadBytes" : 229376,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 78.049959541,
+      "physicalFootprintBytes" : 390415848,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4374837108919523,
+          "process" : {
+            "cpuTimeSeconds" : 3.864729853,
+            "diskReadBytes" : 24104960,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 390415848
+          }
+        }
+      ],
+      "systemCPUPercent" : 375.4601226993865,
+      "systemMemoryDeltaBytes" : 1903624192,
+      "systemMemoryUsedBytes" : 78391246848
+    },
+    {
+      "cpuPercent" : 3.8356800247516643,
+      "diskReadBytes" : 229376,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 79.049999291,
+      "physicalFootprintBytes" : 341460456,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8356800247516643,
+          "process" : {
+            "cpuTimeSeconds" : 3.903101801,
+            "diskReadBytes" : 24104960,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 341460456
+          }
+        }
+      ],
+      "systemCPUPercent" : 352.56696428571433,
+      "systemMemoryDeltaBytes" : 1810235392,
+      "systemMemoryUsedBytes" : 78297858048
+    },
+    {
+      "cpuPercent" : 3.203150503943295,
+      "diskReadBytes" : 229376,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 80.049630125,
+      "physicalFootprintBytes" : 645514752,
+      "processes" : [
+        {
+          "cpuPercent" : 3.203150503943295,
+          "process" : {
+            "cpuTimeSeconds" : 3.935119032,
+            "diskReadBytes" : 24104960,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 645514752
+          }
+        }
+      ],
+      "systemCPUPercent" : 281.56424581005587,
+      "systemMemoryDeltaBytes" : 1840529408,
+      "systemMemoryUsedBytes" : 78328152064
+    },
+    {
+      "cpuPercent" : 3.4476262845492602,
+      "diskReadBytes" : 229376,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 81.049625916,
+      "physicalFootprintBytes" : 390563352,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4476262845492602,
+          "process" : {
+            "cpuTimeSeconds" : 3.969596671,
+            "diskReadBytes" : 24104960,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 390563352
+          }
+        }
+      ],
+      "systemCPUPercent" : 428.14070351758795,
+      "systemMemoryDeltaBytes" : 2134065152,
+      "systemMemoryUsedBytes" : 78621687808
+    },
+    {
+      "cpuPercent" : 3.453537614133155,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 82.049904333,
+      "physicalFootprintBytes" : 374720024,
+      "processes" : [
+        {
+          "cpuPercent" : 3.453537614133155,
+          "process" : {
+            "cpuTimeSeconds" : 4.004143746,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 374720024
+          }
+        }
+      ],
+      "systemCPUPercent" : 295.4924874791319,
+      "systemMemoryDeltaBytes" : 1547796480,
+      "systemMemoryUsedBytes" : 78035419136
+    },
+    {
+      "cpuPercent" : 3.4924836174876184,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 83.049990958,
+      "physicalFootprintBytes" : 342967784,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4924836174876184,
+          "process" : {
+            "cpuTimeSeconds" : 4.039066152,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 342967784
+          }
+        }
+      ],
+      "systemCPUPercent" : 253.26633165829145,
+      "systemMemoryDeltaBytes" : 1418706944,
+      "systemMemoryUsedBytes" : 77906329600
+    },
+    {
+      "cpuPercent" : 3.459704694154663,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 84.049963708,
+      "physicalFootprintBytes" : 353732048,
+      "processes" : [
+        {
+          "cpuPercent" : 3.459704694154663,
+          "process" : {
+            "cpuTimeSeconds" : 4.073656108,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 353732048
+          }
+        }
+      ],
+      "systemCPUPercent" : 276.22767857142856,
+      "systemMemoryDeltaBytes" : 1689960448,
+      "systemMemoryUsedBytes" : 78177583104
+    },
+    {
+      "cpuPercent" : 3.8747273707640613,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 85.049958708,
+      "physicalFootprintBytes" : 344835560,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8747273707640613,
+          "process" : {
+            "cpuTimeSeconds" : 4.1124023,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344835560
+          }
+        }
+      ],
+      "systemCPUPercent" : 271.90635451505017,
+      "systemMemoryDeltaBytes" : 1693827072,
+      "systemMemoryUsedBytes" : 78181449728
+    },
+    {
+      "cpuPercent" : 3.796560629877107,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 86.0499965,
+      "physicalFootprintBytes" : 344851944,
+      "processes" : [
+        {
+          "cpuPercent" : 3.796560629877107,
+          "process" : {
+            "cpuTimeSeconds" : 4.150376515,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344851944
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.6547884187082,
+      "systemMemoryDeltaBytes" : 1505820672,
+      "systemMemoryUsedBytes" : 77993443328
+    },
+    {
+      "cpuPercent" : 3.8667706489462392,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 87.049992666,
+      "physicalFootprintBytes" : 391956016,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8667706489462392,
+          "process" : {
+            "cpuTimeSeconds" : 4.1890462,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 391956016
+          }
+        }
+      ],
+      "systemCPUPercent" : 291.2946428571429,
+      "systemMemoryDeltaBytes" : 1745534976,
+      "systemMemoryUsedBytes" : 78233157632
+    },
+    {
+      "cpuPercent" : 3.768237807895225,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 88.049442041,
+      "physicalFootprintBytes" : 594167296,
+      "processes" : [
+        {
+          "cpuPercent" : 3.768237807895225,
+          "process" : {
+            "cpuTimeSeconds" : 4.22675177,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 594167296
+          }
+        }
+      ],
+      "systemCPUPercent" : 280.31145717463846,
+      "systemMemoryDeltaBytes" : 1980055552,
+      "systemMemoryUsedBytes" : 78467678208
+    },
+    {
+      "cpuPercent" : 2.3181593973526513,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 89.049792333,
+      "physicalFootprintBytes" : 638879280,
+      "processes" : [
+        {
+          "cpuPercent" : 2.3181593973526513,
+          "process" : {
+            "cpuTimeSeconds" : 4.249912204,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 638879280
+          }
+        }
+      ],
+      "systemCPUPercent" : 245.4545454545454,
+      "systemMemoryDeltaBytes" : 1815396352,
+      "systemMemoryUsedBytes" : 78303019008
+    },
+    {
+      "cpuPercent" : 2.5448153430179166,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 90.049684791,
+      "physicalFootprintBytes" : 382092800,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5448153430179166,
+          "process" : {
+            "cpuTimeSeconds" : 4.275363706,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 382092800
+          }
+        }
+      ],
+      "systemCPUPercent" : 215.15151515151513,
+      "systemMemoryDeltaBytes" : 1717862400,
+      "systemMemoryUsedBytes" : 78205485056
+    },
+    {
+      "cpuPercent" : 2.5972386394523426,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 91.049999916,
+      "physicalFootprintBytes" : 322651600,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5972386394523426,
+          "process" : {
+            "cpuTimeSeconds" : 4.301342342,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 322651600
+          }
+        }
+      ],
+      "systemCPUPercent" : 246.2311557788945,
+      "systemMemoryDeltaBytes" : 1664401408,
+      "systemMemoryUsedBytes" : 78152024064
+    },
+    {
+      "cpuPercent" : 2.591022231233427,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 92.049991333,
+      "physicalFootprintBytes" : 346719744,
+      "processes" : [
+        {
+          "cpuPercent" : 2.591022231233427,
+          "process" : {
+            "cpuTimeSeconds" : 4.327252438,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 346719744
+          }
+        }
+      ],
+      "systemCPUPercent" : 249.6935933147632,
+      "systemMemoryDeltaBytes" : 1540866048,
+      "systemMemoryUsedBytes" : 78028488704
+    },
+    {
+      "cpuPercent" : 2.6101776675696806,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 93.050011375,
+      "physicalFootprintBytes" : 324650424,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6101776675696806,
+          "process" : {
+            "cpuTimeSeconds" : 4.353354939,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 324650424
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.6547884187082,
+      "systemMemoryDeltaBytes" : 1769373696,
+      "systemMemoryUsedBytes" : 78256996352
+    },
+    {
+      "cpuPercent" : 2.5858759502032163,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 94.049993041,
+      "physicalFootprintBytes" : 383124992,
+      "processes" : [
+        {
+          "cpuPercent" : 2.5858759502032163,
+          "process" : {
+            "cpuTimeSeconds" : 4.379212704,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 383124992
+          }
+        }
+      ],
+      "systemCPUPercent" : 231.28491620111734,
+      "systemMemoryDeltaBytes" : 1773862912,
+      "systemMemoryUsedBytes" : 78261485568
+    },
+    {
+      "cpuPercent" : 2.601385371042901,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 95.049987583,
+      "physicalFootprintBytes" : 363988480,
+      "processes" : [
+        {
+          "cpuPercent" : 2.601385371042901,
+          "process" : {
+            "cpuTimeSeconds" : 4.405222531,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 363988480
+          }
+        }
+      ],
+      "systemCPUPercent" : 209.93303571428572,
+      "systemMemoryDeltaBytes" : 1420083200,
+      "systemMemoryUsedBytes" : 77907705856
+    },
+    {
+      "cpuPercent" : 2.6070178696785486,
+      "diskReadBytes" : 245760,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 96.0500015,
+      "physicalFootprintBytes" : 316720592,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6070178696785486,
+          "process" : {
+            "cpuTimeSeconds" : 4.431297373,
+            "diskReadBytes" : 24121344,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 316720592
+          }
+        }
+      ],
+      "systemCPUPercent" : 306.0200668896321,
+      "systemMemoryDeltaBytes" : 1769111552,
+      "systemMemoryUsedBytes" : 78256734208
+    },
+    {
+      "cpuPercent" : 2.589083724670079,
+      "diskReadBytes" : 262144,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 97.049700791,
+      "physicalFootprintBytes" : 314590672,
+      "processes" : [
+        {
+          "cpuPercent" : 2.589083724670079,
+          "process" : {
+            "cpuTimeSeconds" : 4.457181347,
+            "diskReadBytes" : 24137728,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 314590672
+          }
+        }
+      ],
+      "systemCPUPercent" : 238.92916899051872,
+      "systemMemoryDeltaBytes" : 1581334528,
+      "systemMemoryUsedBytes" : 78068957184
+    },
+    {
+      "cpuPercent" : 2.58918595431453,
+      "diskReadBytes" : 270336,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 98.049999041,
+      "physicalFootprintBytes" : 334071272,
+      "processes" : [
+        {
+          "cpuPercent" : 2.58918595431453,
+          "process" : {
+            "cpuTimeSeconds" : 4.483080699,
+            "diskReadBytes" : 24145920,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 334071272
+          }
+        }
+      ],
+      "systemCPUPercent" : 210.9375,
+      "systemMemoryDeltaBytes" : 1597407232,
+      "systemMemoryUsedBytes" : 78085029888
+    },
+    {
+      "cpuPercent" : 2.591551345729109,
+      "diskReadBytes" : 270336,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 99.050002791,
+      "physicalFootprintBytes" : 383190528,
+      "processes" : [
+        {
+          "cpuPercent" : 2.591551345729109,
+          "process" : {
+            "cpuTimeSeconds" : 4.508995719,
+            "diskReadBytes" : 24145920,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 383190528
+          }
+        }
+      ],
+      "systemCPUPercent" : 247.68802228412255,
+      "systemMemoryDeltaBytes" : 1766981632,
+      "systemMemoryUsedBytes" : 78254604288
+    },
+    {
+      "cpuPercent" : 2.6185198669386476,
+      "diskReadBytes" : 270336,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 100.049975833,
+      "physicalFootprintBytes" : 318064056,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6185198669386476,
+          "process" : {
+            "cpuTimeSeconds" : 4.535176572,
+            "diskReadBytes" : 24145920,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 318064056
+          }
+        }
+      ],
+      "systemCPUPercent" : 257.4290484140234,
+      "systemMemoryDeltaBytes" : 1767473152,
+      "systemMemoryUsedBytes" : 78255095808
+    },
+    {
+      "cpuPercent" : 2.6574035541059264,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 101.049977041,
+      "physicalFootprintBytes" : 1976501808,
+      "processes" : [
+        {
+          "cpuPercent" : 2.6574035541059264,
+          "process" : {
+            "cpuTimeSeconds" : 4.561750189,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 1976501808
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.22321428571433,
+      "systemMemoryDeltaBytes" : 3229859840,
+      "systemMemoryUsedBytes" : 79717482496
+    },
+    {
+      "cpuPercent" : 3.7765692184439286,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 102.049645291,
+      "physicalFootprintBytes" : 336512488,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7765692184439286,
+          "process" : {
+            "cpuTimeSeconds" : 4.599508819,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 336512488
+          }
+        }
+      ],
+      "systemCPUPercent" : 332.1070234113712,
+      "systemMemoryDeltaBytes" : 1552646144,
+      "systemMemoryUsedBytes" : 78040268800
+    },
+    {
+      "cpuPercent" : 3.728229701662323,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 103.04974225,
+      "physicalFootprintBytes" : 384091696,
+      "processes" : [
+        {
+          "cpuPercent" : 3.728229701662323,
+          "process" : {
+            "cpuTimeSeconds" : 4.63679001,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 384091696
+          }
+        }
+      ],
+      "systemCPUPercent" : 278.8590604026846,
+      "systemMemoryDeltaBytes" : 1786134528,
+      "systemMemoryUsedBytes" : 78273757184
+    },
+    {
+      "cpuPercent" : 3.1746157123311103,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 104.049628375,
+      "physicalFootprintBytes" : 382600728,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1746157123311103,
+          "process" : {
+            "cpuTimeSeconds" : 4.668537097,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 382600728
+          }
+        }
+      ],
+      "systemCPUPercent" : 204.22691879866517,
+      "systemMemoryDeltaBytes" : 1654194176,
+      "systemMemoryUsedBytes" : 78141816832
+    },
+    {
+      "cpuPercent" : 3.3193828724962176,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 105.049020541,
+      "physicalFootprintBytes" : 387597848,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3193828724962176,
+          "process" : {
+            "cpuTimeSeconds" : 4.701708708,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 387597848
+          }
+        }
+      ],
+      "systemCPUPercent" : 253.40782122905026,
+      "systemMemoryDeltaBytes" : 1781645312,
+      "systemMemoryUsedBytes" : 78269267968
+    },
+    {
+      "cpuPercent" : 3.7531591457719586,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 106.049028166,
+      "physicalFootprintBytes" : 382895640,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7531591457719586,
+          "process" : {
+            "cpuTimeSeconds" : 4.7392428,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 382895640
+          }
+        }
+      ],
+      "systemCPUPercent" : 338.18788215675374,
+      "systemMemoryDeltaBytes" : 1780105216,
+      "systemMemoryUsedBytes" : 78267727872
+    },
+    {
+      "cpuPercent" : 2.980205251355432,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 107.049020916,
+      "physicalFootprintBytes" : 646120936,
+      "processes" : [
+        {
+          "cpuPercent" : 2.980205251355432,
+          "process" : {
+            "cpuTimeSeconds" : 4.76903996,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 646120936
+          }
+        }
+      ],
+      "systemCPUPercent" : 196.65551839464882,
+      "systemMemoryDeltaBytes" : 1897709568,
+      "systemMemoryUsedBytes" : 78385332224
+    },
+    {
+      "cpuPercent" : 3.1256353914412247,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 108.04963875,
+      "physicalFootprintBytes" : 388416976,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1256353914412247,
+          "process" : {
+            "cpuTimeSeconds" : 4.800320255,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 388416976
+          }
+        }
+      ],
+      "systemCPUPercent" : 266.14785992217895,
+      "systemMemoryDeltaBytes" : 1610874880,
+      "systemMemoryUsedBytes" : 78098497536
+    },
+    {
+      "cpuPercent" : 3.1298756704835715,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 109.049985666,
+      "physicalFootprintBytes" : 391169512,
+      "processes" : [
+        {
+          "cpuPercent" : 3.1298756704835715,
+          "process" : {
+            "cpuTimeSeconds" : 4.831629412,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 391169512
+          }
+        }
+      ],
+      "systemCPUPercent" : 293.9597315436242,
+      "systemMemoryDeltaBytes" : 1797029888,
+      "systemMemoryUsedBytes" : 78284652544
+    },
+    {
+      "cpuPercent" : 3.726089197131473,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 110.04899725,
+      "physicalFootprintBytes" : 344294840,
+      "processes" : [
+        {
+          "cpuPercent" : 3.726089197131473,
+          "process" : {
+            "cpuTimeSeconds" : 4.868848061,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 344294840
+          }
+        }
+      ],
+      "systemCPUPercent" : 272.20982142857144,
+      "systemMemoryDeltaBytes" : 1309687808,
+      "systemMemoryUsedBytes" : 77797310464
+    },
+    {
+      "cpuPercent" : 3.8108941601579778,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 111.049027375,
+      "physicalFootprintBytes" : 354076136,
+      "processes" : [
+        {
+          "cpuPercent" : 3.8108941601579778,
+          "process" : {
+            "cpuTimeSeconds" : 4.906961898,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 354076136
+          }
+        }
+      ],
+      "systemCPUPercent" : 319.8885793871866,
+      "systemMemoryDeltaBytes" : 1723858944,
+      "systemMemoryUsedBytes" : 78211481600
+    },
+    {
+      "cpuPercent" : 3.857057724883259,
+      "diskReadBytes" : 282624,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 112.048970666,
+      "physicalFootprintBytes" : 361022952,
+      "processes" : [
+        {
+          "cpuPercent" : 3.857057724883259,
+          "process" : {
+            "cpuTimeSeconds" : 4.945518442,
+            "diskReadBytes" : 24158208,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 361022952
+          }
+        }
+      ],
+      "systemCPUPercent" : 301.50753768844226,
+      "systemMemoryDeltaBytes" : 1788903424,
+      "systemMemoryUsedBytes" : 78276526080
+    },
+    {
+      "cpuPercent" : 4.02930602594558,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 113.048985625,
+      "physicalFootprintBytes" : 369903128,
+      "processes" : [
+        {
+          "cpuPercent" : 4.02930602594558,
+          "process" : {
+            "cpuTimeSeconds" : 4.985812748,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 369903128
+          }
+        }
+      ],
+      "systemCPUPercent" : 346.30872483221475,
+      "systemMemoryDeltaBytes" : 1498562560,
+      "systemMemoryUsedBytes" : 77986185216
+    },
+    {
+      "cpuPercent" : 3.7177907920799114,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 114.049645375,
+      "physicalFootprintBytes" : 379192832,
+      "processes" : [
+        {
+          "cpuPercent" : 3.7177907920799114,
+          "process" : {
+            "cpuTimeSeconds" : 5.023029355,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 379192832
+          }
+        }
+      ],
+      "systemCPUPercent" : 288.8022284122563,
+      "systemMemoryDeltaBytes" : 1787609088,
+      "systemMemoryUsedBytes" : 78275231744
+    },
+    {
+      "cpuPercent" : 2.602223274790725,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 115.0496215,
+      "physicalFootprintBytes" : 596084056,
+      "processes" : [
+        {
+          "cpuPercent" : 2.602223274790725,
+          "process" : {
+            "cpuTimeSeconds" : 5.049050497,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 596084056
+          }
+        }
+      ],
+      "systemCPUPercent" : 210.81985499163414,
+      "systemMemoryDeltaBytes" : 1799700480,
+      "systemMemoryUsedBytes" : 78287323136
+    },
+    {
+      "cpuPercent" : 3.5670302009056245,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 116.049023041,
+      "physicalFootprintBytes" : 387155456,
+      "processes" : [
+        {
+          "cpuPercent" : 3.5670302009056245,
+          "process" : {
+            "cpuTimeSeconds" : 5.084699431,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 387155456
+          }
+        }
+      ],
+      "systemCPUPercent" : 294.14389291689906,
+      "systemMemoryDeltaBytes" : 1521729536,
+      "systemMemoryUsedBytes" : 78009352192
+    },
+    {
+      "cpuPercent" : 3.621367784752731,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 117.049031375,
+      "physicalFootprintBytes" : 388793904,
+      "processes" : [
+        {
+          "cpuPercent" : 3.621367784752731,
+          "process" : {
+            "cpuTimeSeconds" : 5.120914319,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 388793904
+          }
+        }
+      ],
+      "systemCPUPercent" : 275.9197324414716,
+      "systemMemoryDeltaBytes" : 1783808000,
+      "systemMemoryUsedBytes" : 78271430656
+    },
+    {
+      "cpuPercent" : 3.3881467481656533,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 118.04904925,
+      "physicalFootprintBytes" : 386631216,
+      "processes" : [
+        {
+          "cpuPercent" : 3.3881467481656533,
+          "process" : {
+            "cpuTimeSeconds" : 5.15479621,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 386631216
+          }
+        }
+      ],
+      "systemCPUPercent" : 260.30150753768845,
+      "systemMemoryDeltaBytes" : 1787232256,
+      "systemMemoryUsedBytes" : 78274854912
+    },
+    {
+      "cpuPercent" : 2.896592713099965,
+      "diskReadBytes" : 290816,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 119.049071125,
+      "physicalFootprintBytes" : 387221016,
+      "processes" : [
+        {
+          "cpuPercent" : 2.896592713099965,
+          "process" : {
+            "cpuTimeSeconds" : 5.183753562,
+            "diskReadBytes" : 24166400,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 387221016
+          }
+        }
+      ],
+      "systemCPUPercent" : 181.90954773869348,
+      "systemMemoryDeltaBytes" : 1631764480,
+      "systemMemoryUsedBytes" : 78119387136
+    },
+    {
+      "cpuPercent" : 3.452150703939208,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 120.049109583,
+      "physicalFootprintBytes" : 368707120,
+      "processes" : [
+        {
+          "cpuPercent" : 3.452150703939208,
+          "process" : {
+            "cpuTimeSeconds" : 5.218288029,
+            "diskReadBytes" : 24170496,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 368707120
+          }
+        }
+      ],
+      "systemCPUPercent" : 265.70477247502777,
+      "systemMemoryDeltaBytes" : 1783119872,
+      "systemMemoryUsedBytes" : 78270742528
+    },
+    {
+      "cpuPercent" : 3.4837745882801965,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 121.04959575,
+      "physicalFootprintBytes" : 367019568,
+      "processes" : [
+        {
+          "cpuPercent" : 3.4837745882801965,
+          "process" : {
+            "cpuTimeSeconds" : 5.253136277,
+            "diskReadBytes" : 24170496,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 367019568
+          }
+        }
+      ],
+      "systemCPUPercent" : 259.2880978865406,
+      "systemMemoryDeltaBytes" : 1784922112,
+      "systemMemoryUsedBytes" : 78272544768
+    },
+    {
+      "cpuPercent" : 2.480713455794263,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 122.049625708,
+      "physicalFootprintBytes" : 633128496,
+      "processes" : [
+        {
+          "cpuPercent" : 2.480713455794263,
+          "process" : {
+            "cpuTimeSeconds" : 5.277948281,
+            "diskReadBytes" : 24170496,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 633128496
+          }
+        }
+      ],
+      "systemCPUPercent" : 182.1129122414757,
+      "systemMemoryDeltaBytes" : 1929953280,
+      "systemMemoryUsedBytes" : 78417575936
+    },
+    {
+      "cpuPercent" : 2.458149621806182,
+      "diskReadBytes" : 294912,
+      "diskWrittenBytes" : 16875520,
+      "elapsedSeconds" : 123.049638125,
+      "physicalFootprintBytes" : 331073024,
+      "processes" : [
+        {
+          "cpuPercent" : 2.458149621806182,
+          "process" : {
+            "cpuTimeSeconds" : 5.302529768,
+            "diskReadBytes" : 24170496,
+            "diskWrittenBytes" : 183865344,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 331073024
+          }
+        }
+      ],
+      "systemCPUPercent" : 248,
+      "systemMemoryDeltaBytes" : 1613545472,
+      "systemMemoryUsedBytes" : 78101168128
+    },
+    {
+      "cpuPercent" : 0.7718033211480524,
+      "diskReadBytes" : 28606464,
+      "diskWrittenBytes" : 58998784,
+      "elapsedSeconds" : 123.972525208,
+      "physicalFootprintBytes" : 216368472,
+      "processes" : [
+        {
+          "cpuPercent" : 0.7718033211480524,
+          "process" : {
+            "cpuTimeSeconds" : 5.309651724,
+            "diskReadBytes" : 52482048,
+            "diskWrittenBytes" : 225988608,
+            "executablePath" : "/Applications/Screendrop.app/Contents/MacOS/Screendrop",
+            "identity" : {
+              "pid" : 29656,
+              "startTimeNanoseconds" : 2617725127542
+            },
+            "name" : "Screendrop",
+            "parentPID" : 1,
+            "physicalFootprintBytes" : 216368472
+          }
+        }
+      ],
+      "systemCPUPercent" : 240.7990314769976,
+      "systemMemoryDeltaBytes" : 207618048,
+      "systemMemoryUsedBytes" : 76695240704
+    }
+  ],
+  "scenario" : "export",
+  "schemaVersion" : 3,
+  "startedAt" : "2026-09-13T09:24:23Z",
+  "summary" : {
+    "averageCPUPercent" : 3.1995589474378483,
+    "averagePhysicalFootprintBytes" : 469800021,
+    "averageSystemCPUPercent" : 272.1496801046909,
+    "averageSystemMemoryDeltaBytes" : 1712477700,
+    "cpuTimeSeconds" : 3.967150018,
+    "diskReadBytes" : 28606464,
+    "diskWrittenBytes" : 58998784,
+    "durationSeconds" : 123.972525208,
+    "p95CPUPercent" : 3.8747273707640613,
+    "p95SystemCPUPercent" : 362.6043405676127,
+    "peakCPUPercent" : 4.043991559887847,
+    "peakPhysicalFootprintBytes" : 1976501808,
+    "peakProcessCount" : 1,
+    "peakSystemCPUPercent" : 428.14070351758795,
+    "peakSystemMemoryDeltaBytes" : 3409788928,
+    "physicalFootprintDeltaBytes" : 3178520,
+    "realtimeFactor" : 2.0662087534666664
+  },
+  "target" : {
+    "build" : "29",
+    "bundleIdentifier" : "com.fayazahmed.Screendrop",
+    "bundlePath" : "/Applications/Screendrop.app",
+    "name" : "Screendrop",
+    "recorderID" : "screendrop",
+    "version" : "0.32.0"
+  }
+}

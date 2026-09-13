@@ -69,9 +69,9 @@ sources.bettershot = {
 };
 
 sources.screendrop = {
-  export: 'data/benchmarks/screendrop/screendrop-export-2026-09-04-132212.json',
-  preview: 'data/benchmarks/screendrop/screendrop-preview-2026-09-04-132027.json',
-  recording: 'data/benchmarks/screendrop/screendrop-recording-2026-09-04-131743.json',
+  export: 'data/benchmarks/screendrop/screendrop-export-2026-09-13-172423.json',
+  preview: 'data/benchmarks/screendrop/screendrop-preview-2026-09-13-172248.json',
+  recording: 'data/benchmarks/screendrop/screendrop-recording-2026-09-13-172127.json',
 };
 
 sources.minshot = {

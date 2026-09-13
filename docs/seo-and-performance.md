@@ -45,3 +45,30 @@ Reports are saved under `artifacts/seo/` (ignored by Git). These are individual 
 - The offline XHS build and its existing artifact audits passed after adapting its shared component entry point.
 
 After deployment, verify the public robots/sitemap responses and repeat Lighthouse on `https://recorder.select/`. Then verify the domain in Google Search Console, submit `https://recorder.select/sitemap.xml`, and request indexing of the homepage. Search Console verification credentials are not part of the source repository.
+
+## Screen Studio search intent expansion — 2026-09-10
+
+The earlier work mentioned alternatives in homepage guidance and keywords, but had no dedicated landing page. This change adds two server-rendered guides:
+
+- `/screen-studio-alternatives`: English Screen Studio alternative searches, including Mac, Windows, Linux, free/open-source and demo-editing questions.
+- `/zh-cn/screen-studio-alternatives`: a complete Chinese guide for Screen Studio 平替, 录屏软件对比, 免费开源录屏 and platform-specific searches.
+
+Both guides have distinct localized titles/descriptions and self-canonical URLs, reciprocal en/zh-CN/x-default language alternates, localized social metadata, visible language links, and CollectionPage, BreadcrumbList and unordered ItemList structured data. Their main content explicitly declares its language; hydration preserves the editorial language regardless of saved table language preferences. Both URLs are in the sitemap. No fabricated ratings, FAQ rich-result promises, freshness dates or ranking claims are added.
+
+The HTML comparison and platform/open-source shortlists use the existing recorder dataset. Screen Studio is shown as the baseline and excluded from the alternative ItemList. Null prices remain undocumented; open source is not treated as free. The guide does not infer auto zoom from cursor replacement because the current dataset does not independently model auto-zoom support. Editorial descriptions link to primary product sources: [Screen Studio](https://screen.studio/), [OpenScreen](https://getopenscreen.com/), [Recordly](https://recordly.dev/) and [FocuSee](https://focusee.imobie.com/), consulted on 2026-09-10. This is not a full re-audit of every existing product fact.
+
+### Verify and measure
+
+Run `node scripts/audit-seo.mjs http://127.0.0.1:4173` against a running production build. It checks actual HTTP HTML without executing JavaScript: status, canonical URLs, reciprocal language alternates, robots, localized main content, table/list consistency, structured data, section anchors, absence of homepage SEO copy and sitemap inclusion. After deployment run the same audit against `https://recorder.select`.
+
+### Homepage presentation correction
+
+At the user's request, the entire homepage overview block (heading, prose, guide links and collapsible directory) has been removed, along with its styles and shared component slot. The homepage retains its comparison UI, metadata and structured data. Guide content remains readable on the dedicated routes, discoverable through the sitemap and reciprocal language links. No invisible keyword text or crawler-specific content is substituted. The historical homepage and Lighthouse findings above describe the earlier version, not the current homepage.
+
+Validation on 2026-09-10: production build, TypeScript, ESLint for changed source files, and the production HTTP SEO audit passed. No browser visual audit or new Lighthouse run was performed. Public deployment and Search Console submission remain separate release steps.
+
+After public release, submit the sitemap and inspect both guide URLs in Google Search Console. Confirm Google's chosen canonical and indexing status. Track impressions, clicks, CTR and average position by landing page, country and query group (Screen Studio alternatives, free/open-source, Windows/Mac/Linux, and Chinese 平替/录屏). Compare 28-day periods, allowing for crawl/indexing delays; no ranking baseline or verified search-volume estimate is available from this checkout.
+
+The next content investments should follow actual Search Console queries: standalone platform guides with platform-specific evidence, auto-zoom capability verification, and repeatable demo exports or benchmarks. Avoid generating near-identical keyword pages. Broader recording searches include tutorials, troubleshooting and streaming tasks beyond this directory's present coverage; they require useful content that answers those tasks. Lighthouse SEO checks alone do not demonstrate ranking competitiveness.
+
+Reference: Google's guidance on [useful content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [descriptive page titles](https://developers.google.com/search/docs/appearance/title-link), and [multilingual URLs](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites).

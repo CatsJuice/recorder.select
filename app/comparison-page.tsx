@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { GitHubLink } from '../components/github-link';
 import { Drawer } from '@base-ui/react/drawer';
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { SortRule, TableToolbar } from '../components/table-toolbar';
 import { ThemeToggle } from '../components/theme-toggle';
@@ -43,7 +43,7 @@ const updateWithTransition = (kind: 'selection' | 'compare', update: () => void)
   transition.finished.finally(() => delete document.documentElement.dataset.uiTransition);
 };
 
-export default function ComparisonPage({ overview }: { overview: ReactNode }) {
+export default function ComparisonPage() {
   const { t } = useI18n();
   const [query, setQuery] = useState('');
   const [showScores, setShowScores] = useState(false);
@@ -244,7 +244,6 @@ export default function ComparisonPage({ overview }: { overview: ReactNode }) {
       <TableToolbar showScores={showScores} onShowScoresChange={setShowScores} query={query} onQueryChange={setQuery} filterFields={filterableFields} filters={filters} onFilterChange={(key, value) => setFilters((current) => ({ ...current, [key]: value }))} sortableFields={sortableFields} sortRules={sortRules} onSortRulesChange={setSortRules} fullWidth={tableFullWidth} onFullWidthChange={setTableFullWidth} />
       <CanvasComparisonTable showScores={showScores} cellScores={cellScores} animationsEnabled={tableInitialized} products={visible} scores={recorderScores} selected={selected} compareMode={compareMode} hideIdentical={hideIdentical} identicalFieldKeys={identicalFieldKeys} expandedGroups={expandedGroups} subjectiveReviewsExpanded={subjectiveReviewsExpanded} performanceProfiles={performanceProfiles} performanceStatus={expandedGroups.performance && performanceStatus === 'loaded' && chartStatus !== 'loaded' ? chartStatus === 'error' ? 'error' : 'loading' : performanceStatus} fieldWeights={fieldWeights} bottomSafeArea={tableBottomSafeArea} onToggleProduct={toggleCompare} onToggleGroup={toggleGroup} onWeightChange={(key, weight) => setFieldWeights(current => ({ ...current, [key]: weight }))} onResetWeights={() => setFieldWeights({ ...defaultFieldWeights })} />
     </section>
-    {overview}
     <div className={`compare-dock-shell t-resize ${chatExpanded?'chat-expanded':''} ${selected.length===0?'is-empty':''}`}>{selected.length>0&&<div className="compare-dock" style={{bottom:chatHeight+8}}><div className="compare-dock-summary"><div className="compare-avatars">{displayedSelection.map((id)=>{const app=recorders.find((item)=>item.id===id)!;return <span key={id} style={{background:app.icon ? 'transparent' : app.accent,viewTransitionName:`compare-avatar-${id}`}}>{app.icon ? <img src={app.icon} alt="" /> : app.name[0]}</span>})}{overflowSelectionCount>0&&<span className="avatar-overflow" style={{viewTransitionName:'compare-avatar-overflow'}}>+{overflowSelectionCount}</span>}</div>{compareMode?<label className="hide-identical-control"><input type="checkbox" checked={hideIdentical} onChange={(event)=>setHideIdentical(event.target.checked)} /><span>{t('hideIdentical')}</span></label>:<p><strong>{t('selected',{count:selected.length})}</strong><small>{t('ready')}</small></p>}</div><div className="compare-dock-actions"><button className="clear-selection" onClick={clearSelection}>{t('clear')}</button><button className={`compare-action ${compareMode?'exit':''}`} aria-pressed={compareMode} onClick={()=>setCompareMode((current)=>!current)}>{compareMode?t('exitComparison'):t('compareSelected')}</button></div></div>}</div>
 
   </Drawer.Indent>

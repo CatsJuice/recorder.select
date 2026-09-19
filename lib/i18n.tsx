@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { FieldDefinition, FieldGroup } from './recorders';
+import { localizedFieldDescription } from './field-descriptions';
 
 export const locales = ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt-BR'] as const;
 export type Locale = typeof locales[number];
@@ -149,7 +150,7 @@ const normalizeLocale = (value: string | null | undefined): Locale => {
   return locales.find((locale) => locale.split('-')[0] === language.split('-')[0]) ?? 'en';
 };
 
-type I18nContextValue = { locale: Locale; setLocale: (locale: Locale) => void; t: (key: string, vars?: Record<string,string|number>) => string; fieldLabel: (field: FieldDefinition) => string; fieldUnit: (field: FieldDefinition) => string | undefined; groupLabel: (group: FieldGroup) => string; optionLabel: (option: {value:string;label:string}) => string };
+type I18nContextValue = { locale: Locale; setLocale: (locale: Locale) => void; t: (key: string, vars?: Record<string,string|number>) => string; fieldLabel: (field: FieldDefinition) => string; fieldDescription: (field: FieldDefinition) => string | undefined; fieldUnit: (field: FieldDefinition) => string | undefined; groupLabel: (group: FieldGroup) => string; optionLabel: (option: {value:string;label:string}) => string };
 const I18nContext = createContext<I18nContextValue | null>(null);
 const interpolate = (text: string, vars?: Record<string,string|number>) => Object.entries(vars ?? {}).reduce((result,[key,value]) => result.replaceAll(`{${key}}`,String(value)),text);
 
@@ -165,6 +166,7 @@ export function I18nProvider({children}:{children:ReactNode}) {
     locale, setLocale,
     t:(key,vars)=>interpolate(messages[locale][key] ?? en[key] ?? key,vars),
     fieldLabel:(field)=>model3DFieldNames[locale]?.[field.key] ?? annotationFieldNames[locale]?.[field.key] ?? fieldNames[locale]?.[field.key] ?? performanceFieldNames[locale]?.[field.label] ?? field.label,
+    fieldDescription:(field)=>localizedFieldDescription(locale, field),
     fieldUnit:(field)=>fieldUnits[locale]?.[field.key] ?? field.unit,
     groupLabel:(group)=>performanceGroupNames[locale]?.[group.key] ?? groupNames[locale]?.[group.key] ?? group.label,
     optionLabel:(option)=>option.label,

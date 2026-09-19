@@ -26,6 +26,8 @@
 .canvas-weight-popover{position:fixed;inset:auto;margin:0;max-width:calc(100vw - 16px);color:var(--ink);opacity:0;transform:translateX(-4px);transition:opacity 140ms ease,transform 180ms var(--ease-in-out),display 180ms allow-discrete,overlay 180ms allow-discrete}
 .canvas-weight-popover:popover-open{opacity:1;pointer-events:auto;transform:translateX(0)}
 .canvas-weight-title{margin-bottom:10px;font-size:13px;font-weight:600}
+.canvas-weight-description{margin:-4px 0 12px;color:#767676;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+[data-theme='dark'] .canvas-weight-description{color:#a0a0a0}
 @starting-style{.canvas-weight-popover:popover-open{opacity:0;transform:translateX(-4px)}}
 @media(prefers-reduced-motion:reduce){.canvas-weight-popover,.canvas-weight-popover:popover-open{transform:none;transition:opacity 140ms ease,display 140ms allow-discrete,overlay 140ms allow-discrete}}
 

@@ -15,9 +15,9 @@ const sources = {
     export: 'data/benchmarks/shotbase/shotbase-export-2026-09-01-181349.json',
   },
   screencam: {
-    recording: 'data/benchmarks/screencam/screencam-recording-2026-09-01-185319.json',
-    preview: 'data/benchmarks/screencam/screencam-preview-2026-09-01-185432.json',
-    export: 'data/benchmarks/screencam/screencam-export-2026-09-01-185614.json',
+    recording: 'data/benchmarks/screencam/screencam-recording-2026-09-15-005003.json',
+    preview: 'data/benchmarks/screencam/screencam-preview-2026-09-15-005119.json',
+    export: 'data/benchmarks/screencam/screencam-export-2026-09-15-005249.json',
   },
   'screen-sage-pro': {
     recording: 'data/benchmarks/screensage-pro/screensage-pro-recording-2026-09-01-200500.json',
@@ -125,7 +125,9 @@ sources.canvid = {
   preview: 'data/benchmarks/canvid/canvid-preview-2026-09-10-163821.json',
 };
 
-const workloadLabelFor = (recorderId, scenario) => recorderId === 'creavit-studio'
+const workloadLabelFor = (recorderId, scenario) => recorderId === 'screencam'
+  ? scenario === 'export' ? 'Export settings unspecified' : 'Resolution unspecified'
+  : recorderId === 'creavit-studio'
   ? scenario === 'export' ? '1080p 60fps social' : '5K'
   : scenario === 'export'
   ? ['bettershot', 'screendrop', 'minshot', 'openscreen', 'cap', 'cleanshot-x', 'focusee', 'snapzy'].includes(recorderId) ? 'Export settings unspecified' : ['screenflare', 'matte'].includes(recorderId) ? '1080p 60fps' : '1080p 60fps balance'

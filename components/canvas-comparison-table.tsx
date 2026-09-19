@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from 'react';
 import { recorderWarningFor } from '../lib/recorder-warnings';
+import { fieldDefinitions } from '../lib/recorders';
 import { useI18n } from '../lib/i18n';
 import { createComparisonModel, type ModelOptions, type TableRow } from '../lib/comparison-table-model';
 import { CanvasTablePainter, type PaintScene } from '../lib/canvas-table-painter';
@@ -29,7 +30,7 @@ const sameAddress = (a: CellAddress | null, b: CellAddress | null) => a?.row ===
 
 export function CanvasComparisonTable(props: Props) {
   const { showScores, cellScores, animationsEnabled, products, compareMode, hideIdentical, identicalFieldKeys, expandedGroups, subjectiveReviewsExpanded, performanceProfiles, performanceStatus, fieldWeights, scores, selected, bottomSafeArea } = props;
-  const { locale, t, fieldLabel, fieldUnit, groupLabel } = useI18n();
+  const { locale, t, fieldLabel, fieldDescription, fieldUnit, groupLabel } = useI18n();
   const [mobile, setMobile] = useState(false);
   useLayoutEffect(() => {
     const query = matchMedia('(max-width: 760px)');
@@ -83,6 +84,8 @@ export function CanvasComparisonTable(props: Props) {
   }, []);
   const cellId = (row: number, column: number) => `${gridId}-${row + 1}-${column + 1}`;
   const weightRow = weightEditor && model.rows.find(row => row.id === weightEditor.rowId && row.weightKey);
+  const weightField = weightRow ? fieldDefinitions.find(field => field.key === weightRow.weightKey) : undefined;
+  const weightDescription = weightField ? fieldDescription(weightField) : undefined;
   const cancelWeightClose = useCallback(() => {
     if (weightCloseTimer.current !== null) clearTimeout(weightCloseTimer.current);
     weightCloseTimer.current = null;
@@ -131,7 +134,7 @@ export function CanvasComparisonTable(props: Props) {
     place();
     if (weightEditor?.focusInput) panel.querySelector('input')?.focus({ preventScroll: true });
     return () => { syncWeightRef.current = () => {}; };
-  }, [weightRow, weightEditor?.open, weightEditor?.focusInput, closeWeight]);
+  }, [weightRow, weightDescription, weightEditor?.open, weightEditor?.focusInput, closeWeight]);
   useEffect(() => {
     if (!weightEditor?.open) return;
     const outside = (event: globalThis.PointerEvent) => {
@@ -480,11 +483,12 @@ export function CanvasComparisonTable(props: Props) {
     <canvas ref={canvasRef} className="canvas-table-surface" aria-hidden="true" />
     <canvas ref={edgeRef} className="canvas-scroll-edge" style={{ width: SCROLL_EDGE_WIDTH }} aria-hidden="true" hidden />
     <div className="canvas-table-links-clip"><div className="canvas-table-links" ref={linksRef}>{visibleColumns.map(column => <a key={products[column].id} data-product-id={products[column].id} href={products[column].website} target="_blank" rel="noreferrer" style={{ left: column * windowRange.cellWidth + 12, width: windowRange.cellWidth - 24 }} aria-label={t('visitWebsite', { name: products[column].name })} title={t('visitWebsite', { name: products[column].name })} onFocus={() => focusCell({ row: -1, column }, true)} />)}</div></div>
-    <div ref={weightPopoverRef} popover="manual" role="dialog" aria-labelledby={`${gridId}-weight-title`} className="field-weight-panel canvas-weight-popover"
+    <div ref={weightPopoverRef} popover="manual" role="dialog" aria-labelledby={`${gridId}-weight-title`} aria-describedby={weightDescription ? `${gridId}-weight-description` : undefined} className="field-weight-panel canvas-weight-popover"
       onPointerEnter={cancelWeightClose} onPointerLeave={deferWeightClose}
       onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) deferWeightClose(); }}>
       {weightRow && <>
         <div id={`${gridId}-weight-title`} className="canvas-weight-title">{weightRow.label}</div>
+        {weightDescription && <p id={`${gridId}-weight-description`} className="canvas-weight-description">{weightDescription}</p>}
         <header><span>{t('weight')}</span><strong>{weightRow.weight}</strong></header>
         <div className="weight-anchor-labels" aria-hidden="true">{Array.from({ length: 11 }, (_, value) => <span key={value} style={{ gridColumnStart: value + 1 }}>{value}</span>)}</div>
         <input type="range" min="0" max="10" step="0.5" value={weightRow.weight} style={{ '--weight-progress': `${(weightRow.weight ?? 5) * 10}%` } as CSSProperties}

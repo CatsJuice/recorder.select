@@ -17,7 +17,7 @@ const topLevelGroups = fieldGroups.filter((group) => !group.parentKey);
 const fieldsInGroup = (groupKey: string) => editableFieldDefinitions.filter((field) => field.group === groupKey);
 
 export default function SubmitPage() {
-  const { t, fieldLabel, groupLabel, optionLabel } = useI18n();
+  const { t, fieldLabel, fieldDescription, groupLabel, optionLabel } = useI18n();
   const [form, setForm] = useState<FormState>(initialState);
   const [format, setFormat] = useState<'json' | 'prompt'>('json');
   const [copied, setCopied] = useState(false);
@@ -96,7 +96,7 @@ export default function SubmitPage() {
   };
 
   const renderField = (field: FieldDefinition) => <div className="field-row" key={field.key}>
-    <div className="field-label" id={`${field.key}-label`}>{fieldLabel(field)}{field.required && <em>{t('required')}</em>}{field.description && <small>{field.description}</small>}</div>
+    <div className="field-label" id={`${field.key}-label`}>{fieldLabel(field)}{field.required && <em>{t('required')}</em>}{field.description && <small>{fieldDescription(field)}</small>}</div>
     {renderFieldControl(field)}
   </div>;
 
